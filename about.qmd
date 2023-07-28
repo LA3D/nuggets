@@ -1,0 +1,32 @@
+---
+title: "Laboratory for Assured AI Applications Development (LA3D)"
+image: llama.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com/charlesvardeman
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/charles-vardeman-7897759
+    - icon: github
+      text: Github
+      href: https://github.com/la3d
+
+---
+
+**About AI Success Factors: Engineering Trust in Deployments**
+
+AI Success Factors: Engineering Trust in Deployments is an initiative of the Laboratory for Assured AI Applications Development (LA3D) at the University of Notre Dame's Center for Research Computing. This blog delves into the intricate dynamics of artificial intelligence (AI) research and development, with a strong emphasis on AI engineering, trust, and knowledge engineering.
+
+As the pace of AI evolution accelerates, understanding the key factors for successful deployment becomes critical. This blog focuses on the intersection of trust and engineering, two pivotal components that determine the efficacy and acceptability of AI applications in various societal contexts. 
+
+The Laboratory for Assured AI Applications Development operates with a commitment to "translational research," a methodology that drives us to convert theoretical advancements in AI into practical applications. This commitment extends to the creation of an efficient and secure AI cyberinfrastructure, designed to support the deployment of trustworthy and effective AI applications.
+
+AI Success Factors serves as a communication medium, helping to disseminate the work conducted by our lab and facilitating knowledge exchange within the AI community. We invite active engagement and encourage thoughtful discussions, aiming to foster a collaborative atmosphere that enriches our collective understanding of AI.
+
+Our vision for AI Success Factors is to contribute to an AI future marked by trusted and efficient applications, where AI engineering is comprehensible, accessible, and actionable. The blog aims to provide insights and perspectives that enable readers to grasp the nuances of AI deployment, assisting them in navigating the ever-evolving landscape of AI research and development.
+
+Whether you are a student, a professional, or an enthusiast interested in the progression of AI, AI Success Factors offers a wealth of knowledge and insights into the key aspects that shape the success of AI deployments. Through this platform, we hope to further the understanding and acceptance of AI and its many transformative possibilities.
+

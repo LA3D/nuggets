@@ -1,0 +1,67 @@
+{
+	"name": "Data Science Jupyter Notebooks (Python)",
+    "build": {
+		"context": "..",
+        "dockerfile": "Dockerfile"
+    },
+
+	"postCreateCommand": "conda init --all",
+	// "postAttachCommand": "conda activate TAI_Framework",
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {
+        // Instsall Quarto CLI for nbdev
+        "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+			"version": "latest"
+		}
+    },
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"[python]": {
+					"defaultInterpreterPath": "/opt/conda/envs/myenv/bin/python",
+					"editor.defaultFormatter": "ms-python.black-formatter",
+					"editor.formatOnType": true,
+					"editor.formatOnSave": true
+				},
+				"[jupyter]": {
+					"themeMatplotlibPlots": true,
+					"widgetScriptSources": [
+						"unpkg.com",
+						"jsdelivr.com"
+					]
+				}
+			},
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-toolsai.jupyter",
+				"ms-python.python",
+				"ms-toolsai.datawrangler",
+				"mechatroner.rainbow-csv",
+				"GrapeCity.gc-excelviewer",
+				"msrvida.vscode-sanddance",
+				"ms-vscode-remote.remote-ssh",
+				"GitHub.codespaces",
+				"Iterative.dvc",
+				"donjayamanne.python-environment-manager",
+				"Github.copilot",
+				"Github.copilot-chat",
+				"visualstudioexptteam.vscodeintellicode",
+				"Zazuko.vscode-rdf-sketch",
+				"stardog-union.vscode-stardog-languages",
+				"Zazuko.sparql-snippets",
+				"Zazuko.sparql-notebook"
+			]
+		}
+	},
+
+	// Set `remoteUser` to `root` to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "root"
+}
