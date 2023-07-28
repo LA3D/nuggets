@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI Success Factors: Engineering Trust in Deployments",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 27, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 24, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Laboratory for Assured AI Applications Development (LA3D)",
+    "section": "",
+    "text": "About AI Success Factors: Engineering Trust in Deployments\nAI Success Factors: Engineering Trust in Deployments is an initiative of the Laboratory for Assured AI Applications Development (LA3D) at the University of Notre Dame’s Center for Research Computing. This blog delves into the intricate dynamics of artificial intelligence (AI) research and development, with a strong emphasis on AI engineering, trust, and knowledge engineering.\nAs the pace of AI evolution accelerates, understanding the key factors for successful deployment becomes critical. This blog focuses on the intersection of trust and engineering, two pivotal components that determine the efficacy and acceptability of AI applications in various societal contexts.\nThe Laboratory for Assured AI Applications Development operates with a commitment to “translational research,” a methodology that drives us to convert theoretical advancements in AI into practical applications. This commitment extends to the creation of an efficient and secure AI cyberinfrastructure, designed to support the deployment of trustworthy and effective AI applications.\nAI Success Factors serves as a communication medium, helping to disseminate the work conducted by our lab and facilitating knowledge exchange within the AI community. We invite active engagement and encourage thoughtful discussions, aiming to foster a collaborative atmosphere that enriches our collective understanding of AI.\nOur vision for AI Success Factors is to contribute to an AI future marked by trusted and efficient applications, where AI engineering is comprehensible, accessible, and actionable. The blog aims to provide insights and perspectives that enable readers to grasp the nuances of AI deployment, assisting them in navigating the ever-evolving landscape of AI research and development.\nWhether you are a student, a professional, or an enthusiast interested in the progression of AI, AI Success Factors offers a wealth of knowledge and insights into the key aspects that shape the success of AI deployments. Through this platform, we hope to further the understanding and acceptance of AI and its many transformative possibilities."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  }
+]
