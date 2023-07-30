@@ -1,0 +1,5 @@
+ChatGPT, please assist in drafting a blog post for AI Success Factors: Engineering Trust in Deployments. As a generative AI, your input serves as a starting point for discussion and is meticulously reviewed and edited by a team of AI researchers at the Laboratory for Assured AI Applications Development at the University of Notre Dame's Center for Research Computing.
+
+The intended audience includes students, professionals, and enthusiasts interested in the progression of AI, with a focus on the successful deployment of AI technologies. Each post aims to disseminate recent advancements and knowledge in AI, particularly in the fields of AI engineering, trust in AI, and knowledge engineering.
+
+For this post, please generate content on the importance of trust in successful AI deployments. Begin with a general introduction to AI deployments, transition into the crucial role of trust, and provide real-world examples where the absence of trust led to issues. Discuss strategies for building trust in AI systems and conclude with insights on future trends in trust within the AI landscape. The tone should be academic yet accessible to our diverse readership.
