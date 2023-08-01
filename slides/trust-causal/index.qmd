@@ -1,0 +1,132 @@
+---
+title: "Trust and Causal Reasoning"
+author: "Charles F Vardeman II"
+date: "2023-08-01"
+format: 
+    revealjs:
+        slide-number: true
+categories: [frameworks,trustedAI]
+---
+
+## Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives
+![](trust_paper_arxiv.png){fig-align="center"}
+
+::: footer
+Learn more: [ArXiv Paper](https://arxiv.org/abs/2307.16851)
+:::
+
+## Towards Trustworthy and Aligned ML Website
+![](trust_paper_web.png){fig-align="center"}
+
+::: footer
+[Towards Trustworthy and Aligned ML](https://trustworthyartificialintelligence.github.io/papers/trustworthyMLsurvey.html)
+::: 
+
+## Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives
+![](trust_paper_topics.png){fig-align="center"}
+
+::: footer
+Learn more: [ArXiv Paper](https://arxiv.org/abs/2307.16851)
+:::
+
+## Causal Reasoning
+
+
+
+![](book_of_why.png){fig-align="center"}
+
+::: footer
+Learn more: [Amazon Book of Why](https://a.co/d/4m8SHSF)
+:::
+
+## Trustworthy ML Initiative (TrustML)
+
+![](trustworthy_ml.png){fig-align="center"}
+
+::: footer
+Learn more: [Trustworthy ML Org](https://www.trustworthyml.org/)
+:::
+
+
+# LLM Updates... {.center}
+
+## Gorilla API to Ground "Tool Use"
+
+![](gorilla_api.png){fig-align="center"}
+
+::: footer
+Learn more: [Gorilla: Large Language Model Connected with Massive APIs
+](https://shishirpatil.github.io/gorilla/?s=09)
+:::
+
+
+## LLaMA2-Accessory
+
+![](llama2_accessory.png){fig-align="center"}
+
+::: footer
+Learn more: [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory)
+:::
+
+## LLaMA2-Accessory
+
+![](llama2_accessory.png){fig-align="center"}
+
+::: footer
+Learn more: [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory)
+:::
+
+
+## MultiLingual Token Analysis
+
+![](multilingual_tokenizers.png){fig-align="center"}
+
+::: footer
+Learn more: [Video: LLaMA2 Multilingual Models and Fine Tuning](https://youtu.be/ThKWQcyQXF8)
+
+[Google Collab Notebook:](https://colab.research.google.com/drive/1XQcFLhdf3WIvV151_csK0_IiaY0hnt5P?usp=sharing)
+:::
+
+# Red Team Update... {.center}
+
+## MetaAI DINOv2
+
+![](dinov2.png){fig-align="center"}
+
+::: footer
+Learn more: [DINOv2 by Meta AI](https://dinov2.metademolab.com/)
+:::
+
+## MetaAI DINOv2 Huggingface Release
+
+![](dinov2_hf){fig-align="center"}
+
+::: footer
+Learn more: [DINOv2 by Meta AI Huggingface](https://huggingface.co/docs/transformers/main/model_doc/dinov2)
+:::
+
+## Example notebook for DINOv2 Semantic Segmentation
+
+![](dinov2_ss){fig-align="center"}
+
+::: footer
+Learn more: [Linear probing of DINOv2 for semantic segmentation](https://github.com/NielsRogge/Transformers-Tutorials/blob/master/DINOv2/Train_a_linear_classifier_on_top_of_DINOv2_for_semantic_segmentation.ipynb)
+:::
+
+## Linear Regression Model for Reasoning
+
+![](tart_paper.png){fig-align="center"}
+
+::: footer
+Learn more: [TART: A plug-and-play Transformer module for task-agnostic reasoning](https://arxiv.org/abs/2306.07536)
+:::
+
+## Linear Regression Model for Reasoning
+
+![](tart_architecture.png){fig-align="center"}
+
+::: footer
+Learn more: [TART: A plug-and-play Transformer module for task-agnostic reasoning](https://arxiv.org/abs/2306.07536)
+:::
+
+# SBoM Update... {.center}

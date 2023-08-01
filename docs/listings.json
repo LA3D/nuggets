@@ -1,5 +1,11 @@
 [
   {
+    "listing": "/slideindex.html",
+    "items": [
+      "/slides/trust-causal/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/post-with-code/index.html",

@@ -1,5 +1,138 @@
 [
   {
+    "objectID": "instruction_prompt.html",
+    "href": "instruction_prompt.html",
+    "title": "AI Success Factors: Engineering Trust in Deployments",
+    "section": "",
+    "text": "ChatGPT, please assist in drafting a blog post for AI Success Factors: Engineering Trust in Deployments. As a generative AI, your input serves as a starting point for discussion and is meticulously reviewed and edited by a team of AI researchers at the Laboratory for Assured AI Applications Development at the University of Notre Dame’s Center for Research Computing.\nThe intended audience includes students, professionals, and enthusiasts interested in the progression of AI, with a focus on the successful deployment of AI technologies. Each post aims to disseminate recent advancements and knowledge in AI, particularly in the fields of AI engineering, trust in AI, and knowledge engineering.\nFor this post, please generate content on the importance of trust in successful AI deployments. Begin with a general introduction to AI deployments, transition into the crucial role of trust, and provide real-world examples where the absence of trust led to issues. Discuss strategies for building trust in AI systems and conclude with insights on future trends in trust within the AI landscape. The tone should be academic yet accessible to our diverse readership."
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
+    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned ML Website",
+    "text": "Towards Trustworthy and Aligned ML Website\n\n\nTowards Trustworthy and Aligned ML"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
+    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#causal-reasoning",
+    "href": "slides/trust-causal/index.html#causal-reasoning",
+    "title": "Trust and Causal Reasoning",
+    "section": "Causal Reasoning",
+    "text": "Causal Reasoning\n\n\nLearn more: Amazon Book of Why"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
+    "href": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
+    "title": "Trust and Causal Reasoning",
+    "section": "Trustworthy ML Initiative (TrustML)",
+    "text": "Trustworthy ML Initiative (TrustML)\n\n\nLearn more: Trustworthy ML Org"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
+    "href": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
+    "title": "Trust and Causal Reasoning",
+    "section": "Gorilla API to Ground “Tool Use”",
+    "text": "Gorilla API to Ground “Tool Use”\n\n\nLearn more: Gorilla: Large Language Model Connected with Massive APIs"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#llama2-accessory",
+    "href": "slides/trust-causal/index.html#llama2-accessory",
+    "title": "Trust and Causal Reasoning",
+    "section": "LLaMA2-Accessory",
+    "text": "LLaMA2-Accessory\n\n\nLearn more: LLaMA2-Accessory"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#llama2-accessory-1",
+    "href": "slides/trust-causal/index.html#llama2-accessory-1",
+    "title": "Trust and Causal Reasoning",
+    "section": "LLaMA2-Accessory",
+    "text": "LLaMA2-Accessory\n\n\nLearn more: LLaMA2-Accessory"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#multilingual-token-analysis",
+    "href": "slides/trust-causal/index.html#multilingual-token-analysis",
+    "title": "Trust and Causal Reasoning",
+    "section": "MultiLingual Token Analysis",
+    "text": "MultiLingual Token Analysis\n\n\nLearn more: Video: LLaMA2 Multilingual Models and Fine Tuning\nGoogle Collab Notebook:"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#metaai-dinov2",
+    "href": "slides/trust-causal/index.html#metaai-dinov2",
+    "title": "Trust and Causal Reasoning",
+    "section": "MetaAI DINOv2",
+    "text": "MetaAI DINOv2\n\n\nLearn more: DINOv2 by Meta AI"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
+    "href": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
+    "title": "Trust and Causal Reasoning",
+    "section": "MetaAI DINOv2 Huggingface Release",
+    "text": "MetaAI DINOv2 Huggingface Release\n\n\nLearn more: DINOv2 by Meta AI Huggingface"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
+    "href": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
+    "title": "Trust and Causal Reasoning",
+    "section": "Example notebook for DINOv2 Semantic Segmentation",
+    "text": "Example notebook for DINOv2 Semantic Segmentation\n\n\nLearn more: Linear probing of DINOv2 for semantic segmentation"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
+    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
+    "title": "Trust and Causal Reasoning",
+    "section": "Linear Regression Model for Reasoning",
+    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
+    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
+    "title": "Trust and Causal Reasoning",
+    "section": "Linear Regression Model for Reasoning",
+    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
+  },
+  {
+    "objectID": "slideindex.html",
+    "href": "slideindex.html",
+    "title": "Weekly Nugget Presentations",
+    "section": "",
+    "text": "Trust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI Success Factors: Engineering Trust in Deployments",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 27, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 24, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
@@ -18,7 +151,7 @@
     "href": "about.html#our-toolset",
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Our Toolset",
-    "text": "Our Toolset\nAI Success Factors: Engineering Trust in Deployments is more than just a blog - it’s a demonstration of how modern data science tools can streamline and simplify complex processes.\nOur blogging platform is built using Quarto, an open-source scientific and technical publishing system known for its flexibility and robustness. Quarto has the unique ability to support a wide range of content types, including Jupyter notebooks, R Markdown, and even Python or R scripts. Quarto’s distinctive feature is its ability to include executable code within the documents from various languages such as Python, R, and others. This allows us to create data-driven blog posts where the output - be it a graph, a table, or other data representations - is generated directly from the included code. This adds an interactive element to our posts, giving readers a deeper understanding of the concepts and analyses presented. Quarto supports multiple output formats including HTML, PDF, EPUB, and Word, providing us the versatility to tailor our content to suit different needs. This flexible tool, coupled with its capability to handle larger projects made up of multiple files, allows us to efficiently manage our blog while maintaining consistency and quality across our posts.\nDevelopment Containers serve as our primary environment for data science, providing a consistent and replicable framework for running our analyses. These containerized environments allow us to standardize our work and ensure that our research is reproducible and reliable. The dev container uses the Mamba solver to provision the python environment from the specification in the environment.yml.\nWe use Visual Studio Code (VS Code) as our primary code editor, taking advantage of its rich ecosystem of extensions and in-built features. VS Code’s Jupyter notebook support allows us to interactively develop and visualize our data models directly within the editor, enabling us to produce intuitive, data-driven narratives for our blog posts.\nAll of our content is version controlled and hosted on GitHub. GitHub’s robust versioning system allows us to effectively manage changes, track progress, and ensure that every piece of content we publish is up to date and accurate.\nThe blog is published using GitHub Page, a platform that simplifies the deployment process and seamlessly integrates with our existing GitHub repository. This setup enables us to provide a reliable, accessible resource for our readers, irrespective of where they are or when they choose to access our content.\nFinally, we utilize GitHub Code Spaces to create a fully-featured, cloud-hosted development environment that can be accessed from any device. This not only allows us to work from anywhere but also ensures that our setup can be easily replicated by other researchers and developers who wish to explore our code.\nEach tool in our stack has been chosen for its ability to facilitate efficient, reliable, and transparent data science. By sharing our toolset, we hope to provide insight into our workflows and encourage a culture of open, reproducible research within the AI community."
+    "text": "Our Toolset\nAI Success Factors: Engineering Trust in Deployments is more than just a blog - it’s a demonstration of how modern data science tools can streamline and simplify complex processes.\nOur blogging platform is built using Quarto, an open-source scientific and technical publishing system known for its flexibility and robustness. Quarto has the unique ability to support a wide range of content types, including Jupyter notebooks, R Markdown, and even Python or R scripts. Quarto’s distinctive feature is its ability to include executable code within the documents from various languages such as Python, R, and others. This allows us to create data-driven blog posts where the output - be it a graph, a table, or other data representations - is generated directly from the included code. This adds an interactive element to our posts, giving readers a deeper understanding of the concepts and analyses presented. Quarto supports multiple output formats including HTML, PDF, EPUB, and Word, providing us the versatility to tailor our content to suit different needs. This flexible tool, coupled with its capability to handle larger projects made up of multiple files, allows us to efficiently manage our blog while maintaining consistency and quality across our posts. Quarto presentations are also used to generate revealjs presentations for weekly slide shows. Quarto forms the basis for Fast.ai’s nbdev framework for exploritory programming allowing for software development in Jupyter Notebooks and automated generation of Python modules and documentation from the notebooks.\nDevelopment Containers serve as our primary environment for data science, providing a consistent and replicable framework for running our analyses. These containerized environments allow us to standardize our work and ensure that our research is reproducible and reliable. The dev container uses the Mamba solver to provision the python environment from the specification in the environment.yml.\nWe use Visual Studio Code (VS Code) as our primary code editor, taking advantage of its rich ecosystem of extensions and in-built features. VS Code’s Jupyter notebook support allows us to interactively develop and visualize our data models directly within the editor, enabling us to produce intuitive, data-driven narratives for our blog posts.\nAll of our content is version controlled and hosted on GitHub. GitHub’s robust versioning system allows us to effectively manage changes, track progress, and ensure that every piece of content we publish is up to date and accurate.\nThe blog is published using GitHub Page, a platform that simplifies the deployment process and seamlessly integrates with our existing GitHub repository. This setup enables us to provide a reliable, accessible resource for our readers, irrespective of where they are or when they choose to access our content.\nFinally, we utilize GitHub Code Spaces to create a fully-featured, cloud-hosted development environment that can be accessed from any device. This not only allows us to work from anywhere but also ensures that our setup can be easily replicated by other researchers and developers who wish to explore our code.\nEach tool in our stack has been chosen for its ability to facilitate efficient, reliable, and transparent data science. By sharing our toolset, we hope to provide insight into our workflows and encourage a culture of open, reproducible research within the AI community."
   },
   {
     "objectID": "about.html#generative-ai-in-content-creation",
@@ -26,26 +159,5 @@
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Generative AI in Content Creation",
     "text": "Generative AI in Content Creation\nIn creating AI Success Factors: Engineering Trust in Deployments, we harness the power of artificial intelligence in conjunction with human expertise. We utilize advanced Generative AI models such as ChatGPT, Bing Chat, and Anthropic Claude in a guided, iterative process that combines the best of AI and human capabilities.\nOur use of Generative AI begins with the drafting stage. These models, trained on extensive datasets, generate human-like text that matches our specified tone and style, providing us with a solid foundation for each blog post. This allows us to focus on the larger narrative without getting mired in the nitty-gritty details from the outset.\nThe AI-generated drafts, while sophisticated, are just the starting point. We employ a methodology that involves guiding the AI to improve its output. This includes providing more detailed prompts, specifying the format we want the output in, or asking the model to think step-by-step before settling on a conclusion.\nOnce we have a draft that we’re satisfied with, it’s time for human intervention. Our team reviews the AI-generated content, refining and editing it to ensure it maintains the standards of accuracy, relevance, and depth that our readers expect. This process leverages critical human skills of creativity, critical thinking, and domain expertise that even the most advanced AI can’t replicate.\nThis approach exemplifies our vision of a symbiotic relationship between AI and humans. By effectively integrating Generative AI into our content creation process, we not only boost our productivity and efficiency but also demonstrate the practical application of AI technologies in real-world scenarios. Thus, the blog becomes a testament to our commitment to translational research and our pursuit of an AI-integrated future."
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AI Success Factors: Engineering Trust in Deployments",
-    "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 27, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 24, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   }
 ]
