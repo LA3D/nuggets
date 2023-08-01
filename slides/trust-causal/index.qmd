@@ -2,6 +2,7 @@
 title: "Trust and Causal Reasoning"
 author: "Charles F Vardeman II"
 date: "2023-08-01"
+embed-resources: true
 format: 
     revealjs:
         slide-number: true
