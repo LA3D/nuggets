@@ -69,14 +69,6 @@ Learn more: [Gorilla: Large Language Model Connected with Massive APIs
 Learn more: [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory)
 :::
 
-## LLaMA2-Accessory
-
-![](llama2_accessory.png){fig-align="center"}
-
-::: footer
-Learn more: [LLaMA2-Accessory](https://github.com/Alpha-VLLM/LLaMA2-Accessory)
-:::
-
 
 ## MultiLingual Token Analysis
 
