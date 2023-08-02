@@ -98,18 +98,11 @@
     "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
   },
   {
-    "objectID": "slideindex.html",
-    "href": "slideindex.html",
-    "title": "Weekly Nugget Presentations",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI Success Factors: Engineering Trust in Deployments",
     "section": "",
-    "text": "Trust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 27, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 24, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -119,11 +112,102 @@
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AI Success Factors: Engineering Trust in Deployments",
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 27, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 24, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "slideindex.html",
+    "href": "slideindex.html",
+    "title": "Weekly Nugget Presentations",
+    "section": "",
+    "text": "KG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 2, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
+    "href": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
+    "title": "KG Construction",
+    "section": "KG Construction Pipeline",
+    "text": "KG Construction Pipeline"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
+    "title": "KG Construction",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
+    "title": "KG Construction",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-2",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-2",
+    "title": "KG Construction",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-3",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-3",
+    "title": "KG Construction",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#llm-kg-construction-frameworks-llamaindex",
+    "href": "slides/kg-llamaindex/index.html#llm-kg-construction-frameworks-llamaindex",
+    "title": "KG Construction",
+    "section": "LLM KG Construction Frameworks Llamaindex",
+    "text": "LLM KG Construction Frameworks Llamaindex\n\nLearn more: Llamaindex"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#rebel-large-model",
+    "href": "slides/kg-llamaindex/index.html#rebel-large-model",
+    "title": "KG Construction",
+    "section": "Rebel Large Model",
+    "text": "Rebel Large Model\n#| echo: true\nfrom transformers import pipeline\n\ntriplet_extractor = pipeline('text2text-generation', model='Babelscape/rebel-large', tokenizer='Babelscape/rebel-large')\n# We need to use the tokenizer manually since we need special tokens.\nextracted_text = triplet_extractor.tokenizer.batch_decode([triplet_extractor(\"Punta Cana is a resort town in the municipality of Higuey, in La Altagracia Province, the eastern most province of the Dominican Republic\", return_tensors=True, return_text=False)[0][\"generated_token_ids\"]])\nprint(extracted_text[0])\n# Function to parse the generated text and extract the triplets\ndef extract_triplets(text):\n    triplets = []\n    relation, subject, relation, object_ = '', '', '', ''\n    text = text.strip()\n    current = 'x'\n    for token in text.replace(\"&lt;s&gt;\", \"\").replace(\"&lt;pad&gt;\", \"\").replace(\"&lt;/s&gt;\", \"\").split():\n        if token == \"&lt;triplet&gt;\":\n            current = 't'\n            if relation != '':\n                triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n                relation = ''\n            subject = ''\n        elif token == \"&lt;subj&gt;\":\n            current = 's'\n            if relation != '':\n                triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n            object_ = ''\n        elif token == \"&lt;obj&gt;\":\n            current = 'o'\n            relation = ''\n        else:\n            if current == 't':\n                subject += ' ' + token\n            elif current == 's':\n                object_ += ' ' + token\n            elif current == 'o':\n                relation += ' ' + token\n    if subject != '' and relation != '' and object_ != '':\n        triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n    return triplets\nextracted_triplets = extract_triplets(extracted_text[0])\nprint(extracted_triplets)\n\nLearn more: Rebel Large"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#llamaindex-with-rebel",
+    "href": "slides/kg-llamaindex/index.html#llamaindex-with-rebel",
+    "title": "KG Construction",
+    "section": "LlamaIndex with Rebel",
+    "text": "LlamaIndex with Rebel\n\n\nLearn more: Llamaindex with Rebel Colab Notebook"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
+    "href": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
+    "title": "KG Construction",
+    "section": "Weaviate With Llama 2 and Llamaindex",
+    "text": "Weaviate With Llama 2 and Llamaindex\n\n\nLearn more: Welcome to the quick notebook on using Llama 2"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs",
+    "href": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs",
+    "title": "KG Construction",
+    "section": "Weaviate “Knowledge Graphs”",
+    "text": "Weaviate “Knowledge Graphs”\n\n\nExample: NASA Graph-Enabled Vector Search"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs-1",
+    "href": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs-1",
+    "title": "KG Construction",
+    "section": "Weaviate “Knowledge Graphs”",
+    "text": "Weaviate “Knowledge Graphs”\n\n\nExample: NASA Graph-Enabled Vector Search"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#aws-neptune",
+    "href": "slides/kg-llamaindex/index.html#aws-neptune",
+    "title": "KG Construction",
+    "section": "AWS Neptune",
+    "text": "AWS Neptune\n\n\nLearn More: Amazon Neptune"
   },
   {
     "objectID": "about.html",
