@@ -123,7 +123,7 @@
     "href": "slideindex.html",
     "title": "Weekly Nugget Presentations",
     "section": "",
-    "text": "KG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 2, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "text": "KG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
@@ -182,6 +182,13 @@
     "text": "LlamaIndex with Rebel\n\n\nLearn more: Llamaindex with Rebel Colab Notebook"
   },
   {
+    "objectID": "slides/kg-llamaindex/index.html#llamaindex-with-rebel-and-neo4j",
+    "href": "slides/kg-llamaindex/index.html#llamaindex-with-rebel-and-neo4j",
+    "title": "KG Construction",
+    "section": "LlamaIndex with Rebel and Neo4j",
+    "text": "LlamaIndex with Rebel and Neo4j\n\n\nLearn more: Neo4j Graph Store\nGitHub: Tomaz Bratanic"
+  },
+  {
     "objectID": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
     "href": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
     "title": "KG Construction",
@@ -208,6 +215,20 @@
     "title": "KG Construction",
     "section": "AWS Neptune",
     "text": "AWS Neptune\n\n\nLearn More: Amazon Neptune"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#amazon-science-refined",
+    "href": "slides/kg-llamaindex/index.html#amazon-science-refined",
+    "title": "KG Construction",
+    "section": "Amazon Science ReFinED",
+    "text": "Amazon Science ReFinED\n\n\nPaper: ReFinED: An Efficient Zero-shot-capable Approach to End-to-End Entity Linking\nPaper: Improving Entity Disambiguation by Reasoning over a Knowledge Base\nGitHub: Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#amazon-science-kgqa",
+    "href": "slides/kg-llamaindex/index.html#amazon-science-kgqa",
+    "title": "KG Construction",
+    "section": "Amazon Science KGQA",
+    "text": "Amazon Science KGQA\n\n\nWebsite: Language models as controlled natural language semantic parsers for knowledge graph question answering GitHub: Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering"
   },
   {
     "objectID": "about.html",

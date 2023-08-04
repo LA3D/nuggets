@@ -1,7 +1,7 @@
 ---
 title: "KG Construction"
 author: "Charles F Vardeman II"
-date: "2023-08-02"
+date: "2023-08-04"
 embed-resources: true
 format: 
     revealjs:
@@ -103,6 +103,16 @@ Learn more: [Rebel Large](https://huggingface.co/Babelscape/rebel-large)
 Learn more: [Llamaindex with Rebel Colab Notebook](https://colab.research.google.com/drive/1OO1JYe_uNN1XwW5fI1K_OyR4ohrYoYC3?usp=sharing)
 :::
 
+## LlamaIndex with Rebel and Neo4j
+![](llamaindex_rebel.png){fig-align="center"}
+
+::: footer
+Learn more: [Neo4j Graph Store](https://gpt-index.readthedocs.io/en/latest/examples/index_structs/knowledge_graph/Neo4jKGIndexDemo.html)
+
+GitHub: [Tomaz Bratanic](https://github.com/tomasonjo/blogs/blob/master/llm/Llamaindex-rebel-neo4j.ipynb)
+:::
+
+
 ## Weaviate With Llama 2 and Llamaindex
 ![](weaviate_recipes.png){fig-align="center"}
 
@@ -129,4 +139,23 @@ Example: [NASA Graph-Enabled Vector Search](https://ntrs.nasa.gov/api/citations/
 
 ::: footer
 Learn More: [Amazon Neptune](https://aws.amazon.com/neptune/)
+:::
+
+## Amazon Science ReFinED
+![](refined_amazonscience.png){fig-align="center"}
+
+::: footer
+Paper: [ReFinED: An Efficient Zero-shot-capable Approach to End-to-End Entity Linking](https://arxiv.org/abs/2207.04108)
+
+Paper: [Improving Entity Disambiguation by Reasoning over a Knowledge Base](https://arxiv.org/pdf/2207.04106.pdf)
+
+GitHub: [Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering](https://github.com/amazon-science/ReFinED)
+:::
+
+## Amazon Science KGQA
+![](kgqa_amazonscience.png){fig-align="center"}
+
+::: footer
+Website: [Language models as controlled natural language semantic parsers for knowledge graph question answering](https://www.amazon.science/publications/language-models-as-controlled-natural-language-semantic-parsers-for-knowledge-graph-question-answering)
+GitHub: [Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering](https://github.com/NIMI-research/CNL_KGQA)
 :::
