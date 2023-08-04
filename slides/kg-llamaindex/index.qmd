@@ -149,7 +149,7 @@ Paper: [ReFinED: An Efficient Zero-shot-capable Approach to End-to-End Entity Li
 
 Paper: [Improving Entity Disambiguation by Reasoning over a Knowledge Base](https://arxiv.org/pdf/2207.04106.pdf)
 
-GitHub: [Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering](https://github.com/amazon-science/ReFinED)
+GitHub: [ReFinED is an efficient and accurate entity linking (EL) system.](https://github.com/amazon-science/ReFinED)
 :::
 
 ## Amazon Science KGQA

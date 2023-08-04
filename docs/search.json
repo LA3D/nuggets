@@ -221,7 +221,7 @@
     "href": "slides/kg-llamaindex/index.html#amazon-science-refined",
     "title": "KG Construction",
     "section": "Amazon Science ReFinED",
-    "text": "Amazon Science ReFinED\n\n\nPaper: ReFinED: An Efficient Zero-shot-capable Approach to End-to-End Entity Linking\nPaper: Improving Entity Disambiguation by Reasoning over a Knowledge Base\nGitHub: Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering"
+    "text": "Amazon Science ReFinED\n\n\nPaper: ReFinED: An Efficient Zero-shot-capable Approach to End-to-End Entity Linking\nPaper: Improving Entity Disambiguation by Reasoning over a Knowledge Base\nGitHub: ReFinED is an efficient and accurate entity linking (EL) system."
   },
   {
     "objectID": "slides/kg-llamaindex/index.html#amazon-science-kgqa",
