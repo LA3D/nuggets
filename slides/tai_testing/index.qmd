@@ -1,0 +1,88 @@
+---
+title: "Things that concern Dr. Vardeman: Testing"
+author: "Charles F Vardeman II"
+date: "2023-08-07"
+embed-resources: true
+format: 
+    revealjs:
+        slide-number: true
+categories: [frameworks,trustedAI,Testing]
+---
+
+## Real World Machine Learning "Pipelines"
+![](karpathy_data_tweet.png){fig-align="center"}
+
+::: footer
+Twitter: [Andrej Karpathy](https://twitter.com/karpathy/status/1599852921541128194)
+:::
+
+## Real World Machine Learning "Data Engine"
+![](tesla_AI_dataflow.png){fig-align="center"}
+
+::: footer
+Twitter: [Andrej Karpathy](https://twitter.com/karpathy/status/1599852921541128194)
+:::
+
+
+## What is "Testing" for AI vs Traditional Software Testing
+![](effective_testing_ml_systems.png){fig-align="center"}
+
+::: footer
+Learn More: [Effective testing for machine learning systems](https://www.jeremyjordan.me/testing-ml/)
+
+Youtube Discussion: [MLOps Chat: How Should We Test ML Models? with Data Scientist Jeremy Jordan](https://youtu.be/k0naEYedv5I)
+:::
+
+## Testing "Software 1.0" vs "Software 2.0"
+![](testing_ml_systems.png){fig-align="center"}
+
+::: footer
+Learn More: [Effective testing for machine learning systems](https://www.jeremyjordan.me/testing-ml/)
+:::
+
+
+## "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList"
+
+![](behavior_testing_NLP_checklist.png){fig-align="center"}
+
+::: footer
+Learn More: [Beyond Accuracy: Behavioral Testing of NLP Models with CheckList](https://aclanthology.org/2020.acl-main.442/)
+:::
+
+## Examples of "real world" testing
+![](microsoft_recommenders_github.png){fig-align="center"}
+
+::: footer
+Learn More: [Microsoft Recommenders GitHub](https://github.com/microsoft/recommenders/tree/main/tests)
+:::
+
+## Examples of "real world" testing as a starting point
+![](microsoft_recommenders_tests.png){fig-align="center"}
+
+::: footer
+Learn More: [Microsoft Recommenders GitHub](https://github.com/microsoft/recommenders/tree/main/tests)
+:::
+
+# Examples of "real world" testing as a starting point
+![](microsoft_testing_azureML.png){fig-align="center"}
+
+::: footer
+Learn More: [Microsoft Recommenders GitHub](https://github.com/microsoft/recommenders/tree/main/tests)
+:::
+
+## ChatGPT Behavior Drift?
+
+![](gpt_behavior_drift.png){fig-align="center"}
+
+::: footer
+Learn More: [How is ChatGPT's behavior changing over time?](https://arxiv.org/abs/2307.09009)
+:::
+
+
+## ChatGPT Behavior Drift?
+
+![](gpt_behavior_drift_chart.png){fig-align="center"}
+
+::: footer
+Learn More: [How is ChatGPT's behavior changing over time?](https://arxiv.org/abs/2307.09009)
+:::

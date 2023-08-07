@@ -7,123 +7,67 @@
     "text": "ChatGPT, please assist in drafting a blog post for AI Success Factors: Engineering Trust in Deployments. As a generative AI, your input serves as a starting point for discussion and is meticulously reviewed and edited by a team of AI researchers at the Laboratory for Assured AI Applications Development at the University of Notre Dame’s Center for Research Computing.\nThe intended audience includes students, professionals, and enthusiasts interested in the progression of AI, with a focus on the successful deployment of AI technologies. Each post aims to disseminate recent advancements and knowledge in AI, particularly in the fields of AI engineering, trust in AI, and knowledge engineering.\nFor this post, please generate content on the importance of trust in successful AI deployments. Begin with a general introduction to AI deployments, transition into the crucial role of trust, and provide real-world examples where the absence of trust led to issues. Discuss strategies for building trust in AI systems and conclude with insights on future trends in trust within the AI landscape. The tone should be academic yet accessible to our diverse readership."
   },
   {
-    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
-    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
-    "title": "Trust and Causal Reasoning",
-    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
-    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
+    "objectID": "slides/tai_testing/index.html#real-world-machine-learning-pipelines",
+    "href": "slides/tai_testing/index.html#real-world-machine-learning-pipelines",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Real World Machine Learning “Pipelines”",
+    "text": "Real World Machine Learning “Pipelines”\n\n\nTwitter: Andrej Karpathy"
   },
   {
-    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
-    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
-    "title": "Trust and Causal Reasoning",
-    "section": "Towards Trustworthy and Aligned ML Website",
-    "text": "Towards Trustworthy and Aligned ML Website\n\n\nTowards Trustworthy and Aligned ML"
+    "objectID": "slides/tai_testing/index.html#real-world-machine-learning-data-engine",
+    "href": "slides/tai_testing/index.html#real-world-machine-learning-data-engine",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Real World Machine Learning “Data Engine”",
+    "text": "Real World Machine Learning “Data Engine”\n\n\nTwitter: Andrej Karpathy"
   },
   {
-    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
-    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
-    "title": "Trust and Causal Reasoning",
-    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
-    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
+    "objectID": "slides/tai_testing/index.html#what-is-testing-for-ai-vs-traditional-software-testing",
+    "href": "slides/tai_testing/index.html#what-is-testing-for-ai-vs-traditional-software-testing",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "What is “Testing” for AI vs Traditional Software Testing",
+    "text": "What is “Testing” for AI vs Traditional Software Testing\n\n\nLearn More: Effective testing for machine learning systems\nYoutube Discussion: MLOps Chat: How Should We Test ML Models? with Data Scientist Jeremy Jordan"
   },
   {
-    "objectID": "slides/trust-causal/index.html#causal-reasoning",
-    "href": "slides/trust-causal/index.html#causal-reasoning",
-    "title": "Trust and Causal Reasoning",
-    "section": "Causal Reasoning",
-    "text": "Causal Reasoning\n\n\nLearn more: Amazon Book of Why"
+    "objectID": "slides/tai_testing/index.html#testing-software-1.0-vs-software-2.0",
+    "href": "slides/tai_testing/index.html#testing-software-1.0-vs-software-2.0",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Testing “Software 1.0” vs “Software 2.0”",
+    "text": "Testing “Software 1.0” vs “Software 2.0”\n\n\nLearn More: Effective testing for machine learning systems"
   },
   {
-    "objectID": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
-    "href": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
-    "title": "Trust and Causal Reasoning",
-    "section": "Trustworthy ML Initiative (TrustML)",
-    "text": "Trustworthy ML Initiative (TrustML)\n\n\nLearn more: Trustworthy ML Org"
+    "objectID": "slides/tai_testing/index.html#beyond-accuracy-behavioral-testing-of-nlp-models-with-checklist",
+    "href": "slides/tai_testing/index.html#beyond-accuracy-behavioral-testing-of-nlp-models-with-checklist",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "“Beyond Accuracy: Behavioral Testing of NLP Models with CheckList”",
+    "text": "“Beyond Accuracy: Behavioral Testing of NLP Models with CheckList”\n\n\nLearn More: Beyond Accuracy: Behavioral Testing of NLP Models with CheckList"
   },
   {
-    "objectID": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
-    "href": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
-    "title": "Trust and Causal Reasoning",
-    "section": "Gorilla API to Ground “Tool Use”",
-    "text": "Gorilla API to Ground “Tool Use”\n\n\nLearn more: Gorilla: Large Language Model Connected with Massive APIs"
+    "objectID": "slides/tai_testing/index.html#examples-of-real-world-testing",
+    "href": "slides/tai_testing/index.html#examples-of-real-world-testing",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Examples of “real world” testing",
+    "text": "Examples of “real world” testing\n\n\nLearn More: Microsoft Recommenders GitHub"
   },
   {
-    "objectID": "slides/trust-causal/index.html#llama2-accessory",
-    "href": "slides/trust-causal/index.html#llama2-accessory",
-    "title": "Trust and Causal Reasoning",
-    "section": "LLaMA2-Accessory",
-    "text": "LLaMA2-Accessory\n\n\nLearn more: LLaMA2-Accessory"
+    "objectID": "slides/tai_testing/index.html#examples-of-real-world-testing-as-a-starting-point",
+    "href": "slides/tai_testing/index.html#examples-of-real-world-testing-as-a-starting-point",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Examples of “real world” testing as a starting point",
+    "text": "Examples of “real world” testing as a starting point\n\n\nLearn More: Microsoft Recommenders GitHub"
   },
   {
-    "objectID": "slides/trust-causal/index.html#multilingual-token-analysis",
-    "href": "slides/trust-causal/index.html#multilingual-token-analysis",
-    "title": "Trust and Causal Reasoning",
-    "section": "MultiLingual Token Analysis",
-    "text": "MultiLingual Token Analysis\n\n\nLearn more: Video: LLaMA2 Multilingual Models and Fine Tuning\nGoogle Collab Notebook:"
+    "objectID": "slides/tai_testing/index.html#chatgpt-behavior-drift",
+    "href": "slides/tai_testing/index.html#chatgpt-behavior-drift",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "ChatGPT Behavior Drift?",
+    "text": "ChatGPT Behavior Drift?\n\n\nLearn More: How is ChatGPT’s behavior changing over time?"
   },
   {
-    "objectID": "slides/trust-causal/index.html#metaai-dinov2",
-    "href": "slides/trust-causal/index.html#metaai-dinov2",
-    "title": "Trust and Causal Reasoning",
-    "section": "MetaAI DINOv2",
-    "text": "MetaAI DINOv2\n\n\nLearn more: DINOv2 by Meta AI"
-  },
-  {
-    "objectID": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
-    "href": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
-    "title": "Trust and Causal Reasoning",
-    "section": "MetaAI DINOv2 Huggingface Release",
-    "text": "MetaAI DINOv2 Huggingface Release\n\n\nLearn more: DINOv2 by Meta AI Huggingface"
-  },
-  {
-    "objectID": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
-    "href": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
-    "title": "Trust and Causal Reasoning",
-    "section": "Example notebook for DINOv2 Semantic Segmentation",
-    "text": "Example notebook for DINOv2 Semantic Segmentation\n\n\nLearn more: Linear probing of DINOv2 for semantic segmentation"
-  },
-  {
-    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
-    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
-    "title": "Trust and Causal Reasoning",
-    "section": "Linear Regression Model for Reasoning",
-    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
-  },
-  {
-    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
-    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
-    "title": "Trust and Causal Reasoning",
-    "section": "Linear Regression Model for Reasoning",
-    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AI Success Factors: Engineering Trust in Deployments",
-    "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 27, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 24, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
-    "objectID": "slideindex.html",
-    "href": "slideindex.html",
-    "title": "Weekly Nugget Presentations",
-    "section": "",
-    "text": "KG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "objectID": "slides/tai_testing/index.html#chatgpt-behavior-drift-1",
+    "href": "slides/tai_testing/index.html#chatgpt-behavior-drift-1",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "ChatGPT Behavior Drift?",
+    "text": "ChatGPT Behavior Drift?\n\n\nLearn More: How is ChatGPT’s behavior changing over time?"
   },
   {
     "objectID": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
@@ -229,6 +173,125 @@
     "title": "KG Construction",
     "section": "Amazon Science KGQA",
     "text": "Amazon Science KGQA\n\n\nWebsite: Language models as controlled natural language semantic parsers for knowledge graph question answering GitHub: Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering"
+  },
+  {
+    "objectID": "slideindex.html",
+    "href": "slideindex.html",
+    "title": "Weekly Nugget Presentations",
+    "section": "",
+    "text": "Things that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI Success Factors: Engineering Trust in Deployments",
+    "section": "",
+    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 27, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 24, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
+    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned ML Website",
+    "text": "Towards Trustworthy and Aligned ML Website\n\n\nTowards Trustworthy and Aligned ML"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
+    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#causal-reasoning",
+    "href": "slides/trust-causal/index.html#causal-reasoning",
+    "title": "Trust and Causal Reasoning",
+    "section": "Causal Reasoning",
+    "text": "Causal Reasoning\n\n\nLearn more: Amazon Book of Why"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
+    "href": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
+    "title": "Trust and Causal Reasoning",
+    "section": "Trustworthy ML Initiative (TrustML)",
+    "text": "Trustworthy ML Initiative (TrustML)\n\n\nLearn more: Trustworthy ML Org"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
+    "href": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
+    "title": "Trust and Causal Reasoning",
+    "section": "Gorilla API to Ground “Tool Use”",
+    "text": "Gorilla API to Ground “Tool Use”\n\n\nLearn more: Gorilla: Large Language Model Connected with Massive APIs"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#llama2-accessory",
+    "href": "slides/trust-causal/index.html#llama2-accessory",
+    "title": "Trust and Causal Reasoning",
+    "section": "LLaMA2-Accessory",
+    "text": "LLaMA2-Accessory\n\n\nLearn more: LLaMA2-Accessory"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#multilingual-token-analysis",
+    "href": "slides/trust-causal/index.html#multilingual-token-analysis",
+    "title": "Trust and Causal Reasoning",
+    "section": "MultiLingual Token Analysis",
+    "text": "MultiLingual Token Analysis\n\n\nLearn more: Video: LLaMA2 Multilingual Models and Fine Tuning\nGoogle Collab Notebook:"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#metaai-dinov2",
+    "href": "slides/trust-causal/index.html#metaai-dinov2",
+    "title": "Trust and Causal Reasoning",
+    "section": "MetaAI DINOv2",
+    "text": "MetaAI DINOv2\n\n\nLearn more: DINOv2 by Meta AI"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
+    "href": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
+    "title": "Trust and Causal Reasoning",
+    "section": "MetaAI DINOv2 Huggingface Release",
+    "text": "MetaAI DINOv2 Huggingface Release\n\n\nLearn more: DINOv2 by Meta AI Huggingface"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
+    "href": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
+    "title": "Trust and Causal Reasoning",
+    "section": "Example notebook for DINOv2 Semantic Segmentation",
+    "text": "Example notebook for DINOv2 Semantic Segmentation\n\n\nLearn more: Linear probing of DINOv2 for semantic segmentation"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
+    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
+    "title": "Trust and Causal Reasoning",
+    "section": "Linear Regression Model for Reasoning",
+    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
+    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
+    "title": "Trust and Causal Reasoning",
+    "section": "Linear Regression Model for Reasoning",
+    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
   },
   {
     "objectID": "about.html",

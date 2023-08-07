@@ -1,16 +1,17 @@
 [
   {
+    "listing": "/slideindex.html",
+    "items": [
+      "/slides/tai_testing/index.html",
+      "/slides/kg-llamaindex/index.html",
+      "/slides/trust-causal/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/post-with-code/index.html",
       "/posts/welcome/index.html"
-    ]
-  },
-  {
-    "listing": "/slideindex.html",
-    "items": [
-      "/slides/kg-llamaindex/index.html",
-      "/slides/trust-causal/index.html"
     ]
   }
 ]
