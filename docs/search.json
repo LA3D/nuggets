@@ -39,7 +39,7 @@
     "href": "slides/tai_testing/index.html#beyond-accuracy-behavioral-testing-of-nlp-models-with-checklist",
     "title": "Things that concern Dr. Vardeman: Testing",
     "section": "“Beyond Accuracy: Behavioral Testing of NLP Models with CheckList”",
-    "text": "“Beyond Accuracy: Behavioral Testing of NLP Models with CheckList”\n\n\nLearn More: Beyond Accuracy: Behavioral Testing of NLP Models with CheckList"
+    "text": "“Beyond Accuracy: Behavioral Testing of NLP Models with CheckList”\n\n\nLearn More: Beyond Accuracy: Behavioral Testing of NLP Models with CheckList\nGitHub:Beyond Accuracy: Behavioral Testing of NLP Models with CheckList"
   },
   {
     "objectID": "slides/tai_testing/index.html#examples-of-real-world-testing",
@@ -68,6 +68,69 @@
     "title": "Things that concern Dr. Vardeman: Testing",
     "section": "ChatGPT Behavior Drift?",
     "text": "ChatGPT Behavior Drift?\n\n\nLearn More: How is ChatGPT’s behavior changing over time?"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#tracking-llm-agent-abilities",
+    "href": "slides/tai_testing/index.html#tracking-llm-agent-abilities",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Tracking LLM “Agent Abilities”",
+    "text": "Tracking LLM “Agent Abilities”\n\n\nLearn More: AgentBench: Evaluating LLMs as Agents"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#tracking-llm-agent-abilities-1",
+    "href": "slides/tai_testing/index.html#tracking-llm-agent-abilities-1",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Tracking LLM “Agent Abilities”",
+    "text": "Tracking LLM “Agent Abilities”\n\n\nLearn More: AgentBench: Evaluating LLMs as Agents"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#testing-in-the-context-of-cicd",
+    "href": "slides/tai_testing/index.html#testing-in-the-context-of-cicd",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Testing in the context of CI/CD",
+    "text": "Testing in the context of CI/CD\n\n\nLearn More: Testing stages in continuous integration and continuous delivery"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#testing-in-the-context-of-sboms",
+    "href": "slides/tai_testing/index.html#testing-in-the-context-of-sboms",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Testing in the context of SBoMs",
+    "text": "Testing in the context of SBoMs\n\n\nLearn More: Testing stages in continuous integration and continuous delivery"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#other-updates",
+    "href": "slides/tai_testing/index.html#other-updates",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Other Updates",
+    "text": "Other Updates"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#deploying-llama2-to-aws",
+    "href": "slides/tai_testing/index.html#deploying-llama2-to-aws",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Deploying llama2 to AWS",
+    "text": "Deploying llama2 to AWS\n\n\nLearn More: Deploy Llama 2 7B/13B/70B on Amazon SageMaker"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#deploying-llama2-to-aws-1",
+    "href": "slides/tai_testing/index.html#deploying-llama2-to-aws-1",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Deploying llama2 to AWS",
+    "text": "Deploying llama2 to AWS\n\n\nLearn More: Deploy Llama 2 7B/13B/70B on Amazon SageMaker"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#juypter-ai",
+    "href": "slides/tai_testing/index.html#juypter-ai",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Juypter AI",
+    "text": "Juypter AI\n\n\nLearn More: Generative AI in Jupyter\nGitHub: A generative AI extension for JupyterLab"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#juypter-ai-1",
+    "href": "slides/tai_testing/index.html#juypter-ai-1",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Juypter AI",
+    "text": "Juypter AI\n\n\nLearn More: Generative AI in Jupyter"
   },
   {
     "objectID": "slides/kg-llamaindex/index.html#kg-construction-pipeline",

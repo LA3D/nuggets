@@ -47,6 +47,8 @@ Learn More: [Effective testing for machine learning systems](https://www.jeremyj
 
 ::: footer
 Learn More: [Beyond Accuracy: Behavioral Testing of NLP Models with CheckList](https://aclanthology.org/2020.acl-main.442/)
+
+GitHub:[Beyond Accuracy: Behavioral Testing of NLP Models with CheckList]( https://github.com/marcotcr/checklist)
 :::
 
 ## Examples of "real world" testing
@@ -85,4 +87,66 @@ Learn More: [How is ChatGPT's behavior changing over time?](https://arxiv.org/ab
 
 ::: footer
 Learn More: [How is ChatGPT's behavior changing over time?](https://arxiv.org/abs/2307.09009)
+:::
+
+## Tracking LLM "Agent Abilities"
+
+![](llm_agent_benchmarks_abstract.png){fig-align="center"}
+
+::: footer
+Learn More: [AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2308.03688)
+:::
+
+## Tracking LLM "Agent Abilities"
+
+![](llm_agent_benchmarks.png){fig-align="center"}
+
+::: footer
+Learn More: [AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2308.03688)
+:::
+
+## Testing in the context of CI/CD
+![](aws_testing_ci-cd.png){fig-align="center"}
+
+::: footer
+Learn More: [Testing stages in continuous integration and continuous delivery](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/testing-stages-in-continuous-integration-and-continuous-delivery.html)
+:::
+
+## Testing in the context of SBoMs
+![](aws_testing_ci-cd-sbom.png){fig-align="center"}
+
+::: footer
+Learn More: [Testing stages in continuous integration and continuous delivery](https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous-integration-continuous-delivery/testing-stages-in-continuous-integration-and-continuous-delivery.html)
+:::
+
+## Other Updates {.center}
+
+## Deploying llama2 to AWS
+![](aws_llama2.png){fig-align="center"}
+
+::: footer
+Learn More: [Deploy Llama 2 7B/13B/70B on Amazon SageMaker](https://www.philschmid.de/sagemaker-llama-llm)
+:::
+
+## Deploying llama2 to AWS
+![](aws_llama2_resources.png){fig-align="center"}
+
+::: footer
+Learn More: [Deploy Llama 2 7B/13B/70B on Amazon SageMaker](https://www.philschmid.de/sagemaker-llama-llm)
+:::
+
+## Juypter AI
+![](jupyter_ai.png){fig-align="center"}
+
+::: footer
+Learn More: [Generative AI in Jupyter](https://blog.jupyter.org/generative-ai-in-jupyter-3f7174824862)
+
+GitHub: [A generative AI extension for JupyterLab](https://github.com/jupyterlab/jupyter-ai)
+:::
+
+## Juypter AI
+![](jupyter_ai_models.png){fig-align="center"}
+
+::: footer
+Learn More: [Generative AI in Jupyter](https://jupyter-ai.readthedocs.io/en/latest/users/index.html)
 :::
