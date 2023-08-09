@@ -4,6 +4,9 @@ project:
 
 website:
   title: "AI Success Factors: Engineering Trust in Deployments"
+  open-graph: true
+  reader-mode: true
+  page-navigation: true
   navbar:
     right:
       - about.qmd
