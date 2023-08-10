@@ -9,6 +9,11 @@ image: "TAI_4-2023.png"
 draft: true
 ---
 
+:::{.callout-note}
+If you have stumbled on this post, it is still in the rough draft state and under major revision.
+:::
+
+
 
 ## Introduction and Context of Trusted AI (TAI)
 
@@ -25,15 +30,27 @@ The TAI Frameworks Project started modestly, aiming to provide a potential integ
 
 Each of these dimensions resonates with different stages of the AI lifecycle, including Data Collection, Data Preparation, Feature Extraction, Training, Testing, and Inference, and is aligned with the AI CI/CD of Development, Use, Analysis, and Re-Design.
 
-![Conceptual Framework Principles for TrustedAI in the AI System Lifecycle](TAI_4-2023.png){#fig-framework}
+![Conceptual Framework Principles for TrustedAI in the AI System Lifecycle](TAI_4-2023.png){#fig-TAI-system}
 
 **Reflection on the Framework Project**
 
-As we look back on two remarkable years, we see an ever-evolving project that has faced both successes and challenges. The integration of trust dimensions into our framework's components, tools, and methodologies has shaped a solution aligned with the Navy's mission. Furthermore, we have explored broader themes like ethical considerations, workforce development, and community involvement, highlighting the multifaceted nature of our approach to trusted AI.
+As we look back on the past years, we see an ever-evolving project that has adapted to the rapidly evolving landscape of **Artificial Intelligence** research and products. The integration of trust dimensions into our framework's components, tools, and methodologies has shaped a solution aligned with the Navy's mission. Furthermore, we have explored broader themes like ethical considerations, workforce development, and community involvement, highlighting the multifaceted nature of our approach to trusted AI. This is end of my first year as PI of the project after taking over from [Prof. Jarek Nabrzyski](https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski) who helmed the first year of the project with [Prof. Chris Sweet](https://crc.nd.edu/about/people/?id=christopher-sweet) and [myself](https://crc.nd.edu/about/people/?id=charles-vardeman). The project was originally proposed by [Prof. Ian Taylor](https://crc.nd.edu/about/people/?id=ian-taylor), who went on leave from the [CRC](https://crc.nd.edu/) as the project was beginning that led to [Prof. Jarek Nabrzuski](https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski) to step in and provide leadership as PI. The direction of the project has changed since the acceptance of the initial proposal as a funded project, but many of the ideas and components of the proposal have remained. Work on evaluating and understanding the challanges and potential solutions to deploying AI technologies in the Navy, as well as capturing and understanding academic AI research outputs fell to Research Programmer [Dr. James Sweet](https://crc.nd.edu/about/people/?id=james-sweet) who spent time reviewing and understanding solutions that were being developed as [open source](https://opensource.org/licenses/) projects and applied in industry to solve some of the challanges with "*AIOps*." Additionally we had some help in creating some simple examples for using the Frameworks and starting the process of thinking about **metadata** for Trusted AI from [Prof. Don Brower](https://crc.nd.edu/about/people/?id=don-brower) who came to the CRC last year from the [Notre Dame Hesburgh Libraries](https://www.library.nd.edu/). In year 2. we were joined by [Prof. Paul Brenner](https://crc.nd.edu/about/people/?id=paul-brenner), who has vast expeience with compute infrastructure and engineering in the military context. We were also joined by several [UND](https://www.nd.edu) undergraduate students **Peter Ainsworth**, **Nicholas Clark** and **Daniel Weldon** who created documentation, tutorials and "*kicked the tires*" on some of the Framework components in as part of the "*AI Application*" development process. We also had three students, **Daniel Weldon**, **William Shephard**, **Samantha Nagel** looking at existing cloud platforms and infrastructure in use by the DoD and attempting to [*containerize*](https://www.ibm.com/topics/containerization) AI applications based on [Pytorch](https://pytorch.org/) to understand the complexity and barriers to AI applications in the DoD cloud.
+
+:::{.callout-note}
+Framework components go here...
+:::
+
+![Conceptual Framework Principles for TrustedAI in the AI System Lifecycle](graphic_tai-framework-1-new.png){#fig-framework}
 
 **Community Engagement and Collaboration**
 
+:::{.callout-note}
+TPOCS, Other TAI projects, IU go here. Informing broader DoD workforce development efforts.
+:::
+
 Our journey has emphasized collaboration, dialogue, and shared learning. By leveraging existing tools and methodologies and engaging in broader community efforts, we have fostered an environment where knowledge is not just consumed but also contributed.
+
+![[@husted2022](orig_TAI_vision.png){#fig-TAI_vision}
 
 **Looking Ahead and Future Vision**
 
@@ -178,6 +195,10 @@ Data Version Control (DVC) emerges as a compelling solution to address these cha
 6. **Flexible Storage Options:** DVC offers flexibility in storing data, supporting various remote storage backends like S3, Azure Blob, Google Cloud Storage, among others. This flexibility aligns with different organizational needs and preferences, ensuring that data management is adaptable to various scenarios.
 
 The selection of DVC in the TAI Frameworks Project represents a thoughtful alignment with the principles of trusted AI, GitOps, and open-source collaboration. By bridging the gap between traditional software engineering practices and the unique demands of AI data management, DVC supports the creation of AI systems that are not only performant but also transparent, replicable, and ethical.
+
+:::{.callout-note}
+Add information about MLFlow and other tools evaluated in this section.
+:::
 
 ### Ethical Considerations and Trust in Data Management: The Navy's Mission and Guiding Principles
 
