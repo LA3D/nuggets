@@ -6,7 +6,7 @@ number-sections: true
 bibliography: framework.bib
 categories: [Trusted AI, AI Frameworks, AI Engineering]
 image: "TAI_4-2023.png"
-draft: true
+draft: false
 ---
 
 :::{.callout-note}
@@ -17,7 +17,7 @@ If you have stumbled on this post, it is still in the rough draft state and unde
 
 ## Introduction and Context of Trusted AI (TAI)
 
-In an age where Artificial Intelligence (AI) is advancing at an unprecedented pace, trust in these intelligent systems is paramount—especially within the context of military operations. Welcome to a reflection on the Trusted AI (TAI) Frameworks Project, a collaborative initiative between Indiana University, University of Notre Dame, and CRANE Naval Surface Warfare Center as part of [Scalable Asymmetric Lifecycle Engagement (SCALE)](https://research.purdue.edu/scale/about/index.php) led by Purdue University. Our mission is to enhance the successful and trusted deployment of AI to the Navy and Marine Corps and fortify the trust that humans have when interacting with these systems.
+In an age where Artificial Intelligence (AI) is advancing at an unprecedented pace, trust in these intelligent systems is paramount—especially within the context of military operations. Welcome to a reflection on the Trusted AI (TAI) Frameworks Project, a [collaborative initiative](https://www.wbiw.com/2021/06/30/nswc-crane-iu-notre-dame-and-purdue-team-up-to-provide-trusted-ai-workforce-development-and-research/?_ga=2.194216941.1383268119.1691608623-1280995064.1690554908) between Indiana University, University of Notre Dame, and CRANE Naval Surface Warfare Center as part of [Scalable Asymmetric Lifecycle Engagement (SCALE)](https://research.purdue.edu/scale/about/index.php) led by Purdue University. Our mission is to enhance the successful and trusted deployment of AI to the Navy and Marine Corps and fortify the trust that humans have when interacting with these systems.
 
 The TAI Frameworks Project started modestly, aiming to provide a potential integration point for outputs from other TAI projects. It sought to inform the Navy in deployment decisions but has since grown and evolved. At the core of this endeavor are the six dimensions of trust in AI:
 
@@ -34,7 +34,7 @@ Each of these dimensions resonates with different stages of the AI lifecycle, in
 
 **Reflection on the Framework Project**
 
-As we look back on the past years, we see an ever-evolving project that has adapted to the rapidly evolving landscape of **Artificial Intelligence** research and products. The integration of trust dimensions into our framework's components, tools, and methodologies has shaped a solution aligned with the Navy's mission. Furthermore, we have explored broader themes like ethical considerations, workforce development, and community involvement, highlighting the multifaceted nature of our approach to trusted AI. This is end of my first year as PI of the project after taking over from [Prof. Jarek Nabrzyski](https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski) who helmed the first year of the project with [Prof. Chris Sweet](https://crc.nd.edu/about/people/?id=christopher-sweet) and [myself](https://crc.nd.edu/about/people/?id=charles-vardeman). The project was originally proposed by [Prof. Ian Taylor](https://crc.nd.edu/about/people/?id=ian-taylor), who went on leave from the [CRC](https://crc.nd.edu/) as the project was beginning that led to [Prof. Jarek Nabrzuski](https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski) to step in and provide leadership as PI. The direction of the project has changed since the acceptance of the initial proposal as a funded project, but many of the ideas and components of the proposal have remained. Work on evaluating and understanding the challanges and potential solutions to deploying AI technologies in the Navy, as well as capturing and understanding academic AI research outputs fell to Research Programmer [Dr. James Sweet](https://crc.nd.edu/about/people/?id=james-sweet) who spent time reviewing and understanding solutions that were being developed as [open source](https://opensource.org/licenses/) projects and applied in industry to solve some of the challanges with "*AIOps*." Additionally we had some help in creating some simple examples for using the Frameworks and starting the process of thinking about **metadata** for Trusted AI from [Prof. Don Brower](https://crc.nd.edu/about/people/?id=don-brower) who came to the CRC last year from the [Notre Dame Hesburgh Libraries](https://www.library.nd.edu/). In year 2. we were joined by [Prof. Paul Brenner](https://crc.nd.edu/about/people/?id=paul-brenner), who has vast expeience with compute infrastructure and engineering in the military context. We were also joined by several [UND](https://www.nd.edu) undergraduate students **Peter Ainsworth**, **Nicholas Clark** and **Daniel Weldon** who created documentation, tutorials and "*kicked the tires*" on some of the Framework components in as part of the "*AI Application*" development process. We also had three students, **Daniel Weldon**, **William Shephard**, **Samantha Nagel** looking at existing cloud platforms and infrastructure in use by the DoD and attempting to [*containerize*](https://www.ibm.com/topics/containerization) AI applications based on [Pytorch](https://pytorch.org/) to understand the complexity and barriers to AI applications in the DoD cloud.
+As we look back on the past years, we see an ever-evolving project that has adapted to the rapidly evolving landscape of **Artificial Intelligence** research and products. The integration of trust dimensions into our framework's components, tools, and methodologies has shaped a solution aligned with the Navy's mission. Furthermore, we have explored broader themes like ethical considerations, workforce development, and community involvement, highlighting the multifaceted nature of our approach to trusted AI. This is end of my first year as PI of the project after taking over from [Prof. Jarek Nabrzyski](https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski) who helmed the first year of the project with [Prof. Chris Sweet](https://crc.nd.edu/about/people/?id=christopher-sweet) and [myself](https://crc.nd.edu/about/people/?id=charles-vardeman). The project was originally proposed by [Prof. Ian Taylor](https://crc.nd.edu/about/people/?id=ian-taylor), who went on leave from the [CRC](https://crc.nd.edu/) as the project was beginning that led to [Prof. Jarek Nabrzyski](https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski) to step in and provide leadership as PI. The direction of the project has changed since the acceptance of the initial proposal as a funded project, but many of the ideas and components of the proposal have remained. Work on evaluating and understanding the challanges and potential solutions to deploying AI technologies in the Navy, as well as capturing and understanding academic AI research outputs fell to Research Programmer [Dr. James Sweet](https://crc.nd.edu/about/people/?id=james-sweet) who spent time reviewing and understanding solutions that were being developed as [open source](https://opensource.org/licenses/) projects and applied in industry to solve some of the challanges with "*AIOps*." Additionally we had some help in creating some simple examples for using the Frameworks and starting the process of thinking about **metadata** for Trusted AI from [Prof. Don Brower](https://crc.nd.edu/about/people/?id=don-brower) who came to the CRC last year from the [Notre Dame Hesburgh Libraries](https://www.library.nd.edu/). In year 2. we were joined by [Prof. Paul Brenner](https://crc.nd.edu/about/people/?id=paul-brenner), who has vast expeience with compute infrastructure and engineering in the military context. We were also joined by several [UND](https://www.nd.edu) undergraduate students **Peter Ainsworth**, **Nicholas Clark** and **Daniel Weldon** who created documentation, tutorials and "*kicked the tires*" on some of the Framework components in as part of the "*AI Application*" development process. We also had three students, **Daniel Weldon**, **William Shephard**, **Samantha Nagel** looking at existing cloud platforms and infrastructure in use by the DoD and attempting to [*containerize*](https://www.ibm.com/topics/containerization) AI applications based on [Pytorch](https://pytorch.org/) to understand the complexity and barriers to AI applications in the DoD cloud.
 
 :::{.callout-note}
 Framework components go here...
@@ -50,7 +50,7 @@ TPOCS, Other TAI projects, IU go here. Informing broader DoD workforce developme
 
 Our journey has emphasized collaboration, dialogue, and shared learning. By leveraging existing tools and methodologies and engaging in broader community efforts, we have fostered an environment where knowledge is not just consumed but also contributed.
 
-![[@husted2022](orig_TAI_vision.png){#fig-TAI_vision}
+![TAI Research Themes [@husted2022]](orig_TAI_vision.png){#fig-TAI_vision}
 
 **Looking Ahead and Future Vision**
 
@@ -67,13 +67,11 @@ The evolution from "Software 1.0" to "Software 2.0," as popularized by Andrej Ka
 
 - **Software 2.0**, in contrast, signifies learned behavior where models are trained on data to infer the underlying patterns. Unlike the rigid rules of Software 1.0, Software 2.0 can handle immense complexity, learning from examples to generalize and adapt to new situations. This ability to process and respond to intricate, multi-dimensional inputs sets Software 2.0 apart, opening doors to applications previously thought unfeasible.
 
-The implications of Software 2.0 are profound for sectors that face highly complex and dynamic environments, such as the Navy. Where traditional rule-based systems may falter or become unwieldy, Software 2.0 offers the flexibility and adaptability to respond to ever-changing scenarios. Its capacity to absorb and interpret vast amounts of information in real-time provides a powerful tool in navigation, threat assessment, strategy formulation, and more. For the Navy, it enables a more resilient, intelligent, and agile approach to both strategic planning and operational execution.
+The implications of Software 2.0 are profound for sectors that face **highly complex and dynamic environments**, such as those present in Navy operations. Where traditional rule-based systems may falter or become unwieldy, Software 2.0 offers the flexibility and adaptability to respond to ever-changing scenarios. Its capacity to absorb and interpret vast amounts of information in real-time provides a powerful tool in navigation, threat assessment, strategy formulation, and more. For the Navy, it enables a more resilient, intelligent, and agile approach to both strategic planning and operational execution.
 
 However, the promise of Software 2.0 doesn't diminish the importance of Trusted "Software 1.0" as the foundation. Stability, predictability, and reliability remain essential, and the Trusted AI Frameworks Project recognizes the symbiotic relationship between these two paradigms. Trusted "Software 1.0" forms the stable base, while Trusted "Software 2.0" enables more dynamic and complex solutions.
 
 The interplay between these two layers presents exciting opportunities and challenges, requiring rigorous validation, ethical considerations, and collaboration to ensure responsible deployment. It's a multifaceted challenge that intertwines technology, ethics, collaboration, and vision, reflecting the complex reality of modern warfare and strategic planning.
-
-Certainly! Here's the revised sub-section that focuses on GitOps and its relevance in the context of AI engineering, including its importance relative to traditional software engineering:
 
 ### GitOps and AI Engineering: Collaborative Practices for Success
 
@@ -166,7 +164,7 @@ This foundation sets the stage for our subsequent exploration, where we'll conti
 ### Data Centric AI for Trusted AI
 In traditional AI development, much attention is often given to fine-tuning model architectures, experimenting with different layers, activation functions, and optimization algorithms. While this approach has driven many innovations, it may sometimes overlook the central role of data in AI success.
 
-A paradigm shift is emerging, championed by AI leaders like Andrew Ng through the "Data Centric AI" movement. This movement emphasizes the need to invest more in the quality and context of the data rather than continually fine-tuning the model architecture.
+A paradigm shift is emerging, championed by AI leaders like Andrew Ng through the [**Data Centric AI**](https://datacentricai.org/) movement. This movement emphasizes the need to invest more in the quality and context of the data rather than continually fine-tuning the model architecture. The MIT [Introduction to Data-Centric AI](https://dcai.csail.mit.edu/) course provides a very good introduction to Data Centric AI methodology that the Frameworks aim to enable.
 
 The logic behind this shift is profound yet straightforward. Models, irrespective of their complexity, are only as good as the data they learn from. By prioritizing data quality, encompassing aspects such as cleanliness, relevance, diversity, and contextual richness, AI systems can achieve better performance with potentially simpler architectures.
 
@@ -175,6 +173,46 @@ This data-centric approach aligns well with the requirements of organizations li
 For the Trusted AI (TAI) Frameworks Project, a data-centric philosophy serves as an essential cornerstone, recognizing that robust data management practices can lead to more reliable, interpretable, and trusted AI systems. This perspective does not diminish the value of innovative modeling but places it in the context of a balanced and well-considered AI development strategy, where data and model work in harmony.
 
 The data-centric approach is not just a technical reorientation; it's a recalibration of AI development's very essence, placing data at the heart of the innovation process. The implications for trusted AI are profound, offering a path to AI systems that are not only highly capable but also aligned with the nuanced requirements and ethical considerations that define the evolving landscape of AI in military and civil applications.
+
+![Trusted AI Needs Trusted Data as pointed out by XKCD: ["Flawed Data"](https://xkcd.com/2494/)](flawed_data.png){#fig-xkcd}
+
+
+
+### DoD Data Strategy: Aligning with National Defense Goal
+
+The Department of Defense's (DoD) Data Strategy emphasizes the critical role that data plays in achieving the goals of the National Defense Strategy:
+
+::: {.callout-important title=[@USDOD2020-lk]}
+- Make Data Visible – Consumers can locate the needed data.
+- Make Data Accessible – Consumers can retrieve the data.
+- Make Data Understandable – Consumers can recognize the content, context, and applicability.
+- Make Data Linked – Consumers can exploit data elements through innate relationships.
+- Make Data Trustworthy – Consumers can be confident in all aspects of data for decision-making.
+- Make Data Interoperable – Consumers have a common representation comprehension of data.
+- Make Data Secure – Consumers know that data is protected from unauthorized use/manipulation.
+:::
+
+
+ The TAI Frameworks Project highlights its commitment to a data-centric approach to trusted AI. Each goal resonates with our overarching mission:
+
+1. **Visible:** Ensuring that data is discoverable by those who need it fosters transparency and helps build a foundation of trust in AI systems.
+
+2. **Accessible:** Making data readily available to authorized users enhances the efficiency and effectiveness of AI, providing the right information at the right time.
+
+3. **Understandable:** Clear documentation and metadata contribute to the explainability of AI, a core dimension of trust.
+
+4. **Linked:** Connecting related data sets facilitates more coherent AI analysis, ensuring robustness and reliability in decision-making.
+
+5. **Trustworthy:** Maintaining the integrity and quality of data ensures that AI systems are dependable, echoing the Trustworthy dimension in our trust framework.
+
+6. **Interoperable:** Enabling data to be used across different systems and platforms fosters collaboration and integration, key aspects of our community engagement efforts.
+
+7. **Secure:** Implementing strong data security measures safeguards privacy and aligns with the ethical considerations central to trusted AI.
+
+This alignment with the DoD's data goals underscores the importance of a data-centric approach in our work. By recognizing data as a strategic asset and prioritizing these seven goals, we are nurturing an environment where trusted AI can flourish, complementing the "Data-Centric AI for Trusted AI" section that follows.
+
+
+
 
 
 ### Selection of Data Version Control (DVC) for Tracking Data and Experiments
@@ -206,7 +244,15 @@ In alignment with the Navy's strategic goals and the specific executive orders g
 
 #### **Metadata and Its Role in Ethical Data Management**
 1. **Transparency for Mission Success:** Metadata supports the Navy's operational efficiency by providing clarity on data origins, context, and constraints, thereby enabling informed decision-making.
-2. **Compliance with Executive Orders:** Metadata ensures alignment with legal and regulatory requirements, such as Executive Order XXXX, which mandates specific data handling protocols within the DoD.
+2. **Compliance with Executive Orders:** Metadata ensures alignment with legal and regulatory requirements, such as the DOD AI Ethical Principles [@dod2020], which mandates specific data handling protocols within the DoD and specifically:
+
+::: {.callout-important title=[@dod2020]}
+- Responsible. DoD personnel will exercise appropriate levels of judgment and care, while remaining responsible for the development, deployment, and use of AI capabilities.
+- Equitable. The Department will take deliberate steps to minimize unintended bias in AI capabilities.
+- Traceable. The Department’s AI capabilities will be developed and deployed such that relevant personnel possess an appropriate understanding of the technology, development processes, and operational methods applicable to AI capabilities, including with transparent and auditable methodologies, data sources, and design procedure and documentation.
+- Reliable. The Department’s AI capabilities will have explicit, well-defined uses, and the safety, security, and effectiveness of such capabilities will be subject to testing and assurance within those defined uses across their entire life-cycles.
+- Governable. The Department will design and engineer AI capabilities to fulfill their intended functions while possessing the ability to detect and avoid unintended consequences, and the ability to disengage or deactivate deployed systems that demonstrate unintended behavior.
+:::
 
 #### **The FAIR Principles: Ensuring Naval Readiness**
 1. **Findable & Accessible:** Easy discovery and retrieval of data accelerate the Navy's response time and readiness.
