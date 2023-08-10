@@ -83,13 +83,9 @@ div.csl-indent {
 
 
 <link rel="stylesheet" href="../../styles.css">
-<meta property="og:title" content="AI Success Factors: Engineering Trust in Deployments - Reflections on Trusted AI Frameworks after two years">
-<meta property="og:description" content="">
-<meta property="og:image" content="TAI_4-2023.png">
-<meta property="og:site-name" content="AI Success Factors: Engineering Trust in Deployments">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -126,11 +122,6 @@ div.csl-indent {
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
-  <div class="quarto-reader-toggle-btn">
-  <i class="bi"></i>
-  </div>
-</a>
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
@@ -173,7 +164,47 @@ div.csl-indent {
   </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-and-context-of-trusted-ai-tai" id="toc-introduction-and-context-of-trusted-ai-tai" class="nav-link active" data-scroll-target="#introduction-and-context-of-trusted-ai-tai"><span class="header-section-number">1</span> Introduction and Context of Trusted AI (TAI)</a></li>
+  <li><a href="#building-a-foundation-for-trusted-ai" id="toc-building-a-foundation-for-trusted-ai" class="nav-link" data-scroll-target="#building-a-foundation-for-trusted-ai"><span class="header-section-number">2</span> Building a Foundation for Trusted AI</a>
+  <ul class="collapse">
+  <li><a href="#software-1.0-vs-software-2.0-building-trust-from-the-ground-up" id="toc-software-1.0-vs-software-2.0-building-trust-from-the-ground-up" class="nav-link" data-scroll-target="#software-1.0-vs-software-2.0-building-trust-from-the-ground-up"><span class="header-section-number">2.1</span> Software 1.0 vs Software 2.0: Building Trust from the Ground Up</a></li>
+  <li><a href="#gitops-and-ai-engineering-collaborative-practices-for-success" id="toc-gitops-and-ai-engineering-collaborative-practices-for-success" class="nav-link" data-scroll-target="#gitops-and-ai-engineering-collaborative-practices-for-success"><span class="header-section-number">2.2</span> GitOps and AI Engineering: Collaborative Practices for Success</a></li>
+  <li><a href="#cicd-in-trusted-ai-ensuring-continuous-quality" id="toc-cicd-in-trusted-ai-ensuring-continuous-quality" class="nav-link" data-scroll-target="#cicd-in-trusted-ai-ensuring-continuous-quality"><span class="header-section-number">2.3</span> CI/CD in Trusted AI: Ensuring Continuous Quality</a></li>
+  <li><a href="#ethical-considerations-in-testing-beyond-functionality" id="toc-ethical-considerations-in-testing-beyond-functionality" class="nav-link" data-scroll-target="#ethical-considerations-in-testing-beyond-functionality"><span class="header-section-number">2.4</span> Ethical Considerations in Testing: Beyond Functionality</a></li>
+  </ul></li>
+  <li><a href="#managing-and-utilizing-data" id="toc-managing-and-utilizing-data" class="nav-link" data-scroll-target="#managing-and-utilizing-data"><span class="header-section-number">3</span> Managing and Utilizing Data</a>
+  <ul class="collapse">
+  <li><a href="#data-centric-ai-for-trusted-ai" id="toc-data-centric-ai-for-trusted-ai" class="nav-link" data-scroll-target="#data-centric-ai-for-trusted-ai"><span class="header-section-number">3.1</span> Data Centric AI for Trusted AI</a></li>
+  <li><a href="#dod-data-strategy-aligning-with-national-defense-goal" id="toc-dod-data-strategy-aligning-with-national-defense-goal" class="nav-link" data-scroll-target="#dod-data-strategy-aligning-with-national-defense-goal"><span class="header-section-number">3.2</span> DoD Data Strategy: Aligning with National Defense Goal</a></li>
+  <li><a href="#selection-of-data-version-control-dvc-for-tracking-data-and-experiments" id="toc-selection-of-data-version-control-dvc-for-tracking-data-and-experiments" class="nav-link" data-scroll-target="#selection-of-data-version-control-dvc-for-tracking-data-and-experiments"><span class="header-section-number">3.3</span> Selection of Data Version Control (DVC) for Tracking Data and Experiments</a></li>
+  <li><a href="#ethical-considerations-and-trust-in-data-management-the-navys-mission-and-guiding-principles" id="toc-ethical-considerations-and-trust-in-data-management-the-navys-mission-and-guiding-principles" class="nav-link" data-scroll-target="#ethical-considerations-and-trust-in-data-management-the-navys-mission-and-guiding-principles"><span class="header-section-number">3.4</span> Ethical Considerations and Trust in Data Management: The Navy’s Mission and Guiding Principles</a></li>
+  <li><a href="#future-perspectives-and-conclusion-the-data-driven-path-to-trusted-ai-in-year-3-and-beyond" id="toc-future-perspectives-and-conclusion-the-data-driven-path-to-trusted-ai-in-year-3-and-beyond" class="nav-link" data-scroll-target="#future-perspectives-and-conclusion-the-data-driven-path-to-trusted-ai-in-year-3-and-beyond"><span class="header-section-number">3.5</span> Future Perspectives and Conclusion: The Data-Driven Path to Trusted AI in Year 3 and Beyond</a></li>
+  </ul></li>
+  <li><a href="#deployment-and-provisioning" id="toc-deployment-and-provisioning" class="nav-link" data-scroll-target="#deployment-and-provisioning"><span class="header-section-number">4</span> Deployment and Provisioning</a>
+  <ul class="collapse">
+  <li><a href="#introduction-the-challenge-of-reproducibility-and-integration" id="toc-introduction-the-challenge-of-reproducibility-and-integration" class="nav-link" data-scroll-target="#introduction-the-challenge-of-reproducibility-and-integration"><span class="header-section-number">4.1</span> Introduction: The Challenge of Reproducibility and Integration</a></li>
+  <li><a href="#devops-and-computational-environments-bridging-development-and-operations" id="toc-devops-and-computational-environments-bridging-development-and-operations" class="nav-link" data-scroll-target="#devops-and-computational-environments-bridging-development-and-operations"><span class="header-section-number">4.2</span> DevOps and Computational Environments: Bridging Development and Operations</a></li>
+  <li><a href="#software-bill-of-materials-sbom-a-comprehensive-inventory-for-trust" id="toc-software-bill-of-materials-sbom-a-comprehensive-inventory-for-trust" class="nav-link" data-scroll-target="#software-bill-of-materials-sbom-a-comprehensive-inventory-for-trust"><span class="header-section-number">4.3</span> Software Bill of Materials (SBoM): A Comprehensive Inventory for Trust</a></li>
+  <li><a href="#hardened-containers-military-cicd-through-ironbank-cloud-one-and-platform-one" id="toc-hardened-containers-military-cicd-through-ironbank-cloud-one-and-platform-one" class="nav-link" data-scroll-target="#hardened-containers-military-cicd-through-ironbank-cloud-one-and-platform-one"><span class="header-section-number">4.4</span> Hardened Containers, Military CI/CD through IronBank, Cloud One, and Platform One</a></li>
+  </ul></li>
+  <li><a href="#development-practices-and-methodologies" id="toc-development-practices-and-methodologies" class="nav-link" data-scroll-target="#development-practices-and-methodologies"><span class="header-section-number">5</span> Development Practices and Methodologies</a>
+  <ul class="collapse">
+  <li><a href="#introduction-the-modern-development-landscape" id="toc-introduction-the-modern-development-landscape" class="nav-link" data-scroll-target="#introduction-the-modern-development-landscape"><span class="header-section-number">5.1</span> Introduction: The Modern Development Landscape</a></li>
+  <li><a href="#quarto-bridging-the-gap-between-literacy-and-code" id="toc-quarto-bridging-the-gap-between-literacy-and-code" class="nav-link" data-scroll-target="#quarto-bridging-the-gap-between-literacy-and-code"><span class="header-section-number">5.2</span> Quarto: Bridging the Gap Between Literacy and Code</a></li>
+  <li><a href="#nbdev-extending-literacy-with-quarto-integration" id="toc-nbdev-extending-literacy-with-quarto-integration" class="nav-link" data-scroll-target="#nbdev-extending-literacy-with-quarto-integration"><span class="header-section-number">5.3</span> nbdev: Extending Literacy with Quarto Integration</a></li>
+  <li><a href="#fast.ai-a-layered-approach-to-ai-development" id="toc-fast.ai-a-layered-approach-to-ai-development" class="nav-link" data-scroll-target="#fast.ai-a-layered-approach-to-ai-development"><span class="header-section-number">5.4</span> Fast.ai: A Layered Approach to AI Development</a></li>
+  <li><a href="#conclusion-the-evolution-of-development-practices-in-trusted-ai" id="toc-conclusion-the-evolution-of-development-practices-in-trusted-ai" class="nav-link" data-scroll-target="#conclusion-the-evolution-of-development-practices-in-trusted-ai"><span class="header-section-number">5.5</span> Conclusion: The Evolution of Development Practices in Trusted AI</a></li>
+  <li><a href="#broader-challenges-and-opportunities" id="toc-broader-challenges-and-opportunities" class="nav-link" data-scroll-target="#broader-challenges-and-opportunities"><span class="header-section-number">5.6</span> Broader Challenges and Opportunities</a></li>
+  <li><a href="#conclusion-a-holistic-approach-to-trusted-ai" id="toc-conclusion-a-holistic-approach-to-trusted-ai" class="nav-link" data-scroll-target="#conclusion-a-holistic-approach-to-trusted-ai"><span class="header-section-number">5.7</span> Conclusion: A Holistic Approach to Trusted AI</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
 
@@ -361,7 +392,7 @@ Note
 <div id="fig-xkcd" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="flawed_data.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;4: Trusted AI Needs Trusted Data as pointed out by: <a href="https://xkcd.com/2494/">“Flawed Data”</a></figcaption>
+<figcaption class="figure-caption">Figure&nbsp;4: Trusted AI Needs Trusted Data as pointed out by XKCD: <a href="https://xkcd.com/2494/">“Flawed Data”</a></figcaption>
 </figure>
 </div>
 </section>
@@ -463,6 +494,12 @@ Note
 <li><strong>Findable &amp; Accessible:</strong> Easy discovery and retrieval of data accelerate the Navy’s response time and readiness.</li>
 <li><strong>Interoperable &amp; Reusable:</strong> Standards for data compatibility facilitate cross-departmental collaboration and resource optimization, reflecting the Navy’s emphasis on agility and resilience.</li>
 </ol>
+<div id="fig-xkcd" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="standards.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;5: Trusted AI Needs to use standards for interoperability as pointed out by XKCD: <a href="https://xkcd.com/927/">“Standards”</a></figcaption>
+</figure>
+</div>
 </section>
 <section id="care-principles-upholding-the-navys-ethical-values" class="level4" data-number="3.4.3">
 <h4 data-number="3.4.3" class="anchored" data-anchor-id="care-principles-upholding-the-navys-ethical-values"><span class="header-section-number">3.4.3</span> <strong>CARE Principles: Upholding the Navy’s Ethical Values</strong></h4>
@@ -526,9 +563,28 @@ Note
 </ul>
 <p>These tools and practices collectively create a seamless and reliable process of moving AI models and applications from development to production. They recognize the complexity of AI development and provide solutions tailored to handle these challenges. The selection of these specific technologies within the Trusted AI project is a strategic alignment with the unique needs of AI, reflecting an understanding of the underlying challenges and opportunities that AI presents.</p>
 <p>By connecting these dots and creating an ecosystem where development and operations converge, DevOps in the Trusted AI context represents a key pillar in the project’s strategy. It enables not just the creation but also the deployment and maintenance of AI solutions that can be trusted, validated, and reproduced, meeting the stringent standards required by the Navy and other critical stakeholders.</p>
+<div id="fig-xkcd" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="python_environment.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Figure&nbsp;6: Trusted AI Python Environment Reproducibility by XKCD: <a href="https://xkcd.com/1987/">“Python Environment”</a></figcaption>
+</figure>
+</div>
 </section>
 <section id="software-bill-of-materials-sbom-a-comprehensive-inventory-for-trust" class="level3" data-number="4.3">
 <h3 data-number="4.3" class="anchored" data-anchor-id="software-bill-of-materials-sbom-a-comprehensive-inventory-for-trust"><span class="header-section-number">4.3</span> Software Bill of Materials (SBoM): A Comprehensive Inventory for Trust</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Links+Credit to IU work on SBOM’s. Add NIST and Govn’t references</p>
+</div>
+</div>
 <p>In any sophisticated piece of technology, understanding the components that make up the system is essential for security, quality, and compliance. The Software Bill of Materials (SBoM) serves this very purpose, offering a comprehensive inventory of all software components in a system, akin to a parts list in physical manufacturing.</p>
 <p>The SBoM is especially critical in the context of Trusted AI for the Navy, aligning with Federal Government requirements and standards for procurement. Here’s a breakdown of the key elements and why they matter:</p>
 <ul>
@@ -747,16 +803,13 @@ Note
 <h3 data-number="5.7" class="anchored" data-anchor-id="conclusion-a-holistic-approach-to-trusted-ai"><span class="header-section-number">5.7</span> Conclusion: A Holistic Approach to Trusted AI</h3>
 <p>Trusted AI is not a monolithic entity but a complex, dynamic field that intersects with various disciplines and societal considerations. By embracing these broader challenges and opportunities, we pave the way for AI systems that are not just intelligent but responsible, ethical, and aligned with human values and needs.</p>
 <p>The integration of these various facets into the Trusted AI framework contributes to a comprehensive and sustainable approach, one that recognizes the interconnectedness of technology with the broader fabric of society. The journey towards Trusted AI is a collective endeavor, one that requires collaboration, empathy, foresight, and a deep commitment to ethical principles.</p>
-</section>
-</section>
-<section id="section" class="level2" data-number="6">
-
 
 
 
 </section>
+</section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">6 </h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-dod2020" class="csl-entry" role="listitem">
 Department of Defense. 2020. <span>“DOD Adopts Ethical Principles for Artificial Intelligence.”</span> Press Release. <a href="https://www.defense.gov/News/Releases/Release/Article/2091996/dod-adopts-ethical-principles-for-artificial-intelligence/">https://www.defense.gov/News/Releases/Release/Article/2091996/dod-adopts-ethical-principles-for-artificial-intelligence/</a>.
 </div>

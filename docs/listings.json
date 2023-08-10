@@ -10,8 +10,7 @@
   {
     "listing": "/index.html",
     "items": [
-      "/posts/welcome/index.html",
-      "/posts/frameworks-reflection/index.html"
+      "/posts/welcome/index.html"
     ]
   }
 ]

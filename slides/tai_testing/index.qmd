@@ -150,3 +150,10 @@ GitHub: [A generative AI extension for JupyterLab](https://github.com/jupyterlab
 ::: footer
 Learn More: [Generative AI in Jupyter](https://jupyter-ai.readthedocs.io/en/latest/users/index.html)
 :::
+
+## Kaggle LLM Resource
+![](kaggle_llm.png){fig-align="center"}
+
+::: footer
+Learn More: [Getting Started With LLMs](https://www.kaggle.com/code/jhoward/getting-started-with-llms/)
+:::
