@@ -9,44 +9,58 @@ image: "TAI_4-2023.png"
 draft: True
 ---
 
-:::{.callout-note}
+::: callout-warning
 If you have stumbled on this post, it is still in the rough draft state and under major revision.
 :::
 
-
-
 ## Introduction and Context of Trusted AI (TAI)
 
-In an age where Artificial Intelligence (AI) is advancing at an unprecedented pace, trust in these intelligent systems is paramount—especially within the context of military operations. Welcome to a reflection on the Trusted AI (TAI) Frameworks Project, a [collaborative initiative](https://www.wbiw.com/2021/06/30/nswc-crane-iu-notre-dame-and-purdue-team-up-to-provide-trusted-ai-workforce-development-and-research/?_ga=2.194216941.1383268119.1691608623-1280995064.1690554908) between Indiana University, University of Notre Dame, and CRANE Naval Surface Warfare Center as part of [Scalable Asymmetric Lifecycle Engagement (SCALE)](https://research.purdue.edu/scale/about/index.php) led by Purdue University. Our mission is to enhance the successful and trusted deployment of AI to the Navy and Marine Corps and fortify the trust that humans have when interacting with these systems.
+With artificial intelligence advancing rapidly, ensuring these technologies are trustworthy and ethical is critical, especially in high-stakes domains like defense and national security.
 
-The TAI Frameworks Project started modestly, aiming to provide a potential integration point for outputs from other TAI projects. It sought to inform the Navy in deployment decisions but has since grown and evolved. At the core of this endeavor are the six dimensions of trust in AI:
+The Trusted AI (TAI) Frameworks Project was launched in 2021 through a collaboration between Indiana University, Purdue University, the University of Notre Dame, and the Naval Surface Warfare Center Crane Division (NSWC Crane) located in southwestern Indiana.
 
-- **Explainability:** Making the logic and reasoning behind AI decisions transparent.
-- **Safety and Robustness:** Ensuring that AI operates reliably under different conditions.
-- **Non-discrimination and Fairness:** Guaranteeing that AI does not favor or prejudice against particular groups.
-- **Privacy:** Protecting individual's information and rights.
-- **Environmental Sustainability:** Recognizing the ecological footprint of AI systems.
-- **Accountability and Audibility:** Holding AI and its developers responsible for decisions and actions.
+Funded by Purdue's Scalable Asymmetric Lifecycle Engagement (SCALE) initiative, the project brings together these Indiana-based partners to advance trusted AI research and workforce development tailored to the needs of the U.S. Navy and Marine Corps.
 
-Each of these dimensions resonates with different stages of the AI lifecycle, including Data Collection, Data Preparation, Feature Extraction, Training, Testing, and Inference, and is aligned with the AI CI/CD of Development, Use, Analysis, and Re-Design.
+The University of Notre Dame contributes vital expertise in areas such as cybersecurity, privacy, and ethical AI to ensure the systems developed not only perform effectively but align with ethical values. Researchers from computing, engineering, psychology, and ethics collaborate to provide a multidisciplinary perspective.
+
+Indiana's strong defense, technology, and research presence, including major contractors and NSWC Crane's AI Development Lab, provide a strategic foundation to jointly create AI solutions that are robust, reliable, and transparent.
+
+At the core of the project are six dimensions of trust in AI systems:
+
+-   Explainability: Making AI logic and decisions understandable to humans
+-   Safety and Robustness: Ensuring reliable operation under varying conditions
+-   Non-discrimination and Fairness: Preventing unfair bias or preferential treatment
+-   Privacy: Safeguarding individual rights and information
+-   Sustainability: Considering environmental impact
+-   Accountability: Maintaining responsibility for decisions and actions
+
+Integrating these trust principles throughout the AI lifecycle, from data collection to deployment, is critical for successful adoption within the naval domain. The TAI Frameworks Project provides research, methodologies and tools to enable trusted and ethical AI.
+
+This collaborative initiative has evolved substantially in its first two years. This post reflects on progress so far and visions for the road ahead in strengthening trust in AI systems, serving both the Navy's mission and broader societal values.
 
 ![Conceptual Framework Principles for TrustedAI in the AI System Lifecycle](TAI_4-2023.png){#fig-TAI-system}
 
 **Reflection on the Framework Project**
 
-As we look back on the past years, we see an ever-evolving project that has adapted to the rapidly evolving landscape of **Artificial Intelligence** research and products. The integration of trust dimensions into our framework's components, tools, and methodologies has shaped a solution aligned with the Navy's mission. Furthermore, we have explored broader themes like ethical considerations, workforce development, and community involvement, highlighting the multifaceted nature of our approach to trusted AI. This is end of my first year as PI of the project after taking over from [Prof. Jarek Nabrzyski](https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski) who helmed the first year of the project with [Prof. Chris Sweet](https://crc.nd.edu/about/people/?id=christopher-sweet) and [myself](https://crc.nd.edu/about/people/?id=charles-vardeman). The project was originally proposed by [Prof. Ian Taylor](https://crc.nd.edu/about/people/?id=ian-taylor), who went on leave from the [CRC](https://crc.nd.edu/) as the project was beginning that led to [Prof. Jarek Nabrzyski](https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski) to step in and provide leadership as PI. The direction of the project has changed since the acceptance of the initial proposal as a funded project, but many of the ideas and components of the proposal have remained. Work on evaluating and understanding the challanges and potential solutions to deploying AI technologies in the Navy, as well as capturing and understanding academic AI research outputs fell to Research Programmer [Dr. James Sweet](https://crc.nd.edu/about/people/?id=james-sweet) who spent time reviewing and understanding solutions that were being developed as [open source](https://opensource.org/licenses/) projects and applied in industry to solve some of the challanges with "*AIOps*." Additionally we had some help in creating some simple examples for using the Frameworks and starting the process of thinking about **metadata** for Trusted AI from [Prof. Don Brower](https://crc.nd.edu/about/people/?id=don-brower) who came to the CRC last year from the [Notre Dame Hesburgh Libraries](https://www.library.nd.edu/). In year 2. we were joined by [Prof. Paul Brenner](https://crc.nd.edu/about/people/?id=paul-brenner), who has vast expeience with compute infrastructure and engineering in the military context. We were also joined by several [UND](https://www.nd.edu) undergraduate students **Peter Ainsworth**, **Nicholas Clark** and **Daniel Weldon** who created documentation, tutorials and "*kicked the tires*" on some of the Framework components in as part of the "*AI Application*" development process. We also had three students, **Daniel Weldon**, **William Shephard**, **Samantha Nagel** looking at existing cloud platforms and infrastructure in use by the DoD and attempting to [*containerize*](https://www.ibm.com/topics/containerization) AI applications based on [Pytorch](https://pytorch.org/) to understand the complexity and barriers to AI applications in the DoD cloud.
+As we reflect on the past years, the TAI Frameworks Project has continuously evolved and adapted in the rapidly changing landscape of AI research and technology.
 
-:::{.callout-note}
-Framework components go here...
-:::
+The project originated from a proposal led by initial PI [Prof. Ian Taylor](https://crc.nd.edu/about/people/?id=ian-taylor). After acceptance but before work commenced, [Prof. Jarek Nabrzyski](https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski) took over as PI with co-PIs Prof. [Prof. Chris Sweet](https://crc.nd.edu/about/people/?id=christopher-sweet) and [myself](https://crc.nd.edu/about/people/?id=charles-vardeman). This initial phase focused on integrating dimensions of trust into the methodologies.
 
-![Conceptual Framework Principles for TrustedAI in the AI System Lifecycle](graphic_tai-framework-1-new.png){#fig-framework}
+I assumed the PI role in year two to align the project with emerging Navy needs, as we are now entering year three.
+
+In the early stages, [Prof. Don Brower](https://crc.nd.edu/about/people/?id=don-brower) provided valuable expertise in metadata while [Dr. James Sweet](https://crc.nd.edu/about/people/?id=james-sweet) reviewed open source AI tools. [Prof. Paul Brenner](https://crc.nd.edu/about/people/?id=paul-brenner) later contributed insights on computing infrastructure and security.
+
+Undergraduate students including **Peter Ainsworth**, **Nicholas Clark** and **Daniel Weldon** conducted hands-on evaluation of framework components like Quarto, nbdev, and DVC for data versioning. **Daniel Weldon** along with **William Shephard**, **Samantha Nagel** explored [**containerization**]((https://www.ibm.com/topics/containerization)) of AI models and frameworks like [**Pytorch**](https://pytorch.org/) using platforms like IronBank to understand deployment complexity with regard to the DoD Cloud Infrastructure.
+
+Throughout its evolution, the project has adapted based on insights from key partners while maintaining the vision for Trusted AI put forth in the initial proposal by Prof. Taylor. This foundation enables us to confront new challenges and opportunities going forward.
+
+A core framework diagram, [@fig-framework], illustrates the end-to-end AI development workflow, spanning problem definition, data collection, model training, deployment, and monitoring. It highlights key tools and technologies including data science, machine learning frameworks, cloud platforms, and DevOps techniques that enable trustworthy AI aligned to specific use cases. The diagram reflects the multifaceted scope of the AI lifecycle, providing a structure for the frameworks, methodologies and collaborations that foster ethical, trustworthy and effective AI development.
+
+![Core Framework Diagram](graphic_tai-framework-1-new.png){#fig-framework}
 
 **Community Engagement and Collaboration**
 
-:::{.callout-note}
-TPOCS, Other TAI projects, IU go here. Informing broader DoD workforce development efforts.
-:::
+<!--# TPOCS, Other TAI projects, IU go here. Informing broader DoD workforce development efforts.-->
 
 Our journey has emphasized collaboration, dialogue, and shared learning. By leveraging existing tools and methodologies and engaging in broader community efforts, we have fostered an environment where knowledge is not just consumed but also contributed.
 
@@ -56,16 +70,15 @@ Our journey has emphasized collaboration, dialogue, and shared learning. By leve
 
 As we move forward, our commitment to continuous alignment with trust dimensions and evolving methodologies remains steadfast. Our reflection on achievements and lessons learned will be a guiding light, illuminating the path towards future developments in trusted AI.
 
-
 ## Building a Foundation for Trusted AI
 
 ### Software 1.0 vs Software 2.0: Building Trust from the Ground Up
 
 The evolution from "Software 1.0" to "Software 2.0," as popularized by Andrej Karpathy [@karpathy2017software], represents a paradigm shift in how we develop and deploy software systems.
 
-- **Software 1.0** is characterized by deterministic, programmed behavior where engineers write explicit code to define how a system should operate. It's a method where rules are meticulously crafted, and the outcome is predictable, given a specific set of inputs.
+-   **Software 1.0** is characterized by deterministic, programmed behavior where engineers write explicit code to define how a system should operate. It's a method where rules are meticulously crafted, and the outcome is predictable, given a specific set of inputs.
 
-- **Software 2.0**, in contrast, signifies learned behavior where models are trained on data to infer the underlying patterns. Unlike the rigid rules of Software 1.0, Software 2.0 can handle immense complexity, learning from examples to generalize and adapt to new situations. This ability to process and respond to intricate, multi-dimensional inputs sets Software 2.0 apart, opening doors to applications previously thought unfeasible.
+-   **Software 2.0**, in contrast, signifies learned behavior where models are trained on data to infer the underlying patterns. Unlike the rigid rules of Software 1.0, Software 2.0 can handle immense complexity, learning from examples to generalize and adapt to new situations. This ability to process and respond to intricate, multi-dimensional inputs sets Software 2.0 apart, opening doors to applications previously thought unfeasible.
 
 The implications of Software 2.0 are profound for sectors that face **highly complex and dynamic environments**, such as those present in Navy operations. Where traditional rule-based systems may falter or become unwieldy, Software 2.0 offers the flexibility and adaptability to respond to ever-changing scenarios. Its capacity to absorb and interpret vast amounts of information in real-time provides a powerful tool in navigation, threat assessment, strategy formulation, and more. For the Navy, it enables a more resilient, intelligent, and agile approach to both strategic planning and operational execution.
 
@@ -83,9 +96,9 @@ GitOps is a methodology that applies Git's version control principles to the ent
 
 #### Importance in Traditional and AI Engineering
 
-- **Traditional Software Engineering**: In the context of "Software 1.0," GitOps brings consistency, traceability, and collaboration. It provides a unified platform where the entire development team can work together, tracking changes, rolling back when necessary, and maintaining a clear history of modifications. This shared workspace enhances communication, accelerates development, and minimizes the risk of errors.
+-   **Traditional Software Engineering**: In the context of "Software 1.0," GitOps brings consistency, traceability, and collaboration. It provides a unified platform where the entire development team can work together, tracking changes, rolling back when necessary, and maintaining a clear history of modifications. This shared workspace enhances communication, accelerates development, and minimizes the risk of errors.
 
-- **AI Engineering**: The shift to "Software 2.0" introduces new complexities and dependencies. GitOps adapts to these challenges by offering a flexible and responsive platform that can manage intricate workflows, diverse data sets, and multi-dimensional models. The collaborative nature of platforms like GitHub fosters cross-functional engagement, leveraging collective expertise to scrutinize, enhance, and validate AI models.
+-   **AI Engineering**: The shift to "Software 2.0" introduces new complexities and dependencies. GitOps adapts to these challenges by offering a flexible and responsive platform that can manage intricate workflows, diverse data sets, and multi-dimensional models. The collaborative nature of platforms like GitHub fosters cross-functional engagement, leveraging collective expertise to scrutinize, enhance, and validate AI models.
 
 #### Enhancing Trust and Quality
 
@@ -93,58 +106,57 @@ By embracing GitOps, projects can benefit from continuous integration, testing, 
 
 For the Navy, where trust and reliability are paramount, this transparent, collaborative approach aligns with the ethos of responsibility and accountability. By implementing GitOps within the Trusted AI Frameworks Project, the partners foster an environment conducive to innovation, quality, and ethical considerations.
 
-
 ### CI/CD in Trusted AI: Ensuring Continuous Quality
 
 Continuous Integration/Continuous Deployment (CI/CD) is not a new concept in software development. Still, its application within the realm of AI and "Software 2.0" introduces unique opportunities and challenges. With AI's rapid evolution and the growing prominence of foundation models and transfer learning, CI/CD becomes a vital component in maintaining quality, transparency, and trust.
 
 #### Applying CI/CD to AI "Software 2.0"
 
-- **Foundation Models**: These are large-scale pre-trained models that serve as a base for specialized adaptations. By understanding intricate patterns in extensive data sets, foundation models can be fine-tuned for various tasks, enabling more rapid development and deployment. 
+-   **Foundation Models**: These are large-scale pre-trained models that serve as a base for specialized adaptations. By understanding intricate patterns in extensive data sets, foundation models can be fine-tuned for various tasks, enabling more rapid development and deployment.
 
-- **Transfer Learning Methodology**: This approach leverages existing pre-trained models (often foundation models) and adapts them to specific tasks or domains. It allows for quicker iterations, conserves resources, and enhances performance on specialized tasks.
+-   **Transfer Learning Methodology**: This approach leverages existing pre-trained models (often foundation models) and adapts them to specific tasks or domains. It allows for quicker iterations, conserves resources, and enhances performance on specialized tasks.
 
 Incorporating CI/CD into these AI practices ensures that as models are adapted and evolve, they continue to meet quality standards and align with ethical considerations. It promotes a transparent process, where every modification, every decision, can be traced and validated.
 
 #### Building Trust and Transparency
 
-- **Rapid Integration and Evolution**: With AI's pace, a responsive CI/CD pipeline is essential. Models are constantly refined, adapted, and expanded. Ensuring that these changes are integrated smoothly, without compromising quality, is key to building trust.
+-   **Rapid Integration and Evolution**: With AI's pace, a responsive CI/CD pipeline is essential. Models are constantly refined, adapted, and expanded. Ensuring that these changes are integrated smoothly, without compromising quality, is key to building trust.
 
-- **Ethical Considerations**: Transparency in the AI development process is more than a technical requirement; it's an ethical obligation. A well-designed CI/CD process provides clear visibility into the workings of AI models, supporting responsible decision-making and accountability.
+-   **Ethical Considerations**: Transparency in the AI development process is more than a technical requirement; it's an ethical obligation. A well-designed CI/CD process provides clear visibility into the workings of AI models, supporting responsible decision-making and accountability.
+
+Certainly! Below is a revised version of your text that incorporates the information we discussed, specifically focusing on the functionality, real-world application, unit and behavior testing, and the continuous iterative process.
 
 #### "Data Engines" in AI CI/CD
 
-The innovative concept of "Data Engines" in AI CI/CD refers to an intelligent, integrated system that orchestrates various stages of AI development, from data collection to model deployment.
+The innovative concept of "Data Engines" in AI CI/CD refers to an intelligent, integrated system that orchestrates various stages of AI development, from data collection to model deployment, including vital aspects of unit and behavior testing.
 
-- **Components and Functionality**: A Data Engine incorporates real-time data ingestion, preprocessing, feature engineering, model training, evaluation, acceptance testing, and deployment. It serves as the backbone, ensuring that models adapt, learn, and evolve in alignment with real-world complexities and requirements.
+-   **Components and Functionality:** A Data Engine incorporates real-time data ingestion, preprocessing, feature engineering, model training, evaluation, acceptance testing, and deployment. Unit testing ensures the individual components' correctness, while behavior testing verifies the overall system behavior. Together, they serve as the backbone, ensuring that models adapt, learn, and evolve in alignment with real-world complexities and requirements.
 
-- **Real-World Example: Tesla's Data Engine Pipeline**: Tesla's self-driving technology leverages a Data Engine that continually feeds information from vehicles on the road into its AI models. This pipeline manages vast quantities of data, refines features, adapts models, and deploys updates, all in an iterative and seamless manner. This example illustrates how Data Engines can handle the dynamism and complexity inherent in modern AI systems.
+-   **Real-World Example: Tesla's Data Engine Pipeline:** Tesla's self-driving technology leverages a Data Engine that continually feeds information from vehicles on the road into its AI models. This pipeline manages vast quantities of data, refines features, adapts models, and deploys updates, all in an iterative and seamless manner. Through rigorous unit and behavior testing, it ensures accuracy and responsiveness. This example illustrates how Data Engines can handle the dynamism and complexity inherent in modern AI systems.
 
-- **Challenges and Solutions**: Integrating a Data Engine within the AI CI/CD process is not without challenges. These may include ensuring data quality, scalability, adherence to ethical guidelines, and more. Innovative solutions and best practices, informed by real-world applications like Tesla's, are instrumental in navigating these challenges successfully.
+-   **Challenges and Solutions:** Integrating a Data Engine within the AI CI/CD process is not without challenges. These may include ensuring data quality, scalability, adherence to ethical guidelines, the complexity of continuous testing, and more. Innovative solutions and best practices, informed by real-world applications like Tesla's, are instrumental in navigating these challenges successfully.
 
-The integration of "Data Engines" within the AI CI/CD process marks a critical advancement in how we develop, deploy, and trust AI. For the Navy and the Trusted AI Frameworks Project, it signifies a forward-thinking approach that recognizes the dynamism of modern AI while steadfastly upholding quality and ethical principles.
-
+The integration of "Data Engines" within the AI CI/CD process marks a critical advancement in how we develop, deploy, and trust AI. By combining continuous data collection, preprocessing, and training with rigorous testing methodologies, Data Engines represent a robust, adaptive approach. For the Navy and the Trusted AI Frameworks Project, it signifies a forward-thinking approach that recognizes the dynamism of modern AI while steadfastly upholding quality and ethical principles.
 
 ### Ethical Considerations in Testing: Beyond Functionality
 
-As we endeavor to create AI systems that interact with complex environments and human lives, the ethical implications of their behavior cannot be ignored. While traditional CI/CD GitOps environments are tailored to ensure functionality, quality, and performance, the nature of AI — particularly "Software 2.0" — necessitates a broader and more profound testing approach. This extends into the ethical realm, considering how the AI system behaves in various scenarios and aligns with societal values.
+As we endeavor to create AI systems that interact with complex environments and human lives, the ethical implications of their behavior cannot be ignored. While traditional CI/CD GitOps environments are tailored to ensure functionality, quality, and performance, the nature of AI --- particularly "Software 2.0" --- necessitates a broader and more profound testing approach. This extends into the ethical realm, considering how the AI system behaves in various scenarios and aligns with societal values.
 
 #### Integrating Ethical Behavior Tests in AI CI/CD GitOps Environments
 
-- **Adapting Traditional Environments**: Conventional CI/CD GitOps practices were not initially designed to handle the ethical complexities of AI systems. Integration of ethical behavior tests within these environments requires thoughtful adaptation and innovation to ensure that AI models align with ethical standards alongside technical requirements.
+-   **Adapting Traditional Environments**: Conventional CI/CD GitOps practices were not initially designed to handle the ethical complexities of AI systems. Integration of ethical behavior tests within these environments requires thoughtful adaptation and innovation to ensure that AI models align with ethical standards alongside technical requirements.
 
-- **Ethical "Behavior Tests"**: These are specialized tests designed to evaluate AI models in various scenarios, considering ethical principles like fairness, accountability, transparency, and safety. They are critical in building trust and ensuring that AI systems function not only effectively but ethically.
+-   **Ethical "Behavior Tests"**: These are specialized tests designed to evaluate AI models in various scenarios, considering ethical principles like fairness, accountability, transparency, and safety. They are critical in building trust and ensuring that AI systems function not only effectively but ethically.
 
-- **Challenges with the "Data Engine" Concept**: The real-time and continuous nature of Data Engines presents unique ethical challenges. How data is sourced, processed, and utilized within the engine has implications for privacy, bias, quality, and more. Ethical behavior tests must extend into this realm, evaluating the entire pipeline, including the Data Engine's operations.
+-   **Challenges with the "Data Engine" Concept**: The real-time and continuous nature of Data Engines presents unique ethical challenges. How data is sourced, processed, and utilized within the engine has implications for privacy, bias, quality, and more. Ethical behavior tests must extend into this realm, evaluating the entire pipeline, including the Data Engine's operations.
 
 #### Real-World Implications and the Navy's Perspective
 
-- **Importance for the Navy and Marine Corps**: For organizations like the Navy and Marine Corps, where AI systems may be deployed in life-critical and high-stakes environments, these ethical considerations are paramount. Ethical behavior tests must be part of the standard AI testing pipeline to ensure that AI deployments are not just functional but morally sound.
+-   **Importance for the Navy and Marine Corps**: For organizations like the Navy and Marine Corps, where AI systems may be deployed in life-critical and high-stakes environments, these ethical considerations are paramount. Ethical behavior tests must be part of the standard AI testing pipeline to ensure that AI deployments are not just functional but morally sound.
 
-- **Collaboration with Interdisciplinary Teams**: Developing and implementing ethical behavior tests necessitates collaboration with ethicists, social scientists, legal experts, and other stakeholders. It's a complex task that extends beyond technical engineering, involving a deeper understanding of human values and societal implications.
+-   **Collaboration with Interdisciplinary Teams**: Developing and implementing ethical behavior tests necessitates collaboration with ethicists, social scientists, legal experts, and other stakeholders. It's a complex task that extends beyond technical engineering, involving a deeper understanding of human values and societal implications.
 
-- **Building a Comprehensive Ethical Framework**: Alongside technical robustness, AI systems must be examined and validated for ethical alignment. This includes developing a comprehensive ethical framework within the CI/CD GitOps environment, guiding the design, development, and deployment of AI, keeping ethical considerations at the forefront.
-
+-   **Building a Comprehensive Ethical Framework**: Alongside technical robustness, AI systems must be examined and validated for ethical alignment. This includes developing a comprehensive ethical framework within the CI/CD GitOps environment, guiding the design, development, and deployment of AI, keeping ethical considerations at the forefront.
 
 #### Conclusion: Building a Foundation of Trust and Responsibility in AI Development
 
@@ -158,10 +170,10 @@ The synthesis of these concepts paints a picture of a rapidly changing landscape
 
 This foundation sets the stage for our subsequent exploration, where we'll continue to dive into the intricacies of trusted AI, from data-centric methodologies to hardened containers and workforce development. As we journey through this complex terrain, the underlying theme of trust and ethical alignment remains our guiding star, illuminating the path toward responsible and successful AI deployment.
 
-
 ## Managing and Utilizing Data
 
 ### Data Centric AI for Trusted AI
+
 In traditional AI development, much attention is often given to fine-tuning model architectures, experimenting with different layers, activation functions, and optimization algorithms. While this approach has driven many innovations, it may sometimes overlook the central role of data in AI success.
 
 A paradigm shift is emerging, championed by AI leaders like Andrew Ng through the [**Data Centric AI**](https://datacentricai.org/) movement. This movement emphasizes the need to invest more in the quality and context of the data rather than continually fine-tuning the model architecture. The MIT [Introduction to Data-Centric AI](https://dcai.csail.mit.edu/) course provides a very good introduction to Data Centric AI methodology that the Frameworks aim to enable.
@@ -176,65 +188,59 @@ The data-centric approach is not just a technical reorientation; it's a recalibr
 
 ![Trusted AI Needs Trusted Data as pointed out by XKCD: ["Flawed Data"](https://xkcd.com/2494/)](flawed_data.png){#fig-xkcd}
 
-
-
 ### DoD Data Strategy: Aligning with National Defense Goal
 
 The Department of Defense's (DoD) Data Strategy emphasizes the critical role that data plays in achieving the goals of the National Defense Strategy:
 
-::: {.callout-important title=[@USDOD2020-lk]}
-- Make Data Visible – Consumers can locate the needed data.
-- Make Data Accessible – Consumers can retrieve the data.
-- Make Data Understandable – Consumers can recognize the content, context, and applicability.
-- Make Data Linked – Consumers can exploit data elements through innate relationships.
-- Make Data Trustworthy – Consumers can be confident in all aspects of data for decision-making.
-- Make Data Interoperable – Consumers have a common representation comprehension of data.
-- Make Data Secure – Consumers know that data is protected from unauthorized use/manipulation.
+::: {.callout-important title="[@USDOD2020-lk]"}
+-   Make Data Visible -- Consumers can locate the needed data.
+-   Make Data Accessible -- Consumers can retrieve the data.
+-   Make Data Understandable -- Consumers can recognize the content, context, and applicability.
+-   Make Data Linked -- Consumers can exploit data elements through innate relationships.
+-   Make Data Trustworthy -- Consumers can be confident in all aspects of data for decision-making.
+-   Make Data Interoperable -- Consumers have a common representation comprehension of data.
+-   Make Data Secure -- Consumers know that data is protected from unauthorized use/manipulation.
 :::
 
+The TAI Frameworks Project highlights its commitment to a data-centric approach to trusted AI. Each goal resonates with our overarching mission:
 
- The TAI Frameworks Project highlights its commitment to a data-centric approach to trusted AI. Each goal resonates with our overarching mission:
+1.  **Visible:** Ensuring that data is discoverable by those who need it fosters transparency and helps build a foundation of trust in AI systems.
 
-1. **Visible:** Ensuring that data is discoverable by those who need it fosters transparency and helps build a foundation of trust in AI systems.
+2.  **Accessible:** Making data readily available to authorized users enhances the efficiency and effectiveness of AI, providing the right information at the right time.
 
-2. **Accessible:** Making data readily available to authorized users enhances the efficiency and effectiveness of AI, providing the right information at the right time.
+3.  **Understandable:** Clear documentation and metadata contribute to the explainability of AI, a core dimension of trust.
 
-3. **Understandable:** Clear documentation and metadata contribute to the explainability of AI, a core dimension of trust.
+4.  **Linked:** Connecting related data sets facilitates more coherent AI analysis, ensuring robustness and reliability in decision-making.
 
-4. **Linked:** Connecting related data sets facilitates more coherent AI analysis, ensuring robustness and reliability in decision-making.
+5.  **Trustworthy:** Maintaining the integrity and quality of data ensures that AI systems are dependable, echoing the Trustworthy dimension in our trust framework.
 
-5. **Trustworthy:** Maintaining the integrity and quality of data ensures that AI systems are dependable, echoing the Trustworthy dimension in our trust framework.
+6.  **Interoperable:** Enabling data to be used across different systems and platforms fosters collaboration and integration, key aspects of our community engagement efforts.
 
-6. **Interoperable:** Enabling data to be used across different systems and platforms fosters collaboration and integration, key aspects of our community engagement efforts.
-
-7. **Secure:** Implementing strong data security measures safeguards privacy and aligns with the ethical considerations central to trusted AI.
+7.  **Secure:** Implementing strong data security measures safeguards privacy and aligns with the ethical considerations central to trusted AI.
 
 This alignment with the DoD's data goals underscores the importance of a data-centric approach in our work. By recognizing data as a strategic asset and prioritizing these seven goals, we are nurturing an environment where trusted AI can flourish, complementing the "Data-Centric AI for Trusted AI" section that follows.
 
-
-
-
-
 ### Selection of Data Version Control (DVC) for Tracking Data and Experiments
+
 Managing and tracking data and experiments is a critical task in the AI development lifecycle. Traditional version control systems are well-suited to handle code, but they often fall short when dealing with the unique requirements of large-scale data. In the context of AI, this limitation can hinder the collaboration and reproducibility that are vital to building trusted systems.
 
 Data Version Control (DVC) emerges as a compelling solution to address these challenges, and its selection in the Trusted AI (TAI) Frameworks Project highlights its inherent advantages. Here's an exploration of why DVC stands apart from other data management systems:
 
-1. **Integration with GitOps:** DVC extends Git's functionality to handle large data files without storing them in the Git repository. It uses pointers in the repository, keeping the actual data in a remote location. This approach aligns with GitOps practices, allowing developers to manage data with the same tools and workflows they use for code, promoting a more streamlined and unified process.
+1.  **Integration with GitOps:** DVC extends Git's functionality to handle large data files without storing them in the Git repository. It uses pointers in the repository, keeping the actual data in a remote location. This approach aligns with GitOps practices, allowing developers to manage data with the same tools and workflows they use for code, promoting a more streamlined and unified process.
 
-2. **Open Source Nature:** DVC is an open-source project, fostering a community-driven approach that aligns with the values of collaboration, transparency, and accessibility. This aspect encourages active participation from a wide range of contributors, leading to rapid innovations and responsive support.
+2.  **Open Source Nature:** DVC is an open-source project, fostering a community-driven approach that aligns with the values of collaboration, transparency, and accessibility. This aspect encourages active participation from a wide range of contributors, leading to rapid innovations and responsive support.
 
-3. **Compatibility with CI/CD and GitHub:** DVC's architecture is designed to work seamlessly within CI/CD pipelines, and its compatibility with GitHub Actions enables automated workflows that cover everything from data preprocessing to model training and evaluation. This integration ensures that data handling is not a separate silo but an integral part of the continuous integration, testing, and deployment processes.
+3.  **Compatibility with CI/CD and GitHub:** DVC's architecture is designed to work seamlessly within CI/CD pipelines, and its compatibility with GitHub Actions enables automated workflows that cover everything from data preprocessing to model training and evaluation. This integration ensures that data handling is not a separate silo but an integral part of the continuous integration, testing, and deployment processes.
 
-4. **Data Tracking and Experiment Versioning:** Unlike traditional data management systems, DVC provides robust capabilities to track changes in data and experiments, much like how code is versioned. It enables the ability to revert to previous data states, compare different data versions, and align data changes with specific code revisions. This ensures that every step in the AI development process can be audited and replicated, contributing to greater trust and transparency.
+4.  **Data Tracking and Experiment Versioning:** Unlike traditional data management systems, DVC provides robust capabilities to track changes in data and experiments, much like how code is versioned. It enables the ability to revert to previous data states, compare different data versions, and align data changes with specific code revisions. This ensures that every step in the AI development process can be audited and replicated, contributing to greater trust and transparency.
 
-5. **Facilitating Collaboration:** DVC's decentralized structure and remote storage options enable teams to share and access data without overwhelming the repository. This encourages collaboration, even in distributed environments, ensuring that everyone can work on the same data version and maintain consistency across the development lifecycle.
+5.  **Facilitating Collaboration:** DVC's decentralized structure and remote storage options enable teams to share and access data without overwhelming the repository. This encourages collaboration, even in distributed environments, ensuring that everyone can work on the same data version and maintain consistency across the development lifecycle.
 
-6. **Flexible Storage Options:** DVC offers flexibility in storing data, supporting various remote storage backends like S3, Azure Blob, Google Cloud Storage, among others. This flexibility aligns with different organizational needs and preferences, ensuring that data management is adaptable to various scenarios.
+6.  **Flexible Storage Options:** DVC offers flexibility in storing data, supporting various remote storage backends like S3, Azure Blob, Google Cloud Storage, among others. This flexibility aligns with different organizational needs and preferences, ensuring that data management is adaptable to various scenarios.
 
 The selection of DVC in the TAI Frameworks Project represents a thoughtful alignment with the principles of trusted AI, GitOps, and open-source collaboration. By bridging the gap between traditional software engineering practices and the unique demands of AI data management, DVC supports the creation of AI systems that are not only performant but also transparent, replicable, and ethical.
 
-:::{.callout-note}
+::: callout-note
 Add information about MLFlow and other tools evaluated in this section.
 :::
 
@@ -243,142 +249,144 @@ Add information about MLFlow and other tools evaluated in this section.
 In alignment with the Navy's strategic goals and the specific executive orders governing the Department of Defense (DoD), ethical considerations and trust in data management hold a central place in the Trusted AI Frameworks Project. By prioritizing metadata, adhering to the FAIR (Findable, Accessible, Interoperable, and Reusable) and CARE (Collective Benefit, Authority to Control, Responsibility, and Ethics) principles, the Navy reinforces its commitment to mission-critical values of transparency, integrity, and accountability. It should be noted that application of FAIR and CARE principles are separate from the notion of "Open Data" and doesn't invalidate the use of proper access and authorization controls.
 
 #### **Metadata and Its Role in Ethical Data Management**
-1. **Transparency for Mission Success:** Metadata supports the Navy's operational efficiency by providing clarity on data origins, context, and constraints, thereby enabling informed decision-making.
-2. **Compliance with Executive Orders:** Metadata ensures alignment with legal and regulatory requirements, such as the DOD AI Ethical Principles [@dod2020], which mandates specific data handling protocols within the DoD and specifically:
 
-::: {.callout-important title=[@dod2020]}
-- Responsible. DoD personnel will exercise appropriate levels of judgment and care, while remaining responsible for the development, deployment, and use of AI capabilities.
-- Equitable. The Department will take deliberate steps to minimize unintended bias in AI capabilities.
-- Traceable. The Department’s AI capabilities will be developed and deployed such that relevant personnel possess an appropriate understanding of the technology, development processes, and operational methods applicable to AI capabilities, including with transparent and auditable methodologies, data sources, and design procedure and documentation.
-- Reliable. The Department’s AI capabilities will have explicit, well-defined uses, and the safety, security, and effectiveness of such capabilities will be subject to testing and assurance within those defined uses across their entire life-cycles.
-- Governable. The Department will design and engineer AI capabilities to fulfill their intended functions while possessing the ability to detect and avoid unintended consequences, and the ability to disengage or deactivate deployed systems that demonstrate unintended behavior.
+1.  **Transparency for Mission Success:** Metadata supports the Navy's operational efficiency by providing clarity on data origins, context, and constraints, thereby enabling informed decision-making.
+2.  **Compliance with Executive Orders:** Metadata ensures alignment with legal and regulatory requirements, such as the DOD AI Ethical Principles [@dod2020], which mandates specific data handling protocols within the DoD and specifically:
+
+::: {.callout-important title="[@dod2020]"}
+-   Responsible. DoD personnel will exercise appropriate levels of judgment and care, while remaining responsible for the development, deployment, and use of AI capabilities.
+-   Equitable. The Department will take deliberate steps to minimize unintended bias in AI capabilities.
+-   Traceable. The Department's AI capabilities will be developed and deployed such that relevant personnel possess an appropriate understanding of the technology, development processes, and operational methods applicable to AI capabilities, including with transparent and auditable methodologies, data sources, and design procedure and documentation.
+-   Reliable. The Department's AI capabilities will have explicit, well-defined uses, and the safety, security, and effectiveness of such capabilities will be subject to testing and assurance within those defined uses across their entire life-cycles.
+-   Governable. The Department will design and engineer AI capabilities to fulfill their intended functions while possessing the ability to detect and avoid unintended consequences, and the ability to disengage or deactivate deployed systems that demonstrate unintended behavior.
 :::
 
 #### **The FAIR Principles: Ensuring Naval Readiness**
-1. **Findable & Accessible:** Easy discovery and retrieval of data accelerate the Navy's response time and readiness.
-2. **Interoperable & Reusable:** Standards for data compatibility facilitate cross-departmental collaboration and resource optimization, reflecting the Navy's emphasis on agility and resilience.
 
-![Trusted AI Needs to use standards for interoperability as pointed out by XKCD: ["Standards"](https://xkcd.com/927/)](standards.png){#fig-xkcd}
+1.  **Findable & Accessible:** Easy discovery and retrieval of data accelerate the Navy's response time and readiness.
+2.  **Interoperable & Reusable:** Standards for data compatibility facilitate cross-departmental collaboration and resource optimization, reflecting the Navy's emphasis on agility and resilience.
+
+![Trusted AI Needs to use standards for interoperability as pointed out by XKCD: ["Standards"](https://xkcd.com/927/)](standards.png)
 
 #### **CARE Principles: Upholding the Navy's Ethical Values**
-1. **Collective Benefit:** Data practices that align with community interests echo the Navy's mission to serve and protect the nation.
-2. **Authority to Control & Responsibility:** Respecting the rights of data providers and upholding stewardship responsibilities mirror the Navy's core values of honor and commitment.
-3. **Ethics:** Conducting data activities with integrity aligns with the Navy's ethical framework and compliance with relevant executive orders, such as Executive Order YYYY on Ethical Considerations in the DoD.
+
+1.  **Collective Benefit:** Data practices that align with community interests echo the Navy's mission to serve and protect the nation.
+2.  **Authority to Control & Responsibility:** Respecting the rights of data providers and upholding stewardship responsibilities mirror the Navy's core values of honor and commitment.
+3.  **Ethics:** Conducting data activities with integrity aligns with the Navy's ethical framework and compliance with relevant executive orders, such as Executive Order YYYY on Ethical Considerations in the DoD.
 
 #### **Conclusion: Setting a Standard for Naval Excellence**
-The Trusted AI Frameworks Project's alignment with metadata, FAIR, and CARE principles reflects the Navy's dedication to excellence, ethical leadership, and mission success. By embracing these principles, the Navy not only fosters trust and transparency within its ranks but also sets a precedent for responsible data handling that extends to its partnerships with other military branches, academia, and industry.
 
+The Trusted AI Frameworks Project's alignment with metadata, FAIR, and CARE principles reflects the Navy's dedication to excellence, ethical leadership, and mission success. By embracing these principles, the Navy not only fosters trust and transparency within its ranks but also sets a precedent for responsible data handling that extends to its partnerships with other military branches, academia, and industry.
 
 ### Future Perspectives and Conclusion: The Data-Driven Path to Trusted AI in Year 3 and Beyond
 
 As the Trusted AI Frameworks Project enters its third year, the focus on data-centric approaches continues to sharpen, reflecting the broader trend in AI development. In this complex and ever-evolving landscape, the partnership between Indiana University, University of Notre Dame, CRANE Naval Surface Warfare Center, and other collaborators is more crucial than ever. Here, we explore what lies ahead and conclude with insights that underline the strategic importance of data management for the Navy and Marine Corps.
 
 #### **Future Perspectives: Data Management in Year 3 and Beyond**
-1. **Continued Emphasis on Data Quality:** Leveraging the momentum of the data-centric AI movement, the next phase will focus on further refining data quality and context.
-2. **Adoption of Emerging Technologies:** Integration with cutting-edge tools and methodologies will enhance agility in data handling.
-3. **Strengthened Collaboration with Open Source Communities:** The project's commitment to using and contributing to open-source tools will continue to foster innovation and collaboration.
+
+1.  **Continued Emphasis on Data Quality:** Leveraging the momentum of the data-centric AI movement, the next phase will focus on further refining data quality and context.
+2.  **Adoption of Emerging Technologies:** Integration with cutting-edge tools and methodologies will enhance agility in data handling.
+3.  **Strengthened Collaboration with Open Source Communities:** The project's commitment to using and contributing to open-source tools will continue to foster innovation and collaboration.
 
 #### **Navigating Ethical Considerations and Regulatory Compliance**
-1. **Alignment with Executive Orders:** Ongoing alignment with legal and regulatory requirements will be paramount.
-2. **Enhanced Ethical Oversight:** A robust ethical framework that resonates with FAIR and CARE principles will guide the data management efforts.
+
+1.  **Alignment with Executive Orders:** Ongoing alignment with legal and regulatory requirements will be paramount.
+2.  **Enhanced Ethical Oversight:** A robust ethical framework that resonates with FAIR and CARE principles will guide the data management efforts.
 
 #### **Implications for the Navy and Marine Corps**
-1. **Strategic Agility:** Improved data management facilitates faster and more informed decision-making, crucial for naval readiness.
-2. **Ethical Leadership:** Upholding the highest standards of integrity aligns with the Navy's core values and enhances trust.
+
+1.  **Strategic Agility:** Improved data management facilitates faster and more informed decision-making, crucial for naval readiness.
+2.  **Ethical Leadership:** Upholding the highest standards of integrity aligns with the Navy's core values and enhances trust.
 
 #### **Conclusion: A Unified Path Forward**
-The data-driven journey of the Trusted AI Frameworks Project illuminates the vital role of data in enhancing the trustworthiness and success of AI deployment within the Navy and Marine Corps. With a vision rooted in collaboration, ethical excellence, and technological innovation, the path forward promises to be an exciting and transformative adventure. Together, academia, industry, and the military will continue to forge a data-centric future that not only serves the needs of the present but anticipates the challenges and opportunities of tomorrow.
 
+The data-driven journey of the Trusted AI Frameworks Project illuminates the vital role of data in enhancing the trustworthiness and success of AI deployment within the Navy and Marine Corps. With a vision rooted in collaboration, ethical excellence, and technological innovation, the path forward promises to be an exciting and transformative adventure. Together, academia, industry, and the military will continue to forge a data-centric future that not only serves the needs of the present but anticipates the challenges and opportunities of tomorrow.
 
 ## Deployment and Provisioning
 
 ### Introduction: The Challenge of Reproducibility and Integration
-Trusted AI involves complex and interdependent components that often originate from disparate academic and open-source projects. This complexity presents unique challenges in ensuring reproducibility and seamless integration of both "software 1.0" and "software 2.0." The need for a robust framework that addresses these challenges has never been more pertinent. The project’s emphasis on deployment and provisioning aims to build a bridge between the theoretical foundations of AI and the practicalities of its application within a secure and trustworthy framework. 
+
+Trusted AI involves complex and interdependent components that often originate from disparate academic and open-source projects. This complexity presents unique challenges in ensuring reproducibility and seamless integration of both "software 1.0" and "software 2.0." The need for a robust framework that addresses these challenges has never been more pertinent. The project's emphasis on deployment and provisioning aims to build a bridge between the theoretical foundations of AI and the practicalities of its application within a secure and trustworthy framework.
 
 Certainly! Here's a revised version of the "DevOps and Computational Environments" section that provides more context and explanations for those who may not be familiar with these technologies:
 
 ### DevOps and Computational Environments: Bridging Development and Operations
 
-The journey of Trusted AI doesn’t end with the creation of intelligent algorithms but extends into the realms of deployment and operational environments. This nexus between development and operations is known as DevOps, a practice that enhances efficiency, reliability, and maintainability. In the context of Trusted AI, several technologies and practices have been leveraged, each serving a specific role:
+The journey of Trusted AI doesn't end with the creation of intelligent algorithms but extends into the realms of deployment and operational environments. This nexus between development and operations is known as DevOps, a practice that enhances efficiency, reliability, and maintainability. In the context of Trusted AI, several technologies and practices have been leveraged, each serving a specific role:
 
-- **Python PDM**: As Python is one of the most prevalent languages for AI development, tools like Python's Package Dependency Management (PDM) are essential. PDM helps manage dependencies and package versions, ensuring consistent environments across development, testing, and deployment stages.
+-   **Python PDM**: As Python is one of the most prevalent languages for AI development, tools like Python's Package Dependency Management (PDM) are essential. PDM helps manage dependencies and package versions, ensuring consistent environments across development, testing, and deployment stages.
 
-- **Conda/Mamba**: These are package managers specifically designed for scientific computing and data science, including AI. They allow for the creation of isolated environments, simplifying the process of managing complex dependencies.
+-   **Conda/Mamba**: These are package managers specifically designed for scientific computing and data science, including AI. They allow for the creation of isolated environments, simplifying the process of managing complex dependencies.
 
-- **Nix Containers**: Nix takes reproducibility to the next level. Unlike conventional package managers, Nix ensures that the exact versions of all dependencies are explicitly defined, creating a consistent and reproducible environment across different stages and machines. This is crucial for both "software 1.0" and "software 2.0," where inconsistencies in environments can lead to unpredictable behaviors.
+-   **Nix Containers**: Nix takes reproducibility to the next level. Unlike conventional package managers, Nix ensures that the exact versions of all dependencies are explicitly defined, creating a consistent and reproducible environment across different stages and machines. This is crucial for both "software 1.0" and "software 2.0," where inconsistencies in environments can lead to unpredictable behaviors.
 
-- **Templates and Devcontainers**: By using templates and development containers (devcontainers), the project has streamlined the setup process, making it easier for developers to replicate environments. This ensures that what works on one developer's machine will work on another's, alleviating the infamous "it works on my machine" problem.
+-   **Templates and Devcontainers**: By using templates and development containers (devcontainers), the project has streamlined the setup process, making it easier for developers to replicate environments. This ensures that what works on one developer's machine will work on another's, alleviating the infamous "it works on my machine" problem.
 
 These tools and practices collectively create a seamless and reliable process of moving AI models and applications from development to production. They recognize the complexity of AI development and provide solutions tailored to handle these challenges. The selection of these specific technologies within the Trusted AI project is a strategic alignment with the unique needs of AI, reflecting an understanding of the underlying challenges and opportunities that AI presents.
 
 By connecting these dots and creating an ecosystem where development and operations converge, DevOps in the Trusted AI context represents a key pillar in the project's strategy. It enables not just the creation but also the deployment and maintenance of AI solutions that can be trusted, validated, and reproduced, meeting the stringent standards required by the Navy and other critical stakeholders.
 
-![Trusted AI Python Environment Reproducibility by XKCD: ["Python Environment"](https://xkcd.com/1987/)](python_environment.png){#fig-xkcd}
+![Trusted AI Python Environment Reproducibility by XKCD: ["Python Environment"](https://xkcd.com/1987/)](python_environment.png)
 
 ### Software Bill of Materials (SBoM): A Comprehensive Inventory for Trust
-:::{.callout-note}
-Links+Credit to IU work on SBOM's. Add NIST and Govn't references
-:::
+
 In any sophisticated piece of technology, understanding the components that make up the system is essential for security, quality, and compliance. The Software Bill of Materials (SBoM) serves this very purpose, offering a comprehensive inventory of all software components in a system, akin to a parts list in physical manufacturing.
 
-The SBoM is especially critical in the context of Trusted AI for the Navy, aligning with Federal Government requirements and standards for procurement. Here's a breakdown of the key elements and why they matter:
+The SBoM is especially critical in the context of Trusted AI for the Navy, aligning with [Federal Government requirements and standards for procurement](https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1). Here's a breakdown of the key elements and why they matter:
 
-- **What is an SBoM?**: An SBoM details the components, libraries, and modules within a software product. It includes the exact versions, sources, licenses, and dependencies, offering a transparent and verifiable snapshot of the software's composition.
+-   **What is an SBoM?**: An SBoM details the components, libraries, and modules within a software product. It includes the exact versions, sources, licenses, and dependencies, offering a transparent and verifiable snapshot of the software's composition.
 
-- **SPDX (Software Package Data Exchange)**: Developed by the Linux Foundation, SPDX provides a standardized format for sharing SBoM data across different tools and systems. It enables consistency and interoperability, supporting transparency and trust in software procurement and deployment.
+-   **SPDX (Software Package Data Exchange)**: Developed by the [Linux Foundation](https://www.linuxfoundation.org/projects), [SPDX](https://spdx.dev/) provides a standardized format for sharing SBoM data across different tools and systems. It enables consistency and interoperability, supporting transparency and trust in software procurement and deployment.
 
-- **SPDX Version 3**: Currently under final revision, this new version of SPDX expands its capabilities to include specifications for AI Bill of Materials. It recognizes the unique attributes of AI and machine learning models, accommodating their complex dependencies and configurations.
+-   **JSON-LD Vocabulary**: [SPDX's vocabulary released as JSON-LD (JSON Linked Data)](https://github.com/spdx/spdx-3-model/blob/main/serialization/json_ld/EXAMPLES.md) provides a machine-readable format that facilitates the automatic processing of SBoM data. It streamlines integration with existing systems and tools, fostering collaboration and automation in AI deployment.
 
-- **JSON-LD Vocabulary**: SPDX's vocabulary released as JSON-LD (JSON Linked Data) provides a machine-readable format that facilitates the automatic processing of SBoM data. It streamlines integration with existing systems and tools, fostering collaboration and automation in AI deployment.
+-   **Relevance to the Navy and Federal Requirements**: Compliance with SBoM requirements is essential for the Department of Defense (DoD) and other federal agencies. It aligns with executive orders and guidelines governing software procurement, security, and transparency, making it a crucial component of the Trusted AI project's success.
 
-- **Relevance to the Navy and Federal Requirements**: Compliance with SBoM requirements is essential for the Department of Defense (DoD) and other federal agencies. It aligns with executive orders and guidelines governing software procurement, security, and transparency, making it a crucial component of the Trusted AI project's success.
+#### Extension and Evaluation of SBoM Construction Tools
 
-By embracing the SBoM, the Trusted AI project is leading the way in responsible and transparent software development and deployment. The use of SPDX and alignment with federal standards ensures that the AI models and applications meet rigorous security and quality benchmarks. This not only promotes trust within the Navy but also sets a precedent for AI projects in various sectors, demonstrating the importance of detailed, transparent documentation in building robust and reliable AI systems.
+In the Trusted AI Frameworks Project, the integration of outputs from other Trusted AI Projects into a cohesive whole is a key focus. An illustrative example of this integration came during the summer of 2023, when the project extended the foundational work of "Leveraging Labels and SBOMs to Build Trustworthy AI" by Peter J. Caven, Shakthidhar Gopavaram, and PI L. Jean Camp at Indiana University.
 
-The alignment of the SBoM within the Trusted AI framework emphasizes the commitment to excellence and adherence to regulations, reinforcing the project's mission to deliver AI solutions that can be confidently deployed and maintained within critical environments.
+The team [evaluated SBoM construction tools](https://github.com/nd-crane/sbom-analysis) for completeness, specifically focusing on the knowledge graph representation of the SPDX generated by each tool relative to the *The Minimum Elements For a Software Bill of Materials (SBOM)* [@ntia2021]. A significant highlight of this work was the incorporation of [SPDX Version 3.0](https://github.com/spdx/spdx-3-model), which expands its capabilities to include specifications for an [AI Profile](https://github.com/spdx/spdx-3-model/tree/main/model/AI). This version recognizes the unique attributes of AI and machine learning models, accommodating their complex dependencies and configurations.
+
+This extension not only reinforced the commitment to transparent and responsible software development but also exemplified how individual research efforts within the Trusted AI umbrella can be synthesized into the broader Framework. It also underscores the project's proactive approach in leveraging the latest standards, such as SPDX 3.0, to ensure that the AI models and applications meet the ever-evolving requirements of the field.
 
 ### Hardened Containers, Military CI/CD through IronBank, Cloud One, and Platform One
 
 The evolving technological landscape has necessitated a robust infrastructure for deploying software. Within the military context, especially in the Navy, trust, security, and efficiency are paramount. IronBank, Cloud One, and Platform One are initiatives that provide trusted access to cloud services and deployments (e.g., AWS, Azure) and create a streamlined pathway for the adoption of AI and other advanced technologies.
 
 #### Introduction to IronBank, Cloud One, and Platform One
-- **IronBank**: A digital repository that offers containerized software accredited to run in Department of Defense (DoD) environments.
-- **Cloud One**: A set of cloud services designed to enable rapid and secure development within the DoD.
-- **Platform One**: A DoD-wide initiative that provides containerized software solutions, incorporating DevSecOps principles for continuous integration and deployment.
+
+-   **IronBank**: A digital repository that offers containerized software accredited to run in Department of Defense (DoD) environments.
+-   **Cloud One**: A set of cloud services designed to enable rapid and secure development within the DoD.
+-   **Platform One**: A DoD-wide initiative that provides containerized software solutions, incorporating DevSecOps principles for continuous integration and deployment.
 
 These platforms reduce the barriers to entry, ensuring a standardized approach to software development and deployment, all while aligning with military guidelines and requirements.
 
 #### AI-Centric Workflows and Challenges:
-Integrating AI within these platforms presents unique challenges that diverge from traditional software deployments:
-- **Data Management**: AI's unique data needs must be met through robust strategies, accommodating real-time feeds and scalable workflows.
-- **Hardware Needs**: AI applications often necessitate specialized hardware such as GPUs and accelerators, requiring containerization techniques that are hardware-agnostic.
-- **Device Driver Complexity**: Managing device drivers within Hardened Containers can be particularly intricate, leading to potential security vulnerabilities if misconfigured.
+
+Integrating AI within these platforms presents unique challenges that diverge from traditional software deployments: - **Data Management**: AI's unique data needs must be met through robust strategies, accommodating real-time feeds and scalable workflows. - **Hardware Needs**: AI applications often necessitate specialized hardware such as GPUs and accelerators, requiring containerization techniques that are hardware-agnostic. - **Device Driver Complexity**: Managing device drivers within Hardened Containers can be particularly intricate, leading to potential security vulnerabilities if misconfigured.
 
 #### Solutions and Alignment with Military Objectives:
-To tackle these challenges, the combined ecosystem must:
-- Enhance data management to align with AI's distinct requirements.
-- Adopt standardized device driver management and containerization strategies.
-- Ensure complete compliance with the Linux Foundation's SPDX standards and federal procurement needs.
+
+To tackle these challenges, the combined ecosystem must: - Enhance data management to align with AI's distinct requirements. - Adopt standardized device driver management and containerization strategies. - Ensure complete compliance with the Linux Foundation's SPDX standards and federal procurement needs.
 
 By integrating AI-centric workflows and aligning with essential hardware and security needs, IronBank, Cloud One, and Platform One offer a strong foundation for the military's future AI adoption.
 
 In the ever-changing technological landscape, the military's approach to deployment and provisioning must evolve. The alignment of IronBank, Cloud One, and Platform One with AI's unique workflows, specialized hardware, and secure device driver management sets a robust foundation for future innovation. These platforms not only align with the Navy's mission but also pave the way for broader AI integration within the military domain, enhancing both trust and functionality.
 
-
 #### Conclusion: Building Trust through Secure Deployment
+
 The deployment and provisioning of AI within the military environment are complex tasks laden with unique challenges. The emergence of hardened containers and specific initiatives like IronBank, Cloud One, and Platform One provides a pathway to integrating AI into the military domain. However, it's the standardization through tools like Python PDM, Conda/Mamba, and Nix Container that builds a foundation of trust and robustness.
 
 By embracing standardized tools, aligning them with military needs, and integrating them with existing trusted platforms, the Navy is poised to leverage the full potential of AI. The overarching strategy must be one of collaboration, security, and forward-thinking innovation, ensuring that the deployment of AI aligns with the broader goals of efficiency, transparency, and trust within the Navy's mission.
 
 The road ahead is promising, with these strategic initiatives paving the way for AI's broader integration into the military domain. The combination of standardization, compliance, and alignment with military needs ensures a path toward Trusted AI that is both innovative and grounded in secure principles.
 
-
-
 ## Development Practices and Methodologies
 
 ### Introduction: The Modern Development Landscape
 
-The field of software development has seen a series of paradigm shifts, each reflecting the evolving demands of technology and society. From the traditional waterfall model to the agile development framework, the focus has continuously shifted towards more iterative, responsive, and collaborative practices. Within this changing landscape, the concept of "Literate Programming" was introduced by Donald Knuth in the 1980s, emphasizing the importance of explaining code in a human-readable narrative. Knuth's vision foresaw a future where programming is not just a mechanical process but a craft interwoven with storytelling and documentation.
+The field of software development has seen a series of paradigm shifts, each reflecting the evolving demands of technology and society. From the traditional waterfall model to the agile development framework, the focus has continuously shifted towards more iterative, responsive, and collaborative practices. Within this changing landscape, the concept of "Literate Programming" <!--# Need to add exploratory programming references --> was introduced by Donald Knuth in the 1980s, emphasizing the importance of explaining code in a human-readable narrative. Knuth's vision foresaw a future where programming is not just a mechanical process but a craft interwoven with storytelling and documentation.
 
 With the rise of AI, this vision has been pushed further, enabling a new era of collaboration between human programmers and AI "Co-Pilots." AI-driven assistance in software development is becoming a reality, allowing for more effective and efficient code writing, debugging, and optimization. Literate programming can play a vital role in this context, as it emphasizes clarity, explanation, and a structured narrative that both human developers and AI models can interpret and build upon.
 
@@ -388,6 +396,7 @@ The integration of Language Model based generative models, like large language m
 
 Agile principles resonate strongly in this context, mirroring the exploratory nature of AI development. Just as agile methodologies prioritize adaptability and collaboration, modern AI practices encourage experimentation, quick iterations, and a seamless transition from exploration to deployment. The subsequent sections delve into specific practices and tools that exemplify this convergence of agility, literacy, and exploratory programming, demonstrating their relevance and potential within the framework of Trusted AI.
 
+<!--# Jupyter Con tutorial and Slides on Quarto and nbdev-->
 
 ### Quarto: Bridging the Gap Between Literacy and Code
 
@@ -397,26 +406,25 @@ Quarto is a pioneering solution in the field of literate programming that seamle
 
 #### Key Features of Quarto
 
-1. **Human-Readable Documentation**: Quarto allows developers to intertwine code with descriptive narratives, diagrams, and mathematical notation. This approach fosters comprehension, collaboration, and maintainability, making it particularly well-suited for complex AI projects.
+1.  **Human-Readable Documentation**: Quarto allows developers to intertwine code with descriptive narratives, diagrams, and mathematical notation. This approach fosters comprehension, collaboration, and maintainability, making it particularly well-suited for complex AI projects.
 
-2. **Interoperability with Jupyter Notebooks**: By supporting Jupyter Notebook integration, Quarto enables an exploratory programming environment. Researchers and engineers can craft, test, and iterate on code in an interactive and visual manner.
+2.  **Interoperability with Jupyter Notebooks**: By supporting Jupyter Notebook integration, Quarto enables an exploratory programming environment. Researchers and engineers can craft, test, and iterate on code in an interactive and visual manner.
 
-3. **Flexible Output Formats**: Quarto documents can be rendered into various formats such as HTML, PDF, and Word, catering to diverse presentation and distribution needs.
+3.  **Flexible Output Formats**: Quarto documents can be rendered into various formats such as HTML, PDF, and Word, catering to diverse presentation and distribution needs.
 
-4. **Reproducibility**: Code chunks and outputs within Quarto documents are readily reproducible. This aids in verification and validation, essential qualities in Trusted AI.
+4.  **Reproducibility**: Code chunks and outputs within Quarto documents are readily reproducible. This aids in verification and validation, essential qualities in Trusted AI.
 
 #### Quarto in the Context of AI Development
 
 In the rapidly evolving landscape of AI, where complexity can easily spiral out of control, Quarto provides a structured and transparent way to document and develop models. The following aspects make it a particularly fitting choice:
 
-- **Transparency**: Literate programming through Quarto ensures that the code's logic and decision-making are clearly articulated, fostering trust in the AI system.
-- **Collaboration**: By bridging the gap between code and prose, Quarto facilitates collaboration among multidisciplinary teams, including data scientists, engineers, domain experts, and stakeholders.
-- **Compliance**: In contexts like the Navy, where regulatory compliance and ethical considerations are paramount, Quarto's approach to documentation can aid in meeting these requirements.
+-   **Transparency**: Literate programming through Quarto ensures that the code's logic and decision-making are clearly articulated, fostering trust in the AI system.
+-   **Collaboration**: By bridging the gap between code and prose, Quarto facilitates collaboration among multidisciplinary teams, including data scientists, engineers, domain experts, and stakeholders.
+-   **Compliance**: In contexts like the Navy, where regulatory compliance and ethical considerations are paramount, Quarto's approach to documentation can aid in meeting these requirements.
 
 #### Conclusion
 
 Quarto represents a leap forward in aligning software development practices with human cognition and communication. Its ability to bridge literacy and code makes it an indispensable tool in the era of "Software 2.0." By fostering clear understanding, collaboration, and reproducibility, Quarto contributes to the overarching goal of building Trusted AI systems, aligning perfectly with the needs and values of modern AI development, including military applications.
-
 
 ### nbdev: Extending Literacy with Quarto Integration
 
@@ -426,30 +434,29 @@ nbdev is an open-source development environment that builds upon Jupyter Noteboo
 
 #### Key Features of nbdev
 
-1. **Quarto Integration**: By incorporating Quarto, nbdev fosters a rich literate programming environment where code is documented and explained in human-readable form.
+1.  **Quarto Integration**: By incorporating Quarto, nbdev fosters a rich literate programming environment where code is documented and explained in human-readable form.
 
-2. **Interactive Development**: Developers can write code, run experiments, and analyze results all within the same Jupyter Notebook, promoting a more exploratory and iterative process.
+2.  **Interactive Development**: Developers can write code, run experiments, and analyze results all within the same Jupyter Notebook, promoting a more exploratory and iterative process.
 
-3. **Automated Code Export**: Code written in nbdev's notebooks can be automatically converted to traditional script files, facilitating integration with existing codebases and deployment pipelines.
+3.  **Automated Code Export**: Code written in nbdev's notebooks can be automatically converted to traditional script files, facilitating integration with existing codebases and deployment pipelines.
 
-4. **Testing Integration**: nbdev supports continuous integration and testing within the notebook environment, aligning with modern software quality assurance practices.
+4.  **Testing Integration**: nbdev supports continuous integration and testing within the notebook environment, aligning with modern software quality assurance practices.
 
-5. **Collaboration Tools**: With built-in support for Git and GitHub, nbdev streamlines collaboration and version control, bridging the gap between data scientists, developers, and other stakeholders.
+5.  **Collaboration Tools**: With built-in support for Git and GitHub, nbdev streamlines collaboration and version control, bridging the gap between data scientists, developers, and other stakeholders.
 
 #### nbdev in the Context of AI Development
 
 The flexibility and transparency offered by nbdev are especially significant in AI development. Here's how:
 
-- **Complex Model Documentation**: AI models are inherently complex and require detailed explanation. Nbdev allows for the clear documentation of both algorithms and the reasoning behind design choices.
+-   **Complex Model Documentation**: AI models are inherently complex and require detailed explanation. Nbdev allows for the clear documentation of both algorithms and the reasoning behind design choices.
 
-- **Rapid Prototyping**: The interactive nature of nbdev enables quicker experimentation and refinement of models, a crucial aspect of AI development.
+-   **Rapid Prototyping**: The interactive nature of nbdev enables quicker experimentation and refinement of models, a crucial aspect of AI development.
 
-- **Reproducibility**: By enforcing a structured approach, nbdev ensures that models are more reproducible, enhancing trust and reliability.
+-   **Reproducibility**: By enforcing a structured approach, nbdev ensures that models are more reproducible, enhancing trust and reliability.
 
-- **Alignment with Software 2.0 Principles**: The nbdev framework aligns well with the "Software 2.0" paradigm, where learned behaviors and model training are central. It supports the rapid evolution and integration needed in the AI landscape.
+-   **Alignment with Software 2.0 Principles**: The nbdev framework aligns well with the "Software 2.0" paradigm, where learned behaviors and model training are central. It supports the rapid evolution and integration needed in the AI landscape.
 
 nbdev, with its integration of Quarto, provides a cohesive and advanced environment for literate programming. Its synergy with the principles of modern AI development makes it an essential tool for achieving transparency, collaboration, and efficiency. In contexts like the military, where understanding, trust, and compliance are key, nbdev offers a pathway to create more accessible and trustworthy AI systems.
-
 
 ### Fast.ai: A Layered Approach to AI Development
 
@@ -459,33 +466,33 @@ Fast.ai is an open-source deep learning library that simplifies the process of b
 
 #### Fast.ai's Layered Approach
 
-1. **Applications Layer**: This layer offers pre-built solutions for common tasks like image classification, natural language processing, tabular data analysis, and collaborative filtering. It is designed for ease of use, allowing non-specialists to build and deploy models with minimal code.
+1.  **Applications Layer**: This layer offers pre-built solutions for common tasks like image classification, natural language processing, tabular data analysis, and collaborative filtering. It is designed for ease of use, allowing non-specialists to build and deploy models with minimal code.
 
-2. **High-Level API**: For those who need more control and customization, the high-level API provides an intuitive interface to design and experiment with more complex models. It strikes a balance between simplicity and power, suitable for intermediate-level developers.
+2.  **High-Level API**: For those who need more control and customization, the high-level API provides an intuitive interface to design and experiment with more complex models. It strikes a balance between simplicity and power, suitable for intermediate-level developers.
 
-3. **Mid-Level API**: The mid-level API introduces more granular control and allows for the creation of custom models and data pipelines. It's designed for advanced users who wish to dive deeper into the underlying mechanics of their models.
+3.  **Mid-Level API**: The mid-level API introduces more granular control and allows for the creation of custom models and data pipelines. It's designed for advanced users who wish to dive deeper into the underlying mechanics of their models.
 
-4. **Low-Level API**: At the lowest layer, developers have direct access to underlying PyTorch constructs, facilitating experimentation and the development of entirely novel architectures. This layer is aimed at research scientists and cutting-edge practitioners.
+4.  **Low-Level API**: At the lowest layer, developers have direct access to underlying PyTorch constructs, facilitating experimentation and the development of entirely novel architectures. This layer is aimed at research scientists and cutting-edge practitioners.
 
 #### Literate Programming and nbdev Integration
 
 Fast.ai not only encourages a more accessible approach to AI but also promotes literate programming principles. The library itself was developed using nbdev, thereby enhancing its transparency, documentation, and collaboration.
 
-- **Transparent Development**: Literate programming within nbdev enables Fast.ai's code, design rationale, and experiments to be clearly documented and shared.
+-   **Transparent Development**: Literate programming within nbdev enables Fast.ai's code, design rationale, and experiments to be clearly documented and shared.
 
-- **Interoperability**: Fast.ai’s integration with nbdev ensures smooth collaboration between different stakeholders in the AI development process, including data scientists, engineers, and domain experts.
+-   **Interoperability**: Fast.ai's integration with nbdev ensures smooth collaboration between different stakeholders in the AI development process, including data scientists, engineers, and domain experts.
 
-- **Rapid Prototyping and Experimentation**: Leveraging the exploratory nature of nbdev, Fast.ai facilitates iterative experimentation and refinement, vital for AI research and development.
+-   **Rapid Prototyping and Experimentation**: Leveraging the exploratory nature of nbdev, Fast.ai facilitates iterative experimentation and refinement, vital for AI research and development.
 
 #### Relevance to the Navy and Broader Defense Community
 
-Fast.ai's layered approach is particularly relevant to the Navy and other defense institutions. Here’s why:
+Fast.ai's layered approach is particularly relevant to the Navy and other defense institutions. Here's why:
 
-- **Scalability**: Fast.ai's structure allows for quick prototyping and scaling, accommodating both straightforward applications and sophisticated custom solutions.
+-   **Scalability**: Fast.ai's structure allows for quick prototyping and scaling, accommodating both straightforward applications and sophisticated custom solutions.
 
-- **Education and Workforce Development**: The approachability of Fast.ai makes it an excellent tool for education and training, aligning with initiatives like Scalable Asymmetric Lifecycle Engagement (SCALE) managed by Purdue University.
+-   **Education and Workforce Development**: The approachability of Fast.ai makes it an excellent tool for education and training, aligning with initiatives like Scalable Asymmetric Lifecycle Engagement (SCALE) managed by Purdue University.
 
-- **Trust and Compliance**: The transparency and reproducibility afforded by Fast.ai, especially in combination with nbdev, align well with the principles of Trusted AI, a critical consideration for military applications.
+-   **Trust and Compliance**: The transparency and reproducibility afforded by Fast.ai, especially in combination with nbdev, align well with the principles of Trusted AI, a critical consideration for military applications.
 
 Fast.ai represents a significant advancement in making AI accessible, understandable, and manageable. Its layered approach, combined with literate programming principles, contributes to a more transparent and collaborative development process. In the context of defense and national security, Fast.ai offers a pathway to harness the power of AI effectively, ethically, and responsively.
 
@@ -497,23 +504,23 @@ The landscape of software development, particularly in the realm of AI, is under
 
 A promising frontier in this evolution is the integration of AI itself into the development and deployment process. AI Co-Pilots, or intelligent assistants, are emerging as key players in this new paradigm.
 
-1. **Security Oversight**: AI Co-Pilots can continuously monitor code for potential security vulnerabilities, offering real-time insights and even automated fixes, aligning with Trusted AI principles.
+1.  **Security Oversight**: AI Co-Pilots can continuously monitor code for potential security vulnerabilities, offering real-time insights and even automated fixes, aligning with Trusted AI principles.
 
-2. **CI/CD Integration**: By embedding intelligence into the Continuous Integration/Continuous Deployment pipeline, AI Co-Pilots can optimize testing, deployment, and scaling, adapting to the unique demands of AI "Software 2.0."
+2.  **CI/CD Integration**: By embedding intelligence into the Continuous Integration/Continuous Deployment pipeline, AI Co-Pilots can optimize testing, deployment, and scaling, adapting to the unique demands of AI "Software 2.0."
 
-3. **Code Quality Control**: AI-driven code review can ensure adherence to coding standards, improve code quality, and reduce human error, fostering more robust and maintainable systems.
+3.  **Code Quality Control**: AI-driven code review can ensure adherence to coding standards, improve code quality, and reduce human error, fostering more robust and maintainable systems.
 
-4. **Adaptive Learning and Enhancement**: Leveraging real-world data, AI Co-Pilots can learn and evolve, offering personalized assistance and driving continuous improvement in development practices.
+4.  **Adaptive Learning and Enhancement**: Leveraging real-world data, AI Co-Pilots can learn and evolve, offering personalized assistance and driving continuous improvement in development practices.
 
 #### Relevance to the Navy and Defense Community
 
 The Navy, and the defense community at large, stand to benefit profoundly from these advancements. The integration of AI Co-Pilots can enhance the security, efficiency, and agility of development processes, key attributes in an ever-changing and complex environment.
 
-- **Mission Readiness**: Faster, more robust development practices mean quicker deployment of critical AI systems, enhancing responsiveness and strategic capabilities.
+-   **Mission Readiness**: Faster, more robust development practices mean quicker deployment of critical AI systems, enhancing responsiveness and strategic capabilities.
 
-- **Ethical Compliance**: Automated oversight aligned with ethical guidelines ensures that AI systems adhere to the necessary standards, fostering trust and accountability.
+-   **Ethical Compliance**: Automated oversight aligned with ethical guidelines ensures that AI systems adhere to the necessary standards, fostering trust and accountability.
 
-- **Workforce Development**: AI-driven tools offer opportunities for training and upskilling, aligning with initiatives like the Scalable Asymmetric Lifecycle Engagement (SCALE) managed by Purdue University, enhancing both semiconductor and AI workforce development.
+-   **Workforce Development**: AI-driven tools offer opportunities for training and upskilling, aligning with initiatives like the Scalable Asymmetric Lifecycle Engagement (SCALE) managed by Purdue University, enhancing both semiconductor and AI workforce development.
 
 #### Looking Ahead
 
@@ -521,46 +528,45 @@ The integration of AI into development practices represents a significant step t
 
 In an era where complexity is the norm, and the stakes are high, these advancements offer a path towards a more resilient, responsive, and responsible approach to AI. The convergence of AI and human expertise is not just a technical evolution but a philosophical one, reflecting a deeper understanding of the interconnectedness of technology, ethics, and humanity.
 
-
 ### Broader Challenges and Opportunities
 
 The quest for Trusted AI is not merely a technical challenge; it's a complex endeavor that intersects with various domains, including ethics, community involvement, workforce development, interdisciplinary collaboration, and more. This section highlights some of these broader considerations, emphasizing the multifaceted nature of Trusted AI.
 
 #### Workforce Development
 
-1. **Skills Gap**: With the rapid advancement of AI technologies, there is a growing need for professionals with specialized skills. Addressing this gap requires tailored training and educational programs.
+1.  **Skills Gap**: With the rapid advancement of AI technologies, there is a growing need for professionals with specialized skills. Addressing this gap requires tailored training and educational programs.
 
-2. **Initiatives like SCALE**: Managed by Purdue University and focused on semiconductor and AI workforce development, SCALE represents a model for public-private collaboration in nurturing talent.
+2.  **Initiatives like SCALE**: Managed by Purdue University and focused on semiconductor and AI workforce development, SCALE represents a model for public-private collaboration in nurturing talent.
 
-3. **Inclusion and Diversity**: Building a workforce that reflects diverse perspectives is essential for developing AI systems that are equitable and unbiased.
+3.  **Inclusion and Diversity**: Building a workforce that reflects diverse perspectives is essential for developing AI systems that are equitable and unbiased.
 
 #### Ethical Considerations
 
-1. **Transparency and Accountability**: Ensuring that AI systems are transparent and accountable is fundamental to building trust.
+1.  **Transparency and Accountability**: Ensuring that AI systems are transparent and accountable is fundamental to building trust.
 
-2. **Ethical Testing**: Integrating ethical "behavior tests" within AI testing pipelines, as highlighted in CI/CD and GitOps environments, is vital to align AI with societal values.
+2.  **Ethical Testing**: Integrating ethical "behavior tests" within AI testing pipelines, as highlighted in CI/CD and GitOps environments, is vital to align AI with societal values.
 
-3. **Regulatory Compliance**: Adherence to executive orders, regulations, and guidelines governing DoD and Navy's use of AI is crucial for legal and ethical operation.
+3.  **Regulatory Compliance**: Adherence to executive orders, regulations, and guidelines governing DoD and Navy's use of AI is crucial for legal and ethical operation.
 
 #### Community and Open Source Involvement
 
-1. **Collaboration with Open Source Tools**: Leveraging and contributing to open-source tools fosters a collaborative and innovative ecosystem.
+1.  **Collaboration with Open Source Tools**: Leveraging and contributing to open-source tools fosters a collaborative and innovative ecosystem.
 
-2. **Engagement with the Broader Community**: Collaborating with academia, industry, and other stakeholders can accelerate progress and ensure alignment with broader societal goals.
+2.  **Engagement with the Broader Community**: Collaborating with academia, industry, and other stakeholders can accelerate progress and ensure alignment with broader societal goals.
 
-3. **Promoting Open Standards**: Encouraging the use of open standards like Linux Foundation SPDX helps in creating a universal language and facilitating collaboration across different entities.
+3.  **Promoting Open Standards**: Encouraging the use of open standards like Linux Foundation SPDX helps in creating a universal language and facilitating collaboration across different entities.
 
 #### Interdisciplinary Collaboration
 
-1. **Bridging Silos**: Trusted AI requires the fusion of expertise from computer science, ethics, law, social sciences, and more. Encouraging interdisciplinary collaboration breaks down barriers and fosters holistic solutions.
+1.  **Bridging Silos**: Trusted AI requires the fusion of expertise from computer science, ethics, law, social sciences, and more. Encouraging interdisciplinary collaboration breaks down barriers and fosters holistic solutions.
 
-2. **Innovation through Diversity of Thought**: By integrating diverse perspectives, new pathways to innovation are uncovered, driving creativity and resilience in the development of AI systems.
+2.  **Innovation through Diversity of Thought**: By integrating diverse perspectives, new pathways to innovation are uncovered, driving creativity and resilience in the development of AI systems.
 
 #### User Experience and Human-AI Interaction
 
-1. **Human-Centered Design**: Emphasizing the end-user's needs and expectations ensures that AI systems are user-friendly, accessible, and effective.
+1.  **Human-Centered Design**: Emphasizing the end-user's needs and expectations ensures that AI systems are user-friendly, accessible, and effective.
 
-2. **Evolving Interaction Models**: As Trusted AI projects mature, new paradigms of Human-AI Interaction (HAI) will emerge, necessitating ongoing research and adaptation.
+2.  **Evolving Interaction Models**: As Trusted AI projects mature, new paradigms of Human-AI Interaction (HAI) will emerge, necessitating ongoing research and adaptation.
 
 ### Conclusion: A Holistic Approach to Trusted AI
 

@@ -7,11 +7,46 @@
     "text": "ChatGPT, please assist in drafting a blog post for AI Success Factors: Engineering Trust in Deployments. As a generative AI, your input serves as a starting point for discussion and is meticulously reviewed and edited by a team of AI researchers at the Laboratory for Assured AI Applications Development at the University of Notre Dame’s Center for Research Computing.\nThe intended audience includes students, professionals, and enthusiasts interested in the progression of AI, with a focus on the successful deployment of AI technologies. Each post aims to disseminate recent advancements and knowledge in AI, particularly in the fields of AI engineering, trust in AI, and knowledge engineering.\nFor this post, please generate content on the importance of trust in successful AI deployments. Begin with a general introduction to AI deployments, transition into the crucial role of trust, and provide real-world examples where the absence of trust led to issues. Discuss strategies for building trust in AI systems and conclude with insights on future trends in trust within the AI landscape. The tone should be academic yet accessible to our diverse readership."
   },
   {
+    "objectID": "slides/tai_testing/index.html#testing-and-cicd-for-trusted-ai",
+    "href": "slides/tai_testing/index.html#testing-and-cicd-for-trusted-ai",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Testing and CI/CD for Trusted AI",
+    "text": "Testing and CI/CD for Trusted AI\nTesting and CI/CD are software engineering practices that aim to ensure the quality, reliability, and security of software applications. They are especially important for AI applications, which involve complex and dynamic data, models, and algorithms."
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#what-is-software-1.0-and-software-2.0",
+    "href": "slides/tai_testing/index.html#what-is-software-1.0-and-software-2.0",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "What is Software 1.0 and Software 2.0?",
+    "text": "What is Software 1.0 and Software 2.0?\nSoftware 1.0 refers to the traditional way of developing software by writing code that specifies the logic and rules of the application. Software 2.0 refers to the emerging way of developing software by using machine learning (ML) models that learn from data and generate code or behavior."
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#why-do-we-need-testing-and-cicd-for-ai",
+    "href": "slides/tai_testing/index.html#why-do-we-need-testing-and-cicd-for-ai",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Why do we need testing and CI/CD for AI?",
+    "text": "Why do we need testing and CI/CD for AI?\nAI applications pose unique challenges and risks for testing and CI/CD, such as:\n\nData quality and availability: AI applications depend on large and diverse datasets that may be noisy, incomplete, biased, or outdated.\nModel performance and robustness: AI models may have high accuracy on average, but low accuracy on edge cases or adversarial inputs. They may also degrade over time or become obsolete due to data drift or concept drift.\nEthical and social implications: AI applications may have unintended or harmful consequences on human values, rights, and well-being, such as privacy, fairness, accountability, transparency, and explainability."
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#testing-and-cicd-can-help-address-these-challenges-and-risks-by",
+    "href": "slides/tai_testing/index.html#testing-and-cicd-can-help-address-these-challenges-and-risks-by",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Testing and CI/CD can help address these challenges and risks by:",
+    "text": "Testing and CI/CD can help address these challenges and risks by:\n\nAutomating and streamlining the data, model, and code workflows of AI development\nDetecting and preventing errors, bugs, vulnerabilities, and anomalies in AI applications\nEnsuring that AI applications meet the functional, non-functional, and ethical requirements of the stakeholders\nEnabling continuous improvement and innovation of AI applications"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#how-do-we-implement-testing-and-cicd-for-ai",
+    "href": "slides/tai_testing/index.html#how-do-we-implement-testing-and-cicd-for-ai",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "How do we implement testing and CI/CD for AI?",
+    "text": "How do we implement testing and CI/CD for AI?\nTesting and CI/CD for AI involve applying software engineering best practices to the data, model, and code components of AI applications. Some examples are:\n\nData testing: Validating the quality, consistency, completeness, relevance, and diversity of the data used for training and testing AI models\nModel testing: Evaluating the accuracy, robustness, efficiency, scalability, interpretability, and fairness of AI models on various metrics and scenarios\nCode testing: Verifying the functionality, usability, security, reliability, maintainability, and portability of the code that implements or integrates AI models"
+  },
+  {
     "objectID": "slides/tai_testing/index.html#real-world-machine-learning-pipelines",
     "href": "slides/tai_testing/index.html#real-world-machine-learning-pipelines",
     "title": "Things that concern Dr. Vardeman: Testing",
     "section": "Real World Machine Learning “Pipelines”",
-    "text": "Real World Machine Learning “Pipelines”\n\n\nTwitter: Andrej Karpathy"
+    "text": "Real World Machine Learning “Pipelines”\n\n\nTwitter: Andrej Karpathy\nLearn More: Autonomous Vehicle Training & Tesla’s Data Engine Explained, TESLA’S DATA ENGINE AND WHAT WE SHOULD LEARN FROM IT CVPR’20 Workshop on Scalability in Autonomous Driving Keynote - Andrej Karpathy"
   },
   {
     "objectID": "slides/tai_testing/index.html#real-world-machine-learning-data-engine",
@@ -21,11 +56,46 @@
     "text": "Real World Machine Learning “Data Engine”\n\n\nTwitter: Andrej Karpathy"
   },
   {
+    "objectID": "slides/tai_testing/index.html#how-teslas-data-engine-works",
+    "href": "slides/tai_testing/index.html#how-teslas-data-engine-works",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "How Tesla’s Data Engine works",
+    "text": "How Tesla’s Data Engine works\n\nThe FSD computer in each Tesla car records and sends any inaccuracies or discrepancies between its actions and the human driver’s actions to Tesla’s servers.\nTesla’s servers use these inaccuracies to create unit tests, which are scenarios that the FSD neural network should be able to handle correctly.\nTesla’s servers also use these inaccuracies to search for similar situations in the vast amount of data collected from all the cars in the fleet and create a well-labeled dataset.\nTesla’s servers use this dataset to re-train the FSD neural network using machine learning algorithms and improve its performance and functionality.\nTesla’s servers deploy the updated FSD neural network to the cars’ FSD computers in “shadow mode” to compare its actions with the human driver’s actions."
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#why-teslas-data-engine-matters",
+    "href": "slides/tai_testing/index.html#why-teslas-data-engine-matters",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Why Tesla’s Data Engine matters",
+    "text": "Why Tesla’s Data Engine matters\n\nTesla’s Data Engine allows them to leverage the power of big data analytics and artificial intelligence in their self-driving cars.\nTesla’s Data Engine enables them to address the long tail problem of autonomous driving, which is the challenge of handling rare or complex situations on the road.\nTesla’s Data Engine ensures that the FSD neural network is constantly improving and not regressing or introducing new errors.\n\n\nLearn More: [Tesla’s Data Engine and what we should learn from it]"
+  },
+  {
     "objectID": "slides/tai_testing/index.html#what-is-testing-for-ai-vs-traditional-software-testing",
     "href": "slides/tai_testing/index.html#what-is-testing-for-ai-vs-traditional-software-testing",
     "title": "Things that concern Dr. Vardeman: Testing",
     "section": "What is “Testing” for AI vs Traditional Software Testing",
     "text": "What is “Testing” for AI vs Traditional Software Testing\n\n\nLearn More: Effective testing for machine learning systems\nYoutube Discussion: MLOps Chat: How Should We Test ML Models? with Data Scientist Jeremy Jordan"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#why-do-we-need-testing-for-ml-systems",
+    "href": "slides/tai_testing/index.html#why-do-we-need-testing-for-ml-systems",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Why do we need testing for ML systems?",
+    "text": "Why do we need testing for ML systems?\nML systems pose unique challenges and risks for testing, such as:\n\nData quality and availability: ML systems depend on large and diverse datasets that may be noisy, incomplete, biased, or outdated.\nModel performance and robustness: ML models may have high accuracy on average, but low accuracy on edge cases or adversarial inputs. They may also degrade over time or become obsolete due to data drift or concept drift.\nEthical and social implications: ML systems may have unintended or harmful consequences on human values, rights, and well-being, such as privacy, fairness, accountability, transparency, and explainability.\n\nTesting ML systems can help address these challenges and risks by:\n\nDetecting and preventing errors, bugs, vulnerabilities, and anomalies in ML systems\nEnsuring that ML systems meet the functional, non-functional, and ethical requirements of the stakeholders\nEnabling continuous improvement and innovation of ML systems"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#how-do-we-test-ml-systems",
+    "href": "slides/tai_testing/index.html#how-do-we-test-ml-systems",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "How do we test ML systems?",
+    "text": "How do we test ML systems?\nTesting ML systems involves applying software engineering best practices to the data, model, and code components of ML systems. Some examples are:\n\nData testing: Validating the quality, consistency, completeness, relevance, and diversity of the data used for training and testing ML models\nModel testing: Evaluating the accuracy, robustness, efficiency, scalability, interpretability, and fairness of ML models on various metrics and scenarios\nCode testing: Verifying the functionality, usability, security, reliability, maintainability, and portability of the code that implements or integrates ML models"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#what-are-some-tools-and-techniques-for-testing-ml-systems",
+    "href": "slides/tai_testing/index.html#what-are-some-tools-and-techniques-for-testing-ml-systems",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "What are some tools and techniques for testing ML systems?",
+    "text": "What are some tools and techniques for testing ML systems?\nThere are different tools and techniques that can help us test ML systems effectively and efficiently. Some examples are:\n\nData validation tools: Tools that help us check the schema, statistics, anomalies, drifts, and distributions of our data. For example: TensorFlow Data Validation, Great Expectations, Deequ.\nModel validation tools: Tools that help us measure the performance of our models on various metrics and scenarios. For example: TensorFlow Model Analysis, Scikit-Learn, PyTorch.\nCode validation tools: Tools that help us check the syntax, style, coverage, complexity, and security of our code. For example: PyLint, PyTest, Bandit."
   },
   {
     "objectID": "slides/tai_testing/index.html#testing-software-1.0-vs-software-2.0",
@@ -54,6 +124,41 @@
     "title": "Things that concern Dr. Vardeman: Testing",
     "section": "Examples of “real world” testing as a starting point",
     "text": "Examples of “real world” testing as a starting point\n\n\nLearn More: Microsoft Recommenders GitHub"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#test-structure-in-the-microsoft-recommenders",
+    "href": "slides/tai_testing/index.html#test-structure-in-the-microsoft-recommenders",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Test Structure in the Microsoft Recommenders",
+    "text": "Test Structure in the Microsoft Recommenders\nThe Microsoft Recommenders repository contains examples and best practices for building recommendation systems, provided as Jupyter notebooks. The repository also includes various tests to ensure the quality, reliability, and security of the code and the notebooks."
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#types-of-tests",
+    "href": "slides/tai_testing/index.html#types-of-tests",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Types of Tests",
+    "text": "Types of Tests\nThere are three types of tests in the Microsoft Recommenders repository:\n\nUnit tests: These are tests that check the functionality and correctness of individual modules, functions, or classes. They are located in the unit folder and use pytest as the testing framework. They are triggered by pull requests to the main or staging branches.\nSmoke tests: These are tests that check if the notebooks can run without errors and produce the expected outputs. They are located in the smoke folder and use papermill and scrapbook as the testing tools. They are run nightly on the main or staging branches.\nIntegration tests: These are tests that check if the notebooks can run end-to-end on different environments and platforms, such as CPU, GPU, or Spark. They are located in the integration folder and use papermill and scrapbook as the testing tools. They are run nightly on the main or staging branches."
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#testing-infrastructure-azure-devops",
+    "href": "slides/tai_testing/index.html#testing-infrastructure-azure-devops",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Testing Infrastructure: Azure DevOps",
+    "text": "Testing Infrastructure: Azure DevOps\nThe Microsoft Recommenders repository uses Azure DevOps as the testing infrastructure. Azure DevOps is a cloud-based platform that provides various services and tools for software development, such as version control, project management, testing, deployment, and monitoring.\nThere are 19 pipelines for Linux tests and 19 pipelines for Windows tests, each corresponding to a different type of test, branch, and environment. For example:\n\nunit_tests: This pipeline runs unit tests on Linux CPU for pull requests to the main branch.\nunit_tests_staging: This pipeline runs unit tests on Linux CPU for pull requests to the staging branch.\ngpu_unit_tests: This pipeline runs unit tests on Linux GPU for pull requests to the main branch.\ngpu_unit_tests_staging: This pipeline runs unit tests on Linux GPU for pull requests to the staging branch.\nnightly_cpu: This pipeline runs smoke and integration tests on Linux CPU for nightly builds on the main branch.\nnightly_staging: This pipeline runs smoke and integration tests on Linux CPU for nightly builds on the staging branch.\nnightly_gpu: This pipeline runs smoke and integration tests on Linux GPU for nightly builds on the main branch.\nnightly_gpu_staging: This pipeline runs smoke and integration tests on Linux GPU for nightly builds on the staging branch.\nnightly_spark: This pipeline runs smoke and integration tests on Linux Spark for nightly builds on the main branch.\nnightly_spark_staging: This pipeline runs smoke and integration tests on Linux Spark for nightly builds on the staging branch.\n\n\nLearn More: [Test Strategy · microsoft/recommenders Wiki · GitHub]"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#testing-infrastructure-conda-environments",
+    "href": "slides/tai_testing/index.html#testing-infrastructure-conda-environments",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Testing Infrastructure: Conda Environments",
+    "text": "Testing Infrastructure: Conda Environments\nThe pipelines use conda environments to manage dependencies and run tests. Conda is an open-source package and environment management system that allows us to create and use different configurations of software packages and libraries.\nA script, generate_conda_file.py, is used to create conda environments for different combinations of CPU, GPU, and Spark. For example:\n\nreco_base: This is the basic CPU environment.\nreco_full: This is the environment that includes CPU, GPU, and Spark.\nreco_gpu: This is the environment that includes CPU and GPU.\nreco_pyspark: This is the environment that includes CPU and Spark.\n\n\nLearn More: [Conda — Conda documentation]"
+  },
+  {
+    "objectID": "slides/tai_testing/index.html#testing-infrastructure-azure-machine-learning",
+    "href": "slides/tai_testing/index.html#testing-infrastructure-azure-machine-learning",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Testing Infrastructure: Azure Machine Learning",
+    "text": "Testing Infrastructure: Azure Machine Learning\nThe pipelines also use Azure Machine Learning (AML) to run some of the tests on different compute clusters. AML is a cloud-based service that provides various tools and features for ML development, such as data preparation, model training, model deployment, model management, and model monitoring.\nAML provides scalable and flexible compute resources for ML development. For example:\n\nAMLCompute clustername Experiment VM Nodes\nreco-cpu-test2 cpu_unit_tests standard_d3_v2 0..4\nreco-gpu-test gpu_unit_tests standard_nc6_v3 0..4\nreco-spark-test spark_unit_tests standard_d12_v2 0..4\n\n\nLearn More: [What is Azure Machine Learning? - Azure Machine Learning | Microsoft Docs]"
   },
   {
     "objectID": "slides/tai_testing/index.html#chatgpt-behavior-drift",

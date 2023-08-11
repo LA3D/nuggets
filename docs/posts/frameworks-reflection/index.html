@@ -211,13 +211,13 @@ div.csl-indent {
 
 
 
-<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -226,17 +226,22 @@ Note
 </div>
 <section id="introduction-and-context-of-trusted-ai-tai" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="introduction-and-context-of-trusted-ai-tai"><span class="header-section-number">1</span> Introduction and Context of Trusted AI (TAI)</h2>
-<p>In an age where Artificial Intelligence (AI) is advancing at an unprecedented pace, trust in these intelligent systems is paramount—especially within the context of military operations. Welcome to a reflection on the Trusted AI (TAI) Frameworks Project, a <a href="https://www.wbiw.com/2021/06/30/nswc-crane-iu-notre-dame-and-purdue-team-up-to-provide-trusted-ai-workforce-development-and-research/?_ga=2.194216941.1383268119.1691608623-1280995064.1690554908">collaborative initiative</a> between Indiana University, University of Notre Dame, and CRANE Naval Surface Warfare Center as part of <a href="https://research.purdue.edu/scale/about/index.php">Scalable Asymmetric Lifecycle Engagement (SCALE)</a> led by Purdue University. Our mission is to enhance the successful and trusted deployment of AI to the Navy and Marine Corps and fortify the trust that humans have when interacting with these systems.</p>
-<p>The TAI Frameworks Project started modestly, aiming to provide a potential integration point for outputs from other TAI projects. It sought to inform the Navy in deployment decisions but has since grown and evolved. At the core of this endeavor are the six dimensions of trust in AI:</p>
+<p>With artificial intelligence advancing rapidly, ensuring these technologies are trustworthy and ethical is critical, especially in high-stakes domains like defense and national security.</p>
+<p>The Trusted AI (TAI) Frameworks Project was launched in 2021 through a collaboration between Indiana University, Purdue University, the University of Notre Dame, and the Naval Surface Warfare Center Crane Division (NSWC Crane) located in southwestern Indiana.</p>
+<p>Funded by Purdue’s Scalable Asymmetric Lifecycle Engagement (SCALE) initiative, the project brings together these Indiana-based partners to advance trusted AI research and workforce development tailored to the needs of the U.S. Navy and Marine Corps.</p>
+<p>The University of Notre Dame contributes vital expertise in areas such as cybersecurity, privacy, and ethical AI to ensure the systems developed not only perform effectively but align with ethical values. Researchers from computing, engineering, psychology, and ethics collaborate to provide a multidisciplinary perspective.</p>
+<p>Indiana’s strong defense, technology, and research presence, including major contractors and NSWC Crane’s AI Development Lab, provide a strategic foundation to jointly create AI solutions that are robust, reliable, and transparent.</p>
+<p>At the core of the project are six dimensions of trust in AI systems:</p>
 <ul>
-<li><strong>Explainability:</strong> Making the logic and reasoning behind AI decisions transparent.</li>
-<li><strong>Safety and Robustness:</strong> Ensuring that AI operates reliably under different conditions.</li>
-<li><strong>Non-discrimination and Fairness:</strong> Guaranteeing that AI does not favor or prejudice against particular groups.</li>
-<li><strong>Privacy:</strong> Protecting individual’s information and rights.</li>
-<li><strong>Environmental Sustainability:</strong> Recognizing the ecological footprint of AI systems.</li>
-<li><strong>Accountability and Audibility:</strong> Holding AI and its developers responsible for decisions and actions.</li>
+<li>Explainability: Making AI logic and decisions understandable to humans</li>
+<li>Safety and Robustness: Ensuring reliable operation under varying conditions</li>
+<li>Non-discrimination and Fairness: Preventing unfair bias or preferential treatment</li>
+<li>Privacy: Safeguarding individual rights and information</li>
+<li>Sustainability: Considering environmental impact</li>
+<li>Accountability: Maintaining responsibility for decisions and actions</li>
 </ul>
-<p>Each of these dimensions resonates with different stages of the AI lifecycle, including Data Collection, Data Preparation, Feature Extraction, Training, Testing, and Inference, and is aligned with the AI CI/CD of Development, Use, Analysis, and Re-Design.</p>
+<p>Integrating these trust principles throughout the AI lifecycle, from data collection to deployment, is critical for successful adoption within the naval domain. The TAI Frameworks Project provides research, methodologies and tools to enable trusted and ethical AI.</p>
+<p>This collaborative initiative has evolved substantially in its first two years. This post reflects on progress so far and visions for the road ahead in strengthening trust in AI systems, serving both the Navy’s mission and broader societal values.</p>
 <div id="fig-TAI-system" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="TAI_4-2023.png" class="img-fluid figure-img"></p>
@@ -244,40 +249,21 @@ Note
 </figure>
 </div>
 <p><strong>Reflection on the Framework Project</strong></p>
-<p>As we look back on the past years, we see an ever-evolving project that has adapted to the rapidly evolving landscape of <strong>Artificial Intelligence</strong> research and products. The integration of trust dimensions into our framework’s components, tools, and methodologies has shaped a solution aligned with the Navy’s mission. Furthermore, we have explored broader themes like ethical considerations, workforce development, and community involvement, highlighting the multifaceted nature of our approach to trusted AI. This is end of my first year as PI of the project after taking over from <a href="https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski">Prof.&nbsp;Jarek Nabrzyski</a> who helmed the first year of the project with <a href="https://crc.nd.edu/about/people/?id=christopher-sweet">Prof.&nbsp;Chris Sweet</a> and <a href="https://crc.nd.edu/about/people/?id=charles-vardeman">myself</a>. The project was originally proposed by <a href="https://crc.nd.edu/about/people/?id=ian-taylor">Prof.&nbsp;Ian Taylor</a>, who went on leave from the <a href="https://crc.nd.edu/">CRC</a> as the project was beginning that led to <a href="https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski">Prof.&nbsp;Jarek Nabrzyski</a> to step in and provide leadership as PI. The direction of the project has changed since the acceptance of the initial proposal as a funded project, but many of the ideas and components of the proposal have remained. Work on evaluating and understanding the challanges and potential solutions to deploying AI technologies in the Navy, as well as capturing and understanding academic AI research outputs fell to Research Programmer <a href="https://crc.nd.edu/about/people/?id=james-sweet">Dr.&nbsp;James Sweet</a> who spent time reviewing and understanding solutions that were being developed as <a href="https://opensource.org/licenses/">open source</a> projects and applied in industry to solve some of the challanges with “<em>AIOps</em>.” Additionally we had some help in creating some simple examples for using the Frameworks and starting the process of thinking about <strong>metadata</strong> for Trusted AI from <a href="https://crc.nd.edu/about/people/?id=don-brower">Prof.&nbsp;Don Brower</a> who came to the CRC last year from the <a href="https://www.library.nd.edu/">Notre Dame Hesburgh Libraries</a>. In year 2. we were joined by <a href="https://crc.nd.edu/about/people/?id=paul-brenner">Prof.&nbsp;Paul Brenner</a>, who has vast expeience with compute infrastructure and engineering in the military context. We were also joined by several <a href="https://www.nd.edu">UND</a> undergraduate students <strong>Peter Ainsworth</strong>, <strong>Nicholas Clark</strong> and <strong>Daniel Weldon</strong> who created documentation, tutorials and “<em>kicked the tires</em>” on some of the Framework components in as part of the “<em>AI Application</em>” development process. We also had three students, <strong>Daniel Weldon</strong>, <strong>William Shephard</strong>, <strong>Samantha Nagel</strong> looking at existing cloud platforms and infrastructure in use by the DoD and attempting to <a href="https://www.ibm.com/topics/containerization"><em>containerize</em></a> AI applications based on <a href="https://pytorch.org/">Pytorch</a> to understand the complexity and barriers to AI applications in the DoD cloud.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Framework components go here…</p>
-</div>
-</div>
+<p>As we reflect on the past years, the TAI Frameworks Project has continuously evolved and adapted in the rapidly changing landscape of AI research and technology.</p>
+<p>The project originated from a proposal led by initial PI <a href="https://crc.nd.edu/about/people/?id=ian-taylor">Prof.&nbsp;Ian Taylor</a>. After acceptance but before work commenced, <a href="https://crc.nd.edu/about/people/?id=jaroslaw-nabrzyski">Prof.&nbsp;Jarek Nabrzyski</a> took over as PI with co-PIs Prof.&nbsp;<a href="https://crc.nd.edu/about/people/?id=christopher-sweet">Prof.&nbsp;Chris Sweet</a> and <a href="https://crc.nd.edu/about/people/?id=charles-vardeman">myself</a>. This initial phase focused on integrating dimensions of trust into the methodologies.</p>
+<p>I assumed the PI role in year two to align the project with emerging Navy needs, as we are now entering year three.</p>
+<p>In the early stages, <a href="https://crc.nd.edu/about/people/?id=don-brower">Prof.&nbsp;Don Brower</a> provided valuable expertise in metadata while <a href="https://crc.nd.edu/about/people/?id=james-sweet">Dr.&nbsp;James Sweet</a> reviewed open source AI tools. <a href="https://crc.nd.edu/about/people/?id=paul-brenner">Prof.&nbsp;Paul Brenner</a> later contributed insights on computing infrastructure and security.</p>
+<p>Undergraduate students including <strong>Peter Ainsworth</strong>, <strong>Nicholas Clark</strong> and <strong>Daniel Weldon</strong> conducted hands-on evaluation of framework components like Quarto, nbdev, and DVC for data versioning. <strong>Daniel Weldon</strong> along with <strong>William Shephard</strong>, <strong>Samantha Nagel</strong> explored <a href="(https://www.ibm.com/topics/containerization)"><strong>containerization</strong></a> of AI models and frameworks like <a href="https://pytorch.org/"><strong>Pytorch</strong></a> using platforms like IronBank to understand deployment complexity with regard to the DoD Cloud Infrastructure.</p>
+<p>Throughout its evolution, the project has adapted based on insights from key partners while maintaining the vision for Trusted AI put forth in the initial proposal by Prof.&nbsp;Taylor. This foundation enables us to confront new challenges and opportunities going forward.</p>
+<p>A core framework diagram, <a href="#fig-framework">Figure&nbsp;2</a>, illustrates the end-to-end AI development workflow, spanning problem definition, data collection, model training, deployment, and monitoring. It highlights key tools and technologies including data science, machine learning frameworks, cloud platforms, and DevOps techniques that enable trustworthy AI aligned to specific use cases. The diagram reflects the multifaceted scope of the AI lifecycle, providing a structure for the frameworks, methodologies and collaborations that foster ethical, trustworthy and effective AI development.</p>
 <div id="fig-framework" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="graphic_tai-framework-1-new.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;2: Conceptual Framework Principles for TrustedAI in the AI System Lifecycle</figcaption>
+<figcaption class="figure-caption">Figure&nbsp;2: Core Framework Diagram</figcaption>
 </figure>
 </div>
 <p><strong>Community Engagement and Collaboration</strong></p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>TPOCS, Other TAI projects, IU go here. Informing broader DoD workforce development efforts.</p>
-</div>
-</div>
+<!--# TPOCS, Other TAI projects, IU go here. Informing broader DoD workforce development efforts.-->
 <p>Our journey has emphasized collaboration, dialogue, and shared learning. By leveraging existing tools and methodologies and engaging in broader community efforts, we have fostered an environment where knowledge is not just consumed but also contributed.</p>
 <div id="fig-TAI_vision" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
@@ -338,16 +324,17 @@ Note
 <li><p><strong>Rapid Integration and Evolution</strong>: With AI’s pace, a responsive CI/CD pipeline is essential. Models are constantly refined, adapted, and expanded. Ensuring that these changes are integrated smoothly, without compromising quality, is key to building trust.</p></li>
 <li><p><strong>Ethical Considerations</strong>: Transparency in the AI development process is more than a technical requirement; it’s an ethical obligation. A well-designed CI/CD process provides clear visibility into the workings of AI models, supporting responsible decision-making and accountability.</p></li>
 </ul>
+<p>Certainly! Below is a revised version of your text that incorporates the information we discussed, specifically focusing on the functionality, real-world application, unit and behavior testing, and the continuous iterative process.</p>
 </section>
 <section id="data-engines-in-ai-cicd" class="level4" data-number="2.3.3">
 <h4 data-number="2.3.3" class="anchored" data-anchor-id="data-engines-in-ai-cicd"><span class="header-section-number">2.3.3</span> “Data Engines” in AI CI/CD</h4>
-<p>The innovative concept of “Data Engines” in AI CI/CD refers to an intelligent, integrated system that orchestrates various stages of AI development, from data collection to model deployment.</p>
+<p>The innovative concept of “Data Engines” in AI CI/CD refers to an intelligent, integrated system that orchestrates various stages of AI development, from data collection to model deployment, including vital aspects of unit and behavior testing.</p>
 <ul>
-<li><p><strong>Components and Functionality</strong>: A Data Engine incorporates real-time data ingestion, preprocessing, feature engineering, model training, evaluation, acceptance testing, and deployment. It serves as the backbone, ensuring that models adapt, learn, and evolve in alignment with real-world complexities and requirements.</p></li>
-<li><p><strong>Real-World Example: Tesla’s Data Engine Pipeline</strong>: Tesla’s self-driving technology leverages a Data Engine that continually feeds information from vehicles on the road into its AI models. This pipeline manages vast quantities of data, refines features, adapts models, and deploys updates, all in an iterative and seamless manner. This example illustrates how Data Engines can handle the dynamism and complexity inherent in modern AI systems.</p></li>
-<li><p><strong>Challenges and Solutions</strong>: Integrating a Data Engine within the AI CI/CD process is not without challenges. These may include ensuring data quality, scalability, adherence to ethical guidelines, and more. Innovative solutions and best practices, informed by real-world applications like Tesla’s, are instrumental in navigating these challenges successfully.</p></li>
+<li><p><strong>Components and Functionality:</strong> A Data Engine incorporates real-time data ingestion, preprocessing, feature engineering, model training, evaluation, acceptance testing, and deployment. Unit testing ensures the individual components’ correctness, while behavior testing verifies the overall system behavior. Together, they serve as the backbone, ensuring that models adapt, learn, and evolve in alignment with real-world complexities and requirements.</p></li>
+<li><p><strong>Real-World Example: Tesla’s Data Engine Pipeline:</strong> Tesla’s self-driving technology leverages a Data Engine that continually feeds information from vehicles on the road into its AI models. This pipeline manages vast quantities of data, refines features, adapts models, and deploys updates, all in an iterative and seamless manner. Through rigorous unit and behavior testing, it ensures accuracy and responsiveness. This example illustrates how Data Engines can handle the dynamism and complexity inherent in modern AI systems.</p></li>
+<li><p><strong>Challenges and Solutions:</strong> Integrating a Data Engine within the AI CI/CD process is not without challenges. These may include ensuring data quality, scalability, adherence to ethical guidelines, the complexity of continuous testing, and more. Innovative solutions and best practices, informed by real-world applications like Tesla’s, are instrumental in navigating these challenges successfully.</p></li>
 </ul>
-<p>The integration of “Data Engines” within the AI CI/CD process marks a critical advancement in how we develop, deploy, and trust AI. For the Navy and the Trusted AI Frameworks Project, it signifies a forward-thinking approach that recognizes the dynamism of modern AI while steadfastly upholding quality and ethical principles.</p>
+<p>The integration of “Data Engines” within the AI CI/CD process marks a critical advancement in how we develop, deploy, and trust AI. By combining continuous data collection, preprocessing, and training with rigorous testing methodologies, Data Engines represent a robust, adaptive approach. For the Navy and the Trusted AI Frameworks Project, it signifies a forward-thinking approach that recognizes the dynamism of modern AI while steadfastly upholding quality and ethical principles.</p>
 </section>
 </section>
 <section id="ethical-considerations-in-testing-beyond-functionality" class="level3" data-number="2.4">
@@ -494,10 +481,10 @@ Note
 <li><strong>Findable &amp; Accessible:</strong> Easy discovery and retrieval of data accelerate the Navy’s response time and readiness.</li>
 <li><strong>Interoperable &amp; Reusable:</strong> Standards for data compatibility facilitate cross-departmental collaboration and resource optimization, reflecting the Navy’s emphasis on agility and resilience.</li>
 </ol>
-<div id="fig-xkcd" class="quarto-figure quarto-figure-center anchored">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="standards.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;5: Trusted AI Needs to use standards for interoperability as pointed out by XKCD: <a href="https://xkcd.com/927/">“Standards”</a></figcaption>
+<figcaption class="figure-caption">Trusted AI Needs to use standards for interoperability as pointed out by XKCD: <a href="https://xkcd.com/927/">“Standards”</a></figcaption>
 </figure>
 </div>
 </section>
@@ -563,39 +550,29 @@ Note
 </ul>
 <p>These tools and practices collectively create a seamless and reliable process of moving AI models and applications from development to production. They recognize the complexity of AI development and provide solutions tailored to handle these challenges. The selection of these specific technologies within the Trusted AI project is a strategic alignment with the unique needs of AI, reflecting an understanding of the underlying challenges and opportunities that AI presents.</p>
 <p>By connecting these dots and creating an ecosystem where development and operations converge, DevOps in the Trusted AI context represents a key pillar in the project’s strategy. It enables not just the creation but also the deployment and maintenance of AI solutions that can be trusted, validated, and reproduced, meeting the stringent standards required by the Navy and other critical stakeholders.</p>
-<div id="fig-xkcd" class="quarto-figure quarto-figure-center anchored">
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="python_environment.png" class="img-fluid figure-img"></p>
-<figcaption class="figure-caption">Figure&nbsp;6: Trusted AI Python Environment Reproducibility by XKCD: <a href="https://xkcd.com/1987/">“Python Environment”</a></figcaption>
+<figcaption class="figure-caption">Trusted AI Python Environment Reproducibility by XKCD: <a href="https://xkcd.com/1987/">“Python Environment”</a></figcaption>
 </figure>
 </div>
 </section>
 <section id="software-bill-of-materials-sbom-a-comprehensive-inventory-for-trust" class="level3" data-number="4.3">
 <h3 data-number="4.3" class="anchored" data-anchor-id="software-bill-of-materials-sbom-a-comprehensive-inventory-for-trust"><span class="header-section-number">4.3</span> Software Bill of Materials (SBoM): A Comprehensive Inventory for Trust</h3>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Note
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Links+Credit to IU work on SBOM’s. Add NIST and Govn’t references</p>
-</div>
-</div>
 <p>In any sophisticated piece of technology, understanding the components that make up the system is essential for security, quality, and compliance. The Software Bill of Materials (SBoM) serves this very purpose, offering a comprehensive inventory of all software components in a system, akin to a parts list in physical manufacturing.</p>
-<p>The SBoM is especially critical in the context of Trusted AI for the Navy, aligning with Federal Government requirements and standards for procurement. Here’s a breakdown of the key elements and why they matter:</p>
+<p>The SBoM is especially critical in the context of Trusted AI for the Navy, aligning with <a href="https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1">Federal Government requirements and standards for procurement</a>. Here’s a breakdown of the key elements and why they matter:</p>
 <ul>
 <li><p><strong>What is an SBoM?</strong>: An SBoM details the components, libraries, and modules within a software product. It includes the exact versions, sources, licenses, and dependencies, offering a transparent and verifiable snapshot of the software’s composition.</p></li>
-<li><p><strong>SPDX (Software Package Data Exchange)</strong>: Developed by the Linux Foundation, SPDX provides a standardized format for sharing SBoM data across different tools and systems. It enables consistency and interoperability, supporting transparency and trust in software procurement and deployment.</p></li>
-<li><p><strong>SPDX Version 3</strong>: Currently under final revision, this new version of SPDX expands its capabilities to include specifications for AI Bill of Materials. It recognizes the unique attributes of AI and machine learning models, accommodating their complex dependencies and configurations.</p></li>
-<li><p><strong>JSON-LD Vocabulary</strong>: SPDX’s vocabulary released as JSON-LD (JSON Linked Data) provides a machine-readable format that facilitates the automatic processing of SBoM data. It streamlines integration with existing systems and tools, fostering collaboration and automation in AI deployment.</p></li>
+<li><p><strong>SPDX (Software Package Data Exchange)</strong>: Developed by the <a href="https://www.linuxfoundation.org/projects">Linux Foundation</a>, <a href="https://spdx.dev/">SPDX</a> provides a standardized format for sharing SBoM data across different tools and systems. It enables consistency and interoperability, supporting transparency and trust in software procurement and deployment.</p></li>
+<li><p><strong>JSON-LD Vocabulary</strong>: <a href="https://github.com/spdx/spdx-3-model/blob/main/serialization/json_ld/EXAMPLES.md">SPDX’s vocabulary released as JSON-LD (JSON Linked Data)</a> provides a machine-readable format that facilitates the automatic processing of SBoM data. It streamlines integration with existing systems and tools, fostering collaboration and automation in AI deployment.</p></li>
 <li><p><strong>Relevance to the Navy and Federal Requirements</strong>: Compliance with SBoM requirements is essential for the Department of Defense (DoD) and other federal agencies. It aligns with executive orders and guidelines governing software procurement, security, and transparency, making it a crucial component of the Trusted AI project’s success.</p></li>
 </ul>
-<p>By embracing the SBoM, the Trusted AI project is leading the way in responsible and transparent software development and deployment. The use of SPDX and alignment with federal standards ensures that the AI models and applications meet rigorous security and quality benchmarks. This not only promotes trust within the Navy but also sets a precedent for AI projects in various sectors, demonstrating the importance of detailed, transparent documentation in building robust and reliable AI systems.</p>
-<p>The alignment of the SBoM within the Trusted AI framework emphasizes the commitment to excellence and adherence to regulations, reinforcing the project’s mission to deliver AI solutions that can be confidently deployed and maintained within critical environments.</p>
+<section id="extension-and-evaluation-of-sbom-construction-tools" class="level4" data-number="4.3.1">
+<h4 data-number="4.3.1" class="anchored" data-anchor-id="extension-and-evaluation-of-sbom-construction-tools"><span class="header-section-number">4.3.1</span> Extension and Evaluation of SBoM Construction Tools</h4>
+<p>In the Trusted AI Frameworks Project, the integration of outputs from other Trusted AI Projects into a cohesive whole is a key focus. An illustrative example of this integration came during the summer of 2023, when the project extended the foundational work of “Leveraging Labels and SBOMs to Build Trustworthy AI” by Peter J. Caven, Shakthidhar Gopavaram, and PI L. Jean Camp at Indiana University.</p>
+<p>The team <a href="https://github.com/nd-crane/sbom-analysis">evaluated SBoM construction tools</a> for completeness, specifically focusing on the knowledge graph representation of the SPDX generated by each tool relative to the <em>The Minimum Elements For a Software Bill of Materials (SBOM)</em> <span class="citation" data-cites="ntia2021">(<a href="#ref-ntia2021" role="doc-biblioref">Telecommunications and Administration 2021</a>)</span>. A significant highlight of this work was the incorporation of <a href="https://github.com/spdx/spdx-3-model">SPDX Version 3.0</a>, which expands its capabilities to include specifications for an <a href="https://github.com/spdx/spdx-3-model/tree/main/model/AI">AI Profile</a>. This version recognizes the unique attributes of AI and machine learning models, accommodating their complex dependencies and configurations.</p>
+<p>This extension not only reinforced the commitment to transparent and responsible software development but also exemplified how individual research efforts within the Trusted AI umbrella can be synthesized into the broader Framework. It also underscores the project’s proactive approach in leveraging the latest standards, such as SPDX 3.0, to ensure that the AI models and applications meet the ever-evolving requirements of the field.</p>
+</section>
 </section>
 <section id="hardened-containers-military-cicd-through-ironbank-cloud-one-and-platform-one" class="level3" data-number="4.4">
 <h3 data-number="4.4" class="anchored" data-anchor-id="hardened-containers-military-cicd-through-ironbank-cloud-one-and-platform-one"><span class="header-section-number">4.4</span> Hardened Containers, Military CI/CD through IronBank, Cloud One, and Platform One</h3>
@@ -631,11 +608,12 @@ Note
 <h2 data-number="5" class="anchored" data-anchor-id="development-practices-and-methodologies"><span class="header-section-number">5</span> Development Practices and Methodologies</h2>
 <section id="introduction-the-modern-development-landscape" class="level3" data-number="5.1">
 <h3 data-number="5.1" class="anchored" data-anchor-id="introduction-the-modern-development-landscape"><span class="header-section-number">5.1</span> Introduction: The Modern Development Landscape</h3>
-<p>The field of software development has seen a series of paradigm shifts, each reflecting the evolving demands of technology and society. From the traditional waterfall model to the agile development framework, the focus has continuously shifted towards more iterative, responsive, and collaborative practices. Within this changing landscape, the concept of “Literate Programming” was introduced by Donald Knuth in the 1980s, emphasizing the importance of explaining code in a human-readable narrative. Knuth’s vision foresaw a future where programming is not just a mechanical process but a craft interwoven with storytelling and documentation.</p>
+<p>The field of software development has seen a series of paradigm shifts, each reflecting the evolving demands of technology and society. From the traditional waterfall model to the agile development framework, the focus has continuously shifted towards more iterative, responsive, and collaborative practices. Within this changing landscape, the concept of “Literate Programming” <!--# Need to add exploratory programming references --> was introduced by Donald Knuth in the 1980s, emphasizing the importance of explaining code in a human-readable narrative. Knuth’s vision foresaw a future where programming is not just a mechanical process but a craft interwoven with storytelling and documentation.</p>
 <p>With the rise of AI, this vision has been pushed further, enabling a new era of collaboration between human programmers and AI “Co-Pilots.” AI-driven assistance in software development is becoming a reality, allowing for more effective and efficient code writing, debugging, and optimization. Literate programming can play a vital role in this context, as it emphasizes clarity, explanation, and a structured narrative that both human developers and AI models can interpret and build upon.</p>
 <p>In the realm of AI development, tools like Jupyter Notebooks foster a dynamic environment that bridges the gap between exploration and production, aligning closely with literate programming concepts. AI Co-Pilots can leverage this environment, utilizing the human-friendly documentation to better understand developer intent and provide more relevant assistance.</p>
 <p>The integration of Language Model based generative models, like large language models, opens up new horizons for collaborative and adaptive software development. These models can navigate the intricate landscape of literate programming, making sense of both code and context, enhancing their ability to assist humans in complex software development tasks.</p>
 <p>Agile principles resonate strongly in this context, mirroring the exploratory nature of AI development. Just as agile methodologies prioritize adaptability and collaboration, modern AI practices encourage experimentation, quick iterations, and a seamless transition from exploration to deployment. The subsequent sections delve into specific practices and tools that exemplify this convergence of agility, literacy, and exploratory programming, demonstrating their relevance and potential within the framework of Trusted AI.</p>
+<!--# Jupyter Con tutorial and Slides on Quarto and nbdev-->
 </section>
 <section id="quarto-bridging-the-gap-between-literacy-and-code" class="level3" data-number="5.2">
 <h3 data-number="5.2" class="anchored" data-anchor-id="quarto-bridging-the-gap-between-literacy-and-code"><span class="header-section-number">5.2</span> Quarto: Bridging the Gap Between Literacy and Code</h3>
@@ -821,6 +799,9 @@ Husted, Nathaniel. 2022. <span>“Trusted Artificial Intelligence: An Embedded S
 </div>
 <div id="ref-karpathy2017software" class="csl-entry" role="listitem">
 Karpathy, Andrej. 2017. <span>“S̈oftware 2.0̈.”</span> Medium. <a href="https://karpathy.medium.com/software-2-0-a64152b37c35">https://karpathy.medium.com/software-2-0-a64152b37c35</a>.
+</div>
+<div id="ref-ntia2021" class="csl-entry" role="listitem">
+Telecommunications, National, and Information Administration. 2021. <span>“Minimum Elements for a Software Bill of Materials.”</span> 2021. <a href="https://www.ntia.doc.gov/files/ntia/publications/sbom_minimum_elements_report.pdf">https://www.ntia.doc.gov/files/ntia/publications/sbom_minimum_elements_report.pdf</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

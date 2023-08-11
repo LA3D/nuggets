@@ -9,14 +9,51 @@ format:
 categories: [frameworks,trustedAI,Testing]
 ---
 
+## Testing and CI/CD for Trusted AI
+
+Testing and CI/CD are software engineering practices that aim to ensure the quality, reliability, and security of software applications. They are especially important for AI applications, which involve complex and dynamic data, models, and algorithms.
+
+## What is Software 1.0 and Software 2.0?
+
+Software 1.0 refers to the traditional way of developing software by writing code that specifies the logic and rules of the application. Software 2.0 refers to the emerging way of developing software by using machine learning (ML) models that learn from data and generate code or behavior.
+
+## Why do we need testing and CI/CD for AI?
+
+AI applications pose unique challenges and risks for testing and CI/CD, such as:
+
+-   Data quality and availability: AI applications depend on large and diverse datasets that may be noisy, incomplete, biased, or outdated.
+-   Model performance and robustness: AI models may have high accuracy on average, but low accuracy on edge cases or adversarial inputs. They may also degrade over time or become obsolete due to data drift or concept drift.
+-   Ethical and social implications: AI applications may have unintended or harmful consequences on human values, rights, and well-being, such as privacy, fairness, accountability, transparency, and explainability.
+
+## Testing and CI/CD can help address these challenges and risks by:
+
+-   Automating and streamlining the data, model, and code workflows of AI development
+-   Detecting and preventing errors, bugs, vulnerabilities, and anomalies in AI applications
+-   Ensuring that AI applications meet the functional, non-functional, and ethical requirements of the stakeholders
+-   Enabling continuous improvement and innovation of AI applications
+
+## How do we implement testing and CI/CD for AI?
+
+Testing and CI/CD for AI involve applying software engineering best practices to the data, model, and code components of AI applications. Some examples are:
+
+- Data testing: Validating the quality, consistency, completeness, relevance, and diversity of the data used for training and testing AI models
+- Model testing: Evaluating the accuracy, robustness, efficiency, scalability, interpretability, and fairness of AI models on various metrics and scenarios
+- Code testing: Verifying the functionality, usability, security, reliability, maintainability, and portability of the code that implements or integrates AI models
+
+
 ## Real World Machine Learning "Pipelines"
+
 ![](karpathy_data_tweet.png){fig-align="center"}
 
 ::: footer
 Twitter: [Andrej Karpathy](https://twitter.com/karpathy/status/1599852921541128194)
+
+Learn More: [Autonomous Vehicle Training & Tesla's Data Engine Explained](https://www.arrow.com/en/research-and-events/articles/autonomous-vehicle-training-and-teslas-data-engine-explained), [TESLA'S DATA ENGINE AND WHAT WE SHOULD LEARN FROM IT](https://www.braincreators.com/insights/teslas-data-engine-and-what-we-should-all-learn-from-it) [CVPR'20 Workshop on Scalability in Autonomous Driving Keynote - Andrej Karpathy](https://youtu.be/g2R2T631x7k)
 :::
 
+
 ## Real World Machine Learning "Data Engine"
+
 ![](tesla_AI_dataflow.png){fig-align="center"}
 
 ::: footer
@@ -24,7 +61,27 @@ Twitter: [Andrej Karpathy](https://twitter.com/karpathy/status/15998529215411281
 :::
 
 
+## How Tesla's Data Engine works
+
+- The FSD computer in each Tesla car records and sends any inaccuracies or discrepancies between its actions and the human driver's actions to Tesla's servers.
+- Tesla's servers use these inaccuracies to create unit tests, which are scenarios that the FSD neural network should be able to handle correctly.
+- Tesla's servers also use these inaccuracies to search for similar situations in the vast amount of data collected from all the cars in the fleet and create a well-labeled dataset.
+- Tesla's servers use this dataset to re-train the FSD neural network using machine learning algorithms and improve its performance and functionality.
+- Tesla's servers deploy the updated FSD neural network to the cars' FSD computers in "shadow mode" to compare its actions with the human driver's actions.
+
+## Why Tesla's Data Engine matters
+
+- Tesla's Data Engine allows them to leverage the power of big data analytics and artificial intelligence in their self-driving cars.
+- Tesla's Data Engine enables them to address the long tail problem of autonomous driving, which is the challenge of handling rare or complex situations on the road.
+- Tesla's Data Engine ensures that the FSD neural network is constantly improving and not regressing or introducing new errors.
+
+::: footer
+Learn More: [Tesla's Data Engine and what we should learn from it]
+:::
+
+
 ## What is "Testing" for AI vs Traditional Software Testing
+
 ![](effective_testing_ml_systems.png){fig-align="center"}
 
 ::: footer
@@ -33,13 +90,44 @@ Learn More: [Effective testing for machine learning systems](https://www.jeremyj
 Youtube Discussion: [MLOps Chat: How Should We Test ML Models? with Data Scientist Jeremy Jordan](https://youtu.be/k0naEYedv5I)
 :::
 
+## Why do we need testing for ML systems?
+
+ML systems pose unique challenges and risks for testing, such as:
+
+- Data quality and availability: ML systems depend on large and diverse datasets that may be noisy, incomplete, biased, or outdated.
+- Model performance and robustness: ML models may have high accuracy on average, but low accuracy on edge cases or adversarial inputs. They may also degrade over time or become obsolete due to data drift or concept drift.
+- Ethical and social implications: ML systems may have unintended or harmful consequences on human values, rights, and well-being, such as privacy, fairness, accountability, transparency, and explainability.
+
+Testing ML systems can help address these challenges and risks by:
+
+- Detecting and preventing errors, bugs, vulnerabilities, and anomalies in ML systems
+- Ensuring that ML systems meet the functional, non-functional, and ethical requirements of the stakeholders
+- Enabling continuous improvement and innovation of ML systems
+
+## How do we test ML systems?
+
+Testing ML systems involves applying software engineering best practices to the data, model, and code components of ML systems. Some examples are:
+
+- Data testing: Validating the quality, consistency, completeness, relevance, and diversity of the data used for training and testing ML models
+- Model testing: Evaluating the accuracy, robustness, efficiency, scalability, interpretability, and fairness of ML models on various metrics and scenarios
+- Code testing: Verifying the functionality, usability, security, reliability, maintainability, and portability of the code that implements or integrates ML models
+
+## What are some tools and techniques for testing ML systems?
+
+There are different tools and techniques that can help us test ML systems effectively and efficiently. Some examples are:
+
+- Data validation tools: Tools that help us check the schema, statistics, anomalies, drifts, and distributions of our data. For example: TensorFlow Data Validation, Great Expectations, Deequ.
+- Model validation tools: Tools that help us measure the performance of our models on various metrics and scenarios. For example: TensorFlow Model Analysis, Scikit-Learn, PyTorch.
+- Code validation tools: Tools that help us check the syntax, style, coverage, complexity, and security of our code. For example: PyLint, PyTest, Bandit.
+
+
 ## Testing "Software 1.0" vs "Software 2.0"
+
 ![](testing_ml_systems.png){fig-align="center"}
 
 ::: footer
 Learn More: [Effective testing for machine learning systems](https://www.jeremyjordan.me/testing-ml/)
 :::
-
 
 ## "Beyond Accuracy: Behavioral Testing of NLP Models with CheckList"
 
@@ -48,10 +136,11 @@ Learn More: [Effective testing for machine learning systems](https://www.jeremyj
 ::: footer
 Learn More: [Beyond Accuracy: Behavioral Testing of NLP Models with CheckList](https://aclanthology.org/2020.acl-main.442/)
 
-GitHub:[Beyond Accuracy: Behavioral Testing of NLP Models with CheckList]( https://github.com/marcotcr/checklist)
+GitHub:[Beyond Accuracy: Behavioral Testing of NLP Models with CheckList](https://github.com/marcotcr/checklist)
 :::
 
 ## Examples of "real world" testing
+
 ![](microsoft_recommenders_github.png){fig-align="center"}
 
 ::: footer
@@ -59,6 +148,7 @@ Learn More: [Microsoft Recommenders GitHub](https://github.com/microsoft/recomme
 :::
 
 ## Examples of "real world" testing as a starting point
+
 ![](microsoft_recommenders_tests.png){fig-align="center"}
 
 ::: footer
@@ -66,11 +156,76 @@ Learn More: [Microsoft Recommenders GitHub](https://github.com/microsoft/recomme
 :::
 
 # Examples of "real world" testing as a starting point
+
 ![](microsoft_testing_azureML.png){fig-align="center"}
 
 ::: footer
 Learn More: [Microsoft Recommenders GitHub](https://github.com/microsoft/recommenders/tree/main/tests)
 :::
+
+## Test Structure in the Microsoft Recommenders
+
+The Microsoft Recommenders repository contains examples and best practices for building recommendation systems, provided as Jupyter notebooks. The repository also includes various tests to ensure the quality, reliability, and security of the code and the notebooks.
+
+## Types of Tests
+
+There are three types of tests in the Microsoft Recommenders repository:
+
+- Unit tests: These are tests that check the functionality and correctness of individual modules, functions, or classes. They are located in the `unit` folder and use `pytest` as the testing framework. They are triggered by pull requests to the `main` or `staging` branches.
+- Smoke tests: These are tests that check if the notebooks can run without errors and produce the expected outputs. They are located in the `smoke` folder and use `papermill` and `scrapbook` as the testing tools. They are run nightly on the `main` or `staging` branches.
+- Integration tests: These are tests that check if the notebooks can run end-to-end on different environments and platforms, such as CPU, GPU, or Spark. They are located in the `integration` folder and use `papermill` and `scrapbook` as the testing tools. They are run nightly on the `main` or `staging` branches.
+
+## Testing Infrastructure: Azure DevOps
+
+The Microsoft Recommenders repository uses Azure DevOps as the testing infrastructure. Azure DevOps is a cloud-based platform that provides various services and tools for software development, such as version control, project management, testing, deployment, and monitoring.
+
+There are 19 pipelines for Linux tests and 19 pipelines for Windows tests, each corresponding to a different type of test, branch, and environment. For example:
+
+- unit_tests: This pipeline runs unit tests on Linux CPU for pull requests to the `main` branch.
+- unit_tests_staging: This pipeline runs unit tests on Linux CPU for pull requests to the `staging` branch.
+- gpu_unit_tests: This pipeline runs unit tests on Linux GPU for pull requests to the `main` branch.
+- gpu_unit_tests_staging: This pipeline runs unit tests on Linux GPU for pull requests to the `staging` branch.
+- nightly_cpu: This pipeline runs smoke and integration tests on Linux CPU for nightly builds on the `main` branch.
+- nightly_staging: This pipeline runs smoke and integration tests on Linux CPU for nightly builds on the `staging` branch.
+- nightly_gpu: This pipeline runs smoke and integration tests on Linux GPU for nightly builds on the `main` branch.
+- nightly_gpu_staging: This pipeline runs smoke and integration tests on Linux GPU for nightly builds on the `staging` branch.
+- nightly_spark: This pipeline runs smoke and integration tests on Linux Spark for nightly builds on the `main` branch.
+- nightly_spark_staging: This pipeline runs smoke and integration tests on Linux Spark for nightly builds on the `staging` branch.
+
+::: footer
+Learn More: [Test Strategy · microsoft/recommenders Wiki · GitHub]
+:::
+
+## Testing Infrastructure: Conda Environments
+
+The pipelines use conda environments to manage dependencies and run tests. Conda is an open-source package and environment management system that allows us to create and use different configurations of software packages and libraries.
+
+A script, generate_conda_file.py, is used to create conda environments for different combinations of CPU, GPU, and Spark. For example:
+
+- reco_base: This is the basic CPU environment.
+- reco_full: This is the environment that includes CPU, GPU, and Spark.
+- reco_gpu: This is the environment that includes CPU and GPU.
+- reco_pyspark: This is the environment that includes CPU and Spark.
+
+::: footer
+Learn More: [Conda — Conda documentation]
+:::
+
+## Testing Infrastructure: Azure Machine Learning
+
+The pipelines also use Azure Machine Learning (AML) to run some of the tests on different compute clusters. AML is a cloud-based service that provides various tools and features for ML development, such as data preparation, model training, model deployment, model management, and model monitoring.
+
+AML provides scalable and flexible compute resources for ML development. For example:
+
+- AMLCompute clustername Experiment VM Nodes
+- reco-cpu-test2 cpu_unit_tests standard_d3_v2 0..4
+- reco-gpu-test gpu_unit_tests standard_nc6_v3 0..4
+- reco-spark-test spark_unit_tests standard_d12_v2 0..4
+
+::: footer
+Learn More: [What is Azure Machine Learning? - Azure Machine Learning | Microsoft Docs]
+:::
+
 
 ## ChatGPT Behavior Drift?
 
@@ -79,7 +234,6 @@ Learn More: [Microsoft Recommenders GitHub](https://github.com/microsoft/recomme
 ::: footer
 Learn More: [How is ChatGPT's behavior changing over time?](https://arxiv.org/abs/2307.09009)
 :::
-
 
 ## ChatGPT Behavior Drift?
 
@@ -106,6 +260,7 @@ Learn More: [AgentBench: Evaluating LLMs as Agents](https://arxiv.org/abs/2308.0
 :::
 
 ## Testing in the context of CI/CD
+
 ![](aws_testing_ci-cd.png){fig-align="center"}
 
 ::: footer
@@ -113,6 +268,7 @@ Learn More: [Testing stages in continuous integration and continuous delivery](h
 :::
 
 ## Testing in the context of SBoMs
+
 ![](aws_testing_ci-cd-sbom.png){fig-align="center"}
 
 ::: footer
@@ -122,6 +278,7 @@ Learn More: [Testing stages in continuous integration and continuous delivery](h
 ## Other Updates {.center}
 
 ## Deploying llama2 to AWS
+
 ![](aws_llama2.png){fig-align="center"}
 
 ::: footer
@@ -129,6 +286,7 @@ Learn More: [Deploy Llama 2 7B/13B/70B on Amazon SageMaker](https://www.philschm
 :::
 
 ## Deploying llama2 to AWS
+
 ![](aws_llama2_resources.png){fig-align="center"}
 
 ::: footer
@@ -136,6 +294,7 @@ Learn More: [Deploy Llama 2 7B/13B/70B on Amazon SageMaker](https://www.philschm
 :::
 
 ## Juypter AI
+
 ![](jupyter_ai.png){fig-align="center"}
 
 ::: footer
@@ -145,6 +304,7 @@ GitHub: [A generative AI extension for JupyterLab](https://github.com/jupyterlab
 :::
 
 ## Juypter AI
+
 ![](jupyter_ai_models.png){fig-align="center"}
 
 ::: footer
@@ -152,6 +312,7 @@ Learn More: [Generative AI in Jupyter](https://jupyter-ai.readthedocs.io/en/late
 :::
 
 ## Kaggle LLM Resource
+
 ![](kaggle_llm.png){fig-align="center"}
 
 ::: footer
