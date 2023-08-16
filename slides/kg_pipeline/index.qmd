@@ -1,0 +1,46 @@
+---
+title: "Thoughts on a KG Pipeline"
+author: "Charles F Vardeman II"
+date: "2023-08-16"
+embed-resources: true
+format: 
+    revealjs:
+        slide-number: true
+categories: [KG Construction,trustedAI,Testing]
+---
+
+## Using JSON-LD as a foundation for ETL
+
+![](fluree_jsonld.png){fig-align="center"}
+
+::: footer
+Learn More: [Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD](https://youtu.be/KHNc0WwJ5JA)
+:::
+
+## ChatGPT Experiment
+
+![](chatgpt2.png){fig-align="center"}
+
+::: footer
+Learn More: [ChatGPT Code Interpreter](https://chat.openai.com/share/fa44eb33-3466-43f6-bd8c-4f37f437b9a5)
+:::
+
+
+## Ontology based ETL
+
+![](ontology_process.png){fig-align="center"}
+
+
+## Automated Vocabulary Extraction
+
+![](munging_tool.png){fig-align="center"}
+
+
+## LLM assisted ODPs using Pattern Templates
+
+![](ontology_design_patterns.png){fig-align="center"}
+
+
+## Frameworks for ODP DataEnging
+
+![](odp_extreme_design.png){fig-align="center"}

@@ -350,11 +350,11 @@
     "text": "Amazon Science KGQA\n\n\nWebsite: Language models as controlled natural language semantic parsers for knowledge graph question answering GitHub: Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering"
   },
   {
-    "objectID": "slideindex.html",
-    "href": "slideindex.html",
-    "title": "Weekly Nugget Presentations",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI Success Factors: Engineering Trust in Deployments",
     "section": "",
-    "text": "Things that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "text": "Welcome To AI Success Factors: Engineering Trust in Deployments\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 15, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -378,11 +378,53 @@
     "text": "Blog’s Objective and Overview\nIn alignment with the University of Notre Dame’s mission to seek knowledge that addresses humanity’s pressing challenges, and the Center for Research Computing’s (CRC) commitment to driving innovation, the Laboratory for Assured AI Applications Development (LA3D) is pleased to unveil this blog as an essential platform.\n\nWeekly Updates: Engage with regular insights into the ongoing research, technological advancements, and creative pursuits within LA3D. From AI Engineering to Trusted AI, we’ll keep our community abreast of the exciting developments shaping our field.\nInsights into Trusted AI, CI-Compass, and More: Delve into the core projects and collaborations within LA3D, including specialized explorations into the worlds of Trusted AI, CI-Compass, CyberSecurity in AI, and the nuances of Responsible AI.\nAI Workforce Development: Recognizing the need for a skilled and knowledgeable AI workforce, this blog will feature initiatives, programs, and strategies dedicated to cultivating the next generation of AI professionals. Together with CRC, we strive to foster education, mentorship, and career development in AI.\nResearch Publications and Highlights: Discover the rich tapestry of research being woven at LA3D. We’ll highlight key publications, conference achievements, and innovative studies that reflect our commitment to excellence and alignment with Notre Dame’s values.\nCommunity Engagement and Collaboration: Building on Notre Dame’s emphasis on community and service, this blog invites you to participate, share, and learn. Join a lively dialogue that celebrates diversity of thought and collaboration in pursuit of a greater understanding of Assured AI.\nSpotlight on CyberSecurity in AI and Emerging Topics: As part of our comprehensive view of modern AI, we will dedicate specific sections to explore critical areas like CyberSecurity and the delicate balance between Responsible and Trusted AI.\nConnection to Notre Dame’s and CRC’s Mission: This blog embodies the spirit of Notre Dame and CRC’s shared mission to advance knowledge, foster innovation, and contribute to society. We strive to make the pursuit of AI not only a scientific endeavor but also a means to enrich lives and address societal needs.\n\nIn the introduction, we’ve outlined the essential areas of focus at the Laboratory for Assured AI Applications Development (LA3D) at the University of Notre Dame’s Center for Research Computing. From AI Engineering’s crucial role in transitioning prototypes to production, to the ethical imperatives in Trusted AI, Knowledge Engineering, CyberSecurity in AI, and the blog’s alignment with the missions of CRC and Notre Dame, we’ve set the stage for a comprehensive exploration.\nOur blog serves as a platform to dive into these topics, including AI workforce development and the ways in which AI intersects with societal needs and technological advancements. As we move forward, we’ll examine these subjects in detail, shedding light on the challenges, successes, and ongoing efforts in these fields.\nStay tuned as we delve into the complexities of AI, with insights and updates that reflect LA3D’s commitment to innovation, responsibility, and real-world applicability. Join us in this exploration, as we strive to make AI not just a tool, but a reliable partner for progress."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AI Success Factors: Engineering Trust in Deployments",
+    "objectID": "slideindex.html",
+    "href": "slideindex.html",
+    "title": "Weekly Nugget Presentations",
     "section": "",
-    "text": "Welcome To AI Success Factors: Engineering Trust in Deployments\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 15, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "text": "Thoughts on a KG Pipeline\n\n\n\n\n\n\n\nKG Construction\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 16, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#using-json-ld-as-a-foundation-for-etl",
+    "href": "slides/kg_pipeline/index.html#using-json-ld-as-a-foundation-for-etl",
+    "title": "Thoughts on a KG Pipeline",
+    "section": "Using JSON-LD as a foundation for ETL",
+    "text": "Using JSON-LD as a foundation for ETL\n\n\nLearn More: Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#chatgpt-experiment",
+    "href": "slides/kg_pipeline/index.html#chatgpt-experiment",
+    "title": "Thoughts on a KG Pipeline",
+    "section": "ChatGPT Experiment",
+    "text": "ChatGPT Experiment\n\n\nLearn More: ChatGPT Code Interpreter"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#ontology-based-etl",
+    "href": "slides/kg_pipeline/index.html#ontology-based-etl",
+    "title": "Thoughts on a KG Pipeline",
+    "section": "Ontology based ETL",
+    "text": "Ontology based ETL"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#automated-vocabulary-extraction",
+    "href": "slides/kg_pipeline/index.html#automated-vocabulary-extraction",
+    "title": "Thoughts on a KG Pipeline",
+    "section": "Automated Vocabulary Extraction",
+    "text": "Automated Vocabulary Extraction"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#llm-assisted-odps-using-pattern-templates",
+    "href": "slides/kg_pipeline/index.html#llm-assisted-odps-using-pattern-templates",
+    "title": "Thoughts on a KG Pipeline",
+    "section": "LLM assisted ODPs using Pattern Templates",
+    "text": "LLM assisted ODPs using Pattern Templates"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#frameworks-for-odp-dataenging",
+    "href": "slides/kg_pipeline/index.html#frameworks-for-odp-dataenging",
+    "title": "Thoughts on a KG Pipeline",
+    "section": "Frameworks for ODP DataEnging",
+    "text": "Frameworks for ODP DataEnging"
   },
   {
     "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
