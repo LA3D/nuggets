@@ -318,3 +318,11 @@ Learn More: [Generative AI in Jupyter](https://jupyter-ai.readthedocs.io/en/late
 ::: footer
 Learn More: [Getting Started With LLMs](https://www.kaggle.com/code/jhoward/getting-started-with-llms/)
 :::
+
+## Prompt Enginnering Guide
+
+![](prompt_engineering.png){fig-align="center"}
+
+::: footer
+Learn More: [Prompt Engineering Guide](https://www.promptingguide.ai/)
+:::

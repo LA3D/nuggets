@@ -1,5 +1,5 @@
 ---
-title: "Thoughts on a KG Pipeline"
+title: " TAI Knowledge Engineering: A Frameworks Perspective"
 author: "Charles F Vardeman II"
 date: "2023-08-16"
 embed-resources: true
@@ -9,12 +9,103 @@ format:
 categories: [KG Construction,trustedAI,Testing]
 ---
 
-## Using JSON-LD as a foundation for ETL
+## How it started...
+
+![](graphic_overview.png){.center}
+
+## How its going...
+
+![](PLM_vs_KG.png){.center}
+
+::: footer
+[Shirui Pan, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. "Unifying Large Language Models and Knowledge Graphs: A Roadmap." arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302.](http://arxiv.org/abs/2306.08302)
+:::
+
+## "The Semantic Web..."
+
+::: footer
+[Tim Berners-Lee,  James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43.]()
+:::
+
+
+## Unifying Large Language Models and Knowledge Graphs: A Roadmap
+
+![](Awesome-LLM-KG.png){fig-align="center"}
+
+::: footer
+[RManLuo/Awesome-LLM-KG: Awesome papers about unifying LLMs and KGs (https://github.com/RManLuo/Awesome-LLM-KG)](https://github.com/RManLuo/Awesome-LLM-KG)
+:::
+
+## Ontology based ETL
+
+![](ontology_process.png){fig-align="center"}
+
+## Automated Vocabulary Extraction
+
+![](munging_tool.png){fig-align="center"}
+
+## LLM assisted ODPs using Pattern Templates
+
+![](ontology_design_patterns.png){fig-align="center"}
+
+## Ontology Engineering in a Age of LLMs {.center}
+
+## Applying Software Engineering to Ontologies
+
+![](eXtreme_design.png){.center}
+
+::: footer
+[Blomqvist, Eva, Karl Hammar, and Valentina Presutti. "Engineering Ontologies with Patterns -- The EXtreme Design Methodology." In Ontology Engineering with Ontology Design Patterns, 23--50. IOS Press, 2016. https://doi.org/10.3233/978-1-61499-676-7-23.](https://www.semanticscholar.org/paper/Engineering-Ontologies-with-Patterns-%3A-The-eXtreme-Gangemi/fc439ebb1a66818b979ca63372253ca01e70f3e9)
+:::
+
+## Applying Software Engineering to Ontologies
+
+![](modular_ontology_modeling.png){.center}
+
+::: footer
+[Cogan Shimizu, Karl Hammar, and Pascal Hitzler. "Modular Ontology Modeling." Edited by Sabrina Kirrane, Axel-Cyrille Ngonga Ngomo, Sabrina Kirrane, and Axel-Cyrille Ngonga Ngomo. Semantic Web 14, no. 3 (April 5, 2023): 459--89. https://doi.org/10.3233/SW-222886.](https://www.semantic-web-journal.net/content/modular-ontology-modeling-1)
+:::
+
+## FAIR Ontologies and Vocabularies
+
+![](fair_ont.png){.center}
+
+::: footer
+[Garijo, Daniel, and María Poveda-Villalón. "Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web." arXiv, March 29, 2020. http://arxiv.org/abs/2003.13084.](http://arxiv.org/abs/2003.13084)
+:::
+
+## Visual Ontology Developmentz
+
+![](chowlk.png){.center}
+
+::: footer
+[Garijo, Daniel, and María Poveda-Villalón. "Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web." arXiv, March 29, 2020. http://arxiv.org/abs/2003.13084.](http://arxiv.org/abs/2003.13084)
+:::
+
+## Self Documenting Ontologies
+
+![](widoco_github.png){.center}
+
+::: footer
+[Garijo, Daniel. "WIDOCO: A Wizard for Documenting Ontologies." In International Semantic Web Conference, 94--102. Springer, Cham, 2017. https://doi.org/10.1007/978-3-319-68204-4_9.http://dgarijo.com/papers/widoco-iswc2017.pdf](http://dgarijo.com/papers/widoco-iswc2017.pdf) [Garijo, Daniel. "WIDOCO: A Wizard for Documenting Ontologies." Java, 2017. https://doi.org/10.1007/978-3-319-68204-4_9.https://github.com/dgarijo/Widoco](https://github.com/dgarijo/Widoco)
+:::
+
+## Resources to Learn More... {.center}
+
+## KGC Master Class on JSON-LD Pipeline
 
 ![](fluree_jsonld.png){fig-align="center"}
 
 ::: footer
 Learn More: [Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD](https://youtu.be/KHNc0WwJ5JA)
+:::
+
+## Unifying Large Language Models and Knowledge Graphs: A Roadmap
+
+![](Awesome-LLM-KG.png){fig-align="center"}
+
+::: footer
+Learn More: \[[RManLuo/Awesome-LLM-KG: Awesome papers about unifying LLMs and KGs (github.com)](https://github.com/RManLuo/Awesome-LLM-KG)
 :::
 
 ## ChatGPT Experiment
@@ -24,23 +115,3 @@ Learn More: [Converting Legacy Enterprise Data into Knowledge Graphs with AI and
 ::: footer
 Learn More: [ChatGPT Code Interpreter](https://chat.openai.com/share/fa44eb33-3466-43f6-bd8c-4f37f437b9a5)
 :::
-
-
-## Ontology based ETL
-
-![](ontology_process.png){fig-align="center"}
-
-
-## Automated Vocabulary Extraction
-
-![](munging_tool.png){fig-align="center"}
-
-
-## LLM assisted ODPs using Pattern Templates
-
-![](ontology_design_patterns.png){fig-align="center"}
-
-
-## Frameworks for ODP DataEnging
-
-![](odp_extreme_design.png){fig-align="center"}
