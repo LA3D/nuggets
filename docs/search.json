@@ -245,6 +245,13 @@
     "text": "Kaggle LLM Resource\n\n\nLearn More: Getting Started With LLMs"
   },
   {
+    "objectID": "slides/tai_testing/index.html#prompt-enginnering-guide",
+    "href": "slides/tai_testing/index.html#prompt-enginnering-guide",
+    "title": "Things that concern Dr. Vardeman: Testing",
+    "section": "Prompt Enginnering Guide",
+    "text": "Prompt Enginnering Guide\n\n\nLearn More: Prompt Engineering Guide"
+  },
+  {
     "objectID": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
     "href": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
     "title": "KG Construction",
@@ -382,49 +389,126 @@
     "href": "slideindex.html",
     "title": "Weekly Nugget Presentations",
     "section": "",
-    "text": "Thoughts on a KG Pipeline\n\n\n\n\n\n\n\nKG Construction\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 16, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "text": "TAI Knowledge Engineering: A Frameworks Perspective\n\n\n\n\n\n\n\nKG Construction\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 16, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "slides/kg_pipeline/index.html#using-json-ld-as-a-foundation-for-etl",
-    "href": "slides/kg_pipeline/index.html#using-json-ld-as-a-foundation-for-etl",
-    "title": "Thoughts on a KG Pipeline",
-    "section": "Using JSON-LD as a foundation for ETL",
-    "text": "Using JSON-LD as a foundation for ETL\n\n\nLearn More: Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD"
+    "objectID": "slides/kg_pipeline/index.html#how-it-started",
+    "href": "slides/kg_pipeline/index.html#how-it-started",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "How it started…",
+    "text": "How it started…"
   },
   {
-    "objectID": "slides/kg_pipeline/index.html#chatgpt-experiment",
-    "href": "slides/kg_pipeline/index.html#chatgpt-experiment",
-    "title": "Thoughts on a KG Pipeline",
-    "section": "ChatGPT Experiment",
-    "text": "ChatGPT Experiment\n\n\nLearn More: ChatGPT Code Interpreter"
+    "objectID": "slides/kg_pipeline/index.html#how-its-going",
+    "href": "slides/kg_pipeline/index.html#how-its-going",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "How its going…",
+    "text": "How its going…\n\n\nShirui Pan, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. “Unifying Large Language Models and Knowledge Graphs: A Roadmap.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302."
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#the-semantic-web",
+    "href": "slides/kg_pipeline/index.html#the-semantic-web",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "“The Semantic Web…”",
+    "text": "“The Semantic Web…”\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43."
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
+    "href": "slides/kg_pipeline/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nRManLuo/Awesome-LLM-KG: Awesome papers about unifying LLMs and KGs (https://github.com/RManLuo/Awesome-LLM-KG)"
   },
   {
     "objectID": "slides/kg_pipeline/index.html#ontology-based-etl",
     "href": "slides/kg_pipeline/index.html#ontology-based-etl",
-    "title": "Thoughts on a KG Pipeline",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
     "section": "Ontology based ETL",
     "text": "Ontology based ETL"
   },
   {
     "objectID": "slides/kg_pipeline/index.html#automated-vocabulary-extraction",
     "href": "slides/kg_pipeline/index.html#automated-vocabulary-extraction",
-    "title": "Thoughts on a KG Pipeline",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
     "section": "Automated Vocabulary Extraction",
     "text": "Automated Vocabulary Extraction"
   },
   {
     "objectID": "slides/kg_pipeline/index.html#llm-assisted-odps-using-pattern-templates",
     "href": "slides/kg_pipeline/index.html#llm-assisted-odps-using-pattern-templates",
-    "title": "Thoughts on a KG Pipeline",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
     "section": "LLM assisted ODPs using Pattern Templates",
     "text": "LLM assisted ODPs using Pattern Templates"
   },
   {
-    "objectID": "slides/kg_pipeline/index.html#frameworks-for-odp-dataenging",
-    "href": "slides/kg_pipeline/index.html#frameworks-for-odp-dataenging",
-    "title": "Thoughts on a KG Pipeline",
-    "section": "Frameworks for ODP DataEnging",
-    "text": "Frameworks for ODP DataEnging"
+    "objectID": "slides/kg_pipeline/index.html#ontology-engineering-in-a-age-of-llms",
+    "href": "slides/kg_pipeline/index.html#ontology-engineering-in-a-age-of-llms",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Ontology Engineering in a Age of LLMs",
+    "text": "Ontology Engineering in a Age of LLMs"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#applying-software-engineering-to-ontologies",
+    "href": "slides/kg_pipeline/index.html#applying-software-engineering-to-ontologies",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Applying Software Engineering to Ontologies",
+    "text": "Applying Software Engineering to Ontologies\n\n\nBlomqvist, Eva, Karl Hammar, and Valentina Presutti. “Engineering Ontologies with Patterns – The EXtreme Design Methodology.” In Ontology Engineering with Ontology Design Patterns, 23–50. IOS Press, 2016. https://doi.org/10.3233/978-1-61499-676-7-23."
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#applying-software-engineering-to-ontologies-1",
+    "href": "slides/kg_pipeline/index.html#applying-software-engineering-to-ontologies-1",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Applying Software Engineering to Ontologies",
+    "text": "Applying Software Engineering to Ontologies\n\n\nCogan Shimizu, Karl Hammar, and Pascal Hitzler. “Modular Ontology Modeling.” Edited by Sabrina Kirrane, Axel-Cyrille Ngonga Ngomo, Sabrina Kirrane, and Axel-Cyrille Ngonga Ngomo. Semantic Web 14, no. 3 (April 5, 2023): 459–89. https://doi.org/10.3233/SW-222886."
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#fair-ontologies-and-vocabularies",
+    "href": "slides/kg_pipeline/index.html#fair-ontologies-and-vocabularies",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "FAIR Ontologies and Vocabularies",
+    "text": "FAIR Ontologies and Vocabularies\n\n\nGarijo, Daniel, and María Poveda-Villalón. “Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web.” arXiv, March 29, 2020. http://arxiv.org/abs/2003.13084."
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#visual-ontology-developmentz",
+    "href": "slides/kg_pipeline/index.html#visual-ontology-developmentz",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Visual Ontology Developmentz",
+    "text": "Visual Ontology Developmentz\n\n\nGarijo, Daniel, and María Poveda-Villalón. “Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web.” arXiv, March 29, 2020. http://arxiv.org/abs/2003.13084."
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#self-documenting-ontologies",
+    "href": "slides/kg_pipeline/index.html#self-documenting-ontologies",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Self Documenting Ontologies",
+    "text": "Self Documenting Ontologies\n\n\nGarijo, Daniel. “WIDOCO: A Wizard for Documenting Ontologies.” In International Semantic Web Conference, 94–102. Springer, Cham, 2017. https://doi.org/10.1007/978-3-319-68204-4_9.http://dgarijo.com/papers/widoco-iswc2017.pdf Garijo, Daniel. “WIDOCO: A Wizard for Documenting Ontologies.” Java, 2017. https://doi.org/10.1007/978-3-319-68204-4_9.https://github.com/dgarijo/Widoco"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#resources-to-learn-more",
+    "href": "slides/kg_pipeline/index.html#resources-to-learn-more",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Resources to Learn More…",
+    "text": "Resources to Learn More…"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#kgc-master-class-on-json-ld-pipeline",
+    "href": "slides/kg_pipeline/index.html#kgc-master-class-on-json-ld-pipeline",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "KGC Master Class on JSON-LD Pipeline",
+    "text": "KGC Master Class on JSON-LD Pipeline\n\n\nLearn More: Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
+    "href": "slides/kg_pipeline/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn More: [RManLuo/Awesome-LLM-KG: Awesome papers about unifying LLMs and KGs (github.com)"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#chatgpt-experiment",
+    "href": "slides/kg_pipeline/index.html#chatgpt-experiment",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "ChatGPT Experiment",
+    "text": "ChatGPT Experiment\n\n\nLearn More: ChatGPT Code Interpreter"
   },
   {
     "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
