@@ -406,18 +406,18 @@
     "text": "How its going…\n\n\nShirui Pan, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. “Unifying Large Language Models and Knowledge Graphs: A Roadmap.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302."
   },
   {
-    "objectID": "slides/kg_pipeline/index.html#the-semantic-web",
-    "href": "slides/kg_pipeline/index.html#the-semantic-web",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "“The Semantic Web…”",
-    "text": "“The Semantic Web…”\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43."
-  },
-  {
     "objectID": "slides/kg_pipeline/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
     "href": "slides/kg_pipeline/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
     "title": "TAI Knowledge Engineering: A Frameworks Perspective",
     "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
     "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nRManLuo/Awesome-LLM-KG: Awesome papers about unifying LLMs and KGs (https://github.com/RManLuo/Awesome-LLM-KG)"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#the-semantic-web-2001",
+    "href": "slides/kg_pipeline/index.html#the-semantic-web-2001",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "“The Semantic Web (2001)…”",
+    "text": "“The Semantic Web (2001)…”\n\n\nA vision of “Ontologies”, “Linked Data”, and “Software Agents”…\n\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
   },
   {
     "objectID": "slides/kg_pipeline/index.html#ontology-based-etl",
@@ -427,11 +427,53 @@
     "text": "Ontology based ETL"
   },
   {
+    "objectID": "slides/kg_pipeline/index.html#step-1-cvs-data-in-pandas-data-frame",
+    "href": "slides/kg_pipeline/index.html#step-1-cvs-data-in-pandas-data-frame",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "(Step 1) CVS Data in Pandas Data Frame",
+    "text": "(Step 1) CVS Data in Pandas Data Frame"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#step-2-extract-columns-from-pandas-data-frame-to-create-mapping",
+    "href": "slides/kg_pipeline/index.html#step-2-extract-columns-from-pandas-data-frame-to-create-mapping",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "(Step 2) Extract Columns from Pandas Data Frame to create mapping",
+    "text": "(Step 2) Extract Columns from Pandas Data Frame to create mapping"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#jsonl-ld-for-linked-datsa",
+    "href": "slides/kg_pipeline/index.html#jsonl-ld-for-linked-datsa",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "JSONL LD for Linked Datsa",
+    "text": "JSONL LD for Linked Datsa\n\n\nJSON-LD 1.1: A JSON-based Serialization for Linked Data"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#step-3-generate-json-ld-from-json",
+    "href": "slides/kg_pipeline/index.html#step-3-generate-json-ld-from-json",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "(Step 3) Generate JSON-LD from JSON",
+    "text": "(Step 3) Generate JSON-LD from JSON"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#step-4-generate-kg-from-json-ld",
+    "href": "slides/kg_pipeline/index.html#step-4-generate-kg-from-json-ld",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "(Step-4) Generate KG from JSON-LD",
+    "text": "(Step-4) Generate KG from JSON-LD"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#step-5-validate-against-shacl-shapes",
+    "href": "slides/kg_pipeline/index.html#step-5-validate-against-shacl-shapes",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "(Step-5) Validate Against SHACL Shapes",
+    "text": "(Step-5) Validate Against SHACL Shapes"
+  },
+  {
     "objectID": "slides/kg_pipeline/index.html#automated-vocabulary-extraction",
     "href": "slides/kg_pipeline/index.html#automated-vocabulary-extraction",
     "title": "TAI Knowledge Engineering: A Frameworks Perspective",
     "section": "Automated Vocabulary Extraction",
-    "text": "Automated Vocabulary Extraction"
+    "text": "Automated Vocabulary Extraction\n\n\nExperiments in extracting tables from navy 3-M manual for OPNAV 4790/2K data structure resources"
   },
   {
     "objectID": "slides/kg_pipeline/index.html#llm-assisted-odps-using-pattern-templates",
@@ -439,6 +481,20 @@
     "title": "TAI Knowledge Engineering: A Frameworks Perspective",
     "section": "LLM assisted ODPs using Pattern Templates",
     "text": "LLM assisted ODPs using Pattern Templates"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#maintenance-operations-ontology-moo",
+    "href": "slides/kg_pipeline/index.html#maintenance-operations-ontology-moo",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Maintenance Operations Ontology (MOO)",
+    "text": "Maintenance Operations Ontology (MOO)\n\n\nMaintenance Operations Ontology"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#leveraging-standards",
+    "href": "slides/kg_pipeline/index.html#leveraging-standards",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Leveraging Standards",
+    "text": "Leveraging Standards\n\nSchema.org - schemas and supporting software"
   },
   {
     "objectID": "slides/kg_pipeline/index.html#ontology-engineering-in-a-age-of-llms",
@@ -452,7 +508,7 @@
     "href": "slides/kg_pipeline/index.html#applying-software-engineering-to-ontologies",
     "title": "TAI Knowledge Engineering: A Frameworks Perspective",
     "section": "Applying Software Engineering to Ontologies",
-    "text": "Applying Software Engineering to Ontologies\n\n\nBlomqvist, Eva, Karl Hammar, and Valentina Presutti. “Engineering Ontologies with Patterns – The EXtreme Design Methodology.” In Ontology Engineering with Ontology Design Patterns, 23–50. IOS Press, 2016. https://doi.org/10.3233/978-1-61499-676-7-23."
+    "text": "Applying Software Engineering to Ontologies\n\n\nEva Blomqvist, Karl Hammar, and Valentina Presutti. “Engineering Ontologies with Patterns – The EXtreme Design Methodology.” In Ontology Engineering with Ontology Design Patterns, 23–50. IOS Press, 2016. https://doi.org/10.3233/978-1-61499-676-7-23."
   },
   {
     "objectID": "slides/kg_pipeline/index.html#applying-software-engineering-to-ontologies-1",
@@ -469,11 +525,11 @@
     "text": "FAIR Ontologies and Vocabularies\n\n\nGarijo, Daniel, and María Poveda-Villalón. “Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web.” arXiv, March 29, 2020. http://arxiv.org/abs/2003.13084."
   },
   {
-    "objectID": "slides/kg_pipeline/index.html#visual-ontology-developmentz",
-    "href": "slides/kg_pipeline/index.html#visual-ontology-developmentz",
+    "objectID": "slides/kg_pipeline/index.html#visual-ontology-development",
+    "href": "slides/kg_pipeline/index.html#visual-ontology-development",
     "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Visual Ontology Developmentz",
-    "text": "Visual Ontology Developmentz\n\n\nGarijo, Daniel, and María Poveda-Villalón. “Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web.” arXiv, March 29, 2020. http://arxiv.org/abs/2003.13084."
+    "section": "Visual Ontology Development",
+    "text": "Visual Ontology Development\n\n\nGarijo, Daniel, and María Poveda-Villalón. “Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web.” arXiv, March 29, 2020. http://arxiv.org/abs/2003.13084."
   },
   {
     "objectID": "slides/kg_pipeline/index.html#self-documenting-ontologies",
@@ -490,6 +546,76 @@
     "text": "Resources to Learn More…"
   },
   {
+    "objectID": "slides/kg_pipeline/index.html#software",
+    "href": "slides/kg_pipeline/index.html#software",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Software…",
+    "text": "Software…"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#python",
+    "href": "slides/kg_pipeline/index.html#python",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Python",
+    "text": "Python\n\n\nLearn More: Think Python 2e: https://greenteapress.com/wp/think-python-2e/"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#python-for-data-analysis",
+    "href": "slides/kg_pipeline/index.html#python-for-data-analysis",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Python for Data Analysis",
+    "text": "Python for Data Analysis\n\n\nPractical Deep Learning: https://wesmckinney.com/book/"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#ai-and-machine-learning",
+    "href": "slides/kg_pipeline/index.html#ai-and-machine-learning",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "AI and Machine Learning",
+    "text": "AI and Machine Learning\n\n\nPractical Deep Learning: https://course.fast.ai/ FastAI GitHub: https://github.com/fastai"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#setting-up-environment",
+    "href": "slides/kg_pipeline/index.html#setting-up-environment",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Setting up Environment",
+    "text": "Setting up Environment\n\nFastAI Setup: https://github.com/fastai/fastsetup\nTmux: https://github.com/tmux/tmux/wiki/Getting-Started\ndotfiles: https://github.com/fastai/dotfiles\nFastAI Live Coding: https://forums.fast.ai/t/live-coding-aka-walk-thrus/96617\nFastAI Git, SSH, TMUX: https://forums.fast.ai/t/live-coding-2/96690\nBeginner’s Guide to Mambaforge Installation: https://qbiwan.github.io/fastpages/mamba-installation"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#visual-studio-code",
+    "href": "slides/kg_pipeline/index.html#visual-studio-code",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\n\n\nVisual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#visual-studio-code-plugins",
+    "href": "slides/kg_pipeline/index.html#visual-studio-code-plugins",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Visual Studio Code Plugins",
+    "text": "Visual Studio Code Plugins\n\nDraw.io Integration\nDVC Integration\nnbdev VSCode\nJupyter\nQuarto\nRDF Sketch\nStardog/RDF Languages Extension Pack\n\n\nVisual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#github",
+    "href": "slides/kg_pipeline/index.html#github",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "GitHub",
+    "text": "GitHub"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#homebrewwsl-mac-and-windows",
+    "href": "slides/kg_pipeline/index.html#homebrewwsl-mac-and-windows",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Homebrew/WSL (Mac and Windows)",
+    "text": "Homebrew/WSL (Mac and Windows)"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#markdown",
+    "href": "slides/kg_pipeline/index.html#markdown",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "Markdown",
+    "text": "Markdown\n\n\n\n\n\nMarkdown Guide"
+  },
+  {
     "objectID": "slides/kg_pipeline/index.html#kgc-master-class-on-json-ld-pipeline",
     "href": "slides/kg_pipeline/index.html#kgc-master-class-on-json-ld-pipeline",
     "title": "TAI Knowledge Engineering: A Frameworks Perspective",
@@ -502,6 +628,13 @@
     "title": "TAI Knowledge Engineering: A Frameworks Perspective",
     "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
     "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn More: [RManLuo/Awesome-LLM-KG: Awesome papers about unifying LLMs and KGs (github.com)"
+  },
+  {
+    "objectID": "slides/kg_pipeline/index.html#the-knowledge-graph-book",
+    "href": "slides/kg_pipeline/index.html#the-knowledge-graph-book",
+    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "section": "The Knowledge Graph Book",
+    "text": "The Knowledge Graph Book\n\n\nHogan, Aidan, Claudio Gutierrez, Michael Cochez, Gerard De Melo, Sabrina Kirrane, Axel Polleres, Roberto Navigli, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge. Cham: Springer International Publishing, 2022. https://doi.org/10.1007/978-3-031-01918-0."
   },
   {
     "objectID": "slides/kg_pipeline/index.html#chatgpt-experiment",
