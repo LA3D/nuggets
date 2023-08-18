@@ -220,10 +220,16 @@ Learn More: [Think Python 2e: https://greenteapress.com/wp/think-python-2e/](htt
 
 ![](fluree_jsonld.png){fig-align="center"}
 
-
-
 ::: footer
 Learn More: [Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD](https://youtu.be/KHNc0WwJ5JA)
+:::
+
+
+## Ontologies and data integration
+![](inconsistency.png)
+
+::: footer
+[KGC 2023 Talk: In Defense of Inconsistency, On Managing Truth in a Knowledge Graph - YouTube](https://www.youtube.com/watch?v=MXul3qpRYbI&t=1455s)
 :::
 
 ## Unifying Large Language Models and Knowledge Graphs: A Roadmap
