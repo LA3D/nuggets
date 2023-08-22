@@ -1,5 +1,5 @@
 ---
-title: "What Dr. Vardeman is worried about: Trusted Cognative Agents"
+title: "What Dr. Vardeman is worried about: Trusted cognitive Agents"
 author: "Charles F Vardeman II"
 date: "2023-08-21"
 embed-resources: true
@@ -12,20 +12,20 @@ categories: [Agents,trustedAI]
 ## Motivation: Tatical ammunition management Micro Services (TAMMS)
 ![](tamms.png)
 
-## Motivation: TAMMS Cognative Agents
+## Motivation: TAMMS cognitive Agents
 ![](tamms_agents.png)
 
 ## Motivation: TAMMS KG
 ![](AI-Curated_KG.png)
 
-## Cognative Agents based on LLMs
+## Cognitive Agents based on LLMs
 ![](generative_agents_llm.png){.center}
 
 ::: footer
 [Joon Sung Park, Joseph C. O’Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, and Michael S. Bernstein. “Generative Agents: Interactive Simulacra of Human Behavior.” arXiv, August 5, 2023. http://arxiv.org/abs/2304.03442.](http://arxiv.org/abs/2304.03442)
 :::
 
-## Cognative Agents based on LLMs Architecture
+## Cognitive Agents based on LLMs Architecture
 ![](generative_agent_arch.png)
 
 ::: footer
@@ -33,7 +33,7 @@ categories: [Agents,trustedAI]
 :::
 
 
-## Cognative Agents based on LLMs Architecture Framework
+## Cognitive Agents based on LLMs Architecture Framework
 ![](generative_agents_github.png)
 
 ::: footer
