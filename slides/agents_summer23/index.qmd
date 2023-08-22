@@ -1,0 +1,191 @@
+---
+title: "The State of Agents: August 2023"
+author: "Charles F Vardeman II"
+date: "2023-08-21"
+embed-resources: true
+format: 
+    revealjs:
+        slide-number: true
+categories: [Agents,trustedAI]
+---
+
+## Cognative Agents based on LLMs
+![](generative_agents_llm.png){.center}
+
+::: footer
+[Joon Sung Park, Joseph C. O’Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, and Michael S. Bernstein. “Generative Agents: Interactive Simulacra of Human Behavior.” arXiv, August 5, 2023. http://arxiv.org/abs/2304.03442.](http://arxiv.org/abs/2304.03442)
+:::
+
+## Cognative Agents based on LLMs Architecture
+![](generative_agent_arch.png)
+
+::: footer
+[Joon Sung Park, Joseph C. O’Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, and Michael S. Bernstein. “Generative Agents: Interactive Simulacra of Human Behavior.” arXiv, August 5, 2023. http://arxiv.org/abs/2304.03442.](http://arxiv.org/abs/2304.03442)
+:::
+
+
+## Cognative Agents based on LLMs Architecture Framework
+![](generative_agents_github.png)
+
+::: footer
+[Park, Joon Sung. “Generative Agents: Interactive Simulacra of Human Behavior,” August 22, 2023. https://github.com/joonspk-research/generative_agents.](https://github.com/joonspk-research/generative_agents)
+:::
+
+
+## Activity Specific Agents: Web Agents
+![](mind2web.png){.center}
+
+::: footer
+[Deng, Xiang, Yu Gu, Boyuan Zheng, Shijie Chen, Samuel Stevens, Boshi Wang, Huan Sun, and Yu Su. “Mind2Web: Towards a Generalist Agent for the Web.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.06070.](http://arxiv.org/abs/2306.06070)
+:::
+
+## Activity Specific Agents: Web Agents Architecture
+![](mind2web_arch.png)
+
+
+::: footer
+[Deng, Xiang, Yu Gu, Boyuan Zheng, Shijie Chen, Samuel Stevens, Boshi Wang, Huan Sun, and Yu Su. “Mind2Web: Towards a Generalist Agent for the Web.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.06070.](http://arxiv.org/abs/2306.06070)
+:::
+
+## Activity Specific Agents: Visual Agents
+![](visualagents.png)
+
+::: footer
+[“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
+:::
+
+## Visual Agents Architecture: Different LLMs based on Role
+![](visualagents_arch.png)
+
+::: footer
+[“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
+:::
+
+## Activity Specific Agents: Visual Agents Transition Graph
+![](visualagent_transitiongraph.png)
+
+::: footer
+[“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
+:::
+
+## Aside: Transformer Vision and segmentation models
+![](follow_anything.png)
+
+::: footer
+[“Alaamaalouf/FollowAnything.” Accessed August 22, 2023. https://github.com/alaamaalouf/FollowAnything.](https://github.com/alaamaalouf/FollowAnything)
+
+[Maalouf, Alaa, Ninad Jadhav, Krishna Murthy Jatavallabhula, Makram Chahine, Daniel M. Vogt, Robert J. Wood, Antonio Torralba, and Daniela Rus. “Follow Anything: Open-Set Detection, Tracking, and Following in Real-Time.” arXiv, August 10, 2023. https://doi.org/10.48550/arXiv.2308.05737.](https://doi.org/10.48550/arXiv.2308.05737)
+:::
+
+
+## Graphs as a Prompt Structure
+![](GOT.png)
+
+
+::: footer
+[Besta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, et al. “Graph of Thoughts: Solving Elaborate Problems with Large Language Models.” arXiv, August 21, 2023. http://arxiv.org/abs/2308.09687.](http://arxiv.org/abs/2308.09687)
+:::
+
+## Graphs as a Prompt Structure
+![](GOT_prompting.png)
+
+
+::: footer
+[Besta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, et al. “Graph of Thoughts: Solving Elaborate Problems with Large Language Models.” arXiv, August 21, 2023. http://arxiv.org/abs/2308.09687.](http://arxiv.org/abs/2308.09687)
+:::
+
+## Graphs as a Prompt Structure
+![](GOT_architecture.png)
+
+
+::: footer
+[Besta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, et al. “Graph of Thoughts: Solving Elaborate Problems with Large Language Models.” arXiv, August 21, 2023. http://arxiv.org/abs/2308.09687.](http://arxiv.org/abs/2308.09687)
+:::
+
+## Aside: Prompt Engineering Guide
+![](prompt_engineering_guide.png)
+
+::: footer
+[“Prompt Engineering Guide.” Accessed August 22, 2023. https://www.promptingguide.ai/.](https://www.promptingguide.ai/)
+:::
+
+
+## APIs as Tools: Gorilla
+![](gorilla.png)
+
+::: footer
+[Patil, Shishir G., Tianjun Zhang, Xin Wang, and Joseph E. Gonzalez. “Gorilla: Large Language Model Connected with Massive APIs.” arXiv, May 24, 2023. http://arxiv.org/abs/2305.15334.](http://arxiv.org/abs/2305.15334)
+:::
+
+## APIs as Tools: Architecture
+![](gorilla_arch.png)
+
+::: footer
+[Patil, Shishir G., Tianjun Zhang, Xin Wang, and Joseph E. Gonzalez. “Gorilla: Large Language Model Connected with Massive APIs.” arXiv, May 24, 2023. http://arxiv.org/abs/2305.15334.](http://arxiv.org/abs/2305.15334)
+:::
+
+## APIs as Tools
+![](gorilla_github.png)
+
+::: footer
+[Patil, Shishir. “Gorilla: Large Language Model Connected with Massive APIs [Project Website].” Python, August 22, 2023. https://github.com/ShishirPatil/gorilla.](https://github.com/ShishirPatil/gorilla)
+:::
+
+
+## LLM Personality Traits
+![](personality.png)
+
+::: footer
+[Safdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184.](http://arxiv.org/abs/2307.00184)
+:::
+
+
+## Using Personality Tests
+![](personality_workflow.png)
+
+::: footer
+[Safdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184.](http://arxiv.org/abs/2307.00184)
+:::
+
+## Behavior Persona Through Prompting
+![](personality_prompting.png)
+
+::: footer
+[Safdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184.](http://arxiv.org/abs/2307.00184)
+:::
+
+## LLM Personality Traits Malleability
+![](personality_malleability.png)
+
+::: footer
+[Safdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184.](http://arxiv.org/abs/2307.00184)
+:::
+
+## Grounding Through Hybrid KGs
+![](PLM_vs_KG.png){.center}
+
+::: footer
+[Shirui Pan, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. "Unifying Large Language Models and Knowledge Graphs: A Roadmap." arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302.](http://arxiv.org/abs/2306.08302)
+:::
+
+## LlamaIndex to Build Hybrid KGs
+![](llamaindex.png)
+
+::: footer
+[Liu, Jerry. “LlamaIndex.” Python, November 2022. https://doi.org/10.5281/zenodo.1234.](https://github.com/jerryjliu/llama_index)
+:::
+
+## LlamaIndex to Build Hybrid KGs
+![](llamaindex_customretreiver.png)
+
+::: footer
+[“Custom Retriever Combining KG Index and VectorStore Index - LlamaIndex 🦙 0.8.5.Post2.” Accessed August 22, 2023. https://gpt-index.readthedocs.io/en/stable/examples/index_structs/knowledge_graph/KnowledgeGraphIndex_vs_VectorStoreIndex_vs_CustomIndex_combined.html.](https://gpt-index.readthedocs.io/en/stable/examples/index_structs/knowledge_graph/KnowledgeGraphIndex_vs_VectorStoreIndex_vs_CustomIndex_combined.html)
+:::
+
+
+## Data Agents in LlamaIndex
+![](llamaindex_dataagent.png)
+
+::: footer
+From: [Liu, Jerry. “Data Agents.” LlamaIndex Blog (blog), July 13, 2023. https://medium.com/llamaindex-blog/data-agents-eed797d7972f.](https://medium.com/llamaindex-blog/data-agents-eed797d7972f)
+:::
