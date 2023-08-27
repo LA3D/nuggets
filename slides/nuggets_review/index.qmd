@@ -20,6 +20,10 @@ categories: [nuggets,trustedAI,LLMs]
 [AI Success Factors: Engineering Trust in Deployments](https://la3d.github.io/nuggets/slideindex.html)
 :::
 
+## Dr. Vardeman, this is a lot of material!{.center}
+
+## This is meant to provide something of a "Roadmap"!{.center}
+
 ## First some much older nuggets from the beginning...{.center}
 
 ## Old School AI and the Web...
@@ -160,8 +164,121 @@ What's a Knowledge Graph?
 Yang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming Jiang, Bing Yin, and Xia Hu. “Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond.” arXiv, April 27, 2023. https://doi.org/10.48550/arXiv.2304.13712.
 :::
 
-## How to Build a ChatGPT
+## How to Build a ChatGPT? {.center}
 
+## "The state of GPT" -- You should watch this!
+![](state_of_gpt.png)
+
+::: footer
+[Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
+:::
+
+## "The state of GPT"
+![](state_of_gpt_pipeline.png)
+
+::: footer
+[Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
+:::
+
+## Base models general representations through "Pre-Training" (GPT)
+
+![](gpt-abstract.png)
+
+
+::: footer
+[Radford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. “Improving Language Understanding by Generative Pre-Training,” n.d.](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
+:::
+
+## Base models general representations through "Pre-Training" (GPT)
+
+![](gpt-arch.png)
+
+
+::: footer
+[Radford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. “Improving Language Understanding by Generative Pre-Training,” n.d.](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
+:::
+
+## "Pre-Training Datasets?"{.center}
+
+## LLama: Open and Efficient Foundation Language Models
+
+
+::: columns
+::: {.column width="50%"}
+![](LLama.png)
+:::
+
+::: {.column width="50%"}
+![](LLama_data.png)
+:::
+:::
+
+::: footer
+[Touvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971.](https://doi.org/10.48550/arXiv.2302.13971)
+:::
+
+## LLama: Open and Efficient Foundation Language Models
+
+
+::: columns
+::: {.column width="50%"}
+![](LLama-books.png)
+:::
+
+::: {.column width="50%"}
+![](LLama_data.png)
+:::
+:::
+
+::: footer
+[Touvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971.](https://doi.org/10.48550/arXiv.2302.13971)
+:::
+
+## Gao et al. "The Pile"?
+
+::: columns
+::: {.column width="50%"}
+![](the_pile.png)
+:::
+
+::: {.column width="50%"}
+![](pile-books3.png)
+![](pile-books3-2.png)
+:::
+:::
+
+::: footer
+[Gao, Leo, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, et al. “The Pile: An 800GB Dataset of Diverse Text for Language Modeling.” arXiv, December 31, 2020. https://doi.org/10.48550/arXiv.2101.00027.](https://doi.org/10.48550/arXiv.2101.00027)
+:::
+
+## Gao et al. "The Pile"?
+
+::: columns
+::: {.column width="50%"}
+![](presser-2020.png)
+:::
+
+::: {.column width="50%"}
+![](pile-books3.png)
+![](pile-books3-2.png)
+:::
+:::
+
+::: footer
+[Gao, Leo, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, et al. “The Pile: An 800GB Dataset of Diverse Text for Language Modeling.” arXiv, December 31, 2020. https://doi.org/10.48550/arXiv.2101.00027.](https://doi.org/10.48550/arXiv.2101.00027)
+:::
+
+## What could go wrong?{.center}
+
+## What could go wrong?
+
+![](cnn-silverman.png)
+
+::: footer
+[“Sarah Silverman Sues OpenAI and Meta Alleging Copyright Infringement | CNN Business.” Accessed August 27, 2023. https://www.cnn.com/2023/07/10/tech/sarah-silverman-openai-meta-lawsuit/index.html.](https://www.cnn.com/2023/07/10/tech/sarah-silverman-openai-meta-lawsuit/index.html)
+:::
+
+## What About Trusted AI?{.center}
 
 ## We're Talking about LLMs!
 ![](talking_about_llms.png)

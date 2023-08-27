@@ -686,6 +686,20 @@
     "text": "Where we’re going…\n\n\nAI Success Factors: Engineering Trust in Deployments"
   },
   {
+    "objectID": "slides/nuggets_review/index.html#dr.-vardeman-this-is-a-lot-of-material",
+    "href": "slides/nuggets_review/index.html#dr.-vardeman-this-is-a-lot-of-material",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Dr. Vardeman, this is a lot of material!",
+    "text": "Dr. Vardeman, this is a lot of material!"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#this-is-meant-to-provide-something-of-a-roadmap",
+    "href": "slides/nuggets_review/index.html#this-is-meant-to-provide-something-of-a-roadmap",
+    "title": "Nearly a Year of Nuggets",
+    "section": "This is meant to provide something of a “Roadmap”!",
+    "text": "This is meant to provide something of a “Roadmap”!"
+  },
+  {
     "objectID": "slides/nuggets_review/index.html#first-some-much-older-nuggets-from-the-beginning",
     "href": "slides/nuggets_review/index.html#first-some-much-older-nuggets-from-the-beginning",
     "title": "Nearly a Year of Nuggets",
@@ -773,8 +787,92 @@
     "objectID": "slides/nuggets_review/index.html#how-to-build-a-chatgpt",
     "href": "slides/nuggets_review/index.html#how-to-build-a-chatgpt",
     "title": "Nearly a Year of Nuggets",
-    "section": "How to Build a ChatGPT",
-    "text": "How to Build a ChatGPT"
+    "section": "How to Build a ChatGPT?",
+    "text": "How to Build a ChatGPT?"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#the-state-of-gpt-you-should-watch-this",
+    "href": "slides/nuggets_review/index.html#the-state-of-gpt-you-should-watch-this",
+    "title": "Nearly a Year of Nuggets",
+    "section": "“The state of GPT” – You should watch this!",
+    "text": "“The state of GPT” – You should watch this!\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#the-state-of-gpt",
+    "href": "slides/nuggets_review/index.html#the-state-of-gpt",
+    "title": "Nearly a Year of Nuggets",
+    "section": "“The state of GPT”",
+    "text": "“The state of GPT”\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#base-models-general-representations-through-pre-training-gpt",
+    "href": "slides/nuggets_review/index.html#base-models-general-representations-through-pre-training-gpt",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Base models general representations through “Pre-Training” (GPT)",
+    "text": "Base models general representations through “Pre-Training” (GPT)\n\n\nRadford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. “Improving Language Understanding by Generative Pre-Training,” n.d."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#base-models-general-representations-through-pre-training-gpt-1",
+    "href": "slides/nuggets_review/index.html#base-models-general-representations-through-pre-training-gpt-1",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Base models general representations through “Pre-Training” (GPT)",
+    "text": "Base models general representations through “Pre-Training” (GPT)\n\n\nRadford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. “Improving Language Understanding by Generative Pre-Training,” n.d."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#pre-training-datasets",
+    "href": "slides/nuggets_review/index.html#pre-training-datasets",
+    "title": "Nearly a Year of Nuggets",
+    "section": "“Pre-Training Datasets?”",
+    "text": "“Pre-Training Datasets?”"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#llama-open-and-efficient-foundation-language-models",
+    "href": "slides/nuggets_review/index.html#llama-open-and-efficient-foundation-language-models",
+    "title": "Nearly a Year of Nuggets",
+    "section": "LLama: Open and Efficient Foundation Language Models",
+    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#llama-open-and-efficient-foundation-language-models-1",
+    "href": "slides/nuggets_review/index.html#llama-open-and-efficient-foundation-language-models-1",
+    "title": "Nearly a Year of Nuggets",
+    "section": "LLama: Open and Efficient Foundation Language Models",
+    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gao-et-al.-the-pile",
+    "href": "slides/nuggets_review/index.html#gao-et-al.-the-pile",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Gao et al. “The Pile”?",
+    "text": "Gao et al. “The Pile”?\n\n\n\n\n \n\n\n\nGao, Leo, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, et al. “The Pile: An 800GB Dataset of Diverse Text for Language Modeling.” arXiv, December 31, 2020. https://doi.org/10.48550/arXiv.2101.00027."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gao-et-al.-the-pile-1",
+    "href": "slides/nuggets_review/index.html#gao-et-al.-the-pile-1",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Gao et al. “The Pile”?",
+    "text": "Gao et al. “The Pile”?\n\n\n\n\n \n\n\n\nGao, Leo, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, et al. “The Pile: An 800GB Dataset of Diverse Text for Language Modeling.” arXiv, December 31, 2020. https://doi.org/10.48550/arXiv.2101.00027."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#what-could-go-wrong",
+    "href": "slides/nuggets_review/index.html#what-could-go-wrong",
+    "title": "Nearly a Year of Nuggets",
+    "section": "What could go wrong?",
+    "text": "What could go wrong?"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#what-could-go-wrong-1",
+    "href": "slides/nuggets_review/index.html#what-could-go-wrong-1",
+    "title": "Nearly a Year of Nuggets",
+    "section": "What could go wrong?",
+    "text": "What could go wrong?\n\n\n“Sarah Silverman Sues OpenAI and Meta Alleging Copyright Infringement | CNN Business.” Accessed August 27, 2023. https://www.cnn.com/2023/07/10/tech/sarah-silverman-openai-meta-lawsuit/index.html."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#what-about-trusted-ai",
+    "href": "slides/nuggets_review/index.html#what-about-trusted-ai",
+    "title": "Nearly a Year of Nuggets",
+    "section": "What About Trusted AI?",
+    "text": "What About Trusted AI?"
   },
   {
     "objectID": "slides/nuggets_review/index.html#were-talking-about-llms",
