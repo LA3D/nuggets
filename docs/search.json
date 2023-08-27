@@ -252,109 +252,130 @@
     "text": "Prompt Enginnering Guide\n\n\nLearn More: Prompt Engineering Guide"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
-    "href": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
-    "title": "KG Construction",
-    "section": "KG Construction Pipeline",
-    "text": "KG Construction Pipeline"
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
+    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
-    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
-    "title": "KG Construction",
-    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
-    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned ML Website",
+    "text": "Towards Trustworthy and Aligned ML Website\n\n\nTowards Trustworthy and Aligned ML"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
-    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
-    "title": "KG Construction",
-    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
-    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
+    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-2",
-    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-2",
-    "title": "KG Construction",
-    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
-    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+    "objectID": "slides/trust-causal/index.html#causal-reasoning",
+    "href": "slides/trust-causal/index.html#causal-reasoning",
+    "title": "Trust and Causal Reasoning",
+    "section": "Causal Reasoning",
+    "text": "Causal Reasoning\n\n\nLearn more: Amazon Book of Why"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-3",
-    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-3",
-    "title": "KG Construction",
-    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
-    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+    "objectID": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
+    "href": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
+    "title": "Trust and Causal Reasoning",
+    "section": "Trustworthy ML Initiative (TrustML)",
+    "text": "Trustworthy ML Initiative (TrustML)\n\n\nLearn more: Trustworthy ML Org"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#llm-kg-construction-frameworks-llamaindex",
-    "href": "slides/kg-llamaindex/index.html#llm-kg-construction-frameworks-llamaindex",
-    "title": "KG Construction",
-    "section": "LLM KG Construction Frameworks Llamaindex",
-    "text": "LLM KG Construction Frameworks Llamaindex\n\nLearn more: Llamaindex"
+    "objectID": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
+    "href": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
+    "title": "Trust and Causal Reasoning",
+    "section": "Gorilla API to Ground “Tool Use”",
+    "text": "Gorilla API to Ground “Tool Use”\n\n\nLearn more: Gorilla: Large Language Model Connected with Massive APIs"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#rebel-large-model",
-    "href": "slides/kg-llamaindex/index.html#rebel-large-model",
-    "title": "KG Construction",
-    "section": "Rebel Large Model",
-    "text": "Rebel Large Model\n#| echo: true\nfrom transformers import pipeline\n\ntriplet_extractor = pipeline('text2text-generation', model='Babelscape/rebel-large', tokenizer='Babelscape/rebel-large')\n# We need to use the tokenizer manually since we need special tokens.\nextracted_text = triplet_extractor.tokenizer.batch_decode([triplet_extractor(\"Punta Cana is a resort town in the municipality of Higuey, in La Altagracia Province, the eastern most province of the Dominican Republic\", return_tensors=True, return_text=False)[0][\"generated_token_ids\"]])\nprint(extracted_text[0])\n# Function to parse the generated text and extract the triplets\ndef extract_triplets(text):\n    triplets = []\n    relation, subject, relation, object_ = '', '', '', ''\n    text = text.strip()\n    current = 'x'\n    for token in text.replace(\"&lt;s&gt;\", \"\").replace(\"&lt;pad&gt;\", \"\").replace(\"&lt;/s&gt;\", \"\").split():\n        if token == \"&lt;triplet&gt;\":\n            current = 't'\n            if relation != '':\n                triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n                relation = ''\n            subject = ''\n        elif token == \"&lt;subj&gt;\":\n            current = 's'\n            if relation != '':\n                triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n            object_ = ''\n        elif token == \"&lt;obj&gt;\":\n            current = 'o'\n            relation = ''\n        else:\n            if current == 't':\n                subject += ' ' + token\n            elif current == 's':\n                object_ += ' ' + token\n            elif current == 'o':\n                relation += ' ' + token\n    if subject != '' and relation != '' and object_ != '':\n        triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n    return triplets\nextracted_triplets = extract_triplets(extracted_text[0])\nprint(extracted_triplets)\n\nLearn more: Rebel Large"
+    "objectID": "slides/trust-causal/index.html#llama2-accessory",
+    "href": "slides/trust-causal/index.html#llama2-accessory",
+    "title": "Trust and Causal Reasoning",
+    "section": "LLaMA2-Accessory",
+    "text": "LLaMA2-Accessory\n\n\nLearn more: LLaMA2-Accessory"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#llamaindex-with-rebel",
-    "href": "slides/kg-llamaindex/index.html#llamaindex-with-rebel",
-    "title": "KG Construction",
-    "section": "LlamaIndex with Rebel",
-    "text": "LlamaIndex with Rebel\n\n\nLearn more: Llamaindex with Rebel Colab Notebook"
+    "objectID": "slides/trust-causal/index.html#multilingual-token-analysis",
+    "href": "slides/trust-causal/index.html#multilingual-token-analysis",
+    "title": "Trust and Causal Reasoning",
+    "section": "MultiLingual Token Analysis",
+    "text": "MultiLingual Token Analysis\n\n\nLearn more: Video: LLaMA2 Multilingual Models and Fine Tuning\nGoogle Collab Notebook:"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#llamaindex-with-rebel-and-neo4j",
-    "href": "slides/kg-llamaindex/index.html#llamaindex-with-rebel-and-neo4j",
-    "title": "KG Construction",
-    "section": "LlamaIndex with Rebel and Neo4j",
-    "text": "LlamaIndex with Rebel and Neo4j\n\n\nLearn more: Neo4j Graph Store\nGitHub: Tomaz Bratanic"
+    "objectID": "slides/trust-causal/index.html#metaai-dinov2",
+    "href": "slides/trust-causal/index.html#metaai-dinov2",
+    "title": "Trust and Causal Reasoning",
+    "section": "MetaAI DINOv2",
+    "text": "MetaAI DINOv2\n\n\nLearn more: DINOv2 by Meta AI"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
-    "href": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
-    "title": "KG Construction",
-    "section": "Weaviate With Llama 2 and Llamaindex",
-    "text": "Weaviate With Llama 2 and Llamaindex\n\n\nLearn more: Welcome to the quick notebook on using Llama 2"
+    "objectID": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
+    "href": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
+    "title": "Trust and Causal Reasoning",
+    "section": "MetaAI DINOv2 Huggingface Release",
+    "text": "MetaAI DINOv2 Huggingface Release\n\n\nLearn more: DINOv2 by Meta AI Huggingface"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs",
-    "href": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs",
-    "title": "KG Construction",
-    "section": "Weaviate “Knowledge Graphs”",
-    "text": "Weaviate “Knowledge Graphs”\n\n\nExample: NASA Graph-Enabled Vector Search"
+    "objectID": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
+    "href": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
+    "title": "Trust and Causal Reasoning",
+    "section": "Example notebook for DINOv2 Semantic Segmentation",
+    "text": "Example notebook for DINOv2 Semantic Segmentation\n\n\nLearn more: Linear probing of DINOv2 for semantic segmentation"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs-1",
-    "href": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs-1",
-    "title": "KG Construction",
-    "section": "Weaviate “Knowledge Graphs”",
-    "text": "Weaviate “Knowledge Graphs”\n\n\nExample: NASA Graph-Enabled Vector Search"
+    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
+    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
+    "title": "Trust and Causal Reasoning",
+    "section": "Linear Regression Model for Reasoning",
+    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#aws-neptune",
-    "href": "slides/kg-llamaindex/index.html#aws-neptune",
-    "title": "KG Construction",
-    "section": "AWS Neptune",
-    "text": "AWS Neptune\n\n\nLearn More: Amazon Neptune"
+    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
+    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
+    "title": "Trust and Causal Reasoning",
+    "section": "Linear Regression Model for Reasoning",
+    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#amazon-science-refined",
-    "href": "slides/kg-llamaindex/index.html#amazon-science-refined",
-    "title": "KG Construction",
-    "section": "Amazon Science ReFinED",
-    "text": "Amazon Science ReFinED\n\n\nPaper: ReFinED: An Efficient Zero-shot-capable Approach to End-to-End Entity Linking\nPaper: Improving Entity Disambiguation by Reasoning over a Knowledge Base\nGitHub: ReFinED is an efficient and accurate entity linking (EL) system."
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI Success Factors: Engineering Trust in Deployments",
+    "section": "",
+    "text": "Welcome To AI Success Factors: Engineering Trust in Deployments\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 15, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "slides/kg-llamaindex/index.html#amazon-science-kgqa",
-    "href": "slides/kg-llamaindex/index.html#amazon-science-kgqa",
-    "title": "KG Construction",
-    "section": "Amazon Science KGQA",
-    "text": "Amazon Science KGQA\n\n\nWebsite: Language models as controlled natural language semantic parsers for knowledge graph question answering GitHub: Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering"
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
+    "section": "",
+    "text": "At the University of Notre Dame’s Center for Research Computing (CRC), the Laboratory for Assured AI Applications Development (LA3D) represents a critical step in the field of artificial intelligence (AI). As part of CRC’s commitment to leveraging advanced computation for discovery and innovation, LA3D focuses on ensuring the responsible development and application of AI technologies. This initiative aligns with both the technological evolution of AI and the broader goals of CRC and Notre Dame.\nThe mission of LA3D is robust, layered, and rooted in a commitment to research, develop, and deploy AI models and systems that are not just innovative but trustworthy and ethically aligned. With a focus on AI Engineering, Trusted AI, Knowledge Engineering, FAIR (Findable, Accessible, Interoperable, and Reusable) data, and CyberInfrastructure, LA3D presents a multifaceted approach.\nAI’s Transformative Potential: The transformative potential of AI is no longer a distant aspiration but a present-day reality. Whether in healthcare, finance, transportation, or education, AI’s capacity to innovate is unparalleled. LA3D recognizes this potential and strives to harness it, directing AI’s power towards constructive, ethical, and sustainable ends.\nConnection to the Center for Research Computing: LA3D’s home in the CRC is more than a mere geographical placement. It symbolizes a shared vision of advancing science through computational methods, high-performance computing, and now, AI-driven solutions. By integrating into the CRC’s vibrant ecosystem, LA3D amplifies the pursuit of excellence, pushing the boundaries of what’s achievable with AI.\nMission Overview: LA3D’s mission transcends traditional boundaries, aiming to advance fields like AI Engineering, with its critical role in transitioning prototypes to production; Trusted AI, embodying ethical and reliable systems; Knowledge Engineering, embracing the new frontiers of Large Language Models; FAIR data principles; and the rapidly evolving CyberInfrastructure. Each of these elements comes together to create a synergy that fuels LA3D’s ambition to lead AI into an era marked by integrity, ingenuity, and human-centric focus.\nThe launch of LA3D marks a promising beginning in a journey filled with exploration, challenge, and opportunity. It sets the stage for an intellectual adventure that seeks to navigate the complex landscape of AI, unlocking its potentials while remaining anchored to values and ethical principles. Welcome to the Laboratory for Assured AI Applications Development – a place where AI’s promise transforms into tangible progress."
+  },
+  {
+    "objectID": "posts/welcome/index.html#the-imperative-of-the-disciplines",
+    "href": "posts/welcome/index.html#the-imperative-of-the-disciplines",
+    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
+    "section": "The Imperative of the Disciplines",
+    "text": "The Imperative of the Disciplines\n\nAI Engineering: Bridging the Gap from Prototype to Production\nIn the complex, multifaceted realm of AI, the journey from concept to realization is fraught with challenges and intricacies. AI Engineering, a core discipline at the Laboratory for Assured AI Applications Development (LA3D), stands as a beacon guiding this intricate transition from prototypes to production-grade applications.\n\nTransitioning Prototypes to Production: At LA3D, we recognize that the gap between experimental AI prototypes and fully functional production systems is vast. AI Engineering provides the methodologies, tools, and practices needed to navigate this gap. It’s about ensuring that promising concepts don’t just remain on paper but evolve into tangible applications. The recent Gartner research resonates with our approach, identifying that only 53% of AI projects transition from prototypes to production, underscoring the need for an engineering-driven approach.\nCore Pillars: DataOps, ModelOps, DevOps: DataOps focuses on data management and quality, ModelOps on model lifecycle management, and DevOps for seamless integration. These three core pillars together facilitate performance, scalability, interpretability, and reliability of AI models, maximizing the value of AI investments.\nAssurance in AI Models and Mechanistic Interpretability: Assurance in AI Models and Mechanistic Interpretability: Trust and reliability lie at the core of AI Engineering. At LA3D, the utilization of energy-based modeling, specifically Joint Energy-Based Models (JEMs), offers a transparent and statistically grounded approach to AI. By learning joint distributions over observed and latent variables, and associating lower energies with more likely configurations, JEMs help in aligning AI models with ethical guidelines and intended purposes. This mechanistic interpretability, coupled with the robust design inherent in JEMs, ensures predictability and engenders trust. Such alignment is vital for Assured AI, where understanding the underlying patterns and regularities in data becomes a cornerstone for creating reliable and responsible applications.\nScalability, Efficiency, Lifecycle Management, and Data-Centric AI: Ensuring consistent performance across different scales and complexities is crucial. LA3D’s AI Engineering practices enable models to be deployed in various environments without losing integrity or performance. Managing AI models throughout their lifecycle through continuous monitoring, validation, and maintenance ensures adaptability and alignment with evolving objectives. The emphasis on Data-Centric AI reflects LA3D’s commitment to focusing on the quality of data, recognizing that data is the lifeblood of AI systems.\nInterdisciplinary Collaboration and Alignment with Human Values: AI Engineering fosters collaboration among data scientists, engineers, domain experts, and ethical compliance teams. The result is cohesive AI development, where varying perspectives merge to create solutions resonating with diverse needs and values. At LA3D, AI serves human values and societal needs, ensuring that technology is not only technically sound but also socially responsible.\nEmbracing CyberSecurity: Coupled with a growing interest in CyberSecurity, LA3D extends the scope of AI Engineering to safeguard information and assure security in AI applications.\n\nAI Engineering is not merely a process at LA3D; it’s a philosophy and an imperative discipline. It’s the bedrock that ensures AI models are not just innovative but also responsible, practical, and aligned with the human experience. Bridging the gap from prototype to production, AI Engineering paves the way for a future where AI is not just a tool but a reliable partner for progress. Join us on this journey as we delve deeper into AI Engineering, exploring its challenges, triumphs, and nuances.\n\n\nTrusted AI: A Cornerstone of Ethical and Reliable Systems\nTrusted AI is not just a concept; it’s a commitment to integrity, ethics, and societal alignment that LA3D wholeheartedly embraces. Trust in AI is an essential component in our technological landscape, and it embodies various facets that work in synergy to create ethical and reliable systems.\n\nAssurance in AI Models: At LA3D, assurance goes beyond mere compliance; it’s about creating AI models that can be understood, scrutinized, and validated. Building AI models that can explain their reasoning and provide clarity in their decisions is integral to creating trust.\nTransparency and Accountability: The quest for Trusted AI demands complete transparency in both process and outcomes. LA3D adheres to an open and comprehensible approach that allows all stakeholders to understand how decisions are made and who is accountable for them. Ensuring this level of transparency fosters an environment where AI models can be thoroughly evaluated and critiqued, reinforcing trust in their use.\nResponsible AI: While Trusted AI focuses on reliability and ethics, Responsible AI broadens the spectrum to include considerations such as fairness, inclusivity, privacy, and societal impact. At LA3D, we recognize that AI systems must not only operate within ethical guidelines but also actively contribute to the well-being of society. This commitment to social responsibility aligns with our holistic approach to developing technology that enriches lives.\nCyberSecurity in AI: As AI systems become more intertwined with our daily lives, the need to secure them becomes paramount. LA3D is committed to incorporating CyberSecurity measures within the AI development process, safeguarding data and protecting the integrity of AI systems. We understand that trust in AI also depends on the security of the systems, and we dedicate our resources to ensure that our AI applications are robust against threats.\n\nTrusted AI is a cornerstone at LA3D, reflecting our relentless pursuit of aligning technology with human values and ethical principles. It’s about creating AI that people can rely on, understand, and feel safe using. The interplay between transparency, accountability, Responsible AI, and CyberSecurity forms a unified approach to build AI systems that not only perform exceptionally but also resonate with the broader societal goals.\nJoin us as we explore further the nuances of Trusted AI, a field where technology and ethics merge to pave the way for a future where AI is a dependable ally. Our commitment to this discipline underscores the depth of our understanding of the complexities involved in crafting AI that is truly trusted.\nThis section outlines the key areas of Trusted AI that LA3D focuses on, emphasizing the importance of trust, transparency, responsibility, and security within the AI domain. It underscores the laboratory’s dedication to ethical and reliable AI systems, aligning with societal needs and values.\n\n\nKnowledge Engineering and Prompt Engineering: The New Frontiers\nIn the rapidly evolving landscape of artificial intelligence, Knowledge Engineering and Prompt Engineering emerge as exciting new frontiers that promise to reshape the way we conceptualize, create, and leverage AI systems. At the Laboratory for Assured AI Applications Development (LA3D), we recognize the vital role of these disciplines in shaping the next generation of AI applications.\n\nKnowledge Graphs: Knowledge graphs represent a transformative approach to organizing and connecting information. By modeling relationships between entities in a structured and semantically rich format, knowledge graphs enable more intelligent querying and reasoning. LA3D actively leverages knowledge graphs to power more insightful and context-aware AI solutions.\nOntology Design Patterns: A specialized aspect of Knowledge Engineering, ontology design patterns allow for the formal representation of concepts and their relationships within a specific domain. By utilizing these patterns, LA3D ensures that AI systems have a solid conceptual foundation, enabling more precise interpretation and decision-making.\nLLM Techniques: Large Language Models (LLMs) are revolutionizing natural language processing. By employing techniques like Prompt Engineering, LA3D refines the interaction with LLMs, enhancing their responsiveness and adaptability. This method allows for more effective communication with AI systems, aligning them closer to human-like understanding.\nAI Models as Surrogates: At LA3D, we explore the exciting potential of AI models as surrogates for complex mathematical or physical models. These AI surrogates can provide faster and more accessible simulations, accelerating research and opening new avenues for exploration in science and engineering.\nAI Co-Pilots for Various Tasks: Beyond acting as mere tools, AI models are now being developed as intelligent co-pilots, assisting human experts in a variety of tasks. Whether aiding in data analysis, guiding complex problem-solving, or enhancing creative processes, AI co-pilots represent a new paradigm of collaboration between human and machine intelligence.\n\nKnowledge Engineering and Prompt Engineering are not mere additions to the AI toolkit; they are pivotal advancements that herald a new era in AI application design and interaction. By embracing these new frontiers, LA3D reinforces its commitment to innovation, excellence, and the relentless pursuit of AI that is not just cutting-edge but profoundly attuned to human needs and aspirations. Join us as we explore these new horizons, uncovering the immense potential and profound implications they hold for the future of AI.\n\n\nThe Evolution of CyberInfrastructure and AI-Driven Science AI-Driven Science\nThe seamless integration of CyberInfrastructure with AI-driven science marks a transformative phase in research and innovation. As part of the Laboratory for Assured AI Applications Development (LA3D) at the University of Notre Dame’s Center for Research Computing (CRC), we are at the forefront of this exciting convergence, pioneering approaches that harness the power of advanced computing technologies to accelerate scientific discovery.\n\nAI-Driven Science: The infusion of AI into scientific research has ushered in a new era of data-driven exploration and insight. At LA3D, we employ AI models to analyze complex data sets, predict outcomes, and even guide experimental design. From enhancing medical diagnostics to predicting climate patterns, AI-driven science is unlocking unprecedented opportunities for understanding and innovation.\nRelevance to CRC: The Center for Research Computing at Notre Dame is committed to providing cutting-edge computational resources and expertise. The collaboration with LA3D amplifies this commitment by aligning AI research with state-of-the-art CyberInfrastructure. Together, we’re pushing the boundaries of what’s possible in computational science.\nAI Surrogates for Mathematical Models: Building on the AI surrogates concept, we utilize AI models to replicate complex mathematical or physical systems within CRC. These surrogates enable faster simulations and insights, thus accelerating research and expanding our ability to tackle previously intractable problems.\nAI Co-Pilots for Scientific Exploration: The development of AI co-pilots has extended into the realm of scientific exploration at CRC. These intelligent systems act as collaborators, assisting researchers in hypothesis formulation, data analysis, and problem-solving. It’s a revolutionary approach that augments human intelligence with AI, fostering a new level of creativity and rigor in scientific inquiry.\nIntegration of CyberInfrastructure: A robust CyberInfrastructure is foundational to AI-driven science at CRC. By weaving together high-performance computing, cloud technologies, and specialized software, we’re creating a dynamic environment where AI and computational science flourish. It’s a synergy that optimizes research processes, enhances collaboration, and catalyzes breakthroughs.\n\nThe evolution of CyberInfrastructure and AI-driven science at CRC represents more than technological advancement; it’s a paradigm shift in how we approach research and discovery. Through strategic collaboration and relentless innovation, we’re crafting a future where technology and human intellect unite to illuminate the unknown. Join us on this path, as we explore the incredible potential and promise of this convergence, continually striving to redefine the boundaries of what is possible in science and beyond."
+  },
+  {
+    "objectID": "posts/welcome/index.html#blogs-objective-and-overview",
+    "href": "posts/welcome/index.html#blogs-objective-and-overview",
+    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
+    "section": "Blog’s Objective and Overview",
+    "text": "Blog’s Objective and Overview\nIn alignment with the University of Notre Dame’s mission to seek knowledge that addresses humanity’s pressing challenges, and the Center for Research Computing’s (CRC) commitment to driving innovation, the Laboratory for Assured AI Applications Development (LA3D) is pleased to unveil this blog as an essential platform.\n\nWeekly Updates: Engage with regular insights into the ongoing research, technological advancements, and creative pursuits within LA3D. From AI Engineering to Trusted AI, we’ll keep our community abreast of the exciting developments shaping our field.\nInsights into Trusted AI, CI-Compass, and More: Delve into the core projects and collaborations within LA3D, including specialized explorations into the worlds of Trusted AI, CI-Compass, CyberSecurity in AI, and the nuances of Responsible AI.\nAI Workforce Development: Recognizing the need for a skilled and knowledgeable AI workforce, this blog will feature initiatives, programs, and strategies dedicated to cultivating the next generation of AI professionals. Together with CRC, we strive to foster education, mentorship, and career development in AI.\nResearch Publications and Highlights: Discover the rich tapestry of research being woven at LA3D. We’ll highlight key publications, conference achievements, and innovative studies that reflect our commitment to excellence and alignment with Notre Dame’s values.\nCommunity Engagement and Collaboration: Building on Notre Dame’s emphasis on community and service, this blog invites you to participate, share, and learn. Join a lively dialogue that celebrates diversity of thought and collaboration in pursuit of a greater understanding of Assured AI.\nSpotlight on CyberSecurity in AI and Emerging Topics: As part of our comprehensive view of modern AI, we will dedicate specific sections to explore critical areas like CyberSecurity and the delicate balance between Responsible and Trusted AI.\nConnection to Notre Dame’s and CRC’s Mission: This blog embodies the spirit of Notre Dame and CRC’s shared mission to advance knowledge, foster innovation, and contribute to society. We strive to make the pursuit of AI not only a scientific endeavor but also a means to enrich lives and address societal needs.\n\nIn the introduction, we’ve outlined the essential areas of focus at the Laboratory for Assured AI Applications Development (LA3D) at the University of Notre Dame’s Center for Research Computing. From AI Engineering’s crucial role in transitioning prototypes to production, to the ethical imperatives in Trusted AI, Knowledge Engineering, CyberSecurity in AI, and the blog’s alignment with the missions of CRC and Notre Dame, we’ve set the stage for a comprehensive exploration.\nOur blog serves as a platform to dive into these topics, including AI workforce development and the ways in which AI intersects with societal needs and technological advancements. As we move forward, we’ll examine these subjects in detail, shedding light on the challenges, successes, and ongoing efforts in these fields.\nStay tuned as we delve into the complexities of AI, with insights and updates that reflect LA3D’s commitment to innovation, responsibility, and real-world applicability. Join us in this exploration, as we strive to make AI not just a tool, but a reliable partner for progress."
+  },
+  {
+    "objectID": "slideindex.html",
+    "href": "slideindex.html",
+    "title": "Weekly Nugget Presentations",
+    "section": "",
+    "text": "Nearly a Year of Nuggets\n\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/agents_summer23/index.html#motivation-tatical-ammunition-management-micro-services-tamms",
@@ -546,389 +567,221 @@
     "text": "Data Agents in LlamaIndex\n\n\nFrom: Liu, Jerry. “Data Agents.” LlamaIndex Blog (blog), July 13, 2023. https://medium.com/llamaindex-blog/data-agents-eed797d7972f."
   },
   {
-    "objectID": "slideindex.html",
-    "href": "slideindex.html",
-    "title": "Weekly Nugget Presentations",
-    "section": "",
-    "text": "What Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTAI Knowledge Engineering: A Frameworks Perspective\n\n\n\n\n\n\n\nKG Construction\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 16, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "objectID": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
+    "href": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
+    "title": "KG Construction",
+    "section": "KG Construction Pipeline",
+    "text": "KG Construction Pipeline"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
-    "section": "",
-    "text": "At the University of Notre Dame’s Center for Research Computing (CRC), the Laboratory for Assured AI Applications Development (LA3D) represents a critical step in the field of artificial intelligence (AI). As part of CRC’s commitment to leveraging advanced computation for discovery and innovation, LA3D focuses on ensuring the responsible development and application of AI technologies. This initiative aligns with both the technological evolution of AI and the broader goals of CRC and Notre Dame.\nThe mission of LA3D is robust, layered, and rooted in a commitment to research, develop, and deploy AI models and systems that are not just innovative but trustworthy and ethically aligned. With a focus on AI Engineering, Trusted AI, Knowledge Engineering, FAIR (Findable, Accessible, Interoperable, and Reusable) data, and CyberInfrastructure, LA3D presents a multifaceted approach.\nAI’s Transformative Potential: The transformative potential of AI is no longer a distant aspiration but a present-day reality. Whether in healthcare, finance, transportation, or education, AI’s capacity to innovate is unparalleled. LA3D recognizes this potential and strives to harness it, directing AI’s power towards constructive, ethical, and sustainable ends.\nConnection to the Center for Research Computing: LA3D’s home in the CRC is more than a mere geographical placement. It symbolizes a shared vision of advancing science through computational methods, high-performance computing, and now, AI-driven solutions. By integrating into the CRC’s vibrant ecosystem, LA3D amplifies the pursuit of excellence, pushing the boundaries of what’s achievable with AI.\nMission Overview: LA3D’s mission transcends traditional boundaries, aiming to advance fields like AI Engineering, with its critical role in transitioning prototypes to production; Trusted AI, embodying ethical and reliable systems; Knowledge Engineering, embracing the new frontiers of Large Language Models; FAIR data principles; and the rapidly evolving CyberInfrastructure. Each of these elements comes together to create a synergy that fuels LA3D’s ambition to lead AI into an era marked by integrity, ingenuity, and human-centric focus.\nThe launch of LA3D marks a promising beginning in a journey filled with exploration, challenge, and opportunity. It sets the stage for an intellectual adventure that seeks to navigate the complex landscape of AI, unlocking its potentials while remaining anchored to values and ethical principles. Welcome to the Laboratory for Assured AI Applications Development – a place where AI’s promise transforms into tangible progress."
-  },
-  {
-    "objectID": "posts/welcome/index.html#the-imperative-of-the-disciplines",
-    "href": "posts/welcome/index.html#the-imperative-of-the-disciplines",
-    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
-    "section": "The Imperative of the Disciplines",
-    "text": "The Imperative of the Disciplines\n\nAI Engineering: Bridging the Gap from Prototype to Production\nIn the complex, multifaceted realm of AI, the journey from concept to realization is fraught with challenges and intricacies. AI Engineering, a core discipline at the Laboratory for Assured AI Applications Development (LA3D), stands as a beacon guiding this intricate transition from prototypes to production-grade applications.\n\nTransitioning Prototypes to Production: At LA3D, we recognize that the gap between experimental AI prototypes and fully functional production systems is vast. AI Engineering provides the methodologies, tools, and practices needed to navigate this gap. It’s about ensuring that promising concepts don’t just remain on paper but evolve into tangible applications. The recent Gartner research resonates with our approach, identifying that only 53% of AI projects transition from prototypes to production, underscoring the need for an engineering-driven approach.\nCore Pillars: DataOps, ModelOps, DevOps: DataOps focuses on data management and quality, ModelOps on model lifecycle management, and DevOps for seamless integration. These three core pillars together facilitate performance, scalability, interpretability, and reliability of AI models, maximizing the value of AI investments.\nAssurance in AI Models and Mechanistic Interpretability: Assurance in AI Models and Mechanistic Interpretability: Trust and reliability lie at the core of AI Engineering. At LA3D, the utilization of energy-based modeling, specifically Joint Energy-Based Models (JEMs), offers a transparent and statistically grounded approach to AI. By learning joint distributions over observed and latent variables, and associating lower energies with more likely configurations, JEMs help in aligning AI models with ethical guidelines and intended purposes. This mechanistic interpretability, coupled with the robust design inherent in JEMs, ensures predictability and engenders trust. Such alignment is vital for Assured AI, where understanding the underlying patterns and regularities in data becomes a cornerstone for creating reliable and responsible applications.\nScalability, Efficiency, Lifecycle Management, and Data-Centric AI: Ensuring consistent performance across different scales and complexities is crucial. LA3D’s AI Engineering practices enable models to be deployed in various environments without losing integrity or performance. Managing AI models throughout their lifecycle through continuous monitoring, validation, and maintenance ensures adaptability and alignment with evolving objectives. The emphasis on Data-Centric AI reflects LA3D’s commitment to focusing on the quality of data, recognizing that data is the lifeblood of AI systems.\nInterdisciplinary Collaboration and Alignment with Human Values: AI Engineering fosters collaboration among data scientists, engineers, domain experts, and ethical compliance teams. The result is cohesive AI development, where varying perspectives merge to create solutions resonating with diverse needs and values. At LA3D, AI serves human values and societal needs, ensuring that technology is not only technically sound but also socially responsible.\nEmbracing CyberSecurity: Coupled with a growing interest in CyberSecurity, LA3D extends the scope of AI Engineering to safeguard information and assure security in AI applications.\n\nAI Engineering is not merely a process at LA3D; it’s a philosophy and an imperative discipline. It’s the bedrock that ensures AI models are not just innovative but also responsible, practical, and aligned with the human experience. Bridging the gap from prototype to production, AI Engineering paves the way for a future where AI is not just a tool but a reliable partner for progress. Join us on this journey as we delve deeper into AI Engineering, exploring its challenges, triumphs, and nuances.\n\n\nTrusted AI: A Cornerstone of Ethical and Reliable Systems\nTrusted AI is not just a concept; it’s a commitment to integrity, ethics, and societal alignment that LA3D wholeheartedly embraces. Trust in AI is an essential component in our technological landscape, and it embodies various facets that work in synergy to create ethical and reliable systems.\n\nAssurance in AI Models: At LA3D, assurance goes beyond mere compliance; it’s about creating AI models that can be understood, scrutinized, and validated. Building AI models that can explain their reasoning and provide clarity in their decisions is integral to creating trust.\nTransparency and Accountability: The quest for Trusted AI demands complete transparency in both process and outcomes. LA3D adheres to an open and comprehensible approach that allows all stakeholders to understand how decisions are made and who is accountable for them. Ensuring this level of transparency fosters an environment where AI models can be thoroughly evaluated and critiqued, reinforcing trust in their use.\nResponsible AI: While Trusted AI focuses on reliability and ethics, Responsible AI broadens the spectrum to include considerations such as fairness, inclusivity, privacy, and societal impact. At LA3D, we recognize that AI systems must not only operate within ethical guidelines but also actively contribute to the well-being of society. This commitment to social responsibility aligns with our holistic approach to developing technology that enriches lives.\nCyberSecurity in AI: As AI systems become more intertwined with our daily lives, the need to secure them becomes paramount. LA3D is committed to incorporating CyberSecurity measures within the AI development process, safeguarding data and protecting the integrity of AI systems. We understand that trust in AI also depends on the security of the systems, and we dedicate our resources to ensure that our AI applications are robust against threats.\n\nTrusted AI is a cornerstone at LA3D, reflecting our relentless pursuit of aligning technology with human values and ethical principles. It’s about creating AI that people can rely on, understand, and feel safe using. The interplay between transparency, accountability, Responsible AI, and CyberSecurity forms a unified approach to build AI systems that not only perform exceptionally but also resonate with the broader societal goals.\nJoin us as we explore further the nuances of Trusted AI, a field where technology and ethics merge to pave the way for a future where AI is a dependable ally. Our commitment to this discipline underscores the depth of our understanding of the complexities involved in crafting AI that is truly trusted.\nThis section outlines the key areas of Trusted AI that LA3D focuses on, emphasizing the importance of trust, transparency, responsibility, and security within the AI domain. It underscores the laboratory’s dedication to ethical and reliable AI systems, aligning with societal needs and values.\n\n\nKnowledge Engineering and Prompt Engineering: The New Frontiers\nIn the rapidly evolving landscape of artificial intelligence, Knowledge Engineering and Prompt Engineering emerge as exciting new frontiers that promise to reshape the way we conceptualize, create, and leverage AI systems. At the Laboratory for Assured AI Applications Development (LA3D), we recognize the vital role of these disciplines in shaping the next generation of AI applications.\n\nKnowledge Graphs: Knowledge graphs represent a transformative approach to organizing and connecting information. By modeling relationships between entities in a structured and semantically rich format, knowledge graphs enable more intelligent querying and reasoning. LA3D actively leverages knowledge graphs to power more insightful and context-aware AI solutions.\nOntology Design Patterns: A specialized aspect of Knowledge Engineering, ontology design patterns allow for the formal representation of concepts and their relationships within a specific domain. By utilizing these patterns, LA3D ensures that AI systems have a solid conceptual foundation, enabling more precise interpretation and decision-making.\nLLM Techniques: Large Language Models (LLMs) are revolutionizing natural language processing. By employing techniques like Prompt Engineering, LA3D refines the interaction with LLMs, enhancing their responsiveness and adaptability. This method allows for more effective communication with AI systems, aligning them closer to human-like understanding.\nAI Models as Surrogates: At LA3D, we explore the exciting potential of AI models as surrogates for complex mathematical or physical models. These AI surrogates can provide faster and more accessible simulations, accelerating research and opening new avenues for exploration in science and engineering.\nAI Co-Pilots for Various Tasks: Beyond acting as mere tools, AI models are now being developed as intelligent co-pilots, assisting human experts in a variety of tasks. Whether aiding in data analysis, guiding complex problem-solving, or enhancing creative processes, AI co-pilots represent a new paradigm of collaboration between human and machine intelligence.\n\nKnowledge Engineering and Prompt Engineering are not mere additions to the AI toolkit; they are pivotal advancements that herald a new era in AI application design and interaction. By embracing these new frontiers, LA3D reinforces its commitment to innovation, excellence, and the relentless pursuit of AI that is not just cutting-edge but profoundly attuned to human needs and aspirations. Join us as we explore these new horizons, uncovering the immense potential and profound implications they hold for the future of AI.\n\n\nThe Evolution of CyberInfrastructure and AI-Driven Science AI-Driven Science\nThe seamless integration of CyberInfrastructure with AI-driven science marks a transformative phase in research and innovation. As part of the Laboratory for Assured AI Applications Development (LA3D) at the University of Notre Dame’s Center for Research Computing (CRC), we are at the forefront of this exciting convergence, pioneering approaches that harness the power of advanced computing technologies to accelerate scientific discovery.\n\nAI-Driven Science: The infusion of AI into scientific research has ushered in a new era of data-driven exploration and insight. At LA3D, we employ AI models to analyze complex data sets, predict outcomes, and even guide experimental design. From enhancing medical diagnostics to predicting climate patterns, AI-driven science is unlocking unprecedented opportunities for understanding and innovation.\nRelevance to CRC: The Center for Research Computing at Notre Dame is committed to providing cutting-edge computational resources and expertise. The collaboration with LA3D amplifies this commitment by aligning AI research with state-of-the-art CyberInfrastructure. Together, we’re pushing the boundaries of what’s possible in computational science.\nAI Surrogates for Mathematical Models: Building on the AI surrogates concept, we utilize AI models to replicate complex mathematical or physical systems within CRC. These surrogates enable faster simulations and insights, thus accelerating research and expanding our ability to tackle previously intractable problems.\nAI Co-Pilots for Scientific Exploration: The development of AI co-pilots has extended into the realm of scientific exploration at CRC. These intelligent systems act as collaborators, assisting researchers in hypothesis formulation, data analysis, and problem-solving. It’s a revolutionary approach that augments human intelligence with AI, fostering a new level of creativity and rigor in scientific inquiry.\nIntegration of CyberInfrastructure: A robust CyberInfrastructure is foundational to AI-driven science at CRC. By weaving together high-performance computing, cloud technologies, and specialized software, we’re creating a dynamic environment where AI and computational science flourish. It’s a synergy that optimizes research processes, enhances collaboration, and catalyzes breakthroughs.\n\nThe evolution of CyberInfrastructure and AI-driven science at CRC represents more than technological advancement; it’s a paradigm shift in how we approach research and discovery. Through strategic collaboration and relentless innovation, we’re crafting a future where technology and human intellect unite to illuminate the unknown. Join us on this path, as we explore the incredible potential and promise of this convergence, continually striving to redefine the boundaries of what is possible in science and beyond."
-  },
-  {
-    "objectID": "posts/welcome/index.html#blogs-objective-and-overview",
-    "href": "posts/welcome/index.html#blogs-objective-and-overview",
-    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
-    "section": "Blog’s Objective and Overview",
-    "text": "Blog’s Objective and Overview\nIn alignment with the University of Notre Dame’s mission to seek knowledge that addresses humanity’s pressing challenges, and the Center for Research Computing’s (CRC) commitment to driving innovation, the Laboratory for Assured AI Applications Development (LA3D) is pleased to unveil this blog as an essential platform.\n\nWeekly Updates: Engage with regular insights into the ongoing research, technological advancements, and creative pursuits within LA3D. From AI Engineering to Trusted AI, we’ll keep our community abreast of the exciting developments shaping our field.\nInsights into Trusted AI, CI-Compass, and More: Delve into the core projects and collaborations within LA3D, including specialized explorations into the worlds of Trusted AI, CI-Compass, CyberSecurity in AI, and the nuances of Responsible AI.\nAI Workforce Development: Recognizing the need for a skilled and knowledgeable AI workforce, this blog will feature initiatives, programs, and strategies dedicated to cultivating the next generation of AI professionals. Together with CRC, we strive to foster education, mentorship, and career development in AI.\nResearch Publications and Highlights: Discover the rich tapestry of research being woven at LA3D. We’ll highlight key publications, conference achievements, and innovative studies that reflect our commitment to excellence and alignment with Notre Dame’s values.\nCommunity Engagement and Collaboration: Building on Notre Dame’s emphasis on community and service, this blog invites you to participate, share, and learn. Join a lively dialogue that celebrates diversity of thought and collaboration in pursuit of a greater understanding of Assured AI.\nSpotlight on CyberSecurity in AI and Emerging Topics: As part of our comprehensive view of modern AI, we will dedicate specific sections to explore critical areas like CyberSecurity and the delicate balance between Responsible and Trusted AI.\nConnection to Notre Dame’s and CRC’s Mission: This blog embodies the spirit of Notre Dame and CRC’s shared mission to advance knowledge, foster innovation, and contribute to society. We strive to make the pursuit of AI not only a scientific endeavor but also a means to enrich lives and address societal needs.\n\nIn the introduction, we’ve outlined the essential areas of focus at the Laboratory for Assured AI Applications Development (LA3D) at the University of Notre Dame’s Center for Research Computing. From AI Engineering’s crucial role in transitioning prototypes to production, to the ethical imperatives in Trusted AI, Knowledge Engineering, CyberSecurity in AI, and the blog’s alignment with the missions of CRC and Notre Dame, we’ve set the stage for a comprehensive exploration.\nOur blog serves as a platform to dive into these topics, including AI workforce development and the ways in which AI intersects with societal needs and technological advancements. As we move forward, we’ll examine these subjects in detail, shedding light on the challenges, successes, and ongoing efforts in these fields.\nStay tuned as we delve into the complexities of AI, with insights and updates that reflect LA3D’s commitment to innovation, responsibility, and real-world applicability. Join us in this exploration, as we strive to make AI not just a tool, but a reliable partner for progress."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AI Success Factors: Engineering Trust in Deployments",
-    "section": "",
-    "text": "Welcome To AI Success Factors: Engineering Trust in Deployments\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 15, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#how-it-started",
-    "href": "slides/ke_frameworks/index.html#how-it-started",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "How it started…",
-    "text": "How it started…"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#how-its-going",
-    "href": "slides/ke_frameworks/index.html#how-its-going",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "How its going…",
-    "text": "How its going…\n\n\nShirui Pan, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. “Unifying Large Language Models and Knowledge Graphs: A Roadmap.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302."
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
-    "href": "slides/ke_frameworks/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
+    "title": "KG Construction",
     "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
-    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nRManLuo/Awesome-LLM-KG: Awesome papers about unifying LLMs and KGs (https://github.com/RManLuo/Awesome-LLM-KG)"
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
   },
   {
-    "objectID": "slides/ke_frameworks/index.html#the-semantic-web-2001",
-    "href": "slides/ke_frameworks/index.html#the-semantic-web-2001",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "“The Semantic Web (2001)…”",
-    "text": "“The Semantic Web (2001)…”\n\n\nA vision of “Ontologies”, “Linked Data”, and “Software Agents”…\n\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#ontology-based-etl",
-    "href": "slides/ke_frameworks/index.html#ontology-based-etl",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Ontology based ETL",
-    "text": "Ontology based ETL"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#step-1-cvs-data-in-pandas-data-frame",
-    "href": "slides/ke_frameworks/index.html#step-1-cvs-data-in-pandas-data-frame",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "(Step 1) CVS Data in Pandas Data Frame",
-    "text": "(Step 1) CVS Data in Pandas Data Frame"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#step-2-extract-columns-from-pandas-data-frame-to-create-mapping",
-    "href": "slides/ke_frameworks/index.html#step-2-extract-columns-from-pandas-data-frame-to-create-mapping",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "(Step 2) Extract Columns from Pandas Data Frame to create mapping",
-    "text": "(Step 2) Extract Columns from Pandas Data Frame to create mapping"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#jsonl-ld-for-linked-datsa",
-    "href": "slides/ke_frameworks/index.html#jsonl-ld-for-linked-datsa",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "JSONL LD for Linked Datsa",
-    "text": "JSONL LD for Linked Datsa\n\n\nJSON-LD 1.1: A JSON-based Serialization for Linked Data"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#step-3-generate-json-ld-from-json",
-    "href": "slides/ke_frameworks/index.html#step-3-generate-json-ld-from-json",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "(Step 3) Generate JSON-LD from JSON",
-    "text": "(Step 3) Generate JSON-LD from JSON"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#step-4-generate-kg-from-json-ld",
-    "href": "slides/ke_frameworks/index.html#step-4-generate-kg-from-json-ld",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "(Step-4) Generate KG from JSON-LD",
-    "text": "(Step-4) Generate KG from JSON-LD"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#step-5-validate-against-shacl-shapes",
-    "href": "slides/ke_frameworks/index.html#step-5-validate-against-shacl-shapes",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "(Step-5) Validate Against SHACL Shapes",
-    "text": "(Step-5) Validate Against SHACL Shapes"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#automated-vocabulary-extraction",
-    "href": "slides/ke_frameworks/index.html#automated-vocabulary-extraction",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Automated Vocabulary Extraction",
-    "text": "Automated Vocabulary Extraction\n\n\nExperiments in extracting tables from navy 3-M manual for OPNAV 4790/2K data structure resources"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#llm-assisted-odps-using-pattern-templates",
-    "href": "slides/ke_frameworks/index.html#llm-assisted-odps-using-pattern-templates",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "LLM assisted ODPs using Pattern Templates",
-    "text": "LLM assisted ODPs using Pattern Templates"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#maintenance-operations-ontology-moo",
-    "href": "slides/ke_frameworks/index.html#maintenance-operations-ontology-moo",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Maintenance Operations Ontology (MOO)",
-    "text": "Maintenance Operations Ontology (MOO)\n\n\nMaintenance Operations Ontology"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#leveraging-standards",
-    "href": "slides/ke_frameworks/index.html#leveraging-standards",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Leveraging Standards",
-    "text": "Leveraging Standards\n\nSchema.org - schemas and supporting software"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#ontology-engineering-in-a-age-of-llms",
-    "href": "slides/ke_frameworks/index.html#ontology-engineering-in-a-age-of-llms",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Ontology Engineering in a Age of LLMs",
-    "text": "Ontology Engineering in a Age of LLMs"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#applying-software-engineering-to-ontologies",
-    "href": "slides/ke_frameworks/index.html#applying-software-engineering-to-ontologies",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Applying Software Engineering to Ontologies",
-    "text": "Applying Software Engineering to Ontologies\n\n\nEva Blomqvist, Karl Hammar, and Valentina Presutti. “Engineering Ontologies with Patterns – The EXtreme Design Methodology.” In Ontology Engineering with Ontology Design Patterns, 23–50. IOS Press, 2016. https://doi.org/10.3233/978-1-61499-676-7-23."
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#applying-software-engineering-to-ontologies-1",
-    "href": "slides/ke_frameworks/index.html#applying-software-engineering-to-ontologies-1",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Applying Software Engineering to Ontologies",
-    "text": "Applying Software Engineering to Ontologies\n\n\nCogan Shimizu, Karl Hammar, and Pascal Hitzler. “Modular Ontology Modeling.” Edited by Sabrina Kirrane, Axel-Cyrille Ngonga Ngomo, Sabrina Kirrane, and Axel-Cyrille Ngonga Ngomo. Semantic Web 14, no. 3 (April 5, 2023): 459–89. https://doi.org/10.3233/SW-222886."
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#fair-ontologies-and-vocabularies",
-    "href": "slides/ke_frameworks/index.html#fair-ontologies-and-vocabularies",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "FAIR Ontologies and Vocabularies",
-    "text": "FAIR Ontologies and Vocabularies\n\n\nGarijo, Daniel, and María Poveda-Villalón. “Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web.” arXiv, March 29, 2020. http://arxiv.org/abs/2003.13084."
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#visual-ontology-development",
-    "href": "slides/ke_frameworks/index.html#visual-ontology-development",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Visual Ontology Development",
-    "text": "Visual Ontology Development\n\n\nGarijo, Daniel, and María Poveda-Villalón. “Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web.” arXiv, March 29, 2020. http://arxiv.org/abs/2003.13084."
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#self-documenting-ontologies",
-    "href": "slides/ke_frameworks/index.html#self-documenting-ontologies",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Self Documenting Ontologies",
-    "text": "Self Documenting Ontologies\n\n\nGarijo, Daniel. “WIDOCO: A Wizard for Documenting Ontologies.” In International Semantic Web Conference, 94–102. Springer, Cham, 2017. https://doi.org/10.1007/978-3-319-68204-4_9.http://dgarijo.com/papers/widoco-iswc2017.pdf Garijo, Daniel. “WIDOCO: A Wizard for Documenting Ontologies.” Java, 2017. https://doi.org/10.1007/978-3-319-68204-4_9.https://github.com/dgarijo/Widoco"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#resources-to-learn-more",
-    "href": "slides/ke_frameworks/index.html#resources-to-learn-more",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Resources to Learn More…",
-    "text": "Resources to Learn More…"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#software",
-    "href": "slides/ke_frameworks/index.html#software",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Software…",
-    "text": "Software…"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#python",
-    "href": "slides/ke_frameworks/index.html#python",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Python",
-    "text": "Python\n\n\nLearn More: Think Python 2e: https://greenteapress.com/wp/think-python-2e/"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#python-for-data-analysis",
-    "href": "slides/ke_frameworks/index.html#python-for-data-analysis",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Python for Data Analysis",
-    "text": "Python for Data Analysis\n\n\nPractical Deep Learning: https://wesmckinney.com/book/"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#ai-and-machine-learning",
-    "href": "slides/ke_frameworks/index.html#ai-and-machine-learning",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "AI and Machine Learning",
-    "text": "AI and Machine Learning\n\n\nPractical Deep Learning: https://course.fast.ai/ FastAI GitHub: https://github.com/fastai"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#setting-up-environment",
-    "href": "slides/ke_frameworks/index.html#setting-up-environment",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Setting up Environment",
-    "text": "Setting up Environment\n\nFastAI Setup: https://github.com/fastai/fastsetup\nTmux: https://github.com/tmux/tmux/wiki/Getting-Started\ndotfiles: https://github.com/fastai/dotfiles\nFastAI Live Coding: https://forums.fast.ai/t/live-coding-aka-walk-thrus/96617\nFastAI Git, SSH, TMUX: https://forums.fast.ai/t/live-coding-2/96690\nBeginner’s Guide to Mambaforge Installation: https://qbiwan.github.io/fastpages/mamba-installation"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#visual-studio-code",
-    "href": "slides/ke_frameworks/index.html#visual-studio-code",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Visual Studio Code",
-    "text": "Visual Studio Code\n\n\nVisual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#visual-studio-code-plugins",
-    "href": "slides/ke_frameworks/index.html#visual-studio-code-plugins",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Visual Studio Code Plugins",
-    "text": "Visual Studio Code Plugins\n\nDraw.io Integration\nDVC Integration\nnbdev VSCode\nJupyter\nQuarto\nRDF Sketch\nStardog/RDF Languages Extension Pack\n\n\nVisual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#github",
-    "href": "slides/ke_frameworks/index.html#github",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "GitHub",
-    "text": "GitHub"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#homebrewwsl-mac-and-windows",
-    "href": "slides/ke_frameworks/index.html#homebrewwsl-mac-and-windows",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Homebrew/WSL (Mac and Windows)",
-    "text": "Homebrew/WSL (Mac and Windows)"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#markdown",
-    "href": "slides/ke_frameworks/index.html#markdown",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Markdown",
-    "text": "Markdown\n\n\n\n\n\nMarkdown Guide"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#kgc-master-class-on-json-ld-pipeline",
-    "href": "slides/ke_frameworks/index.html#kgc-master-class-on-json-ld-pipeline",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "KGC Master Class on JSON-LD Pipeline",
-    "text": "KGC Master Class on JSON-LD Pipeline\n\n\nLearn More: Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#ontologies-and-data-integration",
-    "href": "slides/ke_frameworks/index.html#ontologies-and-data-integration",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "Ontologies and data integration",
-    "text": "Ontologies and data integration\n\n\nKGC 2023 Talk: In Defense of Inconsistency, On Managing Truth in a Knowledge Graph - YouTube"
-  },
-  {
-    "objectID": "slides/ke_frameworks/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
-    "href": "slides/ke_frameworks/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
+    "title": "KG Construction",
     "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
-    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn More: [RManLuo/Awesome-LLM-KG: Awesome papers about unifying LLMs and KGs (github.com)"
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
   },
   {
-    "objectID": "slides/ke_frameworks/index.html#the-knowledge-graph-book",
-    "href": "slides/ke_frameworks/index.html#the-knowledge-graph-book",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "The Knowledge Graph Book",
-    "text": "The Knowledge Graph Book\n\n\nHogan, Aidan, Claudio Gutierrez, Michael Cochez, Gerard De Melo, Sabrina Kirrane, Axel Polleres, Roberto Navigli, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge. Cham: Springer International Publishing, 2022. https://doi.org/10.1007/978-3-031-01918-0."
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-2",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-2",
+    "title": "KG Construction",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
   },
   {
-    "objectID": "slides/ke_frameworks/index.html#chatgpt-experiment",
-    "href": "slides/ke_frameworks/index.html#chatgpt-experiment",
-    "title": "TAI Knowledge Engineering: A Frameworks Perspective",
-    "section": "ChatGPT Experiment",
-    "text": "ChatGPT Experiment\n\n\nLearn More: ChatGPT Code Interpreter"
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-3",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-3",
+    "title": "KG Construction",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
   },
   {
-    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
-    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
-    "title": "Trust and Causal Reasoning",
-    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
-    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
+    "objectID": "slides/kg-llamaindex/index.html#llm-kg-construction-frameworks-llamaindex",
+    "href": "slides/kg-llamaindex/index.html#llm-kg-construction-frameworks-llamaindex",
+    "title": "KG Construction",
+    "section": "LLM KG Construction Frameworks Llamaindex",
+    "text": "LLM KG Construction Frameworks Llamaindex\n\nLearn more: Llamaindex"
   },
   {
-    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
-    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
-    "title": "Trust and Causal Reasoning",
-    "section": "Towards Trustworthy and Aligned ML Website",
-    "text": "Towards Trustworthy and Aligned ML Website\n\n\nTowards Trustworthy and Aligned ML"
+    "objectID": "slides/kg-llamaindex/index.html#rebel-large-model",
+    "href": "slides/kg-llamaindex/index.html#rebel-large-model",
+    "title": "KG Construction",
+    "section": "Rebel Large Model",
+    "text": "Rebel Large Model\n#| echo: true\nfrom transformers import pipeline\n\ntriplet_extractor = pipeline('text2text-generation', model='Babelscape/rebel-large', tokenizer='Babelscape/rebel-large')\n# We need to use the tokenizer manually since we need special tokens.\nextracted_text = triplet_extractor.tokenizer.batch_decode([triplet_extractor(\"Punta Cana is a resort town in the municipality of Higuey, in La Altagracia Province, the eastern most province of the Dominican Republic\", return_tensors=True, return_text=False)[0][\"generated_token_ids\"]])\nprint(extracted_text[0])\n# Function to parse the generated text and extract the triplets\ndef extract_triplets(text):\n    triplets = []\n    relation, subject, relation, object_ = '', '', '', ''\n    text = text.strip()\n    current = 'x'\n    for token in text.replace(\"&lt;s&gt;\", \"\").replace(\"&lt;pad&gt;\", \"\").replace(\"&lt;/s&gt;\", \"\").split():\n        if token == \"&lt;triplet&gt;\":\n            current = 't'\n            if relation != '':\n                triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n                relation = ''\n            subject = ''\n        elif token == \"&lt;subj&gt;\":\n            current = 's'\n            if relation != '':\n                triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n            object_ = ''\n        elif token == \"&lt;obj&gt;\":\n            current = 'o'\n            relation = ''\n        else:\n            if current == 't':\n                subject += ' ' + token\n            elif current == 's':\n                object_ += ' ' + token\n            elif current == 'o':\n                relation += ' ' + token\n    if subject != '' and relation != '' and object_ != '':\n        triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n    return triplets\nextracted_triplets = extract_triplets(extracted_text[0])\nprint(extracted_triplets)\n\nLearn more: Rebel Large"
   },
   {
-    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
-    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
-    "title": "Trust and Causal Reasoning",
-    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
-    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
+    "objectID": "slides/kg-llamaindex/index.html#llamaindex-with-rebel",
+    "href": "slides/kg-llamaindex/index.html#llamaindex-with-rebel",
+    "title": "KG Construction",
+    "section": "LlamaIndex with Rebel",
+    "text": "LlamaIndex with Rebel\n\n\nLearn more: Llamaindex with Rebel Colab Notebook"
   },
   {
-    "objectID": "slides/trust-causal/index.html#causal-reasoning",
-    "href": "slides/trust-causal/index.html#causal-reasoning",
-    "title": "Trust and Causal Reasoning",
-    "section": "Causal Reasoning",
-    "text": "Causal Reasoning\n\n\nLearn more: Amazon Book of Why"
+    "objectID": "slides/kg-llamaindex/index.html#llamaindex-with-rebel-and-neo4j",
+    "href": "slides/kg-llamaindex/index.html#llamaindex-with-rebel-and-neo4j",
+    "title": "KG Construction",
+    "section": "LlamaIndex with Rebel and Neo4j",
+    "text": "LlamaIndex with Rebel and Neo4j\n\n\nLearn more: Neo4j Graph Store\nGitHub: Tomaz Bratanic"
   },
   {
-    "objectID": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
-    "href": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
-    "title": "Trust and Causal Reasoning",
-    "section": "Trustworthy ML Initiative (TrustML)",
-    "text": "Trustworthy ML Initiative (TrustML)\n\n\nLearn more: Trustworthy ML Org"
+    "objectID": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
+    "href": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
+    "title": "KG Construction",
+    "section": "Weaviate With Llama 2 and Llamaindex",
+    "text": "Weaviate With Llama 2 and Llamaindex\n\n\nLearn more: Welcome to the quick notebook on using Llama 2"
   },
   {
-    "objectID": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
-    "href": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
-    "title": "Trust and Causal Reasoning",
-    "section": "Gorilla API to Ground “Tool Use”",
-    "text": "Gorilla API to Ground “Tool Use”\n\n\nLearn more: Gorilla: Large Language Model Connected with Massive APIs"
+    "objectID": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs",
+    "href": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs",
+    "title": "KG Construction",
+    "section": "Weaviate “Knowledge Graphs”",
+    "text": "Weaviate “Knowledge Graphs”\n\n\nExample: NASA Graph-Enabled Vector Search"
   },
   {
-    "objectID": "slides/trust-causal/index.html#llama2-accessory",
-    "href": "slides/trust-causal/index.html#llama2-accessory",
-    "title": "Trust and Causal Reasoning",
-    "section": "LLaMA2-Accessory",
-    "text": "LLaMA2-Accessory\n\n\nLearn more: LLaMA2-Accessory"
+    "objectID": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs-1",
+    "href": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs-1",
+    "title": "KG Construction",
+    "section": "Weaviate “Knowledge Graphs”",
+    "text": "Weaviate “Knowledge Graphs”\n\n\nExample: NASA Graph-Enabled Vector Search"
   },
   {
-    "objectID": "slides/trust-causal/index.html#multilingual-token-analysis",
-    "href": "slides/trust-causal/index.html#multilingual-token-analysis",
-    "title": "Trust and Causal Reasoning",
-    "section": "MultiLingual Token Analysis",
-    "text": "MultiLingual Token Analysis\n\n\nLearn more: Video: LLaMA2 Multilingual Models and Fine Tuning\nGoogle Collab Notebook:"
+    "objectID": "slides/kg-llamaindex/index.html#aws-neptune",
+    "href": "slides/kg-llamaindex/index.html#aws-neptune",
+    "title": "KG Construction",
+    "section": "AWS Neptune",
+    "text": "AWS Neptune\n\n\nLearn More: Amazon Neptune"
   },
   {
-    "objectID": "slides/trust-causal/index.html#metaai-dinov2",
-    "href": "slides/trust-causal/index.html#metaai-dinov2",
-    "title": "Trust and Causal Reasoning",
-    "section": "MetaAI DINOv2",
-    "text": "MetaAI DINOv2\n\n\nLearn more: DINOv2 by Meta AI"
+    "objectID": "slides/kg-llamaindex/index.html#amazon-science-refined",
+    "href": "slides/kg-llamaindex/index.html#amazon-science-refined",
+    "title": "KG Construction",
+    "section": "Amazon Science ReFinED",
+    "text": "Amazon Science ReFinED\n\n\nPaper: ReFinED: An Efficient Zero-shot-capable Approach to End-to-End Entity Linking\nPaper: Improving Entity Disambiguation by Reasoning over a Knowledge Base\nGitHub: ReFinED is an efficient and accurate entity linking (EL) system."
   },
   {
-    "objectID": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
-    "href": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
-    "title": "Trust and Causal Reasoning",
-    "section": "MetaAI DINOv2 Huggingface Release",
-    "text": "MetaAI DINOv2 Huggingface Release\n\n\nLearn more: DINOv2 by Meta AI Huggingface"
+    "objectID": "slides/kg-llamaindex/index.html#amazon-science-kgqa",
+    "href": "slides/kg-llamaindex/index.html#amazon-science-kgqa",
+    "title": "KG Construction",
+    "section": "Amazon Science KGQA",
+    "text": "Amazon Science KGQA\n\n\nWebsite: Language models as controlled natural language semantic parsers for knowledge graph question answering GitHub: Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering"
   },
   {
-    "objectID": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
-    "href": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
-    "title": "Trust and Causal Reasoning",
-    "section": "Example notebook for DINOv2 Semantic Segmentation",
-    "text": "Example notebook for DINOv2 Semantic Segmentation\n\n\nLearn more: Linear probing of DINOv2 for semantic segmentation"
+    "objectID": "slides/nuggets_review/index.html#where-we-started",
+    "href": "slides/nuggets_review/index.html#where-we-started",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Where we started…",
+    "text": "Where we started…"
   },
   {
-    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
-    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
-    "title": "Trust and Causal Reasoning",
-    "section": "Linear Regression Model for Reasoning",
-    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
+    "objectID": "slides/nuggets_review/index.html#where-were-going",
+    "href": "slides/nuggets_review/index.html#where-were-going",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Where we’re going…",
+    "text": "Where we’re going…\n\n\nAI Success Factors: Engineering Trust in Deployments"
   },
   {
-    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
-    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
-    "title": "Trust and Causal Reasoning",
-    "section": "Linear Regression Model for Reasoning",
-    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
+    "objectID": "slides/nuggets_review/index.html#first-some-much-older-nuggets-from-the-beginning",
+    "href": "slides/nuggets_review/index.html#first-some-much-older-nuggets-from-the-beginning",
+    "title": "Nearly a Year of Nuggets",
+    "section": "First some much older nuggets from the beginning…",
+    "text": "First some much older nuggets from the beginning…"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#old-school-ai-and-the-web",
+    "href": "slides/nuggets_review/index.html#old-school-ai-and-the-web",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Old School AI and the Web…",
+    "text": "Old School AI and the Web…\n\n\nA vision of “Ontologies”, “Linked Data”, and “Software Agents”…\n\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#old-school-cool-ai-and-the-web-2001",
+    "href": "slides/nuggets_review/index.html#old-school-cool-ai-and-the-web-2001",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Old School “Cool” AI and the Web (2001)…",
+    "text": "Old School “Cool” AI and the Web (2001)…\n\n\nThe semantic web had a vision of Agents with Shared Understanding through Ontologies, the ability to Use Tools Like the Web and Consume a Web of Linked Data as Distibuted Knowledge Graphs.\n\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#whats-an-ontology",
+    "href": "slides/nuggets_review/index.html#whats-an-ontology",
+    "title": "Nearly a Year of Nuggets",
+    "section": "What’s an Ontology?",
+    "text": "What’s an Ontology?\n\n\nTom Gruber. “Ontology.” In Encyclopedia of Database Systems, edited by Ling Liu and M. Tamer Özsu, 1–3. New York, NY: Springer, 2016. https://doi.org/10.1007/978-1-4899-7993-3_1318-2."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#ontology-design-patterns",
+    "href": "slides/nuggets_review/index.html#ontology-design-patterns",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Ontology Design Patterns",
+    "text": "Ontology Design Patterns\n\n\n\n\n\n\n\n\nEva Blomqvist, Pascal Hitzler, Krzysztof Janowicz, Adila Krisnadhi, Tom Narock, and Monika Solanki. “Considerations Regarding Ontology Design Patterns.” Semantic Web 7, no. 1 (November 10, 2015): 1–7. https://doi.org/10.3233/SW-150202."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#google-search-and-the-semantic-web",
+    "href": "slides/nuggets_review/index.html#google-search-and-the-semantic-web",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Google Search and the “Semantic Web”",
+    "text": "Google Search and the “Semantic Web”\n\n\n\n\n\n\n\n\nGoogle. “Introducing the Knowledge Graph: Things, Not Strings,” May 16, 2012. https://blog.google/products/search/introducing-knowledge-graph-things-not/.\nGoogle. “A Reintroduction to Our Knowledge Graph and Knowledge Panels,” May 20, 2020. https://blog.google/products/search/about-knowledge-graph-and-knowledge-panels/."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#knowledge-graphs",
+    "href": "slides/nuggets_review/index.html#knowledge-graphs",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Knowledge Graphs",
+    "text": "Knowledge Graphs\n\n\n\n\n\n\n\n\nHogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutiérrez, Sabrina Kirrane, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge 22. Springer, 2021. https://doi.org/10.2200/S01125ED1V01Y202109DSK022."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#knowledge-graphs-1",
+    "href": "slides/nuggets_review/index.html#knowledge-graphs-1",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Knowledge Graphs",
+    "text": "Knowledge Graphs\n\n\nWhat’s a Knowledge Graph?\n\n\n\n\n\nHogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutiérrez, Sabrina Kirrane, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge 22. Springer, 2021. https://doi.org/10.2200/S01125ED1V01Y202109DSK022."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#ai-in-2023..",
+    "href": "slides/nuggets_review/index.html#ai-in-2023..",
+    "title": "Nearly a Year of Nuggets",
+    "section": "AI in 2023..",
+    "text": "AI in 2023.."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#the-ai-social-disruption",
+    "href": "slides/nuggets_review/index.html#the-ai-social-disruption",
+    "title": "Nearly a Year of Nuggets",
+    "section": "The “AI Social Disruption”",
+    "text": "The “AI Social Disruption”\n\n\n\n\nJames Gary, “AI – The Social Disruption”, AI Magazine 42, no. 1 (April 12, 2021), Cover."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#pretrained-foundation-models",
+    "href": "slides/nuggets_review/index.html#pretrained-foundation-models",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Pretrained Foundation Models…",
+    "text": "Pretrained Foundation Models…\n\n\nZhou, Ce, Qian Li, Chen Li, Jun Yu, Yixin Liu, Guangjing Wang, Kai Zhang, et al. “A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT.” arXiv, May 1, 2023. https://doi.org/10.48550/arXiv.2302.09419."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#evolution-of-large-language-models",
+    "href": "slides/nuggets_review/index.html#evolution-of-large-language-models",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Evolution of Large Language Models",
+    "text": "Evolution of Large Language Models\n\n\n\n\nYang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming Jiang, Bing Yin, and Xia Hu. “Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond.” arXiv, April 27, 2023. https://doi.org/10.48550/arXiv.2304.13712."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#how-to-build-a-chatgpt",
+    "href": "slides/nuggets_review/index.html#how-to-build-a-chatgpt",
+    "title": "Nearly a Year of Nuggets",
+    "section": "How to Build a ChatGPT",
+    "text": "How to Build a ChatGPT"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#were-talking-about-llms",
+    "href": "slides/nuggets_review/index.html#were-talking-about-llms",
+    "title": "Nearly a Year of Nuggets",
+    "section": "We’re Talking about LLMs!",
+    "text": "We’re Talking about LLMs!\n\n\nShanahan, Murray. “Talking About Large Language Models.” arXiv, February 16, 2023. https://doi.org/10.48550/arXiv.2212.03551."
   },
   {
     "objectID": "about.html",

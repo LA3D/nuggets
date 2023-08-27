@@ -7,6 +7,7 @@ format:
     revealjs:
         slide-number: true
 categories: [KG Construction,trustedAI,Testing]
+draft: true
 ---
 
 ## How it started...

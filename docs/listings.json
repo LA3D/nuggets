@@ -1,18 +1,18 @@
 [
   {
-    "listing": "/slideindex.html",
-    "items": [
-      "/slides/agents_summer23/index.html",
-      "/slides/ke_frameworks/index.html",
-      "/slides/tai_testing/index.html",
-      "/slides/kg-llamaindex/index.html",
-      "/slides/trust-causal/index.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/posts/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/slideindex.html",
+    "items": [
+      "/slides/nuggets_review/index.html",
+      "/slides/agents_summer23/index.html",
+      "/slides/tai_testing/index.html",
+      "/slides/kg-llamaindex/index.html",
+      "/slides/trust-causal/index.html"
     ]
   }
 ]

@@ -1,0 +1,171 @@
+---
+title: "Nearly a Year of Nuggets"
+author: "Charles F Vardeman II"
+date: "2023-08-28"
+embed-resources: true
+format: 
+    revealjs:
+        slide-number: true
+categories: [nuggets,trustedAI,LLMs]
+---
+
+
+## Where we started...
+![](Gdrive.png)
+
+## Where we're going...
+![](la3d_nuggets.png)
+
+::: footer
+[AI Success Factors: Engineering Trust in Deployments](https://la3d.github.io/nuggets/slideindex.html)
+:::
+
+## First some much older nuggets from the beginning...{.center}
+
+## Old School AI and the Web...
+
+::: columns
+::: {.column width="40%"}
+A vision of "Ontologies", "Linked Data", and "Software Agents"...
+:::
+
+::: {.column width="60%"}
+![](the_semantic_web.png){.center}
+:::
+:::
+
+::: footer
+[Tim Berners-Lee, James Hendler, and Ora Lassila. "The Semantic Web." Scientific American 284, no. 5 (2001): 34--43. https://lassila.org/publications/2001/SciAm.html](https://lassila.org/publications/2001/SciAm.html)
+:::
+
+
+## Old School "Cool" AI and the Web (2001)...
+
+::: columns
+::: {.column width="40%"}
+The semantic web had a vision of **Agents** with **Shared Understanding through Ontologies**, the ability to **Use Tools Like the Web** and Consume a Web of **Linked Data as Distibuted Knowledge Graphs**.
+:::
+
+::: {.column width="60%"}
+![](vision_of_agents.png){.center}
+:::
+:::
+
+::: footer
+[Tim Berners-Lee, James Hendler, and Ora Lassila. "The Semantic Web." Scientific American 284, no. 5 (2001): 34--43. https://lassila.org/publications/2001/SciAm.html](https://lassila.org/publications/2001/SciAm.html)
+:::
+
+## What's an Ontology?
+
+![](ontology.png)
+
+::: footer
+[Tom Gruber. “Ontology.” In Encyclopedia of Database Systems, edited by Ling Liu and M. Tamer Özsu, 1–3. New York, NY: Springer, 2016. https://doi.org/10.1007/978-1-4899-7993-3_1318-2.](https://doi.org/10.1007/978-1-4899-7993-3_1318-2)
+:::
+
+## Ontology Design Patterns
+
+
+::: columns
+::: {.column width="40%"}
+![](odp_definition.png)
+:::
+
+::: {.column width="60%"}
+![](odp_example.png){.center}
+:::
+:::
+
+::: footer
+[Eva Blomqvist, Pascal Hitzler, Krzysztof Janowicz, Adila Krisnadhi, Tom Narock, and Monika Solanki. “Considerations Regarding Ontology Design Patterns.” Semantic Web 7, no. 1 (November 10, 2015): 1–7. https://doi.org/10.3233/SW-150202.](https://people.cs.ksu.edu/~hitzler/pub2/swj-7-1-2015.pdf)
+:::
+
+## Google Search and the "Semantic Web"
+
+::: columns
+::: {.column width="50%"}
+![](google_kg.png)
+:::
+
+::: {.column width="50%"}
+![](google_kg2.png){.center}
+:::
+:::
+
+:::footer
+[Google. “Introducing the Knowledge Graph: Things, Not Strings,” May 16, 2012. https://blog.google/products/search/introducing-knowledge-graph-things-not/.](https://blog.google/products/search/introducing-knowledge-graph-things-not/)
+
+[Google. “A Reintroduction to Our Knowledge Graph and Knowledge Panels,” May 20, 2020. https://blog.google/products/search/about-knowledge-graph-and-knowledge-panels/.](https://blog.google/products/search/about-knowledge-graph-and-knowledge-panels/)
+:::
+
+
+## Knowledge Graphs
+
+::: columns
+::: {.column width="80%"}
+![](kg_example.png)
+:::
+
+::: {.column width="20%"}
+![](kgbook.png){.center}
+:::
+:::
+
+::: footer
+[Hogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutiérrez, Sabrina Kirrane, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge 22. Springer, 2021. https://doi.org/10.2200/S01125ED1V01Y202109DSK022.](https://kgbook.org/)
+:::
+
+## Knowledge Graphs
+
+::: columns
+::: {.column width="20%"}
+What's a Knowledge Graph?
+:::
+
+::: {.column width="80%"}
+![](kg_definition.png){.center}
+:::
+:::
+
+::: footer
+[Hogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutiérrez, Sabrina Kirrane, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge 22. Springer, 2021. https://doi.org/10.2200/S01125ED1V01Y202109DSK022.](https://kgbook.org/)
+:::
+
+## AI in 2023..{.center}
+
+## The "AI Social Disruption"
+
+::: {.r-stack}
+![](ai_disruption.png){.fragment width="500" height="677"}
+:::
+
+::: footer
+[James Gary, "AI -- The Social Disruption", AI Magazine 42, no. 1 (April 12, 2021), Cover.](https://ojs.aaai.org/aimagazine/index.php/aimagazine/issue/view/267)
+:::
+
+## Pretrained Foundation Models...
+![](foundation_models.png)
+
+:::footer
+[Zhou, Ce, Qian Li, Chen Li, Jun Yu, Yixin Liu, Guangjing Wang, Kai Zhang, et al. “A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT.” arXiv, May 1, 2023. https://doi.org/10.48550/arXiv.2302.09419.](https://doi.org/10.48550/arXiv.2302.09419)
+:::
+
+## Evolution of Large Language Models
+
+:::{.r-stack}
+![](evolution_llms.png){.center width="600" height="593"}
+:::
+
+::: footer
+Yang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming Jiang, Bing Yin, and Xia Hu. “Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond.” arXiv, April 27, 2023. https://doi.org/10.48550/arXiv.2304.13712.
+:::
+
+## How to Build a ChatGPT
+
+
+## We're Talking about LLMs!
+![](talking_about_llms.png)
+
+::: footer
+[Shanahan, Murray. “Talking About Large Language Models.” arXiv, February 16, 2023. https://doi.org/10.48550/arXiv.2212.03551.](https://doi.org/10.48550/arXiv.2212.03551)
+:::
