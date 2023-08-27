@@ -683,7 +683,7 @@
     "href": "slides/nuggets_review/index.html#where-were-going",
     "title": "Nearly a Year of Nuggets",
     "section": "Where we’re going…",
-    "text": "Where we’re going…\n\n\nAI Success Factors: Engineering Trust in Deployments"
+    "text": "Where we’re going…\n\n\n\n\nAI Success Factors: Engineering Trust in Deployments"
   },
   {
     "objectID": "slides/nuggets_review/index.html#dr.-vardeman-this-is-a-lot-of-material",
@@ -805,6 +805,13 @@
     "text": "“The state of GPT”\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
   },
   {
+    "objectID": "slides/nuggets_review/index.html#text-to-numbers",
+    "href": "slides/nuggets_review/index.html#text-to-numbers",
+    "title": "Nearly a Year of Nuggets",
+    "section": "Text to numbers…",
+    "text": "Text to numbers…\n\n\n“Tiktokenizer.” Accessed August 27, 2023. https://tiktokenizer.vercel.app/."
+  },
+  {
     "objectID": "slides/nuggets_review/index.html#base-models-general-representations-through-pre-training-gpt",
     "href": "slides/nuggets_review/index.html#base-models-general-representations-through-pre-training-gpt",
     "title": "Nearly a Year of Nuggets",
@@ -866,6 +873,13 @@
     "title": "Nearly a Year of Nuggets",
     "section": "What could go wrong?",
     "text": "What could go wrong?\n\n\n“Sarah Silverman Sues OpenAI and Meta Alleging Copyright Infringement | CNN Business.” Accessed August 27, 2023. https://www.cnn.com/2023/07/10/tech/sarah-silverman-openai-meta-lawsuit/index.html."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#what-could-go-wrong-2",
+    "href": "slides/nuggets_review/index.html#what-could-go-wrong-2",
+    "title": "Nearly a Year of Nuggets",
+    "section": "What could go wrong?",
+    "text": "What could go wrong?\n\n\n\n\n“Would I forbid the teaching (if that is the word) of my stories to computers? Not even if I could. I might as well be King Canute, forbidding the tide to come in. Or a Luddite trying to stop industrial progress by hammering a steam loom to pieces.” – Stephen King\n\n\n\nReisner, Alex. “Revealed: The Authors Whose Pirated Books Are Powering Generative AI.” The Atlantic, August 19, 2023. https://www.theatlantic.com/technology/archive/2023/08/books3-ai-meta-llama-pirated-books/675063/.\nKing, Stephen. “Stephen King: My Books Were Used to Train AI.” The Atlantic, August 23, 2023. https://www.theatlantic.com/books/archive/2023/08/stephen-king-books-ai-writing/675088/."
   },
   {
     "objectID": "slides/nuggets_review/index.html#what-about-trusted-ai",

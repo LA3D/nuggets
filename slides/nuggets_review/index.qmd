@@ -11,10 +11,17 @@ categories: [nuggets,trustedAI,LLMs]
 
 
 ## Where we started...
-![](Gdrive.png)
+
+:::{.r-stack}
+![](Gdrive.png){.center width="800" height="576"}
+:::
+
 
 ## Where we're going...
-![](la3d_nuggets.png)
+
+:::{.r-stack}
+![](la3d_nuggets.png){.center}
+:::
 
 ::: footer
 [AI Success Factors: Engineering Trust in Deployments](https://la3d.github.io/nuggets/slideindex.html)
@@ -180,6 +187,14 @@ Yang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming J
 [Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
 :::
 
+## Text to numbers...
+
+![](tiktokenizer.png)
+
+::: footer
+[“Tiktokenizer.” Accessed August 27, 2023. https://tiktokenizer.vercel.app/.](https://tiktokenizer.vercel.app/)
+:::
+
 ## Base models general representations through "Pre-Training" (GPT)
 
 ![](gpt-abstract.png)
@@ -277,6 +292,26 @@ Yang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming J
 ::: footer
 [“Sarah Silverman Sues OpenAI and Meta Alleging Copyright Infringement | CNN Business.” Accessed August 27, 2023. https://www.cnn.com/2023/07/10/tech/sarah-silverman-openai-meta-lawsuit/index.html.](https://www.cnn.com/2023/07/10/tech/sarah-silverman-openai-meta-lawsuit/index.html)
 :::
+
+## What could go wrong?
+
+::: columns
+::: {.column width="50%"}
+![](atlantic-books3.png)
+:::
+
+::: {.column width="50%"}
+"Would I forbid the teaching (if that is the word) of my stories to computers? Not even if I could. I might as well be King Canute, forbidding the tide to come in. Or a Luddite trying to stop industrial progress by hammering a steam loom to pieces." -- Stephen King
+:::
+:::
+
+::: footer
+[Reisner, Alex. “Revealed: The Authors Whose Pirated Books Are Powering Generative AI.” The Atlantic, August 19, 2023. https://www.theatlantic.com/technology/archive/2023/08/books3-ai-meta-llama-pirated-books/675063/.](https://www.theatlantic.com/technology/archive/2023/08/books3-ai-meta-llama-pirated-books/675063/)
+
+[King, Stephen. “Stephen King: My Books Were Used to Train AI.” The Atlantic, August 23, 2023. https://www.theatlantic.com/books/archive/2023/08/stephen-king-books-ai-writing/675088/.](https://www.theatlantic.com/books/archive/2023/08/stephen-king-books-ai-writing/675088/)
+:::
+
+
 
 ## What About Trusted AI?{.center}
 
