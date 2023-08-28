@@ -1,5 +1,5 @@
 ---
-title: "Nearly a Year of Nuggets"
+title: "A Summer of Nuggets"
 author: "Charles F Vardeman II"
 date: "2023-08-28"
 embed-resources: true
@@ -9,6 +9,7 @@ format:
 categories: [nuggets,trustedAI,LLMs]
 ---
 
+## And a Reminder of Some Before...{.center}
 
 ## Where we started...
 
@@ -20,7 +21,7 @@ categories: [nuggets,trustedAI,LLMs]
 ## Where we're going...
 
 :::{.r-stack}
-![](la3d_nuggets.png){.center}
+![](la3d_nuggets.png){.center width="1000" height="494"}
 :::
 
 ::: footer
@@ -30,8 +31,6 @@ categories: [nuggets,trustedAI,LLMs]
 ## Dr. Vardeman, this is a lot of material!{.center}
 
 ## This is meant to provide something of a "Roadmap"!{.center}
-
-## First some much older nuggets from the beginning...{.center}
 
 ## Old School AI and the Web...
 
@@ -58,7 +57,7 @@ The semantic web had a vision of **Agents** with **Shared Understanding through 
 :::
 
 ::: {.column width="60%"}
-![](vision_of_agents.png){.center}
+![](vision_of_agents.png){.center width="399" height="500"}
 :::
 :::
 
@@ -147,7 +146,7 @@ What's a Knowledge Graph?
 ## The "AI Social Disruption"
 
 ::: {.r-stack}
-![](ai_disruption.png){.fragment width="500" height="677"}
+![](ai_disruption.png){.fragment width="450" height="600"}
 :::
 
 ::: footer
@@ -155,7 +154,10 @@ What's a Knowledge Graph?
 :::
 
 ## Pretrained Foundation Models...
-![](foundation_models.png)
+
+:::{.r-stack}
+![](foundation_models.png){.center width="1000" height="340"}
+:::
 
 :::footer
 [Zhou, Ce, Qian Li, Chen Li, Jun Yu, Yixin Liu, Guangjing Wang, Kai Zhang, et al. “A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT.” arXiv, May 1, 2023. https://doi.org/10.48550/arXiv.2302.09419.](https://doi.org/10.48550/arXiv.2302.09419)
@@ -174,40 +176,60 @@ Yang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming J
 ## How to Build a ChatGPT? {.center}
 
 ## "The state of GPT" -- You should watch this!
-![](state_of_gpt.png)
+
+:::{.r-stack}
+![](state_of_gpt.png){.center width="800" height="510"}
+:::
 
 ::: footer
 [Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
 :::
 
 ## "The state of GPT"
-![](state_of_gpt_pipeline.png)
+
+:::{.r-stack}
+![](state_of_gpt_pipeline.png){.center width="900" height="510"}
+:::
 
 ::: footer
 [Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
 :::
 
+## Large Language Models from a more general view...
+
+:::{.r-stack}
+![](willison_wordcamp.png){.center width="421" height="500"}
+:::
+
+::: footer
+[“Making Large Language Models Work for You.” Accessed August 27, 2023. https://simonwillison.net/2023/Aug/27/wordcamp-llms/.](https://simonwillison.net/2023/Aug/27/wordcamp-llms/)
+:::
+
 ## Text to numbers...
 
-![](tiktokenizer.png)
+:::{.r-stack}
+![](tiktokenizer.png){.center width="900" height="548"}
+:::
 
 ::: footer
 [“Tiktokenizer.” Accessed August 27, 2023. https://tiktokenizer.vercel.app/.](https://tiktokenizer.vercel.app/)
 :::
 
-## Base models general representations through "Pre-Training" (GPT)
+## Base models create general representations through "Pre-Training" (GPT)
 
-![](gpt-abstract.png)
-
+:::{.r-stack}
+![](gpt-abstract.png){.center width="434" height="400"}
+:::
 
 ::: footer
 [Radford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. “Improving Language Understanding by Generative Pre-Training,” n.d.](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
 :::
 
-## Base models general representations through "Pre-Training" (GPT)
+## Base models create general representations through "Pre-Training" (GPT)
 
-![](gpt-arch.png)
-
+:::{.r-stack}
+![](gpt-arch.png){.center width="900" height="479"}
+:::
 
 ::: footer
 [Radford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. “Improving Language Understanding by Generative Pre-Training,” n.d.](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
@@ -287,7 +309,9 @@ Yang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming J
 
 ## What could go wrong?
 
-![](cnn-silverman.png)
+:::{.r-stack}
+![](cnn-silverman.png){.center width="500" height="533"}
+:::
 
 ::: footer
 [“Sarah Silverman Sues OpenAI and Meta Alleging Copyright Infringement | CNN Business.” Accessed August 27, 2023. https://www.cnn.com/2023/07/10/tech/sarah-silverman-openai-meta-lawsuit/index.html.](https://www.cnn.com/2023/07/10/tech/sarah-silverman-openai-meta-lawsuit/index.html)
@@ -311,7 +335,188 @@ Yang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming J
 [King, Stephen. “Stephen King: My Books Were Used to Train AI.” The Atlantic, August 23, 2023. https://www.theatlantic.com/books/archive/2023/08/stephen-king-books-ai-writing/675088/.](https://www.theatlantic.com/books/archive/2023/08/stephen-king-books-ai-writing/675088/)
 :::
 
+## (GPT-3) Language Models are Few-Shot Learners (2020)
 
+:::{.r-stack}
+![](gpt-3-few-shot.png){.center width="512" height="590"}
+:::
+
+::: footer
+[Brown, Tom B., Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, et al. “Language Models Are Few-Shot Learners.” arXiv, July 22, 2020. https://doi.org/10.48550/arXiv.2005.14165.](https://doi.org/10.48550/arXiv.2005.14165)
+:::
+
+
+## (GPT-3) In-Context Learning
+
+:::{.r-stack}
+![](gpt3-incontext.png){.center width="850" height="512"}
+:::
+
+::: footer
+[Brown, Tom B., Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, et al. “Language Models Are Few-Shot Learners.” arXiv, July 22, 2020. https://doi.org/10.48550/arXiv.2005.14165.](https://doi.org/10.48550/arXiv.2005.14165)
+:::
+
+## (GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback
+
+:::{.r-stack}
+![](instruct-gpt.png){.center width="497" height="500"}
+:::
+
+::: footer
+[Ouyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, et al. “Training Language Models to Follow Instructions with Human Feedback.” arXiv, March 4, 2022. https://doi.org/10.48550/arXiv.2203.02155.](https://doi.org/10.48550/arXiv.2203.02155.)
+:::
+
+## (GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback
+
+:::{.r-stack}
+![](instruct-gpt-method.png){.center width="751" height="550"}
+:::
+
+::: footer
+[Ouyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, et al. “Training Language Models to Follow Instructions with Human Feedback.” arXiv, March 4, 2022. https://doi.org/10.48550/arXiv.2203.02155.](https://doi.org/10.48550/arXiv.2203.02155.)
+:::
+
+## (GPT-4) "Sparks of AGI"?
+
+:::{.r-stack}
+![](sparks-agi.png){.center width="744" height="550"}
+:::
+
+::: footer
+[Bubeck, Sébastien, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, Peter Lee, et al. “Sparks of Artificial General Intelligence: Early Experiments with GPT-4.” arXiv, April 13, 2023. https://doi.org/10.48550/arXiv.2303.12712.](https://doi.org/10.48550/arXiv.2303.12712)
+:::
+
+## (GPT-4) "Sparks of AGI"?
+
+:::{.r-stack}
+![](sparks_unicorn.png){.center width="1065" height="550"}
+:::
+
+::: footer
+[Bubeck, Sébastien, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, Peter Lee, et al. “Sparks of Artificial General Intelligence: Early Experiments with GPT-4.” arXiv, April 13, 2023. https://doi.org/10.48550/arXiv.2303.12712.](https://doi.org/10.48550/arXiv.2303.12712)
+:::
+
+## (GPT-4) "Sparks of AGI"?
+
+:::{.r-stack}
+![](sparks_unicorn_time.png){.center width="1000" height="338"}
+:::
+
+::: footer
+[Bubeck, Sébastien, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, Peter Lee, et al. “Sparks of Artificial General Intelligence: Early Experiments with GPT-4.” arXiv, April 13, 2023. https://doi.org/10.48550/arXiv.2303.12712.](https://doi.org/10.48550/arXiv.2303.12712)
+:::
+
+## (GPT-4) "Sparks of AGI"?
+
+:::{.r-stack}
+![](youtube-sparks.png){.center width="723" height="550"}
+:::
+
+::: footer
+[Sparks of AGI: Early Experiments with GPT-4, 2023. https://www.youtube.com/watch?v=qbIk7-JPB2c.](https://www.youtube.com/watch?v=qbIk7-JPB2c)
+:::
+
+## LLM Behavior Changes with Time!
+
+:::{.r-stack}
+![](../tai_testing/gpt_behavior_drift_chart.png){.center width="591" height="650"}
+:::
+
+::: footer
+[Chen, Lingjiao, Matei Zaharia, and James Zou. “How Is ChatGPT’s Behavior Changing over Time?” arXiv, July 18, 2023. http://arxiv.org/abs/2307.09009.](http://arxiv.org/abs/2307.09009)
+:::
+
+## (GPT-4) OpenAI Reinforcement Learning -- "Towards TruthGPT"
+
+:::{.r-stack}
+![](youtube-truthgpt.png){.center width="812" height="600"}
+:::
+
+::: footer
+[John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges, 2023. https://www.youtube.com/watch?v=hhiLw5Q_UFg.](https://www.youtube.com/watch?v=hhiLw5Q_UFg.)
+:::
+
+## (GPT-4) OpenAI Reinforcement Learning -- "Conceptual Models"
+
+:::{.r-stack}
+![](youtube-truthgpt-kg.png){.center width="828" height="600"}
+:::
+
+::: footer
+[John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges, 2023. https://www.youtube.com/watch?v=hhiLw5Q_UFg.](https://www.youtube.com/watch?v=hhiLw5Q_UFg.)
+:::
+
+## Reasoning...{.center}
+
+## (GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)
+
+:::{.r-stack}
+![](CoT-Reasoning.png){.center width="520" height="500"}
+:::
+
+::: footer
+[Kojima, Takeshi, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa. “Large Language Models Are Zero-Shot Reasoners.” arXiv, January 29, 2023. https://doi.org/10.48550/arXiv.2205.11916.](https://doi.org/10.48550/arXiv.2205.11916)
+:::
+
+## (GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)
+
+:::{.r-stack}
+![](CoT-Reasoning-example.png){.center width="694" height=500"}
+:::
+
+::: footer
+[Kojima, Takeshi, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa. “Large Language Models Are Zero-Shot Reasoners.” arXiv, January 29, 2023. https://doi.org/10.48550/arXiv.2205.11916.](https://doi.org/10.48550/arXiv.2205.11916)
+:::
+
+## ReAct: Synergizing Reasoning and Acting in Language Models
+
+:::{.r-stack}
+![](ReAcT.png){.center width="639" height=600"}
+:::
+
+::: footer
+[“ReAct: Synergizing Reasoning and Acting in Language Models.” Accessed August 28, 2023. https://react-lm.github.io/.](https://react-lm.github.io/.])
+
+[Yao, Shunyu, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. “ReAct: Synergizing Reasoning and Acting in Language Models.” arXiv, March 9, 2023. http://arxiv.org/abs/2210.03629.](http://arxiv.org/abs/2210.03629)
+:::
+
+## ReAct: Synergizing Reasoning and Acting in Language Models
+
+:::{.r-stack}
+![](react-diagram.png){.center width="1000" height=270"}
+:::
+
+::: footer
+[“ReAct: Synergizing Reasoning and Acting in Language Models.” Accessed August 28, 2023. https://react-lm.github.io/.](https://react-lm.github.io/.])
+
+[Yao, Shunyu, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. “ReAct: Synergizing Reasoning and Acting in Language Models.” arXiv, March 9, 2023. http://arxiv.org/abs/2210.03629.](http://arxiv.org/abs/2210.03629)
+:::
+
+## ReAct: Synergizing Reasoning and Acting in Language Models
+
+:::{.r-stack}
+![](react-prompt.png){.center width="611" height=600"}
+:::
+
+::: footer
+[“ReAct: Synergizing Reasoning and Acting in Language Models.” Accessed August 28, 2023. https://react-lm.github.io/.](https://react-lm.github.io/.])
+
+[Yao, Shunyu, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. “ReAct: Synergizing Reasoning and Acting in Language Models.” arXiv, March 9, 2023. http://arxiv.org/abs/2210.03629.](http://arxiv.org/abs/2210.03629)
+:::
+
+## Prompt Engineering
+
+:::{.r-stack}
+![](prompt-engineering.png){.center width="625" height=600"}
+:::
+
+::: footer
+“Prompt Engineering Guide.” Accessed August 22, 2023. https://www.promptingguide.ai/.
+:::
+
+## Retrevial Augmented Generation
+
+## (Llama 2)"Open-License" Large Language Models
 
 ## What About Trusted AI?{.center}
 

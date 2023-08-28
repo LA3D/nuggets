@@ -375,7 +375,7 @@
     "href": "slideindex.html",
     "title": "Weekly Nugget Presentations",
     "section": "",
-    "text": "Nearly a Year of Nuggets\n\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "text": "A Summer of Nuggets\n\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/agents_summer23/index.html#motivation-tatical-ammunition-management-micro-services-tamms",
@@ -672,226 +672,373 @@
     "text": "Amazon Science KGQA\n\n\nWebsite: Language models as controlled natural language semantic parsers for knowledge graph question answering GitHub: Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering"
   },
   {
+    "objectID": "slides/nuggets_review/index.html#and-a-reminder-of-some-before",
+    "href": "slides/nuggets_review/index.html#and-a-reminder-of-some-before",
+    "title": "A Summer of Nuggets",
+    "section": "And a Reminder of Some Before…",
+    "text": "And a Reminder of Some Before…"
+  },
+  {
     "objectID": "slides/nuggets_review/index.html#where-we-started",
     "href": "slides/nuggets_review/index.html#where-we-started",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Where we started…",
     "text": "Where we started…"
   },
   {
     "objectID": "slides/nuggets_review/index.html#where-were-going",
     "href": "slides/nuggets_review/index.html#where-were-going",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Where we’re going…",
     "text": "Where we’re going…\n\n\n\n\nAI Success Factors: Engineering Trust in Deployments"
   },
   {
     "objectID": "slides/nuggets_review/index.html#dr.-vardeman-this-is-a-lot-of-material",
     "href": "slides/nuggets_review/index.html#dr.-vardeman-this-is-a-lot-of-material",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Dr. Vardeman, this is a lot of material!",
     "text": "Dr. Vardeman, this is a lot of material!"
   },
   {
     "objectID": "slides/nuggets_review/index.html#this-is-meant-to-provide-something-of-a-roadmap",
     "href": "slides/nuggets_review/index.html#this-is-meant-to-provide-something-of-a-roadmap",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "This is meant to provide something of a “Roadmap”!",
     "text": "This is meant to provide something of a “Roadmap”!"
   },
   {
-    "objectID": "slides/nuggets_review/index.html#first-some-much-older-nuggets-from-the-beginning",
-    "href": "slides/nuggets_review/index.html#first-some-much-older-nuggets-from-the-beginning",
-    "title": "Nearly a Year of Nuggets",
-    "section": "First some much older nuggets from the beginning…",
-    "text": "First some much older nuggets from the beginning…"
-  },
-  {
     "objectID": "slides/nuggets_review/index.html#old-school-ai-and-the-web",
     "href": "slides/nuggets_review/index.html#old-school-ai-and-the-web",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Old School AI and the Web…",
     "text": "Old School AI and the Web…\n\n\nA vision of “Ontologies”, “Linked Data”, and “Software Agents”…\n\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
   },
   {
     "objectID": "slides/nuggets_review/index.html#old-school-cool-ai-and-the-web-2001",
     "href": "slides/nuggets_review/index.html#old-school-cool-ai-and-the-web-2001",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Old School “Cool” AI and the Web (2001)…",
     "text": "Old School “Cool” AI and the Web (2001)…\n\n\nThe semantic web had a vision of Agents with Shared Understanding through Ontologies, the ability to Use Tools Like the Web and Consume a Web of Linked Data as Distibuted Knowledge Graphs.\n\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
   },
   {
     "objectID": "slides/nuggets_review/index.html#whats-an-ontology",
     "href": "slides/nuggets_review/index.html#whats-an-ontology",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "What’s an Ontology?",
     "text": "What’s an Ontology?\n\n\nTom Gruber. “Ontology.” In Encyclopedia of Database Systems, edited by Ling Liu and M. Tamer Özsu, 1–3. New York, NY: Springer, 2016. https://doi.org/10.1007/978-1-4899-7993-3_1318-2."
   },
   {
     "objectID": "slides/nuggets_review/index.html#ontology-design-patterns",
     "href": "slides/nuggets_review/index.html#ontology-design-patterns",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Ontology Design Patterns",
     "text": "Ontology Design Patterns\n\n\n\n\n\n\n\n\nEva Blomqvist, Pascal Hitzler, Krzysztof Janowicz, Adila Krisnadhi, Tom Narock, and Monika Solanki. “Considerations Regarding Ontology Design Patterns.” Semantic Web 7, no. 1 (November 10, 2015): 1–7. https://doi.org/10.3233/SW-150202."
   },
   {
     "objectID": "slides/nuggets_review/index.html#google-search-and-the-semantic-web",
     "href": "slides/nuggets_review/index.html#google-search-and-the-semantic-web",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Google Search and the “Semantic Web”",
     "text": "Google Search and the “Semantic Web”\n\n\n\n\n\n\n\n\nGoogle. “Introducing the Knowledge Graph: Things, Not Strings,” May 16, 2012. https://blog.google/products/search/introducing-knowledge-graph-things-not/.\nGoogle. “A Reintroduction to Our Knowledge Graph and Knowledge Panels,” May 20, 2020. https://blog.google/products/search/about-knowledge-graph-and-knowledge-panels/."
   },
   {
     "objectID": "slides/nuggets_review/index.html#knowledge-graphs",
     "href": "slides/nuggets_review/index.html#knowledge-graphs",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Knowledge Graphs",
     "text": "Knowledge Graphs\n\n\n\n\n\n\n\n\nHogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutiérrez, Sabrina Kirrane, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge 22. Springer, 2021. https://doi.org/10.2200/S01125ED1V01Y202109DSK022."
   },
   {
     "objectID": "slides/nuggets_review/index.html#knowledge-graphs-1",
     "href": "slides/nuggets_review/index.html#knowledge-graphs-1",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Knowledge Graphs",
     "text": "Knowledge Graphs\n\n\nWhat’s a Knowledge Graph?\n\n\n\n\n\nHogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutiérrez, Sabrina Kirrane, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge 22. Springer, 2021. https://doi.org/10.2200/S01125ED1V01Y202109DSK022."
   },
   {
     "objectID": "slides/nuggets_review/index.html#ai-in-2023..",
     "href": "slides/nuggets_review/index.html#ai-in-2023..",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "AI in 2023..",
     "text": "AI in 2023.."
   },
   {
     "objectID": "slides/nuggets_review/index.html#the-ai-social-disruption",
     "href": "slides/nuggets_review/index.html#the-ai-social-disruption",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "The “AI Social Disruption”",
     "text": "The “AI Social Disruption”\n\n\n\n\nJames Gary, “AI – The Social Disruption”, AI Magazine 42, no. 1 (April 12, 2021), Cover."
   },
   {
     "objectID": "slides/nuggets_review/index.html#pretrained-foundation-models",
     "href": "slides/nuggets_review/index.html#pretrained-foundation-models",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Pretrained Foundation Models…",
-    "text": "Pretrained Foundation Models…\n\n\nZhou, Ce, Qian Li, Chen Li, Jun Yu, Yixin Liu, Guangjing Wang, Kai Zhang, et al. “A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT.” arXiv, May 1, 2023. https://doi.org/10.48550/arXiv.2302.09419."
+    "text": "Pretrained Foundation Models…\n\n\n\n\nZhou, Ce, Qian Li, Chen Li, Jun Yu, Yixin Liu, Guangjing Wang, Kai Zhang, et al. “A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT.” arXiv, May 1, 2023. https://doi.org/10.48550/arXiv.2302.09419."
   },
   {
     "objectID": "slides/nuggets_review/index.html#evolution-of-large-language-models",
     "href": "slides/nuggets_review/index.html#evolution-of-large-language-models",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Evolution of Large Language Models",
     "text": "Evolution of Large Language Models\n\n\n\n\nYang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming Jiang, Bing Yin, and Xia Hu. “Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond.” arXiv, April 27, 2023. https://doi.org/10.48550/arXiv.2304.13712."
   },
   {
     "objectID": "slides/nuggets_review/index.html#how-to-build-a-chatgpt",
     "href": "slides/nuggets_review/index.html#how-to-build-a-chatgpt",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "How to Build a ChatGPT?",
     "text": "How to Build a ChatGPT?"
   },
   {
     "objectID": "slides/nuggets_review/index.html#the-state-of-gpt-you-should-watch-this",
     "href": "slides/nuggets_review/index.html#the-state-of-gpt-you-should-watch-this",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "“The state of GPT” – You should watch this!",
-    "text": "“The state of GPT” – You should watch this!\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
+    "text": "“The state of GPT” – You should watch this!\n\n\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
   },
   {
     "objectID": "slides/nuggets_review/index.html#the-state-of-gpt",
     "href": "slides/nuggets_review/index.html#the-state-of-gpt",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "“The state of GPT”",
-    "text": "“The state of GPT”\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
+    "text": "“The state of GPT”\n\n\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#large-language-models-from-a-more-general-view",
+    "href": "slides/nuggets_review/index.html#large-language-models-from-a-more-general-view",
+    "title": "A Summer of Nuggets",
+    "section": "Large Language Models from a more general view…",
+    "text": "Large Language Models from a more general view…\n\n\n\n\n“Making Large Language Models Work for You.” Accessed August 27, 2023. https://simonwillison.net/2023/Aug/27/wordcamp-llms/."
   },
   {
     "objectID": "slides/nuggets_review/index.html#text-to-numbers",
     "href": "slides/nuggets_review/index.html#text-to-numbers",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Text to numbers…",
-    "text": "Text to numbers…\n\n\n“Tiktokenizer.” Accessed August 27, 2023. https://tiktokenizer.vercel.app/."
+    "text": "Text to numbers…\n\n\n\n\n“Tiktokenizer.” Accessed August 27, 2023. https://tiktokenizer.vercel.app/."
   },
   {
-    "objectID": "slides/nuggets_review/index.html#base-models-general-representations-through-pre-training-gpt",
-    "href": "slides/nuggets_review/index.html#base-models-general-representations-through-pre-training-gpt",
-    "title": "Nearly a Year of Nuggets",
-    "section": "Base models general representations through “Pre-Training” (GPT)",
-    "text": "Base models general representations through “Pre-Training” (GPT)\n\n\nRadford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. “Improving Language Understanding by Generative Pre-Training,” n.d."
+    "objectID": "slides/nuggets_review/index.html#base-models-create-general-representations-through-pre-training-gpt",
+    "href": "slides/nuggets_review/index.html#base-models-create-general-representations-through-pre-training-gpt",
+    "title": "A Summer of Nuggets",
+    "section": "Base models create general representations through “Pre-Training” (GPT)",
+    "text": "Base models create general representations through “Pre-Training” (GPT)\n\n\n\n\nRadford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. “Improving Language Understanding by Generative Pre-Training,” n.d."
   },
   {
-    "objectID": "slides/nuggets_review/index.html#base-models-general-representations-through-pre-training-gpt-1",
-    "href": "slides/nuggets_review/index.html#base-models-general-representations-through-pre-training-gpt-1",
-    "title": "Nearly a Year of Nuggets",
-    "section": "Base models general representations through “Pre-Training” (GPT)",
-    "text": "Base models general representations through “Pre-Training” (GPT)\n\n\nRadford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. “Improving Language Understanding by Generative Pre-Training,” n.d."
+    "objectID": "slides/nuggets_review/index.html#base-models-create-general-representations-through-pre-training-gpt-1",
+    "href": "slides/nuggets_review/index.html#base-models-create-general-representations-through-pre-training-gpt-1",
+    "title": "A Summer of Nuggets",
+    "section": "Base models create general representations through “Pre-Training” (GPT)",
+    "text": "Base models create general representations through “Pre-Training” (GPT)\n\n\n\n\nRadford, Alec, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. “Improving Language Understanding by Generative Pre-Training,” n.d."
   },
   {
     "objectID": "slides/nuggets_review/index.html#pre-training-datasets",
     "href": "slides/nuggets_review/index.html#pre-training-datasets",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "“Pre-Training Datasets?”",
     "text": "“Pre-Training Datasets?”"
   },
   {
     "objectID": "slides/nuggets_review/index.html#llama-open-and-efficient-foundation-language-models",
     "href": "slides/nuggets_review/index.html#llama-open-and-efficient-foundation-language-models",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "LLama: Open and Efficient Foundation Language Models",
     "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
   },
   {
     "objectID": "slides/nuggets_review/index.html#llama-open-and-efficient-foundation-language-models-1",
     "href": "slides/nuggets_review/index.html#llama-open-and-efficient-foundation-language-models-1",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "LLama: Open and Efficient Foundation Language Models",
     "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
   },
   {
     "objectID": "slides/nuggets_review/index.html#gao-et-al.-the-pile",
     "href": "slides/nuggets_review/index.html#gao-et-al.-the-pile",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Gao et al. “The Pile”?",
     "text": "Gao et al. “The Pile”?\n\n\n\n\n \n\n\n\nGao, Leo, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, et al. “The Pile: An 800GB Dataset of Diverse Text for Language Modeling.” arXiv, December 31, 2020. https://doi.org/10.48550/arXiv.2101.00027."
   },
   {
     "objectID": "slides/nuggets_review/index.html#gao-et-al.-the-pile-1",
     "href": "slides/nuggets_review/index.html#gao-et-al.-the-pile-1",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "Gao et al. “The Pile”?",
     "text": "Gao et al. “The Pile”?\n\n\n\n\n \n\n\n\nGao, Leo, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, et al. “The Pile: An 800GB Dataset of Diverse Text for Language Modeling.” arXiv, December 31, 2020. https://doi.org/10.48550/arXiv.2101.00027."
   },
   {
     "objectID": "slides/nuggets_review/index.html#what-could-go-wrong",
     "href": "slides/nuggets_review/index.html#what-could-go-wrong",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "What could go wrong?",
     "text": "What could go wrong?"
   },
   {
     "objectID": "slides/nuggets_review/index.html#what-could-go-wrong-1",
     "href": "slides/nuggets_review/index.html#what-could-go-wrong-1",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "What could go wrong?",
-    "text": "What could go wrong?\n\n\n“Sarah Silverman Sues OpenAI and Meta Alleging Copyright Infringement | CNN Business.” Accessed August 27, 2023. https://www.cnn.com/2023/07/10/tech/sarah-silverman-openai-meta-lawsuit/index.html."
+    "text": "What could go wrong?\n\n\n\n\n“Sarah Silverman Sues OpenAI and Meta Alleging Copyright Infringement | CNN Business.” Accessed August 27, 2023. https://www.cnn.com/2023/07/10/tech/sarah-silverman-openai-meta-lawsuit/index.html."
   },
   {
     "objectID": "slides/nuggets_review/index.html#what-could-go-wrong-2",
     "href": "slides/nuggets_review/index.html#what-could-go-wrong-2",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "What could go wrong?",
     "text": "What could go wrong?\n\n\n\n\n“Would I forbid the teaching (if that is the word) of my stories to computers? Not even if I could. I might as well be King Canute, forbidding the tide to come in. Or a Luddite trying to stop industrial progress by hammering a steam loom to pieces.” – Stephen King\n\n\n\nReisner, Alex. “Revealed: The Authors Whose Pirated Books Are Powering Generative AI.” The Atlantic, August 19, 2023. https://www.theatlantic.com/technology/archive/2023/08/books3-ai-meta-llama-pirated-books/675063/.\nKing, Stephen. “Stephen King: My Books Were Used to Train AI.” The Atlantic, August 23, 2023. https://www.theatlantic.com/books/archive/2023/08/stephen-king-books-ai-writing/675088/."
   },
   {
+    "objectID": "slides/nuggets_review/index.html#gpt-3-language-models-are-few-shot-learners-2020",
+    "href": "slides/nuggets_review/index.html#gpt-3-language-models-are-few-shot-learners-2020",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-3) Language Models are Few-Shot Learners (2020)",
+    "text": "(GPT-3) Language Models are Few-Shot Learners (2020)\n\n\n\n\nBrown, Tom B., Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, et al. “Language Models Are Few-Shot Learners.” arXiv, July 22, 2020. https://doi.org/10.48550/arXiv.2005.14165."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gpt-3-in-context-learning",
+    "href": "slides/nuggets_review/index.html#gpt-3-in-context-learning",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-3) In-Context Learning",
+    "text": "(GPT-3) In-Context Learning\n\n\n\n\nBrown, Tom B., Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, et al. “Language Models Are Few-Shot Learners.” arXiv, July 22, 2020. https://doi.org/10.48550/arXiv.2005.14165."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gpt-3-instruct-gpt-reinforcement-learning-from-human-feedback",
+    "href": "slides/nuggets_review/index.html#gpt-3-instruct-gpt-reinforcement-learning-from-human-feedback",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback",
+    "text": "(GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback\n\n\n\n\nOuyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, et al. “Training Language Models to Follow Instructions with Human Feedback.” arXiv, March 4, 2022. https://doi.org/10.48550/arXiv.2203.02155."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gpt-3-instruct-gpt-reinforcement-learning-from-human-feedback-1",
+    "href": "slides/nuggets_review/index.html#gpt-3-instruct-gpt-reinforcement-learning-from-human-feedback-1",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback",
+    "text": "(GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback\n\n\n\n\nOuyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, et al. “Training Language Models to Follow Instructions with Human Feedback.” arXiv, March 4, 2022. https://doi.org/10.48550/arXiv.2203.02155."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gpt-4-sparks-of-agi",
+    "href": "slides/nuggets_review/index.html#gpt-4-sparks-of-agi",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-4) “Sparks of AGI”?",
+    "text": "(GPT-4) “Sparks of AGI”?\n\n\n\n\nBubeck, Sébastien, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, Peter Lee, et al. “Sparks of Artificial General Intelligence: Early Experiments with GPT-4.” arXiv, April 13, 2023. https://doi.org/10.48550/arXiv.2303.12712."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gpt-4-sparks-of-agi-1",
+    "href": "slides/nuggets_review/index.html#gpt-4-sparks-of-agi-1",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-4) “Sparks of AGI”?",
+    "text": "(GPT-4) “Sparks of AGI”?\n\n\n\n\nBubeck, Sébastien, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, Peter Lee, et al. “Sparks of Artificial General Intelligence: Early Experiments with GPT-4.” arXiv, April 13, 2023. https://doi.org/10.48550/arXiv.2303.12712."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gpt-4-sparks-of-agi-2",
+    "href": "slides/nuggets_review/index.html#gpt-4-sparks-of-agi-2",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-4) “Sparks of AGI”?",
+    "text": "(GPT-4) “Sparks of AGI”?\n\n\n\n\nBubeck, Sébastien, Varun Chandrasekaran, Ronen Eldan, Johannes Gehrke, Eric Horvitz, Ece Kamar, Peter Lee, et al. “Sparks of Artificial General Intelligence: Early Experiments with GPT-4.” arXiv, April 13, 2023. https://doi.org/10.48550/arXiv.2303.12712."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gpt-4-sparks-of-agi-3",
+    "href": "slides/nuggets_review/index.html#gpt-4-sparks-of-agi-3",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-4) “Sparks of AGI”?",
+    "text": "(GPT-4) “Sparks of AGI”?\n\n\n\n\nSparks of AGI: Early Experiments with GPT-4, 2023. https://www.youtube.com/watch?v=qbIk7-JPB2c."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#llm-behavior-changes-with-time",
+    "href": "slides/nuggets_review/index.html#llm-behavior-changes-with-time",
+    "title": "A Summer of Nuggets",
+    "section": "LLM Behavior Changes with Time!",
+    "text": "LLM Behavior Changes with Time!\n\n\n\n\nChen, Lingjiao, Matei Zaharia, and James Zou. “How Is ChatGPT’s Behavior Changing over Time?” arXiv, July 18, 2023. http://arxiv.org/abs/2307.09009."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gpt-4-openai-reinforcement-learning-towards-truthgpt",
+    "href": "slides/nuggets_review/index.html#gpt-4-openai-reinforcement-learning-towards-truthgpt",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-4) OpenAI Reinforcement Learning – “Towards TruthGPT”",
+    "text": "(GPT-4) OpenAI Reinforcement Learning – “Towards TruthGPT”\n\n\n\n\nJohn Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges, 2023. https://www.youtube.com/watch?v=hhiLw5Q_UFg."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gpt-4-openai-reinforcement-learning-conceptual-models",
+    "href": "slides/nuggets_review/index.html#gpt-4-openai-reinforcement-learning-conceptual-models",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-4) OpenAI Reinforcement Learning – “Conceptual Models”",
+    "text": "(GPT-4) OpenAI Reinforcement Learning – “Conceptual Models”\n\n\n\n\nJohn Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges, 2023. https://www.youtube.com/watch?v=hhiLw5Q_UFg."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#reasoning",
+    "href": "slides/nuggets_review/index.html#reasoning",
+    "title": "A Summer of Nuggets",
+    "section": "Reasoning…",
+    "text": "Reasoning…"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gpt-3-large-language-models-are-zero-shot-reasoners-chain-of-thought-reasoning",
+    "href": "slides/nuggets_review/index.html#gpt-3-large-language-models-are-zero-shot-reasoners-chain-of-thought-reasoning",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)",
+    "text": "(GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)\n\n\n\n\nKojima, Takeshi, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa. “Large Language Models Are Zero-Shot Reasoners.” arXiv, January 29, 2023. https://doi.org/10.48550/arXiv.2205.11916."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#gpt-3-large-language-models-are-zero-shot-reasoners-chain-of-thought-reasoning-1",
+    "href": "slides/nuggets_review/index.html#gpt-3-large-language-models-are-zero-shot-reasoners-chain-of-thought-reasoning-1",
+    "title": "A Summer of Nuggets",
+    "section": "(GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)",
+    "text": "(GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)\n\n\n\n\nKojima, Takeshi, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa. “Large Language Models Are Zero-Shot Reasoners.” arXiv, January 29, 2023. https://doi.org/10.48550/arXiv.2205.11916."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#react-synergizing-reasoning-and-acting-in-language-models",
+    "href": "slides/nuggets_review/index.html#react-synergizing-reasoning-and-acting-in-language-models",
+    "title": "A Summer of Nuggets",
+    "section": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "text": "ReAct: Synergizing Reasoning and Acting in Language Models\n\n\n\n\n“ReAct: Synergizing Reasoning and Acting in Language Models.” Accessed August 28, 2023. https://react-lm.github.io/.\nYao, Shunyu, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. “ReAct: Synergizing Reasoning and Acting in Language Models.” arXiv, March 9, 2023. http://arxiv.org/abs/2210.03629."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#react-synergizing-reasoning-and-acting-in-language-models-1",
+    "href": "slides/nuggets_review/index.html#react-synergizing-reasoning-and-acting-in-language-models-1",
+    "title": "A Summer of Nuggets",
+    "section": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "text": "ReAct: Synergizing Reasoning and Acting in Language Models\n\n\n\n\n“ReAct: Synergizing Reasoning and Acting in Language Models.” Accessed August 28, 2023. https://react-lm.github.io/.\nYao, Shunyu, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. “ReAct: Synergizing Reasoning and Acting in Language Models.” arXiv, March 9, 2023. http://arxiv.org/abs/2210.03629."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#react-synergizing-reasoning-and-acting-in-language-models-2",
+    "href": "slides/nuggets_review/index.html#react-synergizing-reasoning-and-acting-in-language-models-2",
+    "title": "A Summer of Nuggets",
+    "section": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "text": "ReAct: Synergizing Reasoning and Acting in Language Models\n\n\n\n\n“ReAct: Synergizing Reasoning and Acting in Language Models.” Accessed August 28, 2023. https://react-lm.github.io/.\nYao, Shunyu, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan, and Yuan Cao. “ReAct: Synergizing Reasoning and Acting in Language Models.” arXiv, March 9, 2023. http://arxiv.org/abs/2210.03629."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#prompt-engineering",
+    "href": "slides/nuggets_review/index.html#prompt-engineering",
+    "title": "A Summer of Nuggets",
+    "section": "Prompt Engineering",
+    "text": "Prompt Engineering\n\n\n\n\n“Prompt Engineering Guide.” Accessed August 22, 2023. https://www.promptingguide.ai/."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#retrevial-augmented-generation",
+    "href": "slides/nuggets_review/index.html#retrevial-augmented-generation",
+    "title": "A Summer of Nuggets",
+    "section": "Retrevial Augmented Generation",
+    "text": "Retrevial Augmented Generation"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#llama-2open-license-large-language-models",
+    "href": "slides/nuggets_review/index.html#llama-2open-license-large-language-models",
+    "title": "A Summer of Nuggets",
+    "section": "(Llama 2)“Open-License” Large Language Models",
+    "text": "(Llama 2)“Open-License” Large Language Models"
+  },
+  {
     "objectID": "slides/nuggets_review/index.html#what-about-trusted-ai",
     "href": "slides/nuggets_review/index.html#what-about-trusted-ai",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "What About Trusted AI?",
     "text": "What About Trusted AI?"
   },
   {
     "objectID": "slides/nuggets_review/index.html#were-talking-about-llms",
     "href": "slides/nuggets_review/index.html#were-talking-about-llms",
-    "title": "Nearly a Year of Nuggets",
+    "title": "A Summer of Nuggets",
     "section": "We’re Talking about LLMs!",
     "text": "We’re Talking about LLMs!\n\n\nShanahan, Murray. “Talking About Large Language Models.” arXiv, February 16, 2023. https://doi.org/10.48550/arXiv.2212.03551."
   },
