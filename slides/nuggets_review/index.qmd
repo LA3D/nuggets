@@ -9,7 +9,6 @@ format:
 categories: [nuggets,trustedAI,LLMs]
 ---
 
-## And a Reminder of Some Before...{.center}
 
 ## Where we started...
 
@@ -28,7 +27,6 @@ categories: [nuggets,trustedAI,LLMs]
 [AI Success Factors: Engineering Trust in Deployments](https://la3d.github.io/nuggets/slideindex.html)
 :::
 
-## Dr. Vardeman, this is a lot of material!{.center}
 
 ## This is meant to provide something of a "Roadmap"!{.center}
 
@@ -325,7 +323,7 @@ Yang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming J
 :::
 
 ::: {.column width="50%"}
-"Would I forbid the teaching (if that is the word) of my stories to computers? Not even if I could. I might as well be King Canute, forbidding the tide to come in. Or a Luddite trying to stop industrial progress by hammering a steam loom to pieces." -- Stephen King
+"Would I forbid the teaching (if that is the word) of my stories to computers? Not even if I could. I might as well be [King Canute, forbidding the tide to come in](https://en.wikipedia.org/wiki/King_Canute_and_the_tide). Or a Luddite trying to stop industrial progress by hammering a steam loom to pieces." -- Stephen King
 :::
 :::
 

@@ -1,0 +1,10 @@
+---
+title: " TAI Knowledge Engineering"
+author: "Charles F Vardeman II"
+date: "2023-09-12"
+embed-resources: true
+format: 
+    revealjs:
+        slide-number: true
+categories: [Tools, Frameworks]
+---
