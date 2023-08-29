@@ -446,6 +446,64 @@ Yang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming J
 [John Schulman - Reinforcement Learning from Human Feedback: Progress and Challenges, 2023. https://www.youtube.com/watch?v=hhiLw5Q_UFg.](https://www.youtube.com/watch?v=hhiLw5Q_UFg.)
 :::
 
+
+## (Claude) "Constitutional AI"
+
+:::{.r-stack}
+![](constitutional_ai.png){.center width="585" height="650"}
+:::
+
+::: footer
+[Anthropic. “Claude’s Constitution.” Accessed August 28, 2023. https://www.anthropic.com/index/claudes-constitution.](https://www.anthropic.com/index/claudes-constitution)
+
+[Bai, Yuntao, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, Andy Jones, Anna Chen, et al. “Constitutional AI: Harmlessness from AI Feedback.” arXiv, December 15, 2022. https://doi.org/10.48550/arXiv.2212.08073.](https://doi.org/10.48550/arXiv.2212.08073)
+:::
+
+## (Claude) "Foundation Model in AWS Bedrock"
+
+::: columns
+::: {.column width="40%"}
+![](claude-2.png)
+:::
+
+::: {.column width="60%"}
+![](claude-2-bedrock.png){.center width="405" height="550"}
+:::
+:::
+
+
+::: footer
+[Anthropic. “Claude 2.” Accessed August 28, 2023. https://www.anthropic.com/index/claude-2.](https://www.anthropic.com/index/claude-2)
+
+[Anthropic. “Claude 2 on Amazon Bedrock.” Accessed August 28, 2023. https://www.anthropic.com/index/claude-2-amazon-bedrock.
+](https://www.anthropic.com/index/claude-2-amazon-bedrock)
+:::
+
+## (Llama 2)"Open-License" Large Language Models
+
+::: {.r-stack}
+![](llama2.png){.center width="617" height="650" }
+:::
+
+::: footer
+[Meta AI. “Meta and Microsoft Introduce the Next Generation of Llama.” Accessed August 28, 2023. https://ai.meta.com/blog/llama-2/.
+](https://ai.meta.com/blog/llama-2/)
+
+[Meta AI. “Llama 2.” Accessed August 28, 2023. https://ai.meta.com/llama-project.
+](https://ai.meta.com/llama-project)
+:::
+
+## "The state of GPT" Recommendations
+
+:::{.r-stack}
+![](karpathy-guidance.png){.center width="1076" height="600"}
+:::
+
+::: footer
+[Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
+:::
+
+
 ## Reasoning...{.center}
 
 ## (GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)
@@ -514,14 +572,70 @@ Yang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming J
 “Prompt Engineering Guide.” Accessed August 22, 2023. https://www.promptingguide.ai/.
 :::
 
+## Large Language Models are Semantic Reasoners
+
+:::{.r-stack}
+![](semantic-reasoners.png){.center width="701" height=600"}
+:::
+
+::: footer
+[Tang, Xiaojuan, Zilong Zheng, Jiaqi Li, Fanxu Meng, Song-Chun Zhu, Yitao Liang, and Muhan Zhang. “Large Language Models Are In-Context Semantic Reasoners Rather than Symbolic Reasoners.” arXiv, June 8, 2023. http://arxiv.org/abs/2305.14825.]()
+:::
+
+## Large Language Models are Semantic Reasoners
+
+
+::: columns
+::: {.column width="40%"}
+![](semantic-reasoners-exp.png)
+:::
+
+::: {.column width="60%"}
+![](semantic-reasoners-types.png)
+:::
+:::
+
+::: footer
+[Tang, Xiaojuan, Zilong Zheng, Jiaqi Li, Fanxu Meng, Song-Chun Zhu, Yitao Liang, and Muhan Zhang. “Large Language Models Are In-Context Semantic Reasoners Rather than Symbolic Reasoners.” arXiv, June 8, 2023. http://arxiv.org/abs/2305.14825.]()
+:::
+
+## Our Research...{.center}
+
 ## Retrevial Augmented Generation
 
-## (Llama 2)"Open-License" Large Language Models
+:::{.r-stack}
+![](rag-claude.png){.center width="900" height=683"}
+:::
+
+## Knowledge Graphs and LLMs -- Must Read!
+
+:::{.r-stack}
+![](../tai-tools/PLM_vs_KG.png){.center width="927" height="600"}
+:::
+
+::: footer
+[Pan, Shirui, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. “Unifying Large Language Models and Knowledge Graphs: A Roadmap.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302.](http://arxiv.org/abs/2306.08302)
+:::
+
+## Knowledge Graphs and Frameworks
+
+:::{.r-stack}
+![](kg-llm-frameworks.png){.center width="616" height="650"}
+:::
+
+::: footer
+[Pan, Shirui, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. “Unifying Large Language Models and Knowledge Graphs: A Roadmap.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302.](http://arxiv.org/abs/2306.08302)
+:::
+
+
 
 ## What About Trusted AI?{.center}
 
-## We're Talking about LLMs!
-![](talking_about_llms.png)
+## How to talk about LLMs? Must Read!
+
+:::{.r-stack}
+![](talking_about_llms.png){.center width="665" height="600"}
+:::
 
 ::: footer
 [Shanahan, Murray. “Talking About Large Language Models.” arXiv, February 16, 2023. https://doi.org/10.48550/arXiv.2212.03551.](https://doi.org/10.48550/arXiv.2212.03551)

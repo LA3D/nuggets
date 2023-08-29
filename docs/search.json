@@ -1026,7 +1026,7 @@
     "href": "slides/nuggets_review/index.html#llama-2open-license-large-language-models",
     "title": "A Summer of Nuggets",
     "section": "(Llama 2)“Open-License” Large Language Models",
-    "text": "(Llama 2)“Open-License” Large Language Models"
+    "text": "(Llama 2)“Open-License” Large Language Models\n\n\n\n\nMeta AI. “Meta and Microsoft Introduce the Next Generation of Llama.” Accessed August 28, 2023. https://ai.meta.com/blog/llama-2/.\nMeta AI. “Llama 2.” Accessed August 28, 2023. https://ai.meta.com/llama-project."
   },
   {
     "objectID": "slides/nuggets_review/index.html#what-about-trusted-ai",
@@ -1069,5 +1069,82 @@
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Generative AI in Content Creation",
     "text": "Generative AI in Content Creation\nIn creating AI Success Factors: Engineering Trust in Deployments, we harness the power of artificial intelligence in conjunction with human expertise. We utilize advanced Generative AI models such as ChatGPT, Bing Chat, and Anthropic Claude in a guided, iterative process that combines the best of AI and human capabilities.\nOur use of Generative AI begins with the drafting stage. These models, trained on extensive datasets, generate human-like text that matches our specified tone and style, providing us with a solid foundation for each blog post. This allows us to focus on the larger narrative without getting mired in the nitty-gritty details from the outset.\nThe AI-generated drafts, while sophisticated, are just the starting point. We employ a methodology that involves guiding the AI to improve its output. This includes providing more detailed prompts, specifying the format we want the output in, or asking the model to think step-by-step before settling on a conclusion.\nOnce we have a draft that we’re satisfied with, it’s time for human intervention. Our team reviews the AI-generated content, refining and editing it to ensure it maintains the standards of accuracy, relevance, and depth that our readers expect. This process leverages critical human skills of creativity, critical thinking, and domain expertise that even the most advanced AI can’t replicate.\nThis approach exemplifies our vision of a symbiotic relationship between AI and humans. By effectively integrating Generative AI into our content creation process, we not only boost our productivity and efficiency but also demonstrate the practical application of AI technologies in real-world scenarios. Thus, the blog becomes a testament to our commitment to translational research and our pursuit of an AI-integrated future."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#large-language-models-are-semantic-reasoners",
+    "href": "slides/nuggets_review/index.html#large-language-models-are-semantic-reasoners",
+    "title": "A Summer of Nuggets",
+    "section": "Large Language Models are Semantic Reasoners",
+    "text": "Large Language Models are Semantic Reasoners\n\n\n\n\nTang, Xiaojuan, Zilong Zheng, Jiaqi Li, Fanxu Meng, Song-Chun Zhu, Yitao Liang, and Muhan Zhang. “Large Language Models Are In-Context Semantic Reasoners Rather than Symbolic Reasoners.” arXiv, June 8, 2023. http://arxiv.org/abs/2305.14825."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#large-language-models-are-semantic-reasoners-1",
+    "href": "slides/nuggets_review/index.html#large-language-models-are-semantic-reasoners-1",
+    "title": "A Summer of Nuggets",
+    "section": "Large Language Models are Semantic Reasoners",
+    "text": "Large Language Models are Semantic Reasoners\n\n\n\n\n\n\n\n\nTang, Xiaojuan, Zilong Zheng, Jiaqi Li, Fanxu Meng, Song-Chun Zhu, Yitao Liang, and Muhan Zhang. “Large Language Models Are In-Context Semantic Reasoners Rather than Symbolic Reasoners.” arXiv, June 8, 2023. http://arxiv.org/abs/2305.14825."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#retrevia",
+    "href": "slides/nuggets_review/index.html#retrevia",
+    "title": "A Summer of Nuggets",
+    "section": "Retrevia",
+    "text": "Retrevia"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#claude-constitutional-ai",
+    "href": "slides/nuggets_review/index.html#claude-constitutional-ai",
+    "title": "A Summer of Nuggets",
+    "section": "(Claude) “Constitutional AI”",
+    "text": "(Claude) “Constitutional AI”\n\n\n\n\nAnthropic. “Claude’s Constitution.” Accessed August 28, 2023. https://www.anthropic.com/index/claudes-constitution.\nBai, Yuntao, Saurav Kadavath, Sandipan Kundu, Amanda Askell, Jackson Kernion, Andy Jones, Anna Chen, et al. “Constitutional AI: Harmlessness from AI Feedback.” arXiv, December 15, 2022. https://doi.org/10.48550/arXiv.2212.08073."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#our-research",
+    "href": "slides/nuggets_review/index.html#our-research",
+    "title": "A Summer of Nuggets",
+    "section": "Our Research…",
+    "text": "Our Research…"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#knowledge-graphs-and-retrevial-augmented-generation-must-read",
+    "href": "slides/nuggets_review/index.html#knowledge-graphs-and-retrevial-augmented-generation-must-read",
+    "title": "A Summer of Nuggets",
+    "section": "Knowledge Graphs and Retrevial Augmented Generation – Must Read!",
+    "text": "Knowledge Graphs and Retrevial Augmented Generation – Must Read!\n\n\n\n\nPan, Shirui, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. “Unifying Large Language Models and Knowledge Graphs: A Roadmap.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#knowledge-graphs-and-frameworks",
+    "href": "slides/nuggets_review/index.html#knowledge-graphs-and-frameworks",
+    "title": "A Summer of Nuggets",
+    "section": "Knowledge Graphs and Frameworks",
+    "text": "Knowledge Graphs and Frameworks\n\n\n\n\nPan, Shirui, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. “Unifying Large Language Models and Knowledge Graphs: A Roadmap.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#knowledge-graphs-and-llms-must-read",
+    "href": "slides/nuggets_review/index.html#knowledge-graphs-and-llms-must-read",
+    "title": "A Summer of Nuggets",
+    "section": "Knowledge Graphs and LLMs – Must Read!",
+    "text": "Knowledge Graphs and LLMs – Must Read!\n\n\n\n\nPan, Shirui, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. “Unifying Large Language Models and Knowledge Graphs: A Roadmap.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#how-to-talk-about-llms-must-read",
+    "href": "slides/nuggets_review/index.html#how-to-talk-about-llms-must-read",
+    "title": "A Summer of Nuggets",
+    "section": "How to talk about LLMs? Must Read!",
+    "text": "How to talk about LLMs? Must Read!\n\n\n\n\nShanahan, Murray. “Talking About Large Language Models.” arXiv, February 16, 2023. https://doi.org/10.48550/arXiv.2212.03551."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#the-state-of-gpt-recommendations",
+    "href": "slides/nuggets_review/index.html#the-state-of-gpt-recommendations",
+    "title": "A Summer of Nuggets",
+    "section": "“The state of GPT” Recommendations",
+    "text": "“The state of GPT” Recommendations\n\n\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#claude-foundation-model-in-aws-bedrock",
+    "href": "slides/nuggets_review/index.html#claude-foundation-model-in-aws-bedrock",
+    "title": "A Summer of Nuggets",
+    "section": "(Claude) “Foundation Model in AWS Bedrock”",
+    "text": "(Claude) “Foundation Model in AWS Bedrock”\n\n\n\n\n\n\n\n\nAnthropic. “Claude 2.” Accessed August 28, 2023. https://www.anthropic.com/index/claude-2.\nAnthropic. “Claude 2 on Amazon Bedrock.” Accessed August 28, 2023. https://www.anthropic.com/index/claude-2-amazon-bedrock."
   }
 ]

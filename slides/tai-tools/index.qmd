@@ -1,0 +1,271 @@
+---
+title: " TAI Knowledge Engineering: A Tools Perspective"
+author: "Charles F Vardeman II"
+date: "2023-09-05"
+embed-resources: true
+format: 
+    revealjs:
+        slide-number: true
+categories: [Tools, Frameworks]
+draft: true
+---
+
+
+## Trusted AI Frameworks for Knowledge Enginnering
+
+:::{.r-stack}
+![](graphic_tai-framework-Aug82023.png){.center width="810" height="700"}
+:::
+
+
+
+
+## What is Trusted AI -- Let's ask ChatGPT! {.smaller}
+Trusted AI encompasses systems that are not only ethically aligned but also reliable, robust, secure, transparent, and accountable. While ethical considerations form a crucial aspect, Trusted AI extends to include the technical quality and performance of the system. The goal is to create AI technologies that various stakeholders—including users, developers, businesses, and regulators—can trust to behave as intended and to meet specific performance, security, and governance standards. 
+
+The concept integrates aspects from multiple domains, such as:
+
+- **Ethics**: Fairness, transparency, and accountability.
+- **Reliability**: Consistent and dependable system performance.
+- **Robustness**: Ability to handle unexpected inputs or conditions without failing.
+- **Security**: Measures to protect data and models from unauthorized access and tampering.
+- **Transparency**: Understandability of system decisions and actions.
+- **Accountability**: Mechanisms to trace actions back to the responsible entities for evaluation and auditing.
+
+In this broader context, "trust" is a multidimensional construct. It's not just about being ethical but about fulfilling a wide range of expectations and standards that make a system worthy of trust.
+
+## What is Trusted AI -- Let's ask Claude 2! {.smaller}
+
+Trusted AI refers to artificial intelligence systems that are designed and validated to be reliable, safe and technically robust. Key principles of trusted AI include:
+
+- **Reliability** - AI systems consistently produce accurate, reproducible results that can be externally validated. Models are unbiased and decisions explainable.
+
+- **Safety and security** - AI systems are developed using secure software practices and are resilient against attacks, hacking or misuse. They protect privacy and confidentiality. 
+
+- **External oversight** - There are independent audits and ongoing monitoring of AI systems to ensure transparency and identify issues. Public disclosure builds trust.
+
+- **Human control** - Humans remain fully in control of AI systems, which augment human intelligence rather than replace it. Autonomous systems have human supervision.
+
+- **Proportionality** - AI capabilities do not exceed what is appropriate for the task. AI is not used when less advanced technology suffices.
+
+- **Technical robustness** - AI systems are thoroughly tested for stability, scalability and corner cases. Failsafes prevent glitches or unintended harm.
+
+In contrast to responsible AI, trusted AI emphasizes technical system properties over organizational processes. It focuses on engineering reliable, safe and externally validated AI, rather than holistic internal governance. 
+
+## Our, evolving vision of Trusted AI
+
+:::{.r-stack}
+![](4x4-circle-template_TAI_4-2023.png){.center width="800" height="800"}
+:::
+
+## Responsible AI
+
+* **Responsible AI**: This term is broader and refers to the ethical design, development, and deployment of AI. This includes considerations not just of the AI's technical behavior (e.g., is it transparent and accountable?), but also of the socio-economic implications, like job displacement, and broader ethical considerations like data privacy and environmental impact.
+
+
+## Why a Framework?
+
+:::{.r-stack}
+![](fast-ai-frameworks.png){.center width="926" height="650"}
+:::
+
+::: footer
+[“Course22/06-Why-You-Should-Use-a-Framework.Ipynb at Master · Fastai/Course22.” Accessed August 29, 2023. https://github.com/fastai/course22/blob/master/06-why-you-should-use-a-framework.ipynb.](https://github.com/fastai/course22/blob/master/06-why-you-should-use-a-framework.ipynb)
+:::
+
+## Foundational Components for Trusted AI {.smaller}
+
+* Automate the integration and deployment of code, ensuring quality and operational efficiency.
+* Standardized Development Environments: Establish consistent, easily replicable environments to accelerate development and experimentation.
+* Data & Experiment Versioning: Implement robust systems to track changes in data and experiments, allowing for traceability and repeatability.
+* Model Lifecycle Management: Streamline the training, deployment, monitoring, and updating of machine learning models.
+* Flexibility Across Layers: Design the architecture to allow for different levels of customization, from high-level APIs to low-level controls, facilitating adaptability.
+
+
+## Python
+![](think_python.png){fig-align="center"}
+
+::: footer
+Learn More: [Think Python 2e: https://greenteapress.com/wp/think-python-2e/](https://greenteapress.com/wp/think-python-2e/)
+:::
+
+
+## Sneek Peek at 🔥
+
+:::{.r-stack}
+![](mojo.png){.center width="526" height="600"}
+:::
+
+::: footer
+[“Modular Docs - Mojo🔥.” Accessed August 29, 2023. https://docs.modular.com/mojo/.](https://docs.modular.com/mojo/)
+:::
+
+## Setting up Environment
+
+- [FastAI Setup: https://github.com/fastai/fastsetup](https://github.com/fastai/fastsetup)
+- [Tmux: https://github.com/tmux/tmux/wiki/Getting-Started](https://github.com/tmux/tmux/wiki/Getting-Started)
+- [dotfiles: https://github.com/fastai/dotfiles](https://github.com/fastai/dotfiles)
+- [FastAI Live Coding: https://forums.fast.ai/t/live-coding-aka-walk-thrus/96617](https://forums.fast.ai/t/live-coding-aka-walk-thrus/96617)
+- [FastAI Git, SSH, TMUX: https://forums.fast.ai/t/live-coding-2/96690](https://forums.fast.ai/t/live-coding-2/96690)
+- [Beginner's Guide to Mambaforge Installation: https://qbiwan.github.io/fastpages/mamba-installation](https://qbiwan.github.io/fastpages/mamba-installation)
+
+
+
+## Python for Data Analysis
+![](python_for_data_analysis.png){fig-align="center"}
+
+::: footer
+[Practical Deep Learning: https://wesmckinney.com/book/](https://wesmckinney.com/book/)
+:::
+
+## AI and Machine Learning
+![](practical_deep_learning.png){fig-align="center"}
+
+::: footer
+[Practical Deep Learning: https://course.fast.ai/](https://course.fast.ai/)
+[FastAI GitHub: https://github.com/fastai](https://github.com/fastai)
+:::
+
+
+## Visual Studio Code
+
+![](visual_studio_code.png){.center}
+
+::: footer
+[Visual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/](https://code.visualstudio.com/)
+:::
+
+## Visual Studio Code Plugins
+
+- [Draw.io Integration](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio)
+- [DVC Integration](https://marketplace.visualstudio.com/items?itemName=Iterative.dvc)
+- [nbdev VSCode](https://marketplace.visualstudio.com/items?itemName=HamelHusain.nbdev)
+- [Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)
+- [Quarto](https://quarto.org/docs/tools/vscode.html)
+- [RDF Sketch](https://marketplace.visualstudio.com/items?itemName=Zazuko.vscode-rdf-sketch)
+- [Stardog/RDF Languages Extension Pack](https://marketplace.visualstudio.com/items?itemName=stardog-union.vscode-stardog-languages)
+
+::: footer
+[Visual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/](https://code.visualstudio.com/)
+:::
+
+## GitHub
+
+## Homebrew/WSL (Mac and Windows)
+
+## Markdown
+![](markdown.png)
+
+::: footer
+![Markdown Guide](https://www.markdownguide.org/)
+:::
+
+
+## Knowledge Graphs{.center}
+
+## Unifying Large Language Models and Knowledge Graphs: A Roadmap
+
+![](Awesome-LLM-KG.png){fig-align="center"}
+
+::: footer
+[RManLuo/Awesome-LLM-KG: Awesome papers about unifying LLMs and KGs (https://github.com/RManLuo/Awesome-LLM-KG)](https://github.com/RManLuo/Awesome-LLM-KG)
+:::
+
+
+
+## JSONL LD for Linked Datsa
+![](jsonld-1.1.png)
+
+::: footer
+[JSON-LD 1.1: A JSON-based Serialization for Linked Data](https://www.w3.org/TR/json-ld11/)
+:::
+
+## LLM assisted ODPs using Pattern Templates
+
+![](ontology_design_patterns.png){fig-align="center"}
+
+
+
+
+## Leveraging Standards
+![](schema_org.png)
+
+[Schema.org - schemas and supporting software](https://github.com/schemaorg/schemaorg)
+
+## Ontology Engineering in a Age of LLMs {.center}
+
+## Applying Software Engineering to Ontologies
+
+![](eXtreme_design.png){.center}
+
+::: footer
+[Eva Blomqvist, Karl Hammar, and Valentina Presutti. "Engineering Ontologies with Patterns -- The EXtreme Design Methodology." In Ontology Engineering with Ontology Design Patterns, 23--50. IOS Press, 2016. https://doi.org/10.3233/978-1-61499-676-7-23.](https://www.semanticscholar.org/paper/Engineering-Ontologies-with-Patterns-%3A-The-eXtreme-Gangemi/fc439ebb1a66818b979ca63372253ca01e70f3e9)
+:::
+
+## Applying Software Engineering to Ontologies
+
+![](modular_ontology_modeling.png){.center}
+
+::: footer
+[Cogan Shimizu, Karl Hammar, and Pascal Hitzler. "Modular Ontology Modeling." Edited by Sabrina Kirrane, Axel-Cyrille Ngonga Ngomo, Sabrina Kirrane, and Axel-Cyrille Ngonga Ngomo. Semantic Web 14, no. 3 (April 5, 2023): 459--89. https://doi.org/10.3233/SW-222886.](https://www.semantic-web-journal.net/content/modular-ontology-modeling-1)
+:::
+
+## FAIR Ontologies and Vocabularies
+
+![](fair_ont.png){.center}
+
+::: footer
+[Garijo, Daniel, and María Poveda-Villalón. "Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web." arXiv, March 29, 2020. http://arxiv.org/abs/2003.13084.](http://arxiv.org/abs/2003.13084)
+:::
+
+## Visual Ontology Development
+
+![](chowlk.png){.center}
+
+::: footer
+[Garijo, Daniel, and María Poveda-Villalón. "Best Practices for Implementing FAIR Vocabularies and Ontologies on the Web." arXiv, March 29, 2020. http://arxiv.org/abs/2003.13084.](http://arxiv.org/abs/2003.13084)
+:::
+
+## Self Documenting Ontologies
+
+![](widoco_github.png){.center}
+
+::: footer
+[Garijo, Daniel. "WIDOCO: A Wizard for Documenting Ontologies." In International Semantic Web Conference, 94--102. Springer, Cham, 2017. https://doi.org/10.1007/978-3-319-68204-4_9.http://dgarijo.com/papers/widoco-iswc2017.pdf](http://dgarijo.com/papers/widoco-iswc2017.pdf) [Garijo, Daniel. "WIDOCO: A Wizard for Documenting Ontologies." Java, 2017. https://doi.org/10.1007/978-3-319-68204-4_9.https://github.com/dgarijo/Widoco](https://github.com/dgarijo/Widoco)
+:::
+
+
+
+
+
+## KGC Master Class on JSON-LD Pipeline
+
+![](fluree_jsonld.png){fig-align="center"}
+
+::: footer
+Learn More: [Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD](https://youtu.be/KHNc0WwJ5JA)
+:::
+
+
+## Ontologies and data integration
+![](inconsistency.png)
+
+::: footer
+[KGC 2023 Talk: In Defense of Inconsistency, On Managing Truth in a Knowledge Graph - YouTube](https://www.youtube.com/watch?v=MXul3qpRYbI&t=1455s)
+:::
+
+## Unifying Large Language Models and Knowledge Graphs: A Roadmap
+
+![](Awesome-LLM-KG.png){fig-align="center"}
+
+::: footer
+Learn More: \[[RManLuo/Awesome-LLM-KG: Awesome papers about unifying LLMs and KGs (github.com)](https://github.com/RManLuo/Awesome-LLM-KG)
+:::
+
+## The Knowledge Graph Book
+
+![](kgbook.png)
+
+::: footer
+[Hogan, Aidan, Claudio Gutierrez, Michael Cochez, Gerard De Melo, Sabrina Kirrane, Axel Polleres, Roberto Navigli, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge. Cham: Springer International Publishing, 2022. https://doi.org/10.1007/978-3-031-01918-0.](https://kgbook.org/)
+:::
