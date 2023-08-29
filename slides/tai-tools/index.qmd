@@ -7,7 +7,6 @@ format:
     revealjs:
         slide-number: true
 categories: [Tools, Frameworks]
-draft: true
 ---
 
 
@@ -16,8 +15,6 @@ draft: true
 :::{.r-stack}
 ![](graphic_tai-framework-Aug82023.png){.center width="810" height="700"}
 :::
-
-
 
 
 ## What is Trusted AI -- Let's ask ChatGPT! {.smaller}
@@ -81,6 +78,8 @@ In contrast to responsible AI, trusted AI emphasizes technical system properties
 * Model Lifecycle Management: Streamline the training, deployment, monitoring, and updating of machine learning models.
 * Flexibility Across Layers: Design the architecture to allow for different levels of customization, from high-level APIs to low-level controls, facilitating adaptability.
 
+
+## This is a "living" set of slides! {.centerols}
 
 ## Python
 ![](think_python.png){fig-align="center"}
