@@ -927,8 +927,8 @@
     "objectID": "slides/nuggets_review/index.html#old-school-ai-and-the-web",
     "href": "slides/nuggets_review/index.html#old-school-ai-and-the-web",
     "title": "A Summer of Nuggets",
-    "section": "Old School AI and the Web…",
-    "text": "Old School AI and the Web…\n\n\nA vision of “Ontologies”, “Linked Data”, and “Software Agents”…\n\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
+    "section": "“Old School AI” and the Web…",
+    "text": "“Old School AI” and the Web…\n\n\nA vision of “Ontologies”, “Linked Data”, and “Software Agents”…\n\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
   },
   {
     "objectID": "slides/nuggets_review/index.html#old-school-cool-ai-and-the-web-2001",
@@ -999,6 +999,62 @@
     "title": "A Summer of Nuggets",
     "section": "Evolution of Large Language Models",
     "text": "Evolution of Large Language Models\n\n\n\n\nYang, Jingfeng, Hongye Jin, Ruixiang Tang, Xiaotian Han, Qizhang Feng, Haoming Jiang, Bing Yin, and Xia Hu. “Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond.” arXiv, April 27, 2023. https://doi.org/10.48550/arXiv.2304.13712."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#transformerattention-is-all-you-need",
+    "href": "slides/nuggets_review/index.html#transformerattention-is-all-you-need",
+    "title": "A Summer of Nuggets",
+    "section": "Transformer:“Attention is all you need”",
+    "text": "Transformer:“Attention is all you need”\n\n\n\n\nVaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. “Attention Is All You Need.” arXiv, August 1, 2023. https://doi.org/10.48550/arXiv.1706.03762."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#explain-the-transformer-neural-network-architecture-to-a-college-junior-computer-science-student.-use-the-style-of-a-good-science-communicator-like-richard-feynman.",
+    "href": "slides/nuggets_review/index.html#explain-the-transformer-neural-network-architecture-to-a-college-junior-computer-science-student.-use-the-style-of-a-good-science-communicator-like-richard-feynman.",
+    "title": "A Summer of Nuggets",
+    "section": "“Explain the transformer neural network architecture to a College Junior Computer Science student. Use the style of a good science communicator like Richard Feynman.”",
+    "text": "“Explain the transformer neural network architecture to a College Junior Computer Science student. Use the style of a good science communicator like Richard Feynman.”"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#transformers-explained-by-chatgpt",
+    "href": "slides/nuggets_review/index.html#transformers-explained-by-chatgpt",
+    "title": "A Summer of Nuggets",
+    "section": "Transformers explained by ChatGPT",
+    "text": "Transformers explained by ChatGPT\nAlright, let’s get into it! Imagine you’re at a party and you’re trying to catch snippets of multiple conversations. You’re not just listening to the words, but also noticing who’s talking to whom, the tone, the context, and you’re making judgments about what’s important or not. That’s kinda what the Transformer architecture does, but for sequences of data like sentences or time-series data.\nAt the core, a Transformer has two main parts: the Encoder and the Decoder. Each has multiple identical layers stacked on top of each other.\n\nEncoder: Takes in the sequence (like a sentence “Hello, how are you?”) and processes it as a whole. It outputs a sort of “summary” or “context” for each word in the sequence.\n\nSelf-Attention: Each word checks out all the other words and figures out which ones are important to it. The magic formula called attention scores helps in this.\nFeed-forward neural networks: After attention, each word passes through a mini neural network that’s the same for all words, transforming it yet again.\n\nDecoder: Takes these encodings and starts generating the output sequence (say, a translation of the original sentence into another language).\n\nMasked Self-Attention: Similar to the encoder, but in a way that it can’t cheat and look at future words in the output sequence.\nEncoder-Decoder Attention: The decoder takes a peek at the encoder’s output to better understand the context and produce the correct next word.\nFeed-forward neural networks: Same drill as the encoder, another mini network for transforming words."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#transformers-explained-by-chatgpt-1",
+    "href": "slides/nuggets_review/index.html#transformers-explained-by-chatgpt-1",
+    "title": "A Summer of Nuggets",
+    "section": "Transformers explained by ChatGPT",
+    "text": "Transformers explained by ChatGPT\nSo the magic here is mainly in how words interact with each other through the attention mechanism. Each word looks at all the other words to decide how much focus it should get, like how you tune in to different voices at a party. It does this not once, but multiple times, diving deeper and deeper into the context each time.\nIt’s like a super-efficient assembly line for sequences, enabling models like me to generate text or translate languages at scale. And this architecture has been the basis for a lot of breakthroughs in natural language processing. It’s versatile, parallelizable, and mighty powerful!"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#some-llm-neural-networks-use-encoder-decoder-networks.-some-llm-neural-networks-are-encoder-only-and-some-are-decoder-only-like-gpt.-explain-that-to-a-college-junior-computer-science-student.-use-the-style-of-a-good-science-communicator-like-richard-feynman.",
+    "href": "slides/nuggets_review/index.html#some-llm-neural-networks-use-encoder-decoder-networks.-some-llm-neural-networks-are-encoder-only-and-some-are-decoder-only-like-gpt.-explain-that-to-a-college-junior-computer-science-student.-use-the-style-of-a-good-science-communicator-like-richard-feynman.",
+    "title": "A Summer of Nuggets",
+    "section": "Some LLM Neural Networks use encoder-decoder networks. Some LLM neural networks are encoder only and some are decoder only like GPT. Explain that to a College Junior Computer Science student. Use the style of a good science communicator like Richard Feynman.",
+    "text": "Some LLM Neural Networks use encoder-decoder networks. Some LLM neural networks are encoder only and some are decoder only like GPT. Explain that to a College Junior Computer Science student. Use the style of a good science communicator like Richard Feynman."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#transformers-explained-by-chatgpt-2",
+    "href": "slides/nuggets_review/index.html#transformers-explained-by-chatgpt-2",
+    "title": "A Summer of Nuggets",
+    "section": "Transformers explained by ChatGPT",
+    "text": "Transformers explained by ChatGPT\nAh, good question! Think of it like this: you’ve got three types of orchestras. One plays both classical and jazz seamlessly (encoder-decoder), another specializes only in classical (encoder), and the last one is all about that jazz (decoder).\n\nEncoder-Decoder Networks: These are like your all-rounder orchestras. In the machine learning world, these models are often used for tasks like machine translation. The encoder part processes the input language, let’s say, English, and the decoder part spits out the output in another language, maybe Spanish. They work together like a well-conducted orchestra, each contributing to the final masterpiece.\nEncoder-Only Networks: Imagine an orchestra that’s focused entirely on classical music, where each musician feeds into the other to create a beautiful symphony. In tech, these models are good for tasks like text classification or sentiment analysis. The encoder processes the text and summarizes it in a way that lets you say, “Ah, this review is positive!”\nDecoder-Only Networks: Now, these are your jazz specialists, all about improvisation and solos. GPT models, like the one you’re talking to, belong to this category. The decoder starts with a seed (your prompt) and keeps generating one word at a time, predicting the next best word until it forms a coherent reply. It doesn’t need to look back at an original input sentence like in translation; it just jams out text based on what it has learned during its training.\n\nSo, you’ve got different setups for different gigs. If you need a two-way conversation between languages, you go for the encoder-decoder. If you want to understand the essence of a piece of text, you’d lean on the encoder. And if you want to generate text, like writing or even code, the decoder is your go-to musician. Each has its own style, its own instruments, and its own unique approach to making beautiful “music”—or in our case, useful computations."
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#how-do-these-relate-to-the-transformer-architecture",
+    "href": "slides/nuggets_review/index.html#how-do-these-relate-to-the-transformer-architecture",
+    "title": "A Summer of Nuggets",
+    "section": "How do these relate to the Transformer architecture?",
+    "text": "How do these relate to the Transformer architecture?"
+  },
+  {
+    "objectID": "slides/nuggets_review/index.html#transformers-explained-by-chatgpt-3",
+    "href": "slides/nuggets_review/index.html#transformers-explained-by-chatgpt-3",
+    "title": "A Summer of Nuggets",
+    "section": "Transformers explained by ChatGPT",
+    "text": "Transformers explained by ChatGPT\nGreat follow-up! Alright, think of the Transformer architecture as a fancy new instrument—a versatile electric guitar, let’s say, that can produce a whole range of sounds from classical to rock to jazz. Now, just like you can use that electric guitar in different types of bands, you can use parts of the Transformer architecture in different types of models.\n\nEncoder-Decoder Networks with Transformers: When people initially talked about Transformers, they were often referring to the full shebang—both encoder and decoder. In a language translation model, the Transformer’s encoder reads an English sentence and compresses its essence. The decoder then takes this essence and generates a Spanish sentence. Both sides are using self-attention, layer normalization, and all those Transformer goodies to do their jobs.\nEncoder-Only Transformers: In some tasks, you don’t need the full band; a guitar solo will do. For instance, BERT (Bidirectional Encoder Representations from Transformers) uses just the encoder part of the Transformer architecture. It processes a sentence and spits out a rich, contextual representation of each word, which can then be used for tasks like text classification or filling in blanks.\nDecoder-Only Transformers: Now, what if we only want to jam and improvise? That’s where models like GPT (Generative Pre-trained Transformer) come in. These models use only the decoder part of the Transformer architecture to generate new text. They still use self-attention and feed-forward layers, but they are more about predicting the next note—or in our case, the next word—in a sequence.\n\nSo there you go! Just like our versatile electric guitar can be part of a full orchestra, a rock band, or a solo act, different pieces of the Transformer architecture can be used to construct different kinds of neural network models. Each specialized version takes the core principles of the Transformer and applies them in a way that’s tailored to specific tasks."
   },
   {
     "objectID": "slides/nuggets_review/index.html#how-to-build-a-chatgpt",
