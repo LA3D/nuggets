@@ -1,0 +1,100 @@
+---
+title: "Reimagining the Semantic Web in the Age of Large Language Models: A Pragmatic Approach"
+author: "Charles Vardeman"
+date: "2023-09-15"
+number-sections: true
+bibliography: bibliography.bib
+categories: [Semantic Web, LLM Agents]
+draft: True
+---
+
+Introduction:
+
+-   Briefly introduce the Semantic Web vision and its relevance today.
+-   Highlight the emergence of LLMs and their transformative potential.
+-   State the aim to critically evaluate what's still relevant from the Semantic Web vision, what has changed, and how we might bridge the gap using modern technologies like LLMs.
+
+------------------------------------------------------------------------
+
+## The Original Vision of the Semantic Web
+
+### The Semantic Web as Envisioned by Pioneers
+
+The Semantic Web aimed to evolve the World Wide Web from a repository of documents to an ecosystem where data and services could be understood, shared, and executed by machines. This vision had the promise to automate tasks, optimize services, and facilitate information discovery, as illustrated by Tim Berners-Lee in his Scientific American article [@berners-leeSemanticWeb2001].
+
+### Key Components of the Vision
+
+#### Agents
+
+The role of intelligent agents in this framework was far-reaching. Agents were not just programmed to fetch data but were envisioned to make semantic sense of it. They were intended to interact autonomously on behalf of humans, carrying out complex tasks like cross-referencing medical records with clinical guidelines to suggest treatments or diagnostics.
+
+#### Services
+
+Web services were the functional units that agents interacted with. These were designed to perform specific tasks, like providing weather data or healthcare recommendations. Importantly, they were conceived to be modular and standardized, enabling a more robust ecosystem for agents to operate within.
+
+#### Ontologies
+
+In computer science, an ontology is a formal representation of knowledge, comprising a set of concepts and the relationships between them [@gruberOntology2016]. In the Semantic Web, ontologies would serve as structured vocabularies, facilitating shared conceptualizations for agents. Shared conceptualization is critical because it's difficult enough for humans to agree on a common vocabulary; adding agents into the mix exacerbates this challenge. Technologies like RDF {@RDFPrimer} and OWL [@OWLWebOntology] were developed to provide a web-friendly way of sharing these ontologies.
+
+### Web Architecture and Linked Data Principles
+
+The architecture of the Semantic Web was supposed to support data linking and referencing. Integral to this were the Linked Data Principles [@LinkedDataDesign], which emphasized using URIs for resource identification and linking, dereferenceable URIs to fetch more information, and RDF [@RDFPrimer] as the standard data format.
+
+### Aspirations for a Machine-Readable Web and Its Evolution
+
+The aim was to enable machines to understand, process, and make decisions based on web data. Scenarios envisioned included intelligent agents serving as personal schedulers, automating tasks like setting meeting dates based on a variety of data sources like weather forecasts and personal calendars. While the idea of distributed knowledge graphs was not initially part of the original vision, they represent an evolutionary step in handling semantic data, broadening the scope of what's possible.
+
+------------------------------------------------------------------------
+
+## What Worked - Learning from Success Stories
+
+-   **Google's Knowledge Graph and Schema.org**: How these initiatives have successfully implemented parts of the Semantic Web vision.
+-   **WikiData**: A practical open knowledge graph that leverages some semantic web technologies.
+-   **JSON-LD**: Its adoption and why it's a pragmatic choice for structured data on the web.
+
+------------------------------------------------------------------------
+
+## Shortcomings and Challenges
+
+-   **The HTTP Range-14 Issue**: Explain the problem and its implications.
+-   **Real-World Adoption**: Discuss how the web diverged from strict Semantic Web and REST principles, mentioning alternatives like OpenAPI and GraphQL.
+
+------------------------------------------------------------------------
+
+## Modern Relevance in the Age of LLMs
+
+-   **LLMs as Cognitive Agents**: How LLMs can serve as intelligent agents that can interpret and interact with semantic data.
+-   **Real-world Examples**: ChatGPT, Microsoft Agents, and their use of plugins and OpenAPI.
+
+------------------------------------------------------------------------
+
+## Bridging the Gap
+
+-   **Decentralized Identifiers (DIDs)**: How DIDs can help with the Range-14 issue and identity management.
+-   **FAIR Ontologies Reimagined**: Critically rethink FAIR principles for ontologies in a pragmatic way, inspired by Schema.org.
+-   **Link Headers and JSON-LD 1.1**: A practical solution for the Range-14 issue.
+
+------------------------------------------------------------------------
+
+## Practical Recommendations
+
+-   **For Web Developers**: How to practically implement semantic richness in current web development.
+-   **For Ontology Designers**: Lessons from Schema.org for making ontologies more usable and effective.
+-   **For AI Practitioners**: How to make LLMs more effective in a semantic context.
+
+------------------------------------------------------------------------
+
+Conclusion:
+
+-   Summarize the need for a pragmatic approach to realize the Semantic Web vision in the current landscape.
+-   Discuss the potential for a synergistic relationship between LLMs and Semantic Web technologies.
+
+------------------------------------------------------------------------
+
+### Additional Resources:
+
+-   Relevant papers, articles, and tools for further reading.
+
+------------------------------------------------------------------------
+
+This outline aims to offer a balanced view, critically examining both the strengths and weaknesses of the original Semantic Web vision while offering practical recommendations for modern implementation. It incorporates lessons from successful implementations like Schema.org and the potentials of emerging technologies like LLMs and DIDs.
