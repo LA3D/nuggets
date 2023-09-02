@@ -1,0 +1,29 @@
+---
+title: "Building \"Stuff\"?"
+author: "Charles F. Vardeman II"
+institute: "Center for Research Computing, University of Notre Dame"
+date: "2023-09-05"
+embed-resources: true
+format: 
+    revealjs:
+        logo: crc-logo-tagline-1-alt.png
+        theme: [simple, crc.scss]
+        slide-number: true
+categories: [Agents,trustedAI,Development]
+---
+
+##
+
+::: {style="font-size: 1.5em; text-align: center"}
+::: {.fragment .strike .center-xy}
+::: {.fragment .fade-out}
+Building Stuff?
+:::
+:::
+
+::: {.fragment .fade-in .center-xy}
+Building Agents! 
+:::
+:::
+
+## You are here ⬇️
