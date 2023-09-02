@@ -14,16 +14,72 @@ categories: [Agents,trustedAI,Development]
 
 ##
 
-::: {style="font-size: 1.5em; text-align: center"}
-::: {.fragment .strike .center-xy}
+::: {style="font-size: 2.5em; text-align: center"}
+::: {.fragment .strike}
 ::: {.fragment .fade-out}
 Building Stuff?
 :::
 :::
 
-::: {.fragment .fade-in .center-xy}
-Building Agents! 
+::: {.fragment .fade-in}
+Building Agents based on Large Language Models! 
 :::
 :::
 
 ## You are here ⬇️
+
+::: columns
+::: {.column width="50%"}
+![](php.png)
+:::
+
+::: {.column width="50%"}
+![](netscape.png)
+:::
+:::
+
+## What **Kind** of LLM Agents are we trying to build?
+
+::: incremental
+- Conversational Agents
+- *vs*. Cognitive Autonomous Agents
+- *vs*. Agents tuned for a Data Processing Task
+:::
+
+##
+::: {style="font-size: 2.5em; text-align: center"}
+We will focus on Conversational Agents...
+:::
+
+## The Best Advice we can Give
+:::{.r-stack}
+![](../nuggets_review/state_of_gpt.png){.center width="800" height="510"}
+:::
+
+::: footer
+[Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
+:::
+
+
+##
+:::{.r-stack}
+![](../nuggets_review/state_of_gpt_pipeline.png){.center width="900" height="510"}
+:::
+
+::: footer
+[Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
+:::
+
+## Caveat: You are at the **Edge** of Research and Practice! {.center}
+
+## We want Large Language Models to be **Factual**!
+
+::: incremental
+- "Fine Tuning"
+- Retrieval Augmented Generation (RAG)
+:::
+
+## We want Large Language Models to be **Factual**!
+
+- **Fine-Tuning**: augment the **behavior** of the model
+- **Retrieval:** introduce new **knowledge** to the model

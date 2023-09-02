@@ -812,11 +812,67 @@
     "text": "Data Agents in LlamaIndex\n\n\nFrom: Liu, Jerry. “Data Agents.” LlamaIndex Blog (blog), July 13, 2023. https://medium.com/llamaindex-blog/data-agents-eed797d7972f."
   },
   {
-    "objectID": "slides/building_stuff/index.html#building-agents",
-    "href": "slides/building_stuff/index.html#building-agents",
+    "objectID": "slides/building_stuff/index.html#section",
+    "href": "slides/building_stuff/index.html#section",
     "title": "Building “Stuff”?",
-    "section": "Building Agents",
-    "text": "Building Agents"
+    "section": "",
+    "text": "Building Stuff?\n\n\n\nBuilding Agents based on Large Language Models!"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#you-are-here",
+    "href": "slides/building_stuff/index.html#you-are-here",
+    "title": "Building “Stuff”?",
+    "section": "You are here ⬇️",
+    "text": "You are here ⬇️"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#what-kind-of-llm-agents-are-we-trying-to-build",
+    "href": "slides/building_stuff/index.html#what-kind-of-llm-agents-are-we-trying-to-build",
+    "title": "Building “Stuff”?",
+    "section": "What Kind of LLM Agents are we trying to build?",
+    "text": "What Kind of LLM Agents are we trying to build?\n\n\nConversational Agents\nvs. Cognitive Autonomous Agents\nvs. Agents tuned for a Data Processing Task"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#section-1",
+    "href": "slides/building_stuff/index.html#section-1",
+    "title": "Building “Stuff”?",
+    "section": "",
+    "text": "We will focus on Conversational Agents…"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#the-best-advice-we-can-give",
+    "href": "slides/building_stuff/index.html#the-best-advice-we-can-give",
+    "title": "Building “Stuff”?",
+    "section": "The Best Advice we can Give",
+    "text": "The Best Advice we can Give\n\n\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#section-2",
+    "href": "slides/building_stuff/index.html#section-2",
+    "title": "Building “Stuff”?",
+    "section": "",
+    "text": "Andrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#caveat-you-are-at-the-edge-of-research-and-practice",
+    "href": "slides/building_stuff/index.html#caveat-you-are-at-the-edge-of-research-and-practice",
+    "title": "Building “Stuff”?",
+    "section": "Caveat: You are at the Edge of Research and Practice!",
+    "text": "Caveat: You are at the Edge of Research and Practice!"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#we-want-large-language-models-to-be-factual",
+    "href": "slides/building_stuff/index.html#we-want-large-language-models-to-be-factual",
+    "title": "Building “Stuff”?",
+    "section": "We want Large Language Models to be Factual!",
+    "text": "We want Large Language Models to be Factual!\n\n\n“Fine Tuning”\nRetrieval Augmented Generation (RAG)"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#we-want-large-language-models-to-be-factual-1",
+    "href": "slides/building_stuff/index.html#we-want-large-language-models-to-be-factual-1",
+    "title": "Building “Stuff”?",
+    "section": "We want Large Language Models to be Factual!",
+    "text": "We want Large Language Models to be Factual!\n\nFine-Tuning: augment the behavior of the model\nRetrieval: introduce new knowledge to the model"
   },
   {
     "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
@@ -1433,33 +1489,5 @@
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Generative AI in Content Creation",
     "text": "Generative AI in Content Creation\nIn creating AI Success Factors: Engineering Trust in Deployments, we harness the power of artificial intelligence in conjunction with human expertise. We utilize advanced Generative AI models such as ChatGPT, Bing Chat, and Anthropic Claude in a guided, iterative process that combines the best of AI and human capabilities.\nOur use of Generative AI begins with the drafting stage. These models, trained on extensive datasets, generate human-like text that matches our specified tone and style, providing us with a solid foundation for each blog post. This allows us to focus on the larger narrative without getting mired in the nitty-gritty details from the outset.\nThe AI-generated drafts, while sophisticated, are just the starting point. We employ a methodology that involves guiding the AI to improve its output. This includes providing more detailed prompts, specifying the format we want the output in, or asking the model to think step-by-step before settling on a conclusion.\nOnce we have a draft that we’re satisfied with, it’s time for human intervention. Our team reviews the AI-generated content, refining and editing it to ensure it maintains the standards of accuracy, relevance, and depth that our readers expect. This process leverages critical human skills of creativity, critical thinking, and domain expertise that even the most advanced AI can’t replicate.\nThis approach exemplifies our vision of a symbiotic relationship between AI and humans. By effectively integrating Generative AI into our content creation process, we not only boost our productivity and efficiency but also demonstrate the practical application of AI technologies in real-world scenarios. Thus, the blog becomes a testament to our commitment to translational research and our pursuit of an AI-integrated future."
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#building-stuff",
-    "href": "slides/building_stuff/index.html#building-stuff",
-    "title": "Building “Stuff”?",
-    "section": "Building “Stuff”?",
-    "text": "Building “Stuff”?\n\nBuilding Stuff"
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#building-agents-1",
-    "href": "slides/building_stuff/index.html#building-agents-1",
-    "title": "Building “Stuff”?",
-    "section": "Building Agents",
-    "text": "Building Agents"
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#section",
-    "href": "slides/building_stuff/index.html#section",
-    "title": "Building “Stuff”?",
-    "section": "",
-    "text": "Building Stuff?\n\n\n\nBuilding Agents!"
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#you-are-here",
-    "href": "slides/building_stuff/index.html#you-are-here",
-    "title": "Building “Stuff”?",
-    "section": "You are here ⬇️",
-    "text": "You are here ⬇️"
   }
 ]
