@@ -819,6 +819,20 @@
     "text": "Building Stuff?\n\n\n\nBuilding Agents based on Large Language Models!"
   },
   {
+    "objectID": "slides/building_stuff/index.html#building-stuff",
+    "href": "slides/building_stuff/index.html#building-stuff",
+    "title": "Building “Stuff”?",
+    "section": "Building “Stuff”…",
+    "text": "Building “Stuff”…\n\n\nLearn More: Effective testing for machine learning systems\nYoutube Discussion: MLOps Chat: How Should We Test ML Models? with Data Scientist Jeremy Jordan"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#building-stuff-1",
+    "href": "slides/building_stuff/index.html#building-stuff-1",
+    "title": "Building “Stuff”?",
+    "section": "Building “Stuff”…",
+    "text": "Building “Stuff”…\n\n\n\n\n\n\n\n\n\n\n\nLearn More: Effective testing for machine learning systems"
+  },
+  {
     "objectID": "slides/building_stuff/index.html#you-are-here",
     "href": "slides/building_stuff/index.html#you-are-here",
     "title": "Building “Stuff”?",
@@ -844,14 +858,14 @@
     "href": "slides/building_stuff/index.html#the-best-advice-we-can-give",
     "title": "Building “Stuff”?",
     "section": "The Best Advice we can Give",
-    "text": "The Best Advice we can Give\n\n\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
+    "text": "The Best Advice we can Give\n\n\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023.\nhttps://www.youtube.com/watch?v=bZQun8Y4L2A."
   },
   {
     "objectID": "slides/building_stuff/index.html#section-2",
     "href": "slides/building_stuff/index.html#section-2",
     "title": "Building “Stuff”?",
     "section": "",
-    "text": "Andrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A."
+    "text": "Andrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023.\nhttps://www.youtube.com/watch?v=bZQun8Y4L2A."
   },
   {
     "objectID": "slides/building_stuff/index.html#caveat-you-are-at-the-edge-of-research-and-practice",
@@ -859,6 +873,62 @@
     "title": "Building “Stuff”?",
     "section": "Caveat: You are at the Edge of Research and Practice!",
     "text": "Caveat: You are at the Edge of Research and Practice!"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#instruction-prompting",
+    "href": "slides/building_stuff/index.html#instruction-prompting",
+    "title": "Building “Stuff”?",
+    "section": "Instruction Prompting",
+    "text": "Instruction Prompting"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#gpt-3-instruct-gpt-reinforcement-learning-from-human-feedback",
+    "href": "slides/building_stuff/index.html#gpt-3-instruct-gpt-reinforcement-learning-from-human-feedback",
+    "title": "Building “Stuff”?",
+    "section": "(GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback",
+    "text": "(GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback\n\n\n\n\nOuyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, et al. \n“Training Language Models to Follow Instructions with Human Feedback.”\narXiv, March 4, 2022. https://doi.org/10.48550/arXiv.2203.02155."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#facilitates-conversational-agents-to-converse-in-a-set-style",
+    "href": "slides/building_stuff/index.html#facilitates-conversational-agents-to-converse-in-a-set-style",
+    "title": "Building “Stuff”?",
+    "section": "Facilitates Conversational Agents to “Converse” in a Set Style!",
+    "text": "Facilitates Conversational Agents to “Converse” in a Set Style!"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#gpt-3-large-language-models-are-zero-shot-reasoners-chain-of-thought-reasoning",
+    "href": "slides/building_stuff/index.html#gpt-3-large-language-models-are-zero-shot-reasoners-chain-of-thought-reasoning",
+    "title": "Building “Stuff”?",
+    "section": "(GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)",
+    "text": "(GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)\n\n\n\n\nKojima, Takeshi, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa.\n“Large Language Models Are Zero-Shot Reasoners.” arXiv, January 29, 2023.\nhttps://doi.org/10.48550/arXiv.2205.11916."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#tools-for-prompt-engineering",
+    "href": "slides/building_stuff/index.html#tools-for-prompt-engineering",
+    "title": "Building “Stuff”?",
+    "section": "Tools for “Prompt Engineering”",
+    "text": "Tools for “Prompt Engineering”\n\n\n\n\nHenry Zeng, Lauryn Gayhardt, Jill Grant “What is Azure Machine Learning prompt flow\n(preview) - Azure Machine Learning,” Jul. 02, 2023.\nhttp://tiny.cc/kelavz (accessed Sep. 04, 2023)."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#tools-for-prompt-engineering-1",
+    "href": "slides/building_stuff/index.html#tools-for-prompt-engineering-1",
+    "title": "Building “Stuff”?",
+    "section": "Tools for “Prompt Engineering”",
+    "text": "Tools for “Prompt Engineering”\n\n\n\n\nHenry Zeng, Lauryn Gayhardt, Jill Grant “What is Azure Machine Learning prompt flow\n(preview) - Azure Machine Learning,” Jul. 02, 2023.\nhttp://tiny.cc/kelavz (accessed Sep. 04, 2023)."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#llms-as-reasoners-using-prompts",
+    "href": "slides/building_stuff/index.html#llms-as-reasoners-using-prompts",
+    "title": "Building “Stuff”?",
+    "section": "LLMs as Reasoners using Prompts!",
+    "text": "LLMs as Reasoners using Prompts!\n\n\nBesta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, et al\n“Graph of Thoughts: Solving Elaborate Problems with Large Language Models.” arXiv, August 21, 2023.\nhttp://arxiv.org/abs/2308.09687."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#prompt-enginnering-guide",
+    "href": "slides/building_stuff/index.html#prompt-enginnering-guide",
+    "title": "Building “Stuff”?",
+    "section": "Prompt Enginnering Guide",
+    "text": "Prompt Enginnering Guide\n\n\n\n\n\n\n\n\n“Prompt Engineering Guide – Nextra.”\nhttps://www.promptingguide.ai/ (accessed Sep. 04, 2023)."
   },
   {
     "objectID": "slides/building_stuff/index.html#we-want-large-language-models-to-be-factual",
@@ -873,6 +943,62 @@
     "title": "Building “Stuff”?",
     "section": "We want Large Language Models to be Factual!",
     "text": "We want Large Language Models to be Factual!\n\nFine-Tuning: augment the behavior of the model\nRetrieval: introduce new knowledge to the model\nRetreval Aware Training (RAT) Fine-tune the model to use or ignore retrieved content"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#llamaindex-to-build-hybrid-kgs",
+    "href": "slides/building_stuff/index.html#llamaindex-to-build-hybrid-kgs",
+    "title": "Building “Stuff”?",
+    "section": "LlamaIndex to Build Hybrid KGs",
+    "text": "LlamaIndex to Build Hybrid KGs\n\n\n\n\n\n\n\n\n“Custom Retriever Combining KG Index and VectorStore Index\n\nLlamaIndex 🦙 0.8.5.Post2.” Accessed August 22, 2023.\n\nhttp://tiny.cc/oflavz."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#gorilla-retrieval-aware-training-for-apis",
+    "href": "slides/building_stuff/index.html#gorilla-retrieval-aware-training-for-apis",
+    "title": "Building “Stuff”?",
+    "section": "Gorilla: Retrieval Aware Training for APIs",
+    "text": "Gorilla: Retrieval Aware Training for APIs\n\n\n\n\n\n\n\n\nS. Patil, “Gorilla: Large Language Model Connected with Massive APIs [Project Website].” Sep. 04, 2023.\nAccessed: Sep. 04, 2023. [Online]. Available: https://github.com/ShishirPatil/gorilla"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#gorilla-retrieval-aware-training-for-apis-1",
+    "href": "slides/building_stuff/index.html#gorilla-retrieval-aware-training-for-apis-1",
+    "title": "Building “Stuff”?",
+    "section": "Gorilla: Retrieval Aware Training for APIs",
+    "text": "Gorilla: Retrieval Aware Training for APIs\n\n\n\n\n\n\n\n\nS. Patil, “Gorilla: Large Language Model Connected with Massive APIs [Project Website].” Sep. 04, 2023.\nAccessed: Sep. 04, 2023. [Online]. Available: https://github.com/ShishirPatil/gorilla"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#big-models-vs-small-models",
+    "href": "slides/building_stuff/index.html#big-models-vs-small-models",
+    "title": "Building “Stuff”?",
+    "section": "“Big Models” vs “Small Models”",
+    "text": "“Big Models” vs “Small Models”\n\n\nModels as a service (Bedrock, OpenAI API, Anthropic Claude)\n\nGenerally more difficult to “Fine-Tune” (GPT-3.5 turbo)1\nModels are generally more capable (Factuality, Instructions, Reasoning)]\n“Coin-operated” pay per/token\n\n“Open License” 7B-70B Parameter Models\n\nMostly based on Meta AI LLama or LLama 2 models\nRequire more effort to work consistently\nModels can run on reduced hardware requirements\nCan be fine-tuned for task specific workflows\n\n\n\n“GPT-3.5 Turbo fine-tuning and API updates.” https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates (accessed Sep. 04, 2023)."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#small-models-with-custom-grammar-llama.cpp",
+    "href": "slides/building_stuff/index.html#small-models-with-custom-grammar-llama.cpp",
+    "title": "Building “Stuff”?",
+    "section": "Small Models with custom grammar (llama.cpp)",
+    "text": "Small Models with custom grammar (llama.cpp)\nJSON-Grammar\nroot   ::= object\nvalue  ::= object | array | string | number | (\"true\" | \"false\" | \"null\") ws\n\nobject ::=\n  \"{\" ws (\n            string \":\" ws value\n    (\",\" ws string \":\" ws value)*\n  )? \"}\" ws\n\narray  ::=\n  \"[\" ws (\n            value\n    (\",\" ws value)*\n  )? \"]\" ws\n\nstring ::=\n  \"\\\"\" (\n    [^\"\\\\] |\n    \"\\\\\" ([\"\\\\/bfnrt] | \"u\" [0-9a-fA-F] [0-9a-fA-F] [0-9a-fA-F] [0-9a-fA-F]) # escapes\n  )* \"\\\"\" ws\n\nnumber ::= (\"-\"? ([0-9] | [1-9] [0-9]*)) (\".\" [0-9]+)? ([eE] [-+]? [0-9]+)? ws\n\n# Optional space: by convention, applied in this grammar after literal chars when allowed\nws ::= ([ \\t\\n] ws)?\n\n“speculative : add grammar support by ggerganov · Pull Request #2991 · ggerganov/llama.cpp,”\nGitHub. https://github.com/ggerganov/llama.cpp/pull/2991 (accessed Sep. 04, 2023)."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#the-state-of-gpt-recommendations",
+    "href": "slides/building_stuff/index.html#the-state-of-gpt-recommendations",
+    "title": "Building “Stuff”?",
+    "section": "“The state of GPT” Recommendations",
+    "text": "“The state of GPT” Recommendations\n\n\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023.\nhttps://www.youtube.com/watch?v=bZQun8Y4L2A."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#open-source-community",
+    "href": "slides/building_stuff/index.html#open-source-community",
+    "title": "Building “Stuff”?",
+    "section": "Open Source Community",
+    "text": "Open Source Community\n\n\n\n\n\n\n\n\nMatt Bronstein and Rajko Radovanovic, “Supporting the Open Source AI Community,”\nAndreessen Horowitz, Aug. 30, 2023.\nhttp://tiny.cc/uflavz (accessed Sep. 03, 2023)."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#today-is-the-first-step-on-your-journey-to-building-llm-based-applications",
+    "href": "slides/building_stuff/index.html#today-is-the-first-step-on-your-journey-to-building-llm-based-applications",
+    "title": "Building “Stuff”?",
+    "section": "Today is the First Step on your Journey to Building LLM Based Applications!…",
+    "text": "Today is the First Step on your Journey to Building LLM Based Applications!…"
   },
   {
     "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
@@ -1489,47 +1615,5 @@
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Generative AI in Content Creation",
     "text": "Generative AI in Content Creation\nIn creating AI Success Factors: Engineering Trust in Deployments, we harness the power of artificial intelligence in conjunction with human expertise. We utilize advanced Generative AI models such as ChatGPT, Bing Chat, and Anthropic Claude in a guided, iterative process that combines the best of AI and human capabilities.\nOur use of Generative AI begins with the drafting stage. These models, trained on extensive datasets, generate human-like text that matches our specified tone and style, providing us with a solid foundation for each blog post. This allows us to focus on the larger narrative without getting mired in the nitty-gritty details from the outset.\nThe AI-generated drafts, while sophisticated, are just the starting point. We employ a methodology that involves guiding the AI to improve its output. This includes providing more detailed prompts, specifying the format we want the output in, or asking the model to think step-by-step before settling on a conclusion.\nOnce we have a draft that we’re satisfied with, it’s time for human intervention. Our team reviews the AI-generated content, refining and editing it to ensure it maintains the standards of accuracy, relevance, and depth that our readers expect. This process leverages critical human skills of creativity, critical thinking, and domain expertise that even the most advanced AI can’t replicate.\nThis approach exemplifies our vision of a symbiotic relationship between AI and humans. By effectively integrating Generative AI into our content creation process, we not only boost our productivity and efficiency but also demonstrate the practical application of AI technologies in real-world scenarios. Thus, the blog becomes a testament to our commitment to translational research and our pursuit of an AI-integrated future."
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#building-stuff",
-    "href": "slides/building_stuff/index.html#building-stuff",
-    "title": "Building “Stuff”?",
-    "section": "Building “Stuff”…",
-    "text": "Building “Stuff”…\n\n\nLearn More: Effective testing for machine learning systems\nYoutube Discussion: MLOps Chat: How Should We Test ML Models? with Data Scientist Jeremy Jordan"
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#building-stuff-1",
-    "href": "slides/building_stuff/index.html#building-stuff-1",
-    "title": "Building “Stuff”?",
-    "section": "Building “Stuff”…",
-    "text": "Building “Stuff”…\n\n\n\n\n\n\n\n\n\n\n\nLearn More: Effective testing for machine learning systems"
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#instruction-prompts",
-    "href": "slides/building_stuff/index.html#instruction-prompts",
-    "title": "Building “Stuff”?",
-    "section": "Instruction Prompts",
-    "text": "Instruction Prompts"
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#reasoning-prompts",
-    "href": "slides/building_stuff/index.html#reasoning-prompts",
-    "title": "Building “Stuff”?",
-    "section": "Reasoning Prompts",
-    "text": "Reasoning Prompts"
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#big-models-vs-small-models",
-    "href": "slides/building_stuff/index.html#big-models-vs-small-models",
-    "title": "Building “Stuff”?",
-    "section": "“Big Models” vs “Small Models”",
-    "text": "“Big Models” vs “Small Models”"
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#open-source-community",
-    "href": "slides/building_stuff/index.html#open-source-community",
-    "title": "Building “Stuff”?",
-    "section": "Open Source Community",
-    "text": "Open Source Community\n\n\n\n\n\n\n\n\nMatt Bronstein and Rajko Radovanovic, “Supporting the Open Source AI Community,” Andreessen Horowitz, Aug. 30, 2023.\nhttps://a16z.com/2023/08/30/supporting-the-open-source-ai-community/ (accessed Sep. 03, 2023)."
   }
 ]

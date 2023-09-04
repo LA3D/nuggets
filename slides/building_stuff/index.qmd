@@ -79,7 +79,9 @@ We will focus on Conversational Agents...
 :::
 
 ::: footer
-[Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
+Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023.
+
+[https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
 :::
 
 
@@ -89,14 +91,102 @@ We will focus on Conversational Agents...
 :::
 
 ::: footer
-[Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023. https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
+Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023.
+
+[https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
 :::
 
 ## Caveat: You are at the **Edge** of Research and Practice! {.center}
 
-## Instruction Prompts
+## Instruction Prompting {.center}
 
-## Reasoning Prompts
+## (GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback
+
+:::{.r-stack}
+![](../nuggets_review/instruct-gpt-method.png){.center width="751" height="550"}
+:::
+
+::: footer
+Ouyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, et al. 
+
+“Training Language Models to Follow Instructions with Human Feedback.” 
+
+arXiv, March 4, 2022. [https://doi.org/10.48550/arXiv.2203.02155](https://doi.org/10.48550/arXiv.2203.02155).
+:::
+
+## Facilitates Conversational Agents to "Converse" in a Set Style! {.center}
+
+## (GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)
+
+:::{.r-stack}
+![](../nuggets_review/CoT-Reasoning.png){.center width="520" height="500"}
+:::
+
+::: footer
+Kojima, Takeshi, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa.
+
+“Large Language Models Are Zero-Shot Reasoners.” arXiv, January 29, 2023.
+
+[https://doi.org/10.48550/arXiv.2205.11916.](https://doi.org/10.48550/arXiv.2205.11916)
+:::
+
+## Tools for "Prompt Engineering"
+
+:::{.r-stack}
+![](prompt_flow.png){.center width="641" height="650"}
+:::
+
+::: footer
+Henry Zeng, Lauryn Gayhardt, Jill Grant  “What is Azure Machine Learning prompt flow
+
+(preview) - Azure Machine Learning,” Jul. 02, 2023.
+
+[http://tiny.cc/kelavz](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?view=azureml-api-2) (accessed Sep. 04, 2023).
+:::
+
+## Tools for "Prompt Engineering"
+
+:::{.r-stack}
+![](prompt-flow-lifecycle.png){.center width="1000" height="490"}
+:::
+
+::: footer
+Henry Zeng, Lauryn Gayhardt, Jill Grant  “What is Azure Machine Learning prompt flow
+
+(preview) - Azure Machine Learning,” Jul. 02, 2023.
+
+[http://tiny.cc/kelavz](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?view=azureml-api-2) (accessed Sep. 04, 2023).
+:::
+
+## LLMs as Reasoners using Prompts!
+
+![](../agents_summer23/GOT_prompting.png)
+
+
+::: footer
+Besta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, et al 
+
+“Graph of Thoughts: Solving Elaborate Problems with Large Language Models.” arXiv, August 21, 2023.
+
+[http://arxiv.org/abs/2308.09687.](http://arxiv.org/abs/2308.09687)
+:::
+
+
+
+## Prompt Enginnering Guide
+
+:::{.r-stack}
+![](../tai_testing/prompt_engineering.png){fig-align="center" width="678" height="700"}
+:::
+
+::: footer
+"Prompt Engineering Guide – Nextra.”
+
+[https://www.promptingguide.ai/](https://www.promptingguide.ai/) (accessed Sep. 04, 2023).
+:::
+
+
+
 
 ## We want Large Language Models to be **Factual**!
 
@@ -111,25 +201,131 @@ We will focus on Conversational Agents...
 - **Retrieval:** introduce new **knowledge** to the model
 - **Retreval Aware Training (RAT)** Fine-tune the model to **use** or **ignore retrieved content**
 
+## LlamaIndex to Build Hybrid KGs
 
-## "Big Models" vs "Small Models"
+:::{.r-stack}
+![](../agents_summer23/llamaindex_customretreiver.png){fig-align="center" width="466" height="700"}
+:::
 
+::: footer
+“Custom Retriever Combining KG Index and VectorStore Index
+
+- LlamaIndex 🦙 0.8.5.Post2.” Accessed August 22, 2023.
+
+[http://tiny.cc/oflavz.](https://gpt-index.readthedocs.io/en/stable/examples/index_structs/knowledge_graph/KnowledgeGraphIndex_vs_VectorStoreIndex_vs_CustomIndex_combined.html)
+:::
+
+
+## Gorilla: Retrieval Aware Training for APIs
+
+:::{.r-stack}
+![](gorilla-api.png){fig-align="center" width="1000" height="643"}
+:::
+
+::: footer
+S. Patil, “Gorilla: Large Language Model Connected with Massive APIs [Project Website].” Sep. 04, 2023. 
+
+Accessed: Sep. 04, 2023. [Online]. Available: [https://github.com/ShishirPatil/gorilla](https://github.com/ShishirPatil/gorilla)
+:::
+
+## Gorilla: Retrieval Aware Training for APIs
+
+:::{.r-stack}
+![](gorilla-api-example.png){fig-align="center" width="1000" height="478"}
+:::
+
+::: footer
+S. Patil, “Gorilla: Large Language Model Connected with Massive APIs [Project Website].” Sep. 04, 2023. 
+
+Accessed: Sep. 04, 2023. [Online]. Available: [https://github.com/ShishirPatil/gorilla](https://github.com/ShishirPatil/gorilla)
+:::
+
+
+
+## "Big Models" vs "Small Models" {.smaller}
+
+::: incremental
+- Models as a service (Bedrock, OpenAI API, Anthropic Claude)
+    - Generally more difficult to "Fine-Tune" (GPT-3.5 turbo)^[“GPT-3.5 Turbo fine-tuning and API updates.” [https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates](https://openai.com/blog/gpt-3-5-turbo-fine-tuning-and-api-updates) (accessed Sep. 04, 2023).]
+    - Models are generally more capable (Factuality, Instructions, Reasoning)]
+    - "Coin-operated" pay per/token
+- "Open License" 7B-70B Parameter Models
+    - Mostly based on Meta AI LLama or LLama 2 models
+    - Require more effort to work consistently
+    - Models can run on reduced hardware requirements
+    - Can be fine-tuned for task specific workflows
+:::
+
+## Small Models with custom grammar (llama.cpp)
+
+JSON-Grammar
+```
+root   ::= object
+value  ::= object | array | string | number | ("true" | "false" | "null") ws
+
+object ::=
+  "{" ws (
+            string ":" ws value
+    ("," ws string ":" ws value)*
+  )? "}" ws
+
+array  ::=
+  "[" ws (
+            value
+    ("," ws value)*
+  )? "]" ws
+
+string ::=
+  "\"" (
+    [^"\\] |
+    "\\" (["\\/bfnrt] | "u" [0-9a-fA-F] [0-9a-fA-F] [0-9a-fA-F] [0-9a-fA-F]) # escapes
+  )* "\"" ws
+
+number ::= ("-"? ([0-9] | [1-9] [0-9]*)) ("." [0-9]+)? ([eE] [-+]? [0-9]+)? ws
+
+# Optional space: by convention, applied in this grammar after literal chars when allowed
+ws ::= ([ \t\n] ws)?
+```
+
+::: footer
+"speculative : add grammar support by ggerganov · Pull Request #2991 · ggerganov/llama.cpp,” 
+
+GitHub. [https://github.com/ggerganov/llama.cpp/pull/2991](https://github.com/ggerganov/llama.cpp/pull/2991) (accessed Sep. 04, 2023).
+:::
+
+## {background-video="https://user-images.githubusercontent.com/1991296/265271972-e197f832-8c06-4fe4-8b68-b7415b2e4638.mp4" background-size=contain}
+
+## "The state of GPT" Recommendations
+
+:::{.r-stack}
+![](../nuggets_review/karpathy-guidance.png){.center width="1076" height="600"}
+:::
+
+::: footer
+Andrej Karpathy, "State of GPT" | BRK216HFS, Microsoft Build, 2023.
+
+[https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
+:::
 
 ## Open Source Community
 
 ::: columns
-::: {.column width="50%"}
-![](a16z_header.png){width="600" height="209"}
+::: {.column width="30%"}
+![](a16z_header.png)
 :::
 
-::: {.column width="50%"}
+::: {.column width="70%"}
 ![](a16z_grants.png){width="502" height="650"}
 :::
 :::
 
 ::: footer
-Matt Bronstein and Rajko Radovanovic, “Supporting the Open Source AI Community,” Andreessen Horowitz, Aug. 30, 2023.
+Matt Bronstein and Rajko Radovanovic, “Supporting the Open Source AI Community,” 
 
-[https://a16z.com/2023/08/30/supporting-the-open-source-ai-community/](https://a16z.com/2023/08/30/supporting-the-open-source-ai-community/) (accessed Sep. 03, 2023).
+Andreessen Horowitz, Aug. 30, 2023.
+
+[http://tiny.cc/uflavz](https://a16z.com/2023/08/30/supporting-the-open-source-ai-community/) (accessed Sep. 03, 2023).
 
 :::
+
+## Today is the First Step on your Journey to Building LLM Based Applications!...{.center}
