@@ -872,7 +872,7 @@
     "href": "slides/building_stuff/index.html#we-want-large-language-models-to-be-factual-1",
     "title": "Building “Stuff”?",
     "section": "We want Large Language Models to be Factual!",
-    "text": "We want Large Language Models to be Factual!\n\nFine-Tuning: augment the behavior of the model\nRetrieval: introduce new knowledge to the model"
+    "text": "We want Large Language Models to be Factual!\n\nFine-Tuning: augment the behavior of the model\nRetrieval: introduce new knowledge to the model\nRetreval Aware Training (RAT) Fine-tune the model to use or ignore retrieved content"
   },
   {
     "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
@@ -1489,5 +1489,47 @@
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Generative AI in Content Creation",
     "text": "Generative AI in Content Creation\nIn creating AI Success Factors: Engineering Trust in Deployments, we harness the power of artificial intelligence in conjunction with human expertise. We utilize advanced Generative AI models such as ChatGPT, Bing Chat, and Anthropic Claude in a guided, iterative process that combines the best of AI and human capabilities.\nOur use of Generative AI begins with the drafting stage. These models, trained on extensive datasets, generate human-like text that matches our specified tone and style, providing us with a solid foundation for each blog post. This allows us to focus on the larger narrative without getting mired in the nitty-gritty details from the outset.\nThe AI-generated drafts, while sophisticated, are just the starting point. We employ a methodology that involves guiding the AI to improve its output. This includes providing more detailed prompts, specifying the format we want the output in, or asking the model to think step-by-step before settling on a conclusion.\nOnce we have a draft that we’re satisfied with, it’s time for human intervention. Our team reviews the AI-generated content, refining and editing it to ensure it maintains the standards of accuracy, relevance, and depth that our readers expect. This process leverages critical human skills of creativity, critical thinking, and domain expertise that even the most advanced AI can’t replicate.\nThis approach exemplifies our vision of a symbiotic relationship between AI and humans. By effectively integrating Generative AI into our content creation process, we not only boost our productivity and efficiency but also demonstrate the practical application of AI technologies in real-world scenarios. Thus, the blog becomes a testament to our commitment to translational research and our pursuit of an AI-integrated future."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#building-stuff",
+    "href": "slides/building_stuff/index.html#building-stuff",
+    "title": "Building “Stuff”?",
+    "section": "Building “Stuff”…",
+    "text": "Building “Stuff”…\n\n\nLearn More: Effective testing for machine learning systems\nYoutube Discussion: MLOps Chat: How Should We Test ML Models? with Data Scientist Jeremy Jordan"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#building-stuff-1",
+    "href": "slides/building_stuff/index.html#building-stuff-1",
+    "title": "Building “Stuff”?",
+    "section": "Building “Stuff”…",
+    "text": "Building “Stuff”…\n\n\n\n\n\n\n\n\n\n\n\nLearn More: Effective testing for machine learning systems"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#instruction-prompts",
+    "href": "slides/building_stuff/index.html#instruction-prompts",
+    "title": "Building “Stuff”?",
+    "section": "Instruction Prompts",
+    "text": "Instruction Prompts"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#reasoning-prompts",
+    "href": "slides/building_stuff/index.html#reasoning-prompts",
+    "title": "Building “Stuff”?",
+    "section": "Reasoning Prompts",
+    "text": "Reasoning Prompts"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#big-models-vs-small-models",
+    "href": "slides/building_stuff/index.html#big-models-vs-small-models",
+    "title": "Building “Stuff”?",
+    "section": "“Big Models” vs “Small Models”",
+    "text": "“Big Models” vs “Small Models”"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#open-source-community",
+    "href": "slides/building_stuff/index.html#open-source-community",
+    "title": "Building “Stuff”?",
+    "section": "Open Source Community",
+    "text": "Open Source Community\n\n\n\n\n\n\n\n\nMatt Bronstein and Rajko Radovanovic, “Supporting the Open Source AI Community,” Andreessen Horowitz, Aug. 30, 2023.\nhttps://a16z.com/2023/08/30/supporting-the-open-source-ai-community/ (accessed Sep. 03, 2023)."
   }
 ]

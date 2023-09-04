@@ -26,6 +26,28 @@ Building Agents based on Large Language Models!
 :::
 :::
 
+## Building "Stuff"...
+![](../tai_testing/effective_testing_ml_systems.png){fig-align="center"}
+
+::: footer
+Learn More: [Effective testing for machine learning systems](https://www.jeremyjordan.me/testing-ml/)
+
+Youtube Discussion: [MLOps Chat: How Should We Test ML Models? with Data Scientist Jeremy Jordan](https://youtu.be/k0naEYedv5I)
+:::
+
+## Building "Stuff"...
+:::{.fragment .fade-out}
+![](software1-2023-09-01-1139.png){fig-align="center"}
+:::
+
+:::{.fragment .fade-in}
+![](software2-2023-09-01-1139.png)
+:::
+
+::: footer
+Learn More: [Effective testing for machine learning systems](https://www.jeremyjordan.me/testing-ml/)
+:::
+
 ## You are here ⬇️
 
 ::: columns
@@ -72,6 +94,10 @@ We will focus on Conversational Agents...
 
 ## Caveat: You are at the **Edge** of Research and Practice! {.center}
 
+## Instruction Prompts
+
+## Reasoning Prompts
+
 ## We want Large Language Models to be **Factual**!
 
 ::: incremental
@@ -83,3 +109,27 @@ We will focus on Conversational Agents...
 
 - **Fine-Tuning**: augment the **behavior** of the model
 - **Retrieval:** introduce new **knowledge** to the model
+- **Retreval Aware Training (RAT)** Fine-tune the model to **use** or **ignore retrieved content**
+
+
+## "Big Models" vs "Small Models"
+
+
+## Open Source Community
+
+::: columns
+::: {.column width="50%"}
+![](a16z_header.png){width="600" height="209"}
+:::
+
+::: {.column width="50%"}
+![](a16z_grants.png){width="502" height="650"}
+:::
+:::
+
+::: footer
+Matt Bronstein and Rajko Radovanovic, “Supporting the Open Source AI Community,” Andreessen Horowitz, Aug. 30, 2023.
+
+[https://a16z.com/2023/08/30/supporting-the-open-source-ai-community/](https://a16z.com/2023/08/30/supporting-the-open-source-ai-community/) (accessed Sep. 03, 2023).
+
+:::
