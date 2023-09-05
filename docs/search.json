@@ -823,14 +823,14 @@
     "href": "slides/building_stuff/index.html#building-stuff",
     "title": "Building “Stuff”?",
     "section": "Building “Stuff”…",
-    "text": "Building “Stuff”…\n\n\nLearn More: Effective testing for machine learning systems\nYoutube Discussion: MLOps Chat: How Should We Test ML Models? with Data Scientist Jeremy Jordan"
+    "text": "Building “Stuff”…\n\n\nJeremy Jordan. “Effective Testing for Machine Learning Systems.,” August 19, 2020. https://www.jeremyjordan.me/testing-ml/."
   },
   {
     "objectID": "slides/building_stuff/index.html#building-stuff-1",
     "href": "slides/building_stuff/index.html#building-stuff-1",
     "title": "Building “Stuff”?",
     "section": "Building “Stuff”…",
-    "text": "Building “Stuff”…\n\n\n\n\n\n\n\n\n\n\n\nLearn More: Effective testing for machine learning systems"
+    "text": "Building “Stuff”…"
   },
   {
     "objectID": "slides/building_stuff/index.html#you-are-here",
@@ -886,7 +886,7 @@
     "href": "slides/building_stuff/index.html#gpt-3-instruct-gpt-reinforcement-learning-from-human-feedback",
     "title": "Building “Stuff”?",
     "section": "(GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback",
-    "text": "(GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback\n\n\n\n\nOuyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, et al. \n“Training Language Models to Follow Instructions with Human Feedback.”\narXiv, March 4, 2022. https://doi.org/10.48550/arXiv.2203.02155."
+    "text": "(GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback\n\n\n\n\nOuyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, et al.\n“Training Language Models to Follow Instructions with Human Feedback.”\narXiv, March 4, 2022. https://doi.org/10.48550/arXiv.2203.02155."
   },
   {
     "objectID": "slides/building_stuff/index.html#facilitates-conversational-agents-to-converse-in-a-set-style",
@@ -1615,5 +1615,68 @@
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Generative AI in Content Creation",
     "text": "Generative AI in Content Creation\nIn creating AI Success Factors: Engineering Trust in Deployments, we harness the power of artificial intelligence in conjunction with human expertise. We utilize advanced Generative AI models such as ChatGPT, Bing Chat, and Anthropic Claude in a guided, iterative process that combines the best of AI and human capabilities.\nOur use of Generative AI begins with the drafting stage. These models, trained on extensive datasets, generate human-like text that matches our specified tone and style, providing us with a solid foundation for each blog post. This allows us to focus on the larger narrative without getting mired in the nitty-gritty details from the outset.\nThe AI-generated drafts, while sophisticated, are just the starting point. We employ a methodology that involves guiding the AI to improve its output. This includes providing more detailed prompts, specifying the format we want the output in, or asking the model to think step-by-step before settling on a conclusion.\nOnce we have a draft that we’re satisfied with, it’s time for human intervention. Our team reviews the AI-generated content, refining and editing it to ensure it maintains the standards of accuracy, relevance, and depth that our readers expect. This process leverages critical human skills of creativity, critical thinking, and domain expertise that even the most advanced AI can’t replicate.\nThis approach exemplifies our vision of a symbiotic relationship between AI and humans. By effectively integrating Generative AI into our content creation process, we not only boost our productivity and efficiency but also demonstrate the practical application of AI technologies in real-world scenarios. Thus, the blog becomes a testament to our commitment to translational research and our pursuit of an AI-integrated future."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#autoregressive-large-language-model-ar-llm",
+    "href": "slides/building_stuff/index.html#autoregressive-large-language-model-ar-llm",
+    "title": "Building “Stuff”?",
+    "section": "Autoregressive large language model (AR-LLM)",
+    "text": "Autoregressive large language model (AR-LLM)\nBing Chat Says:\n“An autoregressive large language model (AR-LLM) is a type of neural network model that can generate natural language text. It has a very large number of parameters (billions or trillions) that are trained on a huge amount of text data from various sources. The main goal of an AR-LLM is to predict the next word or token based on the previous words or tokens in the input text. For example, if the input text is “The sky is”, the AR-LLM might predict “blue” as the next word. AR-LLMs can also generate text from scratch by sampling words from a probability distribution. For example, if the input text is empty, the AR-LLM might generate “Once upon a time, there was a princess who lived in a castle.” as the output text.”"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#ar-llms-are-turing-machines",
+    "href": "slides/building_stuff/index.html#ar-llms-are-turing-machines",
+    "title": "Building “Stuff”?",
+    "section": "AR-LLMs are “Turing Machines”",
+    "text": "AR-LLMs are “Turing Machines”\n\n\n\n\nSchuurmans, Dale. “Memory Augmented Large Language Models Are Computationally Universal.”\narXiv, January 9, 2023. https://doi.org/10.48550/arXiv.2301.04589."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#prompt-engineering",
+    "href": "slides/building_stuff/index.html#prompt-engineering",
+    "title": "Building “Stuff”?",
+    "section": "Prompt Engineering",
+    "text": "Prompt Engineering\n“Prompt engineering is the process of designing and refining the prompts or input stimuli for a language model to generate specific types of output. Prompt engineering involves selecting appropriate keywords, providing context, and shaping the input in a way that encourages the model to produce the desired response and is a vital technique to actively shape the behavior and output of foundation models.”1\n“Prompt Engineering for Foundation Models - Amazon SageMaker.” Accessed September 4, 2023. http://tiny.cc/p3mavz."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#sagemaker-instructions-for",
+    "href": "slides/building_stuff/index.html#sagemaker-instructions-for",
+    "title": "Building “Stuff”?",
+    "section": "Sagemaker Instructions for",
+    "text": "Sagemaker Instructions for"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#autoregressive-large-language-model",
+    "href": "slides/building_stuff/index.html#autoregressive-large-language-model",
+    "title": "Building “Stuff”?",
+    "section": "Autoregressive Large Language Model",
+    "text": "Autoregressive Large Language Model\n“An autoregressive large language model (AR-LLM) is a type of neural network model that can generate natural language text. It has a very large number of parameters (billions or trillions) that are trained on a huge amount of text data from various sources. The main goal of an AR-LLM is to predict the next word or token based on the previous words or tokens in the input text. For example, if the input text is”The sky is”, the AR-LLM might predict “blue” as the next word. AR-LLMs can also generate text from scratch by sampling words from a probability distribution. For example, if the input text is empty, the AR-LLM might generate “Once upon a time, there was a princess who lived in a castle.” as the output text.”1\nBing Chat, Accessed: 09-05-23 https://sl.bing.net/vDC45Llquq"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#but-wait-theres-more-ways-to-program-a-large-language-mode",
+    "href": "slides/building_stuff/index.html#but-wait-theres-more-ways-to-program-a-large-language-mode",
+    "title": "Building “Stuff”?",
+    "section": "But wait, there’s more ways to “program” a Large Language Mode!",
+    "text": "But wait, there’s more ways to “program” a Large Language Mode!"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#retrieval-augmented-generation-rag",
+    "href": "slides/building_stuff/index.html#retrieval-augmented-generation-rag",
+    "title": "Building “Stuff”?",
+    "section": "Retrieval Augmented Generation (RAG)",
+    "text": "Retrieval Augmented Generation (RAG)\n“Foundation models are usually trained offline, making the model agnostic to any data that is created after the model was trained. Additionally, foundation models are trained on very general domain corpora, making them less effective for domain-specific tasks. You can use Retrieval Augmented Generation (RAG) to retrieve data from outside a foundation model and augment your prompts by adding the relevant retrieved data in context. For more information about RAG model architectures”^[“Retrieval Augmented Generation (RAG) - Amazon SageMaker.” Accessed September 4, 2023. http://tiny.cc/f3mavz."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#retrieval-augmented-generation-rag-1",
+    "href": "slides/building_stuff/index.html#retrieval-augmented-generation-rag-1",
+    "title": "Building “Stuff”?",
+    "section": "Retrieval Augmented Generation (RAG)",
+    "text": "Retrieval Augmented Generation (RAG)"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#prompt-engineering-guide",
+    "href": "slides/building_stuff/index.html#prompt-engineering-guide",
+    "title": "Building “Stuff”?",
+    "section": "Prompt Engineering Guide",
+    "text": "Prompt Engineering Guide\n\n\n\n\n\n\n\n\n“Prompt Engineering Guide – Nextra.”\nhttps://www.promptingguide.ai/ (accessed Sep. 04, 2023)."
   }
 ]
