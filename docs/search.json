@@ -812,25 +812,11 @@
     "text": "Data Agents in LlamaIndex\n\n\nFrom: Liu, Jerry. “Data Agents.” LlamaIndex Blog (blog), July 13, 2023. https://medium.com/llamaindex-blog/data-agents-eed797d7972f."
   },
   {
-    "objectID": "slides/building_stuff/index.html#section",
-    "href": "slides/building_stuff/index.html#section",
+    "objectID": "slides/building_stuff/index.html#slides-link-httpsla3d.github.ionuggetsslideindex.html",
+    "href": "slides/building_stuff/index.html#slides-link-httpsla3d.github.ionuggetsslideindex.html",
     "title": "Building “Stuff”?",
-    "section": "",
+    "section": "Slides Link: https://la3d.github.io/nuggets/slideindex.html",
     "text": "Slides Link: https://la3d.github.io/nuggets/slideindex.html"
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#section-1",
-    "href": "slides/building_stuff/index.html#section-1",
-    "title": "Building “Stuff”?",
-    "section": "",
-    "text": "Building Stuff?\n\n\n\nBuilding Agents based on Large Language Models!"
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#pretrained-foundation-models",
-    "href": "slides/building_stuff/index.html#pretrained-foundation-models",
-    "title": "Building “Stuff”?",
-    "section": "Pretrained Foundation Models…",
-    "text": "Pretrained Foundation Models…\n\n\n\n\nZhou, Ce, Qian Li, Chen Li, Jun Yu, Yixin Liu, Guangjing Wang, Kai Zhang, et al. \n“A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT.”\narXiv, May 1, 2023.https://doi.org/10.48550/arXiv.2302.09419."
   },
   {
     "objectID": "slides/building_stuff/index.html#building-stuff",
@@ -847,11 +833,32 @@
     "text": "Building “Stuff”…"
   },
   {
-    "objectID": "slides/building_stuff/index.html#but-wait-theres-more-ways-to-program-a-large-language-mode",
-    "href": "slides/building_stuff/index.html#but-wait-theres-more-ways-to-program-a-large-language-mode",
+    "objectID": "slides/building_stuff/index.html#section",
+    "href": "slides/building_stuff/index.html#section",
     "title": "Building “Stuff”?",
-    "section": "But wait, there’s more ways to “program” a Large Language Mode!",
-    "text": "But wait, there’s more ways to “program” a Large Language Mode!"
+    "section": "",
+    "text": "Building Stuff?\n\n\n\nBuilding Agents based on Large Language Models!"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#you-are-almost-here",
+    "href": "slides/building_stuff/index.html#you-are-almost-here",
+    "title": "Building “Stuff”?",
+    "section": "You are “almost” here ⬇️",
+    "text": "You are “almost” here ⬇️"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#building-agents-involves-pre-trained-foundation-models",
+    "href": "slides/building_stuff/index.html#building-agents-involves-pre-trained-foundation-models",
+    "title": "Building “Stuff”?",
+    "section": "Building “Agents” Involves Pre-trained Foundation Models…",
+    "text": "Building “Agents” Involves Pre-trained Foundation Models…\n\n\n\n\nZhou, Ce, Qian Li, Chen Li, Jun Yu, Yixin Liu, Guangjing Wang, Kai Zhang, et al. \n“A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT.”\narXiv, May 1, 2023.https://doi.org/10.48550/arXiv.2302.09419."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#how-do-we-program-a-large-language-model",
+    "href": "slides/building_stuff/index.html#how-do-we-program-a-large-language-model",
+    "title": "Building “Stuff”?",
+    "section": "How do we “program” a Large Language Model?",
+    "text": "How do we “program” a Large Language Model?"
   },
   {
     "objectID": "slides/building_stuff/index.html#autoregressive-large-language-model",
@@ -861,18 +868,11 @@
     "text": "Autoregressive Large Language Model\n“An autoregressive large language model (AR-LLM) is a type of neural network model that can generate natural language text. It has a very large number of parameters (billions or trillions) that are trained on a huge amount of text data from various sources. The main goal of an AR-LLM is to predict the next word or token based on the previous words or tokens in the input text. For example, if the input text is”The sky is”, the AR-LLM might predict “blue” as the next word. AR-LLMs can also generate text from scratch by sampling words from a probability distribution. For example, if the input text is empty, the AR-LLM might generate “Once upon a time, there was a princess who lived in a castle.” as the output text.”1\nBing Chat, Accessed: 09-05-23 https://sl.bing.net/vDC45Llquq"
   },
   {
-    "objectID": "slides/building_stuff/index.html#ar-llms-are-turing-machines",
-    "href": "slides/building_stuff/index.html#ar-llms-are-turing-machines",
+    "objectID": "slides/building_stuff/index.html#ar-llms-can-simulate-turing-machines",
+    "href": "slides/building_stuff/index.html#ar-llms-can-simulate-turing-machines",
     "title": "Building “Stuff”?",
-    "section": "AR-LLMs are “Turing Machines”",
-    "text": "AR-LLMs are “Turing Machines”\n\n\n\n\nSchuurmans, Dale. “Memory Augmented Large Language Models Are Computationally Universal.”\narXiv, January 9, 2023. https://doi.org/10.48550/arXiv.2301.04589."
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#you-are-here",
-    "href": "slides/building_stuff/index.html#you-are-here",
-    "title": "Building “Stuff”?",
-    "section": "You are here ⬇️",
-    "text": "You are here ⬇️"
+    "section": "AR-LLMs can simulate “Turing Machines”",
+    "text": "AR-LLMs can simulate “Turing Machines”\n\n\n\n\nAbstract: We show that transformer-based large language models are computationally universal when augmented with an external memory. Any deterministic language model that conditions on strings of bounded length is equivalent to a finite automaton, hence computationally limited. However, augmenting such models with a read-write memory creates the possibility of processing arbitrarily large inputs and, potentially, simulating any algorithm. We establish that an existing large language model, Flan-U-PaLM 540B, can be combined with an associative read-write memory to exactly simulate the execution of a universal Turing machine, \\(U_{15,2}\\). A key aspect of the finding is that it does not require any modification of the language model weights. Instead, the construction relies solely on designing a form of stored instruction computer that can subsequently be programmed with a specific set of prompts.\n\n\nSchuurmans, Dale. “Memory Augmented Large Language Models Are Computationally Universal.”\narXiv, January 9, 2023. https://doi.org/10.48550/arXiv.2301.04589."
   },
   {
     "objectID": "slides/building_stuff/index.html#what-kind-of-llm-agents-are-we-trying-to-build",
@@ -882,8 +882,8 @@
     "text": "What Kind of LLM Agents are we trying to build?\n\n\nConversational Agents\nvs. Cognitive Autonomous Agents\nvs. Agents tuned for a Data Processing Task"
   },
   {
-    "objectID": "slides/building_stuff/index.html#section-2",
-    "href": "slides/building_stuff/index.html#section-2",
+    "objectID": "slides/building_stuff/index.html#section-1",
+    "href": "slides/building_stuff/index.html#section-1",
     "title": "Building “Stuff”?",
     "section": "",
     "text": "We will focus on Conversational Agents…"
@@ -892,12 +892,12 @@
     "objectID": "slides/building_stuff/index.html#the-best-advice-we-can-give",
     "href": "slides/building_stuff/index.html#the-best-advice-we-can-give",
     "title": "Building “Stuff”?",
-    "section": "The Best Advice we can Give",
-    "text": "The Best Advice we can Give\n\n\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023.\nhttps://www.youtube.com/watch?v=bZQun8Y4L2A."
+    "section": "The Best Advice we can Give…",
+    "text": "The Best Advice we can Give…\n\n\n\n\nAndrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023.\nhttps://www.youtube.com/watch?v=bZQun8Y4L2A."
   },
   {
-    "objectID": "slides/building_stuff/index.html#section-3",
-    "href": "slides/building_stuff/index.html#section-3",
+    "objectID": "slides/building_stuff/index.html#section-2",
+    "href": "slides/building_stuff/index.html#section-2",
     "title": "Building “Stuff”?",
     "section": "",
     "text": "Andrej Karpathy, “State of GPT” | BRK216HFS, Microsoft Build, 2023.\nhttps://www.youtube.com/watch?v=bZQun8Y4L2A."
@@ -924,18 +924,11 @@
     "text": "(GPT-3) Instruct-GPT Reinforcement Learning from Human Feedback\n\n\n\n\nOuyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mishkin, Chong Zhang, et al.\n“Training Language Models to Follow Instructions with Human Feedback.”\narXiv, March 4, 2022. https://doi.org/10.48550/arXiv.2203.02155."
   },
   {
-    "objectID": "slides/building_stuff/index.html#facilitates-conversational-agents-to-converse-in-a-set-style",
-    "href": "slides/building_stuff/index.html#facilitates-conversational-agents-to-converse-in-a-set-style",
+    "objectID": "slides/building_stuff/index.html#instruction-tuning-facilitate-conversational-agents-to-converse-in-a-set-style",
+    "href": "slides/building_stuff/index.html#instruction-tuning-facilitate-conversational-agents-to-converse-in-a-set-style",
     "title": "Building “Stuff”?",
-    "section": "Facilitates Conversational Agents to “Converse” in a Set Style!",
-    "text": "Facilitates Conversational Agents to “Converse” in a Set Style!"
-  },
-  {
-    "objectID": "slides/building_stuff/index.html#gpt-3-large-language-models-are-zero-shot-reasoners-chain-of-thought-reasoning",
-    "href": "slides/building_stuff/index.html#gpt-3-large-language-models-are-zero-shot-reasoners-chain-of-thought-reasoning",
-    "title": "Building “Stuff”?",
-    "section": "(GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)",
-    "text": "(GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)\n\n\n\n\nKojima, Takeshi, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa.\n“Large Language Models Are Zero-Shot Reasoners.” arXiv, January 29, 2023.\nhttps://doi.org/10.48550/arXiv.2205.11916."
+    "section": "Instruction Tuning Facilitate Conversational Agents to “Converse” in a Set Style!",
+    "text": "Instruction Tuning Facilitate Conversational Agents to “Converse” in a Set Style!"
   },
   {
     "objectID": "slides/building_stuff/index.html#tools-for-prompt-engineering",
@@ -950,6 +943,27 @@
     "title": "Building “Stuff”?",
     "section": "Tools for “Prompt Engineering”",
     "text": "Tools for “Prompt Engineering”\n\n\n\n\nHenry Zeng, Lauryn Gayhardt, Jill Grant “What is Azure Machine Learning prompt flow\n(preview) - Azure Machine Learning,” Jul. 02, 2023.\nhttp://tiny.cc/kelavz (accessed Sep. 04, 2023)."
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#trusted-prompt-engineering-for-conversational-agents",
+    "href": "slides/building_stuff/index.html#trusted-prompt-engineering-for-conversational-agents",
+    "title": "Building “Stuff”?",
+    "section": "Trusted “Prompt Engineering” for Conversational Agents",
+    "text": "Trusted “Prompt Engineering” for Conversational Agents\n“NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems. Guardrails (or”rails” for short) are specific ways of controlling the output of a large language model, such as not talking about politics, responding in a particular way to specific user requests, following a predefined dialog path, using a particular language style, extracting structured data, and more.”^[“NeMo Guardrails.1\n” NVIDIA Corporation, Sep. 05, 2023. Accessed: Sep. 05, 2023. [Online]. Available: https://github.com/NVIDIA/NeMo-Guardrails"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#trusted-prompt-engineering-for-conversational-agents-1",
+    "href": "slides/building_stuff/index.html#trusted-prompt-engineering-for-conversational-agents-1",
+    "title": "Building “Stuff”?",
+    "section": "Trusted “Prompt Engineering” for Conversational Agents",
+    "text": "Trusted “Prompt Engineering” for Conversational Agents\n\nBuilding Trustworthy, Safe, and Secure LLM Conversational Systems: The core value of using NeMo Guardrails is the ability to write rails to guide conversations. You can choose to define the behavior of your LLM-powered application on specific topics and prevent it from engaging in discussions on unwanted topics.\nConnect models, chains, services, and more via actions: NeMo Guardrails provides the ability to connect an LLM to other services (a.k.a. tools) seamlessly and securely.\n\n\n“NeMo Guardrails.” NVIDIA Corporation, Sep. 05, 2023. Accessed: Sep. 05, 2023. [Online].\nAvailable: https://github.com/NVIDIA/NeMo-Guardrails"
+  },
+  {
+    "objectID": "slides/building_stuff/index.html#gpt-3-large-language-models-are-zero-shot-reasoners-chain-of-thought-reasoning",
+    "href": "slides/building_stuff/index.html#gpt-3-large-language-models-are-zero-shot-reasoners-chain-of-thought-reasoning",
+    "title": "Building “Stuff”?",
+    "section": "(GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)",
+    "text": "(GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)\n\n\n\n\nKojima, Takeshi, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa.\n“Large Language Models Are Zero-Shot Reasoners.” arXiv, January 29, 2023.\nhttps://doi.org/10.48550/arXiv.2205.11916."
   },
   {
     "objectID": "slides/building_stuff/index.html#llms-as-reasoners-using-prompts",
@@ -1046,8 +1060,8 @@
     "objectID": "slides/building_stuff/index.html#on-to-the-first-steps-to-building-llm-based-applications",
     "href": "slides/building_stuff/index.html#on-to-the-first-steps-to-building-llm-based-applications",
     "title": "Building “Stuff”?",
-    "section": "On to the First Steps to Building LLM Based Applications!…",
-    "text": "On to the First Steps to Building LLM Based Applications!…"
+    "section": "On to the First Steps to Building LLM Based Applications…",
+    "text": "On to the First Steps to Building LLM Based Applications…"
   },
   {
     "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",

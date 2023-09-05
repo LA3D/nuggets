@@ -14,36 +14,8 @@ format:
 categories: [Agents,trustedAI,Development]
 ---
 
-##
-Slides Link: [https://la3d.github.io/nuggets/slideindex.html](https://la3d.github.io/nuggets/slides/building_stuff/#/title-slide)
+## Slides Link: [https://la3d.github.io/nuggets/slideindex.html](https://la3d.github.io/nuggets/slides/building_stuff/#/title-slide) {.center}
 
-##
-
-::: {style="font-size: 2.5em; text-align: center"}
-::: {.fragment .strike}
-::: {.fragment .fade-out}
-Building Stuff?
-:::
-:::
-
-::: {.fragment .fade-in}
-Building Agents based on Large Language Models!
-:::
-:::
-
-## Pretrained Foundation Models...
-
-:::{.r-stack}
-![](../nuggets_review/foundation_models.png){.center width="1000" height="340"}
-:::
-
-:::footer
-Zhou, Ce, Qian Li, Chen Li, Jun Yu, Yixin Liu, Guangjing Wang, Kai Zhang, et al. 
-
-“A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT.”
-
-arXiv, May 1, 2023.[https://doi.org/10.48550/arXiv.2302.09419.](https://doi.org/10.48550/arXiv.2302.09419)
-:::
 
 ## Building "Stuff"...
 
@@ -64,27 +36,21 @@ August 19, 2020. <https://www.jeremyjordan.me/testing-ml/>.
 ![](software2-2023-09-01-1139.png){fig-align="center" .fragment .fade-in}
 :::
 
-## But wait, there's more ways to "program" a Large Language Mode! {.center}
+##
 
-## Autoregressive Large Language Model
-
-"An autoregressive large language model (AR-LLM) is a type of neural network model that can generate natural language text. It has a very large number of parameters (billions or trillions) that are trained on a huge amount of text data from various sources. The main goal of an AR-LLM is to predict the next word or token based on the previous words or tokens in the input text. For example, if the input text is "The sky is", the AR-LLM might predict "blue" as the next word. AR-LLMs can also generate text from scratch by sampling words from a probability distribution. For example, if the input text is empty, the AR-LLM might generate "Once upon a time, there was a princess who lived in a castle." as the output text."[^1]
-
-[^1]: Bing Chat, Accessed: 09-05-23 <https://sl.bing.net/vDC45Llquq>
-
-## AR-LLMs are "Turing Machines"
-
-::: r-stack
-![](llm-turing-machine.png){.center width="693" height="500"}
+::: {style="font-size: 2.5em; text-align: center"}
+::: {.fragment .strike}
+::: {.fragment .fade-out}
+Building Stuff?
+:::
 :::
 
-::: footer
-Schuurmans, Dale. "Memory Augmented Large Language Models Are Computationally Universal."
-
-arXiv, January 9, 2023. <https://doi.org/10.48550/arXiv.2301.04589>.
+::: {.fragment .fade-in}
+Building Agents based on Large Language Models!
+:::
 :::
 
-## You are here ⬇️
+## You are <u>"almost"</u> here ⬇️
 
 ::: columns
 ::: {.column width="50%"}
@@ -96,7 +62,47 @@ arXiv, January 9, 2023. <https://doi.org/10.48550/arXiv.2301.04589>.
 :::
 :::
 
-## What **Kind** of LLM Agents are we trying to build?
+## Building "Agents" Involves Pre-trained Foundation Models...
+
+:::{.r-stack}
+![](../nuggets_review/foundation_models.png){.center width="1000" height="340"}
+:::
+
+::: footer
+Zhou, Ce, Qian Li, Chen Li, Jun Yu, Yixin Liu, Guangjing Wang, Kai Zhang, et al. 
+
+“A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT.”
+
+arXiv, May 1, 2023.[https://doi.org/10.48550/arXiv.2302.09419.](https://doi.org/10.48550/arXiv.2302.09419)
+:::
+
+## How do we "program" a Large Language Model? {.center}
+
+## Autoregressive Large Language Model
+
+"An autoregressive large language model (AR-LLM) is a type of neural network model that can generate natural language text. It has a very large number of parameters (billions or trillions) that are trained on a huge amount of text data from various sources. The main goal of an AR-LLM is to predict the next word or token based on the previous words or tokens in the input text. For example, if the input text is "The sky is", the AR-LLM might predict "blue" as the next word. AR-LLMs can also generate text from scratch by sampling words from a probability distribution. For example, if the input text is empty, the AR-LLM might generate "Once upon a time, there was a princess who lived in a castle." as the output text."[^1]
+
+[^1]: Bing Chat, Accessed: 09-05-23 <https://sl.bing.net/vDC45Llquq>
+
+## AR-LLMs can <u>simulate</u> "Turing Machines"
+
+::: {.r-stack}
+![](llm-turing-machine.png){.center width="960" height="287"}
+:::
+
+::: {.r-stack}
+**Abstract:**
+We show that transformer-based large language models are computationally universal when augmented with an external memory. Any deterministic language model that conditions on strings of bounded length is equivalent to a finite automaton, hence computationally limited. However, augmenting such models with a read-write memory creates the possibility of processing arbitrarily large inputs and, potentially, simulating any algorithm. We establish that an existing large language model, Flan-U-PaLM 540B, can be combined with an associative read-write memory to exactly simulate the execution of a universal Turing machine, $U_{15,2}$. <u>**A key aspect of the finding is that it does not require any modification of the language model weights. Instead, the construction relies solely on designing a form of stored instruction computer that can subsequently be programmed with a specific set of prompts**</u>.
+:::
+
+::: footer
+Schuurmans, Dale. "Memory Augmented Large Language Models Are Computationally Universal."
+
+arXiv, January 9, 2023. <https://doi.org/10.48550/arXiv.2301.04589>.
+:::
+
+
+## What <u>Kind</u> of LLM Agents are we trying to build?
 
 ::: incremental
 -   Conversational Agents
@@ -110,7 +116,7 @@ arXiv, January 9, 2023. <https://doi.org/10.48550/arXiv.2301.04589>.
 We will focus on Conversational Agents...
 :::
 
-## The Best Advice we can Give
+## The Best Advice we can Give...
 
 ::: r-stack
 ![](../nuggets_review/state_of_gpt.png){.center width="800" height="510"}
@@ -122,7 +128,7 @@ Andrej Karpathy, "State of GPT" \| BRK216HFS, Microsoft Build, 2023.
 [https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
 :::
 
-## 
+##
 
 ::: r-stack
 ![](../nuggets_review/state_of_gpt_pipeline.png){.center width="900" height="510"}
@@ -134,7 +140,7 @@ Andrej Karpathy, "State of GPT" \| BRK216HFS, Microsoft Build, 2023.
 [https://www.youtube.com/watch?v=bZQun8Y4L2A.](https://youtu.be/bZQun8Y4L2A?si=9w68buJRCPUqAlch)
 :::
 
-## Caveat: You are at the **Edge** of Research and Practice! {.center}
+## Caveat: You are at the <u>Edge</u> of Research and Practice! {.center}
 
 ## Prompt Engineering
 
@@ -155,21 +161,7 @@ Ouyang, Long, Jeff Wu, Xu Jiang, Diogo Almeida, Carroll L. Wainwright, Pamela Mi
 arXiv, March 4, 2022. <https://doi.org/10.48550/arXiv.2203.02155>.
 :::
 
-## Facilitates Conversational Agents to "Converse" in a Set Style! {.center}
-
-## (GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)
-
-::: r-stack
-![](../nuggets_review/CoT-Reasoning.png){.center width="520" height="500"}
-:::
-
-::: footer
-Kojima, Takeshi, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa.
-
-"Large Language Models Are Zero-Shot Reasoners." arXiv, January 29, 2023.
-
-[https://doi.org/10.48550/arXiv.2205.11916.](https://doi.org/10.48550/arXiv.2205.11916)
-:::
+## Instruction Tuning Facilitate Conversational Agents to "Converse" in a Set Style! {.center}
 
 ## Tools for "Prompt Engineering"
 
@@ -197,6 +189,37 @@ Henry Zeng, Lauryn Gayhardt, Jill Grant "What is Azure Machine Learning prompt f
 (preview) - Azure Machine Learning," Jul. 02, 2023.
 
 [http://tiny.cc/kelavz](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/overview-what-is-prompt-flow?view=azureml-api-2) (accessed Sep. 04, 2023).
+:::
+
+## Trusted "Prompt Engineering" for Conversational Agents
+"NeMo Guardrails is an open-source toolkit for easily adding programmable guardrails to LLM-based conversational systems. Guardrails (or "rails" for short) are specific ways of controlling the output of a large language model, such as not talking about politics, responding in a particular way to specific user requests, following a predefined dialog path, using a particular language style, extracting structured data, and more."^[“NeMo Guardrails.^[” NVIDIA Corporation, Sep. 05, 2023. Accessed: Sep. 05, 2023. [Online]. Available: [https://github.com/NVIDIA/NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)]
+
+## Trusted "Prompt Engineering" for Conversational Agents
+
+- **Building Trustworthy, Safe, and Secure LLM Conversational Systems:** The core
+value of using NeMo Guardrails is the ability to write rails to guide conversations. You
+can choose to define the behavior of your LLM-powered application on specific topics and prevent it from engaging in discussions on unwanted topics.
+
+- **Connect models, chains, services, and more via actions:** NeMo Guardrails provides the ability to connect an LLM to other services (a.k.a. tools) seamlessly and securely.
+
+::: footer
+“NeMo Guardrails.” NVIDIA Corporation, Sep. 05, 2023. Accessed: Sep. 05, 2023. [Online]. 
+
+Available: [https://github.com/NVIDIA/NeMo-Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)
+:::
+
+## (GPT-3) Large Language Models are Zero Shot Reasoners (Chain-of-Thought Reasoning)
+
+::: r-stack
+![](../nuggets_review/CoT-Reasoning.png){.center width="520" height="500"}
+:::
+
+::: footer
+Kojima, Takeshi, Shixiang Shane Gu, Machel Reid, Yutaka Matsuo, and Yusuke Iwasawa.
+
+"Large Language Models Are Zero-Shot Reasoners." arXiv, January 29, 2023.
+
+[https://doi.org/10.48550/arXiv.2205.11916.](https://doi.org/10.48550/arXiv.2205.11916)
 :::
 
 ## LLMs as Reasoners using Prompts!
@@ -378,4 +401,4 @@ Andreessen Horowitz, Aug. 30, 2023.
 [http://tiny.cc/uflavz](https://a16z.com/2023/08/30/supporting-the-open-source-ai-community/) (accessed Sep. 03, 2023).
 :::
 
-## On to the First Steps to Building LLM Based Applications!... {.center}
+## On to the First Steps to Building LLM Based Applications... {.center}
