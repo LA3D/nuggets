@@ -14,7 +14,10 @@ format:
 categories: [Agents,trustedAI,Development]
 ---
 
-## 
+##
+Slides Link: [https://la3d.github.io/nuggets/slideindex.html](https://la3d.github.io/nuggets/slides/building_stuff/#/title-slide)
+
+##
 
 ::: {style="font-size: 2.5em; text-align: center"}
 ::: {.fragment .strike}
@@ -28,12 +31,28 @@ Building Agents based on Large Language Models!
 :::
 :::
 
+## Pretrained Foundation Models...
+
+:::{.r-stack}
+![](../nuggets_review/foundation_models.png){.center width="1000" height="340"}
+:::
+
+:::footer
+Zhou, Ce, Qian Li, Chen Li, Jun Yu, Yixin Liu, Guangjing Wang, Kai Zhang, et al. 
+
+“A Comprehensive Survey on Pretrained Foundation Models: A History from BERT to ChatGPT.”
+
+arXiv, May 1, 2023.[https://doi.org/10.48550/arXiv.2302.09419.](https://doi.org/10.48550/arXiv.2302.09419)
+:::
+
 ## Building "Stuff"...
 
 ![](../tai_testing/effective_testing_ml_systems.png){fig-align="center"}
 
 ::: footer
-Jeremy Jordan. "Effective Testing for Machine Learning Systems.," August 19, 2020. <https://www.jeremyjordan.me/testing-ml/>.
+Jeremy Jordan. "Effective Testing for Machine Learning Systems.," 
+
+August 19, 2020. <https://www.jeremyjordan.me/testing-ml/>.
 :::
 
 ## Building "Stuff"...
@@ -211,12 +230,26 @@ Besta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi,
 -   **Retrieval:** introduce new **knowledge** to the model
 -   **Retreval Aware Training (RAT)** Fine-tune the model to **use** or **ignore retrieved content**
 
+## Fine-Tuning Foundation Models
+
+"Foundation models are computationally expensive and trained on a large, unlabeled corpus. Fine-tuning a pre-trained foundation model is an affordable way to take advantage of their broad capabilities while customizing a model on your own small, corpus. Fine-tuning is a customization method that involved further training and does change the weights of your model..."
+
+"...There are two main approaches that you can take for fine-tuning depending on your use case and chosen foundation model. If you're interested in fine-tuning your model on domain-specific data, see **Domain adaptation fine-tuning**. If you're interested in instruction-based fine-tuning using prompt and response examples, see **Instruction-based fine-tuning**."^["Fine-tune a foundation model - Amazon SageMaker", [http://tiny.cc/grmavz](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models-fine-tuning.html) (accessed Sep. 05, 2023).]
+
+
+
 ## Retrieval Augmented Generation (RAG)
-"Foundation models are usually trained offline, making the model agnostic to any data that is created after the model was trained. Additionally, foundation models are trained on very general domain corpora, making them less effective for domain-specific tasks. You can use Retrieval Augmented Generation (RAG) to retrieve data from outside a foundation model and augment your prompts by adding the relevant retrieved data in context. For more information about RAG model architectures"^[“Retrieval Augmented Generation (RAG) - Amazon SageMaker.” Accessed September 4, 2023. [http://tiny.cc/f3mavz](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html).
+"Foundation models are usually trained offline, making the model agnostic to any data that is created after the model was trained. Additionally, foundation models are trained on very general domain corpora, making them less effective for domain-specific tasks. You can use Retrieval Augmented Generation (RAG) to retrieve data from outside a foundation model and augment your prompts by adding the relevant retrieved data in context. For more information about RAG model architectures"^[“Retrieval Augmented Generation (RAG) - Amazon SageMaker.” Accessed September 4, 2023. [http://tiny.cc/f3mavz](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html).]
 
 ## Retrieval Augmented Generation (RAG)
 ::: r-stack
 ![](jumpstart-fm-rag.jpg){fig-align="center"}
+:::
+
+::: footer
+“Retrieval Augmented Generation (RAG) - Amazon SageMaker.” Accessed September 4, 2023.
+
+[http://tiny.cc/f3mavz](https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models-customize-rag.html).
 :::
 
 ## LlamaIndex to Build Hybrid KGs
@@ -345,4 +378,4 @@ Andreessen Horowitz, Aug. 30, 2023.
 [http://tiny.cc/uflavz](https://a16z.com/2023/08/30/supporting-the-open-source-ai-community/) (accessed Sep. 03, 2023).
 :::
 
-## Today is the First Step on your Journey to Building LLM Based Applications!... {.center}
+## On to the First Steps to Building LLM Based Applications!... {.center}

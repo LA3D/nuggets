@@ -5,6 +5,8 @@ date: "2023-08-28"
 embed-resources: true
 format: 
     revealjs:
+        width: 1600
+        height: 900
         slide-number: true
 categories: [nuggets,trustedAI,LLMs]
 ---
