@@ -366,119 +366,119 @@
   {
     "objectID": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-chatgpt",
     "href": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-chatgpt",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "What is Trusted AI – Let’s ask ChatGPT!",
     "text": "What is Trusted AI – Let’s ask ChatGPT!\nTrusted AI encompasses systems that are not only ethically aligned but also reliable, robust, secure, transparent, and accountable. While ethical considerations form a crucial aspect, Trusted AI extends to include the technical quality and performance of the system. The goal is to create AI technologies that various stakeholders—including users, developers, businesses, and regulators—can trust to behave as intended and to meet specific performance, security, and governance standards.\nThe concept integrates aspects from multiple domains, such as:\n\nEthics: Fairness, transparency, and accountability.\nReliability: Consistent and dependable system performance.\nRobustness: Ability to handle unexpected inputs or conditions without failing.\nSecurity: Measures to protect data and models from unauthorized access and tampering.\nTransparency: Understandability of system decisions and actions.\nAccountability: Mechanisms to trace actions back to the responsible entities for evaluation and auditing.\n\nIn this broader context, “trust” is a multidimensional construct. It’s not just about being ethical but about fulfilling a wide range of expectations and standards that make a system worthy of trust."
   },
   {
     "objectID": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-claude-2",
     "href": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-claude-2",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "What is Trusted AI – Let’s ask Claude 2!",
     "text": "What is Trusted AI – Let’s ask Claude 2!\nTrusted AI refers to artificial intelligence systems that are designed and validated to be reliable, safe and technically robust. Key principles of trusted AI include:\n\nReliability - AI systems consistently produce accurate, reproducible results that can be externally validated. Models are unbiased and decisions explainable.\nSafety and security - AI systems are developed using secure software practices and are resilient against attacks, hacking or misuse. They protect privacy and confidentiality.\nExternal oversight - There are independent audits and ongoing monitoring of AI systems to ensure transparency and identify issues. Public disclosure builds trust.\nHuman control - Humans remain fully in control of AI systems, which augment human intelligence rather than replace it. Autonomous systems have human supervision.\nProportionality - AI capabilities do not exceed what is appropriate for the task. AI is not used when less advanced technology suffices.\nTechnical robustness - AI systems are thoroughly tested for stability, scalability and corner cases. Failsafes prevent glitches or unintended harm.\n\nIn contrast to responsible AI, trusted AI emphasizes technical system properties over organizational processes. It focuses on engineering reliable, safe and externally validated AI, rather than holistic internal governance."
   },
   {
     "objectID": "slides/tai-tools/index.html#our-evolving-vision-of-trusted-ai",
     "href": "slides/tai-tools/index.html#our-evolving-vision-of-trusted-ai",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Our, evolving vision of Trusted AI",
     "text": "Our, evolving vision of Trusted AI"
   },
   {
     "objectID": "slides/tai-tools/index.html#responsible-ai",
     "href": "slides/tai-tools/index.html#responsible-ai",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Responsible AI",
     "text": "Responsible AI\n\nResponsible AI: This term is broader and refers to the ethical design, development, and deployment of AI. This includes considerations not just of the AI’s technical behavior (e.g., is it transparent and accountable?), but also of the socio-economic implications, like job displacement, and broader ethical considerations like data privacy and environmental impact."
   },
   {
     "objectID": "slides/tai-tools/index.html#why-a-framework",
     "href": "slides/tai-tools/index.html#why-a-framework",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Why a Framework?",
     "text": "Why a Framework?\n\n\n\n\n“Course22/06-Why-You-Should-Use-a-Framework.Ipynb at Master · Fastai/Course22.” Accessed August 29, 2023. https://github.com/fastai/course22/blob/master/06-why-you-should-use-a-framework.ipynb."
   },
   {
     "objectID": "slides/tai-tools/index.html#foundational-components-for-trusted-ai",
     "href": "slides/tai-tools/index.html#foundational-components-for-trusted-ai",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Foundational Components for Trusted AI",
     "text": "Foundational Components for Trusted AI\n\nAutomate the integration and deployment of code, ensuring quality and operational efficiency.\nStandardized Development Environments: Establish consistent, easily replicable environments to accelerate development and experimentation.\nData & Experiment Versioning: Implement robust systems to track changes in data and experiments, allowing for traceability and repeatability.\nModel Lifecycle Management: Streamline the training, deployment, monitoring, and updating of machine learning models.\nFlexibility Across Layers: Design the architecture to allow for different levels of customization, from high-level APIs to low-level controls, facilitating adaptability."
   },
   {
     "objectID": "slides/tai-tools/index.html#this-is-a-living-set-of-slides",
     "href": "slides/tai-tools/index.html#this-is-a-living-set-of-slides",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "This is a “living” set of slides!",
     "text": "This is a “living” set of slides!"
   },
   {
     "objectID": "slides/tai-tools/index.html#python",
     "href": "slides/tai-tools/index.html#python",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Python",
     "text": "Python\n\n\nLearn More: Think Python 2e: https://greenteapress.com/wp/think-python-2e/"
   },
   {
     "objectID": "slides/tai-tools/index.html#sneek-peek-at",
     "href": "slides/tai-tools/index.html#sneek-peek-at",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Sneek Peek at 🔥",
     "text": "Sneek Peek at 🔥\n\n\n\n\n“Modular Docs - Mojo🔥.” Accessed August 29, 2023. https://docs.modular.com/mojo/."
   },
   {
     "objectID": "slides/tai-tools/index.html#setting-up-environment",
     "href": "slides/tai-tools/index.html#setting-up-environment",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Setting up Environment",
     "text": "Setting up Environment\n\nFastAI Setup: https://github.com/fastai/fastsetup\nTmux: https://github.com/tmux/tmux/wiki/Getting-Started\ndotfiles: https://github.com/fastai/dotfiles\nFastAI Live Coding: https://forums.fast.ai/t/live-coding-aka-walk-thrus/96617\nFastAI Git, SSH, TMUX: https://forums.fast.ai/t/live-coding-2/96690\nBeginner’s Guide to Mambaforge Installation: https://qbiwan.github.io/fastpages/mamba-installation"
   },
   {
     "objectID": "slides/tai-tools/index.html#python-for-data-analysis",
     "href": "slides/tai-tools/index.html#python-for-data-analysis",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Python for Data Analysis",
     "text": "Python for Data Analysis\n\n\nPractical Deep Learning: https://wesmckinney.com/book/"
   },
   {
     "objectID": "slides/tai-tools/index.html#ai-and-machine-learning",
     "href": "slides/tai-tools/index.html#ai-and-machine-learning",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "AI and Machine Learning",
     "text": "AI and Machine Learning\n\n\nPractical Deep Learning: https://course.fast.ai/ FastAI GitHub: https://github.com/fastai"
   },
   {
     "objectID": "slides/tai-tools/index.html#visual-studio-code",
     "href": "slides/tai-tools/index.html#visual-studio-code",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Visual Studio Code",
     "text": "Visual Studio Code\n\n\nVisual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/"
   },
   {
     "objectID": "slides/tai-tools/index.html#visual-studio-code-plugins",
     "href": "slides/tai-tools/index.html#visual-studio-code-plugins",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Visual Studio Code Plugins",
     "text": "Visual Studio Code Plugins\n\nDraw.io Integration\nDVC Integration\nnbdev VSCode\nJupyter\nQuarto\nRDF Sketch\nStardog/RDF Languages Extension Pack\n\n\nVisual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/"
   },
   {
     "objectID": "slides/tai-tools/index.html#github",
     "href": "slides/tai-tools/index.html#github",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "GitHub",
     "text": "GitHub"
   },
   {
     "objectID": "slides/tai-tools/index.html#homebrewwsl-mac-and-windows",
     "href": "slides/tai-tools/index.html#homebrewwsl-mac-and-windows",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Homebrew/WSL (Mac and Windows)",
     "text": "Homebrew/WSL (Mac and Windows)"
   },
   {
     "objectID": "slides/tai-tools/index.html#markdown",
     "href": "slides/tai-tools/index.html#markdown",
-    "title": "TAI Knowledge Engineering: A Tools Perspective",
+    "title": "Tools for Trusted AI",
     "section": "Markdown",
     "text": "Markdown\n\n\n\n\n\nMarkdown Guide"
   },
@@ -620,7 +620,7 @@
     "href": "slideindex.html",
     "title": "Weekly Nugget Presentations",
     "section": "",
-    "text": "TAI Knowledge Engineering\n\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\n\n\nSep 12, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTAI Knowledge Engineering: A Tools Perspective\n\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "text": "TAI Knowledge Engineering\n\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\n\n\nSep 12, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTools for Trusted AI\n\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTAI Knowledge Engineering: A Tools Perspective\n\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/agents_summer23/index.html#motivation-tatical-ammunition-management-micro-services-tamms",
@@ -1678,5 +1678,12 @@
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Generative AI in Content Creation",
     "text": "Generative AI in Content Creation\nIn creating AI Success Factors: Engineering Trust in Deployments, we harness the power of artificial intelligence in conjunction with human expertise. We utilize advanced Generative AI models such as ChatGPT, Bing Chat, and Anthropic Claude in a guided, iterative process that combines the best of AI and human capabilities.\nOur use of Generative AI begins with the drafting stage. These models, trained on extensive datasets, generate human-like text that matches our specified tone and style, providing us with a solid foundation for each blog post. This allows us to focus on the larger narrative without getting mired in the nitty-gritty details from the outset.\nThe AI-generated drafts, while sophisticated, are just the starting point. We employ a methodology that involves guiding the AI to improve its output. This includes providing more detailed prompts, specifying the format we want the output in, or asking the model to think step-by-step before settling on a conclusion.\nOnce we have a draft that we’re satisfied with, it’s time for human intervention. Our team reviews the AI-generated content, refining and editing it to ensure it maintains the standards of accuracy, relevance, and depth that our readers expect. This process leverages critical human skills of creativity, critical thinking, and domain expertise that even the most advanced AI can’t replicate.\nThis approach exemplifies our vision of a symbiotic relationship between AI and humans. By effectively integrating Generative AI into our content creation process, we not only boost our productivity and efficiency but also demonstrate the practical application of AI technologies in real-world scenarios. Thus, the blog becomes a testament to our commitment to translational research and our pursuit of an AI-integrated future."
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#trusted-ai-frameworks-for-knowledge-engineering",
+    "href": "slides/tai-tools/index.html#trusted-ai-frameworks-for-knowledge-engineering",
+    "title": "Tools for Trusted AI",
+    "section": "Trusted AI Frameworks for Knowledge Engineering",
+    "text": "Trusted AI Frameworks for Knowledge Engineering"
   }
 ]
