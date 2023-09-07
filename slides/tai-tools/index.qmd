@@ -5,7 +5,11 @@ date: "2023-09-05"
 embed-resources: true
 format: 
     revealjs:
+        width: 1600
+        height: 900
+        theme: [simple, ../images/crc.scss]
         slide-number: true
+        logo: ../images/crc-logo-tagline-1-alt.png
 categories: [Tools, Frameworks]
 ---
 
