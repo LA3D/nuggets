@@ -833,18 +833,46 @@
     "text": "FastAI FastBook – “A Production Mindset”\n\n\n\nIntroduction to Jupyter\n02_production.ipynb\nNatural Language (NLP)\n\nGetting started with NLP for absolute beginners"
   },
   {
+    "objectID": "slides/tai-tools/index.html#a-preview",
+    "href": "slides/tai-tools/index.html#a-preview",
+    "title": "Tools for Trusted AI",
+    "section": "A Preview…",
+    "text": "A Preview…"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#visual-studio-code",
+    "href": "slides/tai-tools/index.html#visual-studio-code",
+    "title": "Tools for Trusted AI",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\n\n\nVisual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/"
+  },
+  {
     "objectID": "slides/tai-tools/index.html#peter-only-dev-containers-and-fastai",
     "href": "slides/tai-tools/index.html#peter-only-dev-containers-and-fastai",
     "title": "Tools for Trusted AI",
     "section": "(Peter Only!) “Dev Containers” and FastAI",
-    "text": "(Peter Only!) “Dev Containers” and FastAI\n\nUsing Codespaces to work with the “Practical Deep Learning for Coders” course"
+    "text": "(Peter Only!) “Dev Containers” and FastAI\nUsing Codespaces to work with the “Practical Deep Learning for Coders” course"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#but-dr.-vardeman-i-know-all-of-this",
+    "href": "slides/tai-tools/index.html#but-dr.-vardeman-i-know-all-of-this",
+    "title": "Tools for Trusted AI",
+    "section": "But Dr. Vardeman, I know all of this!",
+    "text": "But Dr. Vardeman, I know all of this!\nGetting Started With LLMs"
   },
   {
     "objectID": "slides/tai-tools/index.html#python",
     "href": "slides/tai-tools/index.html#python",
     "title": "Tools for Trusted AI",
     "section": "Python",
-    "text": "Python\n\n\n\n\n\n\nLearn More: Think Python 2e: https://greenteapress.com/wp/think-python-2e/"
+    "text": "Python\n\n\nLearn More: Think Python 2e: https://greenteapress.com/wp/think-python-2e/"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#python-for-data-analysis",
+    "href": "slides/tai-tools/index.html#python-for-data-analysis",
+    "title": "Tools for Trusted AI",
+    "section": "Python for Data Analysis",
+    "text": "Python for Data Analysis\n\n\n\n\n\n\nPractical Deep Learning: https://wesmckinney.com/book/"
   },
   {
     "objectID": "slides/kg-llamaindex/index.html#kg-construction-pipeline",

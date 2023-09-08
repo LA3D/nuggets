@@ -167,15 +167,25 @@ Accessed August 29, 2023. [https://github.com/fastai/course22/blob/master/06-why
 :::
 :::
 
-::: footer
+## A Preview... {.center}
 
+## Visual Studio Code
+
+![](visual_studio_code.png){.center}
+
+::: footer
+[Visual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/](https://code.visualstudio.com/)
 :::
 
-## (Peter Only!) "Dev Containers" and FastAI
+## (Peter Only!) "Dev Containers" and FastAI {.center}
 
-::: footer
+
 [Using Codespaces to work with the "Practical Deep Learning for Coders" course](https://github.com/fastai/course22/blob/master/getting-started-with-codespaces.md)
-:::
+
+
+## But Dr. Vardeman, I know all of this!
+
+[Getting Started With LLMs](https://www.kaggle.com/code/jhoward/getting-started-with-llms/)
 
 
 
@@ -184,6 +194,13 @@ Accessed August 29, 2023. [https://github.com/fastai/course22/blob/master/06-why
 
 ::: footer
 Learn More: [Think Python 2e: https://greenteapress.com/wp/think-python-2e/](https://greenteapress.com/wp/think-python-2e/)
+:::
+
+## Python for Data Analysis
+![](python_for_data_analysis.png){fig-align="center"}
+
+::: footer
+[Practical Deep Learning: https://wesmckinney.com/book/](https://wesmckinney.com/book/)
 :::
 
 <!--#
@@ -210,23 +227,12 @@ Learn More: [Think Python 2e: https://greenteapress.com/wp/think-python-2e/](htt
 
 
 
-## Python for Data Analysis
-![](python_for_data_analysis.png){fig-align="center"}
-
-::: footer
-[Practical Deep Learning: https://wesmckinney.com/book/](https://wesmckinney.com/book/)
-:::
 
 
 
 
-## Visual Studio Code
 
-![](visual_studio_code.png){.center}
 
-::: footer
-[Visual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/](https://code.visualstudio.com/)
-:::
 
 ## Visual Studio Code Plugins
 
