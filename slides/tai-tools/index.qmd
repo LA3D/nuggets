@@ -2,6 +2,7 @@
 title: " Tools for Trusted AI"
 author: "Charles F Vardeman II"
 date: "2023-09-05"
+modified: "2023-09-08"
 embed-resources: true
 format: 
     revealjs:
@@ -17,7 +18,7 @@ categories: [Tools, Frameworks]
 ## Trusted AI Frameworks for Knowledge Engineering
 
 :::{.r-stack}
-![](graphic_tai-framework-Aug82023.png){.center width="810" height="700"}
+![](graphic_tai-framework-Aug82023.png){.center width="1041" height="900"}
 :::
 
 
@@ -64,6 +65,14 @@ In contrast to responsible AI, trusted AI emphasizes technical system properties
 * **Responsible AI**: This term is broader and refers to the ethical design, development, and deployment of AI. This includes considerations not just of the AI's technical behavior (e.g., is it transparent and accountable?), but also of the socio-economic implications, like job displacement, and broader ethical considerations like data privacy and environmental impact.
 
 
+## Foundational Components for Trusted AI {.smaller}
+
+* **Automate the integration and deployment of code, ensuring quality and operational efficiency.**
+* **Standardized Development Environments: Establish consistent, easily replicable environments to accelerate development and experimentation.**
+* Data & Experiment Versioning: Implement robust systems to track changes in data and experiments, allowing for traceability and repeatability.
+* Model Lifecycle Management: Streamline the training, deployment, monitoring, and updating of machine learning models.
+* Flexibility Across Layers: Design the architecture to allow for different levels of customization, from high-level APIs to low-level controls, facilitating adaptability.
+
 ## Why a Framework?
 
 :::{.r-stack}
@@ -71,19 +80,104 @@ In contrast to responsible AI, trusted AI emphasizes technical system properties
 :::
 
 ::: footer
-[“Course22/06-Why-You-Should-Use-a-Framework.Ipynb at Master · Fastai/Course22.” Accessed August 29, 2023. https://github.com/fastai/course22/blob/master/06-why-you-should-use-a-framework.ipynb.](https://github.com/fastai/course22/blob/master/06-why-you-should-use-a-framework.ipynb)
+“Course22/06-Why-You-Should-Use-a-Framework.Ipynb at Master · Fastai/Course22.” 
+
+Accessed August 29, 2023. [https://github.com/fastai/course22/blob/master/06-why-you-should-use-a-framework.ipynb.](https://github.com/fastai/course22/blob/master/06-why-you-should-use-a-framework.ipynb)
 :::
 
-## Foundational Components for Trusted AI {.smaller}
+## This is a "living" set of slides! {.center}
 
-* Automate the integration and deployment of code, ensuring quality and operational efficiency.
-* Standardized Development Environments: Establish consistent, easily replicable environments to accelerate development and experimentation.
-* Data & Experiment Versioning: Implement robust systems to track changes in data and experiments, allowing for traceability and repeatability.
-* Model Lifecycle Management: Streamline the training, deployment, monitoring, and updating of machine learning models.
-* Flexibility Across Layers: Design the architecture to allow for different levels of customization, from high-level APIs to low-level controls, facilitating adaptability.
+## Purpose: To quickly "Bootstrap" you into a research environment
+:::{.r-stack}
+![](df933692-b431-4d3b-b097-c82941d36de2.jpeg)
+:::
+
+## Our Framework Starts with GitHub
+
+:::{.r-stack}
+![](github-nd-crane.png)
+:::
+
+::: footer
+[GitHub ND-Crane Organization](https://github.com/nd-crane)
+:::
+
+## (Step 1) Create a GitHub Account
+
+:::{.r-stack}
+![](github.png)
+:::
+
+::: footer
+[GitHub](https://github.com)
+:::
+
+## (Step 2) Email GitHub Account ID {.center}
+
+:::{.r-stack}
+**If you are not part of the nd-crane organization.** Email [pmoreira@nd.edu](mailto:pmoreira@nd.edu) your GitHub ID so we can add it to the nd-crane organization
+:::
+
+## (Step 3) Go through GitHub Skills Introduction to GitHub
+
+::: columns
+::: {.column width="30%"}
+- Go Through "First Day on GitHub"
+    - Introduction to GitHub
+    - Communicate using Markdown
+    - GitHub Pages (We will use this with Quarto)
+- First week on GitHub
+    - Review pull requests
+    - Resolve merge conflicts
+    - Release-based workflow
+    - Connect the dots
+    - Code with Codespaces
+:::
+::: {.column width="70%"}
+![](github_skills.png){.center}
+:::
+:::
+
+::: footer
+[GitHub Skills: https://skills.github.com/](https://skills.github.com/)
+:::
+
+## AI and Machine Learning
+![](practical_deep_learning.png){fig-align="center"}
+
+::: footer
+[Practical Deep Learning: https://course.fast.ai/](https://course.fast.ai/)
+
+[FastAI Book ](https://github.com/fastai/fastbook)
+
+[FastAI GitHub: https://github.com/fastai](https://github.com/fastai)
+:::
 
 
-## This is a "living" set of slides! {.centerols}
+## FastAI FastBook -- "A Production Mindset"
+::: columns
+::: {.column width="30%"}
+- [Introduction to Jupyter](https://colab.research.google.com/github/fastai/fastbook/blob/master/app_jupyter.ipynb)
+- [02_production.ipynb](https://colab.research.google.com/github/fastai/fastbook/blob/master/02_production.ipynb)
+- [Natural Language (NLP)](https://course.fast.ai/Lessons/lesson4.html)
+    - [Getting started with NLP for absolute beginners](https://www.kaggle.com/code/jhoward/getting-started-with-nlp-for-absolute-beginners)
+:::
+::: {.column width="70%"}
+![](fastbook.png)
+:::
+:::
+
+::: footer
+
+:::
+
+## (Peter Only!) "Dev Containers" and FastAI
+
+::: footer
+[Using Codespaces to work with the "Practical Deep Learning for Coders" course](https://github.com/fastai/course22/blob/master/getting-started-with-codespaces.md)
+:::
+
+
 
 ## Python
 ![](think_python.png){fig-align="center"}
@@ -92,7 +186,7 @@ In contrast to responsible AI, trusted AI emphasizes technical system properties
 Learn More: [Think Python 2e: https://greenteapress.com/wp/think-python-2e/](https://greenteapress.com/wp/think-python-2e/)
 :::
 
-
+<!--#
 ## Sneek Peek at 🔥
 
 :::{.r-stack}
@@ -102,6 +196,8 @@ Learn More: [Think Python 2e: https://greenteapress.com/wp/think-python-2e/](htt
 ::: footer
 [“Modular Docs - Mojo🔥.” Accessed August 29, 2023. https://docs.modular.com/mojo/.](https://docs.modular.com/mojo/)
 :::
+
+
 
 ## Setting up Environment
 
@@ -121,13 +217,7 @@ Learn More: [Think Python 2e: https://greenteapress.com/wp/think-python-2e/](htt
 [Practical Deep Learning: https://wesmckinney.com/book/](https://wesmckinney.com/book/)
 :::
 
-## AI and Machine Learning
-![](practical_deep_learning.png){fig-align="center"}
 
-::: footer
-[Practical Deep Learning: https://course.fast.ai/](https://course.fast.ai/)
-[FastAI GitHub: https://github.com/fastai](https://github.com/fastai)
-:::
 
 
 ## Visual Studio Code
@@ -152,13 +242,10 @@ Learn More: [Think Python 2e: https://greenteapress.com/wp/think-python-2e/](htt
 [Visual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/](https://code.visualstudio.com/)
 :::
 
-## GitHub
-
-## Homebrew/WSL (Mac and Windows)
-
 ## Markdown
 ![](markdown.png)
 
 ::: footer
 ![Markdown Guide](https://www.markdownguide.org/)
 :::
+-->

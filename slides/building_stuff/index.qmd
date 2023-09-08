@@ -333,7 +333,7 @@ Accessed: Sep. 04, 2023. \[Online\]. Available: <https://github.com/ShishirPatil
 
 JSON-Grammar
 
-```         
+```
 root   ::= object
 value  ::= object | array | string | number | ("true" | "false" | "null") ws
 
