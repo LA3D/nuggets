@@ -1,0 +1,80 @@
+---
+title: "Data Centric AI"
+author: "Charles F Vardeman II"
+date: "2023-09-05"
+modified: "2023-09-08"
+embed-resources: true
+format: 
+    revealjs:
+        width: 1600
+        height: 900
+        theme: [simple, ../images/crc.scss]
+        slide-number: true
+        logo: ../images/crc-logo-tagline-1-alt.png
+categories: [TrustedAI, Data Centric AI]
+---
+
+## How do we develop a *curriculum* for training large language models? {.center}
+
+## The "Pile"
+
+## LLama: Open and Efficient Foundation Language Models
+
+::: columns
+::: {.column width="50%"}
+![](../nuggets_review/LLama.png)
+:::
+
+::: {.column width="50%"}
+![](../nuggets_review/LLama_data.png)
+:::
+:::
+
+::: footer
+Touvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux,
+
+Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.”
+
+arXiv, February 27, 2023. [https://doi.org/10.48550/arXiv.2302.13971.](https://doi.org/10.48550/arXiv.2302.13971)
+:::
+
+## (GPT-4) "Sparks of AGI"?
+
+:::{.r-stack}
+![](../nuggets_review/youtube-sparks.png){.center width="986" height="750"}
+:::
+
+::: footer
+Sparks of AGI: Early Experiments with GPT-4, 2023.
+
+[https://www.youtube.com/watch?v=qbIk7-JPB2c.](https://www.youtube.com/watch?v=qbIk7-JPB2c)
+:::
+
+
+## Textbooks Are All You Need!
+
+:::{.r-stack}
+![](textbooks_youtube.png){.center width="1279" height="850"}
+:::
+
+::: footer
+Textbooks Are All You Need, 2023. 
+
+[https://www.youtube.com/watch?v=24O1KcIO3FM.](https://www.youtube.com/watch?v=24O1KcIO3FM.)
+:::
+
+## Textbooks Are All You Need!
+
+::: {.r-stack}
+![](textbooks_1.png){.center width="1418" height="758"}
+:::
+
+::: footer
+Gunasekar, Suriya, Yi Zhang, Jyoti Aneja, Caio César Teodoro Mendes,
+
+Allie Del Giorno, Sivakanth Gopi, Mojan Javaheripi, et al.
+
+“Textbooks Are All You Need.” arXiv, June 20, 2023.
+
+[http://arxiv.org/abs/2306.11644.](http://arxiv.org/abs/2306.11644)
+:::

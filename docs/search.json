@@ -697,7 +697,7 @@
     "href": "slideindex.html",
     "title": "Weekly Nugget Presentations",
     "section": "",
-    "text": "Tools for Trusted AI\n\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "text": "Data Centric AI\n\n\n\n\n\n\n\nTrustedAI\n\n\nData Centric AI\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTools for Trusted AI\n\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -1594,5 +1594,54 @@
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Generative AI in Content Creation",
     "text": "Generative AI in Content Creation\nIn creating AI Success Factors: Engineering Trust in Deployments, we harness the power of artificial intelligence in conjunction with human expertise. We utilize advanced Generative AI models such as ChatGPT, Bing Chat, and Anthropic Claude in a guided, iterative process that combines the best of AI and human capabilities.\nOur use of Generative AI begins with the drafting stage. These models, trained on extensive datasets, generate human-like text that matches our specified tone and style, providing us with a solid foundation for each blog post. This allows us to focus on the larger narrative without getting mired in the nitty-gritty details from the outset.\nThe AI-generated drafts, while sophisticated, are just the starting point. We employ a methodology that involves guiding the AI to improve its output. This includes providing more detailed prompts, specifying the format we want the output in, or asking the model to think step-by-step before settling on a conclusion.\nOnce we have a draft that we’re satisfied with, it’s time for human intervention. Our team reviews the AI-generated content, refining and editing it to ensure it maintains the standards of accuracy, relevance, and depth that our readers expect. This process leverages critical human skills of creativity, critical thinking, and domain expertise that even the most advanced AI can’t replicate.\nThis approach exemplifies our vision of a symbiotic relationship between AI and humans. By effectively integrating Generative AI into our content creation process, we not only boost our productivity and efficiency but also demonstrate the practical application of AI technologies in real-world scenarios. Thus, the blog becomes a testament to our commitment to translational research and our pursuit of an AI-integrated future."
+  },
+  {
+    "objectID": "slides/data-ai/index.html#gpt-4-sparks-of-agi",
+    "href": "slides/data-ai/index.html#gpt-4-sparks-of-agi",
+    "title": "Data Centric AI",
+    "section": "(GPT-4) “Sparks of AGI”?",
+    "text": "(GPT-4) “Sparks of AGI”?\n\n\n\n\nSparks of AGI: Early Experiments with GPT-4, 2023.\nhttps://www.youtube.com/watch?v=qbIk7-JPB2c."
+  },
+  {
+    "objectID": "slides/data-ai/index.html#how-do-we-develop-a-curriculum-for-training-large-language-model",
+    "href": "slides/data-ai/index.html#how-do-we-develop-a-curriculum-for-training-large-language-model",
+    "title": "Data Centric AI",
+    "section": "How do we develop a curriculum for training large language model",
+    "text": "How do we develop a curriculum for training large language model"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#the-pile",
+    "href": "slides/data-ai/index.html#the-pile",
+    "title": "Data Centric AI",
+    "section": "The “Pile”",
+    "text": "The “Pile”"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#llama-open-and-efficient-foundation-language-models",
+    "href": "slides/data-ai/index.html#llama-open-and-efficient-foundation-language-models",
+    "title": "Data Centric AI",
+    "section": "LLama: Open and Efficient Foundation Language Models",
+    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux,\nTimothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.”\narXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
+  },
+  {
+    "objectID": "slides/data-ai/index.html#how-do-we-develop-a-curriculum-for-training-large-language-models",
+    "href": "slides/data-ai/index.html#how-do-we-develop-a-curriculum-for-training-large-language-models",
+    "title": "Data Centric AI",
+    "section": "How do we develop a curriculum for training large language models?",
+    "text": "How do we develop a curriculum for training large language models?"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#textbooks-are-all-you-need",
+    "href": "slides/data-ai/index.html#textbooks-are-all-you-need",
+    "title": "Data Centric AI",
+    "section": "Textbooks Are All You Need!",
+    "text": "Textbooks Are All You Need!\n\n\n\n\nTextbooks Are All You Need, 2023.\nhttps://www.youtube.com/watch?v=24O1KcIO3FM."
+  },
+  {
+    "objectID": "slides/data-ai/index.html#textbooks-are-all-you-need-1",
+    "href": "slides/data-ai/index.html#textbooks-are-all-you-need-1",
+    "title": "Data Centric AI",
+    "section": "Textbooks Are All You Need!",
+    "text": "Textbooks Are All You Need!\n\n\n\n\nGunasekar, Suriya, Yi Zhang, Jyoti Aneja, Caio César Teodoro Mendes,\nAllie Del Giorno, Sivakanth Gopi, Mojan Javaheripi, et al.\n“Textbooks Are All You Need.” arXiv, June 20, 2023.\nhttp://arxiv.org/abs/2306.11644."
   }
 ]
