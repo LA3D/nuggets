@@ -15,6 +15,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/frameworks-reflection/index.html",
       "/posts/welcome/index.html"
     ]
   }

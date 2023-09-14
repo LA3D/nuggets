@@ -14,6 +14,106 @@ format:
 categories: [TrustedAI, Data Centric AI]
 ---
 
+## Trusted AI Frameworks for Knowledge Engineering
+
+:::{.r-stack}
+![](../tai-tools/graphic_tai-framework-Aug82023.png){.center width="1041" height="900"}
+:::
+
+## Foundational Components for Trusted AI {.smaller}
+
+* Automate the integration and deployment of code, ensuring quality and operational efficiency.
+* Standardized Development Environments: Establish consistent, easily replicable environments to accelerate development and experimentation.
+* **Data & Experiment Versioning: Implement robust systems to track changes in data and experiments, allowing for traceability and repeatability.**
+* Model Lifecycle Management: Streamline the training, deployment, monitoring, and updating of machine learning models.
+* Flexibility Across Layers: Design the architecture to allow for different levels of customization, from high-level APIs to low-level controls, facilitating adaptability.
+
+## Data Centric AI {.center}
+
+::: {.r-stack}
+![](dci.png){.center width="688" height="800"}
+:::
+
+::: footer
+[Data-centric AI Resource Hub](https://datacentricai.org/)
+:::
+
+
+## Aside: Lessons from the Semantic Web?
+
+::: columns
+
+::: {.column width="50%"}
+![](semweb-dci.png)
+:::
+
+::: {.column width="50%"}
+![](semweb-dci-kg.png)
+:::
+
+:::
+
+::: footer
+[“38971912 · Towards a Framework for Data Excellence in Data-Centric AI: Lessons from the Semantic Web,” SlidesLive.](https://slideslive.com/embed/presentation/38971912?embed_parent_url=https%3A%2F%2Fnips.cc%2Fvirtual%2F2021%2F38256&embed_origin=https%3A%2F%2Fnips.cc&embed_container_id=presentation-embed-38971912&auto_load=true&auto_play=false&zoom_ratio=&disable_fullscreen=false&locale=en&vertical_enabled=true&vertical_enabled_on_mobile=false&allow_hidden_controls_when_paused=true&fit_to_viewport=true&custom_user_id=&user_uuid=7da28f7a-e57d-4f0a-bb85-d4bec6907f54) (accessed Sep. 14, 2023).
+
+:::
+
+## DVC and Data Centric AI?
+Data-centric AI is an emerging concept that emphasizes the importance of data quality and data engineering in building AI systems. Data-centric AI aims to improve the performance and robustness of AI models by systematically characterizing, evaluating, and monitoring the underlying data used to train and evaluate them⁴. Data-centric AI also involves using data-driven methods and tools to inform the considerations at each stage of the ML pipeline⁴.
+
+One of the tools that can help with data-centric AI is Data Version Control (DVC), which is a system for versioning machine learning models, data sets, and intermediate files. DVC connects them with code, and uses various storage options to store file contents³. DVC allows users to track and reproduce the experiments, share data and models, and collaborate effectively on AI projects³.
+
+If you want to learn more about data-centric AI, you can check out some of the web search results I found for you. For example, you can read a survey paper that discusses the necessity, goals, methods, challenges, and benchmarks of data-centric AI¹. You can also watch a video lecture by Andrew Ng, who popularized the term data-centric AI⁶. Or you can explore a website that provides a checklist and resources for applying data-centric AI in practice⁴. I hope this helps you understand what data-centric AI is and how DVC can be useful for it. 😊
+
+:::Footer
+
+Source: Conversation with Bing, 9/14/2023
+
+(1) [What is Data-Centric AI? - van der Schaar Lab.](https://www.vanderschaar-lab.com/dc-check/what-is-data-centric-ai/).
+
+(2) [Data Version Control · DVC.](https://dvc.org/).
+
+(3) [[2303.10158] Data-centric Artificial Intelligence: A Survey - arXiv.org.](https://arxiv.org/abs/2303.10158).
+
+(4) [The Principles of Data-Centric AI (DCAI) - arXiv.org.](https://arxiv.org/pdf/2211.14611).
+
+(5) [What is Data-Centric Architecture in AI? | Simplilearn.](https://www.simplilearn.com/what-is-data-centric-architecture-in-ai-article).
+
+:::
+
+## Data Version Control (DVC)
+
+::: {.r-stack}
+![](dvc.png){.center width="757" height="800"}
+:::
+
+::: footer
+[Data Version Control - DVC](https://dvc.org/)
+:::
+
+## Hugging Face
+
+::: {.r-stack}
+![](dci-huggingface.png){.center width="914" height="800"}
+:::
+
+::: footer
+[The Hugging Face 🤗 Data Measurements Tool - Data-centric AI Resource Hub (datacentricai.org)](https://datacentricai.org/blog/the-hugging-face-data-measurements-tool/)
+
+[Introducing the Data Measurements Tool: an Interactive Tool for Looking at Datasets (huggingface.co)](https://huggingface.co/blog/data-measurements-tool)
+
+[DataMeasurementsTool - a Hugging Face Space by huggingface](https://huggingface.co/spaces/huggingface/data-measurements-tool)
+:::
+
+## DVC and Huggingface Integration (Team Frameworks -- Peter)
+
+- [Share a dataset to the Hub (huggingface.co)](https://huggingface.co/docs/datasets/upload_dataset)
+- [import: from external git does not import lfs-tracked file content · Issue #9175 · iterative/dvc (github.com)](https://github.com/iterative/dvc/issues/9175)
+- [How to connect Huggingface datasets as a dvc remote · iterative/dvc · Discussion #8267 (github.com)](https://github.com/iterative/dvc/discussions/8267)
+- [AI BoMs from our SBoM Analysis](https://nd-crane.github.io/sbom-analysis/ai_specifications/hugging_face_model_cards.html)
+
+## Motivation... {.center}
+
 ## How do we develop a *curriculum* for training large language models? {.center}
 
 ## The "Pile"
@@ -77,4 +177,15 @@ Allie Del Giorno, Sivakanth Gopi, Mojan Javaheripi, et al.
 “Textbooks Are All You Need.” arXiv, June 20, 2023.
 
 [http://arxiv.org/abs/2306.11644.](http://arxiv.org/abs/2306.11644)
+:::
+
+
+## Textbooks are all you need II: phi-1.5
+
+::: {.r-stack}
+![](textbooks2.png)
+:::
+
+::: footer
+Y. Li, S. Bubeck, R. Eldan, A. Del Giorno, S. Gunasekar, and Y. T. Lee, “Textbooks Are All You Need II: phi-1.5 technical report.” arXiv, Sep. 11, 2023. Accessed: Sep. 12, 2023. [Online]. Available: [http://arxiv.org/abs/2309.05463](http://arxiv.org/abs/2309.05463)
 :::

@@ -252,6 +252,636 @@
     "text": "Prompt Enginnering Guide\n\n\nLearn More: Prompt Engineering Guide"
   },
   {
+    "objectID": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
+    "href": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
+    "title": "KG Construction",
+    "section": "KG Construction Pipeline",
+    "text": "KG Construction Pipeline"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
+    "title": "KG Construction",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
+    "title": "KG Construction",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-2",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-2",
+    "title": "KG Construction",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-3",
+    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-3",
+    "title": "KG Construction",
+    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
+    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#llm-kg-construction-frameworks-llamaindex",
+    "href": "slides/kg-llamaindex/index.html#llm-kg-construction-frameworks-llamaindex",
+    "title": "KG Construction",
+    "section": "LLM KG Construction Frameworks Llamaindex",
+    "text": "LLM KG Construction Frameworks Llamaindex\n\nLearn more: Llamaindex"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#rebel-large-model",
+    "href": "slides/kg-llamaindex/index.html#rebel-large-model",
+    "title": "KG Construction",
+    "section": "Rebel Large Model",
+    "text": "Rebel Large Model\n#| echo: true\nfrom transformers import pipeline\n\ntriplet_extractor = pipeline('text2text-generation', model='Babelscape/rebel-large', tokenizer='Babelscape/rebel-large')\n# We need to use the tokenizer manually since we need special tokens.\nextracted_text = triplet_extractor.tokenizer.batch_decode([triplet_extractor(\"Punta Cana is a resort town in the municipality of Higuey, in La Altagracia Province, the eastern most province of the Dominican Republic\", return_tensors=True, return_text=False)[0][\"generated_token_ids\"]])\nprint(extracted_text[0])\n# Function to parse the generated text and extract the triplets\ndef extract_triplets(text):\n    triplets = []\n    relation, subject, relation, object_ = '', '', '', ''\n    text = text.strip()\n    current = 'x'\n    for token in text.replace(\"&lt;s&gt;\", \"\").replace(\"&lt;pad&gt;\", \"\").replace(\"&lt;/s&gt;\", \"\").split():\n        if token == \"&lt;triplet&gt;\":\n            current = 't'\n            if relation != '':\n                triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n                relation = ''\n            subject = ''\n        elif token == \"&lt;subj&gt;\":\n            current = 's'\n            if relation != '':\n                triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n            object_ = ''\n        elif token == \"&lt;obj&gt;\":\n            current = 'o'\n            relation = ''\n        else:\n            if current == 't':\n                subject += ' ' + token\n            elif current == 's':\n                object_ += ' ' + token\n            elif current == 'o':\n                relation += ' ' + token\n    if subject != '' and relation != '' and object_ != '':\n        triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n    return triplets\nextracted_triplets = extract_triplets(extracted_text[0])\nprint(extracted_triplets)\n\nLearn more: Rebel Large"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#llamaindex-with-rebel",
+    "href": "slides/kg-llamaindex/index.html#llamaindex-with-rebel",
+    "title": "KG Construction",
+    "section": "LlamaIndex with Rebel",
+    "text": "LlamaIndex with Rebel\n\n\nLearn more: Llamaindex with Rebel Colab Notebook"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#llamaindex-with-rebel-and-neo4j",
+    "href": "slides/kg-llamaindex/index.html#llamaindex-with-rebel-and-neo4j",
+    "title": "KG Construction",
+    "section": "LlamaIndex with Rebel and Neo4j",
+    "text": "LlamaIndex with Rebel and Neo4j\n\n\nLearn more: Neo4j Graph Store\nGitHub: Tomaz Bratanic"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
+    "href": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
+    "title": "KG Construction",
+    "section": "Weaviate With Llama 2 and Llamaindex",
+    "text": "Weaviate With Llama 2 and Llamaindex\n\n\nLearn more: Welcome to the quick notebook on using Llama 2"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs",
+    "href": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs",
+    "title": "KG Construction",
+    "section": "Weaviate “Knowledge Graphs”",
+    "text": "Weaviate “Knowledge Graphs”\n\n\nExample: NASA Graph-Enabled Vector Search"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs-1",
+    "href": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs-1",
+    "title": "KG Construction",
+    "section": "Weaviate “Knowledge Graphs”",
+    "text": "Weaviate “Knowledge Graphs”\n\n\nExample: NASA Graph-Enabled Vector Search"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#aws-neptune",
+    "href": "slides/kg-llamaindex/index.html#aws-neptune",
+    "title": "KG Construction",
+    "section": "AWS Neptune",
+    "text": "AWS Neptune\n\n\nLearn More: Amazon Neptune"
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#amazon-science-refined",
+    "href": "slides/kg-llamaindex/index.html#amazon-science-refined",
+    "title": "KG Construction",
+    "section": "Amazon Science ReFinED",
+    "text": "Amazon Science ReFinED\n\n\nPaper: ReFinED: An Efficient Zero-shot-capable Approach to End-to-End Entity Linking\nPaper: Improving Entity Disambiguation by Reasoning over a Knowledge Base\nGitHub: ReFinED is an efficient and accurate entity linking (EL) system."
+  },
+  {
+    "objectID": "slides/kg-llamaindex/index.html#amazon-science-kgqa",
+    "href": "slides/kg-llamaindex/index.html#amazon-science-kgqa",
+    "title": "KG Construction",
+    "section": "Amazon Science KGQA",
+    "text": "Amazon Science KGQA\n\n\nWebsite: Language models as controlled natural language semantic parsers for knowledge graph question answering GitHub: Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#trusted-ai-frameworks-for-knowledge-engineering",
+    "href": "slides/tai-tools/index.html#trusted-ai-frameworks-for-knowledge-engineering",
+    "title": "Tools for Trusted AI",
+    "section": "Trusted AI Frameworks for Knowledge Engineering",
+    "text": "Trusted AI Frameworks for Knowledge Engineering"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-chatgpt",
+    "href": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-chatgpt",
+    "title": "Tools for Trusted AI",
+    "section": "What is Trusted AI – Let’s ask ChatGPT!",
+    "text": "What is Trusted AI – Let’s ask ChatGPT!\nTrusted AI encompasses systems that are not only ethically aligned but also reliable, robust, secure, transparent, and accountable. While ethical considerations form a crucial aspect, Trusted AI extends to include the technical quality and performance of the system. The goal is to create AI technologies that various stakeholders—including users, developers, businesses, and regulators—can trust to behave as intended and to meet specific performance, security, and governance standards.\nThe concept integrates aspects from multiple domains, such as:\n\nEthics: Fairness, transparency, and accountability.\nReliability: Consistent and dependable system performance.\nRobustness: Ability to handle unexpected inputs or conditions without failing.\nSecurity: Measures to protect data and models from unauthorized access and tampering.\nTransparency: Understandability of system decisions and actions.\nAccountability: Mechanisms to trace actions back to the responsible entities for evaluation and auditing.\n\nIn this broader context, “trust” is a multidimensional construct. It’s not just about being ethical but about fulfilling a wide range of expectations and standards that make a system worthy of trust."
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-claude-2",
+    "href": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-claude-2",
+    "title": "Tools for Trusted AI",
+    "section": "What is Trusted AI – Let’s ask Claude 2!",
+    "text": "What is Trusted AI – Let’s ask Claude 2!\nTrusted AI refers to artificial intelligence systems that are designed and validated to be reliable, safe and technically robust. Key principles of trusted AI include:\n\nReliability - AI systems consistently produce accurate, reproducible results that can be externally validated. Models are unbiased and decisions explainable.\nSafety and security - AI systems are developed using secure software practices and are resilient against attacks, hacking or misuse. They protect privacy and confidentiality.\nExternal oversight - There are independent audits and ongoing monitoring of AI systems to ensure transparency and identify issues. Public disclosure builds trust.\nHuman control - Humans remain fully in control of AI systems, which augment human intelligence rather than replace it. Autonomous systems have human supervision.\nProportionality - AI capabilities do not exceed what is appropriate for the task. AI is not used when less advanced technology suffices.\nTechnical robustness - AI systems are thoroughly tested for stability, scalability and corner cases. Failsafes prevent glitches or unintended harm.\n\nIn contrast to responsible AI, trusted AI emphasizes technical system properties over organizational processes. It focuses on engineering reliable, safe and externally validated AI, rather than holistic internal governance."
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#our-evolving-vision-of-trusted-ai",
+    "href": "slides/tai-tools/index.html#our-evolving-vision-of-trusted-ai",
+    "title": "Tools for Trusted AI",
+    "section": "Our, evolving vision of Trusted AI",
+    "text": "Our, evolving vision of Trusted AI"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#responsible-ai",
+    "href": "slides/tai-tools/index.html#responsible-ai",
+    "title": "Tools for Trusted AI",
+    "section": "Responsible AI",
+    "text": "Responsible AI\n\nResponsible AI: This term is broader and refers to the ethical design, development, and deployment of AI. This includes considerations not just of the AI’s technical behavior (e.g., is it transparent and accountable?), but also of the socio-economic implications, like job displacement, and broader ethical considerations like data privacy and environmental impact."
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#foundational-components-for-trusted-ai",
+    "href": "slides/tai-tools/index.html#foundational-components-for-trusted-ai",
+    "title": "Tools for Trusted AI",
+    "section": "Foundational Components for Trusted AI",
+    "text": "Foundational Components for Trusted AI\n\nAutomate the integration and deployment of code, ensuring quality and operational efficiency.\nStandardized Development Environments: Establish consistent, easily replicable environments to accelerate development and experimentation.\nData & Experiment Versioning: Implement robust systems to track changes in data and experiments, allowing for traceability and repeatability.\nModel Lifecycle Management: Streamline the training, deployment, monitoring, and updating of machine learning models.\nFlexibility Across Layers: Design the architecture to allow for different levels of customization, from high-level APIs to low-level controls, facilitating adaptability."
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#why-a-framework",
+    "href": "slides/tai-tools/index.html#why-a-framework",
+    "title": "Tools for Trusted AI",
+    "section": "Why a Framework?",
+    "text": "Why a Framework?\n\n\n\n\n“Course22/06-Why-You-Should-Use-a-Framework.Ipynb at Master · Fastai/Course22.”\nAccessed August 29, 2023. https://github.com/fastai/course22/blob/master/06-why-you-should-use-a-framework.ipynb."
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#this-is-a-living-set-of-slides",
+    "href": "slides/tai-tools/index.html#this-is-a-living-set-of-slides",
+    "title": "Tools for Trusted AI",
+    "section": "This is a “living” set of slides!",
+    "text": "This is a “living” set of slides!"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#purpose-to-quickly-bootstrap-you-into-a-research-environment",
+    "href": "slides/tai-tools/index.html#purpose-to-quickly-bootstrap-you-into-a-research-environment",
+    "title": "Tools for Trusted AI",
+    "section": "Purpose: To quickly “Bootstrap” you into a research environment",
+    "text": "Purpose: To quickly “Bootstrap” you into a research environment"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#our-framework-starts-with-github",
+    "href": "slides/tai-tools/index.html#our-framework-starts-with-github",
+    "title": "Tools for Trusted AI",
+    "section": "Our Framework Starts with GitHub",
+    "text": "Our Framework Starts with GitHub\n\n\n\n\nGitHub ND-Crane Organization"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#step-1-create-a-github-account",
+    "href": "slides/tai-tools/index.html#step-1-create-a-github-account",
+    "title": "Tools for Trusted AI",
+    "section": "(Step 1) Create a GitHub Account",
+    "text": "(Step 1) Create a GitHub Account\n\n\n\n\nGitHub"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#step-2-email-github-account-id",
+    "href": "slides/tai-tools/index.html#step-2-email-github-account-id",
+    "title": "Tools for Trusted AI",
+    "section": "(Step 2) Email GitHub Account ID",
+    "text": "(Step 2) Email GitHub Account ID\n\nIf you are not part of the nd-crane organization. Email pmoreira@nd.edu your GitHub ID so we can add it to the nd-crane organization"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#step-3-go-through-github-skills-introduction-to-github",
+    "href": "slides/tai-tools/index.html#step-3-go-through-github-skills-introduction-to-github",
+    "title": "Tools for Trusted AI",
+    "section": "(Step 3) Go through GitHub Skills Introduction to GitHub",
+    "text": "(Step 3) Go through GitHub Skills Introduction to GitHub\n\n\n\nGo Through “First Day on GitHub”\n\nIntroduction to GitHub\nCommunicate using Markdown\nGitHub Pages (We will use this with Quarto)\n\nFirst week on GitHub\n\nReview pull requests\nResolve merge conflicts\nRelease-based workflow\nConnect the dots\nCode with Codespaces\n\n\n\n\n\n\n\nGitHub Skills: https://skills.github.com/"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#ai-and-machine-learning",
+    "href": "slides/tai-tools/index.html#ai-and-machine-learning",
+    "title": "Tools for Trusted AI",
+    "section": "AI and Machine Learning",
+    "text": "AI and Machine Learning\n\n\nPractical Deep Learning: https://course.fast.ai/\nFastAI Book\nFastAI GitHub: https://github.com/fastai"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#fastai-fastbook-a-production-mindset",
+    "href": "slides/tai-tools/index.html#fastai-fastbook-a-production-mindset",
+    "title": "Tools for Trusted AI",
+    "section": "FastAI FastBook – “A Production Mindset”",
+    "text": "FastAI FastBook – “A Production Mindset”\n\n\n\nIntroduction to Jupyter\n02_production.ipynb\nNatural Language (NLP)\n\nGetting started with NLP for absolute beginners"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#a-preview",
+    "href": "slides/tai-tools/index.html#a-preview",
+    "title": "Tools for Trusted AI",
+    "section": "A Preview…",
+    "text": "A Preview…"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#visual-studio-code",
+    "href": "slides/tai-tools/index.html#visual-studio-code",
+    "title": "Tools for Trusted AI",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\n\n\nVisual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#peter-only-dev-containers-and-fastai",
+    "href": "slides/tai-tools/index.html#peter-only-dev-containers-and-fastai",
+    "title": "Tools for Trusted AI",
+    "section": "(Peter Only!) “Dev Containers” and FastAI",
+    "text": "(Peter Only!) “Dev Containers” and FastAI\nUsing Codespaces to work with the “Practical Deep Learning for Coders” course"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#but-dr.-vardeman-i-know-all-of-this",
+    "href": "slides/tai-tools/index.html#but-dr.-vardeman-i-know-all-of-this",
+    "title": "Tools for Trusted AI",
+    "section": "But Dr. Vardeman, I know all of this!",
+    "text": "But Dr. Vardeman, I know all of this!\nGetting Started With LLMs"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#python",
+    "href": "slides/tai-tools/index.html#python",
+    "title": "Tools for Trusted AI",
+    "section": "Python",
+    "text": "Python\n\n\nLearn More: Think Python 2e: https://greenteapress.com/wp/think-python-2e/"
+  },
+  {
+    "objectID": "slides/tai-tools/index.html#python-for-data-analysis",
+    "href": "slides/tai-tools/index.html#python-for-data-analysis",
+    "title": "Tools for Trusted AI",
+    "section": "Python for Data Analysis",
+    "text": "Python for Data Analysis\n\n\n\n\n\n\nPractical Deep Learning: https://wesmckinney.com/book/"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#trusted-ai-frameworks-for-knowledge-engineering",
+    "href": "slides/data-ai/index.html#trusted-ai-frameworks-for-knowledge-engineering",
+    "title": "Data Centric AI",
+    "section": "Trusted AI Frameworks for Knowledge Engineering",
+    "text": "Trusted AI Frameworks for Knowledge Engineering"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#foundational-components-for-trusted-ai",
+    "href": "slides/data-ai/index.html#foundational-components-for-trusted-ai",
+    "title": "Data Centric AI",
+    "section": "Foundational Components for Trusted AI",
+    "text": "Foundational Components for Trusted AI\n\nAutomate the integration and deployment of code, ensuring quality and operational efficiency.\nStandardized Development Environments: Establish consistent, easily replicable environments to accelerate development and experimentation.\nData & Experiment Versioning: Implement robust systems to track changes in data and experiments, allowing for traceability and repeatability.\nModel Lifecycle Management: Streamline the training, deployment, monitoring, and updating of machine learning models.\nFlexibility Across Layers: Design the architecture to allow for different levels of customization, from high-level APIs to low-level controls, facilitating adaptability."
+  },
+  {
+    "objectID": "slides/data-ai/index.html#data-centric-ai",
+    "href": "slides/data-ai/index.html#data-centric-ai",
+    "title": "Data Centric AI",
+    "section": "Data Centric AI",
+    "text": "Data Centric AI\n\n\n\n\nData-centric AI Resource Hub"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#aside-lessons-from-the-semantic-web",
+    "href": "slides/data-ai/index.html#aside-lessons-from-the-semantic-web",
+    "title": "Data Centric AI",
+    "section": "Aside: Lessons from the Semantic Web?",
+    "text": "Aside: Lessons from the Semantic Web?\n\n\n\n\n\n\n\n\n“38971912 · Towards a Framework for Data Excellence in Data-Centric AI: Lessons from the Semantic Web,” SlidesLive. (accessed Sep. 14, 2023)."
+  },
+  {
+    "objectID": "slides/data-ai/index.html#dvc-and-data-centric-ai",
+    "href": "slides/data-ai/index.html#dvc-and-data-centric-ai",
+    "title": "Data Centric AI",
+    "section": "DVC and Data Centric AI?",
+    "text": "DVC and Data Centric AI?\nData-centric AI is an emerging concept that emphasizes the importance of data quality and data engineering in building AI systems. Data-centric AI aims to improve the performance and robustness of AI models by systematically characterizing, evaluating, and monitoring the underlying data used to train and evaluate them⁴. Data-centric AI also involves using data-driven methods and tools to inform the considerations at each stage of the ML pipeline⁴.\nOne of the tools that can help with data-centric AI is Data Version Control (DVC), which is a system for versioning machine learning models, data sets, and intermediate files. DVC connects them with code, and uses various storage options to store file contents³. DVC allows users to track and reproduce the experiments, share data and models, and collaborate effectively on AI projects³.\nIf you want to learn more about data-centric AI, you can check out some of the web search results I found for you. For example, you can read a survey paper that discusses the necessity, goals, methods, challenges, and benchmarks of data-centric AI¹. You can also watch a video lecture by Andrew Ng, who popularized the term data-centric AI⁶. Or you can explore a website that provides a checklist and resources for applying data-centric AI in practice⁴. I hope this helps you understand what data-centric AI is and how DVC can be useful for it. 😊\n\nSource: Conversation with Bing, 9/14/2023\n\nWhat is Data-Centric AI? - van der Schaar Lab..\nData Version Control · DVC..\n[2303.10158] Data-centric Artificial Intelligence: A Survey - arXiv.org..\nThe Principles of Data-Centric AI (DCAI) - arXiv.org..\nWhat is Data-Centric Architecture in AI? | Simplilearn.."
+  },
+  {
+    "objectID": "slides/data-ai/index.html#data-version-control-dvc",
+    "href": "slides/data-ai/index.html#data-version-control-dvc",
+    "title": "Data Centric AI",
+    "section": "Data Version Control (DVC)",
+    "text": "Data Version Control (DVC)\n\n\n\n\nData Version Control - DVC"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#hugging-face",
+    "href": "slides/data-ai/index.html#hugging-face",
+    "title": "Data Centric AI",
+    "section": "Hugging Face",
+    "text": "Hugging Face\n\n\n\n\nThe Hugging Face 🤗 Data Measurements Tool - Data-centric AI Resource Hub (datacentricai.org)\nIntroducing the Data Measurements Tool: an Interactive Tool for Looking at Datasets (huggingface.co)\nDataMeasurementsTool - a Hugging Face Space by huggingface"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#dvc-and-huggingface-integration-team-frameworks-peter",
+    "href": "slides/data-ai/index.html#dvc-and-huggingface-integration-team-frameworks-peter",
+    "title": "Data Centric AI",
+    "section": "DVC and Huggingface Integration (Team Frameworks – Peter)",
+    "text": "DVC and Huggingface Integration (Team Frameworks – Peter)\n\nShare a dataset to the Hub (huggingface.co)\nimport: from external git does not import lfs-tracked file content · Issue #9175 · iterative/dvc (github.com)\nHow to connect Huggingface datasets as a dvc remote · iterative/dvc · Discussion #8267 (github.com)\nAI BoMs from our SBoM Analysis"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#motivation",
+    "href": "slides/data-ai/index.html#motivation",
+    "title": "Data Centric AI",
+    "section": "Motivation…",
+    "text": "Motivation…"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#how-do-we-develop-a-curriculum-for-training-large-language-models",
+    "href": "slides/data-ai/index.html#how-do-we-develop-a-curriculum-for-training-large-language-models",
+    "title": "Data Centric AI",
+    "section": "How do we develop a curriculum for training large language models?",
+    "text": "How do we develop a curriculum for training large language models?"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#the-pile",
+    "href": "slides/data-ai/index.html#the-pile",
+    "title": "Data Centric AI",
+    "section": "The “Pile”",
+    "text": "The “Pile”"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#llama-open-and-efficient-foundation-language-models",
+    "href": "slides/data-ai/index.html#llama-open-and-efficient-foundation-language-models",
+    "title": "Data Centric AI",
+    "section": "LLama: Open and Efficient Foundation Language Models",
+    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux,\nTimothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.”\narXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
+  },
+  {
+    "objectID": "slides/data-ai/index.html#gpt-4-sparks-of-agi",
+    "href": "slides/data-ai/index.html#gpt-4-sparks-of-agi",
+    "title": "Data Centric AI",
+    "section": "(GPT-4) “Sparks of AGI”?",
+    "text": "(GPT-4) “Sparks of AGI”?\n\n\n\n\nSparks of AGI: Early Experiments with GPT-4, 2023.\nhttps://www.youtube.com/watch?v=qbIk7-JPB2c."
+  },
+  {
+    "objectID": "slides/data-ai/index.html#textbooks-are-all-you-need",
+    "href": "slides/data-ai/index.html#textbooks-are-all-you-need",
+    "title": "Data Centric AI",
+    "section": "Textbooks Are All You Need!",
+    "text": "Textbooks Are All You Need!\n\n\n\n\nTextbooks Are All You Need, 2023.\nhttps://www.youtube.com/watch?v=24O1KcIO3FM."
+  },
+  {
+    "objectID": "slides/data-ai/index.html#textbooks-are-all-you-need-1",
+    "href": "slides/data-ai/index.html#textbooks-are-all-you-need-1",
+    "title": "Data Centric AI",
+    "section": "Textbooks Are All You Need!",
+    "text": "Textbooks Are All You Need!\n\n\n\n\nGunasekar, Suriya, Yi Zhang, Jyoti Aneja, Caio César Teodoro Mendes,\nAllie Del Giorno, Sivakanth Gopi, Mojan Javaheripi, et al.\n“Textbooks Are All You Need.” arXiv, June 20, 2023.\nhttp://arxiv.org/abs/2306.11644."
+  },
+  {
+    "objectID": "slides/data-ai/index.html#textbooks-are-all-you-need-ii-phi-1.5",
+    "href": "slides/data-ai/index.html#textbooks-are-all-you-need-ii-phi-1.5",
+    "title": "Data Centric AI",
+    "section": "Textbooks are all you need II: phi-1.5",
+    "text": "Textbooks are all you need II: phi-1.5\n\n\n\n\nY. Li, S. Bubeck, R. Eldan, A. Del Giorno, S. Gunasekar, and Y. T. Lee, “Textbooks Are All You Need II: phi-1.5 technical report.” arXiv, Sep. 11, 2023. Accessed: Sep. 12, 2023. [Online]. Available: http://arxiv.org/abs/2309.05463"
+  },
+  {
+    "objectID": "slideindex.html",
+    "href": "slideindex.html",
+    "title": "Weekly Nugget Presentations",
+    "section": "",
+    "text": "Data Centric AI\n\n\n\n\n\n\n\nTrustedAI\n\n\nData Centric AI\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTools for Trusted AI\n\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
+    "section": "",
+    "text": "At the University of Notre Dame’s Center for Research Computing (CRC), the Laboratory for Assured AI Applications Development (LA3D) represents a critical step in the field of artificial intelligence (AI). As part of CRC’s commitment to leveraging advanced computation for discovery and innovation, LA3D focuses on ensuring the responsible development and application of AI technologies. This initiative aligns with both the technological evolution of AI and the broader goals of CRC and Notre Dame.\nThe mission of LA3D is robust, layered, and rooted in a commitment to research, develop, and deploy AI models and systems that are not just innovative but trustworthy and ethically aligned. With a focus on AI Engineering, Trusted AI, Knowledge Engineering, FAIR (Findable, Accessible, Interoperable, and Reusable) data, and CyberInfrastructure, LA3D presents a multifaceted approach.\nAI’s Transformative Potential: The transformative potential of AI is no longer a distant aspiration but a present-day reality. Whether in healthcare, finance, transportation, or education, AI’s capacity to innovate is unparalleled. LA3D recognizes this potential and strives to harness it, directing AI’s power towards constructive, ethical, and sustainable ends.\nConnection to the Center for Research Computing: LA3D’s home in the CRC is more than a mere geographical placement. It symbolizes a shared vision of advancing science through computational methods, high-performance computing, and now, AI-driven solutions. By integrating into the CRC’s vibrant ecosystem, LA3D amplifies the pursuit of excellence, pushing the boundaries of what’s achievable with AI.\nMission Overview: LA3D’s mission transcends traditional boundaries, aiming to advance fields like AI Engineering, with its critical role in transitioning prototypes to production; Trusted AI, embodying ethical and reliable systems; Knowledge Engineering, embracing the new frontiers of Large Language Models; FAIR data principles; and the rapidly evolving CyberInfrastructure. Each of these elements comes together to create a synergy that fuels LA3D’s ambition to lead AI into an era marked by integrity, ingenuity, and human-centric focus.\nThe launch of LA3D marks a promising beginning in a journey filled with exploration, challenge, and opportunity. It sets the stage for an intellectual adventure that seeks to navigate the complex landscape of AI, unlocking its potentials while remaining anchored to values and ethical principles. Welcome to the Laboratory for Assured AI Applications Development – a place where AI’s promise transforms into tangible progress."
+  },
+  {
+    "objectID": "posts/welcome/index.html#the-imperative-of-the-disciplines",
+    "href": "posts/welcome/index.html#the-imperative-of-the-disciplines",
+    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
+    "section": "The Imperative of the Disciplines",
+    "text": "The Imperative of the Disciplines\n\nAI Engineering: Bridging the Gap from Prototype to Production\nIn the complex, multifaceted realm of AI, the journey from concept to realization is fraught with challenges and intricacies. AI Engineering, a core discipline at the Laboratory for Assured AI Applications Development (LA3D), stands as a beacon guiding this intricate transition from prototypes to production-grade applications.\n\nTransitioning Prototypes to Production: At LA3D, we recognize that the gap between experimental AI prototypes and fully functional production systems is vast. AI Engineering provides the methodologies, tools, and practices needed to navigate this gap. It’s about ensuring that promising concepts don’t just remain on paper but evolve into tangible applications. The recent Gartner research resonates with our approach, identifying that only 53% of AI projects transition from prototypes to production, underscoring the need for an engineering-driven approach.\nCore Pillars: DataOps, ModelOps, DevOps: DataOps focuses on data management and quality, ModelOps on model lifecycle management, and DevOps for seamless integration. These three core pillars together facilitate performance, scalability, interpretability, and reliability of AI models, maximizing the value of AI investments.\nAssurance in AI Models and Mechanistic Interpretability: Assurance in AI Models and Mechanistic Interpretability: Trust and reliability lie at the core of AI Engineering. At LA3D, the utilization of energy-based modeling, specifically Joint Energy-Based Models (JEMs), offers a transparent and statistically grounded approach to AI. By learning joint distributions over observed and latent variables, and associating lower energies with more likely configurations, JEMs help in aligning AI models with ethical guidelines and intended purposes. This mechanistic interpretability, coupled with the robust design inherent in JEMs, ensures predictability and engenders trust. Such alignment is vital for Assured AI, where understanding the underlying patterns and regularities in data becomes a cornerstone for creating reliable and responsible applications.\nScalability, Efficiency, Lifecycle Management, and Data-Centric AI: Ensuring consistent performance across different scales and complexities is crucial. LA3D’s AI Engineering practices enable models to be deployed in various environments without losing integrity or performance. Managing AI models throughout their lifecycle through continuous monitoring, validation, and maintenance ensures adaptability and alignment with evolving objectives. The emphasis on Data-Centric AI reflects LA3D’s commitment to focusing on the quality of data, recognizing that data is the lifeblood of AI systems.\nInterdisciplinary Collaboration and Alignment with Human Values: AI Engineering fosters collaboration among data scientists, engineers, domain experts, and ethical compliance teams. The result is cohesive AI development, where varying perspectives merge to create solutions resonating with diverse needs and values. At LA3D, AI serves human values and societal needs, ensuring that technology is not only technically sound but also socially responsible.\nEmbracing CyberSecurity: Coupled with a growing interest in CyberSecurity, LA3D extends the scope of AI Engineering to safeguard information and assure security in AI applications.\n\nAI Engineering is not merely a process at LA3D; it’s a philosophy and an imperative discipline. It’s the bedrock that ensures AI models are not just innovative but also responsible, practical, and aligned with the human experience. Bridging the gap from prototype to production, AI Engineering paves the way for a future where AI is not just a tool but a reliable partner for progress. Join us on this journey as we delve deeper into AI Engineering, exploring its challenges, triumphs, and nuances.\n\n\nTrusted AI: A Cornerstone of Ethical and Reliable Systems\nTrusted AI is not just a concept; it’s a commitment to integrity, ethics, and societal alignment that LA3D wholeheartedly embraces. Trust in AI is an essential component in our technological landscape, and it embodies various facets that work in synergy to create ethical and reliable systems.\n\nAssurance in AI Models: At LA3D, assurance goes beyond mere compliance; it’s about creating AI models that can be understood, scrutinized, and validated. Building AI models that can explain their reasoning and provide clarity in their decisions is integral to creating trust.\nTransparency and Accountability: The quest for Trusted AI demands complete transparency in both process and outcomes. LA3D adheres to an open and comprehensible approach that allows all stakeholders to understand how decisions are made and who is accountable for them. Ensuring this level of transparency fosters an environment where AI models can be thoroughly evaluated and critiqued, reinforcing trust in their use.\nResponsible AI: While Trusted AI focuses on reliability and ethics, Responsible AI broadens the spectrum to include considerations such as fairness, inclusivity, privacy, and societal impact. At LA3D, we recognize that AI systems must not only operate within ethical guidelines but also actively contribute to the well-being of society. This commitment to social responsibility aligns with our holistic approach to developing technology that enriches lives.\nCyberSecurity in AI: As AI systems become more intertwined with our daily lives, the need to secure them becomes paramount. LA3D is committed to incorporating CyberSecurity measures within the AI development process, safeguarding data and protecting the integrity of AI systems. We understand that trust in AI also depends on the security of the systems, and we dedicate our resources to ensure that our AI applications are robust against threats.\n\nTrusted AI is a cornerstone at LA3D, reflecting our relentless pursuit of aligning technology with human values and ethical principles. It’s about creating AI that people can rely on, understand, and feel safe using. The interplay between transparency, accountability, Responsible AI, and CyberSecurity forms a unified approach to build AI systems that not only perform exceptionally but also resonate with the broader societal goals.\nJoin us as we explore further the nuances of Trusted AI, a field where technology and ethics merge to pave the way for a future where AI is a dependable ally. Our commitment to this discipline underscores the depth of our understanding of the complexities involved in crafting AI that is truly trusted.\nThis section outlines the key areas of Trusted AI that LA3D focuses on, emphasizing the importance of trust, transparency, responsibility, and security within the AI domain. It underscores the laboratory’s dedication to ethical and reliable AI systems, aligning with societal needs and values.\n\n\nKnowledge Engineering and Prompt Engineering: The New Frontiers\nIn the rapidly evolving landscape of artificial intelligence, Knowledge Engineering and Prompt Engineering emerge as exciting new frontiers that promise to reshape the way we conceptualize, create, and leverage AI systems. At the Laboratory for Assured AI Applications Development (LA3D), we recognize the vital role of these disciplines in shaping the next generation of AI applications.\n\nKnowledge Graphs: Knowledge graphs represent a transformative approach to organizing and connecting information. By modeling relationships between entities in a structured and semantically rich format, knowledge graphs enable more intelligent querying and reasoning. LA3D actively leverages knowledge graphs to power more insightful and context-aware AI solutions.\nOntology Design Patterns: A specialized aspect of Knowledge Engineering, ontology design patterns allow for the formal representation of concepts and their relationships within a specific domain. By utilizing these patterns, LA3D ensures that AI systems have a solid conceptual foundation, enabling more precise interpretation and decision-making.\nLLM Techniques: Large Language Models (LLMs) are revolutionizing natural language processing. By employing techniques like Prompt Engineering, LA3D refines the interaction with LLMs, enhancing their responsiveness and adaptability. This method allows for more effective communication with AI systems, aligning them closer to human-like understanding.\nAI Models as Surrogates: At LA3D, we explore the exciting potential of AI models as surrogates for complex mathematical or physical models. These AI surrogates can provide faster and more accessible simulations, accelerating research and opening new avenues for exploration in science and engineering.\nAI Co-Pilots for Various Tasks: Beyond acting as mere tools, AI models are now being developed as intelligent co-pilots, assisting human experts in a variety of tasks. Whether aiding in data analysis, guiding complex problem-solving, or enhancing creative processes, AI co-pilots represent a new paradigm of collaboration between human and machine intelligence.\n\nKnowledge Engineering and Prompt Engineering are not mere additions to the AI toolkit; they are pivotal advancements that herald a new era in AI application design and interaction. By embracing these new frontiers, LA3D reinforces its commitment to innovation, excellence, and the relentless pursuit of AI that is not just cutting-edge but profoundly attuned to human needs and aspirations. Join us as we explore these new horizons, uncovering the immense potential and profound implications they hold for the future of AI.\n\n\nThe Evolution of CyberInfrastructure and AI-Driven Science AI-Driven Science\nThe seamless integration of CyberInfrastructure with AI-driven science marks a transformative phase in research and innovation. As part of the Laboratory for Assured AI Applications Development (LA3D) at the University of Notre Dame’s Center for Research Computing (CRC), we are at the forefront of this exciting convergence, pioneering approaches that harness the power of advanced computing technologies to accelerate scientific discovery.\n\nAI-Driven Science: The infusion of AI into scientific research has ushered in a new era of data-driven exploration and insight. At LA3D, we employ AI models to analyze complex data sets, predict outcomes, and even guide experimental design. From enhancing medical diagnostics to predicting climate patterns, AI-driven science is unlocking unprecedented opportunities for understanding and innovation.\nRelevance to CRC: The Center for Research Computing at Notre Dame is committed to providing cutting-edge computational resources and expertise. The collaboration with LA3D amplifies this commitment by aligning AI research with state-of-the-art CyberInfrastructure. Together, we’re pushing the boundaries of what’s possible in computational science.\nAI Surrogates for Mathematical Models: Building on the AI surrogates concept, we utilize AI models to replicate complex mathematical or physical systems within CRC. These surrogates enable faster simulations and insights, thus accelerating research and expanding our ability to tackle previously intractable problems.\nAI Co-Pilots for Scientific Exploration: The development of AI co-pilots has extended into the realm of scientific exploration at CRC. These intelligent systems act as collaborators, assisting researchers in hypothesis formulation, data analysis, and problem-solving. It’s a revolutionary approach that augments human intelligence with AI, fostering a new level of creativity and rigor in scientific inquiry.\nIntegration of CyberInfrastructure: A robust CyberInfrastructure is foundational to AI-driven science at CRC. By weaving together high-performance computing, cloud technologies, and specialized software, we’re creating a dynamic environment where AI and computational science flourish. It’s a synergy that optimizes research processes, enhances collaboration, and catalyzes breakthroughs.\n\nThe evolution of CyberInfrastructure and AI-driven science at CRC represents more than technological advancement; it’s a paradigm shift in how we approach research and discovery. Through strategic collaboration and relentless innovation, we’re crafting a future where technology and human intellect unite to illuminate the unknown. Join us on this path, as we explore the incredible potential and promise of this convergence, continually striving to redefine the boundaries of what is possible in science and beyond."
+  },
+  {
+    "objectID": "posts/welcome/index.html#blogs-objective-and-overview",
+    "href": "posts/welcome/index.html#blogs-objective-and-overview",
+    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
+    "section": "Blog’s Objective and Overview",
+    "text": "Blog’s Objective and Overview\nIn alignment with the University of Notre Dame’s mission to seek knowledge that addresses humanity’s pressing challenges, and the Center for Research Computing’s (CRC) commitment to driving innovation, the Laboratory for Assured AI Applications Development (LA3D) is pleased to unveil this blog as an essential platform.\n\nWeekly Updates: Engage with regular insights into the ongoing research, technological advancements, and creative pursuits within LA3D. From AI Engineering to Trusted AI, we’ll keep our community abreast of the exciting developments shaping our field.\nInsights into Trusted AI, CI-Compass, and More: Delve into the core projects and collaborations within LA3D, including specialized explorations into the worlds of Trusted AI, CI-Compass, CyberSecurity in AI, and the nuances of Responsible AI.\nAI Workforce Development: Recognizing the need for a skilled and knowledgeable AI workforce, this blog will feature initiatives, programs, and strategies dedicated to cultivating the next generation of AI professionals. Together with CRC, we strive to foster education, mentorship, and career development in AI.\nResearch Publications and Highlights: Discover the rich tapestry of research being woven at LA3D. We’ll highlight key publications, conference achievements, and innovative studies that reflect our commitment to excellence and alignment with Notre Dame’s values.\nCommunity Engagement and Collaboration: Building on Notre Dame’s emphasis on community and service, this blog invites you to participate, share, and learn. Join a lively dialogue that celebrates diversity of thought and collaboration in pursuit of a greater understanding of Assured AI.\nSpotlight on CyberSecurity in AI and Emerging Topics: As part of our comprehensive view of modern AI, we will dedicate specific sections to explore critical areas like CyberSecurity and the delicate balance between Responsible and Trusted AI.\nConnection to Notre Dame’s and CRC’s Mission: This blog embodies the spirit of Notre Dame and CRC’s shared mission to advance knowledge, foster innovation, and contribute to society. We strive to make the pursuit of AI not only a scientific endeavor but also a means to enrich lives and address societal needs.\n\nIn the introduction, we’ve outlined the essential areas of focus at the Laboratory for Assured AI Applications Development (LA3D) at the University of Notre Dame’s Center for Research Computing. From AI Engineering’s crucial role in transitioning prototypes to production, to the ethical imperatives in Trusted AI, Knowledge Engineering, CyberSecurity in AI, and the blog’s alignment with the missions of CRC and Notre Dame, we’ve set the stage for a comprehensive exploration.\nOur blog serves as a platform to dive into these topics, including AI workforce development and the ways in which AI intersects with societal needs and technological advancements. As we move forward, we’ll examine these subjects in detail, shedding light on the challenges, successes, and ongoing efforts in these fields.\nStay tuned as we delve into the complexities of AI, with insights and updates that reflect LA3D’s commitment to innovation, responsibility, and real-world applicability. Join us in this exploration, as we strive to make AI not just a tool, but a reliable partner for progress."
+  },
+  {
+    "objectID": "posts/frameworks-reflection/index.html",
+    "href": "posts/frameworks-reflection/index.html",
+    "title": "Reflections on Trusted AI Frameworks after two years",
+    "section": "",
+    "text": "Warning\n\n\n\nIf you have stumbled on this post, it is still in the rough draft state and under major revision."
+  },
+  {
+    "objectID": "posts/frameworks-reflection/index.html#introduction-and-context-of-trusted-ai-tai",
+    "href": "posts/frameworks-reflection/index.html#introduction-and-context-of-trusted-ai-tai",
+    "title": "Reflections on Trusted AI Frameworks after two years",
+    "section": "1 Introduction and Context of Trusted AI (TAI)",
+    "text": "1 Introduction and Context of Trusted AI (TAI)\nWith artificial intelligence advancing rapidly, ensuring these technologies are trustworthy and ethical is critical, especially in high-stakes domains like defense and national security.\nThe Trusted AI (TAI) Frameworks Project was launched in 2021 through a collaboration between Indiana University, Purdue University, the University of Notre Dame, and the Naval Surface Warfare Center Crane Division (NSWC Crane) located in southwestern Indiana.\nFunded by Purdue’s Scalable Asymmetric Lifecycle Engagement (SCALE) initiative, the project brings together these Indiana-based partners to advance trusted AI research and workforce development tailored to the needs of the U.S. Navy and Marine Corps.\nThe University of Notre Dame contributes vital expertise in areas such as cybersecurity, privacy, and ethical AI to ensure the systems developed not only perform effectively but align with ethical values. Researchers from computing, engineering, psychology, and ethics collaborate to provide a multidisciplinary perspective.\nIndiana’s strong defense, technology, and research presence, including major contractors and NSWC Crane’s AI Development Lab, provide a strategic foundation to jointly create AI solutions that are robust, reliable, and transparent.\nAt the core of the project are six dimensions of trust in AI systems:\n\nExplainability: Making AI logic and decisions understandable to humans\nSafety and Robustness: Ensuring reliable operation under varying conditions\nNon-discrimination and Fairness: Preventing unfair bias or preferential treatment\nPrivacy: Safeguarding individual rights and information\nSustainability: Considering environmental impact\nAccountability: Maintaining responsibility for decisions and actions\n\nIntegrating these trust principles throughout the AI lifecycle, from data collection to deployment, is critical for successful adoption within the naval domain. The TAI Frameworks Project provides research, methodologies and tools to enable trusted and ethical AI.\nThis collaborative initiative has evolved substantially in its first two years. This post reflects on progress so far and visions for the road ahead in strengthening trust in AI systems, serving both the Navy’s mission and broader societal values.\n\n\n\nFigure 1: Conceptual Framework Principles for TrustedAI in the AI System Lifecycle\n\n\nReflection on the Framework Project\nAs we reflect on the past years, the TAI Frameworks Project has continuously evolved and adapted in the rapidly changing landscape of AI research and technology.\nThe project originated from a proposal led by initial PI Prof. Ian Taylor. After acceptance but before work commenced, Prof. Jarek Nabrzyski took over as PI with co-PIs Prof. Prof. Chris Sweet and myself. This initial phase focused on integrating dimensions of trust into the methodologies.\nI assumed the PI role in year two to align the project with emerging Navy needs, as we are now entering year three.\nIn the early stages, Prof. Don Brower provided valuable expertise in metadata while Dr. James Sweet reviewed open source AI tools. Prof. Paul Brenner later contributed insights on computing infrastructure and security.\nUndergraduate students including Peter Ainsworth, Nicholas Clark and Daniel Weldon conducted hands-on evaluation of framework components like Quarto, nbdev, and DVC for data versioning. Daniel Weldon along with William Shephard, Samantha Nagel explored containerization of AI models and frameworks like Pytorch using platforms like IronBank to understand deployment complexity with regard to the DoD Cloud Infrastructure.\nThroughout its evolution, the project has adapted based on insights from key partners while maintaining the vision for Trusted AI put forth in the initial proposal by Prof. Taylor. This foundation enables us to confront new challenges and opportunities going forward.\nA core framework diagram, Figure 2, illustrates the end-to-end AI development workflow, spanning problem definition, data collection, model training, deployment, and monitoring. It highlights key tools and technologies including data science, machine learning frameworks, cloud platforms, and DevOps techniques that enable trustworthy AI aligned to specific use cases. The diagram reflects the multifaceted scope of the AI lifecycle, providing a structure for the frameworks, methodologies and collaborations that foster ethical, trustworthy and effective AI development.\n\n\n\nFigure 2: Core Framework Diagram\n\n\nCommunity Engagement and Collaboration\n\nOur journey has emphasized collaboration, dialogue, and shared learning. By leveraging existing tools and methodologies and engaging in broader community efforts, we have fostered an environment where knowledge is not just consumed but also contributed.\n\n\n\nFigure 3: TAI Research Themes (Husted 2022)\n\n\nLooking Ahead and Future Vision\nAs we move forward, our commitment to continuous alignment with trust dimensions and evolving methodologies remains steadfast. Our reflection on achievements and lessons learned will be a guiding light, illuminating the path towards future developments in trusted AI."
+  },
+  {
+    "objectID": "posts/frameworks-reflection/index.html#building-a-foundation-for-trusted-ai",
+    "href": "posts/frameworks-reflection/index.html#building-a-foundation-for-trusted-ai",
+    "title": "Reflections on Trusted AI Frameworks after two years",
+    "section": "2 Building a Foundation for Trusted AI",
+    "text": "2 Building a Foundation for Trusted AI\n\n2.1 Software 1.0 vs Software 2.0: Building Trust from the Ground Up\nThe evolution from “Software 1.0” to “Software 2.0,” as popularized by Andrej Karpathy (Karpathy 2017), represents a paradigm shift in how we develop and deploy software systems.\n\nSoftware 1.0 is characterized by deterministic, programmed behavior where engineers write explicit code to define how a system should operate. It’s a method where rules are meticulously crafted, and the outcome is predictable, given a specific set of inputs.\nSoftware 2.0, in contrast, signifies learned behavior where models are trained on data to infer the underlying patterns. Unlike the rigid rules of Software 1.0, Software 2.0 can handle immense complexity, learning from examples to generalize and adapt to new situations. This ability to process and respond to intricate, multi-dimensional inputs sets Software 2.0 apart, opening doors to applications previously thought unfeasible.\n\nThe implications of Software 2.0 are profound for sectors that face highly complex and dynamic environments, such as those present in Navy operations. Where traditional rule-based systems may falter or become unwieldy, Software 2.0 offers the flexibility and adaptability to respond to ever-changing scenarios. Its capacity to absorb and interpret vast amounts of information in real-time provides a powerful tool in navigation, threat assessment, strategy formulation, and more. For the Navy, it enables a more resilient, intelligent, and agile approach to both strategic planning and operational execution.\nHowever, the promise of Software 2.0 doesn’t diminish the importance of Trusted “Software 1.0” as the foundation. Stability, predictability, and reliability remain essential, and the Trusted AI Frameworks Project recognizes the symbiotic relationship between these two paradigms. Trusted “Software 1.0” forms the stable base, while Trusted “Software 2.0” enables more dynamic and complex solutions.\nThe interplay between these two layers presents exciting opportunities and challenges, requiring rigorous validation, ethical considerations, and collaboration to ensure responsible deployment. It’s a multifaceted challenge that intertwines technology, ethics, collaboration, and vision, reflecting the complex reality of modern warfare and strategic planning.\n\n\n2.2 GitOps and AI Engineering: Collaborative Practices for Success\nIn the transition from “Software 1.0” to “Software 2.0,” where complexity and adaptability take center stage, the underlying practices that ensure quality and trust must also evolve. GitOps and collaborative environments like GitHub have emerged as essential tools in this transformation.\n\n2.2.1 What is GitOps?\nGitOps is a methodology that applies Git’s version control principles to the entire infrastructure and development lifecycle. By treating everything as code, including infrastructure and configuration, GitOps enables robust version control, audit trails, and collaboration. Changes are made in the Git repository, and automated systems ensure that the live environment aligns with the defined code state.\n\n\n2.2.2 Importance in Traditional and AI Engineering\n\nTraditional Software Engineering: In the context of “Software 1.0,” GitOps brings consistency, traceability, and collaboration. It provides a unified platform where the entire development team can work together, tracking changes, rolling back when necessary, and maintaining a clear history of modifications. This shared workspace enhances communication, accelerates development, and minimizes the risk of errors.\nAI Engineering: The shift to “Software 2.0” introduces new complexities and dependencies. GitOps adapts to these challenges by offering a flexible and responsive platform that can manage intricate workflows, diverse data sets, and multi-dimensional models. The collaborative nature of platforms like GitHub fosters cross-functional engagement, leveraging collective expertise to scrutinize, enhance, and validate AI models.\n\n\n\n2.2.3 Enhancing Trust and Quality\nBy embracing GitOps, projects can benefit from continuous integration, testing, and deployment. This CI/CD methodology promotes a culture of ongoing evaluation and refinement, where each change undergoes rigorous scrutiny. This process not only ensures quality but also builds trust, as stakeholders have transparent visibility into how decisions are made and how the software evolves.\nFor the Navy, where trust and reliability are paramount, this transparent, collaborative approach aligns with the ethos of responsibility and accountability. By implementing GitOps within the Trusted AI Frameworks Project, the partners foster an environment conducive to innovation, quality, and ethical considerations.\n\n\n\n2.3 CI/CD in Trusted AI: Ensuring Continuous Quality\nContinuous Integration/Continuous Deployment (CI/CD) is not a new concept in software development. Still, its application within the realm of AI and “Software 2.0” introduces unique opportunities and challenges. With AI’s rapid evolution and the growing prominence of foundation models and transfer learning, CI/CD becomes a vital component in maintaining quality, transparency, and trust.\n\n2.3.1 Applying CI/CD to AI “Software 2.0”\n\nFoundation Models: These are large-scale pre-trained models that serve as a base for specialized adaptations. By understanding intricate patterns in extensive data sets, foundation models can be fine-tuned for various tasks, enabling more rapid development and deployment.\nTransfer Learning Methodology: This approach leverages existing pre-trained models (often foundation models) and adapts them to specific tasks or domains. It allows for quicker iterations, conserves resources, and enhances performance on specialized tasks.\n\nIncorporating CI/CD into these AI practices ensures that as models are adapted and evolve, they continue to meet quality standards and align with ethical considerations. It promotes a transparent process, where every modification, every decision, can be traced and validated.\n\n\n2.3.2 Building Trust and Transparency\n\nRapid Integration and Evolution: With AI’s pace, a responsive CI/CD pipeline is essential. Models are constantly refined, adapted, and expanded. Ensuring that these changes are integrated smoothly, without compromising quality, is key to building trust.\nEthical Considerations: Transparency in the AI development process is more than a technical requirement; it’s an ethical obligation. A well-designed CI/CD process provides clear visibility into the workings of AI models, supporting responsible decision-making and accountability.\n\nCertainly! Below is a revised version of your text that incorporates the information we discussed, specifically focusing on the functionality, real-world application, unit and behavior testing, and the continuous iterative process.\n\n\n2.3.3 “Data Engines” in AI CI/CD\nThe innovative concept of “Data Engines” in AI CI/CD refers to an intelligent, integrated system that orchestrates various stages of AI development, from data collection to model deployment, including vital aspects of unit and behavior testing.\n\nComponents and Functionality: A Data Engine incorporates real-time data ingestion, preprocessing, feature engineering, model training, evaluation, acceptance testing, and deployment. Unit testing ensures the individual components’ correctness, while behavior testing verifies the overall system behavior. Together, they serve as the backbone, ensuring that models adapt, learn, and evolve in alignment with real-world complexities and requirements.\nReal-World Example: Tesla’s Data Engine Pipeline: Tesla’s self-driving technology leverages a Data Engine that continually feeds information from vehicles on the road into its AI models. This pipeline manages vast quantities of data, refines features, adapts models, and deploys updates, all in an iterative and seamless manner. Through rigorous unit and behavior testing, it ensures accuracy and responsiveness. This example illustrates how Data Engines can handle the dynamism and complexity inherent in modern AI systems.\nChallenges and Solutions: Integrating a Data Engine within the AI CI/CD process is not without challenges. These may include ensuring data quality, scalability, adherence to ethical guidelines, the complexity of continuous testing, and more. Innovative solutions and best practices, informed by real-world applications like Tesla’s, are instrumental in navigating these challenges successfully.\n\nThe integration of “Data Engines” within the AI CI/CD process marks a critical advancement in how we develop, deploy, and trust AI. By combining continuous data collection, preprocessing, and training with rigorous testing methodologies, Data Engines represent a robust, adaptive approach. For the Navy and the Trusted AI Frameworks Project, it signifies a forward-thinking approach that recognizes the dynamism of modern AI while steadfastly upholding quality and ethical principles.\n\n\n\n2.4 Ethical Considerations in Testing: Beyond Functionality\nAs we endeavor to create AI systems that interact with complex environments and human lives, the ethical implications of their behavior cannot be ignored. While traditional CI/CD GitOps environments are tailored to ensure functionality, quality, and performance, the nature of AI — particularly “Software 2.0” — necessitates a broader and more profound testing approach. This extends into the ethical realm, considering how the AI system behaves in various scenarios and aligns with societal values.\n\n2.4.1 Integrating Ethical Behavior Tests in AI CI/CD GitOps Environments\n\nAdapting Traditional Environments: Conventional CI/CD GitOps practices were not initially designed to handle the ethical complexities of AI systems. Integration of ethical behavior tests within these environments requires thoughtful adaptation and innovation to ensure that AI models align with ethical standards alongside technical requirements.\nEthical “Behavior Tests”: These are specialized tests designed to evaluate AI models in various scenarios, considering ethical principles like fairness, accountability, transparency, and safety. They are critical in building trust and ensuring that AI systems function not only effectively but ethically.\nChallenges with the “Data Engine” Concept: The real-time and continuous nature of Data Engines presents unique ethical challenges. How data is sourced, processed, and utilized within the engine has implications for privacy, bias, quality, and more. Ethical behavior tests must extend into this realm, evaluating the entire pipeline, including the Data Engine’s operations.\n\n\n\n2.4.2 Real-World Implications and the Navy’s Perspective\n\nImportance for the Navy and Marine Corps: For organizations like the Navy and Marine Corps, where AI systems may be deployed in life-critical and high-stakes environments, these ethical considerations are paramount. Ethical behavior tests must be part of the standard AI testing pipeline to ensure that AI deployments are not just functional but morally sound.\nCollaboration with Interdisciplinary Teams: Developing and implementing ethical behavior tests necessitates collaboration with ethicists, social scientists, legal experts, and other stakeholders. It’s a complex task that extends beyond technical engineering, involving a deeper understanding of human values and societal implications.\nBuilding a Comprehensive Ethical Framework: Alongside technical robustness, AI systems must be examined and validated for ethical alignment. This includes developing a comprehensive ethical framework within the CI/CD GitOps environment, guiding the design, development, and deployment of AI, keeping ethical considerations at the forefront.\n\n\n\n2.4.3 Conclusion: Building a Foundation of Trust and Responsibility in AI Development\nThe journey from “Software 1.0” to “Software 2.0” is more than a technological leap; it represents a shift in understanding and responsibility. As AI models grow more complex and intertwined with real-world applications, the demands on software engineering practices also evolve. The traditional foundations of trust and quality assurance in software development have had to adapt to new challenges posed by AI.\nIn this section, we’ve explored how concepts like GitOps and CI/CD practices must be reimagined to align with the unique characteristics of AI engineering. We delved into the creation of Data Engines, recognizing their potential in handling complex environments and real-world data but also acknowledging the ethical considerations they introduce.\nWe recognized that the ethical imperatives in AI go beyond mere functionality, requiring integrated ethical behavior tests, interdisciplinary collaboration, and a comprehensive ethical framework. This is especially pertinent for organizations like the Navy and Marine Corps, where the implications of AI behavior have profound and immediate impacts.\nThe synthesis of these concepts paints a picture of a rapidly changing landscape, one where the lines between traditional software engineering and AI development are blurring. It’s a landscape filled with opportunities, innovations, and new horizons, but also one that demands caution, foresight, and a steadfast commitment to ethical principles.\nThis foundation sets the stage for our subsequent exploration, where we’ll continue to dive into the intricacies of trusted AI, from data-centric methodologies to hardened containers and workforce development. As we journey through this complex terrain, the underlying theme of trust and ethical alignment remains our guiding star, illuminating the path toward responsible and successful AI deployment."
+  },
+  {
+    "objectID": "posts/frameworks-reflection/index.html#managing-and-utilizing-data",
+    "href": "posts/frameworks-reflection/index.html#managing-and-utilizing-data",
+    "title": "Reflections on Trusted AI Frameworks after two years",
+    "section": "3 Managing and Utilizing Data",
+    "text": "3 Managing and Utilizing Data\n\n3.1 Data Centric AI for Trusted AI\nIn traditional AI development, much attention is often given to fine-tuning model architectures, experimenting with different layers, activation functions, and optimization algorithms. While this approach has driven many innovations, it may sometimes overlook the central role of data in AI success.\nA paradigm shift is emerging, championed by AI leaders like Andrew Ng through the Data Centric AI movement. This movement emphasizes the need to invest more in the quality and context of the data rather than continually fine-tuning the model architecture. The MIT Introduction to Data-Centric AI course provides a very good introduction to Data Centric AI methodology that the Frameworks aim to enable.\nThe logic behind this shift is profound yet straightforward. Models, irrespective of their complexity, are only as good as the data they learn from. By prioritizing data quality, encompassing aspects such as cleanliness, relevance, diversity, and contextual richness, AI systems can achieve better performance with potentially simpler architectures.\nThis data-centric approach aligns well with the requirements of organizations like the Navy and Marine Corps. In complex environments where variability and uncertainty are common, the depth and quality of data can make a significant difference. A well-annotated dataset that captures the intricacies of real-world scenarios allows AI models to learn more effectively and generalize better to unseen situations.\nFor the Trusted AI (TAI) Frameworks Project, a data-centric philosophy serves as an essential cornerstone, recognizing that robust data management practices can lead to more reliable, interpretable, and trusted AI systems. This perspective does not diminish the value of innovative modeling but places it in the context of a balanced and well-considered AI development strategy, where data and model work in harmony.\nThe data-centric approach is not just a technical reorientation; it’s a recalibration of AI development’s very essence, placing data at the heart of the innovation process. The implications for trusted AI are profound, offering a path to AI systems that are not only highly capable but also aligned with the nuanced requirements and ethical considerations that define the evolving landscape of AI in military and civil applications.\n\n\n\nFigure 4: Trusted AI Needs Trusted Data as pointed out by XKCD: “Flawed Data”\n\n\n\n\n3.2 DoD Data Strategy: Aligning with National Defense Goal\nThe Department of Defense’s (DoD) Data Strategy emphasizes the critical role that data plays in achieving the goals of the National Defense Strategy:\n\n\n\n\n\n\n(“DoD Data Strategy: Unleashing Data to Advance the National Defense Strategy” 2020)\n\n\n\n\nMake Data Visible – Consumers can locate the needed data.\nMake Data Accessible – Consumers can retrieve the data.\nMake Data Understandable – Consumers can recognize the content, context, and applicability.\nMake Data Linked – Consumers can exploit data elements through innate relationships.\nMake Data Trustworthy – Consumers can be confident in all aspects of data for decision-making.\nMake Data Interoperable – Consumers have a common representation comprehension of data.\nMake Data Secure – Consumers know that data is protected from unauthorized use/manipulation.\n\n\n\nThe TAI Frameworks Project highlights its commitment to a data-centric approach to trusted AI. Each goal resonates with our overarching mission:\n\nVisible: Ensuring that data is discoverable by those who need it fosters transparency and helps build a foundation of trust in AI systems.\nAccessible: Making data readily available to authorized users enhances the efficiency and effectiveness of AI, providing the right information at the right time.\nUnderstandable: Clear documentation and metadata contribute to the explainability of AI, a core dimension of trust.\nLinked: Connecting related data sets facilitates more coherent AI analysis, ensuring robustness and reliability in decision-making.\nTrustworthy: Maintaining the integrity and quality of data ensures that AI systems are dependable, echoing the Trustworthy dimension in our trust framework.\nInteroperable: Enabling data to be used across different systems and platforms fosters collaboration and integration, key aspects of our community engagement efforts.\nSecure: Implementing strong data security measures safeguards privacy and aligns with the ethical considerations central to trusted AI.\n\nThis alignment with the DoD’s data goals underscores the importance of a data-centric approach in our work. By recognizing data as a strategic asset and prioritizing these seven goals, we are nurturing an environment where trusted AI can flourish, complementing the “Data-Centric AI for Trusted AI” section that follows.\n\n\n3.3 Selection of Data Version Control (DVC) for Tracking Data and Experiments\nManaging and tracking data and experiments is a critical task in the AI development lifecycle. Traditional version control systems are well-suited to handle code, but they often fall short when dealing with the unique requirements of large-scale data. In the context of AI, this limitation can hinder the collaboration and reproducibility that are vital to building trusted systems.\nData Version Control (DVC) emerges as a compelling solution to address these challenges, and its selection in the Trusted AI (TAI) Frameworks Project highlights its inherent advantages. Here’s an exploration of why DVC stands apart from other data management systems:\n\nIntegration with GitOps: DVC extends Git’s functionality to handle large data files without storing them in the Git repository. It uses pointers in the repository, keeping the actual data in a remote location. This approach aligns with GitOps practices, allowing developers to manage data with the same tools and workflows they use for code, promoting a more streamlined and unified process.\nOpen Source Nature: DVC is an open-source project, fostering a community-driven approach that aligns with the values of collaboration, transparency, and accessibility. This aspect encourages active participation from a wide range of contributors, leading to rapid innovations and responsive support.\nCompatibility with CI/CD and GitHub: DVC’s architecture is designed to work seamlessly within CI/CD pipelines, and its compatibility with GitHub Actions enables automated workflows that cover everything from data preprocessing to model training and evaluation. This integration ensures that data handling is not a separate silo but an integral part of the continuous integration, testing, and deployment processes.\nData Tracking and Experiment Versioning: Unlike traditional data management systems, DVC provides robust capabilities to track changes in data and experiments, much like how code is versioned. It enables the ability to revert to previous data states, compare different data versions, and align data changes with specific code revisions. This ensures that every step in the AI development process can be audited and replicated, contributing to greater trust and transparency.\nFacilitating Collaboration: DVC’s decentralized structure and remote storage options enable teams to share and access data without overwhelming the repository. This encourages collaboration, even in distributed environments, ensuring that everyone can work on the same data version and maintain consistency across the development lifecycle.\nFlexible Storage Options: DVC offers flexibility in storing data, supporting various remote storage backends like S3, Azure Blob, Google Cloud Storage, among others. This flexibility aligns with different organizational needs and preferences, ensuring that data management is adaptable to various scenarios.\n\nThe selection of DVC in the TAI Frameworks Project represents a thoughtful alignment with the principles of trusted AI, GitOps, and open-source collaboration. By bridging the gap between traditional software engineering practices and the unique demands of AI data management, DVC supports the creation of AI systems that are not only performant but also transparent, replicable, and ethical.\n\n\n\n\n\n\nNote\n\n\n\nAdd information about MLFlow and other tools evaluated in this section.\n\n\n\n\n3.4 Ethical Considerations and Trust in Data Management: The Navy’s Mission and Guiding Principles\nIn alignment with the Navy’s strategic goals and the specific executive orders governing the Department of Defense (DoD), ethical considerations and trust in data management hold a central place in the Trusted AI Frameworks Project. By prioritizing metadata, adhering to the FAIR (Findable, Accessible, Interoperable, and Reusable) and CARE (Collective Benefit, Authority to Control, Responsibility, and Ethics) principles, the Navy reinforces its commitment to mission-critical values of transparency, integrity, and accountability. It should be noted that application of FAIR and CARE principles are separate from the notion of “Open Data” and doesn’t invalidate the use of proper access and authorization controls.\n\n3.4.1 Metadata and Its Role in Ethical Data Management\n\nTransparency for Mission Success: Metadata supports the Navy’s operational efficiency by providing clarity on data origins, context, and constraints, thereby enabling informed decision-making.\nCompliance with Executive Orders: Metadata ensures alignment with legal and regulatory requirements, such as the DOD AI Ethical Principles (Department of Defense 2020), which mandates specific data handling protocols within the DoD and specifically:\n\n\n\n\n\n\n\n(Department of Defense 2020)\n\n\n\n\nResponsible. DoD personnel will exercise appropriate levels of judgment and care, while remaining responsible for the development, deployment, and use of AI capabilities.\nEquitable. The Department will take deliberate steps to minimize unintended bias in AI capabilities.\nTraceable. The Department’s AI capabilities will be developed and deployed such that relevant personnel possess an appropriate understanding of the technology, development processes, and operational methods applicable to AI capabilities, including with transparent and auditable methodologies, data sources, and design procedure and documentation.\nReliable. The Department’s AI capabilities will have explicit, well-defined uses, and the safety, security, and effectiveness of such capabilities will be subject to testing and assurance within those defined uses across their entire life-cycles.\nGovernable. The Department will design and engineer AI capabilities to fulfill their intended functions while possessing the ability to detect and avoid unintended consequences, and the ability to disengage or deactivate deployed systems that demonstrate unintended behavior.\n\n\n\n\n\n3.4.2 The FAIR Principles: Ensuring Naval Readiness\n\nFindable & Accessible: Easy discovery and retrieval of data accelerate the Navy’s response time and readiness.\nInteroperable & Reusable: Standards for data compatibility facilitate cross-departmental collaboration and resource optimization, reflecting the Navy’s emphasis on agility and resilience.\n\n\n\n\nTrusted AI Needs to use standards for interoperability as pointed out by XKCD: “Standards”\n\n\n\n\n3.4.3 CARE Principles: Upholding the Navy’s Ethical Values\n\nCollective Benefit: Data practices that align with community interests echo the Navy’s mission to serve and protect the nation.\nAuthority to Control & Responsibility: Respecting the rights of data providers and upholding stewardship responsibilities mirror the Navy’s core values of honor and commitment.\nEthics: Conducting data activities with integrity aligns with the Navy’s ethical framework and compliance with relevant executive orders, such as Executive Order YYYY on Ethical Considerations in the DoD.\n\n\n\n3.4.4 Conclusion: Setting a Standard for Naval Excellence\nThe Trusted AI Frameworks Project’s alignment with metadata, FAIR, and CARE principles reflects the Navy’s dedication to excellence, ethical leadership, and mission success. By embracing these principles, the Navy not only fosters trust and transparency within its ranks but also sets a precedent for responsible data handling that extends to its partnerships with other military branches, academia, and industry.\n\n\n\n3.5 Future Perspectives and Conclusion: The Data-Driven Path to Trusted AI in Year 3 and Beyond\nAs the Trusted AI Frameworks Project enters its third year, the focus on data-centric approaches continues to sharpen, reflecting the broader trend in AI development. In this complex and ever-evolving landscape, the partnership between Indiana University, University of Notre Dame, CRANE Naval Surface Warfare Center, and other collaborators is more crucial than ever. Here, we explore what lies ahead and conclude with insights that underline the strategic importance of data management for the Navy and Marine Corps.\n\n3.5.1 Future Perspectives: Data Management in Year 3 and Beyond\n\nContinued Emphasis on Data Quality: Leveraging the momentum of the data-centric AI movement, the next phase will focus on further refining data quality and context.\nAdoption of Emerging Technologies: Integration with cutting-edge tools and methodologies will enhance agility in data handling.\nStrengthened Collaboration with Open Source Communities: The project’s commitment to using and contributing to open-source tools will continue to foster innovation and collaboration.\n\n\n\n3.5.2 Navigating Ethical Considerations and Regulatory Compliance\n\nAlignment with Executive Orders: Ongoing alignment with legal and regulatory requirements will be paramount.\nEnhanced Ethical Oversight: A robust ethical framework that resonates with FAIR and CARE principles will guide the data management efforts.\n\n\n\n3.5.3 Implications for the Navy and Marine Corps\n\nStrategic Agility: Improved data management facilitates faster and more informed decision-making, crucial for naval readiness.\nEthical Leadership: Upholding the highest standards of integrity aligns with the Navy’s core values and enhances trust.\n\n\n\n3.5.4 Conclusion: A Unified Path Forward\nThe data-driven journey of the Trusted AI Frameworks Project illuminates the vital role of data in enhancing the trustworthiness and success of AI deployment within the Navy and Marine Corps. With a vision rooted in collaboration, ethical excellence, and technological innovation, the path forward promises to be an exciting and transformative adventure. Together, academia, industry, and the military will continue to forge a data-centric future that not only serves the needs of the present but anticipates the challenges and opportunities of tomorrow."
+  },
+  {
+    "objectID": "posts/frameworks-reflection/index.html#deployment-and-provisioning",
+    "href": "posts/frameworks-reflection/index.html#deployment-and-provisioning",
+    "title": "Reflections on Trusted AI Frameworks after two years",
+    "section": "4 Deployment and Provisioning",
+    "text": "4 Deployment and Provisioning\n\n4.1 Introduction: The Challenge of Reproducibility and Integration\nTrusted AI involves complex and interdependent components that often originate from disparate academic and open-source projects. This complexity presents unique challenges in ensuring reproducibility and seamless integration of both “software 1.0” and “software 2.0.” The need for a robust framework that addresses these challenges has never been more pertinent. The project’s emphasis on deployment and provisioning aims to build a bridge between the theoretical foundations of AI and the practicalities of its application within a secure and trustworthy framework.\nCertainly! Here’s a revised version of the “DevOps and Computational Environments” section that provides more context and explanations for those who may not be familiar with these technologies:\n\n\n4.2 DevOps and Computational Environments: Bridging Development and Operations\nThe journey of Trusted AI doesn’t end with the creation of intelligent algorithms but extends into the realms of deployment and operational environments. This nexus between development and operations is known as DevOps, a practice that enhances efficiency, reliability, and maintainability. In the context of Trusted AI, several technologies and practices have been leveraged, each serving a specific role:\n\nPython PDM: As Python is one of the most prevalent languages for AI development, tools like Python’s Package Dependency Management (PDM) are essential. PDM helps manage dependencies and package versions, ensuring consistent environments across development, testing, and deployment stages.\nConda/Mamba: These are package managers specifically designed for scientific computing and data science, including AI. They allow for the creation of isolated environments, simplifying the process of managing complex dependencies.\nNix Containers: Nix takes reproducibility to the next level. Unlike conventional package managers, Nix ensures that the exact versions of all dependencies are explicitly defined, creating a consistent and reproducible environment across different stages and machines. This is crucial for both “software 1.0” and “software 2.0,” where inconsistencies in environments can lead to unpredictable behaviors.\nTemplates and Devcontainers: By using templates and development containers (devcontainers), the project has streamlined the setup process, making it easier for developers to replicate environments. This ensures that what works on one developer’s machine will work on another’s, alleviating the infamous “it works on my machine” problem.\n\nThese tools and practices collectively create a seamless and reliable process of moving AI models and applications from development to production. They recognize the complexity of AI development and provide solutions tailored to handle these challenges. The selection of these specific technologies within the Trusted AI project is a strategic alignment with the unique needs of AI, reflecting an understanding of the underlying challenges and opportunities that AI presents.\nBy connecting these dots and creating an ecosystem where development and operations converge, DevOps in the Trusted AI context represents a key pillar in the project’s strategy. It enables not just the creation but also the deployment and maintenance of AI solutions that can be trusted, validated, and reproduced, meeting the stringent standards required by the Navy and other critical stakeholders.\n\n\n\nTrusted AI Python Environment Reproducibility by XKCD: “Python Environment”\n\n\n\n\n4.3 Software Bill of Materials (SBoM): A Comprehensive Inventory for Trust\nIn any sophisticated piece of technology, understanding the components that make up the system is essential for security, quality, and compliance. The Software Bill of Materials (SBoM) serves this very purpose, offering a comprehensive inventory of all software components in a system, akin to a parts list in physical manufacturing.\nThe SBoM is especially critical in the context of Trusted AI for the Navy, aligning with Federal Government requirements and standards for procurement. Here’s a breakdown of the key elements and why they matter:\n\nWhat is an SBoM?: An SBoM details the components, libraries, and modules within a software product. It includes the exact versions, sources, licenses, and dependencies, offering a transparent and verifiable snapshot of the software’s composition.\nSPDX (Software Package Data Exchange): Developed by the Linux Foundation, SPDX provides a standardized format for sharing SBoM data across different tools and systems. It enables consistency and interoperability, supporting transparency and trust in software procurement and deployment.\nJSON-LD Vocabulary: SPDX’s vocabulary released as JSON-LD (JSON Linked Data) provides a machine-readable format that facilitates the automatic processing of SBoM data. It streamlines integration with existing systems and tools, fostering collaboration and automation in AI deployment.\nRelevance to the Navy and Federal Requirements: Compliance with SBoM requirements is essential for the Department of Defense (DoD) and other federal agencies. It aligns with executive orders and guidelines governing software procurement, security, and transparency, making it a crucial component of the Trusted AI project’s success.\n\n\n4.3.1 Extension and Evaluation of SBoM Construction Tools\nIn the Trusted AI Frameworks Project, the integration of outputs from other Trusted AI Projects into a cohesive whole is a key focus. An illustrative example of this integration came during the summer of 2023, when the project extended the foundational work of “Leveraging Labels and SBOMs to Build Trustworthy AI” by Peter J. Caven, Shakthidhar Gopavaram, and PI L. Jean Camp at Indiana University.\nThe team evaluated SBoM construction tools for completeness, specifically focusing on the knowledge graph representation of the SPDX generated by each tool relative to the The Minimum Elements For a Software Bill of Materials (SBOM) (Telecommunications and Administration 2021). A significant highlight of this work was the incorporation of SPDX Version 3.0, which expands its capabilities to include specifications for an AI Profile. This version recognizes the unique attributes of AI and machine learning models, accommodating their complex dependencies and configurations.\nThis extension not only reinforced the commitment to transparent and responsible software development but also exemplified how individual research efforts within the Trusted AI umbrella can be synthesized into the broader Framework. It also underscores the project’s proactive approach in leveraging the latest standards, such as SPDX 3.0, to ensure that the AI models and applications meet the ever-evolving requirements of the field.\n\n\n\n4.4 Hardened Containers, Military CI/CD through IronBank, Cloud One, and Platform One\nThe evolving technological landscape has necessitated a robust infrastructure for deploying software. Within the military context, especially in the Navy, trust, security, and efficiency are paramount. IronBank, Cloud One, and Platform One are initiatives that provide trusted access to cloud services and deployments (e.g., AWS, Azure) and create a streamlined pathway for the adoption of AI and other advanced technologies.\n\n4.4.1 Introduction to IronBank, Cloud One, and Platform One\n\nIronBank: A digital repository that offers containerized software accredited to run in Department of Defense (DoD) environments.\nCloud One: A set of cloud services designed to enable rapid and secure development within the DoD.\nPlatform One: A DoD-wide initiative that provides containerized software solutions, incorporating DevSecOps principles for continuous integration and deployment.\n\nThese platforms reduce the barriers to entry, ensuring a standardized approach to software development and deployment, all while aligning with military guidelines and requirements.\n\n\n4.4.2 AI-Centric Workflows and Challenges:\nIntegrating AI within these platforms presents unique challenges that diverge from traditional software deployments: - Data Management: AI’s unique data needs must be met through robust strategies, accommodating real-time feeds and scalable workflows. - Hardware Needs: AI applications often necessitate specialized hardware such as GPUs and accelerators, requiring containerization techniques that are hardware-agnostic. - Device Driver Complexity: Managing device drivers within Hardened Containers can be particularly intricate, leading to potential security vulnerabilities if misconfigured.\n\n\n4.4.3 Solutions and Alignment with Military Objectives:\nTo tackle these challenges, the combined ecosystem must: - Enhance data management to align with AI’s distinct requirements. - Adopt standardized device driver management and containerization strategies. - Ensure complete compliance with the Linux Foundation’s SPDX standards and federal procurement needs.\nBy integrating AI-centric workflows and aligning with essential hardware and security needs, IronBank, Cloud One, and Platform One offer a strong foundation for the military’s future AI adoption.\nIn the ever-changing technological landscape, the military’s approach to deployment and provisioning must evolve. The alignment of IronBank, Cloud One, and Platform One with AI’s unique workflows, specialized hardware, and secure device driver management sets a robust foundation for future innovation. These platforms not only align with the Navy’s mission but also pave the way for broader AI integration within the military domain, enhancing both trust and functionality.\n\n\n4.4.4 Conclusion: Building Trust through Secure Deployment\nThe deployment and provisioning of AI within the military environment are complex tasks laden with unique challenges. The emergence of hardened containers and specific initiatives like IronBank, Cloud One, and Platform One provides a pathway to integrating AI into the military domain. However, it’s the standardization through tools like Python PDM, Conda/Mamba, and Nix Container that builds a foundation of trust and robustness.\nBy embracing standardized tools, aligning them with military needs, and integrating them with existing trusted platforms, the Navy is poised to leverage the full potential of AI. The overarching strategy must be one of collaboration, security, and forward-thinking innovation, ensuring that the deployment of AI aligns with the broader goals of efficiency, transparency, and trust within the Navy’s mission.\nThe road ahead is promising, with these strategic initiatives paving the way for AI’s broader integration into the military domain. The combination of standardization, compliance, and alignment with military needs ensures a path toward Trusted AI that is both innovative and grounded in secure principles."
+  },
+  {
+    "objectID": "posts/frameworks-reflection/index.html#development-practices-and-methodologies",
+    "href": "posts/frameworks-reflection/index.html#development-practices-and-methodologies",
+    "title": "Reflections on Trusted AI Frameworks after two years",
+    "section": "5 Development Practices and Methodologies",
+    "text": "5 Development Practices and Methodologies\n\n5.1 Introduction: The Modern Development Landscape\nThe field of software development has seen a series of paradigm shifts, each reflecting the evolving demands of technology and society. From the traditional waterfall model to the agile development framework, the focus has continuously shifted towards more iterative, responsive, and collaborative practices. Within this changing landscape, the concept of “Literate Programming”  was introduced by Donald Knuth in the 1980s, emphasizing the importance of explaining code in a human-readable narrative. Knuth’s vision foresaw a future where programming is not just a mechanical process but a craft interwoven with storytelling and documentation.\nWith the rise of AI, this vision has been pushed further, enabling a new era of collaboration between human programmers and AI “Co-Pilots.” AI-driven assistance in software development is becoming a reality, allowing for more effective and efficient code writing, debugging, and optimization. Literate programming can play a vital role in this context, as it emphasizes clarity, explanation, and a structured narrative that both human developers and AI models can interpret and build upon.\nIn the realm of AI development, tools like Jupyter Notebooks foster a dynamic environment that bridges the gap between exploration and production, aligning closely with literate programming concepts. AI Co-Pilots can leverage this environment, utilizing the human-friendly documentation to better understand developer intent and provide more relevant assistance.\nThe integration of Language Model based generative models, like large language models, opens up new horizons for collaborative and adaptive software development. These models can navigate the intricate landscape of literate programming, making sense of both code and context, enhancing their ability to assist humans in complex software development tasks.\nAgile principles resonate strongly in this context, mirroring the exploratory nature of AI development. Just as agile methodologies prioritize adaptability and collaboration, modern AI practices encourage experimentation, quick iterations, and a seamless transition from exploration to deployment. The subsequent sections delve into specific practices and tools that exemplify this convergence of agility, literacy, and exploratory programming, demonstrating their relevance and potential within the framework of Trusted AI.\n\n\n\n5.2 Quarto: Bridging the Gap Between Literacy and Code\n\n5.2.1 Introduction to Quarto\nQuarto is a pioneering solution in the field of literate programming that seamlessly integrates human-readable text with executable code. It builds on the vision of “Literate Programming” put forth by Donald Knuth, which emphasizes the importance of making source code as understandable as ordinary written prose.\n\n\n5.2.2 Key Features of Quarto\n\nHuman-Readable Documentation: Quarto allows developers to intertwine code with descriptive narratives, diagrams, and mathematical notation. This approach fosters comprehension, collaboration, and maintainability, making it particularly well-suited for complex AI projects.\nInteroperability with Jupyter Notebooks: By supporting Jupyter Notebook integration, Quarto enables an exploratory programming environment. Researchers and engineers can craft, test, and iterate on code in an interactive and visual manner.\nFlexible Output Formats: Quarto documents can be rendered into various formats such as HTML, PDF, and Word, catering to diverse presentation and distribution needs.\nReproducibility: Code chunks and outputs within Quarto documents are readily reproducible. This aids in verification and validation, essential qualities in Trusted AI.\n\n\n\n5.2.3 Quarto in the Context of AI Development\nIn the rapidly evolving landscape of AI, where complexity can easily spiral out of control, Quarto provides a structured and transparent way to document and develop models. The following aspects make it a particularly fitting choice:\n\nTransparency: Literate programming through Quarto ensures that the code’s logic and decision-making are clearly articulated, fostering trust in the AI system.\nCollaboration: By bridging the gap between code and prose, Quarto facilitates collaboration among multidisciplinary teams, including data scientists, engineers, domain experts, and stakeholders.\nCompliance: In contexts like the Navy, where regulatory compliance and ethical considerations are paramount, Quarto’s approach to documentation can aid in meeting these requirements.\n\n\n\n5.2.4 Conclusion\nQuarto represents a leap forward in aligning software development practices with human cognition and communication. Its ability to bridge literacy and code makes it an indispensable tool in the era of “Software 2.0.” By fostering clear understanding, collaboration, and reproducibility, Quarto contributes to the overarching goal of building Trusted AI systems, aligning perfectly with the needs and values of modern AI development, including military applications.\n\n\n\n5.3 nbdev: Extending Literacy with Quarto Integration\n\n5.3.1 Introduction to nbdev\nnbdev is an open-source development environment that builds upon Jupyter Notebooks and extends the principles of literate programming. It particularly leverages the Quarto framework to create a seamless and productive development experience. By combining code, prose, and visualizations into a single environment, nbdev enables a more transparent and collaborative approach to software development.\n\n\n5.3.2 Key Features of nbdev\n\nQuarto Integration: By incorporating Quarto, nbdev fosters a rich literate programming environment where code is documented and explained in human-readable form.\nInteractive Development: Developers can write code, run experiments, and analyze results all within the same Jupyter Notebook, promoting a more exploratory and iterative process.\nAutomated Code Export: Code written in nbdev’s notebooks can be automatically converted to traditional script files, facilitating integration with existing codebases and deployment pipelines.\nTesting Integration: nbdev supports continuous integration and testing within the notebook environment, aligning with modern software quality assurance practices.\nCollaboration Tools: With built-in support for Git and GitHub, nbdev streamlines collaboration and version control, bridging the gap between data scientists, developers, and other stakeholders.\n\n\n\n5.3.3 nbdev in the Context of AI Development\nThe flexibility and transparency offered by nbdev are especially significant in AI development. Here’s how:\n\nComplex Model Documentation: AI models are inherently complex and require detailed explanation. Nbdev allows for the clear documentation of both algorithms and the reasoning behind design choices.\nRapid Prototyping: The interactive nature of nbdev enables quicker experimentation and refinement of models, a crucial aspect of AI development.\nReproducibility: By enforcing a structured approach, nbdev ensures that models are more reproducible, enhancing trust and reliability.\nAlignment with Software 2.0 Principles: The nbdev framework aligns well with the “Software 2.0” paradigm, where learned behaviors and model training are central. It supports the rapid evolution and integration needed in the AI landscape.\n\nnbdev, with its integration of Quarto, provides a cohesive and advanced environment for literate programming. Its synergy with the principles of modern AI development makes it an essential tool for achieving transparency, collaboration, and efficiency. In contexts like the military, where understanding, trust, and compliance are key, nbdev offers a pathway to create more accessible and trustworthy AI systems.\n\n\n\n5.4 Fast.ai: A Layered Approach to AI Development\n\n5.4.1 Introduction to Fast.ai\nFast.ai is an open-source deep learning library that simplifies the process of building and training deep learning models. Its core philosophy is to offer a layered approach, providing APIs at different levels of abstraction. This flexibility empowers developers, data scientists, and researchers to engage with AI across various complexities, from high-level applications to low-level customization.\n\n\n5.4.2 Fast.ai’s Layered Approach\n\nApplications Layer: This layer offers pre-built solutions for common tasks like image classification, natural language processing, tabular data analysis, and collaborative filtering. It is designed for ease of use, allowing non-specialists to build and deploy models with minimal code.\nHigh-Level API: For those who need more control and customization, the high-level API provides an intuitive interface to design and experiment with more complex models. It strikes a balance between simplicity and power, suitable for intermediate-level developers.\nMid-Level API: The mid-level API introduces more granular control and allows for the creation of custom models and data pipelines. It’s designed for advanced users who wish to dive deeper into the underlying mechanics of their models.\nLow-Level API: At the lowest layer, developers have direct access to underlying PyTorch constructs, facilitating experimentation and the development of entirely novel architectures. This layer is aimed at research scientists and cutting-edge practitioners.\n\n\n\n5.4.3 Literate Programming and nbdev Integration\nFast.ai not only encourages a more accessible approach to AI but also promotes literate programming principles. The library itself was developed using nbdev, thereby enhancing its transparency, documentation, and collaboration.\n\nTransparent Development: Literate programming within nbdev enables Fast.ai’s code, design rationale, and experiments to be clearly documented and shared.\nInteroperability: Fast.ai’s integration with nbdev ensures smooth collaboration between different stakeholders in the AI development process, including data scientists, engineers, and domain experts.\nRapid Prototyping and Experimentation: Leveraging the exploratory nature of nbdev, Fast.ai facilitates iterative experimentation and refinement, vital for AI research and development.\n\n\n\n5.4.4 Relevance to the Navy and Broader Defense Community\nFast.ai’s layered approach is particularly relevant to the Navy and other defense institutions. Here’s why:\n\nScalability: Fast.ai’s structure allows for quick prototyping and scaling, accommodating both straightforward applications and sophisticated custom solutions.\nEducation and Workforce Development: The approachability of Fast.ai makes it an excellent tool for education and training, aligning with initiatives like Scalable Asymmetric Lifecycle Engagement (SCALE) managed by Purdue University.\nTrust and Compliance: The transparency and reproducibility afforded by Fast.ai, especially in combination with nbdev, align well with the principles of Trusted AI, a critical consideration for military applications.\n\nFast.ai represents a significant advancement in making AI accessible, understandable, and manageable. Its layered approach, combined with literate programming principles, contributes to a more transparent and collaborative development process. In the context of defense and national security, Fast.ai offers a pathway to harness the power of AI effectively, ethically, and responsively.\n\n\n\n5.5 Conclusion: The Evolution of Development Practices in Trusted AI\nThe landscape of software development, particularly in the realm of AI, is undergoing a radical transformation. As we have explored in this section, the integration of literate programming, layered APIs, and open-source tools like Quarto, nbdev, and Fast.ai represent a shift towards more transparent, collaborative, and efficient development practices. These shifts are not just technological but cultural, redefining how developers, data scientists, engineers, and domain experts collaborate to create intelligent systems.\n\n5.5.1 The Role of AI Co-Pilots\nA promising frontier in this evolution is the integration of AI itself into the development and deployment process. AI Co-Pilots, or intelligent assistants, are emerging as key players in this new paradigm.\n\nSecurity Oversight: AI Co-Pilots can continuously monitor code for potential security vulnerabilities, offering real-time insights and even automated fixes, aligning with Trusted AI principles.\nCI/CD Integration: By embedding intelligence into the Continuous Integration/Continuous Deployment pipeline, AI Co-Pilots can optimize testing, deployment, and scaling, adapting to the unique demands of AI “Software 2.0.”\nCode Quality Control: AI-driven code review can ensure adherence to coding standards, improve code quality, and reduce human error, fostering more robust and maintainable systems.\nAdaptive Learning and Enhancement: Leveraging real-world data, AI Co-Pilots can learn and evolve, offering personalized assistance and driving continuous improvement in development practices.\n\n\n\n5.5.2 Relevance to the Navy and Defense Community\nThe Navy, and the defense community at large, stand to benefit profoundly from these advancements. The integration of AI Co-Pilots can enhance the security, efficiency, and agility of development processes, key attributes in an ever-changing and complex environment.\n\nMission Readiness: Faster, more robust development practices mean quicker deployment of critical AI systems, enhancing responsiveness and strategic capabilities.\nEthical Compliance: Automated oversight aligned with ethical guidelines ensures that AI systems adhere to the necessary standards, fostering trust and accountability.\nWorkforce Development: AI-driven tools offer opportunities for training and upskilling, aligning with initiatives like the Scalable Asymmetric Lifecycle Engagement (SCALE) managed by Purdue University, enhancing both semiconductor and AI workforce development.\n\n\n\n5.5.3 Looking Ahead\nThe integration of AI into development practices represents a significant step towards a future where intelligent systems are not just the products but active participants in the development lifecycle. This shift promises to enhance not only the efficiency and quality of development but also the ethical alignment and trustworthiness of AI systems.\nIn an era where complexity is the norm, and the stakes are high, these advancements offer a path towards a more resilient, responsive, and responsible approach to AI. The convergence of AI and human expertise is not just a technical evolution but a philosophical one, reflecting a deeper understanding of the interconnectedness of technology, ethics, and humanity.\n\n\n\n5.6 Broader Challenges and Opportunities\nThe quest for Trusted AI is not merely a technical challenge; it’s a complex endeavor that intersects with various domains, including ethics, community involvement, workforce development, interdisciplinary collaboration, and more. This section highlights some of these broader considerations, emphasizing the multifaceted nature of Trusted AI.\n\n5.6.1 Workforce Development\n\nSkills Gap: With the rapid advancement of AI technologies, there is a growing need for professionals with specialized skills. Addressing this gap requires tailored training and educational programs.\nInitiatives like SCALE: Managed by Purdue University and focused on semiconductor and AI workforce development, SCALE represents a model for public-private collaboration in nurturing talent.\nInclusion and Diversity: Building a workforce that reflects diverse perspectives is essential for developing AI systems that are equitable and unbiased.\n\n\n\n5.6.2 Ethical Considerations\n\nTransparency and Accountability: Ensuring that AI systems are transparent and accountable is fundamental to building trust.\nEthical Testing: Integrating ethical “behavior tests” within AI testing pipelines, as highlighted in CI/CD and GitOps environments, is vital to align AI with societal values.\nRegulatory Compliance: Adherence to executive orders, regulations, and guidelines governing DoD and Navy’s use of AI is crucial for legal and ethical operation.\n\n\n\n5.6.3 Community and Open Source Involvement\n\nCollaboration with Open Source Tools: Leveraging and contributing to open-source tools fosters a collaborative and innovative ecosystem.\nEngagement with the Broader Community: Collaborating with academia, industry, and other stakeholders can accelerate progress and ensure alignment with broader societal goals.\nPromoting Open Standards: Encouraging the use of open standards like Linux Foundation SPDX helps in creating a universal language and facilitating collaboration across different entities.\n\n\n\n5.6.4 Interdisciplinary Collaboration\n\nBridging Silos: Trusted AI requires the fusion of expertise from computer science, ethics, law, social sciences, and more. Encouraging interdisciplinary collaboration breaks down barriers and fosters holistic solutions.\nInnovation through Diversity of Thought: By integrating diverse perspectives, new pathways to innovation are uncovered, driving creativity and resilience in the development of AI systems.\n\n\n\n5.6.5 User Experience and Human-AI Interaction\n\nHuman-Centered Design: Emphasizing the end-user’s needs and expectations ensures that AI systems are user-friendly, accessible, and effective.\nEvolving Interaction Models: As Trusted AI projects mature, new paradigms of Human-AI Interaction (HAI) will emerge, necessitating ongoing research and adaptation.\n\n\n\n\n5.7 Conclusion: A Holistic Approach to Trusted AI\nTrusted AI is not a monolithic entity but a complex, dynamic field that intersects with various disciplines and societal considerations. By embracing these broader challenges and opportunities, we pave the way for AI systems that are not just intelligent but responsible, ethical, and aligned with human values and needs.\nThe integration of these various facets into the Trusted AI framework contributes to a comprehensive and sustainable approach, one that recognizes the interconnectedness of technology with the broader fabric of society. The journey towards Trusted AI is a collective endeavor, one that requires collaboration, empathy, foresight, and a deep commitment to ethical principles."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "AI Success Factors: Engineering Trust in Deployments",
+    "section": "",
+    "text": "Reflections on Trusted AI Frameworks after two years\n\n\n\n\n\n\n\nTrusted AI\n\n\nAI Frameworks\n\n\nAI Engineering\n\n\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nCharles Vardeman\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To AI Success Factors: Engineering Trust in Deployments\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 15, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#motivation-tatical-ammunition-management-micro-services-tamms",
+    "href": "slides/agents_summer23/index.html#motivation-tatical-ammunition-management-micro-services-tamms",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Motivation: Tatical ammunition management Micro Services (TAMMS)",
+    "text": "Motivation: Tatical ammunition management Micro Services (TAMMS)"
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#motivation-tamms-cognitive-agents",
+    "href": "slides/agents_summer23/index.html#motivation-tamms-cognitive-agents",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Motivation: TAMMS cognitive Agents",
+    "text": "Motivation: TAMMS cognitive Agents"
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#motivation-tamms-kg",
+    "href": "slides/agents_summer23/index.html#motivation-tamms-kg",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Motivation: TAMMS KG",
+    "text": "Motivation: TAMMS KG"
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms",
+    "href": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Cognitive Agents based on LLMs",
+    "text": "Cognitive Agents based on LLMs\n\n\nJoon Sung Park, Joseph C. O’Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, and Michael S. Bernstein. “Generative Agents: Interactive Simulacra of Human Behavior.” arXiv, August 5, 2023. http://arxiv.org/abs/2304.03442."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms-architecture",
+    "href": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms-architecture",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Cognitive Agents based on LLMs Architecture",
+    "text": "Cognitive Agents based on LLMs Architecture\n\n\nJoon Sung Park, Joseph C. O’Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, and Michael S. Bernstein. “Generative Agents: Interactive Simulacra of Human Behavior.” arXiv, August 5, 2023. http://arxiv.org/abs/2304.03442."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms-architecture-framework",
+    "href": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms-architecture-framework",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Cognitive Agents based on LLMs Architecture Framework",
+    "text": "Cognitive Agents based on LLMs Architecture Framework\n\n\nPark, Joon Sung. “Generative Agents: Interactive Simulacra of Human Behavior,” August 22, 2023. https://github.com/joonspk-research/generative_agents."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#activity-specific-agents-web-agents",
+    "href": "slides/agents_summer23/index.html#activity-specific-agents-web-agents",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Activity Specific Agents: Web Agents",
+    "text": "Activity Specific Agents: Web Agents\n\n\nDeng, Xiang, Yu Gu, Boyuan Zheng, Shijie Chen, Samuel Stevens, Boshi Wang, Huan Sun, and Yu Su. “Mind2Web: Towards a Generalist Agent for the Web.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.06070."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#activity-specific-agents-web-agents-architecture",
+    "href": "slides/agents_summer23/index.html#activity-specific-agents-web-agents-architecture",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Activity Specific Agents: Web Agents Architecture",
+    "text": "Activity Specific Agents: Web Agents Architecture\n\n\nDeng, Xiang, Yu Gu, Boyuan Zheng, Shijie Chen, Samuel Stevens, Boshi Wang, Huan Sun, and Yu Su. “Mind2Web: Towards a Generalist Agent for the Web.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.06070."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#activity-specific-agents-visual-agents",
+    "href": "slides/agents_summer23/index.html#activity-specific-agents-visual-agents",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Activity Specific Agents: Visual Agents",
+    "text": "Activity Specific Agents: Visual Agents\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#visual-agents-architecture-different-llms-based-on-role",
+    "href": "slides/agents_summer23/index.html#visual-agents-architecture-different-llms-based-on-role",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Visual Agents Architecture: Different LLMs based on Role",
+    "text": "Visual Agents Architecture: Different LLMs based on Role\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#activity-specific-agents-visual-agents-transition-graph",
+    "href": "slides/agents_summer23/index.html#activity-specific-agents-visual-agents-transition-graph",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Activity Specific Agents: Visual Agents Transition Graph",
+    "text": "Activity Specific Agents: Visual Agents Transition Graph\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#aside-transformer-vision-and-segmentation-models",
+    "href": "slides/agents_summer23/index.html#aside-transformer-vision-and-segmentation-models",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Aside: Transformer Vision and segmentation models",
+    "text": "Aside: Transformer Vision and segmentation models\n\n\n“Alaamaalouf/FollowAnything.” Accessed August 22, 2023. https://github.com/alaamaalouf/FollowAnything.\nMaalouf, Alaa, Ninad Jadhav, Krishna Murthy Jatavallabhula, Makram Chahine, Daniel M. Vogt, Robert J. Wood, Antonio Torralba, and Daniela Rus. “Follow Anything: Open-Set Detection, Tracking, and Following in Real-Time.” arXiv, August 10, 2023. https://doi.org/10.48550/arXiv.2308.05737."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure",
+    "href": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Graphs as a Prompt Structure",
+    "text": "Graphs as a Prompt Structure\n\n\nBesta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, et al. “Graph of Thoughts: Solving Elaborate Problems with Large Language Models.” arXiv, August 21, 2023. http://arxiv.org/abs/2308.09687."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure-1",
+    "href": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure-1",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Graphs as a Prompt Structure",
+    "text": "Graphs as a Prompt Structure\n\n\nBesta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, et al. “Graph of Thoughts: Solving Elaborate Problems with Large Language Models.” arXiv, August 21, 2023. http://arxiv.org/abs/2308.09687."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure-2",
+    "href": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure-2",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Graphs as a Prompt Structure",
+    "text": "Graphs as a Prompt Structure\n\n\nBesta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, et al. “Graph of Thoughts: Solving Elaborate Problems with Large Language Models.” arXiv, August 21, 2023. http://arxiv.org/abs/2308.09687."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#aside-prompt-engineering-guide",
+    "href": "slides/agents_summer23/index.html#aside-prompt-engineering-guide",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Aside: Prompt Engineering Guide",
+    "text": "Aside: Prompt Engineering Guide\n\n\n“Prompt Engineering Guide.” Accessed August 22, 2023. https://www.promptingguide.ai/."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#apis-as-tools-gorilla",
+    "href": "slides/agents_summer23/index.html#apis-as-tools-gorilla",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "APIs as Tools: Gorilla",
+    "text": "APIs as Tools: Gorilla\n\n\nPatil, Shishir G., Tianjun Zhang, Xin Wang, and Joseph E. Gonzalez. “Gorilla: Large Language Model Connected with Massive APIs.” arXiv, May 24, 2023. http://arxiv.org/abs/2305.15334."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#apis-as-tools-architecture",
+    "href": "slides/agents_summer23/index.html#apis-as-tools-architecture",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "APIs as Tools: Architecture",
+    "text": "APIs as Tools: Architecture\n\n\nPatil, Shishir G., Tianjun Zhang, Xin Wang, and Joseph E. Gonzalez. “Gorilla: Large Language Model Connected with Massive APIs.” arXiv, May 24, 2023. http://arxiv.org/abs/2305.15334."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#apis-as-tools",
+    "href": "slides/agents_summer23/index.html#apis-as-tools",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "APIs as Tools",
+    "text": "APIs as Tools\n\n\nPatil, Shishir. “Gorilla: Large Language Model Connected with Massive APIs [Project Website].” Python, August 22, 2023. https://github.com/ShishirPatil/gorilla."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#llm-personality-traits",
+    "href": "slides/agents_summer23/index.html#llm-personality-traits",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "LLM Personality Traits",
+    "text": "LLM Personality Traits\n\n\nSafdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#using-personality-tests",
+    "href": "slides/agents_summer23/index.html#using-personality-tests",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Using Personality Tests",
+    "text": "Using Personality Tests\n\n\nSafdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#behavior-persona-through-prompting",
+    "href": "slides/agents_summer23/index.html#behavior-persona-through-prompting",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Behavior Persona Through Prompting",
+    "text": "Behavior Persona Through Prompting\n\n\nSafdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#llm-personality-traits-malleability",
+    "href": "slides/agents_summer23/index.html#llm-personality-traits-malleability",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "LLM Personality Traits Malleability",
+    "text": "LLM Personality Traits Malleability\n\n\nSafdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#grounding-through-hybrid-kgs",
+    "href": "slides/agents_summer23/index.html#grounding-through-hybrid-kgs",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Grounding Through Hybrid KGs",
+    "text": "Grounding Through Hybrid KGs\n\n\nShirui Pan, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. “Unifying Large Language Models and Knowledge Graphs: A Roadmap.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#llamaindex-to-build-hybrid-kgs",
+    "href": "slides/agents_summer23/index.html#llamaindex-to-build-hybrid-kgs",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "LlamaIndex to Build Hybrid KGs",
+    "text": "LlamaIndex to Build Hybrid KGs\n\n\nLiu, Jerry. “LlamaIndex.” Python, November 2022. https://doi.org/10.5281/zenodo.1234."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#llamaindex-to-build-hybrid-kgs-1",
+    "href": "slides/agents_summer23/index.html#llamaindex-to-build-hybrid-kgs-1",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "LlamaIndex to Build Hybrid KGs",
+    "text": "LlamaIndex to Build Hybrid KGs\n\n\n“Custom Retriever Combining KG Index and VectorStore Index - LlamaIndex 🦙 0.8.5.Post2.” Accessed August 22, 2023. https://gpt-index.readthedocs.io/en/stable/examples/index_structs/knowledge_graph/KnowledgeGraphIndex_vs_VectorStoreIndex_vs_CustomIndex_combined.html."
+  },
+  {
+    "objectID": "slides/agents_summer23/index.html#data-agents-in-llamaindex",
+    "href": "slides/agents_summer23/index.html#data-agents-in-llamaindex",
+    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
+    "section": "Data Agents in LlamaIndex",
+    "text": "Data Agents in LlamaIndex\n\n\nFrom: Liu, Jerry. “Data Agents.” LlamaIndex Blog (blog), July 13, 2023. https://medium.com/llamaindex-blog/data-agents-eed797d7972f."
+  },
+  {
     "objectID": "slides/building_stuff/index.html#slides-link-httpsla3d.github.ionuggetsslideindex.html",
     "href": "slides/building_stuff/index.html#slides-link-httpsla3d.github.ionuggetsslideindex.html",
     "title": "Building “Stuff”?",
@@ -502,482 +1132,6 @@
     "title": "Building “Stuff”?",
     "section": "On to the First Steps to Building LLM Based Applications…",
     "text": "On to the First Steps to Building LLM Based Applications…"
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#motivation-tatical-ammunition-management-micro-services-tamms",
-    "href": "slides/agents_summer23/index.html#motivation-tatical-ammunition-management-micro-services-tamms",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Motivation: Tatical ammunition management Micro Services (TAMMS)",
-    "text": "Motivation: Tatical ammunition management Micro Services (TAMMS)"
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#motivation-tamms-cognitive-agents",
-    "href": "slides/agents_summer23/index.html#motivation-tamms-cognitive-agents",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Motivation: TAMMS cognitive Agents",
-    "text": "Motivation: TAMMS cognitive Agents"
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#motivation-tamms-kg",
-    "href": "slides/agents_summer23/index.html#motivation-tamms-kg",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Motivation: TAMMS KG",
-    "text": "Motivation: TAMMS KG"
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms",
-    "href": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Cognitive Agents based on LLMs",
-    "text": "Cognitive Agents based on LLMs\n\n\nJoon Sung Park, Joseph C. O’Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, and Michael S. Bernstein. “Generative Agents: Interactive Simulacra of Human Behavior.” arXiv, August 5, 2023. http://arxiv.org/abs/2304.03442."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms-architecture",
-    "href": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms-architecture",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Cognitive Agents based on LLMs Architecture",
-    "text": "Cognitive Agents based on LLMs Architecture\n\n\nJoon Sung Park, Joseph C. O’Brien, Carrie J. Cai, Meredith Ringel Morris, Percy Liang, and Michael S. Bernstein. “Generative Agents: Interactive Simulacra of Human Behavior.” arXiv, August 5, 2023. http://arxiv.org/abs/2304.03442."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms-architecture-framework",
-    "href": "slides/agents_summer23/index.html#cognitive-agents-based-on-llms-architecture-framework",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Cognitive Agents based on LLMs Architecture Framework",
-    "text": "Cognitive Agents based on LLMs Architecture Framework\n\n\nPark, Joon Sung. “Generative Agents: Interactive Simulacra of Human Behavior,” August 22, 2023. https://github.com/joonspk-research/generative_agents."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#activity-specific-agents-web-agents",
-    "href": "slides/agents_summer23/index.html#activity-specific-agents-web-agents",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Activity Specific Agents: Web Agents",
-    "text": "Activity Specific Agents: Web Agents\n\n\nDeng, Xiang, Yu Gu, Boyuan Zheng, Shijie Chen, Samuel Stevens, Boshi Wang, Huan Sun, and Yu Su. “Mind2Web: Towards a Generalist Agent for the Web.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.06070."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#activity-specific-agents-web-agents-architecture",
-    "href": "slides/agents_summer23/index.html#activity-specific-agents-web-agents-architecture",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Activity Specific Agents: Web Agents Architecture",
-    "text": "Activity Specific Agents: Web Agents Architecture\n\n\nDeng, Xiang, Yu Gu, Boyuan Zheng, Shijie Chen, Samuel Stevens, Boshi Wang, Huan Sun, and Yu Su. “Mind2Web: Towards a Generalist Agent for the Web.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.06070."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#activity-specific-agents-visual-agents",
-    "href": "slides/agents_summer23/index.html#activity-specific-agents-visual-agents",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Activity Specific Agents: Visual Agents",
-    "text": "Activity Specific Agents: Visual Agents\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#visual-agents-architecture-different-llms-based-on-role",
-    "href": "slides/agents_summer23/index.html#visual-agents-architecture-different-llms-based-on-role",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Visual Agents Architecture: Different LLMs based on Role",
-    "text": "Visual Agents Architecture: Different LLMs based on Role\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#activity-specific-agents-visual-agents-transition-graph",
-    "href": "slides/agents_summer23/index.html#activity-specific-agents-visual-agents-transition-graph",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Activity Specific Agents: Visual Agents Transition Graph",
-    "text": "Activity Specific Agents: Visual Agents Transition Graph\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#aside-transformer-vision-and-segmentation-models",
-    "href": "slides/agents_summer23/index.html#aside-transformer-vision-and-segmentation-models",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Aside: Transformer Vision and segmentation models",
-    "text": "Aside: Transformer Vision and segmentation models\n\n\n“Alaamaalouf/FollowAnything.” Accessed August 22, 2023. https://github.com/alaamaalouf/FollowAnything.\nMaalouf, Alaa, Ninad Jadhav, Krishna Murthy Jatavallabhula, Makram Chahine, Daniel M. Vogt, Robert J. Wood, Antonio Torralba, and Daniela Rus. “Follow Anything: Open-Set Detection, Tracking, and Following in Real-Time.” arXiv, August 10, 2023. https://doi.org/10.48550/arXiv.2308.05737."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure",
-    "href": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Graphs as a Prompt Structure",
-    "text": "Graphs as a Prompt Structure\n\n\nBesta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, et al. “Graph of Thoughts: Solving Elaborate Problems with Large Language Models.” arXiv, August 21, 2023. http://arxiv.org/abs/2308.09687."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure-1",
-    "href": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure-1",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Graphs as a Prompt Structure",
-    "text": "Graphs as a Prompt Structure\n\n\nBesta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, et al. “Graph of Thoughts: Solving Elaborate Problems with Large Language Models.” arXiv, August 21, 2023. http://arxiv.org/abs/2308.09687."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure-2",
-    "href": "slides/agents_summer23/index.html#graphs-as-a-prompt-structure-2",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Graphs as a Prompt Structure",
-    "text": "Graphs as a Prompt Structure\n\n\nBesta, Maciej, Nils Blach, Ales Kubicek, Robert Gerstenberger, Lukas Gianinazzi, Joanna Gajda, Tomasz Lehmann, et al. “Graph of Thoughts: Solving Elaborate Problems with Large Language Models.” arXiv, August 21, 2023. http://arxiv.org/abs/2308.09687."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#aside-prompt-engineering-guide",
-    "href": "slides/agents_summer23/index.html#aside-prompt-engineering-guide",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Aside: Prompt Engineering Guide",
-    "text": "Aside: Prompt Engineering Guide\n\n\n“Prompt Engineering Guide.” Accessed August 22, 2023. https://www.promptingguide.ai/."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#apis-as-tools-gorilla",
-    "href": "slides/agents_summer23/index.html#apis-as-tools-gorilla",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "APIs as Tools: Gorilla",
-    "text": "APIs as Tools: Gorilla\n\n\nPatil, Shishir G., Tianjun Zhang, Xin Wang, and Joseph E. Gonzalez. “Gorilla: Large Language Model Connected with Massive APIs.” arXiv, May 24, 2023. http://arxiv.org/abs/2305.15334."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#apis-as-tools-architecture",
-    "href": "slides/agents_summer23/index.html#apis-as-tools-architecture",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "APIs as Tools: Architecture",
-    "text": "APIs as Tools: Architecture\n\n\nPatil, Shishir G., Tianjun Zhang, Xin Wang, and Joseph E. Gonzalez. “Gorilla: Large Language Model Connected with Massive APIs.” arXiv, May 24, 2023. http://arxiv.org/abs/2305.15334."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#apis-as-tools",
-    "href": "slides/agents_summer23/index.html#apis-as-tools",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "APIs as Tools",
-    "text": "APIs as Tools\n\n\nPatil, Shishir. “Gorilla: Large Language Model Connected with Massive APIs [Project Website].” Python, August 22, 2023. https://github.com/ShishirPatil/gorilla."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#llm-personality-traits",
-    "href": "slides/agents_summer23/index.html#llm-personality-traits",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "LLM Personality Traits",
-    "text": "LLM Personality Traits\n\n\nSafdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#using-personality-tests",
-    "href": "slides/agents_summer23/index.html#using-personality-tests",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Using Personality Tests",
-    "text": "Using Personality Tests\n\n\nSafdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#behavior-persona-through-prompting",
-    "href": "slides/agents_summer23/index.html#behavior-persona-through-prompting",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Behavior Persona Through Prompting",
-    "text": "Behavior Persona Through Prompting\n\n\nSafdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#llm-personality-traits-malleability",
-    "href": "slides/agents_summer23/index.html#llm-personality-traits-malleability",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "LLM Personality Traits Malleability",
-    "text": "LLM Personality Traits Malleability\n\n\nSafdari, Mustafa, Greg Serapio-García, Clément Crepy, Stephen Fitz, Peter Romero, Luning Sun, Marwa Abdulhai, Aleksandra Faust, and Maja Matarić. “Personality Traits in Large Language Models.” arXiv, June 30, 2023. http://arxiv.org/abs/2307.00184."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#grounding-through-hybrid-kgs",
-    "href": "slides/agents_summer23/index.html#grounding-through-hybrid-kgs",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Grounding Through Hybrid KGs",
-    "text": "Grounding Through Hybrid KGs\n\n\nShirui Pan, Linhao Luo, Yufei Wang, Chen Chen, Jiapu Wang, and Xindong Wu. “Unifying Large Language Models and Knowledge Graphs: A Roadmap.” arXiv, June 14, 2023. http://arxiv.org/abs/2306.08302."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#llamaindex-to-build-hybrid-kgs",
-    "href": "slides/agents_summer23/index.html#llamaindex-to-build-hybrid-kgs",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "LlamaIndex to Build Hybrid KGs",
-    "text": "LlamaIndex to Build Hybrid KGs\n\n\nLiu, Jerry. “LlamaIndex.” Python, November 2022. https://doi.org/10.5281/zenodo.1234."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#llamaindex-to-build-hybrid-kgs-1",
-    "href": "slides/agents_summer23/index.html#llamaindex-to-build-hybrid-kgs-1",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "LlamaIndex to Build Hybrid KGs",
-    "text": "LlamaIndex to Build Hybrid KGs\n\n\n“Custom Retriever Combining KG Index and VectorStore Index - LlamaIndex 🦙 0.8.5.Post2.” Accessed August 22, 2023. https://gpt-index.readthedocs.io/en/stable/examples/index_structs/knowledge_graph/KnowledgeGraphIndex_vs_VectorStoreIndex_vs_CustomIndex_combined.html."
-  },
-  {
-    "objectID": "slides/agents_summer23/index.html#data-agents-in-llamaindex",
-    "href": "slides/agents_summer23/index.html#data-agents-in-llamaindex",
-    "title": "What Dr. Vardeman is worried about: Trusted cognitive Agents",
-    "section": "Data Agents in LlamaIndex",
-    "text": "Data Agents in LlamaIndex\n\n\nFrom: Liu, Jerry. “Data Agents.” LlamaIndex Blog (blog), July 13, 2023. https://medium.com/llamaindex-blog/data-agents-eed797d7972f."
-  },
-  {
-    "objectID": "slideindex.html",
-    "href": "slideindex.html",
-    "title": "Weekly Nugget Presentations",
-    "section": "",
-    "text": "Data Centric AI\n\n\n\n\n\n\n\nTrustedAI\n\n\nData Centric AI\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTools for Trusted AI\n\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
-    "section": "",
-    "text": "At the University of Notre Dame’s Center for Research Computing (CRC), the Laboratory for Assured AI Applications Development (LA3D) represents a critical step in the field of artificial intelligence (AI). As part of CRC’s commitment to leveraging advanced computation for discovery and innovation, LA3D focuses on ensuring the responsible development and application of AI technologies. This initiative aligns with both the technological evolution of AI and the broader goals of CRC and Notre Dame.\nThe mission of LA3D is robust, layered, and rooted in a commitment to research, develop, and deploy AI models and systems that are not just innovative but trustworthy and ethically aligned. With a focus on AI Engineering, Trusted AI, Knowledge Engineering, FAIR (Findable, Accessible, Interoperable, and Reusable) data, and CyberInfrastructure, LA3D presents a multifaceted approach.\nAI’s Transformative Potential: The transformative potential of AI is no longer a distant aspiration but a present-day reality. Whether in healthcare, finance, transportation, or education, AI’s capacity to innovate is unparalleled. LA3D recognizes this potential and strives to harness it, directing AI’s power towards constructive, ethical, and sustainable ends.\nConnection to the Center for Research Computing: LA3D’s home in the CRC is more than a mere geographical placement. It symbolizes a shared vision of advancing science through computational methods, high-performance computing, and now, AI-driven solutions. By integrating into the CRC’s vibrant ecosystem, LA3D amplifies the pursuit of excellence, pushing the boundaries of what’s achievable with AI.\nMission Overview: LA3D’s mission transcends traditional boundaries, aiming to advance fields like AI Engineering, with its critical role in transitioning prototypes to production; Trusted AI, embodying ethical and reliable systems; Knowledge Engineering, embracing the new frontiers of Large Language Models; FAIR data principles; and the rapidly evolving CyberInfrastructure. Each of these elements comes together to create a synergy that fuels LA3D’s ambition to lead AI into an era marked by integrity, ingenuity, and human-centric focus.\nThe launch of LA3D marks a promising beginning in a journey filled with exploration, challenge, and opportunity. It sets the stage for an intellectual adventure that seeks to navigate the complex landscape of AI, unlocking its potentials while remaining anchored to values and ethical principles. Welcome to the Laboratory for Assured AI Applications Development – a place where AI’s promise transforms into tangible progress."
-  },
-  {
-    "objectID": "posts/welcome/index.html#the-imperative-of-the-disciplines",
-    "href": "posts/welcome/index.html#the-imperative-of-the-disciplines",
-    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
-    "section": "The Imperative of the Disciplines",
-    "text": "The Imperative of the Disciplines\n\nAI Engineering: Bridging the Gap from Prototype to Production\nIn the complex, multifaceted realm of AI, the journey from concept to realization is fraught with challenges and intricacies. AI Engineering, a core discipline at the Laboratory for Assured AI Applications Development (LA3D), stands as a beacon guiding this intricate transition from prototypes to production-grade applications.\n\nTransitioning Prototypes to Production: At LA3D, we recognize that the gap between experimental AI prototypes and fully functional production systems is vast. AI Engineering provides the methodologies, tools, and practices needed to navigate this gap. It’s about ensuring that promising concepts don’t just remain on paper but evolve into tangible applications. The recent Gartner research resonates with our approach, identifying that only 53% of AI projects transition from prototypes to production, underscoring the need for an engineering-driven approach.\nCore Pillars: DataOps, ModelOps, DevOps: DataOps focuses on data management and quality, ModelOps on model lifecycle management, and DevOps for seamless integration. These three core pillars together facilitate performance, scalability, interpretability, and reliability of AI models, maximizing the value of AI investments.\nAssurance in AI Models and Mechanistic Interpretability: Assurance in AI Models and Mechanistic Interpretability: Trust and reliability lie at the core of AI Engineering. At LA3D, the utilization of energy-based modeling, specifically Joint Energy-Based Models (JEMs), offers a transparent and statistically grounded approach to AI. By learning joint distributions over observed and latent variables, and associating lower energies with more likely configurations, JEMs help in aligning AI models with ethical guidelines and intended purposes. This mechanistic interpretability, coupled with the robust design inherent in JEMs, ensures predictability and engenders trust. Such alignment is vital for Assured AI, where understanding the underlying patterns and regularities in data becomes a cornerstone for creating reliable and responsible applications.\nScalability, Efficiency, Lifecycle Management, and Data-Centric AI: Ensuring consistent performance across different scales and complexities is crucial. LA3D’s AI Engineering practices enable models to be deployed in various environments without losing integrity or performance. Managing AI models throughout their lifecycle through continuous monitoring, validation, and maintenance ensures adaptability and alignment with evolving objectives. The emphasis on Data-Centric AI reflects LA3D’s commitment to focusing on the quality of data, recognizing that data is the lifeblood of AI systems.\nInterdisciplinary Collaboration and Alignment with Human Values: AI Engineering fosters collaboration among data scientists, engineers, domain experts, and ethical compliance teams. The result is cohesive AI development, where varying perspectives merge to create solutions resonating with diverse needs and values. At LA3D, AI serves human values and societal needs, ensuring that technology is not only technically sound but also socially responsible.\nEmbracing CyberSecurity: Coupled with a growing interest in CyberSecurity, LA3D extends the scope of AI Engineering to safeguard information and assure security in AI applications.\n\nAI Engineering is not merely a process at LA3D; it’s a philosophy and an imperative discipline. It’s the bedrock that ensures AI models are not just innovative but also responsible, practical, and aligned with the human experience. Bridging the gap from prototype to production, AI Engineering paves the way for a future where AI is not just a tool but a reliable partner for progress. Join us on this journey as we delve deeper into AI Engineering, exploring its challenges, triumphs, and nuances.\n\n\nTrusted AI: A Cornerstone of Ethical and Reliable Systems\nTrusted AI is not just a concept; it’s a commitment to integrity, ethics, and societal alignment that LA3D wholeheartedly embraces. Trust in AI is an essential component in our technological landscape, and it embodies various facets that work in synergy to create ethical and reliable systems.\n\nAssurance in AI Models: At LA3D, assurance goes beyond mere compliance; it’s about creating AI models that can be understood, scrutinized, and validated. Building AI models that can explain their reasoning and provide clarity in their decisions is integral to creating trust.\nTransparency and Accountability: The quest for Trusted AI demands complete transparency in both process and outcomes. LA3D adheres to an open and comprehensible approach that allows all stakeholders to understand how decisions are made and who is accountable for them. Ensuring this level of transparency fosters an environment where AI models can be thoroughly evaluated and critiqued, reinforcing trust in their use.\nResponsible AI: While Trusted AI focuses on reliability and ethics, Responsible AI broadens the spectrum to include considerations such as fairness, inclusivity, privacy, and societal impact. At LA3D, we recognize that AI systems must not only operate within ethical guidelines but also actively contribute to the well-being of society. This commitment to social responsibility aligns with our holistic approach to developing technology that enriches lives.\nCyberSecurity in AI: As AI systems become more intertwined with our daily lives, the need to secure them becomes paramount. LA3D is committed to incorporating CyberSecurity measures within the AI development process, safeguarding data and protecting the integrity of AI systems. We understand that trust in AI also depends on the security of the systems, and we dedicate our resources to ensure that our AI applications are robust against threats.\n\nTrusted AI is a cornerstone at LA3D, reflecting our relentless pursuit of aligning technology with human values and ethical principles. It’s about creating AI that people can rely on, understand, and feel safe using. The interplay between transparency, accountability, Responsible AI, and CyberSecurity forms a unified approach to build AI systems that not only perform exceptionally but also resonate with the broader societal goals.\nJoin us as we explore further the nuances of Trusted AI, a field where technology and ethics merge to pave the way for a future where AI is a dependable ally. Our commitment to this discipline underscores the depth of our understanding of the complexities involved in crafting AI that is truly trusted.\nThis section outlines the key areas of Trusted AI that LA3D focuses on, emphasizing the importance of trust, transparency, responsibility, and security within the AI domain. It underscores the laboratory’s dedication to ethical and reliable AI systems, aligning with societal needs and values.\n\n\nKnowledge Engineering and Prompt Engineering: The New Frontiers\nIn the rapidly evolving landscape of artificial intelligence, Knowledge Engineering and Prompt Engineering emerge as exciting new frontiers that promise to reshape the way we conceptualize, create, and leverage AI systems. At the Laboratory for Assured AI Applications Development (LA3D), we recognize the vital role of these disciplines in shaping the next generation of AI applications.\n\nKnowledge Graphs: Knowledge graphs represent a transformative approach to organizing and connecting information. By modeling relationships between entities in a structured and semantically rich format, knowledge graphs enable more intelligent querying and reasoning. LA3D actively leverages knowledge graphs to power more insightful and context-aware AI solutions.\nOntology Design Patterns: A specialized aspect of Knowledge Engineering, ontology design patterns allow for the formal representation of concepts and their relationships within a specific domain. By utilizing these patterns, LA3D ensures that AI systems have a solid conceptual foundation, enabling more precise interpretation and decision-making.\nLLM Techniques: Large Language Models (LLMs) are revolutionizing natural language processing. By employing techniques like Prompt Engineering, LA3D refines the interaction with LLMs, enhancing their responsiveness and adaptability. This method allows for more effective communication with AI systems, aligning them closer to human-like understanding.\nAI Models as Surrogates: At LA3D, we explore the exciting potential of AI models as surrogates for complex mathematical or physical models. These AI surrogates can provide faster and more accessible simulations, accelerating research and opening new avenues for exploration in science and engineering.\nAI Co-Pilots for Various Tasks: Beyond acting as mere tools, AI models are now being developed as intelligent co-pilots, assisting human experts in a variety of tasks. Whether aiding in data analysis, guiding complex problem-solving, or enhancing creative processes, AI co-pilots represent a new paradigm of collaboration between human and machine intelligence.\n\nKnowledge Engineering and Prompt Engineering are not mere additions to the AI toolkit; they are pivotal advancements that herald a new era in AI application design and interaction. By embracing these new frontiers, LA3D reinforces its commitment to innovation, excellence, and the relentless pursuit of AI that is not just cutting-edge but profoundly attuned to human needs and aspirations. Join us as we explore these new horizons, uncovering the immense potential and profound implications they hold for the future of AI.\n\n\nThe Evolution of CyberInfrastructure and AI-Driven Science AI-Driven Science\nThe seamless integration of CyberInfrastructure with AI-driven science marks a transformative phase in research and innovation. As part of the Laboratory for Assured AI Applications Development (LA3D) at the University of Notre Dame’s Center for Research Computing (CRC), we are at the forefront of this exciting convergence, pioneering approaches that harness the power of advanced computing technologies to accelerate scientific discovery.\n\nAI-Driven Science: The infusion of AI into scientific research has ushered in a new era of data-driven exploration and insight. At LA3D, we employ AI models to analyze complex data sets, predict outcomes, and even guide experimental design. From enhancing medical diagnostics to predicting climate patterns, AI-driven science is unlocking unprecedented opportunities for understanding and innovation.\nRelevance to CRC: The Center for Research Computing at Notre Dame is committed to providing cutting-edge computational resources and expertise. The collaboration with LA3D amplifies this commitment by aligning AI research with state-of-the-art CyberInfrastructure. Together, we’re pushing the boundaries of what’s possible in computational science.\nAI Surrogates for Mathematical Models: Building on the AI surrogates concept, we utilize AI models to replicate complex mathematical or physical systems within CRC. These surrogates enable faster simulations and insights, thus accelerating research and expanding our ability to tackle previously intractable problems.\nAI Co-Pilots for Scientific Exploration: The development of AI co-pilots has extended into the realm of scientific exploration at CRC. These intelligent systems act as collaborators, assisting researchers in hypothesis formulation, data analysis, and problem-solving. It’s a revolutionary approach that augments human intelligence with AI, fostering a new level of creativity and rigor in scientific inquiry.\nIntegration of CyberInfrastructure: A robust CyberInfrastructure is foundational to AI-driven science at CRC. By weaving together high-performance computing, cloud technologies, and specialized software, we’re creating a dynamic environment where AI and computational science flourish. It’s a synergy that optimizes research processes, enhances collaboration, and catalyzes breakthroughs.\n\nThe evolution of CyberInfrastructure and AI-driven science at CRC represents more than technological advancement; it’s a paradigm shift in how we approach research and discovery. Through strategic collaboration and relentless innovation, we’re crafting a future where technology and human intellect unite to illuminate the unknown. Join us on this path, as we explore the incredible potential and promise of this convergence, continually striving to redefine the boundaries of what is possible in science and beyond."
-  },
-  {
-    "objectID": "posts/welcome/index.html#blogs-objective-and-overview",
-    "href": "posts/welcome/index.html#blogs-objective-and-overview",
-    "title": "Welcome To AI Success Factors: Engineering Trust in Deployments",
-    "section": "Blog’s Objective and Overview",
-    "text": "Blog’s Objective and Overview\nIn alignment with the University of Notre Dame’s mission to seek knowledge that addresses humanity’s pressing challenges, and the Center for Research Computing’s (CRC) commitment to driving innovation, the Laboratory for Assured AI Applications Development (LA3D) is pleased to unveil this blog as an essential platform.\n\nWeekly Updates: Engage with regular insights into the ongoing research, technological advancements, and creative pursuits within LA3D. From AI Engineering to Trusted AI, we’ll keep our community abreast of the exciting developments shaping our field.\nInsights into Trusted AI, CI-Compass, and More: Delve into the core projects and collaborations within LA3D, including specialized explorations into the worlds of Trusted AI, CI-Compass, CyberSecurity in AI, and the nuances of Responsible AI.\nAI Workforce Development: Recognizing the need for a skilled and knowledgeable AI workforce, this blog will feature initiatives, programs, and strategies dedicated to cultivating the next generation of AI professionals. Together with CRC, we strive to foster education, mentorship, and career development in AI.\nResearch Publications and Highlights: Discover the rich tapestry of research being woven at LA3D. We’ll highlight key publications, conference achievements, and innovative studies that reflect our commitment to excellence and alignment with Notre Dame’s values.\nCommunity Engagement and Collaboration: Building on Notre Dame’s emphasis on community and service, this blog invites you to participate, share, and learn. Join a lively dialogue that celebrates diversity of thought and collaboration in pursuit of a greater understanding of Assured AI.\nSpotlight on CyberSecurity in AI and Emerging Topics: As part of our comprehensive view of modern AI, we will dedicate specific sections to explore critical areas like CyberSecurity and the delicate balance between Responsible and Trusted AI.\nConnection to Notre Dame’s and CRC’s Mission: This blog embodies the spirit of Notre Dame and CRC’s shared mission to advance knowledge, foster innovation, and contribute to society. We strive to make the pursuit of AI not only a scientific endeavor but also a means to enrich lives and address societal needs.\n\nIn the introduction, we’ve outlined the essential areas of focus at the Laboratory for Assured AI Applications Development (LA3D) at the University of Notre Dame’s Center for Research Computing. From AI Engineering’s crucial role in transitioning prototypes to production, to the ethical imperatives in Trusted AI, Knowledge Engineering, CyberSecurity in AI, and the blog’s alignment with the missions of CRC and Notre Dame, we’ve set the stage for a comprehensive exploration.\nOur blog serves as a platform to dive into these topics, including AI workforce development and the ways in which AI intersects with societal needs and technological advancements. As we move forward, we’ll examine these subjects in detail, shedding light on the challenges, successes, and ongoing efforts in these fields.\nStay tuned as we delve into the complexities of AI, with insights and updates that reflect LA3D’s commitment to innovation, responsibility, and real-world applicability. Join us in this exploration, as we strive to make AI not just a tool, but a reliable partner for progress."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "AI Success Factors: Engineering Trust in Deployments",
-    "section": "",
-    "text": "Welcome To AI Success Factors: Engineering Trust in Deployments\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nAug 15, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#trusted-ai-frameworks-for-knowledge-engineering",
-    "href": "slides/tai-tools/index.html#trusted-ai-frameworks-for-knowledge-engineering",
-    "title": "Tools for Trusted AI",
-    "section": "Trusted AI Frameworks for Knowledge Engineering",
-    "text": "Trusted AI Frameworks for Knowledge Engineering"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-chatgpt",
-    "href": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-chatgpt",
-    "title": "Tools for Trusted AI",
-    "section": "What is Trusted AI – Let’s ask ChatGPT!",
-    "text": "What is Trusted AI – Let’s ask ChatGPT!\nTrusted AI encompasses systems that are not only ethically aligned but also reliable, robust, secure, transparent, and accountable. While ethical considerations form a crucial aspect, Trusted AI extends to include the technical quality and performance of the system. The goal is to create AI technologies that various stakeholders—including users, developers, businesses, and regulators—can trust to behave as intended and to meet specific performance, security, and governance standards.\nThe concept integrates aspects from multiple domains, such as:\n\nEthics: Fairness, transparency, and accountability.\nReliability: Consistent and dependable system performance.\nRobustness: Ability to handle unexpected inputs or conditions without failing.\nSecurity: Measures to protect data and models from unauthorized access and tampering.\nTransparency: Understandability of system decisions and actions.\nAccountability: Mechanisms to trace actions back to the responsible entities for evaluation and auditing.\n\nIn this broader context, “trust” is a multidimensional construct. It’s not just about being ethical but about fulfilling a wide range of expectations and standards that make a system worthy of trust."
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-claude-2",
-    "href": "slides/tai-tools/index.html#what-is-trusted-ai-lets-ask-claude-2",
-    "title": "Tools for Trusted AI",
-    "section": "What is Trusted AI – Let’s ask Claude 2!",
-    "text": "What is Trusted AI – Let’s ask Claude 2!\nTrusted AI refers to artificial intelligence systems that are designed and validated to be reliable, safe and technically robust. Key principles of trusted AI include:\n\nReliability - AI systems consistently produce accurate, reproducible results that can be externally validated. Models are unbiased and decisions explainable.\nSafety and security - AI systems are developed using secure software practices and are resilient against attacks, hacking or misuse. They protect privacy and confidentiality.\nExternal oversight - There are independent audits and ongoing monitoring of AI systems to ensure transparency and identify issues. Public disclosure builds trust.\nHuman control - Humans remain fully in control of AI systems, which augment human intelligence rather than replace it. Autonomous systems have human supervision.\nProportionality - AI capabilities do not exceed what is appropriate for the task. AI is not used when less advanced technology suffices.\nTechnical robustness - AI systems are thoroughly tested for stability, scalability and corner cases. Failsafes prevent glitches or unintended harm.\n\nIn contrast to responsible AI, trusted AI emphasizes technical system properties over organizational processes. It focuses on engineering reliable, safe and externally validated AI, rather than holistic internal governance."
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#our-evolving-vision-of-trusted-ai",
-    "href": "slides/tai-tools/index.html#our-evolving-vision-of-trusted-ai",
-    "title": "Tools for Trusted AI",
-    "section": "Our, evolving vision of Trusted AI",
-    "text": "Our, evolving vision of Trusted AI"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#responsible-ai",
-    "href": "slides/tai-tools/index.html#responsible-ai",
-    "title": "Tools for Trusted AI",
-    "section": "Responsible AI",
-    "text": "Responsible AI\n\nResponsible AI: This term is broader and refers to the ethical design, development, and deployment of AI. This includes considerations not just of the AI’s technical behavior (e.g., is it transparent and accountable?), but also of the socio-economic implications, like job displacement, and broader ethical considerations like data privacy and environmental impact."
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#foundational-components-for-trusted-ai",
-    "href": "slides/tai-tools/index.html#foundational-components-for-trusted-ai",
-    "title": "Tools for Trusted AI",
-    "section": "Foundational Components for Trusted AI",
-    "text": "Foundational Components for Trusted AI\n\nAutomate the integration and deployment of code, ensuring quality and operational efficiency.\nStandardized Development Environments: Establish consistent, easily replicable environments to accelerate development and experimentation.\nData & Experiment Versioning: Implement robust systems to track changes in data and experiments, allowing for traceability and repeatability.\nModel Lifecycle Management: Streamline the training, deployment, monitoring, and updating of machine learning models.\nFlexibility Across Layers: Design the architecture to allow for different levels of customization, from high-level APIs to low-level controls, facilitating adaptability."
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#why-a-framework",
-    "href": "slides/tai-tools/index.html#why-a-framework",
-    "title": "Tools for Trusted AI",
-    "section": "Why a Framework?",
-    "text": "Why a Framework?\n\n\n\n\n“Course22/06-Why-You-Should-Use-a-Framework.Ipynb at Master · Fastai/Course22.”\nAccessed August 29, 2023. https://github.com/fastai/course22/blob/master/06-why-you-should-use-a-framework.ipynb."
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#this-is-a-living-set-of-slides",
-    "href": "slides/tai-tools/index.html#this-is-a-living-set-of-slides",
-    "title": "Tools for Trusted AI",
-    "section": "This is a “living” set of slides!",
-    "text": "This is a “living” set of slides!"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#purpose-to-quickly-bootstrap-you-into-a-research-environment",
-    "href": "slides/tai-tools/index.html#purpose-to-quickly-bootstrap-you-into-a-research-environment",
-    "title": "Tools for Trusted AI",
-    "section": "Purpose: To quickly “Bootstrap” you into a research environment",
-    "text": "Purpose: To quickly “Bootstrap” you into a research environment"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#our-framework-starts-with-github",
-    "href": "slides/tai-tools/index.html#our-framework-starts-with-github",
-    "title": "Tools for Trusted AI",
-    "section": "Our Framework Starts with GitHub",
-    "text": "Our Framework Starts with GitHub\n\n\n\n\nGitHub ND-Crane Organization"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#step-1-create-a-github-account",
-    "href": "slides/tai-tools/index.html#step-1-create-a-github-account",
-    "title": "Tools for Trusted AI",
-    "section": "(Step 1) Create a GitHub Account",
-    "text": "(Step 1) Create a GitHub Account\n\n\n\n\nGitHub"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#step-2-email-github-account-id",
-    "href": "slides/tai-tools/index.html#step-2-email-github-account-id",
-    "title": "Tools for Trusted AI",
-    "section": "(Step 2) Email GitHub Account ID",
-    "text": "(Step 2) Email GitHub Account ID\n\nIf you are not part of the nd-crane organization. Email pmoreira@nd.edu your GitHub ID so we can add it to the nd-crane organization"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#step-3-go-through-github-skills-introduction-to-github",
-    "href": "slides/tai-tools/index.html#step-3-go-through-github-skills-introduction-to-github",
-    "title": "Tools for Trusted AI",
-    "section": "(Step 3) Go through GitHub Skills Introduction to GitHub",
-    "text": "(Step 3) Go through GitHub Skills Introduction to GitHub\n\n\n\nGo Through “First Day on GitHub”\n\nIntroduction to GitHub\nCommunicate using Markdown\nGitHub Pages (We will use this with Quarto)\n\nFirst week on GitHub\n\nReview pull requests\nResolve merge conflicts\nRelease-based workflow\nConnect the dots\nCode with Codespaces\n\n\n\n\n\n\n\nGitHub Skills: https://skills.github.com/"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#ai-and-machine-learning",
-    "href": "slides/tai-tools/index.html#ai-and-machine-learning",
-    "title": "Tools for Trusted AI",
-    "section": "AI and Machine Learning",
-    "text": "AI and Machine Learning\n\n\nPractical Deep Learning: https://course.fast.ai/\nFastAI Book\nFastAI GitHub: https://github.com/fastai"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#fastai-fastbook-a-production-mindset",
-    "href": "slides/tai-tools/index.html#fastai-fastbook-a-production-mindset",
-    "title": "Tools for Trusted AI",
-    "section": "FastAI FastBook – “A Production Mindset”",
-    "text": "FastAI FastBook – “A Production Mindset”\n\n\n\nIntroduction to Jupyter\n02_production.ipynb\nNatural Language (NLP)\n\nGetting started with NLP for absolute beginners"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#a-preview",
-    "href": "slides/tai-tools/index.html#a-preview",
-    "title": "Tools for Trusted AI",
-    "section": "A Preview…",
-    "text": "A Preview…"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#visual-studio-code",
-    "href": "slides/tai-tools/index.html#visual-studio-code",
-    "title": "Tools for Trusted AI",
-    "section": "Visual Studio Code",
-    "text": "Visual Studio Code\n\n\nVisual Studio Code - Code Editing. Redefined: https://code.visualstudio.com/"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#peter-only-dev-containers-and-fastai",
-    "href": "slides/tai-tools/index.html#peter-only-dev-containers-and-fastai",
-    "title": "Tools for Trusted AI",
-    "section": "(Peter Only!) “Dev Containers” and FastAI",
-    "text": "(Peter Only!) “Dev Containers” and FastAI\nUsing Codespaces to work with the “Practical Deep Learning for Coders” course"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#but-dr.-vardeman-i-know-all-of-this",
-    "href": "slides/tai-tools/index.html#but-dr.-vardeman-i-know-all-of-this",
-    "title": "Tools for Trusted AI",
-    "section": "But Dr. Vardeman, I know all of this!",
-    "text": "But Dr. Vardeman, I know all of this!\nGetting Started With LLMs"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#python",
-    "href": "slides/tai-tools/index.html#python",
-    "title": "Tools for Trusted AI",
-    "section": "Python",
-    "text": "Python\n\n\nLearn More: Think Python 2e: https://greenteapress.com/wp/think-python-2e/"
-  },
-  {
-    "objectID": "slides/tai-tools/index.html#python-for-data-analysis",
-    "href": "slides/tai-tools/index.html#python-for-data-analysis",
-    "title": "Tools for Trusted AI",
-    "section": "Python for Data Analysis",
-    "text": "Python for Data Analysis\n\n\n\n\n\n\nPractical Deep Learning: https://wesmckinney.com/book/"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
-    "href": "slides/kg-llamaindex/index.html#kg-construction-pipeline",
-    "title": "KG Construction",
-    "section": "KG Construction Pipeline",
-    "text": "KG Construction Pipeline"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
-    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap",
-    "title": "KG Construction",
-    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
-    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
-    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-1",
-    "title": "KG Construction",
-    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
-    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-2",
-    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-2",
-    "title": "KG Construction",
-    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
-    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-3",
-    "href": "slides/kg-llamaindex/index.html#unifying-large-language-models-and-knowledge-graphs-a-roadmap-3",
-    "title": "KG Construction",
-    "section": "Unifying Large Language Models and Knowledge Graphs: A Roadmap",
-    "text": "Unifying Large Language Models and Knowledge Graphs: A Roadmap\n\n\nLearn more: ArXiv Paper"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#llm-kg-construction-frameworks-llamaindex",
-    "href": "slides/kg-llamaindex/index.html#llm-kg-construction-frameworks-llamaindex",
-    "title": "KG Construction",
-    "section": "LLM KG Construction Frameworks Llamaindex",
-    "text": "LLM KG Construction Frameworks Llamaindex\n\nLearn more: Llamaindex"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#rebel-large-model",
-    "href": "slides/kg-llamaindex/index.html#rebel-large-model",
-    "title": "KG Construction",
-    "section": "Rebel Large Model",
-    "text": "Rebel Large Model\n#| echo: true\nfrom transformers import pipeline\n\ntriplet_extractor = pipeline('text2text-generation', model='Babelscape/rebel-large', tokenizer='Babelscape/rebel-large')\n# We need to use the tokenizer manually since we need special tokens.\nextracted_text = triplet_extractor.tokenizer.batch_decode([triplet_extractor(\"Punta Cana is a resort town in the municipality of Higuey, in La Altagracia Province, the eastern most province of the Dominican Republic\", return_tensors=True, return_text=False)[0][\"generated_token_ids\"]])\nprint(extracted_text[0])\n# Function to parse the generated text and extract the triplets\ndef extract_triplets(text):\n    triplets = []\n    relation, subject, relation, object_ = '', '', '', ''\n    text = text.strip()\n    current = 'x'\n    for token in text.replace(\"&lt;s&gt;\", \"\").replace(\"&lt;pad&gt;\", \"\").replace(\"&lt;/s&gt;\", \"\").split():\n        if token == \"&lt;triplet&gt;\":\n            current = 't'\n            if relation != '':\n                triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n                relation = ''\n            subject = ''\n        elif token == \"&lt;subj&gt;\":\n            current = 's'\n            if relation != '':\n                triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n            object_ = ''\n        elif token == \"&lt;obj&gt;\":\n            current = 'o'\n            relation = ''\n        else:\n            if current == 't':\n                subject += ' ' + token\n            elif current == 's':\n                object_ += ' ' + token\n            elif current == 'o':\n                relation += ' ' + token\n    if subject != '' and relation != '' and object_ != '':\n        triplets.append({'head': subject.strip(), 'type': relation.strip(),'tail': object_.strip()})\n    return triplets\nextracted_triplets = extract_triplets(extracted_text[0])\nprint(extracted_triplets)\n\nLearn more: Rebel Large"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#llamaindex-with-rebel",
-    "href": "slides/kg-llamaindex/index.html#llamaindex-with-rebel",
-    "title": "KG Construction",
-    "section": "LlamaIndex with Rebel",
-    "text": "LlamaIndex with Rebel\n\n\nLearn more: Llamaindex with Rebel Colab Notebook"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#llamaindex-with-rebel-and-neo4j",
-    "href": "slides/kg-llamaindex/index.html#llamaindex-with-rebel-and-neo4j",
-    "title": "KG Construction",
-    "section": "LlamaIndex with Rebel and Neo4j",
-    "text": "LlamaIndex with Rebel and Neo4j\n\n\nLearn more: Neo4j Graph Store\nGitHub: Tomaz Bratanic"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
-    "href": "slides/kg-llamaindex/index.html#weaviate-with-llama-2-and-llamaindex",
-    "title": "KG Construction",
-    "section": "Weaviate With Llama 2 and Llamaindex",
-    "text": "Weaviate With Llama 2 and Llamaindex\n\n\nLearn more: Welcome to the quick notebook on using Llama 2"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs",
-    "href": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs",
-    "title": "KG Construction",
-    "section": "Weaviate “Knowledge Graphs”",
-    "text": "Weaviate “Knowledge Graphs”\n\n\nExample: NASA Graph-Enabled Vector Search"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs-1",
-    "href": "slides/kg-llamaindex/index.html#weaviate-knowledge-graphs-1",
-    "title": "KG Construction",
-    "section": "Weaviate “Knowledge Graphs”",
-    "text": "Weaviate “Knowledge Graphs”\n\n\nExample: NASA Graph-Enabled Vector Search"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#aws-neptune",
-    "href": "slides/kg-llamaindex/index.html#aws-neptune",
-    "title": "KG Construction",
-    "section": "AWS Neptune",
-    "text": "AWS Neptune\n\n\nLearn More: Amazon Neptune"
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#amazon-science-refined",
-    "href": "slides/kg-llamaindex/index.html#amazon-science-refined",
-    "title": "KG Construction",
-    "section": "Amazon Science ReFinED",
-    "text": "Amazon Science ReFinED\n\n\nPaper: ReFinED: An Efficient Zero-shot-capable Approach to End-to-End Entity Linking\nPaper: Improving Entity Disambiguation by Reasoning over a Knowledge Base\nGitHub: ReFinED is an efficient and accurate entity linking (EL) system."
-  },
-  {
-    "objectID": "slides/kg-llamaindex/index.html#amazon-science-kgqa",
-    "href": "slides/kg-llamaindex/index.html#amazon-science-kgqa",
-    "title": "KG Construction",
-    "section": "Amazon Science KGQA",
-    "text": "Amazon Science KGQA\n\n\nWebsite: Language models as controlled natural language semantic parsers for knowledge graph question answering GitHub: Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering"
   },
   {
     "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
@@ -1594,54 +1748,5 @@
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Generative AI in Content Creation",
     "text": "Generative AI in Content Creation\nIn creating AI Success Factors: Engineering Trust in Deployments, we harness the power of artificial intelligence in conjunction with human expertise. We utilize advanced Generative AI models such as ChatGPT, Bing Chat, and Anthropic Claude in a guided, iterative process that combines the best of AI and human capabilities.\nOur use of Generative AI begins with the drafting stage. These models, trained on extensive datasets, generate human-like text that matches our specified tone and style, providing us with a solid foundation for each blog post. This allows us to focus on the larger narrative without getting mired in the nitty-gritty details from the outset.\nThe AI-generated drafts, while sophisticated, are just the starting point. We employ a methodology that involves guiding the AI to improve its output. This includes providing more detailed prompts, specifying the format we want the output in, or asking the model to think step-by-step before settling on a conclusion.\nOnce we have a draft that we’re satisfied with, it’s time for human intervention. Our team reviews the AI-generated content, refining and editing it to ensure it maintains the standards of accuracy, relevance, and depth that our readers expect. This process leverages critical human skills of creativity, critical thinking, and domain expertise that even the most advanced AI can’t replicate.\nThis approach exemplifies our vision of a symbiotic relationship between AI and humans. By effectively integrating Generative AI into our content creation process, we not only boost our productivity and efficiency but also demonstrate the practical application of AI technologies in real-world scenarios. Thus, the blog becomes a testament to our commitment to translational research and our pursuit of an AI-integrated future."
-  },
-  {
-    "objectID": "slides/data-ai/index.html#gpt-4-sparks-of-agi",
-    "href": "slides/data-ai/index.html#gpt-4-sparks-of-agi",
-    "title": "Data Centric AI",
-    "section": "(GPT-4) “Sparks of AGI”?",
-    "text": "(GPT-4) “Sparks of AGI”?\n\n\n\n\nSparks of AGI: Early Experiments with GPT-4, 2023.\nhttps://www.youtube.com/watch?v=qbIk7-JPB2c."
-  },
-  {
-    "objectID": "slides/data-ai/index.html#how-do-we-develop-a-curriculum-for-training-large-language-model",
-    "href": "slides/data-ai/index.html#how-do-we-develop-a-curriculum-for-training-large-language-model",
-    "title": "Data Centric AI",
-    "section": "How do we develop a curriculum for training large language model",
-    "text": "How do we develop a curriculum for training large language model"
-  },
-  {
-    "objectID": "slides/data-ai/index.html#the-pile",
-    "href": "slides/data-ai/index.html#the-pile",
-    "title": "Data Centric AI",
-    "section": "The “Pile”",
-    "text": "The “Pile”"
-  },
-  {
-    "objectID": "slides/data-ai/index.html#llama-open-and-efficient-foundation-language-models",
-    "href": "slides/data-ai/index.html#llama-open-and-efficient-foundation-language-models",
-    "title": "Data Centric AI",
-    "section": "LLama: Open and Efficient Foundation Language Models",
-    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux,\nTimothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.”\narXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
-  },
-  {
-    "objectID": "slides/data-ai/index.html#how-do-we-develop-a-curriculum-for-training-large-language-models",
-    "href": "slides/data-ai/index.html#how-do-we-develop-a-curriculum-for-training-large-language-models",
-    "title": "Data Centric AI",
-    "section": "How do we develop a curriculum for training large language models?",
-    "text": "How do we develop a curriculum for training large language models?"
-  },
-  {
-    "objectID": "slides/data-ai/index.html#textbooks-are-all-you-need",
-    "href": "slides/data-ai/index.html#textbooks-are-all-you-need",
-    "title": "Data Centric AI",
-    "section": "Textbooks Are All You Need!",
-    "text": "Textbooks Are All You Need!\n\n\n\n\nTextbooks Are All You Need, 2023.\nhttps://www.youtube.com/watch?v=24O1KcIO3FM."
-  },
-  {
-    "objectID": "slides/data-ai/index.html#textbooks-are-all-you-need-1",
-    "href": "slides/data-ai/index.html#textbooks-are-all-you-need-1",
-    "title": "Data Centric AI",
-    "section": "Textbooks Are All You Need!",
-    "text": "Textbooks Are All You Need!\n\n\n\n\nGunasekar, Suriya, Yi Zhang, Jyoti Aneja, Caio César Teodoro Mendes,\nAllie Del Giorno, Sivakanth Gopi, Mojan Javaheripi, et al.\n“Textbooks Are All You Need.” arXiv, June 20, 2023.\nhttp://arxiv.org/abs/2306.11644."
   }
 ]

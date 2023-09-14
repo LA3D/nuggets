@@ -7,10 +7,6 @@ categories: [news]
 
 ![](llama.jpg)
 
-::: callout-note
-If you have stumbled on this post, it is still in the rough draft state and under major revision.
-:::
-
 At the University of Notre Dame's Center for Research Computing (CRC), the Laboratory for Assured AI Applications Development (LA3D) represents a critical step in the field of artificial intelligence (AI). As part of CRC's commitment to leveraging advanced computation for discovery and innovation, LA3D focuses on ensuring the responsible development and application of AI technologies. This initiative aligns with both the technological evolution of AI and the broader goals of CRC and Notre Dame.
 
 The mission of LA3D is robust, layered, and rooted in a commitment to research, develop, and deploy AI models and systems that are not just innovative but trustworthy and ethically aligned. With a focus on AI Engineering, Trusted AI, Knowledge Engineering, FAIR (Findable, Accessible, Interoperable, and Reusable) data, and CyberInfrastructure, LA3D presents a multifaceted approach.
