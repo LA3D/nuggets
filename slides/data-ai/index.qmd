@@ -105,6 +105,21 @@ Source: Conversation with Bing, 9/14/2023
 [DataMeasurementsTool - a Hugging Face Space by huggingface](https://huggingface.co/spaces/huggingface/data-measurements-tool)
 :::
 
+## AI Testimony before US Senate
+::: columns
+
+::: {.column width="50%"}
+![](huggingface-senate.png)
+:::
+
+::: {.column width="50%"}
+![](huggingface-senate2.png)
+:::
+
+:::
+
+[Celent Delangue Senate Statement](https://twitter.com/ClementDelangue/status/1702095553503412732)
+
 ## DVC and Huggingface Integration (Team Frameworks -- Peter)
 
 - [Share a dataset to the Hub (huggingface.co)](https://huggingface.co/docs/datasets/upload_dataset)
@@ -183,9 +198,23 @@ Allie Del Giorno, Sivakanth Gopi, Mojan Javaheripi, et al.
 ## Textbooks are all you need II: phi-1.5
 
 ::: {.r-stack}
-![](textbooks2.png)
+![](textbooks2.png){.center width="779" height="800"}
+:::
+Y. Li, S. Bubeck, R. Eldan, A. Del Giorno, S. Gunasekar, and Y. T. Lee, “Textbooks Are All You Need II: phi-1.5 technical report.” arXiv, Sep. 11, 2023. Accessed: Sep. 12, 2023. [Online]. Available: [http://arxiv.org/abs/2309.05463](http://arxiv.org/abs/2309.05463)
+
+
+## Textbooks are all you need II: phi-1.5
+
+::: {.r-stack}
+![](phi-1_5-hf.png){.center width="877" height="800"}
 :::
 
-::: footer
-Y. Li, S. Bubeck, R. Eldan, A. Del Giorno, S. Gunasekar, and Y. T. Lee, “Textbooks Are All You Need II: phi-1.5 technical report.” arXiv, Sep. 11, 2023. Accessed: Sep. 12, 2023. [Online]. Available: [http://arxiv.org/abs/2309.05463](http://arxiv.org/abs/2309.05463)
+[Microsoft/phi-1_5](https://huggingface.co/microsoft/phi-1_5)
+
+## phi-1.5 Doesn't want to kill us all...
+
+::: {.r-stack}
+![](phi-1_5-behavior.png){.center}
 :::
+
+[Sebastien Bubeck on X](https://twitter.com/SebastienBubeck/status/1701410954419069289)
