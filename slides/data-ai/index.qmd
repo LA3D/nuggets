@@ -127,6 +127,22 @@ Source: Conversation with Bing, 9/14/2023
 - [How to connect Huggingface datasets as a dvc remote · iterative/dvc · Discussion #8267 (github.com)](https://github.com/iterative/dvc/discussions/8267)
 - [AI BoMs from our SBoM Analysis](https://nd-crane.github.io/sbom-analysis/ai_specifications/hugging_face_model_cards.html)
 
+
+## JSON-LD Model and "AI Based Microservices"
+::: columns
+
+::: {.column width="50%"}
+- [SPDX V3 is JSON-LD!](https://github.com/spdx/spdx-3-model/tree/main/serialization/json_ld/examples)
+- [Frequently asked questions - Azure Verifiable Credentials - Microsoft Entra | Microsoft Learn](https://learn.microsoft.com/en-us/azure/active-directory/verifiable-credentials/verifiable-credentials-faq)
+- [Well Known DID Configuration](https://identity.foundation/.well-known/resources/did-configuration/)
+- [Uses the same structure as a OpenAI/Microsoft Plugin]()
+:::
+
+::: {.column width="50%"}
+![](KG-agent.png)
+:::
+:::
+
 ## Motivation... {.center}
 
 ## How do we develop a *curriculum* for training large language models? {.center}

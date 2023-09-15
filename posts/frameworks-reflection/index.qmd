@@ -9,12 +9,6 @@ image: "TAI_4-2023.png"
 draft: false
 ---
 
-::: callout-warning
-If you have stumbled on this post, it is still in the rough draft state and under major revision.
-:::
-
-## Introduction and Context of Trusted AI (TAI)
-
 With artificial intelligence advancing rapidly, ensuring these technologies are trustworthy and ethical is critical, especially in high-stakes domains like defense and national security.
 
 The Trusted AI (TAI) Frameworks Project was launched in 2021 through a collaboration between Indiana University, Purdue University, the University of Notre Dame, and the Naval Surface Warfare Center Crane Division (NSWC Crane) located in southwestern Indiana.
@@ -240,9 +234,6 @@ Data Version Control (DVC) emerges as a compelling solution to address these cha
 
 The selection of DVC in the TAI Frameworks Project represents a thoughtful alignment with the principles of trusted AI, GitOps, and open-source collaboration. By bridging the gap between traditional software engineering practices and the unique demands of AI data management, DVC supports the creation of AI systems that are not only performant but also transparent, replicable, and ethical.
 
-::: callout-note
-Add information about MLFlow and other tools evaluated in this section.
-:::
 
 ### Ethical Considerations and Trust in Data Management: The Navy's Mission and Guiding Principles
 
@@ -573,3 +564,8 @@ The quest for Trusted AI is not merely a technical challenge; it's a complex end
 Trusted AI is not a monolithic entity but a complex, dynamic field that intersects with various disciplines and societal considerations. By embracing these broader challenges and opportunities, we pave the way for AI systems that are not just intelligent but responsible, ethical, and aligned with human values and needs.
 
 The integration of these various facets into the Trusted AI framework contributes to a comprehensive and sustainable approach, one that recognizes the interconnectedness of technology with the broader fabric of society. The journey towards Trusted AI is a collective endeavor, one that requires collaboration, empathy, foresight, and a deep commitment to ethical principles.
+
+::: {.callout-note}
+## Use of Generative AI in Writing and Editing
+ChatGPT GPT-4 version Aug 3, 2023 was used in the structuring, writing and editing of this blog post.
+:::
