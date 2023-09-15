@@ -522,21 +522,21 @@
     "href": "slides/data-ai/index.html#data-centric-ai",
     "title": "Data Centric AI",
     "section": "Data Centric AI",
-    "text": "Data Centric AI\n\n\n\n\nData-centric AI Resource Hub"
+    "text": "Data Centric AI\n\n\n\nData-centric AI Resource Hub"
   },
   {
     "objectID": "slides/data-ai/index.html#aside-lessons-from-the-semantic-web",
     "href": "slides/data-ai/index.html#aside-lessons-from-the-semantic-web",
     "title": "Data Centric AI",
     "section": "Aside: Lessons from the Semantic Web?",
-    "text": "Aside: Lessons from the Semantic Web?\n\n\n\n\n\n\n\n\n“38971912 · Towards a Framework for Data Excellence in Data-Centric AI: Lessons from the Semantic Web,” SlidesLive. (accessed Sep. 14, 2023)."
+    "text": "Aside: Lessons from the Semantic Web?\n\n\n\n\n\n\n\n“38971912 · Towards a Framework for Data Excellence in Data-Centric AI: Lessons from the Semantic Web,” SlidesLive. (accessed Sep. 14, 2023)."
   },
   {
     "objectID": "slides/data-ai/index.html#dvc-and-data-centric-ai",
     "href": "slides/data-ai/index.html#dvc-and-data-centric-ai",
     "title": "Data Centric AI",
     "section": "DVC and Data Centric AI?",
-    "text": "DVC and Data Centric AI?\nData-centric AI is an emerging concept that emphasizes the importance of data quality and data engineering in building AI systems. Data-centric AI aims to improve the performance and robustness of AI models by systematically characterizing, evaluating, and monitoring the underlying data used to train and evaluate them⁴. Data-centric AI also involves using data-driven methods and tools to inform the considerations at each stage of the ML pipeline⁴.\nOne of the tools that can help with data-centric AI is Data Version Control (DVC), which is a system for versioning machine learning models, data sets, and intermediate files. DVC connects them with code, and uses various storage options to store file contents³. DVC allows users to track and reproduce the experiments, share data and models, and collaborate effectively on AI projects³.\nIf you want to learn more about data-centric AI, you can check out some of the web search results I found for you. For example, you can read a survey paper that discusses the necessity, goals, methods, challenges, and benchmarks of data-centric AI¹. You can also watch a video lecture by Andrew Ng, who popularized the term data-centric AI⁶. Or you can explore a website that provides a checklist and resources for applying data-centric AI in practice⁴. I hope this helps you understand what data-centric AI is and how DVC can be useful for it. 😊\n\nSource: Conversation with Bing, 9/14/2023\n\nWhat is Data-Centric AI? - van der Schaar Lab..\nData Version Control · DVC..\n[2303.10158] Data-centric Artificial Intelligence: A Survey - arXiv.org..\nThe Principles of Data-Centric AI (DCAI) - arXiv.org..\nWhat is Data-Centric Architecture in AI? | Simplilearn.."
+    "text": "DVC and Data Centric AI?\nData-centric AI is an emerging concept that emphasizes the importance of data quality and data engineering in building AI systems. Data-centric AI aims to improve the performance and robustness of AI models by systematically characterizing, evaluating, and monitoring the underlying data used to train and evaluate them⁴. Data-centric AI also involves using data-driven methods and tools to inform the considerations at each stage of the ML pipeline⁴.\nOne of the tools that can help with data-centric AI is Data Version Control (DVC), which is a system for versioning machine learning models, data sets, and intermediate files. DVC connects them with code, and uses various storage options to store file contents³. DVC allows users to track and reproduce the experiments, share data and models, and collaborate effectively on AI projects³.\nIf you want to learn more about data-centric AI, you can check out some of the web search results I found for you. For example, you can read a survey paper that discusses the necessity, goals, methods, challenges, and benchmarks of data-centric AI¹. You can also watch a video lecture by Andrew Ng, who popularized the term data-centric AI⁶. Or you can explore a website that provides a checklist and resources for applying data-centric AI in practice⁴. I hope this helps you understand what data-centric AI is and how DVC can be useful for it. 😊\nSource: Conversation with Bing, 9/14/2023\n\nWhat is Data-Centric AI? - van der Schaar Lab..\nData Version Control · DVC..\n[2303.10158] Data-centric Artificial Intelligence: A Survey - arXiv.org..\nThe Principles of Data-Centric AI (DCAI) - arXiv.org..\nWhat is Data-Centric Architecture in AI? | Simplilearn.."
   },
   {
     "objectID": "slides/data-ai/index.html#data-version-control-dvc",
@@ -557,7 +557,7 @@
     "href": "slides/data-ai/index.html#ai-testimony-before-us-senate",
     "title": "Data Centric AI",
     "section": "AI Testimony before US Senate",
-    "text": "AI Testimony before US Senate\n\n\n\n\n\n\n\nCelent Delangue Senate Statement"
+    "text": "AI Testimony before US Senate\n\n\n\n\n\n\n\nClement Delangue Senate Statement"
   },
   {
     "objectID": "slides/data-ai/index.html#dvc-and-huggingface-integration-team-frameworks-peter",
@@ -599,28 +599,28 @@
     "href": "slides/data-ai/index.html#llama-open-and-efficient-foundation-language-models",
     "title": "Data Centric AI",
     "section": "LLama: Open and Efficient Foundation Language Models",
-    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux,\nTimothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.”\narXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
+    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux,Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
   },
   {
     "objectID": "slides/data-ai/index.html#gpt-4-sparks-of-agi",
     "href": "slides/data-ai/index.html#gpt-4-sparks-of-agi",
     "title": "Data Centric AI",
     "section": "(GPT-4) “Sparks of AGI”?",
-    "text": "(GPT-4) “Sparks of AGI”?\n\n\n\n\nSparks of AGI: Early Experiments with GPT-4, 2023.\nhttps://www.youtube.com/watch?v=qbIk7-JPB2c."
+    "text": "(GPT-4) “Sparks of AGI”?\n\n\n\nSparks of AGI: Early Experiments with GPT-4, 2023. https://www.youtube.com/watch?v=qbIk7-JPB2c."
   },
   {
     "objectID": "slides/data-ai/index.html#textbooks-are-all-you-need",
     "href": "slides/data-ai/index.html#textbooks-are-all-you-need",
     "title": "Data Centric AI",
     "section": "Textbooks Are All You Need!",
-    "text": "Textbooks Are All You Need!\n\n\n\n\nTextbooks Are All You Need, 2023.\nhttps://www.youtube.com/watch?v=24O1KcIO3FM."
+    "text": "Textbooks Are All You Need!\n\n\n\nTextbooks Are All You Need, 2023. https://www.youtube.com/watch?v=24O1KcIO3FM."
   },
   {
     "objectID": "slides/data-ai/index.html#textbooks-are-all-you-need-1",
     "href": "slides/data-ai/index.html#textbooks-are-all-you-need-1",
     "title": "Data Centric AI",
     "section": "Textbooks Are All You Need!",
-    "text": "Textbooks Are All You Need!\n\n\n\n\nGunasekar, Suriya, Yi Zhang, Jyoti Aneja, Caio César Teodoro Mendes,\nAllie Del Giorno, Sivakanth Gopi, Mojan Javaheripi, et al.\n“Textbooks Are All You Need.” arXiv, June 20, 2023.\nhttp://arxiv.org/abs/2306.11644."
+    "text": "Textbooks Are All You Need!\n\n\n\nGunasekar, Suriya, Yi Zhang, Jyoti Aneja, Caio César Teodoro Mendes, Allie Del Giorno, Sivakanth Gopi, Mojan Javaheripi, et al. “Textbooks Are All You Need.” arXiv, June 20, 2023. http://arxiv.org/abs/2306.11644."
   },
   {
     "objectID": "slides/data-ai/index.html#textbooks-are-all-you-need-ii-phi-1.5",
@@ -628,6 +628,20 @@
     "title": "Data Centric AI",
     "section": "Textbooks are all you need II: phi-1.5",
     "text": "Textbooks are all you need II: phi-1.5\n\n\n\nY. Li, S. Bubeck, R. Eldan, A. Del Giorno, S. Gunasekar, and Y. T. Lee, “Textbooks Are All You Need II: phi-1.5 technical report.” arXiv, Sep. 11, 2023. Accessed: Sep. 12, 2023. [Online]. Available: http://arxiv.org/abs/2309.05463"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#coding-textbooks",
+    "href": "slides/data-ai/index.html#coding-textbooks",
+    "title": "Data Centric AI",
+    "section": "“Coding Textbooks”",
+    "text": "“Coding Textbooks”"
+  },
+  {
+    "objectID": "slides/data-ai/index.html#improving-data-quality-by-using-big-brain-llm",
+    "href": "slides/data-ai/index.html#improving-data-quality-by-using-big-brain-llm",
+    "title": "Data Centric AI",
+    "section": "Improving data quality by using “Big Brain LLM”",
+    "text": "Improving data quality by using “Big Brain LLM”"
   },
   {
     "objectID": "slides/data-ai/index.html#textbooks-are-all-you-need-ii-phi-1.5-1",
