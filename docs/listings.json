@@ -1,7 +1,15 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/posts/frameworks-reflection/index.html",
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
     "listing": "/slideindex.html",
     "items": [
+      "/slides/hackers/index.html",
       "/slides/data-ai/index.html",
       "/slides/tai-tools/index.html",
       "/slides/building_stuff/index.html",
@@ -10,13 +18,6 @@
       "/slides/tai_testing/index.html",
       "/slides/kg-llamaindex/index.html",
       "/slides/trust-causal/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/posts/frameworks-reflection/index.html",
-      "/posts/welcome/index.html"
     ]
   }
 ]

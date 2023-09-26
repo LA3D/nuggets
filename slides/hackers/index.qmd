@@ -1,5 +1,5 @@
 ---
-title: "Large Languge Model Tools"
+title: "Large Language Model Tools"
 author: "Charles F. Vardeman II"
 institute: "Center for Research Computing, University of Notre Dame"
 date: "2023-09-25"
@@ -52,3 +52,23 @@ categories: [LLMs, Tools]
 - [FastAI Live Coding: https://forums.fast.ai/t/live-coding-aka-walk-thrus/96617](https://forums.fast.ai/t/live-coding-aka-walk-thrus/96617)
 - [FastAI Git, SSH, TMUX: https://forums.fast.ai/t/live-coding-2/96690](https://forums.fast.ai/t/live-coding-2/96690)
 - [Beginner's Guide to Mambaforge Installation: https://qbiwan.github.io/fastpages/mamba-installation](https://qbiwan.github.io/fastpages/mamba-installation)
+
+## Zotero
+
+:::{.r-stack}
+![](zotero-web.png){.center width="767" height="850"}
+:::
+
+[Zotero | Your personal research assistant](https://www.zotero.org/)
+
+## Zotero Setup
+
+::: columns
+::: {.column width="40%"}
+![](zotero-vscode.png)
+![](zotero-plugins.png)
+:::
+::: {.column width="60%"}
+![](zotero.png)
+:::
+:::
