@@ -1183,6 +1183,13 @@
     "text": "Jupyter CAML Cluster Machine\nJupyter CAML Cluster Machine"
   },
   {
+    "objectID": "slides/hackers/index.html#link-our-group-space",
+    "href": "slides/hackers/index.html#link-our-group-space",
+    "title": "H4x0rz GU!dE t0 1lms",
+    "section": "Link our Group Space",
+    "text": "Link our Group Space\nln -s /afs/crc/group/TAI ./TAI"
+  },
+  {
     "objectID": "slides/hackers/index.html#setting-up-environment",
     "href": "slides/hackers/index.html#setting-up-environment",
     "title": "H4x0rz GU!dE t0 1lms",

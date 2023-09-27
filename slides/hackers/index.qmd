@@ -22,6 +22,11 @@ categories: [LLMs, Tools]
 ## Jupyter CAML Cluster Machine
 [Jupyter CAML Cluster Machine](https://jupyter-caml.crc.nd.edu/hub/login)
 
+## Link our Group Space
+
+```
+ln -s /afs/crc/group/TAI ./TAI
+```
 
 ## Setting up Environment
 
@@ -94,6 +99,8 @@ From iTerm2 or Terminal
 ```
 ssh netid@crcfe02.crc.nd.edu
 ```
+
+
 
 ## Miniforge Forge Install!
 
