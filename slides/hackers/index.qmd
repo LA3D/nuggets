@@ -1,8 +1,8 @@
 ---
-title: "Large Language Model Tools"
+title: "H4x0rz GU!dE t0 1lms"
 author: "Charles F. Vardeman II"
 institute: "Center for Research Computing, University of Notre Dame"
-date: "2023-09-25"
+date: "2023-10-05"
 embed-resources: true
 format: 
     revealjs:
@@ -14,35 +14,14 @@ format:
 categories: [LLMs, Tools]
 ---
 
-## FastAI FastBook -- "A Production Mindset"
-::: columns
-::: {.column width="30%"}
-- [Introduction to Jupyter](https://colab.research.google.com/github/fastai/fastbook/blob/master/app_jupyter.ipynb)
-- [02_production.ipynb](https://colab.research.google.com/github/fastai/fastbook/blob/master/02_production.ipynb)
-- [Natural Language (NLP)](https://course.fast.ai/Lessons/lesson4.html)
-    - [Getting started with NLP for absolute beginners](https://www.kaggle.com/code/jhoward/getting-started-with-nlp-for-absolute-beginners)
-:::
-::: {.column width="70%"}
-![](../tai-tools/fastbook.png)
-:::
-:::
+## Topics
+- Setting up your local machine and CRC cluster
+- Using VSCode
+- LLM tools
 
-## Getting Started with LLMs
+## Jupyter CAML Cluster Machine
+[Jupyter CAML Cluster Machine](https://jupyter-caml.crc.nd.edu/hub/login)
 
-[Getting Started With LLMs](https://www.kaggle.com/code/jhoward/getting-started-with-llms/)
-
-
-## Hackers Guide to LLMs
-
-::: columns
-::: {.column width="40%"}
-- [A Hackers' Guide to Language Models - https://youtu.be/jkrNMKz9pWU?si=f-daO59GuGtD5Spq](https://youtu.be/jkrNMKz9pWU?si=f-daO59GuGtD5Spq)
-- [Github - https://github.com/fastai/lm-hackers](https://github.com/fastai/lm-hackers)
-:::
-::: {.column width="60%"}
-![](hackers-guide-llms.png)
-:::
-:::
 
 ## Setting up Environment
 
@@ -52,6 +31,77 @@ categories: [LLMs, Tools]
 - [FastAI Live Coding: https://forums.fast.ai/t/live-coding-aka-walk-thrus/96617](https://forums.fast.ai/t/live-coding-aka-walk-thrus/96617)
 - [FastAI Git, SSH, TMUX: https://forums.fast.ai/t/live-coding-2/96690](https://forums.fast.ai/t/live-coding-2/96690)
 - [Beginner's Guide to Mambaforge Installation: https://qbiwan.github.io/fastpages/mamba-installation](https://qbiwan.github.io/fastpages/mamba-installation)
+
+## CRC Documentation {.center}
+- [CRC User Documentation - https://docs.crc.nd.edu/](https://docs.crc.nd.edu/)
+- [CRC QuickStart Guide - https://docs.crc.nd.edu/new_user/quick_start.html#quick-start-guide](https://docs.crc.nd.edu/new_user/quick_start.html#quick-start-guide)
+
+## Connecting to the CRC Machines
+- [SSH](https://docs.crc.nd.edu/new_user/connecting_to_crc.html)
+- [Campus VPN](https://oit.nd.edu/downloads/vpn---cisco-secure-client/)
+
+## Live Coding Resources
+- [FastAI Live Coding: https://forums.fast.ai/t/live-coding-aka-walk-thrus/96617](https://forums.fast.ai/t/live-coding-aka-walk-thrus/96617)
+- [FastAI Live Coding 1: https://forums.fast.ai/t/live-coding-1/96649](https://forums.fast.ai/t/live-coding-1/96649)
+- [FastAI Git, SSH, TMUX: https://forums.fast.ai/t/live-coding-2/96690](https://forums.fast.ai/t/live-coding-2/96690)
+
+## Local First Steps (MacOS) {.center}
+- [Install iTerm2 instead of Mac Terminal](https://iterm2.com/)
+- [Install Homebrew - https://brew.sh/](https://brew.sh/)
+- [Install Tmux](https://github.com/tmux/tmux/wiki)
+
+```
+brew install tmux
+```
+
+## Windows Subsystem for Linux(WSL) Bing! {.smaller}
+WSL stands for Windows Subsystem for Linux, which is a feature of the Windows operating system that enables you to run a Linux file system, along with Linux command-line tools and GUI apps, directly on Windows, alongside your traditional Windows desktop and apps. It is designed to be a seamless experience, essentially providing a full Linux shell that can interact with your Windows filesystem.
+
+To start using WSL, you need to install a Linux distribution of your choice from the Microsoft Store, such as Ubuntu. You can launch it as an app or use it as a profile in your terminal. You can also install programs using the Linux package manager and customize it like a regular Linux instance.
+
+If you need more help with setting up and using WSL, you can check out the following resources:
+
+- [Set up a WSL development environment](https://learn.microsoft.com/en-us/windows/wsl/faq)
+- [What is Windows Subsystem For Linux (WSL), and How Do You Use It?.](https://www.howtogeek.com/devops/what-is-windows-subsystem-for-linux-wsl-and-how-do-you-use-it/)
+- [What is Windows Subsystem for Linux | Microsoft Learn.](https://learn.microsoft.com/en-us/training/modules/wsl-introduction/)
+
+I hope this helps you understand what WSL is and how to use it. 😊
+
+## A note on Editors from Bing! {.smaller}
+A command line editor is a text editor that can be used to create or modify files in a terminal or console. There are many command line editors available for different operating systems and preferences. Some of the most popular ones are:
+
+- **Vi** or **Vim**: Vi is a classic and powerful editor that was originally created for Unix systems. Vim is an improved version of Vi that adds more features and enhancements. Vi and Vim are widely used by Linux users and system administrators. They have a steep learning curve, but they offer many advanced functions and customization options. To use Vi or Vim, you need to learn different modes of operation and keyboard commands.^[[9 Best Text Editors for the Linux Command Line - It's FOSS.](https://itsfoss.com/command-line-text-editors-linux/)] ^[[How do I edit text files in the Windows command prompt?.](https://superuser.com/questions/186857/how-do-i-edit-text-files-in-the-windows-command-prompt)]
+- **Nano**: Nano is a simple and user-friendly editor that is inspired by Pico, another editor that was part of the Pine email client. Nano is easy to use and has a built-in help system. It is suitable for beginners and casual users who do not need complex features. Nano is also available on most Linux distributions by default.
+- **Emacs**: Emacs is a versatile and extensible editor that can do much more than editing text files. Emacs can be used as an IDE, a web browser, a mail client, a calculator, and more. Emacs has a rich set of commands and keyboard shortcuts, as well as a scripting language called Emacs Lisp that can be used to customize and extend its functionality. Emacs is popular among programmers and enthusiasts who like to have full control over their editor.
+
+##
+:::{.callout-note}
+When in doubt, use Prof. Sweet's advice and use [Nano](https://www.nano-editor.org/)!
+:::
+
+## Dr. Vardeman's Dotfiles
+- [Very Simple Set of Dotfiles - https://github.com/charlesvardeman/dotfiles](https://github.com/charlesvardeman/dotfiles)
+- Based on [FastAI Dotfiles - https://github.com/fastai/dotfiles](https://github.com/fastai/dotfiles)
+
+## SSH Configuration
+We need to set up [ssh](https://en.wikipedia.org/wiki/Secure_Shell) to facilitate access to GitHub and the CRC Cluster machines.
+- [Live Coding 2: "Setting up SSH Keys"](https://youtu.be/0pWjZByJ3Lk?si=XumMfehqng2PX6N3&t=1160)
+- Dr. Vardeman's [ssh config](https://github.com/charlesvardeman/dotfiles/blob/main/.ssh/config)
+- [Instructions to Setup GitHub SSH Keys](https://github.com/charlesvardeman/dotfiles#github-setup)
+
+## Login to CRC Machines
+From iTerm2 or Terminal
+```
+ssh netid@crcfe02.crc.nd.edu
+```
+
+## Miniforge Forge Install!
+
+::: {.callout-warning}
+Mambaforge has been integrated with the main [Miniforge](https://github.com/conda-forge/miniforge#install). Jeremy Howard's Instructions still work, except use the default Miniforge
+:::
+
+
 
 ## Zotero
 
@@ -72,3 +122,35 @@ categories: [LLMs, Tools]
 ![](zotero.png)
 :::
 :::
+[Zotero | Downloads](https://www.zotero.org/download/)
+
+## VSCode Setup {.center}
+
+## FastAI FastBook -- "A Production Mindset"
+::: columns
+::: {.column width="30%"}
+- [Introduction to Jupyter](https://colab.research.google.com/github/fastai/fastbook/blob/master/app_jupyter.ipynb)
+- [02_production.ipynb](https://colab.research.google.com/github/fastai/fastbook/blob/master/02_production.ipynb)
+- [Natural Language (NLP)](https://course.fast.ai/Lessons/lesson4.html)
+    - [Getting started with NLP for absolute beginners](https://www.kaggle.com/code/jhoward/getting-started-with-nlp-for-absolute-beginners)
+:::
+::: {.column width="70%"}
+![](../tai-tools/fastbook.png)
+:::
+:::
+
+## Hackers Guide to LLMs
+
+::: columns
+::: {.column width="40%"}
+- [A Hackers' Guide to Language Models - https://youtu.be/jkrNMKz9pWU?si=f-daO59GuGtD5Spq](https://youtu.be/jkrNMKz9pWU?si=f-daO59GuGtD5Spq)
+- [Github - https://github.com/fastai/lm-hackers](https://github.com/fastai/lm-hackers)
+:::
+::: {.column width="60%"}
+![](hackers-guide-llms.png)
+:::
+:::
+
+## Getting Started with LLMs
+
+[Getting Started With LLMs](https://www.kaggle.com/code/jhoward/getting-started-with-llms/)
