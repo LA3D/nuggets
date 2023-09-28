@@ -1288,13 +1288,6 @@
     "text": "Zotero Setup\n\n\n \n\n\n\n\nZotero | Downloads"
   },
   {
-    "objectID": "slides/hackers/index.html#vscode-setup",
-    "href": "slides/hackers/index.html#vscode-setup",
-    "title": "H4x0rz GU!dE t0 1lms",
-    "section": "VSCode Setup",
-    "text": "VSCode Setup"
-  },
-  {
     "objectID": "slides/hackers/index.html#fastai-fastbook-a-production-mindset",
     "href": "slides/hackers/index.html#fastai-fastbook-a-production-mindset",
     "title": "H4x0rz GU!dE t0 1lms",
@@ -1314,6 +1307,13 @@
     "title": "H4x0rz GU!dE t0 1lms",
     "section": "Getting Started with LLMs",
     "text": "Getting Started with LLMs\nGetting Started With LLMs"
+  },
+  {
+    "objectID": "slides/hackers/index.html#quick-nuggets",
+    "href": "slides/hackers/index.html#quick-nuggets",
+    "title": "H4x0rz GU!dE t0 1lms",
+    "section": "Quick Nuggets",
+    "text": "Quick Nuggets\nTakeaway: General trend to rapidly integrate Generative AI into traditional software products. - Announcing Microsoft Copilot, your everyday AI companion - Microsoft Aims to Reduce Reliance on OpenAI with SMaller, Cheaper, LLMs - Microsoft Looks to Go Nuclear to Support Energy-Hungry AI - Amazon - $4B Anthropic Deal - TrustedAI - Anthropic | Anthropic’s Responsible Scaling Policy - Meta AI Announcements -AI Studio Sandbox - ChatGPT can now see, hear, and speak - OpenAI Red Teaming Network - Browse with Bing plugin - DALL-E3 Stable Diffusion Foundation Model"
   },
   {
     "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",

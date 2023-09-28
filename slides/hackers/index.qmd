@@ -131,8 +131,6 @@ Mambaforge has been integrated with the main [Miniforge](https://github.com/cond
 :::
 [Zotero | Downloads](https://www.zotero.org/download/)
 
-## VSCode Setup {.center}
-
 ## FastAI FastBook -- "A Production Mindset"
 ::: columns
 ::: {.column width="30%"}
@@ -161,3 +159,18 @@ Mambaforge has been integrated with the main [Miniforge](https://github.com/cond
 ## Getting Started with LLMs
 
 [Getting Started With LLMs](https://www.kaggle.com/code/jhoward/getting-started-with-llms/)
+
+## Quick Nuggets
+
+Takeaway: General trend to rapidly integrate Generative AI into traditional software products.
+- [Announcing Microsoft Copilot, your everyday AI companion](https://blogs.microsoft.com/blog/2023/09/21/announcing-microsoft-copilot-your-everyday-ai-companion/)
+    - [Microsoft Aims to Reduce Reliance on OpenAI with SMaller, Cheaper, LLMs](https://www.businessinsider.com/microsoft-openai-chatgpt-ai-reduce-reliance-llm-2023-9)
+    - [Microsoft Looks to Go Nuclear to Support Energy-Hungry AI](https://gizmodo.com/microsoft-hiring-nuclear-energy-expert-ai-1850873864)
+- [Amazon - $4B Anthropic Deal](https://www.anthropic.com/index/anthropic-amazon)
+    - [TrustedAI - Anthropic | Anthropic's Responsible Scaling Policy](https://www.anthropic.com/index/anthropics-responsible-scaling-policy)
+- [Meta AI Announcements](https://about.fb.com/news/2023/09/introducing-ai-powered-assistants-characters-and-creative-tools/)
+    -[AI Studio Sandbox](https://techcrunch.com/2023/09/27/meta-debuts-ai-studio-to-let-developers-build-custom-chatbots/?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuYmluZy5jb20v&guce_referrer_sig=AQAAAEwXseZtPfkbMSx1QJQ8mMtQTXROF6KM3QBzAutUpXuGtq05pCUfwGxJFLdA1cBkYvGbtyftppwM1yOkM1J5UtjFn5DCEDi4BgR_XWQCzD5GC6Rx2pdtIDcdqDuPfydQyQpucypSzzo22F9dhfWhSxZC1iFhg0_ABdXSPUQDoQJ5)
+- [ChatGPT can now see, hear, and speak](https://openai.com/blog/chatgpt-can-now-see-hear-and-speak)
+    - [OpenAI Red Teaming Network](https://openai.com/blog/red-teaming-network)
+    - [Browse with Bing plugin](https://www.msn.com/en-us/news/technology/chatgpt-internet-browsing-is-back-after-being-disabled-for-months/ar-AA1hmzRr)
+    - [DALL-E3 Stable Diffusion Foundation Model](https://openai.com/dall-e-3)
