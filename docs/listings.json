@@ -1,12 +1,5 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/posts/frameworks-reflection/index.html",
-      "/posts/welcome/index.html"
-    ]
-  },
-  {
     "listing": "/slideindex.html",
     "items": [
       "/slides/hackers/index.html",
