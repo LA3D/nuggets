@@ -1,0 +1,124 @@
+---
+title: "Towards <u>Trusted</u> LLM based Curator Agents"
+author: "Charles F. Vardeman II"
+institute: "Center for Research Computing, University of Notre Dame"
+date: "2023-10-06"
+embed-resources: true
+format: 
+    revealjs:
+        width: 1600
+        height: 900
+        logo: ../images/crc-logo-tagline-1-alt.png
+        theme: [simple, ../images/crc.scss]
+        slide-number: true
+categories: [LLMs, Agents, Knowledge Graphs]
+---
+
+
+
+## Motivation: TAMMS KG
+
+::: {.r-stack}
+![](../agents_summer23/AI-Curated_KG.png)
+:::
+
+## Starting Architecture... {.center}
+
+## AI Curator "Agents" {.center}
+
+## Activity Specific Agents: Visual Agents
+
+::: {.r-stack}
+![](../agents_summer23/visualagents.png)
+:::
+
+
+* [“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
+* [Hu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv.](https://doi.org/10.48550/arXiv.2306.08129)
+
+
+## Visual Agents Architecture: Different LLMs based on Role
+
+:::{.r-stack}
+![](../agents_summer23/visualagents_arch.png)
+:::
+
+* [“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
+* [Hu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv.](https://arxiv.org/abs//2306.08129) 
+
+## Activity Specific Agents: Visual Agents Transition Graph
+
+::: {.r-stack}
+![](../agents_summer23/visualagent_transitiongraph.png)
+:::
+
+* [“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
+* [Hu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv.](https://doi.org/10.48550/arXiv.2306.08129)
+
+## We need to think through what **Trusted** Means!
+
+::: {.r-stack}
+![](../tai-tools/4x4-circle-template_TAI_4-2023.png)
+:::
+
+## Starting with a CSV (Navy Maintenance Data)
+
+::: {.columns}
+
+::: {.column width="40%"}
+![](column-type-annotation.png)
+:::
+
+::: {.column width="60%"} 
+![](column-type-results.png)
+:::
+
+:::
+
+[Korini, Keti, and Christian Bizer. 2023. “Column Type Annotation Using ChatGPT.” arXiv. http://arxiv.org/abs/2306.00745.](http://arxiv.org/abs/2306.00745)
+
+## Context Matters!
+
+::: {.r-stack}
+![](json-ld_pipeline.png)
+:::
+
+[Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD | Eliud Polanco](https://youtu.be/KHNc0WwJ5JA?si=Z9YFCUVRXLyM47bH)
+
+## JSON-LD as a Bridge
+
+:::{.r-stack}
+![](fluree.png)
+:::
+
+[Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD | Eliud Polanco](https://youtu.be/KHNc0WwJ5JA?si=Z9YFCUVRXLyM47bH)
+
+
+## Semantic AI-based Micro Services {.center}
+
+## How can we create "Semantic Microservices"
+
+::: {.r-stack}
+![](../nuggets_review/vision_of_agents.png)
+:::
+
+
+## ChatGPT "Plugin" Architecture as Example
+
+* [ChatGPT plugins (openai.com)](https://openai.com/blog/chatgpt-plugins)
+* [Introduction - OpenAI API](https://platform.openai.com/docs/plugins/introduction)
+* [About Get a ChatGPT plugin up and running in under 5 minutes!](https://github.com/openai/plugins-quickstart)
+* [Use LangChain OpenAPI](https://python.langchain.com/docs/integrations/toolkits/openapi)
+* [ChatGPT Plugin -- LangChain](https://python.langchain.com/docs/integrations/retrievers/chatgpt-plugin)
+* [How to build a tool-using agent with LangChain](https://cookbook.openai.com/examples/how_to_build_a_tool-using_agent_with_langchain)
+
+
+## Example Service -- Retrieval Augmented Generation (We're not doing this yet!)
+
+::: {.r-stack}
+![](3M-munging-tool.png)
+:::
+
+* [Experiments in extracting tables from navy 3-M manual for OPNAV 4790/2K data structure Resources](https://github.com/nd-crane/decoder-ring)
+* [Sample KG construction using OPNAV forms 4790/ 2K as a schema template](https://github.com/nd-crane/2kilos-kg)
+* [Repository for formatting the Joint Electronics Type Designation System for ML and KG Usage](https://github.com/nd-crane/JETDS)
