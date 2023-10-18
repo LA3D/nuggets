@@ -609,6 +609,20 @@
     "text": "On to the First Steps to Building LLM Based Applications…"
   },
   {
+    "objectID": "slides/ai-curators/index.html#dod-data-vision",
+    "href": "slides/ai-curators/index.html#dod-data-vision",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "DoD Data Vision",
+    "text": "DoD Data Vision\n\n\n\n\n\n\n\nNorquist, David L. n.d. “DOD Data Strategy.” https://media.defense.gov/2020/Oct/08/2002514180/-1/-1/0/DOD-DATA-STRATEGY.PDF."
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#ai-agents-for-interoperability",
+    "href": "slides/ai-curators/index.html#ai-agents-for-interoperability",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "AI Agents for Interoperability",
+    "text": "AI Agents for Interoperability\n\n\n\n\n\n\n\nTangi, Luca, Marco Combetto, BOSCH Jaume Martin, and MÜLLER Paula Rodriguez. 2023. “Artificial Intelligence for Interoperability in the European Public Sector.” JRC Publications Repository. October 4, 2023. https://doi.org/10.2760/633646."
+  },
+  {
     "objectID": "slides/ai-curators/index.html#motivation-tamms-kg",
     "href": "slides/ai-curators/index.html#motivation-tamms-kg",
     "title": "Towards Trusted LLM based Curator Agents",
@@ -623,32 +637,60 @@
     "text": "Starting Architecture…"
   },
   {
-    "objectID": "slides/ai-curators/index.html#ai-curator-agents",
-    "href": "slides/ai-curators/index.html#ai-curator-agents",
+    "objectID": "slides/ai-curators/index.html#ai-curator-agents-team-lemon",
+    "href": "slides/ai-curators/index.html#ai-curator-agents-team-lemon",
     "title": "Towards Trusted LLM based Curator Agents",
-    "section": "AI Curator “Agents”",
-    "text": "AI Curator “Agents”"
+    "section": "AI Curator “Agents”: Team “LEMON”",
+    "text": "AI Curator “Agents”: Team “LEMON”"
   },
   {
     "objectID": "slides/ai-curators/index.html#activity-specific-agents-visual-agents",
     "href": "slides/ai-curators/index.html#activity-specific-agents-visual-agents",
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "Activity Specific Agents: Visual Agents",
-    "text": "Activity Specific Agents: Visual Agents\n\n\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.\nHu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv."
+    "text": "Activity Specific Agents: Visual Agents\n\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.\nHu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv."
   },
   {
     "objectID": "slides/ai-curators/index.html#visual-agents-architecture-different-llms-based-on-role",
     "href": "slides/ai-curators/index.html#visual-agents-architecture-different-llms-based-on-role",
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "Visual Agents Architecture: Different LLMs based on Role",
-    "text": "Visual Agents Architecture: Different LLMs based on Role\n\n\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.\nHu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv."
+    "text": "Visual Agents Architecture: Different LLMs based on Role\n\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.\nHu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv."
   },
   {
     "objectID": "slides/ai-curators/index.html#activity-specific-agents-visual-agents-transition-graph",
     "href": "slides/ai-curators/index.html#activity-specific-agents-visual-agents-transition-graph",
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "Activity Specific Agents: Visual Agents Transition Graph",
-    "text": "Activity Specific Agents: Visual Agents Transition Graph\n\n\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.\nHu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv."
+    "text": "Activity Specific Agents: Visual Agents Transition Graph\n\n\n\n“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.\nHu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv."
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#different-llms-for-different-tasks",
+    "href": "slides/ai-curators/index.html#different-llms-for-different-tasks",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Different LLM’s for Different Tasks",
+    "text": "Different LLM’s for Different Tasks\n\nLesson’s from Kaggle Science Exam Competition winning team solution\nBecomes a search - context retrieval problem for the curator LLM"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#structured-responses-and-llms",
+    "href": "slides/ai-curators/index.html#structured-responses-and-llms",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Structured Responses and LLMs",
+    "text": "Structured Responses and LLMs\n\nlamma.cpp Grammers\nIntroducing Code Llama, a state-of-the-art large language model for coding\nllm python package\nllm lamma.cpp plugin"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#modeling-the-world",
+    "href": "slides/ai-curators/index.html#modeling-the-world",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Modeling The World!",
+    "text": "Modeling The World!\n\n\n\nOntology Engineering: A View from the Trenches - WOP 2015 Keynote | PPT (slideshare.net)"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#moo-architecture",
+    "href": "slides/ai-curators/index.html#moo-architecture",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Moo Architecture",
+    "text": "Moo Architecture"
   },
   {
     "objectID": "slides/ai-curators/index.html#we-need-to-think-through-what-trusted-means",
@@ -656,6 +698,13 @@
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "We need to think through what Trusted Means!",
     "text": "We need to think through what Trusted Means!"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#frameworks-to-capture-provenance-of-models",
+    "href": "slides/ai-curators/index.html#frameworks-to-capture-provenance-of-models",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Frameworks to Capture Provenance of Models!",
+    "text": "Frameworks to Capture Provenance of Models!\n\nSBoMs and AI BoMs for Agents\n\nThey are KGs Themselves!\n\nData Cards and Model Cards for Models\nAgents will be exposed as Microservices themselves\nWe should be able to ask the Microservice Layer for “Trust Information”\nAgent should store “Metadata” in the Graph Fragment they are constructing."
   },
   {
     "objectID": "slides/ai-curators/index.html#starting-with-a-csv-navy-maintenance-data",
@@ -679,6 +728,13 @@
     "text": "JSON-LD as a Bridge\n\n\n\nConverting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD | Eliud Polanco"
   },
   {
+    "objectID": "slides/ai-curators/index.html#aside-curator-ais-should-be-multimodal",
+    "href": "slides/ai-curators/index.html#aside-curator-ais-should-be-multimodal",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Aside: Curator AI’s should be multimodal",
+    "text": "Aside: Curator AI’s should be multimodal\n\nDr. Vardeman’s Law: Data “Lives” in different locations and formats – not every digital object can or should be in the KG layer. The Curator AI should “Catalog” this information.\nMultimodal LLM’s like AVIS can bridge that Gap!"
+  },
+  {
     "objectID": "slides/ai-curators/index.html#semantic-ai-based-micro-services",
     "href": "slides/ai-curators/index.html#semantic-ai-based-micro-services",
     "title": "Towards Trusted LLM based Curator Agents",
@@ -690,7 +746,161 @@
     "href": "slides/ai-curators/index.html#how-can-we-create-semantic-microservices",
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "How can we create “Semantic Microservices”",
-    "text": "How can we create “Semantic Microservices”"
+    "text": "How can we create “Semantic Microservices”\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#semantic-web-layer-cake",
+    "href": "slides/ai-curators/index.html#semantic-web-layer-cake",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Semantic Web “Layer Cake”",
+    "text": "Semantic Web “Layer Cake”\n\n\n\nJohn Sowa, “Semantics.” n.d. Accessed October 17, 2023. https://www.jfsowa.com/ikl/. Q92665"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#aside-sowas-law-of-standards",
+    "href": "slides/ai-curators/index.html#aside-sowas-law-of-standards",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Aside: Sowa’s law of standards",
+    "text": "Aside: Sowa’s law of standards\n\n“Whenever a major organization develops a new system as an official standard for X, the primary result is the widespread adoption of some simpler system as a de facto standard for X.”"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#janos-layer-cake",
+    "href": "slides/ai-curators/index.html#janos-layer-cake",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Jano’s Layer Cake",
+    "text": "Jano’s Layer Cake\n\n\n\nOntology Engineering: A View from the Trenches - WOP 2015 Keynote | PPT (slideshare.net)"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#distributed-knowledge-graph-layer-cake",
+    "href": "slides/ai-curators/index.html#distributed-knowledge-graph-layer-cake",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Distributed Knowledge Graph Layer Cake",
+    "text": "Distributed Knowledge Graph Layer Cake\n\n\n\n\nDKG Basic Concepts"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#dkg-example",
+    "href": "slides/ai-curators/index.html#dkg-example",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "DKG Example",
+    "text": "DKG Example\n\n\n\n\n\n\n\nOriginTrail powering consumer interaction with the new GS1 Digital Link"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#web-2.0-architecture-microservices",
+    "href": "slides/ai-curators/index.html#web-2.0-architecture-microservices",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "“Web 2.0 Architecture – Microservices”",
+    "text": "“Web 2.0 Architecture – Microservices”\n\nRESTful web API design"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#documenting-rest-apis",
+    "href": "slides/ai-curators/index.html#documenting-rest-apis",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Documenting REST-APIs",
+    "text": "Documenting REST-APIs\n\n\n\n\nAbout Swagger Specification | Documentation | Swagger"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#example-huggingface-embedding-service",
+    "href": "slides/ai-curators/index.html#example-huggingface-embedding-service",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Example: HuggingFace Embedding Service",
+    "text": "Example: HuggingFace Embedding Service\n\nA blazing fast inference solution for text embeddings models"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#example-huggingface-embedding-service-1",
+    "href": "slides/ai-curators/index.html#example-huggingface-embedding-service-1",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Example: HuggingFace Embedding Service",
+    "text": "Example: HuggingFace Embedding Service\n\nText Generation Inference API"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#openai-plugins",
+    "href": "slides/ai-curators/index.html#openai-plugins",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "OpenAI “Plugins”",
+    "text": "OpenAI “Plugins”\n\n\n\n\nGetting started - OpenAI API"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#microsoft-and-openai-plugins",
+    "href": "slides/ai-curators/index.html#microsoft-and-openai-plugins",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Microsoft and “OpenAI Plugins”",
+    "text": "Microsoft and “OpenAI Plugins”\n\nCreate and run a ChatGPT plugin with Semantic Kernel | Microsoft Learn"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#bridging-rest-to-ai-using-json-ld",
+    "href": "slides/ai-curators/index.html#bridging-rest-to-ai-using-json-ld",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Bridging Rest to AI using JSON-LD",
+    "text": "Bridging Rest to AI using JSON-LD\n\n\n\n\n\nJSON-LD 1.1 – A JSON-based Serialization for Linked Data"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#json-ld-best-practices",
+    "href": "slides/ai-curators/index.html#json-ld-best-practices",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "JSON-LD Best Practices",
+    "text": "JSON-LD Best Practices\n\n\n\n\n\nJSON-LD Best Practices"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#json-as-json-ld",
+    "href": "slides/ai-curators/index.html#json-as-json-ld",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "JSON as JSON-LD",
+    "text": "JSON as JSON-LD\nGET /ordinary-json-document.json HTTP/1.1\nHost: example.com\nAccept: application/ld+json,application/json,*/*;q=0.1\n\n====================================\n\nHTTP/1.1 200 OK\n...\nContent-Type: application/json\nLink: &lt;https://json-ld.org/contexts/person.jsonld&gt;; rel=\"http://www.w3.org/ns/json-ld#context\"; type=\"application/ld+json\"\n\n{\n  \"name\": \"Markus Lanthaler\",\n  \"homepage\": \"http://www.markus-lanthaler.com/\",\n  \"image\": \"http://twitter.com/account/profile_image/markuslanthaler\"\n}"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#gorilla-retrieval-aware-training-for-apis",
+    "href": "slides/ai-curators/index.html#gorilla-retrieval-aware-training-for-apis",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Gorilla: Retrieval Aware Training for APIs",
+    "text": "Gorilla: Retrieval Aware Training for APIs\n\n\n\n\n\n\n\n\nS. Patil, “Gorilla: Large Language Model Connected with Massive APIs [Project Website].” Sep. 04, 2023.\nAccessed: Sep. 04, 2023. [Online]. Available: https://github.com/ShishirPatil/gorilla"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#gorilla-retrieval-aware-training-for-apis-1",
+    "href": "slides/ai-curators/index.html#gorilla-retrieval-aware-training-for-apis-1",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Gorilla: Retrieval Aware Training for APIs",
+    "text": "Gorilla: Retrieval Aware Training for APIs\n\n\n\n\n\n\n\n\nS. Patil, “Gorilla: Large Language Model Connected with Massive APIs [Project Website].” Sep. 04, 2023.\nAccessed: Sep. 04, 2023. [Online]. Available: https://github.com/ShishirPatil/gorilla"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#problem-with-rest-interoperability-scale-and-queriability",
+    "href": "slides/ai-curators/index.html#problem-with-rest-interoperability-scale-and-queriability",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Problem with REST – Interoperability, Scale and Queriability",
+    "text": "Problem with REST – Interoperability, Scale and Queriability"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#semantic-apis-for-kgs",
+    "href": "slides/ai-curators/index.html#semantic-apis-for-kgs",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "“Semantic APIs for KG’s”",
+    "text": "“Semantic APIs for KG’s”"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#sparql-1.1-federated-queries",
+    "href": "slides/ai-curators/index.html#sparql-1.1-federated-queries",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "SPARQL 1.1 Federated Queries",
+    "text": "SPARQL 1.1 Federated Queries\n\n\n\n\n\nBenefitting from SPARQL 1.1 Federated Queries with Amazon Neptune\n\n\n\n\n\n\nSPARQL 1.1 Federated Query"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#how-do-we-provide-context-to-llms-to-query-a-kg",
+    "href": "slides/ai-curators/index.html#how-do-we-provide-context-to-llms-to-query-a-kg",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "How do we provide “Context” to LLMs to QUERY a KG?",
+    "text": "How do we provide “Context” to LLMs to QUERY a KG?\n{.center}"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#sparql-1.1-service-description-to-provide-context",
+    "href": "slides/ai-curators/index.html#sparql-1.1-service-description-to-provide-context",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "SPARQL 1.1 Service Description to provide Context!",
+    "text": "SPARQL 1.1 Service Description to provide Context!\n\n\n\n\n\n\n\nDataset and API Discovery in Linked Data"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#example-in-the-wild",
+    "href": "slides/ai-curators/index.html#example-in-the-wild",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Example in the Wild",
+    "text": "Example in the Wild\n\n\n\n\n\nSwiss Linked Data: https://geo.ld.admin.ch/.well-known/void\n\n\n\n\n\n\nUniProt: https://sparql.uniprot.org/.well-known/void"
   },
   {
     "objectID": "slides/ai-curators/index.html#chatgpt-plugin-architecture-as-example",
@@ -704,7 +914,35 @@
     "href": "slides/ai-curators/index.html#example-service-retrieval-augmented-generation-were-not-doing-this-yet",
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "Example Service – Retrieval Augmented Generation (We’re not doing this yet!)",
-    "text": "Example Service – Retrieval Augmented Generation (We’re not doing this yet!)\n\n\n\n\nExperiments in extracting tables from navy 3-M manual for OPNAV 4790/2K data structure Resources\nSample KG construction using OPNAV forms 4790/ 2K as a schema template\nRepository for formatting the Joint Electronics Type Designation System for ML and KG Usage"
+    "text": "Example Service – Retrieval Augmented Generation (We’re not doing this yet!)\n\n\n\n\nExperiments in extracting tables from navy 3-M manual for OPNAV 4790/2K data structure Resources\nSample KG construction using OPNAV forms 4790/ 2K as a schema template\nRepository for formatting the Joint Electronics Type Designation System for ML and KG Usage\nLikely needed to be stored in a Vector Store"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#sparql-interfaces",
+    "href": "slides/ai-curators/index.html#sparql-interfaces",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "SPARQL Interfaces",
+    "text": "SPARQL Interfaces"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#kg-interpretation-in-contexts",
+    "href": "slides/ai-curators/index.html#kg-interpretation-in-contexts",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "KG Interpretation in Contexts",
+    "text": "KG Interpretation in Contexts"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#fair-vocabularies-and-ontologies",
+    "href": "slides/ai-curators/index.html#fair-vocabularies-and-ontologies",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "FAIR Vocabularies and Ontologies",
+    "text": "FAIR Vocabularies and Ontologies"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#janos-odp-bridge",
+    "href": "slides/ai-curators/index.html#janos-odp-bridge",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Jano’s ODP Bridge",
+    "text": "Jano’s ODP Bridge\n\n\n\n\nOntology Engineering: A View from the Trenches - WOP 2015 Keynote | PPT (slideshare.net)"
   },
   {
     "objectID": "slides/data-ai/index.html#trusted-ai-frameworks-for-knowledge-engineering",

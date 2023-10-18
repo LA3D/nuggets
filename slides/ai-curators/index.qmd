@@ -3,6 +3,7 @@ title: "Towards <u>Trusted</u> LLM based Curator Agents"
 author: "Charles F. Vardeman II"
 institute: "Center for Research Computing, University of Notre Dame"
 date: "2023-10-06"
+modified: "2023-10-20"
 embed-resources: true
 format: 
     revealjs:
@@ -14,52 +15,121 @@ format:
 categories: [LLMs, Agents, Knowledge Graphs]
 ---
 
+## DoD Data Vision
+::: {.columns}
+
+::: {.column width="70%"}
+![](DoD_Data.png)
+:::
+::: {.column width="30%"} 
+![Norquist, David L. n.d. “DOD Data Strategy.” https://media.defense.gov/2020/Oct/08/2002514180/-1/-1/0/DOD-DATA-STRATEGY.PDF.](DoD-Data_strategy_cov.png)
+:::
+
+:::
+
+## AI Agents for Interoperability
+::: {.columns}
+
+::: {.column width="70%"}
+![](eu-interoperability-AI.png)
+:::
+::: {.column width="30%"} 
+![Tangi, Luca, Marco Combetto, BOSCH Jaume Martin, and MÜLLER Paula Rodriguez. 2023. “Artificial Intelligence for Interoperability in the European Public Sector.” JRC Publications Repository. October 4, 2023. https://doi.org/10.2760/633646.](eu-interoperability.png)
+:::
+
+:::
 
 
 ## Motivation: TAMMS KG
 
 ::: {.r-stack}
-![](../agents_summer23/AI-Curated_KG.png)
+![](../agents_summer23/AI-Curated_KG.png){.center width="1135" height="850"}
 :::
 
 ## Starting Architecture... {.center}
 
-## AI Curator "Agents" {.center}
+## AI Curator "Agents": Team "LEMON" {.center}
+
 
 ## Activity Specific Agents: Visual Agents
 
-::: {.r-stack}
+::: {.columns}
+
+::: {.column width="60%"}
+* [“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
+* [Hu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv.](https://doi.org/10.48550/arXiv.2306.08129)
+:::
+::: {.column width="40%"} 
 ![](../agents_summer23/visualagents.png)
 :::
 
+:::
 
-* [“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
-* [Hu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv.](https://doi.org/10.48550/arXiv.2306.08129)
 
 
 ## Visual Agents Architecture: Different LLMs based on Role
 
-:::{.r-stack}
+::: {.columns}
+
+::: {.column width="60%"}
+* [“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
+* [Hu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv.](https://doi.org/10.48550/arXiv.2306.08129)
+:::
+::: {.column width="40%"} 
 ![](../agents_summer23/visualagents_arch.png)
 :::
 
-* [“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
-* [Hu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv.](https://arxiv.org/abs//2306.08129) 
+:::
+
 
 ## Activity Specific Agents: Visual Agents Transition Graph
 
-::: {.r-stack}
+::: {.columns}
+
+::: {.column width="60%"}
+* [“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
+* [Hu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv.](https://doi.org/10.48550/arXiv.2306.08129)
+:::
+::: {.column width="40%"} 
 ![](../agents_summer23/visualagent_transitiongraph.png)
 :::
 
-* [“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
-* [Hu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv.](https://doi.org/10.48550/arXiv.2306.08129)
+:::
+
+## Different LLM's for Different Tasks
+- Lesson's from [Kaggle Science Exam Competition](https://www.kaggle.com/competitions/kaggle-llm-science-exam) winning [team solution](https://www.kaggle.com/competitions/kaggle-llm-science-exam/discussion/446422)
+- Becomes a search - context retrieval problem for the curator LLM
+
+## Structured Responses and LLMs
+- [lamma.cpp Grammers](https://github.com/ggerganov/llama.cpp/tree/master/grammars)
+- [Introducing Code Llama, a state-of-the-art large language model for coding](https://ai.meta.com/blog/code-llama-large-language-model-coding/)
+- [llm python package](https://github.com/simonw/llm)
+- [llm lamma.cpp plugin](https://github.com/simonw/llm-llama-cpp)
+
+## Modeling The World!
+:::{.r-stack}
+![](Jano-Data-Stack.png){.center width="1102" height="800"}
+:::
+[Ontology Engineering: A View from the Trenches - WOP 2015 Keynote | PPT (slideshare.net)](https://www.slideshare.net/kjanowicz/ontology-engineering-a-view-from-the-trenches-wop-2015-keynote)
+
+## Moo Architecture
+:::{.r-stack}
+![](../tai-ke/ontology_process.png){.center width="1541" height="850"}
+:::
 
 ## We need to think through what **Trusted** Means!
 
 ::: {.r-stack}
-![](../tai-tools/4x4-circle-template_TAI_4-2023.png)
+![](../tai-tools/4x4-circle-template_TAI_4-2023.png){.center width="850" height="850"}
 :::
+
+## Frameworks to Capture Provenance of Models!
+- SBoMs and AI BoMs for Agents
+    - They are KGs Themselves!
+- Data Cards and Model Cards for Models
+- Agents will be exposed as Microservices themselves
+- We should be able to ask the Microservice Layer for "Trust Information"
+- Agent should store "Metadata" in the Graph Fragment they are constructing.
 
 ## Starting with a CSV (Navy Maintenance Data)
 
@@ -80,7 +150,7 @@ categories: [LLMs, Agents, Knowledge Graphs]
 ## Context Matters!
 
 ::: {.r-stack}
-![](json-ld_pipeline.png)
+![](json-ld_pipeline.png){.center width="1115" height="800"}
 :::
 
 [Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD | Eliud Polanco](https://youtu.be/KHNc0WwJ5JA?si=Z9YFCUVRXLyM47bH)
@@ -88,19 +158,212 @@ categories: [LLMs, Agents, Knowledge Graphs]
 ## JSON-LD as a Bridge
 
 :::{.r-stack}
-![](fluree.png)
+![](fluree.png){.center width="1118" height="626"}
 :::
 
 [Converting Legacy Enterprise Data into Knowledge Graphs with AI and JSON LD | Eliud Polanco](https://youtu.be/KHNc0WwJ5JA?si=Z9YFCUVRXLyM47bH)
 
+
+## Aside: Curator AI's should be multimodal
+- Dr. Vardeman's Law: Data "Lives" in different locations and formats -- not every digital object can or should be in the KG layer. The Curator AI should "Catalog" this information.
+- Multimodal LLM's like AVIS can bridge that Gap!
 
 ## Semantic AI-based Micro Services {.center}
 
 ## How can we create "Semantic Microservices"
 
 ::: {.r-stack}
-![](../nuggets_review/vision_of_agents.png)
+![](../nuggets_review/vision_of_agents.png){.center width="638" height="800"}
 :::
+[Tim Berners-Lee, James Hendler, and Ora Lassila. "The Semantic Web." Scientific American 284, no. 5 (2001): 34--43. https://lassila.org/publications/2001/SciAm.html](https://lassila.org/publications/2001/SciAm.html)
+
+## Semantic Web "Layer Cake"
+::: {.r-stack}
+![](./lcake-evolution.png){.center width="1600" height="483"}
+:::
+[John Sowa, “Semantics.” n.d. Accessed October 17, 2023. https://www.jfsowa.com/ikl/.](https://www.jfsowa.com/ikl/)
+[Q92665](https://www.wikidata.org/wiki/Q92665)
+
+## Aside: Sowa's law of standards
+:::{.r-stack}
+"Whenever a major organization develops a new system as an official standard for X, the primary result is the widespread adoption of some simpler system as a de facto standard for X."
+:::
+
+
+## Jano's Layer Cake
+
+::: {.r-stack}
+![](JANO-archiitecture.png){.center width="1110" height="800"}
+:::
+
+[Ontology Engineering: A View from the Trenches - WOP 2015 Keynote | PPT (slideshare.net)](https://www.slideshare.net/kjanowicz/ontology-engineering-a-view-from-the-trenches-wop-2015-keynote)
+
+
+## Distributed Knowledge Graph Layer Cake
+:::{.r-stack}
+![[DKG Basic Concepts](https://docs.origintrail.io/decentralized-knowledge-graph-layer-2/dkg-basic-concepts)](DKG_Knowledge_Asset.png){.center width="608" height="800"}
+:::
+
+## DKG Example
+
+::: {.columns}
+
+::: {.column width="50%"}
+![](DKG-example.png)
+:::
+::: {.column width="50%"} 
+![[OriginTrail powering consumer interaction with the new GS1 Digital Link](https://youtu.be/LiJeLoqUBAI?si=aqO8YUvwzBBbS-lx)](DKG-in-action-kg.png)
+:::
+
+:::
+
+
+## "Web 2.0 Architecture -- Microservices"
+![[RESTful web API design](https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design)](Azure-Rest.png)
+
+## Documenting REST-APIs
+
+:::{.r-stack}
+![[About Swagger Specification | Documentation | Swagger](https://swagger.io/docs/specification/about/)](swagger.png){.center width="1090" height="800"}
+:::
+
+## Example: HuggingFace Embedding Service
+![[A blazing fast inference solution for text embeddings models](https://github.com/huggingface/text-embeddings-inference)](hf-textembeddings.png)
+
+## Example: HuggingFace Embedding Service
+![[Text Generation Inference API](https://huggingface.github.io/text-embeddings-inference/)](hf-textembeddings-api.png)
+
+## OpenAI "Plugins"
+
+:::{.r-stack}
+![[Getting started - OpenAI API](https://platform.openai.com/docs/plugins/getting-started)](OpenAI-plugin.png)
+:::
+
+## Microsoft and "OpenAI Plugins"
+![[Create and run a ChatGPT plugin with Semantic Kernel | Microsoft Learn](https://learn.microsoft.com/en-us/semantic-kernel/ai-orchestration/plugins/chatgpt-plugins)](microsoft-plugin.png)
+
+
+## Bridging Rest to AI using JSON-LD
+::: {.columns}
+
+::: {.column width="30%"}
+![[JSON-LD 1.1 -- A JSON-based Serialization for Linked Data](https://www.w3.org/TR/json-ld11/)](JSON-LD1-1.png)
+:::
+
+::: {.column width="70%"}
+![](JSON-LD1-1-JSON.png)
+:::
+
+:::
+
+## JSON-LD Best Practices
+
+::: {.columns}
+
+::: {.column width="30%"}
+![[JSON-LD Best Practices](https://w3c.github.io/json-ld-bp/)](JSON-LD-BP.png)
+:::
+
+::: {.column width="70%"} 
+![](JSON-LD-BP-List.png)
+:::
+
+:::
+
+## JSON as JSON-LD
+```
+GET /ordinary-json-document.json HTTP/1.1
+Host: example.com
+Accept: application/ld+json,application/json,*/*;q=0.1
+
+====================================
+
+HTTP/1.1 200 OK
+...
+Content-Type: application/json
+Link: <https://json-ld.org/contexts/person.jsonld>; rel="http://www.w3.org/ns/json-ld#context"; type="application/ld+json"
+
+{
+  "name": "Markus Lanthaler",
+  "homepage": "http://www.markus-lanthaler.com/",
+  "image": "http://twitter.com/account/profile_image/markuslanthaler"
+}
+```
+
+## Gorilla: Retrieval Aware Training for APIs
+
+::: r-stack
+![](../building_stuff/gorilla-api.png){fig-align="center" width="1000" height="643"}
+:::
+
+::: footer
+S. Patil, "Gorilla: Large Language Model Connected with Massive APIs \[Project Website\]." Sep. 04, 2023.
+
+Accessed: Sep. 04, 2023. \[Online\]. Available: <https://github.com/ShishirPatil/gorilla>
+:::
+
+## Gorilla: Retrieval Aware Training for APIs
+
+::: r-stack
+![](../building_stuff/gorilla-api-example.png){fig-align="center" width="1000" height="478"}
+:::
+
+::: footer
+S. Patil, "Gorilla: Large Language Model Connected with Massive APIs \[Project Website\]." Sep. 04, 2023.
+
+Accessed: Sep. 04, 2023. \[Online\]. Available: <https://github.com/ShishirPatil/gorilla>
+:::
+
+
+## Problem with REST -- Interoperability, Scale and Queriability {.center}
+
+## "Semantic APIs for KG's" {.center}
+
+## SPARQL 1.1 Federated Queries
+::: {.columns}
+
+::: {.column width="50%"}
+![[Benefitting from SPARQL 1.1 Federated Queries with Amazon Neptune](https://aws.amazon.com/blogs/database/benefitting-from-sparql-1-1-federated-queries-with-amazon-neptune/)](aws-fed.png)
+:::
+
+::: {.column width="50%"}
+![[SPARQL 1.1 Federated Query](https://www.w3.org/TR/sparql11-federated-query/)](sparql-1.1-federated.png)
+:::
+
+:::
+
+## How do we provide "Context" to LLMs to QUERY a KG? 
+{.center}
+
+## SPARQL 1.1 Service Description to provide Context!
+::: {.columns}
+
+::: {.column width="50%"}
+![](Sparql-1.1-service.png)
+:::
+
+::: {.column width="50%"}
+![[Dataset and API Discovery in Linked Data](https://blog.ldodds.com/2013/02/04/dataset-and-api-discovery-in-linked-data/)](API-discovery-Linked-Data.png){width="453" height="800"}
+:::
+
+:::
+
+## Example in the Wild
+
+
+::: {.columns}
+
+::: {.column width="50%"}
+![[Swiss Linked Data: https://geo.ld.admin.ch/.well-known/void](https://geo.ld.admin.ch/.well-known/void)](geo-ld-ch.png)
+:::
+
+::: {.column width="50%"}
+![UniProt: https://sparql.uniprot.org/.well-known/void](Uniprot-void.png)
+:::
+
+:::
+
+
 
 
 ## ChatGPT "Plugin" Architecture as Example
@@ -122,3 +385,19 @@ categories: [LLMs, Agents, Knowledge Graphs]
 * [Experiments in extracting tables from navy 3-M manual for OPNAV 4790/2K data structure Resources](https://github.com/nd-crane/decoder-ring)
 * [Sample KG construction using OPNAV forms 4790/ 2K as a schema template](https://github.com/nd-crane/2kilos-kg)
 * [Repository for formatting the Joint Electronics Type Designation System for ML and KG Usage](https://github.com/nd-crane/JETDS)
+* Likely needed to be stored in a Vector Store
+
+
+
+
+
+## SPARQL Interfaces
+
+## KG Interpretation in Contexts
+
+## FAIR Vocabularies and Ontologies
+
+## Jano's ODP Bridge
+:::{.r-stack}
+![[Ontology Engineering: A View from the Trenches - WOP 2015 Keynote | PPT (slideshare.net)](https://www.slideshare.net/kjanowicz/ontology-engineering-a-view-from-the-trenches-wop-2015-keynote)](jano-interop.png){.center width="1193" height="850"}
+:::
