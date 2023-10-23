@@ -623,6 +623,13 @@
     "text": "AI Agents for Interoperability\n\n\n\n\n\n\n\nTangi, Luca, Marco Combetto, BOSCH Jaume Martin, and MÜLLER Paula Rodriguez. 2023. “Artificial Intelligence for Interoperability in the European Public Sector.” JRC Publications Repository. October 4, 2023. https://doi.org/10.2760/633646."
   },
   {
+    "objectID": "slides/ai-curators/index.html#problem-data-centric-ai-is-hard-but-necessary-for-trusted-ai-can-we-use-cognitive-agents-to-lower-the-barrier-to-data-centric-ai",
+    "href": "slides/ai-curators/index.html#problem-data-centric-ai-is-hard-but-necessary-for-trusted-ai-can-we-use-cognitive-agents-to-lower-the-barrier-to-data-centric-ai",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Problem – Data Centric AI is Hard but necessary for Trusted AI – Can we use Cognitive Agents to lower the barrier to Data Centric AI?",
+    "text": "Problem – Data Centric AI is Hard but necessary for Trusted AI – Can we use Cognitive Agents to lower the barrier to Data Centric AI?"
+  },
+  {
     "objectID": "slides/ai-curators/index.html#motivation-tamms-kg",
     "href": "slides/ai-curators/index.html#motivation-tamms-kg",
     "title": "Towards Trusted LLM based Curator Agents",
@@ -644,11 +651,25 @@
     "text": "AI Curator “Agents”: Team “LEMON”"
   },
   {
+    "objectID": "slides/ai-curators/index.html#framework-for-architecture-design-of-llm-based-agents",
+    "href": "slides/ai-curators/index.html#framework-for-architecture-design-of-llm-based-agents",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Framework for architecture design of LLM Based Agents",
+    "text": "Framework for architecture design of LLM Based Agents\n\nWang, Lei, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, et al. 2023. “A Survey on Large Language Model Based Autonomous Agents.” arXiv. http://arxiv.org/abs/2308.11432."
+  },
+  {
     "objectID": "slides/ai-curators/index.html#cognitive-architectures-for-language-agents",
     "href": "slides/ai-curators/index.html#cognitive-architectures-for-language-agents",
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "Cognitive Architectures for Language Agents",
     "text": "Cognitive Architectures for Language Agents\n\n\n\n\nSumers, Theodore R., Shunyu Yao, Karthik Narasimhan, and Thomas L. Griffiths. 2023. “Cognitive Architectures for Language Agents.” arXiv. http://arxiv.org/abs/2309.02427."
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#example",
+    "href": "slides/ai-curators/index.html#example",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Example",
+    "text": "Example"
   },
   {
     "objectID": "slides/ai-curators/index.html#activity-specific-agents-visual-agents",
@@ -679,13 +700,6 @@
     "text": "Different LLM’s for Different Tasks\n\nLesson’s from Kaggle Science Exam Competition winning team solution\nBecomes a search - context retrieval problem for the curator LLM"
   },
   {
-    "objectID": "slides/ai-curators/index.html#structured-responses-and-llms",
-    "href": "slides/ai-curators/index.html#structured-responses-and-llms",
-    "title": "Towards Trusted LLM based Curator Agents",
-    "section": "Structured Responses and LLMs",
-    "text": "Structured Responses and LLMs\n\nlamma.cpp Grammers\nIntroducing Code Llama, a state-of-the-art large language model for coding\nllm python package\nllm lamma.cpp plugin\nImplementation of Functions using Lamma.cpp grammar"
-  },
-  {
     "objectID": "slides/ai-curators/index.html#llms-fine-tuned-to-be-agents",
     "href": "slides/ai-curators/index.html#llms-fine-tuned-to-be-agents",
     "title": "Towards Trusted LLM based Curator Agents",
@@ -693,11 +707,25 @@
     "text": "LLMs fine tuned to be Agents\n\n\n\n\nZeng, Aohan, Mingdao Liu, Rui Lu, Bowen Wang, Xiao Liu, Yuxiao Dong, and Jie Tang. 2023. “AgentTuning: Enabling Generalized Agent Abilities for LLMs.” arXiv. http://arxiv.org/abs/2310.12823.\n\n\n\nGPTQ model files for Knowledge Engineering GroupAgentLM 70B."
   },
   {
-    "objectID": "slides/ai-curators/index.html#curation",
-    "href": "slides/ai-curators/index.html#curation",
+    "objectID": "slides/ai-curators/index.html#tool-use-calling-python-functions",
+    "href": "slides/ai-curators/index.html#tool-use-calling-python-functions",
     "title": "Towards Trusted LLM based Curator Agents",
-    "section": "Curation?",
-    "text": "Curation?"
+    "section": "Tool Use (Calling Python Functions)",
+    "text": "Tool Use (Calling Python Functions)\n\nCreate our own Code Interpreter | A hacker’s guide to Language Models\nGPT - OpenAI API\nFunction-calling with an OpenAPI specification | OpenAI Cookbook"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#structured-responses-and-llms",
+    "href": "slides/ai-curators/index.html#structured-responses-and-llms",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Structured Responses and LLMs",
+    "text": "Structured Responses and LLMs\n\nlamma.cpp Grammers\nIntroducing Code Llama, a state-of-the-art large language model for coding\nlamma.cpp Python\nImplementation of Functions using Lamma.cpp grammar"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#curation-state-graphs",
+    "href": "slides/ai-curators/index.html#curation-state-graphs",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Curation State Graphs?",
+    "text": "Curation State Graphs?"
   },
   {
     "objectID": "slides/ai-curators/index.html#modeling-the-world",
@@ -2287,40 +2315,5 @@
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Generative AI in Content Creation",
     "text": "Generative AI in Content Creation\nIn creating AI Success Factors: Engineering Trust in Deployments, we harness the power of artificial intelligence in conjunction with human expertise. We utilize advanced Generative AI models such as ChatGPT, Bing Chat, and Anthropic Claude in a guided, iterative process that combines the best of AI and human capabilities.\nOur use of Generative AI begins with the drafting stage. These models, trained on extensive datasets, generate human-like text that matches our specified tone and style, providing us with a solid foundation for each blog post. This allows us to focus on the larger narrative without getting mired in the nitty-gritty details from the outset.\nThe AI-generated drafts, while sophisticated, are just the starting point. We employ a methodology that involves guiding the AI to improve its output. This includes providing more detailed prompts, specifying the format we want the output in, or asking the model to think step-by-step before settling on a conclusion.\nOnce we have a draft that we’re satisfied with, it’s time for human intervention. Our team reviews the AI-generated content, refining and editing it to ensure it maintains the standards of accuracy, relevance, and depth that our readers expect. This process leverages critical human skills of creativity, critical thinking, and domain expertise that even the most advanced AI can’t replicate.\nThis approach exemplifies our vision of a symbiotic relationship between AI and humans. By effectively integrating Generative AI into our content creation process, we not only boost our productivity and efficiency but also demonstrate the practical application of AI technologies in real-world scenarios. Thus, the blog becomes a testament to our commitment to translational research and our pursuit of an AI-integrated future."
-  },
-  {
-    "objectID": "slides/ai-curators/index.html#framework-for-architecture-design-of-llm-based-agents",
-    "href": "slides/ai-curators/index.html#framework-for-architecture-design-of-llm-based-agents",
-    "title": "Towards Trusted LLM based Curator Agents",
-    "section": "Framework for architecture design of LLM Based Agents",
-    "text": "Framework for architecture design of LLM Based Agents\n\nWang, Lei, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, et al. 2023. “A Survey on Large Language Model Based Autonomous Agents.” arXiv. http://arxiv.org/abs/2308.11432."
-  },
-  {
-    "objectID": "slides/ai-curators/index.html#example",
-    "href": "slides/ai-curators/index.html#example",
-    "title": "Towards Trusted LLM based Curator Agents",
-    "section": "Example",
-    "text": "Example"
-  },
-  {
-    "objectID": "slides/ai-curators/index.html#problem-data-centric-ai-is-hard-but-necessary-for-trusted-ai-can-we-use-cognitive-agents-to-lower-the-barrier-to-data-centric-ai",
-    "href": "slides/ai-curators/index.html#problem-data-centric-ai-is-hard-but-necessary-for-trusted-ai-can-we-use-cognitive-agents-to-lower-the-barrier-to-data-centric-ai",
-    "title": "Towards Trusted LLM based Curator Agents",
-    "section": "Problem – Data Centric AI is Hard but necessary for Trusted AI – Can we use Cognitive Agents to lower the barrier to Data Centric AI?",
-    "text": "Problem – Data Centric AI is Hard but necessary for Trusted AI – Can we use Cognitive Agents to lower the barrier to Data Centric AI?"
-  },
-  {
-    "objectID": "slides/ai-curators/index.html#tool-use-calling-python-functions",
-    "href": "slides/ai-curators/index.html#tool-use-calling-python-functions",
-    "title": "Towards Trusted LLM based Curator Agents",
-    "section": "Tool Use (Calling Python Functions)",
-    "text": "Tool Use (Calling Python Functions)\n\nCreate our own Code Interpreter | A hacker’s guide to Language Models\nGPT - OpenAI API\nFunction-calling with an OpenAPI specification | OpenAI Cookbook"
-  },
-  {
-    "objectID": "slides/ai-curators/index.html#curation-state-graphs",
-    "href": "slides/ai-curators/index.html#curation-state-graphs",
-    "title": "Towards Trusted LLM based Curator Agents",
-    "section": "Curation State Graphs?",
-    "text": "Curation State Graphs?"
   }
 ]
