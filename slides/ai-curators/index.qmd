@@ -39,6 +39,7 @@ categories: [LLMs, Agents, Knowledge Graphs]
 
 :::
 
+## Problem -- Data Centric AI is Hard but necessary for Trusted AI -- Can we use Cognitive Agents to lower the barrier to Data Centric AI? {.center}
 
 ## Motivation: TAMMS KG
 
@@ -50,11 +51,18 @@ categories: [LLMs, Agents, Knowledge Graphs]
 
 ## AI Curator "Agents": Team "LEMON" {.center}
 
+## Framework for architecture design of LLM Based Agents
+![[Wang, Lei, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, et al. 2023. “A Survey on Large Language Model Based Autonomous Agents.” arXiv. http://arxiv.org/abs/2308.11432.](http://arxiv.org/abs/2308.11432)](LLM_Architectures.png)
+
 ## Cognitive Architectures for Language Agents
 
 :::{.r-stack}
 ![[Sumers, Theodore R., Shunyu Yao, Karthik Narasimhan, and Thomas L. Griffiths. 2023. “Cognitive Architectures for Language Agents.” arXiv. http://arxiv.org/abs/2309.02427.](http://arxiv.org/abs/2309.02427)](agent-arch.png)
 :::
+
+
+
+## Example {.center}
 
 ## Activity Specific Agents: Visual Agents
 
@@ -106,21 +114,28 @@ categories: [LLMs, Agents, Knowledge Graphs]
 - Lesson's from [Kaggle Science Exam Competition](https://www.kaggle.com/competitions/kaggle-llm-science-exam) winning [team solution](https://www.kaggle.com/competitions/kaggle-llm-science-exam/discussion/446422)
 - Becomes a search - context retrieval problem for the curator LLM
 
-## Structured Responses and LLMs
-- [lamma.cpp Grammers](https://github.com/ggerganov/llama.cpp/tree/master/grammars)
-- [Introducing Code Llama, a state-of-the-art large language model for coding](https://ai.meta.com/blog/code-llama-large-language-model-coding/)
-- [llm python package](https://github.com/simonw/llm)
-- [llm lamma.cpp plugin](https://github.com/simonw/llm-llama-cpp)
 
 ## LLMs fine tuned to be Agents
 
 :::{.r-stack}
 ![[Zeng, Aohan, Mingdao Liu, Rui Lu, Bowen Wang, Xiao Liu, Yuxiao Dong, and Jie Tang. 2023. “AgentTuning: Enabling Generalized Agent Abilities for LLMs.” arXiv. http://arxiv.org/abs/2310.12823.
-](http://arxiv.org/abs/2310.12823)](LM-Agents-chat.png)
+](http://arxiv.org/abs/2310.12823)](LM-Agents-chat.png){.center width="964" height="850"}
 :::
+[GPTQ model files for Knowledge Engineering GroupAgentLM 70B.](https://huggingface.co/TheBloke/agentlm-70B-GPTQ)
+
+## Tool Use (Calling Python Functions)
+- [Create our own Code Interpreter | A hacker's guide to Language Models ](https://github.com/fastai/lm-hackers/blob/main/lm-hackers.ipynb)
+- [GPT - OpenAI API ](https://platform.openai.com/docs/guides/gpt/function-calling)
+- [Function-calling with an OpenAPI specification | OpenAI Cookbook](https://cookbook.openai.com/examples/function_calling_with_an_openapi_spec)
+
+## Structured Responses and LLMs
+- [lamma.cpp Grammers](https://github.com/ggerganov/llama.cpp/tree/master/grammars)
+- [Introducing Code Llama, a state-of-the-art large language model for coding](https://ai.meta.com/blog/code-llama-large-language-model-coding/)
+- [lamma.cpp Python](https://github.com/abetlen/llama-cpp-python)
+- [Implementation of Functions using Lamma.cpp grammar](https://github.com/teleprint-me/py.gpt.prompt/blob/main/docs/notebooks/llama_cpp_grammar_api.ipynb)
 
 
-## Curation? {.r-stack}
+## Curation State Graphs? {.r-stack}
 
 ## Modeling The World!
 :::{.r-stack}
