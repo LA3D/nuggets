@@ -644,6 +644,13 @@
     "text": "AI Curator “Agents”: Team “LEMON”"
   },
   {
+    "objectID": "slides/ai-curators/index.html#cognitive-architectures-for-language-agents",
+    "href": "slides/ai-curators/index.html#cognitive-architectures-for-language-agents",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Cognitive Architectures for Language Agents",
+    "text": "Cognitive Architectures for Language Agents\n\n\n\n\nSumers, Theodore R., Shunyu Yao, Karthik Narasimhan, and Thomas L. Griffiths. 2023. “Cognitive Architectures for Language Agents.” arXiv. http://arxiv.org/abs/2309.02427."
+  },
+  {
     "objectID": "slides/ai-curators/index.html#activity-specific-agents-visual-agents",
     "href": "slides/ai-curators/index.html#activity-specific-agents-visual-agents",
     "title": "Towards Trusted LLM based Curator Agents",
@@ -677,6 +684,20 @@
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "Structured Responses and LLMs",
     "text": "Structured Responses and LLMs\n\nlamma.cpp Grammers\nIntroducing Code Llama, a state-of-the-art large language model for coding\nllm python package\nllm lamma.cpp plugin"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#llms-fine-tuned-to-be-agents",
+    "href": "slides/ai-curators/index.html#llms-fine-tuned-to-be-agents",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "LLMs fine tuned to be Agents",
+    "text": "LLMs fine tuned to be Agents\n\n\n\n\nZeng, Aohan, Mingdao Liu, Rui Lu, Bowen Wang, Xiao Liu, Yuxiao Dong, and Jie Tang. 2023. “AgentTuning: Enabling Generalized Agent Abilities for LLMs.” arXiv. http://arxiv.org/abs/2310.12823."
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#curation",
+    "href": "slides/ai-curators/index.html#curation",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Curation?",
+    "text": "Curation?"
   },
   {
     "objectID": "slides/ai-curators/index.html#modeling-the-world",

@@ -50,6 +50,11 @@ categories: [LLMs, Agents, Knowledge Graphs]
 
 ## AI Curator "Agents": Team "LEMON" {.center}
 
+## Cognitive Architectures for Language Agents
+
+:::{.r-stack}
+![[Sumers, Theodore R., Shunyu Yao, Karthik Narasimhan, and Thomas L. Griffiths. 2023. “Cognitive Architectures for Language Agents.” arXiv. http://arxiv.org/abs/2309.02427.](http://arxiv.org/abs/2309.02427)](agent-arch.png)
+:::
 
 ## Activity Specific Agents: Visual Agents
 
@@ -82,6 +87,7 @@ categories: [LLMs, Agents, Knowledge Graphs]
 :::
 
 
+
 ## Activity Specific Agents: Visual Agents Transition Graph
 
 ::: {.columns}
@@ -105,6 +111,16 @@ categories: [LLMs, Agents, Knowledge Graphs]
 - [Introducing Code Llama, a state-of-the-art large language model for coding](https://ai.meta.com/blog/code-llama-large-language-model-coding/)
 - [llm python package](https://github.com/simonw/llm)
 - [llm lamma.cpp plugin](https://github.com/simonw/llm-llama-cpp)
+
+## LLMs fine tuned to be Agents
+
+:::{.r-stack}
+![[Zeng, Aohan, Mingdao Liu, Rui Lu, Bowen Wang, Xiao Liu, Yuxiao Dong, and Jie Tang. 2023. “AgentTuning: Enabling Generalized Agent Abilities for LLMs.” arXiv. http://arxiv.org/abs/2310.12823.
+](http://arxiv.org/abs/2310.12823)](LM-Agents-chat.png)
+:::
+
+
+## Curation? {.r-stack}
 
 ## Modeling The World!
 :::{.r-stack}
