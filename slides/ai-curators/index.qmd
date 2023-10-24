@@ -122,7 +122,7 @@ categories: [LLMs, Agents, Knowledge Graphs]
 
 :::{.r-stack}
 ![[Zeng, Aohan, Mingdao Liu, Rui Lu, Bowen Wang, Xiao Liu, Yuxiao Dong, and Jie Tang. 2023. “AgentTuning: Enabling Generalized Agent Abilities for LLMs.” arXiv. http://arxiv.org/abs/2310.12823.
-](http://arxiv.org/abs/2310.12823)](LM-Agents-chat.png){.center width="964" height="850"}
+](http://arxiv.org/abs/2310.12823)](LM-Agents-chat.png){.center width="908" height="800"}
 :::
 [GPTQ model files for Knowledge Engineering GroupAgentLM 70B.](https://huggingface.co/TheBloke/agentlm-70B-GPTQ)
 
