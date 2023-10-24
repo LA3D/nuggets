@@ -15,6 +15,9 @@ format:
 categories: [LLMs, Agents, Knowledge Graphs]
 ---
 
+## GitHub Repo
+- [Trusted AI - Towards a Curator (TAITaC)](https://github.com/nd-crane/taitac)
+
 ## DoD Data Vision
 ::: {.columns}
 
@@ -133,7 +136,7 @@ categories: [LLMs, Agents, Knowledge Graphs]
 - [Introducing Code Llama, a state-of-the-art large language model for coding](https://ai.meta.com/blog/code-llama-large-language-model-coding/)
 - [lamma.cpp Python](https://github.com/abetlen/llama-cpp-python)
 - [Implementation of Functions using Lamma.cpp grammar](https://github.com/teleprint-me/py.gpt.prompt/blob/main/docs/notebooks/llama_cpp_grammar_api.ipynb)
-
+- [openai-functions](https://openai-functions.readthedocs.io/en/latest/introduction.html)
 
 ## Curation State Graphs? {.r-stack}
 

@@ -609,6 +609,13 @@
     "text": "On to the First Steps to Building LLM Based Applications…"
   },
   {
+    "objectID": "slides/ai-curators/index.html#github-repo",
+    "href": "slides/ai-curators/index.html#github-repo",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "GitHub Repo",
+    "text": "GitHub Repo\n\nTrusted AI - Towards a Curator (TAITaC)"
+  },
+  {
     "objectID": "slides/ai-curators/index.html#dod-data-vision",
     "href": "slides/ai-curators/index.html#dod-data-vision",
     "title": "Towards Trusted LLM based Curator Agents",
@@ -718,7 +725,7 @@
     "href": "slides/ai-curators/index.html#structured-responses-and-llms",
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "Structured Responses and LLMs",
-    "text": "Structured Responses and LLMs\n\nlamma.cpp Grammers\nIntroducing Code Llama, a state-of-the-art large language model for coding\nlamma.cpp Python\nImplementation of Functions using Lamma.cpp grammar"
+    "text": "Structured Responses and LLMs\n\nlamma.cpp Grammers\nIntroducing Code Llama, a state-of-the-art large language model for coding\nlamma.cpp Python\nImplementation of Functions using Lamma.cpp grammar\nopenai-functions"
   },
   {
     "objectID": "slides/ai-curators/index.html#curation-state-graphs",
