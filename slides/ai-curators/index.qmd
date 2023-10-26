@@ -56,6 +56,7 @@ categories: [LLMs, Agents, Knowledge Graphs]
 
 ## Framework for architecture design of LLM Based Agents
 ![[Wang, Lei, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, et al. 2023. “A Survey on Large Language Model Based Autonomous Agents.” arXiv. http://arxiv.org/abs/2308.11432.](http://arxiv.org/abs/2308.11432)](LLM_Architectures.png){.center width="1065" height="558"}
+
 ## Cognitive Architectures for Language Agents
 
 :::{.r-stack}
@@ -127,12 +128,21 @@ categories: [LLMs, Agents, Knowledge Graphs]
 - Lesson's from [Kaggle Science Exam Competition](https://www.kaggle.com/competitions/kaggle-llm-science-exam) winning [team solution](https://www.kaggle.com/competitions/kaggle-llm-science-exam/discussion/446422)
 - Becomes a search - context retrieval problem for the curator LLM
 
+## Local LLMs vs API based LLMs
+
+![[LM Compatibility Tracking](https://docs.llamaindex.ai/en/latest/core_modules/model_modules/llms/root.html#open-source-llms)](llama-index-agents.png)
 
 ## LLMs fine tuned to be Agents
 
 :::{.r-stack}
-![[Zeng, Aohan, Mingdao Liu, Rui Lu, Bowen Wang, Xiao Liu, Yuxiao Dong, and Jie Tang. 2023. “AgentTuning: Enabling Generalized Agent Abilities for LLMs.” arXiv. http://arxiv.org/abs/2310.12823.
-](http://arxiv.org/abs/2310.12823)](LM-Agents-chat.png){.center width="794" height="700"}
+![[Zeng, Aohan, Mingdao Liu, Rui Lu, Bowen Wang, Xiao Liu, Yuxiao Dong, and Jie Tang. 2023. “AgentTuning: Enabling Generalized Agent Abilities for LLMs.” arXiv. http://arxiv.org/abs/2310.12823.](http://arxiv.org/abs/2310.12823)](agentLM-agentbench.png){.center width="1136" height="698"}
+:::
+[GPTQ model files for Knowledge Engineering GroupAgentLM 70B.](https://huggingface.co/TheBloke/agentlm-70B-GPTQ)
+
+## LLMs fine tuned to be Agents
+
+:::{.r-stack}
+![[Zeng, Aohan, Mingdao Liu, Rui Lu, Bowen Wang, Xiao Liu, Yuxiao Dong, and Jie Tang. 2023. “AgentTuning: Enabling Generalized Agent Abilities for LLMs.” arXiv. http://arxiv.org/abs/2310.12823.](http://arxiv.org/abs/2310.12823)](LM-Agents-chat.png){.center width="794" height="700"}
 :::
 [GPTQ model files for Knowledge Engineering GroupAgentLM 70B.](https://huggingface.co/TheBloke/agentlm-70B-GPTQ)
 
