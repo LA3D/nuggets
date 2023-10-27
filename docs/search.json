@@ -623,6 +623,13 @@
     "text": "DoD Data Vision\n\n\n\n\n\n\n\nNorquist, David L. n.d. “DOD Data Strategy.” https://media.defense.gov/2020/Oct/08/2002514180/-1/-1/0/DOD-DATA-STRATEGY.PDF."
   },
   {
+    "objectID": "slides/ai-curators/index.html#ontology-design-patterns-as-a-semantic-bridge",
+    "href": "slides/ai-curators/index.html#ontology-design-patterns-as-a-semantic-bridge",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Ontology Design Patterns as a Semantic Bridge",
+    "text": "Ontology Design Patterns as a Semantic Bridge\n\n\n\n\nOntology Engineering: A View from the Trenches - WOP 2015 Keynote | PPT (slideshare.net)"
+  },
+  {
     "objectID": "slides/ai-curators/index.html#ai-agents-for-interoperability",
     "href": "slides/ai-curators/index.html#ai-agents-for-interoperability",
     "title": "Towards Trusted LLM based Curator Agents",
@@ -630,11 +637,32 @@
     "text": "AI Agents for Interoperability\n\n\n\n\n\n\n\nTangi, Luca, Marco Combetto, BOSCH Jaume Martin, and MÜLLER Paula Rodriguez. 2023. “Artificial Intelligence for Interoperability in the European Public Sector.” JRC Publications Repository. October 4, 2023. https://doi.org/10.2760/633646."
   },
   {
-    "objectID": "slides/ai-curators/index.html#problem-data-centric-ai-is-hard-but-necessary-for-trusted-ai-can-we-use-cognitive-agents-to-lower-the-barrier-to-data-centric-ai",
-    "href": "slides/ai-curators/index.html#problem-data-centric-ai-is-hard-but-necessary-for-trusted-ai-can-we-use-cognitive-agents-to-lower-the-barrier-to-data-centric-ai",
+    "objectID": "slides/ai-curators/index.html#problem-can-we-use-llm-based-cognitive-agents-to-accelerate-and-create-active-metadata",
+    "href": "slides/ai-curators/index.html#problem-can-we-use-llm-based-cognitive-agents-to-accelerate-and-create-active-metadata",
     "title": "Towards Trusted LLM based Curator Agents",
-    "section": "Problem – Data Centric AI is Hard but necessary for Trusted AI – Can we use Cognitive Agents to lower the barrier to Data Centric AI?",
-    "text": "Problem – Data Centric AI is Hard but necessary for Trusted AI – Can we use Cognitive Agents to lower the barrier to Data Centric AI?"
+    "section": "Problem – Can we use LLM Based Cognitive Agents to accelerate and create “Active Metadata”?",
+    "text": "Problem – Can we use LLM Based Cognitive Agents to accelerate and create “Active Metadata”?"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#problem-how-can-llm-based-cognitive-agents-use-data-centric-ai-to-be-more-factual-through-retrieval-augmented-generation-rag-and-tool-use",
+    "href": "slides/ai-curators/index.html#problem-how-can-llm-based-cognitive-agents-use-data-centric-ai-to-be-more-factual-through-retrieval-augmented-generation-rag-and-tool-use",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Problem – How can LLM Based Cognitive Agents use Data Centric AI to be more FACTUAL through Retrieval Augmented Generation (RAG) and Tool Use?",
+    "text": "Problem – How can LLM Based Cognitive Agents use Data Centric AI to be more FACTUAL through Retrieval Augmented Generation (RAG) and Tool Use?"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#problem-data-centric-ai-is-hard-but-necessary-for-trusted-ai-can-we-use-llm-based-cognitive-agents-to-lower-the-barrier-to-data-centric-ai",
+    "href": "slides/ai-curators/index.html#problem-data-centric-ai-is-hard-but-necessary-for-trusted-ai-can-we-use-llm-based-cognitive-agents-to-lower-the-barrier-to-data-centric-ai",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Problem – Data Centric AI is Hard but necessary for Trusted AI – Can we use LLM Based Cognitive Agents to lower the barrier to Data Centric AI?",
+    "text": "Problem – Data Centric AI is Hard but necessary for Trusted AI – Can we use LLM Based Cognitive Agents to lower the barrier to Data Centric AI?"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#problem-how-can-we-trust-validate-and-integrate-human-in-the-loop-for-llm-based-agents-used-for-data-curation",
+    "href": "slides/ai-curators/index.html#problem-how-can-we-trust-validate-and-integrate-human-in-the-loop-for-llm-based-agents-used-for-data-curation",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Problem – How can we Trust, Validate, and integrate Human in the loop for LLM Based Agents used for Data Curation?",
+    "text": "Problem – How can we Trust, Validate, and integrate Human in the loop for LLM Based Agents used for Data Curation?"
   },
   {
     "objectID": "slides/ai-curators/index.html#motivation-tamms-kg",
@@ -665,11 +693,18 @@
     "text": "Framework for architecture design of LLM Based Agents\n\n\n\nWang, Lei, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, et al. 2023. “A Survey on Large Language Model Based Autonomous Agents.” arXiv. http://arxiv.org/abs/2308.11432."
   },
   {
+    "objectID": "slides/ai-curators/index.html#cognitive-architectures-for-language-agents",
+    "href": "slides/ai-curators/index.html#cognitive-architectures-for-language-agents",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Cognitive Architectures for Language Agents",
+    "text": "Cognitive Architectures for Language Agents\n\n\n\n\nSumers, Theodore R., Shunyu Yao, Karthik Narasimhan, and Thomas L. Griffiths. 2023. “Cognitive Architectures for Language Agents.” arXiv. http://arxiv.org/abs/2309.02427."
+  },
+  {
     "objectID": "slides/ai-curators/index.html#llm-powered-agents",
     "href": "slides/ai-curators/index.html#llm-powered-agents",
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "LLM Powered Agents",
-    "text": "LLM Powered Agents\n\n\n\nLLM Powered Agents"
+    "text": "LLM Powered Agents\n\n\n\n\nLLM Powered Agents"
   },
   {
     "objectID": "slides/ai-curators/index.html#example",
@@ -1008,13 +1043,6 @@
     "text": "FAIR Vocabularies and Ontologies"
   },
   {
-    "objectID": "slides/ai-curators/index.html#janos-odp-bridge",
-    "href": "slides/ai-curators/index.html#janos-odp-bridge",
-    "title": "Towards Trusted LLM based Curator Agents",
-    "section": "Jano’s ODP Bridge",
-    "text": "Jano’s ODP Bridge\n\n\n\n\nOntology Engineering: A View from the Trenches - WOP 2015 Keynote | PPT (slideshare.net)"
-  },
-  {
     "objectID": "slides/data-ai/index.html#trusted-ai-frameworks-for-knowledge-engineering",
     "href": "slides/data-ai/index.html#trusted-ai-frameworks-for-knowledge-engineering",
     "title": "Data Centric AI",
@@ -1173,7 +1201,7 @@
     "href": "slideindex.html",
     "title": "Weekly Nugget Presentations",
     "section": "",
-    "text": "Towards Trusted LLM based Curator Agents\n\n\n\n\n\n\n\nLLMs\n\n\nAgents\n\n\nKnowledge Graphs\n\n\n\n\n\n\n\n\n\n\n\nOct 6, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nH4x0rz GU!dE t0 1lms\n\n\n\n\n\n\n\nLLMs\n\n\nTools\n\n\n\n\n\n\n\n\n\n\n\nOct 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nData Centric AI\n\n\n\n\n\n\n\nTrustedAI\n\n\nData Centric AI\n\n\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTools for Trusted AI\n\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "text": "Towards Trusted LLM based Curator Agents\n\n\n\n\n\n\n\nLLMs\n\n\nAgents\n\n\nKnowledge Graphs\n\n\n\n\n\n\n\n\n\n\n\nOct 27, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nH4x0rz GU!dE t0 1lms\n\n\n\n\n\n\n\nLLMs\n\n\nTools\n\n\n\n\n\n\n\n\n\n\n\nOct 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nData Centric AI\n\n\n\n\n\n\n\nTrustedAI\n\n\nData Centric AI\n\n\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTools for Trusted AI\n\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nKG Construction\n\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n  \n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -2336,12 +2364,5 @@
     "title": "About: Laboratory for Assured AI Applications Development (LA3D)",
     "section": "Generative AI in Content Creation",
     "text": "Generative AI in Content Creation\nIn creating AI Success Factors: Engineering Trust in Deployments, we harness the power of artificial intelligence in conjunction with human expertise. We utilize advanced Generative AI models such as ChatGPT, Bing Chat, and Anthropic Claude in a guided, iterative process that combines the best of AI and human capabilities.\nOur use of Generative AI begins with the drafting stage. These models, trained on extensive datasets, generate human-like text that matches our specified tone and style, providing us with a solid foundation for each blog post. This allows us to focus on the larger narrative without getting mired in the nitty-gritty details from the outset.\nThe AI-generated drafts, while sophisticated, are just the starting point. We employ a methodology that involves guiding the AI to improve its output. This includes providing more detailed prompts, specifying the format we want the output in, or asking the model to think step-by-step before settling on a conclusion.\nOnce we have a draft that we’re satisfied with, it’s time for human intervention. Our team reviews the AI-generated content, refining and editing it to ensure it maintains the standards of accuracy, relevance, and depth that our readers expect. This process leverages critical human skills of creativity, critical thinking, and domain expertise that even the most advanced AI can’t replicate.\nThis approach exemplifies our vision of a symbiotic relationship between AI and humans. By effectively integrating Generative AI into our content creation process, we not only boost our productivity and efficiency but also demonstrate the practical application of AI technologies in real-world scenarios. Thus, the blog becomes a testament to our commitment to translational research and our pursuit of an AI-integrated future."
-  },
-  {
-    "objectID": "slides/ai-curators/index.html#cognitive-architectures-for-language-agents",
-    "href": "slides/ai-curators/index.html#cognitive-architectures-for-language-agents",
-    "title": "Towards Trusted LLM based Curator Agents",
-    "section": "Cognitive Architectures for Language Agents",
-    "text": "Cognitive Architectures for Language Agents\n\n\n\n\nSumers, Theodore R., Shunyu Yao, Karthik Narasimhan, and Thomas L. Griffiths. 2023. “Cognitive Architectures for Language Agents.” arXiv. http://arxiv.org/abs/2309.02427."
   }
 ]

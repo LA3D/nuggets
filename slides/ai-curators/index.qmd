@@ -2,8 +2,8 @@
 title: "Towards <u>Trusted</u> LLM based Curator Agents"
 author: "Charles F. Vardeman II"
 institute: "Center for Research Computing, University of Notre Dame"
-date: "2023-10-06"
-modified: "2023-10-20"
+date: "2023-10-27"
+modified: "2023-10-27"
 embed-resources: true
 format: 
     revealjs:
@@ -30,6 +30,17 @@ categories: [LLMs, Agents, Knowledge Graphs]
 
 :::
 
+##
+::: {.r-stack}
+![](GartnerDataArchEv_Graphic.png){.center width="1467" height="800"}
+:::
+
+## Ontology Design Patterns as a Semantic Bridge
+:::{.r-stack}
+![[Ontology Engineering: A View from the Trenches - WOP 2015 Keynote | PPT (slideshare.net)](https://www.slideshare.net/kjanowicz/ontology-engineering-a-view-from-the-trenches-wop-2015-keynote)](jano-interop.png){.center width="1193" height="850"}
+:::
+
+
 ## AI Agents for Interoperability
 ::: {.columns}
 
@@ -42,7 +53,13 @@ categories: [LLMs, Agents, Knowledge Graphs]
 
 :::
 
-## Problem -- Data Centric AI is Hard but necessary for Trusted AI -- Can we use Cognitive Agents to lower the barrier to Data Centric AI? {.center}
+## Problem -- Can we use LLM Based Cognitive Agents to accelerate and create "Active Metadata"?{.center}
+
+## Problem -- How can LLM Based Cognitive Agents use Data Centric AI to be more FACTUAL through Retrieval Augmented Generation (RAG) and Tool Use?{.center}
+
+## Problem -- Data Centric AI is Hard but necessary for Trusted AI -- Can we use LLM Based Cognitive Agents to lower the barrier to Data Centric AI? {.center}
+
+## Problem -- How can we Trust, Validate, and integrate Human in the loop for LLM Based Agents used for Data Curation?{.center}
 
 ## Motivation: TAMMS KG
 
@@ -65,16 +82,11 @@ categories: [LLMs, Agents, Knowledge Graphs]
 :::
 
 ## LLM Powered Agents
-::: {.columns}
 
-::: {.column width="50%"}
-* [LLM Powered Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)
-:::
-::: {.column width="50%"}
-![](LLM-Agents.png)
+::: {.r-stack}
+![[LLM Powered Agents](https://lilianweng.github.io/posts/2023-06-23-agent/)](LLM-Agents.png){.center width="484" height="800"}
 :::
 
-:::
 
 ## Example {.center}
 
@@ -450,7 +462,3 @@ Accessed: Sep. 04, 2023. \[Online\]. Available: <https://github.com/ShishirPatil
 
 ## FAIR Vocabularies and Ontologies
 
-## Jano's ODP Bridge
-:::{.r-stack}
-![[Ontology Engineering: A View from the Trenches - WOP 2015 Keynote | PPT (slideshare.net)](https://www.slideshare.net/kjanowicz/ontology-engineering-a-view-from-the-trenches-wop-2015-keynote)](jano-interop.png){.center width="1193" height="850"}
-:::
