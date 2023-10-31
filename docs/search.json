@@ -777,6 +777,13 @@
     "text": "Structured Responses and LLMs\n\nlamma.cpp Grammers\nIntroducing Code Llama, a state-of-the-art large language model for coding\nlamma.cpp Python\nImplementation of Functions using Lamma.cpp grammar\nopenai-functions"
   },
   {
+    "objectID": "slides/ai-curators/index.html#aws-agents-for-amazon-bedrock",
+    "href": "slides/ai-curators/index.html#aws-agents-for-amazon-bedrock",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "AWS Agents for Amazon Bedrock",
+    "text": "AWS Agents for Amazon Bedrock\n\nFully Managed Agents – Amazon Bedrock – AWS"
+  },
+  {
     "objectID": "slides/ai-curators/index.html#curation-state-graphs",
     "href": "slides/ai-curators/index.html#curation-state-graphs",
     "title": "Towards Trusted LLM based Curator Agents",
@@ -803,6 +810,13 @@
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "We need to think through what Trusted Means!",
     "text": "We need to think through what Trusted Means!"
+  },
+  {
+    "objectID": "slides/ai-curators/index.html#frameworks-data-engine",
+    "href": "slides/ai-curators/index.html#frameworks-data-engine",
+    "title": "Towards Trusted LLM based Curator Agents",
+    "section": "Frameworks – Data Engine",
+    "text": "Frameworks – Data Engine\n\nCopying Tesla’s Data Engine"
   },
   {
     "objectID": "slides/ai-curators/index.html#frameworks-to-capture-provenance-of-models",

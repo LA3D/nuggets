@@ -170,6 +170,9 @@ categories: [LLMs, Agents, Knowledge Graphs]
 - [Implementation of Functions using Lamma.cpp grammar](https://github.com/teleprint-me/py.gpt.prompt/blob/main/docs/notebooks/llama_cpp_grammar_api.ipynb)
 - [openai-functions](https://openai-functions.readthedocs.io/en/latest/introduction.html)
 
+## AWS Agents for Amazon Bedrock
+![[Fully Managed Agents -- Amazon Bedrock -- AWS](https://aws.amazon.com/bedrock/agents/)](aws-agents.png)
+
 ## Curation State Graphs? {.r-stack}
 
 ## Modeling The World!
@@ -188,6 +191,9 @@ categories: [LLMs, Agents, Knowledge Graphs]
 ::: {.r-stack}
 ![](../tai-tools/4x4-circle-template_TAI_4-2023.png){.center width="850" height="850"}
 :::
+
+## Frameworks -- Data Engine
+![[Copying Tesla's Data Engine](https://www.mrdbourke.com/copying-teslas-data-engine-for-food-images/)](data-engine.png)
 
 ## Frameworks to Capture Provenance of Models!
 - SBoMs and AI BoMs for Agents
