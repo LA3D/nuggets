@@ -1,0 +1,96 @@
+---
+title: "Return of the Nuggets -- November 2023"
+author: "Charles F. Vardeman II"
+institute: "Center for Research Computing, University of Notre Dame"
+date: "2023-10-27"
+modified: "2023-10-27"
+embed-resources: true
+format: 
+    revealjs:
+        width: 1600
+        height: 900
+        logo: ../images/crc-logo-tagline-1-alt.png
+        theme: [simple, ../images/crc.scss]
+        slide-number: true
+categories: [LLMs, Agents, Knowledge Graphs]
+---
+
+## How to Prompt? {.center}
+
+## Prompting Guide
+
+::: {.r-stack}
+![[Prompt Engineering Guide](https://www.promptingguide.ai/)](../agents_summer23/prompt_engineering_guide.png){.center width="1089" height="696"} 
+:::
+
+## OpenAI Cookbook
+
+::: {.r-stack}
+![[OpenAI Cookbook](https://cookbook.openai.com/articles/how_to_work_with_large_language_models)](openai-cookbook.png){.center width="911" height="700"} 
+:::
+- [OpenAI Examples](https://platform.openai.com/examples)
+
+## LLMOps Engineering
+
+::: {.r-stack}
+![[A Survey of Techniques for Maximizing LLM Performance](https://youtu.be/ahnGLM-RC1Y?si=yEA_9l8F7_Yi-Flf)](OpenAI-performance.png){.center width="1105" height="700"}
+:::
+
+## LLMOps Engineering
+
+::: {.r-stack}
+![[A Survey of Techniques for Maximizing LLM Performance](https://youtu.be/ahnGLM-RC1Y?si=yEA_9l8F7_Yi-Flf)](LLM-Performance-Methods.png){.center width="1186" height="700"}
+:::
+
+## Framework for architecture design of LLM Based Agents
+![[Wang, Lei, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, et al. 2023. “A Survey on Large Language Model Based Autonomous Agents.” arXiv. http://arxiv.org/abs/2308.11432.](http://arxiv.org/abs/2308.11432)](../ai-curators/LLM_Architectures.png){.center width="1065" height="558"}
+
+## Unit Testing of LLMs
+::: {.r-stack}
+![[A Survey of Techniques for Maximizing LLM Performance](https://youtu.be/ahnGLM-RC1Y?si=yEA_9l8F7_Yi-Flf)](RAG-testing.png){.center width="1099" height="700"}
+:::
+
+## Prompt Engineering is about adding context! {.center}
+
+## KGs for Context
+::: {.r-stack}
+![[Sequeda, Juan, Dean Allemang, and Bryon Jacob. 2023. “A Benchmark to Understand the Role of Knowledge Graphs on Large Language Model’s Accuracy for Question Answering on Enterprise SQL Databases.” arXiv. http://arxiv.org/abs/2311.07509.](http://arxiv.org/abs/2311.07509)](RAG-KG.png){.center width="890" height="700"}
+:::
+
+## KGs for Context
+::: {.r-stack}
+![[Sequeda, Juan, Dean Allemang, and Bryon Jacob. 2023. “A Benchmark to Understand the Role of Knowledge Graphs on Large Language Model’s Accuracy for Question Answering on Enterprise SQL Databases.” arXiv. http://arxiv.org/abs/2311.07509.](http://arxiv.org/abs/2311.07509)](RAG-KG-results.png){.center width="991" height="721"}
+:::
+
+## Information Extraction for RAG (Tool Use)
+
+::: {.r-stack}
+![[Xu, Silei, Shicheng Liu, Theo Culhane, Elizaveta Pertseva, Meng-Hsi Wu, Sina J. Semnani, and Monica S. Lam. 2023. “Fine-Tuned LLMs Know More, Hallucinate Less with Few-Shot Sequence-to-Sequence Semantic Parsing over Wikidata.” arXiv. http://arxiv.org/abs/2305.14202.](http://arxiv.org/abs/2305.14202)](wikidata-rag.png){.center width="757" height="800"}
+:::
+
+## Prompting Patterns for RAG -- Planning and Action
+
+:::{.r-stack}
+![[Prasad, Archiki, Alexander Koller, Mareike Hartmann, Peter Clark, Ashish Sabharwal, Mohit Bansal, and Tushar Khot. 2023. “ADaPT: As-Needed Decomposition and Planning with Language Models.” arXiv. https://doi.org/10.48550/arXiv.2311.05772.](https://doi.org/10.48550/arXiv.2311.05772)](ADaPT.png){.center width="816" height="700"}
+::: 
+
+
+## Training and Fine Tuning {.center}
+
+## Textbooks are all you need II: phi-1.5
+
+::: {.r-stack}
+![[Y. Li, S. Bubeck, R. Eldan, A. Del Giorno, S. Gunasekar, and Y. T. Lee, “Textbooks Are All You Need II: phi-1.5 technical report.” arXiv, Sep. 11, 2023. Accessed: Sep. 12, 2023. [Online]. Available: http://arxiv.org/abs/2309.05463](http://arxiv.org/abs/2309.05463)](../data-ai/textbooks2.png){.center width="779" height="800"}
+:::
+
+## Maybe we need more than Textbooks?{.center}
+
+## A "Curriculum" for Logic?
+:::{.r-stack}
+![[Feng, Jiazhan, Ruochen Xu, Junheng Hao, Hiteshi Sharma, Yelong Shen, Dongyan Zhao, and Weizhu Chen. 2023. “Language Models Can Be Logical Solvers.” arXiv. http://arxiv.org/abs/2311.06158.](http://arxiv.org/abs/2311.06158)](LM-logical-solvers.png){.center width="1124" height="500"}
+:::
+
+## A "Curriculum" for Logic?
+:::{.r-stack}
+![[Feng, Jiazhan, Ruochen Xu, Junheng Hao, Hiteshi Sharma, Yelong Shen, Dongyan Zhao, and Weizhu Chen. 2023. “Language Models Can Be Logical Solvers.” arXiv. http://arxiv.org/abs/2311.06158.](http://arxiv.org/abs/2311.06158)](LM-logical-results.png){.center width="965" height="700"}
+:::
