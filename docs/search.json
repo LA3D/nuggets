@@ -1554,6 +1554,13 @@
     "text": "Data Fabrics are going to be used as Data Engines!\n\n\n\n\nTwitter: Andrej Karpathy"
   },
   {
+    "objectID": "slides/ai-engineering/index.html#so-its-creepy-looking-ai-turtles-all-the-way-down",
+    "href": "slides/ai-engineering/index.html#so-its-creepy-looking-ai-turtles-all-the-way-down",
+    "title": "Return of the Nuggets – AI Engineering",
+    "section": "So, it’s creepy looking AI turtles all the way down…",
+    "text": "So, it’s creepy looking AI turtles all the way down…"
+  },
+  {
     "objectID": "slides/ai-engineering/index.html#how-to-prompt",
     "href": "slides/ai-engineering/index.html#how-to-prompt",
     "title": "Return of the Nuggets – AI Engineering",
@@ -1593,7 +1600,21 @@
     "href": "slides/ai-engineering/index.html#prompt-testing",
     "title": "Return of the Nuggets – AI Engineering",
     "section": "Prompt Testing?",
-    "text": "Prompt Testing?"
+    "text": "Prompt Testing?\n\n\n\n\nEvaluating LLMs is a minefield"
+  },
+  {
+    "objectID": "slides/ai-engineering/index.html#challenges-in-evaluating-ai-systems",
+    "href": "slides/ai-engineering/index.html#challenges-in-evaluating-ai-systems",
+    "title": "Return of the Nuggets – AI Engineering",
+    "section": "Challenges in evaluating AI systems",
+    "text": "Challenges in evaluating AI systems\n\n\n\n\nAnthropic Challenges in evaluating AI systems"
+  },
+  {
+    "objectID": "slides/ai-engineering/index.html#challenges-with-prompt-structure-in-evals",
+    "href": "slides/ai-engineering/index.html#challenges-with-prompt-structure-in-evals",
+    "title": "Return of the Nuggets – AI Engineering",
+    "section": "Challenges with prompt structure in evals",
+    "text": "Challenges with prompt structure in evals\n\n\n\n\nAnthropic Challenges in evaluating AI systems"
   },
   {
     "objectID": "slides/ai-engineering/index.html#retrieval-augmented-generation",
@@ -1663,7 +1684,14 @@
     "href": "slides/ai-engineering/index.html#textbooks-are-all-you-need-iii-phi-2",
     "title": "Return of the Nuggets – AI Engineering",
     "section": "Textbooks are all you need III: phi-2",
-    "text": "Textbooks are all you need III: phi-2"
+    "text": "Textbooks are all you need III: phi-2\n\n\n\n\nSebastien Bubeck X"
+  },
+  {
+    "objectID": "slides/ai-engineering/index.html#phi-2-metrics",
+    "href": "slides/ai-engineering/index.html#phi-2-metrics",
+    "title": "Return of the Nuggets – AI Engineering",
+    "section": "phi-2 metrics",
+    "text": "phi-2 metrics\n\n\n\n\nSebastien Bubeck X"
   },
   {
     "objectID": "slides/ai-engineering/index.html#maybe-we-need-more-than-textbooks",
@@ -1685,6 +1713,27 @@
     "title": "Return of the Nuggets – AI Engineering",
     "section": "A “Curriculum” for Logic?",
     "text": "A “Curriculum” for Logic?\n\n\n\n\nFeng, Jiazhan, Ruochen Xu, Junheng Hao, Hiteshi Sharma, Yelong Shen, Dongyan Zhao, and Weizhu Chen. 2023. “Language Models Can Be Logical Solvers.” arXiv. http://arxiv.org/abs/2311.06158."
+  },
+  {
+    "objectID": "slides/ai-engineering/index.html#fine-tuning-for-truthfulness",
+    "href": "slides/ai-engineering/index.html#fine-tuning-for-truthfulness",
+    "title": "Return of the Nuggets – AI Engineering",
+    "section": "Fine Tuning for Truthfulness",
+    "text": "Fine Tuning for Truthfulness\n\n\n\n\nTian, Katherine, Eric Mitchell, Huaxiu Yao, Christopher D. Manning, and Chelsea Finn. 2023. “Fine-Tuning Language Models for Factuality.” arXiv. http://arxiv.org/abs/2311.08401."
+  },
+  {
+    "objectID": "slides/ai-engineering/index.html#fine-tuning-for-truthfulness-1",
+    "href": "slides/ai-engineering/index.html#fine-tuning-for-truthfulness-1",
+    "title": "Return of the Nuggets – AI Engineering",
+    "section": "Fine Tuning for Truthfulness",
+    "text": "Fine Tuning for Truthfulness\n\n\n\n\nTian, Katherine, Eric Mitchell, Huaxiu Yao, Christopher D. Manning, and Chelsea Finn. 2023. “Fine-Tuning Language Models for Factuality.” arXiv. http://arxiv.org/abs/2311.08401."
+  },
+  {
+    "objectID": "slides/ai-engineering/index.html#dod-need-for-smaller-private-models",
+    "href": "slides/ai-engineering/index.html#dod-need-for-smaller-private-models",
+    "title": "Return of the Nuggets – AI Engineering",
+    "section": "DoD Need for smaller private models",
+    "text": "DoD Need for smaller private models\n\n\n\n\nLLMs-at-DoD Chatting with your Data"
   },
   {
     "objectID": "slides/tai-tools/index.html#trusted-ai-frameworks-for-knowledge-engineering",
