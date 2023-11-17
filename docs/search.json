@@ -1470,11 +1470,11 @@
     "text": "phi-1.5 Doesn’t want to kill us all…\n\n\n\nSebastien Bubeck on X"
   },
   {
-    "objectID": "slides/ai-engineering/index.html#this-is-all-peters-falt",
-    "href": "slides/ai-engineering/index.html#this-is-all-peters-falt",
+    "objectID": "slides/ai-engineering/index.html#this-is-all-peters-fault",
+    "href": "slides/ai-engineering/index.html#this-is-all-peters-fault",
     "title": "Return of the Nuggets – AI Engineering",
-    "section": "This is all Peter’s falt!",
-    "text": "This is all Peter’s falt!"
+    "section": "This is all Peter’s fault!",
+    "text": "This is all Peter’s fault!"
   },
   {
     "objectID": "slides/ai-engineering/index.html#peter-how-do-we-prompt-better",
@@ -1692,6 +1692,13 @@
     "title": "Return of the Nuggets – AI Engineering",
     "section": "phi-2 metrics",
     "text": "phi-2 metrics\n\n\n\n\nSebastien Bubeck X"
+  },
+  {
+    "objectID": "slides/ai-engineering/index.html#microsoft-ignite",
+    "href": "slides/ai-engineering/index.html#microsoft-ignite",
+    "title": "Return of the Nuggets – AI Engineering",
+    "section": "Microsoft Ignite",
+    "text": "Microsoft Ignite\n\n\n\n\nAI+Mixed Reality for the Front Line"
   },
   {
     "objectID": "slides/ai-engineering/index.html#maybe-we-need-more-than-textbooks",

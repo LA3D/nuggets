@@ -15,7 +15,7 @@ format:
 categories: [AI Engineering, LLMOps]
 ---
 
-## This is all Peter's falt! {.center}
+## This is all Peter's fault! {.center}
 
 ## Peter: How do we prompt better? {.center}
 
@@ -165,6 +165,11 @@ categories: [AI Engineering, LLMOps]
 ## phi-2 metrics
 ::: {.r-stack}
 ![[Sebastien Bubeck X](https://twitter.com/SebastienBubeck/status/1724854184267121040)](phi-2-metric.png){.center}
+:::
+
+## Microsoft Ignite
+::: {.r-stack}
+![[AI+Mixed Reality for the Front Line](https://youtu.be/oZOcn8RFLks?si=8qdgPMbnKTLbErYq)](MSFT-AI-AR-IoT.png)
 :::
 
 ## Maybe we need more than Textbooks?{.center}
