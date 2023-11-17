@@ -51,7 +51,7 @@ categories: [AI Engineering, LLMOps]
 ![[A Survey of Techniques for Maximizing LLM Performance](https://youtu.be/ahnGLM-RC1Y?si=yEA_9l8F7_Yi-Flf)](LLM-Performance-Methods.png){.center width="1186" height="700"}
 :::
 
-## LLM Engineering -- Prompt Engineering, RAG Engineering, Fine Tuning Engineering. {.center}
+## LLM Engineering -- Knowledge Engineering, RAG Engineering, Fine Tuning Engineering. {.center}
 
 ## LLMOps -- Cognitive Agents
 ![[Wang, Lei, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, et al. 2023. “A Survey on Large Language Model Based Autonomous Agents.” arXiv. http://arxiv.org/abs/2308.11432.](http://arxiv.org/abs/2308.11432)](../ai-curators/LLM_Architectures.png){.center width="1065" height="558"}
