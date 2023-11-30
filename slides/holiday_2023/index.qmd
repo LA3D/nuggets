@@ -1,0 +1,84 @@
+---
+title: "Dr V. Holiday 2023 Viewing Guide"
+author: "Charles F. Vardeman II"
+institute: "Center for Research Computing, University of Notre Dame"
+date: "2023-12-01"
+embed-resources: true
+format: 
+    revealjs:
+        width: 1600
+        height: 900
+        logo: ../images/crc-logo-tagline-1-alt.png
+        theme: [simple, ../images/crc.scss]
+        slide-number: true
+        progress: true
+        center: true
+categories: [LLMs, TrustedAI]
+---
+
+## Goal: To help prepare you for those difficult holiday conversations... {.center}
+
+## How does ChatGPT work? {.center}
+
+## Karpathy: The busy person's intro to LLMs
+
+![Karpathy LLM: [YouTube Link](https://youtu.be/zjkBMFhNj_g?si=WKD5VwMnNWngnFr_)](./images/karpathy_llm.png)
+
+[Reading List For Andrej Karpathy’s “Intro to Large Language Models” Video](https://blog.oxen.ai/reading-list-for-andrej-karpathys-intro-to-large-language-models-video/)
+
+## Pay attention to the section on LLM security at the end of the talk. {.center}
+
+## Making LLMs "uncool"
+![Making Large Language Models Uncool Again: [Youtube](https://www.youtube.com/live/6LXw2beprGI?si=HA-Ng9iQ-sPRcRkK)](images/7c256be4cacd3494cafb63f3420596815afef2d0d70de769b651c9c08d12ddc2.png)
+
+
+## Uncool "takeaways"
+ - ~30b parameter models a missed opportunity
+ - We are "fine-tuning" wrong
+ - Uncertainty future directions for small (fine-tuned) vs large (API) models
+ - LLM architecture not the path to AG(S)I
+
+## Deep dive into understanding LLMs
+
+ ![What is ChatGPT doing...and why does it work? [Youtube](https://www.youtube.com/live/flXrLGPY3SU?si=fXNPE9oehYM-vDsM)](images/31d5017c1963ff6954886e57036b9cf5b1d4b6b9fc2ae535560c9a167ec16e8b.png)
+
+
+## AI Engineering {.center}
+
+## OpenAI Dev Day LLM Performance Talk
+::: {.r-stack}
+![[A Survey of Techniques for Maximizing LLM Performance](https://youtu.be/ahnGLM-RC1Y?si=yEA_9l8F7_Yi-Flf)](../ai-engineering/OpenAI-performance.png){.center width="1105" height="700"}
+:::
+
+## Techniques for increasing LLM Performance
+
+![](images/LLM-opt.png)
+
+## Model Consistency
+![[Chen, Lingjiao, Matei Zaharia, and James Zou. 2023. “How Is ChatGPT’s Behavior Changing over Time?” arXiv. https://doi.org/10.48550/arXiv.2307.09009.](https://doi.org/10.48550/arXiv.2307.09009)](images/9b948d053725829bd85153319ff85ed8b822d0fd50ff3e9f6011733f02994db4.png)
+
+## Model Consistency over time
+![[Chen, Lingjiao, Matei Zaharia, and James Zou. 2023. “How Is ChatGPT’s Behavior Changing over Time?” arXiv. https://doi.org/10.48550/arXiv.2307.09009.](https://doi.org/10.48550/arXiv.2307.09009)](images/222aa638f1a30831051df3d4f4881c5970be1d63e569b217b7e09b14c4d25e3b.png)
+
+
+## Mixture of Experts (MoE)
+![](images/a28acb164c439b257fee13e21b289ff262cf108fd021c6d1d3113ba505fb6188.png)
+
+## MoE
+![](images/9b8869f806d7a07ed2d12190cb5d3d60282d0fb913ff6ceab03f9c3504f1736d.png)
+
+
+## Patterns for AI Engineering
+![[Building Blocks for LLM Systems & Products: Eugene Yan](https://youtu.be/LzeC1AQ-U5o?si=u_B5JCQMTi6Pk7Ej)](images/12787039c2410163f4269fb8b9b552827c81f5d2935cae44b7657774995eab8d.png)
+
+[Patterns for Building LLM-based Systems & Products](https://eugeneyan.com/writing/llm-patterns/)
+
+## RAG in Production
+![[Building Production-Ready RAG Applications: Jerry Liu](https://youtu.be/TRjq7t2Ms5I?si=QfXYHhoYO1ABeq03)](images/d9ef7754549fcc6c201727f4658384b3527b2fb23299b5e2aab4447a4bc5ab24.png)
+
+
+## The need for "Guardrails"
+![[Trust, but Verify: Shreya Rajpal](https://youtu.be/9-vGxMoUM9Y?si=gzSS04eYcsVz48EC)](images/6be3a72003f64902189da98d8fe5be2c9f01654aefd47260af63f70ff86b624d.png)
+
+## A "firewall" for your LLM
+![[Trust, but Verify: Shreya Rajpal](https://youtu.be/9-vGxMoUM9Y?si=gzSS04eYcsVz48EC)](images/5c17c0d1c2ba7f2828e0dc273dafff1329b43d2ad0d55694a561f3155415a6a8.png)
