@@ -18,7 +18,7 @@ categories: [LLMs, TrustedAI]
 
 ## Goal: To help prepare you for those difficult holiday conversations... {.center}
 
-## How does ChatGPT work? {.center}
+## Like: How does ChatGPT work? {.center}
 
 ## Karpathy: The busy person's intro to LLMs
 
@@ -28,7 +28,7 @@ categories: [LLMs, TrustedAI]
 
 ## Pay attention to the section on LLM security at the end of the talk. {.center}
 
-## Making LLMs "uncool"
+## Making LLMs "uncool" (Language Warning)
 ![Making Large Language Models Uncool Again: [Youtube](https://www.youtube.com/live/6LXw2beprGI?si=HA-Ng9iQ-sPRcRkK)](images/7c256be4cacd3494cafb63f3420596815afef2d0d70de769b651c9c08d12ddc2.png)
 
 
@@ -54,19 +54,6 @@ categories: [LLMs, TrustedAI]
 
 ![](images/LLM-opt.png)
 
-## Model Consistency
-![[Chen, Lingjiao, Matei Zaharia, and James Zou. 2023. “How Is ChatGPT’s Behavior Changing over Time?” arXiv. https://doi.org/10.48550/arXiv.2307.09009.](https://doi.org/10.48550/arXiv.2307.09009)](images/9b948d053725829bd85153319ff85ed8b822d0fd50ff3e9f6011733f02994db4.png)
-
-## Model Consistency over time
-![[Chen, Lingjiao, Matei Zaharia, and James Zou. 2023. “How Is ChatGPT’s Behavior Changing over Time?” arXiv. https://doi.org/10.48550/arXiv.2307.09009.](https://doi.org/10.48550/arXiv.2307.09009)](images/222aa638f1a30831051df3d4f4881c5970be1d63e569b217b7e09b14c4d25e3b.png)
-
-
-## Mixture of Experts (MoE)
-![](images/a28acb164c439b257fee13e21b289ff262cf108fd021c6d1d3113ba505fb6188.png)
-
-## MoE
-![](images/9b8869f806d7a07ed2d12190cb5d3d60282d0fb913ff6ceab03f9c3504f1736d.png)
-
 
 ## Patterns for AI Engineering
 ![[Building Blocks for LLM Systems & Products: Eugene Yan](https://youtu.be/LzeC1AQ-U5o?si=u_B5JCQMTi6Pk7Ej)](images/12787039c2410163f4269fb8b9b552827c81f5d2935cae44b7657774995eab8d.png)
@@ -82,3 +69,44 @@ categories: [LLMs, TrustedAI]
 
 ## A "firewall" for your LLM
 ![[Trust, but Verify: Shreya Rajpal](https://youtu.be/9-vGxMoUM9Y?si=gzSS04eYcsVz48EC)](images/5c17c0d1c2ba7f2828e0dc273dafff1329b43d2ad0d55694a561f3155415a6a8.png)
+
+## Nuggets for the week...{.center}
+
+## One Year of ChatGPT!
+![Chen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. [http://arxiv.org/abs/2311.16989.](http://arxiv.org/abs/2311.16989)](images/8358f3f4cde2777935f97c1abc880ac67697243e7196c4903b9a07c66726420b.png)
+
+## LLM Capabilities
+![Chen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. [http://arxiv.org/abs/2311.16989.](http://arxiv.org/abs/2311.16989)](images/4c76edd8be0e61cadab560df37164c7d10e5f30ac511c1c0cc187a3b18e2b675.png)
+
+## Agent Capabilities
+![Chen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. [http://arxiv.org/abs/2311.16989.](http://arxiv.org/abs/2311.16989)](images/1dc3c54193edf04d397279abed2d17fca59d37832d7955ceedde9cb1150fc6e4.png)
+
+
+## Model Consistency
+![[Chen, Lingjiao, Matei Zaharia, and James Zou. 2023. “How Is ChatGPT’s Behavior Changing over Time?” arXiv. https://doi.org/10.48550/arXiv.2307.09009.](https://doi.org/10.48550/arXiv.2307.09009)](images/9b948d053725829bd85153319ff85ed8b822d0fd50ff3e9f6011733f02994db4.png)
+
+## Model Consistency over time
+![[Chen, Lingjiao, Matei Zaharia, and James Zou. 2023. “How Is ChatGPT’s Behavior Changing over Time?” arXiv. https://doi.org/10.48550/arXiv.2307.09009.](https://doi.org/10.48550/arXiv.2307.09009)](images/222aa638f1a30831051df3d4f4881c5970be1d63e569b217b7e09b14c4d25e3b.png)
+
+## Mixture of Experts (MoE)
+![](images/a28acb164c439b257fee13e21b289ff262cf108fd021c6d1d3113ba505fb6188.png)
+
+## MoE
+![](images/9b8869f806d7a07ed2d12190cb5d3d60282d0fb913ff6ceab03f9c3504f1736d.png)
+
+## Agent Memory
+![[Adding Long Term Memory to OpenGPTs](https://blog.langchain.dev/adding-long-term-memory-to-opengpts/)](images/16307f1e20421544892ca0e066d5e285c8021ca3299695ad18eec05a52d9b017.png)
+
+## Long Term Memory
+![[Adding Long Term Memory to OpenGPTs](https://blog.langchain.dev/adding-long-term-memory-to-opengpts/)](images/0d9e0bc60fa75b69382b74dce63534bab83a29b2c2b6388cb6316b3f7865646b.png)
+
+## Determinism vs Stochasticity?
+- Determinism through RAG and Tool use
+- Tool code created by LLM based Co-pilots or Agents
+- What "Programming Language" should we use for the deterministic part?
+- We don't have an integrated paradigm for what "systems engineering" means in a age of AIs
+
+## For after Christmas... {.center}
+
+##  The end of Programming?
+![[Large Language Models and The End of Programming - CS50 Tech Talk with Dr. Matt Welsh](https://youtu.be/JhCl-GeT4jw?si=Hk8J2F8_KY-WD7qe)](images/b09f945234b11b557b8c4fd67c77fe619f291dda5b62b702599b3991705d5195.png)

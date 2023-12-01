@@ -259,11 +259,11 @@
     "text": "Goal: To help prepare you for those difficult holiday conversations…"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#how-does-chatgpt-work",
-    "href": "slides/holiday_2023/index.html#how-does-chatgpt-work",
+    "objectID": "slides/holiday_2023/index.html#like-how-does-chatgpt-work",
+    "href": "slides/holiday_2023/index.html#like-how-does-chatgpt-work",
     "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "How does ChatGPT work?",
-    "text": "How does ChatGPT work?"
+    "section": "Like: How does ChatGPT work?",
+    "text": "Like: How does ChatGPT work?"
   },
   {
     "objectID": "slides/holiday_2023/index.html#karpathy-the-busy-persons-intro-to-llms",
@@ -280,11 +280,11 @@
     "text": "Pay attention to the section on LLM security at the end of the talk."
   },
   {
-    "objectID": "slides/holiday_2023/index.html#making-llms-uncool",
-    "href": "slides/holiday_2023/index.html#making-llms-uncool",
+    "objectID": "slides/holiday_2023/index.html#making-llms-uncool-language-warning",
+    "href": "slides/holiday_2023/index.html#making-llms-uncool-language-warning",
     "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Making LLMs “uncool”",
-    "text": "Making LLMs “uncool”\n\nMaking Large Language Models Uncool Again: Youtube"
+    "section": "Making LLMs “uncool” (Language Warning)",
+    "text": "Making LLMs “uncool” (Language Warning)\n\nMaking Large Language Models Uncool Again: Youtube"
   },
   {
     "objectID": "slides/holiday_2023/index.html#uncool-takeaways",
@@ -322,6 +322,62 @@
     "text": "Techniques for increasing LLM Performance"
   },
   {
+    "objectID": "slides/holiday_2023/index.html#patterns-for-ai-engineering",
+    "href": "slides/holiday_2023/index.html#patterns-for-ai-engineering",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Patterns for AI Engineering",
+    "text": "Patterns for AI Engineering\n\nBuilding Blocks for LLM Systems & Products: Eugene YanPatterns for Building LLM-based Systems & Products"
+  },
+  {
+    "objectID": "slides/holiday_2023/index.html#rag-in-production",
+    "href": "slides/holiday_2023/index.html#rag-in-production",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "RAG in Production",
+    "text": "RAG in Production\n\nBuilding Production-Ready RAG Applications: Jerry Liu"
+  },
+  {
+    "objectID": "slides/holiday_2023/index.html#the-need-for-guardrails",
+    "href": "slides/holiday_2023/index.html#the-need-for-guardrails",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "The need for “Guardrails”",
+    "text": "The need for “Guardrails”\n\nTrust, but Verify: Shreya Rajpal"
+  },
+  {
+    "objectID": "slides/holiday_2023/index.html#a-firewall-for-your-llm",
+    "href": "slides/holiday_2023/index.html#a-firewall-for-your-llm",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "A “firewall” for your LLM",
+    "text": "A “firewall” for your LLM\n\nTrust, but Verify: Shreya Rajpal"
+  },
+  {
+    "objectID": "slides/holiday_2023/index.html#nuggets-for-the-week",
+    "href": "slides/holiday_2023/index.html#nuggets-for-the-week",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Nuggets for the week…",
+    "text": "Nuggets for the week…"
+  },
+  {
+    "objectID": "slides/holiday_2023/index.html#one-year-of-chatgpt",
+    "href": "slides/holiday_2023/index.html#one-year-of-chatgpt",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "One Year of ChatGPT!",
+    "text": "One Year of ChatGPT!\n\nChen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. http://arxiv.org/abs/2311.16989."
+  },
+  {
+    "objectID": "slides/holiday_2023/index.html#llm-capabilities",
+    "href": "slides/holiday_2023/index.html#llm-capabilities",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "LLM Capabilities",
+    "text": "LLM Capabilities\n\nChen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. http://arxiv.org/abs/2311.16989."
+  },
+  {
+    "objectID": "slides/holiday_2023/index.html#agent-capabilities",
+    "href": "slides/holiday_2023/index.html#agent-capabilities",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Agent Capabilities",
+    "text": "Agent Capabilities\n\nChen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. http://arxiv.org/abs/2311.16989."
+  },
+  {
     "objectID": "slides/holiday_2023/index.html#model-consistency",
     "href": "slides/holiday_2023/index.html#model-consistency",
     "title": "Dr V. Holiday 2023 Viewing Guide",
@@ -350,32 +406,39 @@
     "text": "MoE"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#patterns-for-ai-engineering",
-    "href": "slides/holiday_2023/index.html#patterns-for-ai-engineering",
+    "objectID": "slides/holiday_2023/index.html#agent-memory",
+    "href": "slides/holiday_2023/index.html#agent-memory",
     "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Patterns for AI Engineering",
-    "text": "Patterns for AI Engineering\n\nBuilding Blocks for LLM Systems & Products: Eugene YanPatterns for Building LLM-based Systems & Products"
+    "section": "Agent Memory",
+    "text": "Agent Memory\n\nAdding Long Term Memory to OpenGPTs"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#rag-in-production",
-    "href": "slides/holiday_2023/index.html#rag-in-production",
+    "objectID": "slides/holiday_2023/index.html#long-term-memory",
+    "href": "slides/holiday_2023/index.html#long-term-memory",
     "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "RAG in Production",
-    "text": "RAG in Production\n\nBuilding Production-Ready RAG Applications: Jerry Liu"
+    "section": "Long Term Memory",
+    "text": "Long Term Memory\n\nAdding Long Term Memory to OpenGPTs"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#the-need-for-guardrails",
-    "href": "slides/holiday_2023/index.html#the-need-for-guardrails",
+    "objectID": "slides/holiday_2023/index.html#determinism-vs-stochasticity",
+    "href": "slides/holiday_2023/index.html#determinism-vs-stochasticity",
     "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "The need for “Guardrails”",
-    "text": "The need for “Guardrails”\n\nTrust, but Verify: Shreya Rajpal"
+    "section": "Determinism vs Stochasticity?",
+    "text": "Determinism vs Stochasticity?\n\nDeterminism through RAG and Tool use\nTool code created by LLM based Co-pilots or Agents\nWhat “Programming Language” should we use for the deterministic part?\nWe don’t have an integrated paradigm for what “systems engineering” means in a age of AIs"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#a-firewall-for-your-llm",
-    "href": "slides/holiday_2023/index.html#a-firewall-for-your-llm",
+    "objectID": "slides/holiday_2023/index.html#for-after-christmas",
+    "href": "slides/holiday_2023/index.html#for-after-christmas",
     "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "A “firewall” for your LLM",
-    "text": "A “firewall” for your LLM\n\n\n\nTrust, but Verify: Shreya Rajpal"
+    "section": "For after Christmas…",
+    "text": "For after Christmas…"
+  },
+  {
+    "objectID": "slides/holiday_2023/index.html#the-end-of-programming",
+    "href": "slides/holiday_2023/index.html#the-end-of-programming",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "The end of Programming?",
+    "text": "The end of Programming?\n\n\n\nLarge Language Models and The End of Programming - CS50 Tech Talk with Dr. Matt Welsh"
   },
   {
     "objectID": "slides/hackers/index.html#topics",
