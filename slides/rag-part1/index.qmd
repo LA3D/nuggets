@@ -1,0 +1,101 @@
+---
+title: "Retrieval Augmented Generation -- Part 1"
+author: "Charles F. Vardeman II"
+institute: "Center for Research Computing, University of Notre Dame"
+date: "2024-01-19"
+embed-resources: true
+format: 
+    revealjs:
+        width: 1600
+        height: 900
+        logo: ../images/crc-logo-tagline-1-alt.png
+        theme: [simple, ../images/crc.scss]
+        slide-number: true
+        progress: true
+        center: true
+categories: [LLMs, TrustedAI]
+---
+
+## Hypothsis: [Retrieval Augmented Generation Requires Curation]{.underline} {.center}
+
+## Knowledge Engineering Using Large Language Models
+
+![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](images/999c55a6d2e7b4b3992e97401d669721e0a7f45504f554728bb96b9e3f90d593.png){fig-align="center"}
+
+## Prompt Engineering as Knowledge Engineering
+
+![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](images/f2a0477c61dea751b721ea435a2728f5652a17f578aeb97c4184bcf6d040cf19.png){fig-align="center"}
+
+## Knowledge Engineering Practice
+
+![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](images/6de44b439addedd8924faf9226d11b82f51025426e23025e355275278de53951.png){fig-align="center"}
+
+## Trusted AI, LLMs and KE
+
+![\[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637\]](images/a6e3ff0e855bf672df9900ef14606cadd7acafeb31991a81399d14cb288974bb.png){fig-align="center"}
+
+## Retrieval-Augmented Generation for Large Language Models: A Survey
+
+![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/paste-1.png){fig-align="center"}
+
+## Retrieval Augmented Generation -- The Idea
+
+![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/b21fe2a8f711c7a527a33fa65392f54c0462136c37354da02b80dcb75cba9774.png){fig-align="center"}
+
+## Naive RAG
+
+-   Indexing
+
+    -   Data Indexing: Cleaning and extracting data from PDF, HTML, Word, Markdown, [**Images**]{.underline}
+
+    -   Chunking: Dividing text into smaller chunks for LLM limited context window
+
+    -   Embedding and Creating Index: Encoding text/images into vectors through a language model
+
+-   Retrieve: Given a user input, retrieve relevant information
+
+-   Generation: The user query to the LLM and related documents from retrieval are combined into a new prompt. The LLM generates a response based on this new context window.
+
+## Naive RAG Architecture
+
+![[Langchain Q&A with RAG](https://python.langchain.com/docs/use_cases/question_answering/)](images/65b123a8870178d4ed11b0b1c207ae5d575f9ab9dd5b60b6413768798331912d.png){fig-align="center" width="1590"}
+
+## "Chunking"
+
+![["Chunkviz"](https://chunkviz.com)](images/568daefb034df3c0683d3b3b9ada4e26b239e577875fedc2fae68d83d120fcff.png){fig-align="center"}
+
+## "Chunking" with Overlap
+
+![["Chunkviz"](https://chunkviz.com)](images/0eec758374703265e8b78dabf46fa3c497ecdad71b65fb298749d2c91745304b.png){fig-align="center"}
+
+## Smarter "Chunking"
+
+![[LangChain - Recursively Split by Character](https://python.langchain.com/docs/modules/data_connection/document_transformers/recursive_text_splitter)](images/0351695671f045d3596e224c362f46c552d745ccec057e01e4702e89004b6955.png)
+
+## "Chunking" recursive character splitter
+
+![["Chunkviz"](https://chunkviz.com)](images/4c72215bcd12216a3720ffa9cadb9329cbc6ff405d22c3511ec0eb13e5aab939.png){fig-align="center"}
+
+## "Chunking" with larger segment size
+
+![["Chunkviz"](https://chunkviz.com)](images/ec6b948993bd959875fc1a67a1920c43336f5653ca18ced7a4141fe62c1c1f68.png){fig-align="center"}
+
+## Vector Indexing of the "Chunks"
+
+## Problem: A global constant for Chunk Size doesn't take into account the semantic structure of a document.
+
+## "Agentic" Chunking
+
+![[LangChain on X: Proposition-Based Retrieval](https://twitter.com/LangChainAI/status/1735708004618764470)](images/ba66df59e7b009e0161d799e20dcb06a45c4eac45bb3ddf6b9afe0ef1f1ea0c2.png){fig-align="center" width="480"}
+
+## Agentic Example: Proposition Based Dense Retrieval
+
+![[Chen, Tong, Hongwei Wang, Sihao Chen, Wenhao Yu, Kaixin Ma, Xinran Zhao, Hongming Zhang, and Dong Yu. 2023. “Dense X Retrieval: What Retrieval Granularity Should We Use?” arXiv.Org. December 11, 2023. https://arxiv.org/abs/2312.06648v2.](https://arxiv.org/abs/2312.06648v2)](images/f167b2455e05b7147e1c799547cd3f42349c4c1af14f539a62b133bc3f79cc02.png){fig-align="center"}
+
+## RAG Complexity Overview
+
+![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/7eb467325fa0f9e2ea6e59b2b848ae203112dcc240eab6cb5489df0a592a43ca.png)
+
+## Comparison with other optimization methods
+
+![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/65c18e5295d637077df208732a548426cd1f035f9c703f2452abaaabf955f02b.png)
