@@ -2335,7 +2335,7 @@
     "href": "slides/rag-part1/index.html#vector-indexing-of-the-chunks",
     "title": "Retrieval Augmented Generation – Part 1",
     "section": "Vector Indexing of the “Chunks”",
-    "text": "Vector Indexing of the “Chunks”\n\nfrom langchain_community.embeddings import FakeEmbeddings\nembeddings = FakeEmbeddings(size=1352)\nquery_result = embeddings.embed_query(dod_text)\nprint(dod_text[:5])\nquery_result[:5]\n\nDoD m\n\n\n\n[-0.26784355990137504,\n -1.323022494082988,\n -2.7824888647566928,\n 0.36511536157319174,\n 2.394688307610207]\nFigure 1: A line plot on a polar axis"
+    "text": "Vector Indexing of the “Chunks”\n\nfrom langchain_community.embeddings import FakeEmbeddings\nembeddings = FakeEmbeddings(size=1352)\nquery_result = embeddings.embed_query(dod_text)\nprint(dod_text[:5])\nquery_result[:5]\n\nDoD m\n\n\n\n[0.3692950880074974,\n -0.4703311778663117,\n -0.9009595002705963,\n -0.6587877059084483,\n -0.7262215831293058]\nFigure 1: Vector representation of the text"
   },
   {
     "objectID": "slides/rag-part1/index.html#problem-a-global-constant-for-chunk-size-doesnt-take-into-account-the-semantic-structure-of-a-document.",
