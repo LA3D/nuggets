@@ -16,7 +16,7 @@ format:
 categories: [LLMs, TrustedAI]
 ---
 
-## Hypothsis: [Retrieval Augmented Generation Requires Curation]{.underline} {.center}
+## Hypothesis: [Retrieval Augmented Generation Requires Curation]{.underline} {.center}
 
 ## Knowledge Engineering Using Large Language Models
 
@@ -60,6 +60,19 @@ categories: [LLMs, TrustedAI]
 
 ![[Langchain Q&A with RAG](https://python.langchain.com/docs/use_cases/question_answering/)](images/65b123a8870178d4ed11b0b1c207ae5d575f9ab9dd5b60b6413768798331912d.png){fig-align="center" width="1590"}
 
+## Some text
+
+```{python}
+dod_text = """DoD must accelerate its progress towards becoming a data-centric organization. DoD has lacked the enterprise data management to ensure that trusted, critical data is widely available to or accessible by mission commanders, warfighters, decision-makers, and mission partners in a real- time, useable, secure, and linked manner. This limits data-driven decisions and insights, which hinders the execution of swift and appropriate action.
+
+Additionally, DoD software and hardware systems must be designed, procured, tested, upgraded, operated, and sustained with data interoperability as a key requirement. All too often these gaps are bridged with unnecessary human-machine interfaces that introduce complexity, delay, and increased risk of error. This constrains the Department’s ability to operate against threats at
+machine speed across all domains.
+
+DoD also must improve skills in data fields necessary for effective data management. The Department must broaden efforts to assess our current talent, recruit new data experts, and retain our developing force while establishing policies to ensure that data talent is cultivated. We must also spend the time to increase the data acumen resident across the workforce and find optimal ways to promote a culture of data awareness."""
+
+print(dod_text)
+```
+
 ## "Chunking"
 
 ![["Chunkviz"](https://chunkviz.com)](images/568daefb034df3c0683d3b3b9ada4e26b239e577875fedc2fae68d83d120fcff.png){fig-align="center"}
@@ -82,6 +95,13 @@ categories: [LLMs, TrustedAI]
 
 ## Vector Indexing of the "Chunks"
 
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import langchain
+```
+
 ## Problem: A global constant for Chunk Size doesn't take into account the semantic structure of a document.
 
 ## "Agentic" Chunking
@@ -99,3 +119,5 @@ categories: [LLMs, TrustedAI]
 ## Comparison with other optimization methods
 
 ![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/65c18e5295d637077df208732a548426cd1f035f9c703f2452abaaabf955f02b.png)
+
+## Graph Based Vector Retrieval

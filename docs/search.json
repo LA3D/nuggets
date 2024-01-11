@@ -2226,11 +2226,11 @@
     "text": "Quick Nuggets\nTakeaway: General trend to rapidly integrate Generative AI into traditional software products.\n\nAnnouncing Microsoft Copilot, your everyday AI companion\n\nMicrosoft Aims to Reduce Reliance on OpenAI with SMaller, Cheaper, LLMs\nMicrosoft Looks to Go Nuclear to Support Energy-Hungry AI\n\nAmazon - $4B Anthropic Deal\n\nTrustedAI - Anthropic | Anthropic’s Responsible Scaling Policy\nAnnouncing New Tools to Help Every Business Embrace Generative AI | AWS Machine Learning Blog (amazon.com)\n\nMeta AI Announcements -AI Studio Sandbox\nChatGPT can now see, hear, and speak\n\nOpenAI Red Teaming Network\nBrowse with Bing plugin\nDALL-E3 Stable Diffusion Foundation Model"
   },
   {
-    "objectID": "slides/rag-part1/index.html#hypothsis-retrieval-augmented-generation-requires-curation",
-    "href": "slides/rag-part1/index.html#hypothsis-retrieval-augmented-generation-requires-curation",
+    "objectID": "slides/rag-part1/index.html#hypothesis-retrieval-augmented-generation-requires-curation",
+    "href": "slides/rag-part1/index.html#hypothesis-retrieval-augmented-generation-requires-curation",
     "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Hypothsis: Retrieval Augmented Generation Requires Curation",
-    "text": "Hypothsis: Retrieval Augmented Generation Requires Curation"
+    "section": "Hypothesis: Retrieval Augmented Generation Requires Curation",
+    "text": "Hypothesis: Retrieval Augmented Generation Requires Curation"
   },
   {
     "objectID": "slides/rag-part1/index.html#knowledge-engineering-using-large-language-models",
@@ -2287,6 +2287,13 @@
     "title": "Retrieval Augmented Generation – Part 1",
     "section": "Naive RAG Architecture",
     "text": "Naive RAG Architecture\n\nLangchain Q&A with RAG"
+  },
+  {
+    "objectID": "slides/rag-part1/index.html#some-text",
+    "href": "slides/rag-part1/index.html#some-text",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Some text",
+    "text": "Some text\n\n\nDoD must accelerate its progress towards becoming a data-centric organization. DoD has lacked the enterprise data management to ensure that trusted, critical data is widely available to or accessible by mission commanders, warfighters, decision-makers, and mission partners in a real- time, useable, secure, and linked manner. This limits data-driven decisions and insights, which hinders the execution of swift and appropriate action.\n\nAdditionally, DoD software and hardware systems must be designed, procured, tested, upgraded, operated, and sustained with data interoperability as a key requirement. All too often these gaps are bridged with unnecessary human-machine interfaces that introduce complexity, delay, and increased risk of error. This constrains the Department’s ability to operate against threats at\nmachine speed across all domains.\n\nDoD also must improve skills in data fields necessary for effective data management. The Department must broaden efforts to assess our current talent, recruit new data experts, and retain our developing force while establishing policies to ensure that data talent is cultivated. We must also spend the time to increase the data acumen resident across the workforce and find optimal ways to promote a culture of data awareness."
   },
   {
     "objectID": "slides/rag-part1/index.html#chunking",
@@ -2363,7 +2370,14 @@
     "href": "slides/rag-part1/index.html#comparison-with-other-optimization-methods",
     "title": "Retrieval Augmented Generation – Part 1",
     "section": "Comparison with other optimization methods",
-    "text": "Comparison with other optimization methods\n\n\n\nGao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997."
+    "text": "Comparison with other optimization methods\n\nGao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997."
+  },
+  {
+    "objectID": "slides/rag-part1/index.html#graph-based-vector-retrieval",
+    "href": "slides/rag-part1/index.html#graph-based-vector-retrieval",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Graph Based Vector Retrieval",
+    "text": "Graph Based Vector Retrieval"
   },
   {
     "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
