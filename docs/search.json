@@ -2258,7 +2258,7 @@
     "href": "slides/rag-part1/index.html#trusted-ai-llms-and-ke",
     "title": "Retrieval Augmented Generation – Part 1",
     "section": "Trusted AI, LLMs and KE",
-    "text": "Trusted AI, LLMs and KE\n\n[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637]"
+    "text": "Trusted AI, LLMs and KE\n\nAllen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637"
   },
   {
     "objectID": "slides/rag-part1/index.html#retrieval-augmented-generation-for-large-language-models-a-survey",
@@ -2335,7 +2335,7 @@
     "href": "slides/rag-part1/index.html#vector-indexing-of-the-chunks",
     "title": "Retrieval Augmented Generation – Part 1",
     "section": "Vector Indexing of the “Chunks”",
-    "text": "Vector Indexing of the “Chunks”"
+    "text": "Vector Indexing of the “Chunks”\n\nfrom langchain_community.embeddings import FakeEmbeddings\nembeddings = FakeEmbeddings(size=1352)\nquery_result = embeddings.embed_query(dod_text)\nprint(dod_text[:5])\nquery_result[:5]\n\nDoD m\n\n\n\n[-0.26784355990137504,\n -1.323022494082988,\n -2.7824888647566928,\n 0.36511536157319174,\n 2.394688307610207]\nFigure 1: A line plot on a polar axis"
   },
   {
     "objectID": "slides/rag-part1/index.html#problem-a-global-constant-for-chunk-size-doesnt-take-into-account-the-semantic-structure-of-a-document.",

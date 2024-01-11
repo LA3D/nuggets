@@ -32,7 +32,7 @@ categories: [LLMs, TrustedAI]
 
 ## Trusted AI, LLMs and KE
 
-![\[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637\]](images/a6e3ff0e855bf672df9900ef14606cadd7acafeb31991a81399d14cb288974bb.png){fig-align="center"}
+![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](images/a6e3ff0e855bf672df9900ef14606cadd7acafeb31991a81399d14cb288974bb.png){fig-align="center"}
 
 ## Retrieval-Augmented Generation for Large Language Models: A Survey
 
@@ -96,10 +96,16 @@ print(dod_text)
 ## Vector Indexing of the "Chunks"
 
 ```{python}
-#| label: fig-polar
-#| fig-cap: "A line plot on a polar axis"
+#| label: fig-vectors
+#| fig-cap: "Vector representation of the text"
+#| echo: true
 
-import langchain
+from langchain_community.embeddings import FakeEmbeddings
+embeddings = FakeEmbeddings(size=1352)
+query_result = embeddings.embed_query(dod_text)
+print(dod_text[:5])
+query_result[:5]
+
 ```
 
 ## Problem: A global constant for Chunk Size doesn't take into account the semantic structure of a document.
