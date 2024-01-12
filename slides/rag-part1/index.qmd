@@ -108,6 +108,10 @@ query_result[:5]
 
 ```
 
+## Failure points for RAG
+![[Barnett, Scott, Stefanus Kurniawan, Srikanth Thudumu, Zach Brannelly, and Mohamed Abdelrazek. 2024. “Seven Failure Points When Engineering a Retrieval Augmented Generation System.”]()](images/2fd65aa82182e205470b5a09c1a9d43159296a15a63357bb0100914244b18982.png)  
+
+
 ## Problem: A global constant for Chunk Size doesn't take into account the semantic structure of a document.
 
 ## "Agentic" Chunking
@@ -127,3 +131,4 @@ query_result[:5]
 ![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/65c18e5295d637077df208732a548426cd1f035f9c703f2452abaaabf955f02b.png)
 
 ## Graph Based Vector Retrieval
+- [Neo4j Ontology Vectors](https://github.com/jbarrasa/goingmeta/tree/main/session24)
