@@ -109,8 +109,8 @@ query_result[:5]
 ```
 
 ## Failure points for RAG
-![[Barnett, Scott, Stefanus Kurniawan, Srikanth Thudumu, Zach Brannelly, and Mohamed Abdelrazek. 2024. “Seven Failure Points When Engineering a Retrieval Augmented Generation System.”]()](images/2fd65aa82182e205470b5a09c1a9d43159296a15a63357bb0100914244b18982.png)  
 
+![[Barnett, Scott, Stefanus Kurniawan, Srikanth Thudumu, Zach Brannelly, and Mohamed Abdelrazek. 2024. “Seven Failure Points When Engineering a Retrieval Augmented Generation System.”](https://arxiv.org/abs/2401.05856)](images/2fd65aa82182e205470b5a09c1a9d43159296a15a63357bb0100914244b18982.png)
 
 ## Problem: A global constant for Chunk Size doesn't take into account the semantic structure of a document.
 
@@ -124,11 +124,16 @@ query_result[:5]
 
 ## RAG Complexity Overview
 
-![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/7eb467325fa0f9e2ea6e59b2b848ae203112dcc240eab6cb5489df0a592a43ca.png)
+![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/7eb467325fa0f9e2ea6e59b2b848ae203112dcc240eab6cb5489df0a592a43ca.png){fig-align="center"}
 
 ## Comparison with other optimization methods
 
-![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/65c18e5295d637077df208732a548426cd1f035f9c703f2452abaaabf955f02b.png)
+![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/65c18e5295d637077df208732a548426cd1f035f9c703f2452abaaabf955f02b.png){fig-align="center"}
+
+## LLMs and Trusted AI
+
+![[Sun, Lichao, Yue Huang, Haoran Wang, Siyuan Wu, Qihui Zhang, Chujie Gao, Yixin Huang, et al. 2024. “TrustLLM: Trustworthiness in Large Language Models.” arXiv. http://arxiv.org/abs/2401.05561.](http://arxiv.org/abs/2401.05561)](images/c4b58bff32974dcfb515672e94f254ec0cd8fd87c8847ed5430a23efde43f860.png){fig-align="center"}
 
 ## Graph Based Vector Retrieval
-- [Neo4j Ontology Vectors](https://github.com/jbarrasa/goingmeta/tree/main/session24)
+
+-   [Neo4j Ontology Vectors](https://github.com/jbarrasa/goingmeta/tree/main/session24)
