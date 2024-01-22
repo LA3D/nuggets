@@ -38,6 +38,10 @@ categories: [LLMs, TrustedAI]
 
 ![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/paste-1.png){fig-align="center"}
 
+## Sparse and Dense Representations
+
+![[Paco Nathan, 2021, "Thinking Sparse and Dense"](https://derwen.ai/s/5sfp#19)](images/9c34b303c1f4df3bb7424f0fcd414530bddc339d403cb62f0cfccd4d26fbf0d4.png){fig-alt="In a Post-Moore's Law world, how do data science and data engineering need to change? This talk presents design patterns for idiomatic programming in Python so that hardware can optimize machine learning workflows. We'll look at ways of handling data that are either \"sparse\" or \"dense\" depending on the stage of ML workflow – plus, how to leverage profiling tools in Python to understand how to take advantage of hardware. We'll also consider four key abstractions which are outside of most programming languages, but vital in data science work." fig-align="center"}
+
 ## Retrieval Augmented Generation -- The Idea
 
 ![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](images/b21fe2a8f711c7a527a33fa65392f54c0462136c37354da02b80dcb75cba9774.png){fig-align="center"}
