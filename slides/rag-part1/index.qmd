@@ -2,7 +2,7 @@
 title: "Retrieval Augmented Generation -- Part 1"
 author: "Charles F. Vardeman II"
 institute: "Center for Research Computing, University of Notre Dame"
-date: "2024-01-19"
+date: "2024-02-09"
 embed-resources: true
 format: 
     revealjs:
@@ -13,26 +13,12 @@ format:
         slide-number: true
         progress: true
         center: true
+        toc: false
 categories: [LLMs, TrustedAI]
 ---
 
 ## Hypothesis: [Retrieval Augmented Generation Requires Curation]{.underline} {.center}
 
-## Knowledge Engineering Using Large Language Models
-
-![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](images/999c55a6d2e7b4b3992e97401d669721e0a7f45504f554728bb96b9e3f90d593.png){fig-align="center"}
-
-## Prompt Engineering as Knowledge Engineering
-
-![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](images/f2a0477c61dea751b721ea435a2728f5652a17f578aeb97c4184bcf6d040cf19.png){fig-align="center"}
-
-## Knowledge Engineering Practice
-
-![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](images/6de44b439addedd8924faf9226d11b82f51025426e23025e355275278de53951.png){fig-align="center"}
-
-## Trusted AI, LLMs and KE
-
-![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](images/a6e3ff0e855bf672df9900ef14606cadd7acafeb31991a81399d14cb288974bb.png){fig-align="center"}
 
 ## Retrieval-Augmented Generation for Large Language Models: A Survey
 
@@ -112,6 +98,16 @@ query_result[:5]
 
 ```
 
+## Methods of Indexing
+
+![[Greg Kamradt, 2024, "The 5 Levels Of Text Splitting For Retrieval"](https://youtu.be/8OJC21T2SL4?si=SeTaCUGd3CuUUJsW)](images/3abc02c67de0510fde3c30dd01a9aeb1617eaff344206c82f2bc079b44e687a5.png)
+
+## "Levels of Text Splitting for Indexing" {center=""}
+
+[Github Python Notebook: https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/5_Levels_Of_Text_Splitting.ipynb](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/5_Levels_Of_Text_Splitting.ipynb)
+
+## Trusted AI Point of View... {center=""}
+
 ## Failure points for RAG
 
 ![[Barnett, Scott, Stefanus Kurniawan, Srikanth Thudumu, Zach Brannelly, and Mohamed Abdelrazek. 2024. “Seven Failure Points When Engineering a Retrieval Augmented Generation System.”](https://arxiv.org/abs/2401.05856)](images/2fd65aa82182e205470b5a09c1a9d43159296a15a63357bb0100914244b18982.png)
@@ -137,6 +133,12 @@ query_result[:5]
 ## LLMs and Trusted AI
 
 ![[Sun, Lichao, Yue Huang, Haoran Wang, Siyuan Wu, Qihui Zhang, Chujie Gao, Yixin Huang, et al. 2024. “TrustLLM: Trustworthiness in Large Language Models.” arXiv. http://arxiv.org/abs/2401.05561.](http://arxiv.org/abs/2401.05561)](images/c4b58bff32974dcfb515672e94f254ec0cd8fd87c8847ed5430a23efde43f860.png){fig-align="center"}
+
+## Update on Agent Architectures
+
+# 
+
+## LLM Agent Persona
 
 ## Graph Based Vector Retrieval
 

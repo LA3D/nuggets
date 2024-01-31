@@ -1,0 +1,155 @@
+---
+title: "Joint Human-LLM Curation: Crafting Understandable and Relevant AI-Powered Information"
+author: "Charles F. Vardeman II"
+institute: "Center for Research Computing, University of Notre Dame"
+date: "2024-02-02"
+embed-resources: true
+format: 
+    revealjs:
+        width: 1600
+        height: 900
+        logo: ../images/crc-logo-tagline-1-alt.png
+        theme: [simple, ../images/crc.scss]
+        slide-number: true
+        progress: true
+        center: true
+categories: [LLMs, TrustedAI]
+---
+
+## When last we spoke... {.center}
+
+![Motivating Use Case](images/a86a2fda2387c48c35f03406f08f5f46b7c55f1c0b463e52d56bdcdc123b8baf.png){fig-align="center"}
+
+## AI Based Curation
+
+![KG Driven Architecture](images/5af1a50acd98325f6fd14649867e7a3f085ece55b830bd5cec456ded629bde42.png){fig-align="center"}
+
+## Inspiration from TAMMS Agent Cognitive Architecture
+
+![TAMMS Agent Architecture](images/c192e7395530f3519ab8a78e91255219e40da90e709a5673da91d2ab9bf94d9f.png){fig-align="center"}
+
+## "Society of SME Agents"
+
+![SME Agent "Ecosystem"](images/440d88148064c7d015b41466f4af234c0dd141b58bfb202ae27afa727009cfc2.png){fig-align="center"}
+
+## What does this concept "look like" in LLM driven architecture? {.center}
+
+-   Agents based on LLM Cognitive Architecture
+
+    -   Curator Agents -- Curation Workflow
+
+    -   Subject Matter Expert Agents
+
+-   Knowledge Graphs
+
+-   Some form of Knowledge Engineering and Ontology
+
+## Visual Agents Architecture: Multi-Agent Architecture based on Role
+
+::: columns
+::: {.column width="60%"}
+-   [“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
+-   [Hu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv.](https://doi.org/10.48550/arXiv.2306.08129)
+:::
+
+::: {.column width="40%"}
+![](../agents_summer23/visualagents_arch.png)
+:::
+:::
+
+## Activity Specific Agents: Visual Agents Transition Graph
+
+::: columns
+::: {.column width="60%"}
+-   [“Autonomous Visual Information Seeking with Large Language Models,” Google AI Blog,August 18, 2023. https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html.](https://ai.googleblog.com/2023/08/autonomous-visual-information-seeking.html)
+-   [Hu, Ziniu, Ahmet Iscen, Chen Sun, Kai-Wei Chang, Yizhou Sun, David A. Ross, Cordelia Schmid, and Alireza Fathi. 2023. “AVIS: Autonomous Visual Information Seeking with Large Language Model Agent.” arXiv.](https://doi.org/10.48550/arXiv.2306.08129)
+:::
+
+::: {.column width="40%"}
+![](../agents_summer23/visualagent_transitiongraph.png)
+:::
+:::
+
+## LangChain Multi-Agent Workflows
+
+![[LangGraph: Multi-Agent Workflows](https://blog.langchain.dev/langgraph-multi-agent-workflows/)](../rag-part1/images/ac38c2f1cd4e60a2d25405c7d1d6875d361ccdbfcef2f33075c9bcaffc1d34f4.png){fig-align="center"}
+
+## Multi-Agent Example
+
+![[Multi-agent collaboration example](https://github.com/langchain-ai/langgraph/blob/main/examples/multi_agent/multi-agent-collaboration.ipynb)](../rag-part1/images/3ee9b7cdc69377d6216d5168ed20eeedf489b09a019b384633951cb6fc0208e7.png){fig-align="center" width="1122"}
+
+## Curator Agents {.center}
+
+## Retrieval-Augmented Generation for Large Language Models: A Survey
+
+![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](../rag-part1/images/paste-1.png){fig-align="center"}
+
+## Retrieval Augmented Generation -- The Idea
+
+![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](../rag-part1/images/b21fe2a8f711c7a527a33fa65392f54c0462136c37354da02b80dcb75cba9774.png){fig-align="center"}
+
+## Methods of Indexing
+
+![[Greg Kamradt, 2024, "The 5 Levels Of Text Splitting For Retrieval"](https://youtu.be/8OJC21T2SL4?si=SeTaCUGd3CuUUJsW)](../rag-part1/images/3abc02c67de0510fde3c30dd01a9aeb1617eaff344206c82f2bc079b44e687a5.png)
+
+## "Levels of Text Splitting for Indexing" {center=""}
+
+[Github Python Notebook: https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/5_Levels_Of_Text_Splitting.ipynb](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/5_Levels_Of_Text_Splitting.ipynb)
+
+## How does this "fit" into the Enterprise Data Architecture?
+
+![Gartner Data Architecture](../ai-curators/GartnerDataArchEv_Graphic.png){.center fig-align="center" width="1467"}
+
+## The Curator Agent Should Interact with the Data Catalog KG
+
+![[Juan Sequeda, "What Does It Mean for a Data Catalog to Be Powered by a Knowledge Graph?",https://www.datanami.com/2022/09/30/what-does-it-mean-for-a-data-catalog-to-be-powered-by-a-knowledge-graph/](https://www.datanami.com/2022/09/30/what-does-it-mean-for-a-data-catalog-to-be-powered-by-a-knowledge-graph/)](images/0e7de68284f2202bde2fa1f499536e67bce43f9e4ea871b183904ebd37f35693.png){fig-align="center" width="677"}
+
+## Data Catalogs Should have an Ontology
+
+![[Juan Sequeda, "What Does It Mean for a Data Catalog to Be Powered by a Knowledge Graph?",https://www.datanami.com/2022/09/30/what-does-it-mean-for-a-data-catalog-to-be-powered-by-a-knowledge-graph/](https://www.datanami.com/2022/09/30/what-does-it-mean-for-a-data-catalog-to-be-powered-by-a-knowledge-graph/)](images/046bdd468b72d31f1ab5d4e9021de68db5cb405898b57db3cfe7279dc33acd6f.png)
+
+## Example Ontology
+
+![[Juan Sequeda, "What Does It Mean for a Data Catalog to Be Powered by a Knowledge Graph?",https://www.datanami.com/2022/09/30/what-does-it-mean-for-a-data-catalog-to-be-powered-by-a-knowledge-graph/](https://www.datanami.com/2022/09/30/what-does-it-mean-for-a-data-catalog-to-be-powered-by-a-knowledge-graph/)](images/d84f627a18a7ae12bb12acfea511e1fb1023fdf46f7e4d28a25154bdb29d5e20.png){fig-align="center"}
+
+## The Curator Agent should follow best practices for constructing ontologies
+
+![[Shimizu, Cogan, Karl Hammar, and Pascal Hitzler. 2023. “Modular Ontology Modeling.” Edited by Sabrina Kirrane, Axel-Cyrille Ngonga Ngomo, Sabrina Kirrane, and Axel-Cyrille Ngonga Ngomo. Semantic Web 14 (3): 459–89. https://www.semantic-web-journal.net/system/files/swj2886.pdf.](https://www.semantic-web-journal.net/system/files/swj2886.pdf)](images/37066bfbd64145989d8229ee32f78d4a019419cb5bac22b95288512c3509daf4.png){fig-align="center"}
+
+## Extreme Design Methodology
+
+![De Berardinis, Jacopo, Valentina Anita Carriero, Nitisha Jain, Nicolas Lazzari, Albert Meroño-Peñuela, Andrea Poltronieri, and Valentina Presutti. 2023. “The Polifonia Ontology Network: Building a Semantic Backbone for Musical Heritage.” In The Semantic Web – ISWC 2023, edited by Terry R. Payne, Valentina Presutti, Guilin Qi, María Poveda-Villalón, Giorgos Stoilos, Laura Hollink, Zoi Kaoudi, Gong Cheng, and Juanzi Li, 14266:302–22. Lecture Notes in Computer Science. Cham: Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-47243-5_17.](images/389c450ce8cbef182a874c5ebde8bd6e2184ba02449107a361b8223b74366b9d.png){fig-align="center" width="1389"}
+
+## LLM Assisted Competency Question Design
+
+![[IDEA: Infer, DEsign, creAte:https://github.com/polifonia-project/idea](https://github.com/polifonia-project/idea)](images/86e7f00a0c9e64d358970a6af89ee0a44801f93dfa3fbf4827d8bbe73fe05edd.png){fig-align="center" width="889"}
+
+## A Curator Agent is a Knowledge Engineer... {.center}
+
+## Knowledge Engineering Using Large Language Models
+
+![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](../rag-part1/images/999c55a6d2e7b4b3992e97401d669721e0a7f45504f554728bb96b9e3f90d593.png){fig-align="center"}
+
+## Prompt Engineering as Knowledge Engineering
+
+![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](../rag-part1/images/f2a0477c61dea751b721ea435a2728f5652a17f578aeb97c4184bcf6d040cf19.png){fig-align="center"}
+
+## Systematic Approaches to Prompt Engineering
+
+![DSPy: Programming—not prompting—Foundation Models, https://github.com/stanfordnlp/dspy](images/ee29f976a1233e5702d54cf83b4c9485db7d33ab86abb5943da11abedc897b75.png){width="942"} [LangChain Integration: https://python.langchain.com/docs/integrations/providers/dspy](https://python.langchain.com/docs/integrations/providers/dspy)
+
+## Knowledge Engineering Practice
+
+![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](../rag-part1/images/6de44b439addedd8924faf9226d11b82f51025426e23025e355275278de53951.png){fig-align="center"}
+
+## Trusted AI, LLMs and KE
+
+![[Allen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637](https://arxiv.org/abs/2310.00637)](../rag-part1/images/a6e3ff0e855bf672df9900ef14606cadd7acafeb31991a81399d14cb288974bb.png){fig-align="center"}
+
+## Building Detailed KGs as part of the Curator Agent Workflow
+
+![[Paco Nathan, "Language, Graphs, and AI in Industry", https://youtu.be/ScIHpAhPccM?si=fzVTe4KKDCgybmAQ](https://youtu.be/ScIHpAhPccM?si=fzVTe4KKDCgybmAQ)](images/4f8c70a250106604169403157e8e8395ea5b6dce8b11af96133baf25e95cd443.png)
+
+## Knowledge Graph Construction and the Curator Agent
+
+![[Paco Nathan, "Language, Graphs, and AI in Industry", https://derwen.ai/s/mqqm](https://derwen.ai/s/mqqm)](images/b792a1b717f5bb787ec12aaafcb6590a28d561f413c7a91f0797af1aff3c64e3.png)
