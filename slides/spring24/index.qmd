@@ -32,17 +32,7 @@ categories: [LLMs, TrustedAI]
 
 ![SME Agent "Ecosystem"](images/440d88148064c7d015b41466f4af234c0dd141b58bfb202ae27afa727009cfc2.png){fig-align="center"}
 
-## What does this concept "look like" in LLM driven architecture? {.center}
-
--   Agents based on LLM Cognitive Architecture
-
-    -   Curator Agents -- Curation Workflow
-
-    -   Subject Matter Expert Agents
-
--   Knowledge Graphs
-
--   Some form of Knowledge Engineering and Ontology
+## The Bad News: The world has cought up to us... {.center}
 
 ## Visual Agents Architecture: Multi-Agent Architecture based on Role
 
@@ -88,13 +78,27 @@ categories: [LLMs, TrustedAI]
 
 ![[Gao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997.](https://doi.org/10.48550/arXiv.2312.10997)](../rag-part1/images/b21fe2a8f711c7a527a33fa65392f54c0462136c37354da02b80dcb75cba9774.png){fig-align="center"}
 
-## Methods of Indexing
+## Knowledge Engineering Dynamic QA Systems
 
-![[Greg Kamradt, 2024, "The 5 Levels Of Text Splitting For Retrieval"](https://youtu.be/8OJC21T2SL4?si=SeTaCUGd3CuUUJsW)](../rag-part1/images/3abc02c67de0510fde3c30dd01a9aeb1617eaff344206c82f2bc079b44e687a5.png)
+![[Jerry Liu, "Beyond Naive RAG: Adding Agentic Layers, AI User Conference, 2024](https://www.youtube.com/live/MRavjoPpmgM?si=us2d4IiKWz8xG_CJ&t=9491)](images/10cbc36b89a84d0b273a7b397eb93ed3d07a758439b273d129fdc7ccc24d191a.png){width="1161"}
 
-## "Levels of Text Splitting for Indexing" {center=""}
+## Naive RAG
 
-[Github Python Notebook: https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/5_Levels_Of_Text_Splitting.ipynb](https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/5_Levels_Of_Text_Splitting.ipynb)
+![[Jerry Liu, "Beyond Naive RAG: Adding Agentic Layers, AI User Conference, 2024](https://t.co/P39riIMGK6)](images/b808bd7fa3d97b465e399090d17201c1bbaadc31ec70a0d1b79d72720c714c9d.png)
+
+## What does this concept "look like" in LLM driven architecture for QA systems
+
+-   Agents based on LLM Cognitive Architecture
+
+    -   Curator Agents -- Curation Workflow
+
+    -   Subject Matter Expert Agents
+
+-   Knowledge Graphs
+
+-   Tools to Query KG
+
+-   Some form of Knowledge Engineering and Ontology
 
 ## How does this "fit" into the Enterprise Data Architecture?
 

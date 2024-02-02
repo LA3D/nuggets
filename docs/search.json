@@ -1274,11 +1274,11 @@
     "text": "“Society of SME Agents”\n\nSME Agent “Ecosystem”"
   },
   {
-    "objectID": "slides/spring24/index.html#what-does-this-concept-look-like-in-llm-driven-architecture",
-    "href": "slides/spring24/index.html#what-does-this-concept-look-like-in-llm-driven-architecture",
+    "objectID": "slides/spring24/index.html#the-bad-news-the-world-has-cought-up-to-us",
+    "href": "slides/spring24/index.html#the-bad-news-the-world-has-cought-up-to-us",
     "title": "Joint Human-LLM Curation: Crafting Understandable and Relevant AI-Powered Information",
-    "section": "What does this concept “look like” in LLM driven architecture?",
-    "text": "What does this concept “look like” in LLM driven architecture?\n\nAgents based on LLM Cognitive Architecture\n\nCurator Agents – Curation Workflow\nSubject Matter Expert Agents\n\nKnowledge Graphs\nSome form of Knowledge Engineering and Ontology"
+    "section": "The Bad News: The world has cought up to us…",
+    "text": "The Bad News: The world has cought up to us…"
   },
   {
     "objectID": "slides/spring24/index.html#visual-agents-architecture-multi-agent-architecture-based-on-role",
@@ -1330,18 +1330,25 @@
     "text": "Retrieval Augmented Generation – The Idea\n\nGao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997."
   },
   {
-    "objectID": "slides/spring24/index.html#methods-of-indexing",
-    "href": "slides/spring24/index.html#methods-of-indexing",
+    "objectID": "slides/spring24/index.html#knowledge-engineering-dynamic-qa-systems",
+    "href": "slides/spring24/index.html#knowledge-engineering-dynamic-qa-systems",
     "title": "Joint Human-LLM Curation: Crafting Understandable and Relevant AI-Powered Information",
-    "section": "Methods of Indexing",
-    "text": "Methods of Indexing\n\nGreg Kamradt, 2024, “The 5 Levels Of Text Splitting For Retrieval”"
+    "section": "Knowledge Engineering Dynamic QA Systems",
+    "text": "Knowledge Engineering Dynamic QA Systems\n\nJerry Liu, “Beyond Naive RAG: Adding Agentic Layers, AI User Conference, 2024"
   },
   {
-    "objectID": "slides/spring24/index.html#levels-of-text-splitting-for-indexing",
-    "href": "slides/spring24/index.html#levels-of-text-splitting-for-indexing",
+    "objectID": "slides/spring24/index.html#naive-rag",
+    "href": "slides/spring24/index.html#naive-rag",
     "title": "Joint Human-LLM Curation: Crafting Understandable and Relevant AI-Powered Information",
-    "section": "“Levels of Text Splitting for Indexing”",
-    "text": "“Levels of Text Splitting for Indexing”\nGithub Python Notebook: https://github.com/FullStackRetrieval-com/RetrievalTutorials/blob/main/5_Levels_Of_Text_Splitting.ipynb"
+    "section": "Naive RAG",
+    "text": "Naive RAG\n\nJerry Liu, “Beyond Naive RAG: Adding Agentic Layers, AI User Conference, 2024"
+  },
+  {
+    "objectID": "slides/spring24/index.html#what-does-this-concept-look-like-in-llm-driven-architecture-for-qa-systems",
+    "href": "slides/spring24/index.html#what-does-this-concept-look-like-in-llm-driven-architecture-for-qa-systems",
+    "title": "Joint Human-LLM Curation: Crafting Understandable and Relevant AI-Powered Information",
+    "section": "What does this concept “look like” in LLM driven architecture for QA systems",
+    "text": "What does this concept “look like” in LLM driven architecture for QA systems\n\nAgents based on LLM Cognitive Architecture\n\nCurator Agents – Curation Workflow\nSubject Matter Expert Agents\n\nKnowledge Graphs\nTools to Query KG\nSome form of Knowledge Engineering and Ontology"
   },
   {
     "objectID": "slides/spring24/index.html#how-does-this-fit-into-the-enterprise-data-architecture",
