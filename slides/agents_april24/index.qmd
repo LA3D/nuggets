@@ -1,0 +1,37 @@
+---
+title: "Agentic Workflow Desing Patterns"
+author: "Charles F. Vardeman II"
+institute: "Center for Research Computing, University of Notre Dame"
+date: "2024-04-05"
+embed-resources: true
+format: 
+    revealjs:
+        width: 1600
+        height: 900
+        logo: ../images/crc-logo-tagline-1-alt.png
+        theme: [simple, ../images/crc.scss]
+        slide-number: true
+        progress: true
+        center: true
+categories: [Agents, LLMs, Design Patterns]
+---
+
+## "Agentic" Workflow Architectural Patterns
+
+![[What's next for AI agentic workflows ft. Andrew Ng of AI Fund](https://youtu.be/sal78ACtGTc?si=RKFXkcjWaPc_yxiZ)](images/ng_agentic_workflows.png){fig-align="center"}
+
+## Agentic Patterns – Multiagent Collaboration
+
+![](images/ng_muti-agent.png){fig-align="center"}
+
+## Agentic Reasoning Design Patterns
+
+![](images/ng-design-patterns.png){fig-align="center"}
+
+## Agents for "Curation"?
+
+![[Going Meta - Ep 27: Building a Reflection Agent with LangGraph](https://www.youtube.com/live/Sra-1xhNn28?si=1peGRkbHz-YBKF_Y)](images/going-meta-langgrah.png){fig-align="center"}
+
+## Agentically Built Semantic Models
+
+![[Going Meta Episode 27 Repository](https://github.com/jbarrasa/goingmeta/tree/main/session27)](images/neo4j-agentic.png){fig-align="center"}
