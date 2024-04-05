@@ -1458,35 +1458,35 @@
   {
     "objectID": "slides/agents_april24/index.html#agentic-workflow-architectural-patterns",
     "href": "slides/agents_april24/index.html#agentic-workflow-architectural-patterns",
-    "title": "Agentic Workflow Desing Patterns",
+    "title": "Agentic Workflow Design Patterns",
     "section": "“Agentic” Workflow Architectural Patterns",
     "text": "“Agentic” Workflow Architectural Patterns\n\nWhat’s next for AI agentic workflows ft. Andrew Ng of AI Fund"
   },
   {
     "objectID": "slides/agents_april24/index.html#agentic-patterns-multiagent-collaboration",
     "href": "slides/agents_april24/index.html#agentic-patterns-multiagent-collaboration",
-    "title": "Agentic Workflow Desing Patterns",
+    "title": "Agentic Workflow Design Patterns",
     "section": "Agentic Patterns – Multiagent Collaboration",
     "text": "Agentic Patterns – Multiagent Collaboration"
   },
   {
     "objectID": "slides/agents_april24/index.html#agentic-reasoning-design-patterns",
     "href": "slides/agents_april24/index.html#agentic-reasoning-design-patterns",
-    "title": "Agentic Workflow Desing Patterns",
+    "title": "Agentic Workflow Design Patterns",
     "section": "Agentic Reasoning Design Patterns",
     "text": "Agentic Reasoning Design Patterns"
   },
   {
     "objectID": "slides/agents_april24/index.html#agents-for-curation",
     "href": "slides/agents_april24/index.html#agents-for-curation",
-    "title": "Agentic Workflow Desing Patterns",
+    "title": "Agentic Workflow Design Patterns",
     "section": "Agents for “Curation”?",
     "text": "Agents for “Curation”?\n\nGoing Meta - Ep 27: Building a Reflection Agent with LangGraph"
   },
   {
     "objectID": "slides/agents_april24/index.html#agentically-built-semantic-models",
     "href": "slides/agents_april24/index.html#agentically-built-semantic-models",
-    "title": "Agentic Workflow Desing Patterns",
+    "title": "Agentic Workflow Design Patterns",
     "section": "Agentically Built Semantic Models",
     "text": "Agentically Built Semantic Models\n\n\n\nGoing Meta Episode 27 Repository"
   },
@@ -1558,7 +1558,7 @@
     "href": "slideindex.html",
     "title": "Weekly Nugget Presentations",
     "section": "",
-    "text": "Agentic Workflow Desing Patterns\n\n\n\n\n\n\nAgents\n\n\nLLMs\n\n\nDesign Patterns\n\n\n\n\n\n\n\n\n\nApr 5, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nRetrieval Augmented Generation – Part 1\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nFeb 9, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nJoint Human-LLM Curation: Crafting Understandable and Relevant AI-Powered Information\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nFeb 2, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nDr V. Holiday 2023 Viewing Guide\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nDec 1, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nReturn of the Nuggets – AI Engineering\n\n\n\n\n\n\nAI Engineering\n\n\nLLMOps\n\n\n\n\n\n\n\n\n\nNov 17, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTowards Trusted LLM based Curator Agents\n\n\n\n\n\n\nLLMs\n\n\nAgents\n\n\nKnowledge Graphs\n\n\n\n\n\n\n\n\n\nOct 27, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nH4x0rz GU!dE t0 1lms\n\n\n\n\n\n\nLLMs\n\n\nTools\n\n\n\n\n\n\n\n\n\nOct 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nData Centric AI\n\n\n\n\n\n\nTrustedAI\n\n\nData Centric AI\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTools for Trusted AI\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nKG Construction\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "text": "Agentic Workflow Design Patterns\n\n\n\n\n\n\nAgents\n\n\nLLMs\n\n\nDesign Patterns\n\n\n\n\n\n\n\n\n\nApr 5, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nRetrieval Augmented Generation – Part 1\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nFeb 9, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nJoint Human-LLM Curation: Crafting Understandable and Relevant AI-Powered Information\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nFeb 2, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nDr V. Holiday 2023 Viewing Guide\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nDec 1, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nReturn of the Nuggets – AI Engineering\n\n\n\n\n\n\nAI Engineering\n\n\nLLMOps\n\n\n\n\n\n\n\n\n\nNov 17, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTowards Trusted LLM based Curator Agents\n\n\n\n\n\n\nLLMs\n\n\nAgents\n\n\nKnowledge Graphs\n\n\n\n\n\n\n\n\n\nOct 27, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nH4x0rz GU!dE t0 1lms\n\n\n\n\n\n\nLLMs\n\n\nTools\n\n\n\n\n\n\n\n\n\nOct 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nData Centric AI\n\n\n\n\n\n\nTrustedAI\n\n\nData Centric AI\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTools for Trusted AI\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nKG Construction\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "slides/data-ai/index.html#trusted-ai-frameworks-for-knowledge-engineering",

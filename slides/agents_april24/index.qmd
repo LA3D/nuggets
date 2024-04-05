@@ -1,5 +1,5 @@
 ---
-title: "Agentic Workflow Desing Patterns"
+title: "Agentic Workflow Design Patterns"
 author: "Charles F. Vardeman II"
 institute: "Center for Research Computing, University of Notre Dame"
 date: "2024-04-05"
