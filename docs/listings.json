@@ -1,14 +1,8 @@
 [
   {
-    "listing": "/index.html",
-    "items": [
-      "/posts/frameworks-reflection/index.html",
-      "/posts/welcome/index.html"
-    ]
-  },
-  {
     "listing": "/slideindex.html",
     "items": [
+      "/slides/spring24_final/index.html",
       "/slides/agents_april24/index.html",
       "/slides/rag-part1/index.html",
       "/slides/spring24/index.html",
@@ -24,6 +18,13 @@
       "/slides/tai_testing/index.html",
       "/slides/kg-llamaindex/index.html",
       "/slides/trust-causal/index.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/posts/frameworks-reflection/index.html",
+      "/posts/welcome/index.html"
     ]
   }
 ]

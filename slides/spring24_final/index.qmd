@@ -1,0 +1,18 @@
+---
+title: "Agentic Workflows for Information Extraction and KG Construction"
+author: "Charles F. Vardeman II"
+date: "2024-05-10"
+embed-resources: true
+format:
+  revealjs:
+    slide-number: true
+    logo: ../images/crc-logo-tagline-1-alt.png
+    footer: <https://la3d.github.io/nuggets/>
+    header: Laboratory for Assured AI Application Development (LA3D)
+    header-logo: ../images/lad-logo.png
+filters:
+  - reveal-header
+categories: [Agents, Agentic Workflows, TrustedAI]
+---
+
+## Agentic Patterns
