@@ -1,0 +1,220 @@
+---
+title: "Advances in Agent-Based Big AI"
+subtitle: "Nuggets from the Summer"
+author: "Charles F. Vardeman II"
+date: "2024-09-13"
+embed-resources: true
+format:
+  revealjs:
+    slide-number: true
+    logo: ../images/crc-logo-tagline-1-alt.png
+    footer: <https://la3d.github.io/nuggets/>
+    header: Laboratory for Assured AI Application Development (LA3D)
+    header-logo: ../images/lad-logo.png
+filters:
+  - reveal-header
+categories: [Agents, Agentic Workflows, TrustedAI]
+---
+
+
+## Advances in Agent-Based Big AI: Nuggets from Spring and Summer {.smaller}
+
+-   Welcome back, everyone!
+-   Overview of today's presentation:
+    -   Latest advancements in conversational and agentic AI.
+    -   Notable updates from OpenAI and Google DeepMind.
+    -   Insights into agentic patterns and workflows.
+    -   Innovations in Graph-based retrieval models.
+    -   New frameworks like SciAgents and HiPPO-REG.
+
+## Advances in Conversational Agentic AI {.center}
+
+## Key Developments {.smaller}
+
+-   **Conversational and Agentic AI:**
+    -   Enhancements in dialogue management and contextual understanding.
+    -   Improved interaction capabilities, especially in handling complex, multi-turn conversations.
+-   **OpenAI's Updates:**
+    -   Introduction of advanced multimodal models.
+    -   Focus on integrating visual and text-based inputs for richer interactions.
+    -   Expanded capabilities in workflow automation using AI agents.
+-   **Impact:**
+    -   Broader applications in customer service, virtual assistants, and content creation.
+    -   Better adaptability in real-world scenarios requiring nuanced understanding and interaction.
+
+## Rise of 'Conversational AI' – OpenAI
+
+![[“Hello GPT-4o.” n.d. Accessed September 3, 2024.](https://openai.com/index/hello-gpt-4o/).](GPT4-o.png){fig-align="center" width="800"}
+
+
+## Project Astra by Google DeepMind
+![[“Project Astra.” 2024. Google DeepMind. August 22, 2024.](https://deepmind.google/technologies/gemini/project-astra/).](Google_ASTRA.png){fig-align="center" width="800"}
+
+##  {#slide3-id data-menu-title="Google Gemini Live"}
+
+![[“Gemini Makes Your Mobile Device a Powerful AI Assistant.” 2024. Google. August 13, 2024.](https://blog.google/products/gemini/made-by-google-gemini-ai-updates/).](Gemini_live.png){fig-align="center" width="800"}
+
+## Project Astra by Google DeepMind {.smaller}
+
+-   **Overview:**
+    -   Aims to develop proactive, teachable AI assistants.
+    -   Focus on integrating seamlessly across devices and platforms.
+-   **Key Features:**
+    -   Multimodal AI that understands and processes inputs like text, images, and audio.
+    -   Advanced context-awareness to anticipate user needs and provide relevant assistance.
+-   **Potential Applications:**
+    -   Could revolutionize how users interact with technology, making AI more accessible and useful in everyday tasks.
+
+
+## Multi-Modal AI Models in Conversational Agents {.center}
+
+## Driving the Development of Conversational Agents {.smaller}
+
+- **What are Multi-Modal AI Models?**
+  - AI models that process and integrate multiple types of data, such as text, images, audio, and video.
+  - Examples include OpenAI's GPT-4, Google's Gemini, and DeepMind's Project Astra.
+
+- **Key Advantages:**
+  - **Enhanced Understanding:** Ability to comprehend context from multiple data sources simultaneously, improving the accuracy and relevance of responses.
+  - **Richer Interactions:** Enables more natural and intuitive interactions by combining visual, auditory, and textual cues.
+  - **Broader Applications:** From customer service to personal assistants, these models are making AI interactions more versatile and effective.
+
+## Driving the Development of Conversational Agents {.smaller}
+- **Impact on Conversational Agents:**
+  - **Improved Contextual Awareness:** Agents can better understand user needs by interpreting a broader range of input signals.
+  - **Greater Personalization:** Tailors interactions to individual users by understanding nuances in visual and audio inputs.
+  - **Advanced Capabilities:** Supports complex tasks such as visual question answering, interactive storytelling, and multimodal search.
+
+## Driving the Development of Conversational Agents {.smaller}
+
+- **Examples and Applications:**
+  - **Virtual Assistants:** Google Assistant and Amazon Alexa integrating voice and image recognition for smart home management.
+  - **Customer Service:** Chatbots that can handle text and visual content, enhancing user experience in e-commerce and tech support.
+
+- **Future Directions:**
+  - Ongoing research aims to further refine these models, making them more efficient and capable of real-time, multimodal interactions.
+  - Potential for applications in areas like education, healthcare, and entertainment where diverse data types are crucial.
+
+## Mistral Pixtral 12B
+![[Mistral releases Pixtral 12B, its first multimodal model](https://techcrunch.com/2024/09/11/mistral-releases-pixtral-its-first-multimodal-model/)](pixtral-release.png)
+
+## Overview of Pixtral 12B {.smaller}
+
+- **Introduction:**
+  - Mistral's first multimodal AI model, capable of processing both text and images.
+  - Built on the Nemo 12B text model with an additional 400 million-parameter vision adapter.
+
+- **Capabilities:**
+  - Performs tasks such as image captioning, object counting, and answering image-related queries.
+  - Vision encoding allows the model to "see" and process visual data alongside textual inputs.
+
+## Overview of Pixtral 12B {.smaller}
+
+- **Open Weights and Accessibility:**
+  - Model parameters and code are available on GitHub and Hugging Face.
+  - Mistral is considering making Pixtral 12B available under an open-source license to encourage wider use and development.
+
+- **Impact:**
+  - Provides a competitive alternative to models from OpenAI, Google, and other leading AI developers.
+  - Encourages the development of applications requiring both visual and textual data processing.
+
+## Google Gemma
+
+## Agentic Patterns and Workflows {.center}
+
+## Generative Agents
+![[Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/pdf/2304.03442)](Generatrive_Agents.png)
+
+- [Google Illuminate AI Discussion](https://illuminate.google.com/papers?play=Mqs9Ge_ulG12)
+
+## LLMs Based Autonomous Agents
+![[Wang, Lei, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, et al. 2024. “A Survey on Large Language Model Based Autonomous Agents.” Frontiers of Computer Science 18 (6): 186345. https://doi.org/10.1007/s11704-024-40231-1.](https://link.springer.com/article/10.1007/s11704-024-40231-1)](./survey_llm_agents.png)
+
+- [Google Illuminate AI Discussion](https://illuminate.google.com/library?play=PhFnDe_7yL7N)
+
+## Andrew Ng's Contributions to Agentic AI
+![[What's next for AI agentic workflows ft. Andrew Ng of AI Fund](https://youtu.be/sal78ACtGTc?si=RKFXkcjWaPc_yxiZ)](../agents_april24/images/ng_agentic_workflows.png){fig-align="center"}
+
+## Andrew Ng's Contributions to Agentic AI {.smaller}
+
+-   **Core Design Patterns:**
+    -   **Reflection:** Agents improve by critiquing their own outputs and iterating.
+    -   **Tool Use:** Integration of external tools for enhanced task performance.
+    -   **Planning:** Agents develop and follow strategic plans to achieve goals.
+    -   **Multi-agent Collaboration:** Systems of agents working together to solve complex problems.
+-   **Impact:**
+    -   Enhanced robustness and adaptability of AI systems.
+    -   Facilitates more effective problem-solving in dynamic environments.
+
+## Agentic Workflows in 2024: The ultimate guide
+![[Agentic Workflows in 2024: The ultimate guide](https://www.vellum.ai/blog/agentic-workflows-emerging-architectures-and-design-patterns)](agentic-workflows-2024.png)
+
+
+## Enhancing Retrieval with Graph-Based Models {.smaller}
+
+-   **GraphRAG by Microsoft Research:**
+    -   Combines knowledge graphs with Retrieval-Augmented Generation (RAG).
+    -   Uses structured data to improve retrieval accuracy and contextual relevance.
+-   **Key Features:**
+    -   **Whole-Data Reasoning:** Enables summarization and extraction of key themes from large datasets.
+    -   **Provenance Tracking:** Provides sources and grounding for AI-generated responses.
+-   **Benefits:**
+    -   Improved trust and verification in AI outputs.
+    -   Applicable in fields like data analysis, content generation, and decision support.
+
+## Advances in GraphRAG
+![[Peng, Boci, Yun Zhu, Yongchao Liu, Xiaohe Bo, Haizhou Shi, Chuntao Hong, Yan Zhang, and Siliang Tang. 2024. “Graph Retrieval-Augmented Generation: A Survey.” arXiv. http://arxiv.org/abs/2408.08921.](http://arxiv.org/abs/2408.08921)](GraphRAG-Survey.png)
+
+- [Google Illuminate Microsoft GraphRAG Paper](https://illuminate.google.com/library?play=n4RV5j_PQEW6)
+
+## HippoRAG
+![[Gutiérrez, Bernal Jiménez, Yiheng Shu, Yu Gu, Michihiro Yasunaga, and Yu Su. 2024. “HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models.” arXiv. https://doi.org/10.48550/arXiv.2405.14831.](https://doi.org/10.48550/arXiv.2405.14831)](./HyppoRAG.png)
+
+- [Google Illuminate](https://illuminate.google.com/library?play=0mwMvc_zIo421)
+
+## HippoRAG: Enhanced Memory Integration for AI {.smaller}
+
+-   **Overview:**
+    -   Inspired by the hippocampal indexing theory of human memory.
+    -   Combines LLMs with knowledge graphs for enhanced information retrieval.
+-   **Methodology:**
+    -   **Offline Indexing:** Creates a hippocampal-like index using LLMs.
+    -   **Online Retrieval:** Uses Personalized PageRank to link queries to relevant knowledge nodes.
+-   **Performance:**
+    -   Outperforms traditional retrieval methods in multi-hop question answering.
+    -   More efficient, faster, and cost-effective than existing iterative retrieval techniques.
+
+
+
+
+
+## SciAgents: Automating Scientific Discovery ("The OGRag")
+![[Ghafarollahi, Alireza, and Markus J. Buehler. 2024. “SciAgents: Automating Scientific Discovery through Multi-Agent Intelligent Graph Reasoning.” arXiv. http://arxiv.org/abs/2409.05556.](http://arxiv.org/abs/2409.05556)](SCIAgents.png)
+
+- [Google Illuminate](https://illuminate.google.com/library?play=Eqvand____fxx3)
+
+## SciAgents Multi-Agent Intelligent Graph Reasoning {.smaller}
+
+-   **Introduction to SciAgents:**
+    -   Uses ontological knowledge graphs and multi-agent systems.
+    -   Designed to explore novel domains and discover hidden interdisciplinary connections.
+-   **Key Capabilities:**
+    -   Autonomous generation and refinement of research hypotheses.
+    -   Integration of up-to-date scientific data and critique of existing theories.
+-   **Case Studies:**
+    -   Demonstrated success in biologically inspired materials research.
+    -   Potential to accelerate scientific discovery across various domains.
+
+
+# Wrap-Up and Discussion
+
+## Summary and Q&A
+
+-   **Key Takeaways:**
+    -   Significant advancements in agent-based AI and retrieval models.
+    -   Innovative frameworks like SciAgents and HiPPO-REG are pushing the boundaries of what's possible.
+    -   The integration of ontological knowledge graphs and neurobiologically inspired designs shows great promise.
+-   **Discussion:**
+    -   Open floor for questions, feedback, and further discussion.
+    -   Upcoming resources and events related to the topics discussed.
+-   Thank you for your attention!

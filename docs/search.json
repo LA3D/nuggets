@@ -252,277 +252,389 @@
     "text": "Prompt Enginnering Guide\n\n\nLearn More: Prompt Engineering Guide"
   },
   {
-    "objectID": "slides/spring24_final/index.html#agentic-patterns",
-    "href": "slides/spring24_final/index.html#agentic-patterns",
-    "title": "Agentic Workflows for Information Extraction and KG Construction",
-    "section": "Agentic Patterns",
-    "text": "Agentic Patterns\n\n\n\n\nhttps://la3d.github.io/nuggets/\n\n\n\n\n\n\n\n \n\n\nLaboratory for Assured AI Application Development (LA3D)"
+    "objectID": "slides/holiday_2023/index.html#goal-to-help-prepare-you-for-those-difficult-holiday-conversations",
+    "href": "slides/holiday_2023/index.html#goal-to-help-prepare-you-for-those-difficult-holiday-conversations",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Goal: To help prepare you for those difficult holiday conversations…",
+    "text": "Goal: To help prepare you for those difficult holiday conversations…"
   },
   {
-    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
-    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
-    "title": "Trust and Causal Reasoning",
-    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
-    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
+    "objectID": "slides/holiday_2023/index.html#like-how-does-chatgpt-work",
+    "href": "slides/holiday_2023/index.html#like-how-does-chatgpt-work",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Like: How does ChatGPT work?",
+    "text": "Like: How does ChatGPT work?"
   },
   {
-    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
-    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
-    "title": "Trust and Causal Reasoning",
-    "section": "Towards Trustworthy and Aligned ML Website",
-    "text": "Towards Trustworthy and Aligned ML Website\n\n\nTowards Trustworthy and Aligned ML"
+    "objectID": "slides/holiday_2023/index.html#karpathy-the-busy-persons-intro-to-llms",
+    "href": "slides/holiday_2023/index.html#karpathy-the-busy-persons-intro-to-llms",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Karpathy: The busy person’s intro to LLMs",
+    "text": "Karpathy: The busy person’s intro to LLMs\n\nKarpathy LLM: YouTube LinkReading List For Andrej Karpathy’s “Intro to Large Language Models” Video"
   },
   {
-    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
-    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
-    "title": "Trust and Causal Reasoning",
-    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
-    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
+    "objectID": "slides/holiday_2023/index.html#pay-attention-to-the-section-on-llm-security-at-the-end-of-the-talk.",
+    "href": "slides/holiday_2023/index.html#pay-attention-to-the-section-on-llm-security-at-the-end-of-the-talk.",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Pay attention to the section on LLM security at the end of the talk.",
+    "text": "Pay attention to the section on LLM security at the end of the talk."
   },
   {
-    "objectID": "slides/trust-causal/index.html#causal-reasoning",
-    "href": "slides/trust-causal/index.html#causal-reasoning",
-    "title": "Trust and Causal Reasoning",
-    "section": "Causal Reasoning",
-    "text": "Causal Reasoning\n\n\nLearn more: Amazon Book of Why"
+    "objectID": "slides/holiday_2023/index.html#making-llms-uncool-language-warning",
+    "href": "slides/holiday_2023/index.html#making-llms-uncool-language-warning",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Making LLMs “uncool” (Language Warning)",
+    "text": "Making LLMs “uncool” (Language Warning)\n\nMaking Large Language Models Uncool Again: Youtube"
   },
   {
-    "objectID": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
-    "href": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
-    "title": "Trust and Causal Reasoning",
-    "section": "Trustworthy ML Initiative (TrustML)",
-    "text": "Trustworthy ML Initiative (TrustML)\n\n\nLearn more: Trustworthy ML Org"
+    "objectID": "slides/holiday_2023/index.html#uncool-takeaways",
+    "href": "slides/holiday_2023/index.html#uncool-takeaways",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Uncool “takeaways”",
+    "text": "Uncool “takeaways”\n\n~30b parameter models a missed opportunity\nWe are “fine-tuning” wrong\nUncertainty future directions for small (fine-tuned) vs large (API) models\nLLM architecture not the path to AG(S)I"
   },
   {
-    "objectID": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
-    "href": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
-    "title": "Trust and Causal Reasoning",
-    "section": "Gorilla API to Ground “Tool Use”",
-    "text": "Gorilla API to Ground “Tool Use”\n\n\nLearn more: Gorilla: Large Language Model Connected with Massive APIs"
+    "objectID": "slides/holiday_2023/index.html#deep-dive-into-understanding-llms",
+    "href": "slides/holiday_2023/index.html#deep-dive-into-understanding-llms",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Deep dive into understanding LLMs",
+    "text": "Deep dive into understanding LLMs\n\nWhat is ChatGPT doing…and why does it work? Youtube"
   },
   {
-    "objectID": "slides/trust-causal/index.html#llama2-accessory",
-    "href": "slides/trust-causal/index.html#llama2-accessory",
-    "title": "Trust and Causal Reasoning",
-    "section": "LLaMA2-Accessory",
-    "text": "LLaMA2-Accessory\n\n\nLearn more: LLaMA2-Accessory"
+    "objectID": "slides/holiday_2023/index.html#ai-engineering",
+    "href": "slides/holiday_2023/index.html#ai-engineering",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "AI Engineering",
+    "text": "AI Engineering"
   },
   {
-    "objectID": "slides/trust-causal/index.html#multilingual-token-analysis",
-    "href": "slides/trust-causal/index.html#multilingual-token-analysis",
-    "title": "Trust and Causal Reasoning",
-    "section": "MultiLingual Token Analysis",
-    "text": "MultiLingual Token Analysis\n\n\nLearn more: Video: LLaMA2 Multilingual Models and Fine Tuning\nGoogle Collab Notebook:"
+    "objectID": "slides/holiday_2023/index.html#openai-dev-day-llm-performance-talk",
+    "href": "slides/holiday_2023/index.html#openai-dev-day-llm-performance-talk",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "OpenAI Dev Day LLM Performance Talk",
+    "text": "OpenAI Dev Day LLM Performance Talk\n\n\n\n\nA Survey of Techniques for Maximizing LLM Performance"
   },
   {
-    "objectID": "slides/trust-causal/index.html#metaai-dinov2",
-    "href": "slides/trust-causal/index.html#metaai-dinov2",
-    "title": "Trust and Causal Reasoning",
-    "section": "MetaAI DINOv2",
-    "text": "MetaAI DINOv2\n\n\nLearn more: DINOv2 by Meta AI"
+    "objectID": "slides/holiday_2023/index.html#techniques-for-increasing-llm-performance",
+    "href": "slides/holiday_2023/index.html#techniques-for-increasing-llm-performance",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Techniques for increasing LLM Performance",
+    "text": "Techniques for increasing LLM Performance"
   },
   {
-    "objectID": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
-    "href": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
-    "title": "Trust and Causal Reasoning",
-    "section": "MetaAI DINOv2 Huggingface Release",
-    "text": "MetaAI DINOv2 Huggingface Release\n\n\nLearn more: DINOv2 by Meta AI Huggingface"
+    "objectID": "slides/holiday_2023/index.html#patterns-for-ai-engineering",
+    "href": "slides/holiday_2023/index.html#patterns-for-ai-engineering",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Patterns for AI Engineering",
+    "text": "Patterns for AI Engineering\n\nBuilding Blocks for LLM Systems & Products: Eugene YanPatterns for Building LLM-based Systems & Products"
   },
   {
-    "objectID": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
-    "href": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
-    "title": "Trust and Causal Reasoning",
-    "section": "Example notebook for DINOv2 Semantic Segmentation",
-    "text": "Example notebook for DINOv2 Semantic Segmentation\n\n\nLearn more: Linear probing of DINOv2 for semantic segmentation"
+    "objectID": "slides/holiday_2023/index.html#rag-in-production",
+    "href": "slides/holiday_2023/index.html#rag-in-production",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "RAG in Production",
+    "text": "RAG in Production\n\nBuilding Production-Ready RAG Applications: Jerry Liu"
   },
   {
-    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
-    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
-    "title": "Trust and Causal Reasoning",
-    "section": "Linear Regression Model for Reasoning",
-    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
+    "objectID": "slides/holiday_2023/index.html#the-need-for-guardrails",
+    "href": "slides/holiday_2023/index.html#the-need-for-guardrails",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "The need for “Guardrails”",
+    "text": "The need for “Guardrails”\n\nTrust, but Verify: Shreya Rajpal"
   },
   {
-    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
-    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
-    "title": "Trust and Causal Reasoning",
-    "section": "Linear Regression Model for Reasoning",
-    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
+    "objectID": "slides/holiday_2023/index.html#a-firewall-for-your-llm",
+    "href": "slides/holiday_2023/index.html#a-firewall-for-your-llm",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "A “firewall” for your LLM",
+    "text": "A “firewall” for your LLM\n\nTrust, but Verify: Shreya Rajpal"
   },
   {
-    "objectID": "slides/rag-part1/index.html#hypothesis-retrieval-augmented-generation-requires-curation",
-    "href": "slides/rag-part1/index.html#hypothesis-retrieval-augmented-generation-requires-curation",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Hypothesis: Retrieval Augmented Generation Requires Curation",
-    "text": "Hypothesis: Retrieval Augmented Generation Requires Curation"
+    "objectID": "slides/holiday_2023/index.html#nuggets-for-the-week",
+    "href": "slides/holiday_2023/index.html#nuggets-for-the-week",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Nuggets for the week…",
+    "text": "Nuggets for the week…"
   },
   {
-    "objectID": "slides/rag-part1/index.html#knowledge-engineering-using-large-language-models",
-    "href": "slides/rag-part1/index.html#knowledge-engineering-using-large-language-models",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Knowledge Engineering Using Large Language Models",
-    "text": "Knowledge Engineering Using Large Language Models\n\nAllen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637"
+    "objectID": "slides/holiday_2023/index.html#one-year-of-chatgpt",
+    "href": "slides/holiday_2023/index.html#one-year-of-chatgpt",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "One Year of ChatGPT!",
+    "text": "One Year of ChatGPT!\n\nChen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. http://arxiv.org/abs/2311.16989."
   },
   {
-    "objectID": "slides/rag-part1/index.html#prompt-engineering-as-knowledge-engineering",
-    "href": "slides/rag-part1/index.html#prompt-engineering-as-knowledge-engineering",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Prompt Engineering as Knowledge Engineering",
-    "text": "Prompt Engineering as Knowledge Engineering\n\nAllen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637"
+    "objectID": "slides/holiday_2023/index.html#llm-capabilities",
+    "href": "slides/holiday_2023/index.html#llm-capabilities",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "LLM Capabilities",
+    "text": "LLM Capabilities\n\nChen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. http://arxiv.org/abs/2311.16989."
   },
   {
-    "objectID": "slides/rag-part1/index.html#knowledge-engineering-practice",
-    "href": "slides/rag-part1/index.html#knowledge-engineering-practice",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Knowledge Engineering Practice",
-    "text": "Knowledge Engineering Practice\n\nAllen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637"
+    "objectID": "slides/holiday_2023/index.html#agent-capabilities",
+    "href": "slides/holiday_2023/index.html#agent-capabilities",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Agent Capabilities",
+    "text": "Agent Capabilities\n\nChen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. http://arxiv.org/abs/2311.16989."
   },
   {
-    "objectID": "slides/rag-part1/index.html#trusted-ai-llms-and-ke",
-    "href": "slides/rag-part1/index.html#trusted-ai-llms-and-ke",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Trusted AI, LLMs and KE",
-    "text": "Trusted AI, LLMs and KE\n\nAllen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637"
+    "objectID": "slides/holiday_2023/index.html#model-consistency",
+    "href": "slides/holiday_2023/index.html#model-consistency",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Model Consistency",
+    "text": "Model Consistency\n\nChen, Lingjiao, Matei Zaharia, and James Zou. 2023. “How Is ChatGPT’s Behavior Changing over Time?” arXiv. https://doi.org/10.48550/arXiv.2307.09009."
   },
   {
-    "objectID": "slides/rag-part1/index.html#retrieval-augmented-generation-for-large-language-models-a-survey",
-    "href": "slides/rag-part1/index.html#retrieval-augmented-generation-for-large-language-models-a-survey",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Retrieval-Augmented Generation for Large Language Models: A Survey",
-    "text": "Retrieval-Augmented Generation for Large Language Models: A Survey\n\nGao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997."
+    "objectID": "slides/holiday_2023/index.html#model-consistency-over-time",
+    "href": "slides/holiday_2023/index.html#model-consistency-over-time",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Model Consistency over time",
+    "text": "Model Consistency over time\n\nChen, Lingjiao, Matei Zaharia, and James Zou. 2023. “How Is ChatGPT’s Behavior Changing over Time?” arXiv. https://doi.org/10.48550/arXiv.2307.09009."
   },
   {
-    "objectID": "slides/rag-part1/index.html#sparse-and-dense-representations",
-    "href": "slides/rag-part1/index.html#sparse-and-dense-representations",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Sparse and Dense Representations",
-    "text": "Sparse and Dense Representations\n\nPaco Nathan, 2021, “Thinking Sparse and Dense”"
+    "objectID": "slides/holiday_2023/index.html#mixture-of-experts-moe",
+    "href": "slides/holiday_2023/index.html#mixture-of-experts-moe",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Mixture of Experts (MoE)",
+    "text": "Mixture of Experts (MoE)"
   },
   {
-    "objectID": "slides/rag-part1/index.html#retrieval-augmented-generation-the-idea",
-    "href": "slides/rag-part1/index.html#retrieval-augmented-generation-the-idea",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Retrieval Augmented Generation – The Idea",
-    "text": "Retrieval Augmented Generation – The Idea\n\nGao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997."
+    "objectID": "slides/holiday_2023/index.html#moe",
+    "href": "slides/holiday_2023/index.html#moe",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "MoE",
+    "text": "MoE"
   },
   {
-    "objectID": "slides/rag-part1/index.html#naive-rag",
-    "href": "slides/rag-part1/index.html#naive-rag",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Naive RAG",
-    "text": "Naive RAG\n\nIndexing\n\nData Indexing: Cleaning and extracting data from PDF, HTML, Word, Markdown, Images\nChunking: Dividing text into smaller chunks for LLM limited context window\nEmbedding and Creating Index: Encoding text/images into vectors through a language model\n\nRetrieve: Given a user input, retrieve relevant information\nGeneration: The user query to the LLM and related documents from retrieval are combined into a new prompt. The LLM generates a response based on this new context window."
+    "objectID": "slides/holiday_2023/index.html#agent-memory",
+    "href": "slides/holiday_2023/index.html#agent-memory",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Agent Memory",
+    "text": "Agent Memory\n\nAdding Long Term Memory to OpenGPTs"
   },
   {
-    "objectID": "slides/rag-part1/index.html#naive-rag-architecture",
-    "href": "slides/rag-part1/index.html#naive-rag-architecture",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Naive RAG Architecture",
-    "text": "Naive RAG Architecture\n\nLangchain Q&A with RAG"
+    "objectID": "slides/holiday_2023/index.html#long-term-memory",
+    "href": "slides/holiday_2023/index.html#long-term-memory",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Long Term Memory",
+    "text": "Long Term Memory\n\nAdding Long Term Memory to OpenGPTs"
   },
   {
-    "objectID": "slides/rag-part1/index.html#some-text",
-    "href": "slides/rag-part1/index.html#some-text",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Some text",
-    "text": "Some text\n\n\nDoD must accelerate its progress towards becoming a data-centric organization. DoD has lacked the enterprise data management to ensure that trusted, critical data is widely available to or accessible by mission commanders, warfighters, decision-makers, and mission partners in a real- time, useable, secure, and linked manner. This limits data-driven decisions and insights, which hinders the execution of swift and appropriate action.\n\nAdditionally, DoD software and hardware systems must be designed, procured, tested, upgraded, operated, and sustained with data interoperability as a key requirement. All too often these gaps are bridged with unnecessary human-machine interfaces that introduce complexity, delay, and increased risk of error. This constrains the Department’s ability to operate against threats at\nmachine speed across all domains.\n\nDoD also must improve skills in data fields necessary for effective data management. The Department must broaden efforts to assess our current talent, recruit new data experts, and retain our developing force while establishing policies to ensure that data talent is cultivated. We must also spend the time to increase the data acumen resident across the workforce and find optimal ways to promote a culture of data awareness."
+    "objectID": "slides/holiday_2023/index.html#determinism-vs-stochasticity",
+    "href": "slides/holiday_2023/index.html#determinism-vs-stochasticity",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "Determinism vs Stochasticity?",
+    "text": "Determinism vs Stochasticity?\n\nDeterminism through RAG and Tool use\nTool code created by LLM based Co-pilots or Agents\nWhat “Programming Language” should we use for the deterministic part?\nWe don’t have an integrated paradigm for what “systems engineering” means in a age of AIs"
   },
   {
-    "objectID": "slides/rag-part1/index.html#chunking",
-    "href": "slides/rag-part1/index.html#chunking",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "“Chunking”",
-    "text": "“Chunking”\n\n“Chunkviz”"
+    "objectID": "slides/holiday_2023/index.html#for-after-christmas",
+    "href": "slides/holiday_2023/index.html#for-after-christmas",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "For after Christmas…",
+    "text": "For after Christmas…"
   },
   {
-    "objectID": "slides/rag-part1/index.html#chunking-with-overlap",
-    "href": "slides/rag-part1/index.html#chunking-with-overlap",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "“Chunking” with Overlap",
-    "text": "“Chunking” with Overlap\n\n“Chunkviz”"
+    "objectID": "slides/holiday_2023/index.html#the-end-of-programming",
+    "href": "slides/holiday_2023/index.html#the-end-of-programming",
+    "title": "Dr V. Holiday 2023 Viewing Guide",
+    "section": "The end of Programming?",
+    "text": "The end of Programming?\n\n\n\nLarge Language Models and The End of Programming - CS50 Tech Talk with Dr. Matt Welsh"
   },
   {
-    "objectID": "slides/rag-part1/index.html#smarter-chunking",
-    "href": "slides/rag-part1/index.html#smarter-chunking",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Smarter “Chunking”",
-    "text": "Smarter “Chunking”\n\nLangChain - Recursively Split by Character"
+    "objectID": "slides/fall24_references/index.html#advances-in-agent-based-big-ai-nuggets-from-spring-and-summer",
+    "href": "slides/fall24_references/index.html#advances-in-agent-based-big-ai-nuggets-from-spring-and-summer",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Advances in Agent-Based Big AI: Nuggets from Spring and Summer",
+    "text": "Advances in Agent-Based Big AI: Nuggets from Spring and Summer\n\nWelcome back, everyone!\nOverview of today’s presentation:\n\nLatest advancements in conversational and agentic AI.\nNotable updates from OpenAI and Google DeepMind.\nInsights into agentic patterns and workflows.\nInnovations in Graph-based retrieval models.\nNew frameworks like SciAgents and HiPPO-REG."
   },
   {
-    "objectID": "slides/rag-part1/index.html#chunking-recursive-character-splitter",
-    "href": "slides/rag-part1/index.html#chunking-recursive-character-splitter",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "“Chunking” recursive character splitter",
-    "text": "“Chunking” recursive character splitter\n\n“Chunkviz”"
+    "objectID": "slides/fall24_references/index.html#advances-in-conversational-agentic-ai",
+    "href": "slides/fall24_references/index.html#advances-in-conversational-agentic-ai",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Advances in Conversational Agentic AI",
+    "text": "Advances in Conversational Agentic AI"
   },
   {
-    "objectID": "slides/rag-part1/index.html#chunking-with-larger-segment-size",
-    "href": "slides/rag-part1/index.html#chunking-with-larger-segment-size",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "“Chunking” with larger segment size",
-    "text": "“Chunking” with larger segment size\n\n“Chunkviz”"
+    "objectID": "slides/fall24_references/index.html#key-developments",
+    "href": "slides/fall24_references/index.html#key-developments",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Key Developments",
+    "text": "Key Developments\n\nConversational and Agentic AI:\n\nEnhancements in dialogue management and contextual understanding.\nImproved interaction capabilities, especially in handling complex, multi-turn conversations.\n\nOpenAI’s Updates:\n\nIntroduction of advanced multimodal models.\nFocus on integrating visual and text-based inputs for richer interactions.\nExpanded capabilities in workflow automation using AI agents.\n\nImpact:\n\nBroader applications in customer service, virtual assistants, and content creation.\nBetter adaptability in real-world scenarios requiring nuanced understanding and interaction."
   },
   {
-    "objectID": "slides/rag-part1/index.html#vector-indexing-of-the-chunks",
-    "href": "slides/rag-part1/index.html#vector-indexing-of-the-chunks",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Vector Indexing of the “Chunks”",
-    "text": "Vector Indexing of the “Chunks”\n\nfrom langchain_community.embeddings import FakeEmbeddings\nembeddings = FakeEmbeddings(size=1352)\nquery_result = embeddings.embed_query(dod_text)\nprint(dod_text[:5])\nquery_result[:5]\n\nDoD m\n\n\n\n\n[0.28925496400357076,\n 0.42954295410387294,\n -0.75042013219397,\n -0.21105104953004536,\n -0.655199848252018]\n\n\nFigure 1: Vector representation of the text"
+    "objectID": "slides/fall24_references/index.html#rise-of-conversational-ai-openai",
+    "href": "slides/fall24_references/index.html#rise-of-conversational-ai-openai",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Rise of ‘Conversational AI’ – OpenAI",
+    "text": "Rise of ‘Conversational AI’ – OpenAI\n\n“Hello GPT-4o.” n.d. Accessed September 3, 2024.."
   },
   {
-    "objectID": "slides/rag-part1/index.html#failure-points-for-rag",
-    "href": "slides/rag-part1/index.html#failure-points-for-rag",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Failure points for RAG",
-    "text": "Failure points for RAG\n\nBarnett, Scott, Stefanus Kurniawan, Srikanth Thudumu, Zach Brannelly, and Mohamed Abdelrazek. 2024. “Seven Failure Points When Engineering a Retrieval Augmented Generation System.”"
+    "objectID": "slides/fall24_references/index.html#project-astra-by-google-deepmind",
+    "href": "slides/fall24_references/index.html#project-astra-by-google-deepmind",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Project Astra by Google DeepMind",
+    "text": "Project Astra by Google DeepMind\n\n“Project Astra.” 2024. Google DeepMind. August 22, 2024.."
   },
   {
-    "objectID": "slides/rag-part1/index.html#problem-a-global-constant-for-chunk-size-doesnt-take-into-account-the-semantic-structure-of-a-document.",
-    "href": "slides/rag-part1/index.html#problem-a-global-constant-for-chunk-size-doesnt-take-into-account-the-semantic-structure-of-a-document.",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Problem: A global constant for Chunk Size doesn’t take into account the semantic structure of a document.",
-    "text": "Problem: A global constant for Chunk Size doesn’t take into account the semantic structure of a document."
+    "objectID": "slides/fall24_references/index.html#slide3-id",
+    "href": "slides/fall24_references/index.html#slide3-id",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "",
+    "text": "“Gemini Makes Your Mobile Device a Powerful AI Assistant.” 2024. Google. August 13, 2024.."
   },
   {
-    "objectID": "slides/rag-part1/index.html#agentic-chunking",
-    "href": "slides/rag-part1/index.html#agentic-chunking",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "“Agentic” Chunking",
-    "text": "“Agentic” Chunking\n\nLangChain on X: Proposition-Based Retrieval"
+    "objectID": "slides/fall24_references/index.html#project-astra-by-google-deepmind-1",
+    "href": "slides/fall24_references/index.html#project-astra-by-google-deepmind-1",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Project Astra by Google DeepMind",
+    "text": "Project Astra by Google DeepMind\n\nOverview:\n\nAims to develop proactive, teachable AI assistants.\nFocus on integrating seamlessly across devices and platforms.\n\nKey Features:\n\nMultimodal AI that understands and processes inputs like text, images, and audio.\nAdvanced context-awareness to anticipate user needs and provide relevant assistance.\n\nPotential Applications:\n\nCould revolutionize how users interact with technology, making AI more accessible and useful in everyday tasks."
   },
   {
-    "objectID": "slides/rag-part1/index.html#agentic-example-proposition-based-dense-retrieval",
-    "href": "slides/rag-part1/index.html#agentic-example-proposition-based-dense-retrieval",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Agentic Example: Proposition Based Dense Retrieval",
-    "text": "Agentic Example: Proposition Based Dense Retrieval\n\nChen, Tong, Hongwei Wang, Sihao Chen, Wenhao Yu, Kaixin Ma, Xinran Zhao, Hongming Zhang, and Dong Yu. 2023. “Dense X Retrieval: What Retrieval Granularity Should We Use?” arXiv.Org. December 11, 2023. https://arxiv.org/abs/2312.06648v2."
+    "objectID": "slides/fall24_references/index.html#multi-modal-ai-models-in-conversational-agents",
+    "href": "slides/fall24_references/index.html#multi-modal-ai-models-in-conversational-agents",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Multi-Modal AI Models in Conversational Agents",
+    "text": "Multi-Modal AI Models in Conversational Agents"
   },
   {
-    "objectID": "slides/rag-part1/index.html#rag-complexity-overview",
-    "href": "slides/rag-part1/index.html#rag-complexity-overview",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "RAG Complexity Overview",
-    "text": "RAG Complexity Overview\n\nGao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997."
+    "objectID": "slides/fall24_references/index.html#driving-the-development-of-conversational-agents",
+    "href": "slides/fall24_references/index.html#driving-the-development-of-conversational-agents",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Driving the Development of Conversational Agents",
+    "text": "Driving the Development of Conversational Agents\n\nWhat are Multi-Modal AI Models?\n\nAI models that process and integrate multiple types of data, such as text, images, audio, and video.\nExamples include OpenAI’s GPT-4, Google’s Gemini, and DeepMind’s Project Astra.\n\nKey Advantages:\n\nEnhanced Understanding: Ability to comprehend context from multiple data sources simultaneously, improving the accuracy and relevance of responses.\nRicher Interactions: Enables more natural and intuitive interactions by combining visual, auditory, and textual cues.\nBroader Applications: From customer service to personal assistants, these models are making AI interactions more versatile and effective."
   },
   {
-    "objectID": "slides/rag-part1/index.html#comparison-with-other-optimization-methods",
-    "href": "slides/rag-part1/index.html#comparison-with-other-optimization-methods",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Comparison with other optimization methods",
-    "text": "Comparison with other optimization methods\n\nGao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997."
+    "objectID": "slides/fall24_references/index.html#driving-the-development-of-conversational-agents-1",
+    "href": "slides/fall24_references/index.html#driving-the-development-of-conversational-agents-1",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Driving the Development of Conversational Agents",
+    "text": "Driving the Development of Conversational Agents\n\nImpact on Conversational Agents:\n\nImproved Contextual Awareness: Agents can better understand user needs by interpreting a broader range of input signals.\nGreater Personalization: Tailors interactions to individual users by understanding nuances in visual and audio inputs.\nAdvanced Capabilities: Supports complex tasks such as visual question answering, interactive storytelling, and multimodal search."
   },
   {
-    "objectID": "slides/rag-part1/index.html#llms-and-trusted-ai",
-    "href": "slides/rag-part1/index.html#llms-and-trusted-ai",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "LLMs and Trusted AI",
-    "text": "LLMs and Trusted AI\n\nSun, Lichao, Yue Huang, Haoran Wang, Siyuan Wu, Qihui Zhang, Chujie Gao, Yixin Huang, et al. 2024. “TrustLLM: Trustworthiness in Large Language Models.” arXiv. http://arxiv.org/abs/2401.05561."
+    "objectID": "slides/fall24_references/index.html#driving-the-development-of-conversational-agents-2",
+    "href": "slides/fall24_references/index.html#driving-the-development-of-conversational-agents-2",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Driving the Development of Conversational Agents",
+    "text": "Driving the Development of Conversational Agents\n\nExamples and Applications:\n\nVirtual Assistants: Google Assistant and Amazon Alexa integrating voice and image recognition for smart home management.\nCustomer Service: Chatbots that can handle text and visual content, enhancing user experience in e-commerce and tech support.\n\nFuture Directions:\n\nOngoing research aims to further refine these models, making them more efficient and capable of real-time, multimodal interactions.\nPotential for applications in areas like education, healthcare, and entertainment where diverse data types are crucial."
   },
   {
-    "objectID": "slides/rag-part1/index.html#graph-based-vector-retrieval",
-    "href": "slides/rag-part1/index.html#graph-based-vector-retrieval",
-    "title": "Retrieval Augmented Generation – Part 1",
-    "section": "Graph Based Vector Retrieval",
-    "text": "Graph Based Vector Retrieval\n\nNeo4j Ontology Vectors"
+    "objectID": "slides/fall24_references/index.html#mistral-pixtral-12b",
+    "href": "slides/fall24_references/index.html#mistral-pixtral-12b",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Mistral Pixtral 12B",
+    "text": "Mistral Pixtral 12B\n\nMistral releases Pixtral 12B, its first multimodal model"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#overview-of-pixtral-12b",
+    "href": "slides/fall24_references/index.html#overview-of-pixtral-12b",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Overview of Pixtral 12B",
+    "text": "Overview of Pixtral 12B\n\nIntroduction:\n\nMistral’s first multimodal AI model, capable of processing both text and images.\nBuilt on the Nemo 12B text model with an additional 400 million-parameter vision adapter.\n\nCapabilities:\n\nPerforms tasks such as image captioning, object counting, and answering image-related queries.\nVision encoding allows the model to “see” and process visual data alongside textual inputs."
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#overview-of-pixtral-12b-1",
+    "href": "slides/fall24_references/index.html#overview-of-pixtral-12b-1",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Overview of Pixtral 12B",
+    "text": "Overview of Pixtral 12B\n\nOpen Weights and Accessibility:\n\nModel parameters and code are available on GitHub and Hugging Face.\nMistral is considering making Pixtral 12B available under an open-source license to encourage wider use and development.\n\nImpact:\n\nProvides a competitive alternative to models from OpenAI, Google, and other leading AI developers.\nEncourages the development of applications requiring both visual and textual data processing."
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#google-gemma",
+    "href": "slides/fall24_references/index.html#google-gemma",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Google Gemma",
+    "text": "Google Gemma"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#agentic-patterns-and-workflows",
+    "href": "slides/fall24_references/index.html#agentic-patterns-and-workflows",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Agentic Patterns and Workflows",
+    "text": "Agentic Patterns and Workflows"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#generative-agents",
+    "href": "slides/fall24_references/index.html#generative-agents",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Generative Agents",
+    "text": "Generative Agents\n\nGenerative Agents: Interactive Simulacra of Human Behavior\nGoogle Illuminate AI Discussion"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#llms-based-autonomous-agents",
+    "href": "slides/fall24_references/index.html#llms-based-autonomous-agents",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "LLMs Based Autonomous Agents",
+    "text": "LLMs Based Autonomous Agents\n\nWang, Lei, Chen Ma, Xueyang Feng, Zeyu Zhang, Hao Yang, Jingsen Zhang, Zhiyuan Chen, et al. 2024. “A Survey on Large Language Model Based Autonomous Agents.” Frontiers of Computer Science 18 (6): 186345. https://doi.org/10.1007/s11704-024-40231-1.\nGoogle Illuminate AI Discussion"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#andrew-ngs-contributions-to-agentic-ai",
+    "href": "slides/fall24_references/index.html#andrew-ngs-contributions-to-agentic-ai",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Andrew Ng’s Contributions to Agentic AI",
+    "text": "Andrew Ng’s Contributions to Agentic AI\n\nWhat’s next for AI agentic workflows ft. Andrew Ng of AI Fund"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#andrew-ngs-contributions-to-agentic-ai-1",
+    "href": "slides/fall24_references/index.html#andrew-ngs-contributions-to-agentic-ai-1",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Andrew Ng’s Contributions to Agentic AI",
+    "text": "Andrew Ng’s Contributions to Agentic AI\n\nCore Design Patterns:\n\nReflection: Agents improve by critiquing their own outputs and iterating.\nTool Use: Integration of external tools for enhanced task performance.\nPlanning: Agents develop and follow strategic plans to achieve goals.\nMulti-agent Collaboration: Systems of agents working together to solve complex problems.\n\nImpact:\n\nEnhanced robustness and adaptability of AI systems.\nFacilitates more effective problem-solving in dynamic environments."
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#agentic-workflows-in-2024-the-ultimate-guide",
+    "href": "slides/fall24_references/index.html#agentic-workflows-in-2024-the-ultimate-guide",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Agentic Workflows in 2024: The ultimate guide",
+    "text": "Agentic Workflows in 2024: The ultimate guide\n\nAgentic Workflows in 2024: The ultimate guide"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#enhancing-retrieval-with-graph-based-models",
+    "href": "slides/fall24_references/index.html#enhancing-retrieval-with-graph-based-models",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Enhancing Retrieval with Graph-Based Models",
+    "text": "Enhancing Retrieval with Graph-Based Models\n\nGraphRAG by Microsoft Research:\n\nCombines knowledge graphs with Retrieval-Augmented Generation (RAG).\nUses structured data to improve retrieval accuracy and contextual relevance.\n\nKey Features:\n\nWhole-Data Reasoning: Enables summarization and extraction of key themes from large datasets.\nProvenance Tracking: Provides sources and grounding for AI-generated responses.\n\nBenefits:\n\nImproved trust and verification in AI outputs.\nApplicable in fields like data analysis, content generation, and decision support."
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#advances-in-graphrag",
+    "href": "slides/fall24_references/index.html#advances-in-graphrag",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Advances in GraphRAG",
+    "text": "Advances in GraphRAG\n\nPeng, Boci, Yun Zhu, Yongchao Liu, Xiaohe Bo, Haizhou Shi, Chuntao Hong, Yan Zhang, and Siliang Tang. 2024. “Graph Retrieval-Augmented Generation: A Survey.” arXiv. http://arxiv.org/abs/2408.08921.\nGoogle Illuminate Microsoft GraphRAG Paper"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#hipporag",
+    "href": "slides/fall24_references/index.html#hipporag",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "HippoRAG",
+    "text": "HippoRAG\n\nGutiérrez, Bernal Jiménez, Yiheng Shu, Yu Gu, Michihiro Yasunaga, and Yu Su. 2024. “HippoRAG: Neurobiologically Inspired Long-Term Memory for Large Language Models.” arXiv. https://doi.org/10.48550/arXiv.2405.14831.\nGoogle Illuminate"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#hipporag-enhanced-memory-integration-for-ai",
+    "href": "slides/fall24_references/index.html#hipporag-enhanced-memory-integration-for-ai",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "HippoRAG: Enhanced Memory Integration for AI",
+    "text": "HippoRAG: Enhanced Memory Integration for AI\n\nOverview:\n\nInspired by the hippocampal indexing theory of human memory.\nCombines LLMs with knowledge graphs for enhanced information retrieval.\n\nMethodology:\n\nOffline Indexing: Creates a hippocampal-like index using LLMs.\nOnline Retrieval: Uses Personalized PageRank to link queries to relevant knowledge nodes.\n\nPerformance:\n\nOutperforms traditional retrieval methods in multi-hop question answering.\nMore efficient, faster, and cost-effective than existing iterative retrieval techniques."
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#sciagents-automating-scientific-discovery-the-ograg",
+    "href": "slides/fall24_references/index.html#sciagents-automating-scientific-discovery-the-ograg",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "SciAgents: Automating Scientific Discovery (“The OGRag”)",
+    "text": "SciAgents: Automating Scientific Discovery (“The OGRag”)\n\nGhafarollahi, Alireza, and Markus J. Buehler. 2024. “SciAgents: Automating Scientific Discovery through Multi-Agent Intelligent Graph Reasoning.” arXiv. http://arxiv.org/abs/2409.05556.\nGoogle Illuminate"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#sciagents-multi-agent-intelligent-graph-reasoning",
+    "href": "slides/fall24_references/index.html#sciagents-multi-agent-intelligent-graph-reasoning",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "SciAgents Multi-Agent Intelligent Graph Reasoning",
+    "text": "SciAgents Multi-Agent Intelligent Graph Reasoning\n\nIntroduction to SciAgents:\n\nUses ontological knowledge graphs and multi-agent systems.\nDesigned to explore novel domains and discover hidden interdisciplinary connections.\n\nKey Capabilities:\n\nAutonomous generation and refinement of research hypotheses.\nIntegration of up-to-date scientific data and critique of existing theories.\n\nCase Studies:\n\nDemonstrated success in biologically inspired materials research.\nPotential to accelerate scientific discovery across various domains."
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#summary-and-qa",
+    "href": "slides/fall24_references/index.html#summary-and-qa",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Summary and Q&A",
+    "text": "Summary and Q&A\n\nKey Takeaways:\n\nSignificant advancements in agent-based AI and retrieval models.\nInnovative frameworks like SciAgents and HiPPO-REG are pushing the boundaries of what’s possible.\nThe integration of ontological knowledge graphs and neurobiologically inspired designs shows great promise.\n\nDiscussion:\n\nOpen floor for questions, feedback, and further discussion.\nUpcoming resources and events related to the topics discussed.\n\nThank you for your attention!\n\n\n\n\n\nhttps://la3d.github.io/nuggets/\n\n\n\n\n\n\n\n \n\n\nLaboratory for Assured AI Application Development (LA3D)"
   },
   {
     "objectID": "slides/hackers/index.html#topics",
@@ -641,7 +753,7 @@
     "href": "slides/hackers/index.html#zotero-setup",
     "title": "H4x0rz GU!dE t0 1lms",
     "section": "Zotero Setup",
-    "text": "Zotero Setup\n\n\n \n\n\n\n\nZotero | Downloads"
+    "text": "Zotero Setup\n\n\n \n\n\n\nZotero | Downloads"
   },
   {
     "objectID": "slides/hackers/index.html#fastai-fastbook-a-production-mindset",
@@ -760,7 +872,7 @@
     "href": "slides/tai-tools/index.html#step-3-go-through-github-skills-introduction-to-github",
     "title": "Tools for Trusted AI",
     "section": "(Step 3) Go through GitHub Skills Introduction to GitHub",
-    "text": "(Step 3) Go through GitHub Skills Introduction to GitHub\n\n\n\nGo Through “First Day on GitHub”\n\nIntroduction to GitHub\nCommunicate using Markdown\nGitHub Pages (We will use this with Quarto)\n\nFirst week on GitHub\n\nReview pull requests\nResolve merge conflicts\nRelease-based workflow\nConnect the dots\nCode with Codespaces\n\n\n\n\n\n\n\nGitHub Skills: https://skills.github.com/"
+    "text": "(Step 3) Go through GitHub Skills Introduction to GitHub\n\n\n\nGo Through “First Day on GitHub”\n\nIntroduction to GitHub\nCommunicate using Markdown\nGitHub Pages (We will use this with Quarto)\n\nFirst week on GitHub\n\nReview pull requests\nResolve merge conflicts\nRelease-based workflow\nConnect the dots\nCode with Codespaces\n\n\n\n\n\n\nGitHub Skills: https://skills.github.com/"
   },
   {
     "objectID": "slides/tai-tools/index.html#ai-and-machine-learning",
@@ -1306,7 +1418,7 @@
     "href": "slides/data-ai/index.html#aside-lessons-from-the-semantic-web",
     "title": "Data Centric AI",
     "section": "Aside: Lessons from the Semantic Web?",
-    "text": "Aside: Lessons from the Semantic Web?\n\n\n\n\n\n\n\n“38971912 · Towards a Framework for Data Excellence in Data-Centric AI: Lessons from the Semantic Web,” SlidesLive. (accessed Sep. 14, 2023)."
+    "text": "Aside: Lessons from the Semantic Web?\n\n\n\n\n\n\n“38971912 · Towards a Framework for Data Excellence in Data-Centric AI: Lessons from the Semantic Web,” SlidesLive. (accessed Sep. 14, 2023)."
   },
   {
     "objectID": "slides/data-ai/index.html#dvc-and-data-centric-ai",
@@ -1334,7 +1446,7 @@
     "href": "slides/data-ai/index.html#ai-testimony-before-us-senate",
     "title": "Data Centric AI",
     "section": "AI Testimony before US Senate",
-    "text": "AI Testimony before US Senate\n\n\n\n\n\n\n\nClement Delangue Senate Statement"
+    "text": "AI Testimony before US Senate\n\n\n\n\n\n\nClement Delangue Senate Statement"
   },
   {
     "objectID": "slides/data-ai/index.html#dvc-and-huggingface-integration-team-frameworks-peter",
@@ -1376,7 +1488,7 @@
     "href": "slides/data-ai/index.html#llama-open-and-efficient-foundation-language-models",
     "title": "Data Centric AI",
     "section": "LLama: Open and Efficient Foundation Language Models",
-    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux,Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
+    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux,Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
   },
   {
     "objectID": "slides/data-ai/index.html#gpt-4-sparks-of-agi",
@@ -1439,7 +1551,7 @@
     "href": "slideindex.html",
     "title": "Weekly Nugget Presentations",
     "section": "",
-    "text": "Agentic Workflows for Information Extraction and KG Construction\n\n\n\n\n\n\nAgents\n\n\nAgentic Workflows\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nMay 10, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nAgentic Workflow Design Patterns\n\n\n\n\n\n\nAgents\n\n\nLLMs\n\n\nDesign Patterns\n\n\n\n\n\n\n\n\n\nApr 5, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nRetrieval Augmented Generation – Part 1\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nFeb 9, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nJoint Human-LLM Curation: Crafting Understandable and Relevant AI-Powered Information\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nFeb 2, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nDr V. Holiday 2023 Viewing Guide\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nDec 1, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nReturn of the Nuggets – AI Engineering\n\n\n\n\n\n\nAI Engineering\n\n\nLLMOps\n\n\n\n\n\n\n\n\n\nNov 17, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTowards Trusted LLM based Curator Agents\n\n\n\n\n\n\nLLMs\n\n\nAgents\n\n\nKnowledge Graphs\n\n\n\n\n\n\n\n\n\nOct 27, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nH4x0rz GU!dE t0 1lms\n\n\n\n\n\n\nLLMs\n\n\nTools\n\n\n\n\n\n\n\n\n\nOct 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nData Centric AI\n\n\n\n\n\n\nTrustedAI\n\n\nData Centric AI\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTools for Trusted AI\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nKG Construction\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
+    "text": "Advances in Agent-Based Big AI\n\n\nNuggets from the Summer\n\n\n\nAgents\n\n\nAgentic Workflows\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nSep 13, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nAgentic Workflow Design Patterns\n\n\n\n\n\n\nAgents\n\n\nLLMs\n\n\nDesign Patterns\n\n\n\n\n\n\n\n\n\nApr 5, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nRetrieval Augmented Generation – Part 1\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nFeb 9, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nJoint Human-LLM Curation: Crafting Understandable and Relevant AI-Powered Information\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nFeb 2, 2024\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nDr V. Holiday 2023 Viewing Guide\n\n\n\n\n\n\nLLMs\n\n\nTrustedAI\n\n\n\n\n\n\n\n\n\nDec 1, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nReturn of the Nuggets – AI Engineering\n\n\n\n\n\n\nAI Engineering\n\n\nLLMOps\n\n\n\n\n\n\n\n\n\nNov 17, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTowards Trusted LLM based Curator Agents\n\n\n\n\n\n\nLLMs\n\n\nAgents\n\n\nKnowledge Graphs\n\n\n\n\n\n\n\n\n\nOct 27, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nH4x0rz GU!dE t0 1lms\n\n\n\n\n\n\nLLMs\n\n\nTools\n\n\n\n\n\n\n\n\n\nOct 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nData Centric AI\n\n\n\n\n\n\nTrustedAI\n\n\nData Centric AI\n\n\n\n\n\n\n\n\n\nSep 15, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTools for Trusted AI\n\n\n\n\n\n\nTools\n\n\nFrameworks\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding “Stuff”?\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\nDevelopment\n\n\n\n\n\n\n\n\n\nSep 5, 2023\n\n\nCharles F. Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nA Summer of Nuggets\n\n\n\n\n\n\nnuggets\n\n\ntrustedAI\n\n\nLLMs\n\n\n\n\n\n\n\n\n\nAug 28, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nWhat Dr. Vardeman is worried about: Trusted cognitive Agents\n\n\n\n\n\n\nAgents\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 21, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nThings that concern Dr. Vardeman: Testing\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\nTesting\n\n\n\n\n\n\n\n\n\nAug 7, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nKG Construction\n\n\n\n\n\n\nKnowledge Engineering\n\n\nKG Construction\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 4, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\n\n\n\n\n\n\nTrust and Causal Reasoning\n\n\n\n\n\n\nframeworks\n\n\ntrustedAI\n\n\n\n\n\n\n\n\n\nAug 1, 2023\n\n\nCharles F Vardeman II\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -1971,7 +2083,7 @@
     "href": "slides/ai-curators/index.html#starting-with-a-csv-navy-maintenance-data",
     "title": "Towards Trusted LLM based Curator Agents",
     "section": "Starting with a CSV (Navy Maintenance Data)",
-    "text": "Starting with a CSV (Navy Maintenance Data)\n\n\n\n\n\n\n\nKorini, Keti, and Christian Bizer. 2023. “Column Type Annotation Using ChatGPT.” arXiv. http://arxiv.org/abs/2306.00745."
+    "text": "Starting with a CSV (Navy Maintenance Data)\n\n\n\n\n\n\nKorini, Keti, and Christian Bizer. 2023. “Column Type Annotation Using ChatGPT.” arXiv. http://arxiv.org/abs/2306.00745."
   },
   {
     "objectID": "slides/ai-curators/index.html#context-matters",
@@ -2440,7 +2552,7 @@
     "href": "slides/building_stuff/index.html#open-source-community",
     "title": "Building “Stuff”?",
     "section": "Open Source Community",
-    "text": "Open Source Community\n\n\n\n\n\n\n\n\nMatt Bronstein and Rajko Radovanovic, “Supporting the Open Source AI Community,”\nAndreessen Horowitz, Aug. 30, 2023.\nhttp://tiny.cc/uflavz (accessed Sep. 03, 2023)."
+    "text": "Open Source Community\n\n\n\n\n\n\n\nMatt Bronstein and Rajko Radovanovic, “Supporting the Open Source AI Community,”\nAndreessen Horowitz, Aug. 30, 2023.\nhttp://tiny.cc/uflavz (accessed Sep. 03, 2023)."
   },
   {
     "objectID": "slides/building_stuff/index.html#on-to-the-first-steps-to-building-llm-based-applications",
@@ -2555,193 +2667,270 @@
     "text": "Amazon Science KGQA\n\n\nWebsite: Language models as controlled natural language semantic parsers for knowledge graph question answering GitHub: Language Models as Controlled Natural Language Semantic Parsers for Knowledge Graph Question Answering"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#goal-to-help-prepare-you-for-those-difficult-holiday-conversations",
-    "href": "slides/holiday_2023/index.html#goal-to-help-prepare-you-for-those-difficult-holiday-conversations",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Goal: To help prepare you for those difficult holiday conversations…",
-    "text": "Goal: To help prepare you for those difficult holiday conversations…"
+    "objectID": "slides/rag-part1/index.html#hypothesis-retrieval-augmented-generation-requires-curation",
+    "href": "slides/rag-part1/index.html#hypothesis-retrieval-augmented-generation-requires-curation",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Hypothesis: Retrieval Augmented Generation Requires Curation",
+    "text": "Hypothesis: Retrieval Augmented Generation Requires Curation"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#like-how-does-chatgpt-work",
-    "href": "slides/holiday_2023/index.html#like-how-does-chatgpt-work",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Like: How does ChatGPT work?",
-    "text": "Like: How does ChatGPT work?"
+    "objectID": "slides/rag-part1/index.html#knowledge-engineering-using-large-language-models",
+    "href": "slides/rag-part1/index.html#knowledge-engineering-using-large-language-models",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Knowledge Engineering Using Large Language Models",
+    "text": "Knowledge Engineering Using Large Language Models\n\nAllen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#karpathy-the-busy-persons-intro-to-llms",
-    "href": "slides/holiday_2023/index.html#karpathy-the-busy-persons-intro-to-llms",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Karpathy: The busy person’s intro to LLMs",
-    "text": "Karpathy: The busy person’s intro to LLMs\n\nKarpathy LLM: YouTube LinkReading List For Andrej Karpathy’s “Intro to Large Language Models” Video"
+    "objectID": "slides/rag-part1/index.html#prompt-engineering-as-knowledge-engineering",
+    "href": "slides/rag-part1/index.html#prompt-engineering-as-knowledge-engineering",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Prompt Engineering as Knowledge Engineering",
+    "text": "Prompt Engineering as Knowledge Engineering\n\nAllen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#pay-attention-to-the-section-on-llm-security-at-the-end-of-the-talk.",
-    "href": "slides/holiday_2023/index.html#pay-attention-to-the-section-on-llm-security-at-the-end-of-the-talk.",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Pay attention to the section on LLM security at the end of the talk.",
-    "text": "Pay attention to the section on LLM security at the end of the talk."
+    "objectID": "slides/rag-part1/index.html#knowledge-engineering-practice",
+    "href": "slides/rag-part1/index.html#knowledge-engineering-practice",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Knowledge Engineering Practice",
+    "text": "Knowledge Engineering Practice\n\nAllen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#making-llms-uncool-language-warning",
-    "href": "slides/holiday_2023/index.html#making-llms-uncool-language-warning",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Making LLMs “uncool” (Language Warning)",
-    "text": "Making LLMs “uncool” (Language Warning)\n\nMaking Large Language Models Uncool Again: Youtube"
+    "objectID": "slides/rag-part1/index.html#trusted-ai-llms-and-ke",
+    "href": "slides/rag-part1/index.html#trusted-ai-llms-and-ke",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Trusted AI, LLMs and KE",
+    "text": "Trusted AI, LLMs and KE\n\nAllen, Bradley P, Lise Stork, and Paul Groth. 2023. “Knowledge Engineering Using Large Language Models.” arXiv.Org. October 1, 2023. https://arxiv.org/abs/2310.00637"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#uncool-takeaways",
-    "href": "slides/holiday_2023/index.html#uncool-takeaways",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Uncool “takeaways”",
-    "text": "Uncool “takeaways”\n\n~30b parameter models a missed opportunity\nWe are “fine-tuning” wrong\nUncertainty future directions for small (fine-tuned) vs large (API) models\nLLM architecture not the path to AG(S)I"
+    "objectID": "slides/rag-part1/index.html#retrieval-augmented-generation-for-large-language-models-a-survey",
+    "href": "slides/rag-part1/index.html#retrieval-augmented-generation-for-large-language-models-a-survey",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Retrieval-Augmented Generation for Large Language Models: A Survey",
+    "text": "Retrieval-Augmented Generation for Large Language Models: A Survey\n\nGao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997."
   },
   {
-    "objectID": "slides/holiday_2023/index.html#deep-dive-into-understanding-llms",
-    "href": "slides/holiday_2023/index.html#deep-dive-into-understanding-llms",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Deep dive into understanding LLMs",
-    "text": "Deep dive into understanding LLMs\n\nWhat is ChatGPT doing…and why does it work? Youtube"
+    "objectID": "slides/rag-part1/index.html#sparse-and-dense-representations",
+    "href": "slides/rag-part1/index.html#sparse-and-dense-representations",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Sparse and Dense Representations",
+    "text": "Sparse and Dense Representations\n\nPaco Nathan, 2021, “Thinking Sparse and Dense”"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#ai-engineering",
-    "href": "slides/holiday_2023/index.html#ai-engineering",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "AI Engineering",
-    "text": "AI Engineering"
+    "objectID": "slides/rag-part1/index.html#retrieval-augmented-generation-the-idea",
+    "href": "slides/rag-part1/index.html#retrieval-augmented-generation-the-idea",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Retrieval Augmented Generation – The Idea",
+    "text": "Retrieval Augmented Generation – The Idea\n\nGao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997."
   },
   {
-    "objectID": "slides/holiday_2023/index.html#openai-dev-day-llm-performance-talk",
-    "href": "slides/holiday_2023/index.html#openai-dev-day-llm-performance-talk",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "OpenAI Dev Day LLM Performance Talk",
-    "text": "OpenAI Dev Day LLM Performance Talk\n\n\n\n\nA Survey of Techniques for Maximizing LLM Performance"
+    "objectID": "slides/rag-part1/index.html#naive-rag",
+    "href": "slides/rag-part1/index.html#naive-rag",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Naive RAG",
+    "text": "Naive RAG\n\nIndexing\n\nData Indexing: Cleaning and extracting data from PDF, HTML, Word, Markdown, Images\nChunking: Dividing text into smaller chunks for LLM limited context window\nEmbedding and Creating Index: Encoding text/images into vectors through a language model\n\nRetrieve: Given a user input, retrieve relevant information\nGeneration: The user query to the LLM and related documents from retrieval are combined into a new prompt. The LLM generates a response based on this new context window."
   },
   {
-    "objectID": "slides/holiday_2023/index.html#techniques-for-increasing-llm-performance",
-    "href": "slides/holiday_2023/index.html#techniques-for-increasing-llm-performance",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Techniques for increasing LLM Performance",
-    "text": "Techniques for increasing LLM Performance"
+    "objectID": "slides/rag-part1/index.html#naive-rag-architecture",
+    "href": "slides/rag-part1/index.html#naive-rag-architecture",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Naive RAG Architecture",
+    "text": "Naive RAG Architecture\n\nLangchain Q&A with RAG"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#patterns-for-ai-engineering",
-    "href": "slides/holiday_2023/index.html#patterns-for-ai-engineering",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Patterns for AI Engineering",
-    "text": "Patterns for AI Engineering\n\nBuilding Blocks for LLM Systems & Products: Eugene YanPatterns for Building LLM-based Systems & Products"
+    "objectID": "slides/rag-part1/index.html#some-text",
+    "href": "slides/rag-part1/index.html#some-text",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Some text",
+    "text": "Some text\n\n\nDoD must accelerate its progress towards becoming a data-centric organization. DoD has lacked the enterprise data management to ensure that trusted, critical data is widely available to or accessible by mission commanders, warfighters, decision-makers, and mission partners in a real- time, useable, secure, and linked manner. This limits data-driven decisions and insights, which hinders the execution of swift and appropriate action.\n\nAdditionally, DoD software and hardware systems must be designed, procured, tested, upgraded, operated, and sustained with data interoperability as a key requirement. All too often these gaps are bridged with unnecessary human-machine interfaces that introduce complexity, delay, and increased risk of error. This constrains the Department’s ability to operate against threats at\nmachine speed across all domains.\n\nDoD also must improve skills in data fields necessary for effective data management. The Department must broaden efforts to assess our current talent, recruit new data experts, and retain our developing force while establishing policies to ensure that data talent is cultivated. We must also spend the time to increase the data acumen resident across the workforce and find optimal ways to promote a culture of data awareness."
   },
   {
-    "objectID": "slides/holiday_2023/index.html#rag-in-production",
-    "href": "slides/holiday_2023/index.html#rag-in-production",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "RAG in Production",
-    "text": "RAG in Production\n\nBuilding Production-Ready RAG Applications: Jerry Liu"
+    "objectID": "slides/rag-part1/index.html#chunking",
+    "href": "slides/rag-part1/index.html#chunking",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "“Chunking”",
+    "text": "“Chunking”\n\n“Chunkviz”"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#the-need-for-guardrails",
-    "href": "slides/holiday_2023/index.html#the-need-for-guardrails",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "The need for “Guardrails”",
-    "text": "The need for “Guardrails”\n\nTrust, but Verify: Shreya Rajpal"
+    "objectID": "slides/rag-part1/index.html#chunking-with-overlap",
+    "href": "slides/rag-part1/index.html#chunking-with-overlap",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "“Chunking” with Overlap",
+    "text": "“Chunking” with Overlap\n\n“Chunkviz”"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#a-firewall-for-your-llm",
-    "href": "slides/holiday_2023/index.html#a-firewall-for-your-llm",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "A “firewall” for your LLM",
-    "text": "A “firewall” for your LLM\n\nTrust, but Verify: Shreya Rajpal"
+    "objectID": "slides/rag-part1/index.html#smarter-chunking",
+    "href": "slides/rag-part1/index.html#smarter-chunking",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Smarter “Chunking”",
+    "text": "Smarter “Chunking”\n\nLangChain - Recursively Split by Character"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#nuggets-for-the-week",
-    "href": "slides/holiday_2023/index.html#nuggets-for-the-week",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Nuggets for the week…",
-    "text": "Nuggets for the week…"
+    "objectID": "slides/rag-part1/index.html#chunking-recursive-character-splitter",
+    "href": "slides/rag-part1/index.html#chunking-recursive-character-splitter",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "“Chunking” recursive character splitter",
+    "text": "“Chunking” recursive character splitter\n\n“Chunkviz”"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#one-year-of-chatgpt",
-    "href": "slides/holiday_2023/index.html#one-year-of-chatgpt",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "One Year of ChatGPT!",
-    "text": "One Year of ChatGPT!\n\nChen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. http://arxiv.org/abs/2311.16989."
+    "objectID": "slides/rag-part1/index.html#chunking-with-larger-segment-size",
+    "href": "slides/rag-part1/index.html#chunking-with-larger-segment-size",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "“Chunking” with larger segment size",
+    "text": "“Chunking” with larger segment size\n\n“Chunkviz”"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#llm-capabilities",
-    "href": "slides/holiday_2023/index.html#llm-capabilities",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "LLM Capabilities",
-    "text": "LLM Capabilities\n\nChen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. http://arxiv.org/abs/2311.16989."
+    "objectID": "slides/rag-part1/index.html#vector-indexing-of-the-chunks",
+    "href": "slides/rag-part1/index.html#vector-indexing-of-the-chunks",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Vector Indexing of the “Chunks”",
+    "text": "Vector Indexing of the “Chunks”\n\nfrom langchain_community.embeddings import FakeEmbeddings\nembeddings = FakeEmbeddings(size=1352)\nquery_result = embeddings.embed_query(dod_text)\nprint(dod_text[:5])\nquery_result[:5]\n\nDoD m\n\n\n\n\n[0.28925496400357076,\n 0.42954295410387294,\n -0.75042013219397,\n -0.21105104953004536,\n -0.655199848252018]\n\n\nFigure 1: Vector representation of the text"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#agent-capabilities",
-    "href": "slides/holiday_2023/index.html#agent-capabilities",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Agent Capabilities",
-    "text": "Agent Capabilities\n\nChen, Hailin, Fangkai Jiao, Xingxuan Li, Chengwei Qin, Mathieu Ravaut, Ruochen Zhao, Caiming Xiong, and Shafiq Joty. 2023. “ChatGPT’s One-Year Anniversary: Are Open-Source Large Language Models Catching Up?” arXiv. http://arxiv.org/abs/2311.16989."
+    "objectID": "slides/rag-part1/index.html#failure-points-for-rag",
+    "href": "slides/rag-part1/index.html#failure-points-for-rag",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Failure points for RAG",
+    "text": "Failure points for RAG\n\nBarnett, Scott, Stefanus Kurniawan, Srikanth Thudumu, Zach Brannelly, and Mohamed Abdelrazek. 2024. “Seven Failure Points When Engineering a Retrieval Augmented Generation System.”"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#model-consistency",
-    "href": "slides/holiday_2023/index.html#model-consistency",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Model Consistency",
-    "text": "Model Consistency\n\nChen, Lingjiao, Matei Zaharia, and James Zou. 2023. “How Is ChatGPT’s Behavior Changing over Time?” arXiv. https://doi.org/10.48550/arXiv.2307.09009."
+    "objectID": "slides/rag-part1/index.html#problem-a-global-constant-for-chunk-size-doesnt-take-into-account-the-semantic-structure-of-a-document.",
+    "href": "slides/rag-part1/index.html#problem-a-global-constant-for-chunk-size-doesnt-take-into-account-the-semantic-structure-of-a-document.",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Problem: A global constant for Chunk Size doesn’t take into account the semantic structure of a document.",
+    "text": "Problem: A global constant for Chunk Size doesn’t take into account the semantic structure of a document."
   },
   {
-    "objectID": "slides/holiday_2023/index.html#model-consistency-over-time",
-    "href": "slides/holiday_2023/index.html#model-consistency-over-time",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Model Consistency over time",
-    "text": "Model Consistency over time\n\nChen, Lingjiao, Matei Zaharia, and James Zou. 2023. “How Is ChatGPT’s Behavior Changing over Time?” arXiv. https://doi.org/10.48550/arXiv.2307.09009."
+    "objectID": "slides/rag-part1/index.html#agentic-chunking",
+    "href": "slides/rag-part1/index.html#agentic-chunking",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "“Agentic” Chunking",
+    "text": "“Agentic” Chunking\n\nLangChain on X: Proposition-Based Retrieval"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#mixture-of-experts-moe",
-    "href": "slides/holiday_2023/index.html#mixture-of-experts-moe",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Mixture of Experts (MoE)",
-    "text": "Mixture of Experts (MoE)"
+    "objectID": "slides/rag-part1/index.html#agentic-example-proposition-based-dense-retrieval",
+    "href": "slides/rag-part1/index.html#agentic-example-proposition-based-dense-retrieval",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Agentic Example: Proposition Based Dense Retrieval",
+    "text": "Agentic Example: Proposition Based Dense Retrieval\n\nChen, Tong, Hongwei Wang, Sihao Chen, Wenhao Yu, Kaixin Ma, Xinran Zhao, Hongming Zhang, and Dong Yu. 2023. “Dense X Retrieval: What Retrieval Granularity Should We Use?” arXiv.Org. December 11, 2023. https://arxiv.org/abs/2312.06648v2."
   },
   {
-    "objectID": "slides/holiday_2023/index.html#moe",
-    "href": "slides/holiday_2023/index.html#moe",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "MoE",
-    "text": "MoE"
+    "objectID": "slides/rag-part1/index.html#rag-complexity-overview",
+    "href": "slides/rag-part1/index.html#rag-complexity-overview",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "RAG Complexity Overview",
+    "text": "RAG Complexity Overview\n\nGao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997."
   },
   {
-    "objectID": "slides/holiday_2023/index.html#agent-memory",
-    "href": "slides/holiday_2023/index.html#agent-memory",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Agent Memory",
-    "text": "Agent Memory\n\nAdding Long Term Memory to OpenGPTs"
+    "objectID": "slides/rag-part1/index.html#comparison-with-other-optimization-methods",
+    "href": "slides/rag-part1/index.html#comparison-with-other-optimization-methods",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Comparison with other optimization methods",
+    "text": "Comparison with other optimization methods\n\nGao, Yunfan, Yun Xiong, Xinyu Gao, Kangxiang Jia, Jinliu Pan, Yuxi Bi, Yi Dai, et al. 2024. “Retrieval-Augmented Generation for Large Language Models: A Survey.” arXiv. https://doi.org/10.48550/arXiv.2312.10997."
   },
   {
-    "objectID": "slides/holiday_2023/index.html#long-term-memory",
-    "href": "slides/holiday_2023/index.html#long-term-memory",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Long Term Memory",
-    "text": "Long Term Memory\n\nAdding Long Term Memory to OpenGPTs"
+    "objectID": "slides/rag-part1/index.html#llms-and-trusted-ai",
+    "href": "slides/rag-part1/index.html#llms-and-trusted-ai",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "LLMs and Trusted AI",
+    "text": "LLMs and Trusted AI\n\nSun, Lichao, Yue Huang, Haoran Wang, Siyuan Wu, Qihui Zhang, Chujie Gao, Yixin Huang, et al. 2024. “TrustLLM: Trustworthiness in Large Language Models.” arXiv. http://arxiv.org/abs/2401.05561."
   },
   {
-    "objectID": "slides/holiday_2023/index.html#determinism-vs-stochasticity",
-    "href": "slides/holiday_2023/index.html#determinism-vs-stochasticity",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "Determinism vs Stochasticity?",
-    "text": "Determinism vs Stochasticity?\n\nDeterminism through RAG and Tool use\nTool code created by LLM based Co-pilots or Agents\nWhat “Programming Language” should we use for the deterministic part?\nWe don’t have an integrated paradigm for what “systems engineering” means in a age of AIs"
+    "objectID": "slides/rag-part1/index.html#graph-based-vector-retrieval",
+    "href": "slides/rag-part1/index.html#graph-based-vector-retrieval",
+    "title": "Retrieval Augmented Generation – Part 1",
+    "section": "Graph Based Vector Retrieval",
+    "text": "Graph Based Vector Retrieval\n\nNeo4j Ontology Vectors"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#for-after-christmas",
-    "href": "slides/holiday_2023/index.html#for-after-christmas",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "For after Christmas…",
-    "text": "For after Christmas…"
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
+    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
   },
   {
-    "objectID": "slides/holiday_2023/index.html#the-end-of-programming",
-    "href": "slides/holiday_2023/index.html#the-end-of-programming",
-    "title": "Dr V. Holiday 2023 Viewing Guide",
-    "section": "The end of Programming?",
-    "text": "The end of Programming?\n\n\n\nLarge Language Models and The End of Programming - CS50 Tech Talk with Dr. Matt Welsh"
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-ml-website",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned ML Website",
+    "text": "Towards Trustworthy and Aligned ML Website\n\n\nTowards Trustworthy and Aligned ML"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
+    "href": "slides/trust-causal/index.html#towards-trustworthy-and-aligned-machine-learning-a-data-centric-survey-with-causality-perspectives-1",
+    "title": "Trust and Causal Reasoning",
+    "section": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives",
+    "text": "Towards Trustworthy and Aligned Machine Learning: A Data-centric Survey with Causality Perspectives\n\n\nLearn more: ArXiv Paper"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#causal-reasoning",
+    "href": "slides/trust-causal/index.html#causal-reasoning",
+    "title": "Trust and Causal Reasoning",
+    "section": "Causal Reasoning",
+    "text": "Causal Reasoning\n\n\nLearn more: Amazon Book of Why"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
+    "href": "slides/trust-causal/index.html#trustworthy-ml-initiative-trustml",
+    "title": "Trust and Causal Reasoning",
+    "section": "Trustworthy ML Initiative (TrustML)",
+    "text": "Trustworthy ML Initiative (TrustML)\n\n\nLearn more: Trustworthy ML Org"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
+    "href": "slides/trust-causal/index.html#gorilla-api-to-ground-tool-use",
+    "title": "Trust and Causal Reasoning",
+    "section": "Gorilla API to Ground “Tool Use”",
+    "text": "Gorilla API to Ground “Tool Use”\n\n\nLearn more: Gorilla: Large Language Model Connected with Massive APIs"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#llama2-accessory",
+    "href": "slides/trust-causal/index.html#llama2-accessory",
+    "title": "Trust and Causal Reasoning",
+    "section": "LLaMA2-Accessory",
+    "text": "LLaMA2-Accessory\n\n\nLearn more: LLaMA2-Accessory"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#multilingual-token-analysis",
+    "href": "slides/trust-causal/index.html#multilingual-token-analysis",
+    "title": "Trust and Causal Reasoning",
+    "section": "MultiLingual Token Analysis",
+    "text": "MultiLingual Token Analysis\n\n\nLearn more: Video: LLaMA2 Multilingual Models and Fine Tuning\nGoogle Collab Notebook:"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#metaai-dinov2",
+    "href": "slides/trust-causal/index.html#metaai-dinov2",
+    "title": "Trust and Causal Reasoning",
+    "section": "MetaAI DINOv2",
+    "text": "MetaAI DINOv2\n\n\nLearn more: DINOv2 by Meta AI"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
+    "href": "slides/trust-causal/index.html#metaai-dinov2-huggingface-release",
+    "title": "Trust and Causal Reasoning",
+    "section": "MetaAI DINOv2 Huggingface Release",
+    "text": "MetaAI DINOv2 Huggingface Release\n\n\nLearn more: DINOv2 by Meta AI Huggingface"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
+    "href": "slides/trust-causal/index.html#example-notebook-for-dinov2-semantic-segmentation",
+    "title": "Trust and Causal Reasoning",
+    "section": "Example notebook for DINOv2 Semantic Segmentation",
+    "text": "Example notebook for DINOv2 Semantic Segmentation\n\n\nLearn more: Linear probing of DINOv2 for semantic segmentation"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
+    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning",
+    "title": "Trust and Causal Reasoning",
+    "section": "Linear Regression Model for Reasoning",
+    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
+  },
+  {
+    "objectID": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
+    "href": "slides/trust-causal/index.html#linear-regression-model-for-reasoning-1",
+    "title": "Trust and Causal Reasoning",
+    "section": "Linear Regression Model for Reasoning",
+    "text": "Linear Regression Model for Reasoning\n\n\nLearn more: TART: A plug-and-play Transformer module for task-agnostic reasoning"
   },
   {
     "objectID": "slides/nuggets_review/index.html#where-we-started",
@@ -2776,14 +2965,14 @@
     "href": "slides/nuggets_review/index.html#old-school-ai-and-the-web",
     "title": "A Summer of Nuggets",
     "section": "“Old School AI” and the Web…",
-    "text": "“Old School AI” and the Web…\n\n\nA vision of “Ontologies”, “Linked Data”, and “Software Agents”…\n\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
+    "text": "“Old School AI” and the Web…\n\n\nA vision of “Ontologies”, “Linked Data”, and “Software Agents”…\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
   },
   {
     "objectID": "slides/nuggets_review/index.html#old-school-cool-ai-and-the-web-2001",
     "href": "slides/nuggets_review/index.html#old-school-cool-ai-and-the-web-2001",
     "title": "A Summer of Nuggets",
     "section": "Old School “Cool” AI and the Web (2001)…",
-    "text": "Old School “Cool” AI and the Web (2001)…\n\n\nThe semantic web had a vision of Agents with Shared Understanding through Ontologies, the ability to Use Tools Like the Web and Consume a Web of Linked Data as Distibuted Knowledge Graphs.\n\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
+    "text": "Old School “Cool” AI and the Web (2001)…\n\n\nThe semantic web had a vision of Agents with Shared Understanding through Ontologies, the ability to Use Tools Like the Web and Consume a Web of Linked Data as Distibuted Knowledge Graphs.\n\n\n\n\nTim Berners-Lee, James Hendler, and Ora Lassila. “The Semantic Web.” Scientific American 284, no. 5 (2001): 34–43. https://lassila.org/publications/2001/SciAm.html"
   },
   {
     "objectID": "slides/nuggets_review/index.html#whats-an-ontology",
@@ -2797,28 +2986,28 @@
     "href": "slides/nuggets_review/index.html#ontology-design-patterns",
     "title": "A Summer of Nuggets",
     "section": "Ontology Design Patterns",
-    "text": "Ontology Design Patterns\n\n\n\n\n\n\n\n\nEva Blomqvist, Pascal Hitzler, Krzysztof Janowicz, Adila Krisnadhi, Tom Narock, and Monika Solanki. “Considerations Regarding Ontology Design Patterns.” Semantic Web 7, no. 1 (November 10, 2015): 1–7. https://doi.org/10.3233/SW-150202."
+    "text": "Ontology Design Patterns\n\n\n\n\n\n\n\nEva Blomqvist, Pascal Hitzler, Krzysztof Janowicz, Adila Krisnadhi, Tom Narock, and Monika Solanki. “Considerations Regarding Ontology Design Patterns.” Semantic Web 7, no. 1 (November 10, 2015): 1–7. https://doi.org/10.3233/SW-150202."
   },
   {
     "objectID": "slides/nuggets_review/index.html#google-search-and-the-semantic-web",
     "href": "slides/nuggets_review/index.html#google-search-and-the-semantic-web",
     "title": "A Summer of Nuggets",
     "section": "Google Search and the “Semantic Web”",
-    "text": "Google Search and the “Semantic Web”\n\n\n\n\n\n\n\n\nGoogle. “Introducing the Knowledge Graph: Things, Not Strings,” May 16, 2012. https://blog.google/products/search/introducing-knowledge-graph-things-not/.\nGoogle. “A Reintroduction to Our Knowledge Graph and Knowledge Panels,” May 20, 2020. https://blog.google/products/search/about-knowledge-graph-and-knowledge-panels/."
+    "text": "Google Search and the “Semantic Web”\n\n\n\n\n\n\n\nGoogle. “Introducing the Knowledge Graph: Things, Not Strings,” May 16, 2012. https://blog.google/products/search/introducing-knowledge-graph-things-not/.\nGoogle. “A Reintroduction to Our Knowledge Graph and Knowledge Panels,” May 20, 2020. https://blog.google/products/search/about-knowledge-graph-and-knowledge-panels/."
   },
   {
     "objectID": "slides/nuggets_review/index.html#knowledge-graphs",
     "href": "slides/nuggets_review/index.html#knowledge-graphs",
     "title": "A Summer of Nuggets",
     "section": "Knowledge Graphs",
-    "text": "Knowledge Graphs\n\n\n\n\n\n\n\n\nHogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutiérrez, Sabrina Kirrane, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge 22. Springer, 2021. https://doi.org/10.2200/S01125ED1V01Y202109DSK022."
+    "text": "Knowledge Graphs\n\n\n\n\n\n\n\nHogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutiérrez, Sabrina Kirrane, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge 22. Springer, 2021. https://doi.org/10.2200/S01125ED1V01Y202109DSK022."
   },
   {
     "objectID": "slides/nuggets_review/index.html#knowledge-graphs-1",
     "href": "slides/nuggets_review/index.html#knowledge-graphs-1",
     "title": "A Summer of Nuggets",
     "section": "Knowledge Graphs",
-    "text": "Knowledge Graphs\n\n\nWhat’s a Knowledge Graph?\n\n\n\n\n\nHogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutiérrez, Sabrina Kirrane, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge 22. Springer, 2021. https://doi.org/10.2200/S01125ED1V01Y202109DSK022."
+    "text": "Knowledge Graphs\n\n\nWhat’s a Knowledge Graph?\n\n\n\n\nHogan, Aidan, Eva Blomqvist, Michael Cochez, Claudia d’Amato, Gerard de Melo, Claudio Gutiérrez, Sabrina Kirrane, et al. Knowledge Graphs. Synthesis Lectures on Data, Semantics, and Knowledge 22. Springer, 2021. https://doi.org/10.2200/S01125ED1V01Y202109DSK022."
   },
   {
     "objectID": "slides/nuggets_review/index.html#ai-in-2023..",
@@ -2986,28 +3175,28 @@
     "href": "slides/nuggets_review/index.html#llama-open-and-efficient-foundation-language-models",
     "title": "A Summer of Nuggets",
     "section": "LLama: Open and Efficient Foundation Language Models",
-    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
+    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
   },
   {
     "objectID": "slides/nuggets_review/index.html#llama-open-and-efficient-foundation-language-models-1",
     "href": "slides/nuggets_review/index.html#llama-open-and-efficient-foundation-language-models-1",
     "title": "A Summer of Nuggets",
     "section": "LLama: Open and Efficient Foundation Language Models",
-    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
+    "text": "LLama: Open and Efficient Foundation Language Models\n\n\n\n\n\n\n\nTouvron, Hugo, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, et al. “LLaMA: Open and Efficient Foundation Language Models.” arXiv, February 27, 2023. https://doi.org/10.48550/arXiv.2302.13971."
   },
   {
     "objectID": "slides/nuggets_review/index.html#gao-et-al.-the-pile",
     "href": "slides/nuggets_review/index.html#gao-et-al.-the-pile",
     "title": "A Summer of Nuggets",
     "section": "Gao et al. “The Pile”?",
-    "text": "Gao et al. “The Pile”?\n\n\n\n\n \n\n\n\nGao, Leo, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, et al. “The Pile: An 800GB Dataset of Diverse Text for Language Modeling.” arXiv, December 31, 2020. https://doi.org/10.48550/arXiv.2101.00027."
+    "text": "Gao et al. “The Pile”?\n\n\n\n\n \n\n\nGao, Leo, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, et al. “The Pile: An 800GB Dataset of Diverse Text for Language Modeling.” arXiv, December 31, 2020. https://doi.org/10.48550/arXiv.2101.00027."
   },
   {
     "objectID": "slides/nuggets_review/index.html#gao-et-al.-the-pile-1",
     "href": "slides/nuggets_review/index.html#gao-et-al.-the-pile-1",
     "title": "A Summer of Nuggets",
     "section": "Gao et al. “The Pile”?",
-    "text": "Gao et al. “The Pile”?\n\n\n\n\n \n\n\n\nGao, Leo, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, et al. “The Pile: An 800GB Dataset of Diverse Text for Language Modeling.” arXiv, December 31, 2020. https://doi.org/10.48550/arXiv.2101.00027."
+    "text": "Gao et al. “The Pile”?\n\n\n\n\n \n\n\nGao, Leo, Stella Biderman, Sid Black, Laurence Golding, Travis Hoppe, Charles Foster, Jason Phang, et al. “The Pile: An 800GB Dataset of Diverse Text for Language Modeling.” arXiv, December 31, 2020. https://doi.org/10.48550/arXiv.2101.00027."
   },
   {
     "objectID": "slides/nuggets_review/index.html#what-could-go-wrong",
@@ -3028,7 +3217,7 @@
     "href": "slides/nuggets_review/index.html#what-could-go-wrong-2",
     "title": "A Summer of Nuggets",
     "section": "What could go wrong?",
-    "text": "What could go wrong?\n\n\n\n\n“Would I forbid the teaching (if that is the word) of my stories to computers? Not even if I could. I might as well be King Canute, forbidding the tide to come in. Or a Luddite trying to stop industrial progress by hammering a steam loom to pieces.” – Stephen King\n\n\n\nReisner, Alex. “Revealed: The Authors Whose Pirated Books Are Powering Generative AI.” The Atlantic, August 19, 2023. https://www.theatlantic.com/technology/archive/2023/08/books3-ai-meta-llama-pirated-books/675063/.\nKing, Stephen. “Stephen King: My Books Were Used to Train AI.” The Atlantic, August 23, 2023. https://www.theatlantic.com/books/archive/2023/08/stephen-king-books-ai-writing/675088/."
+    "text": "What could go wrong?\n\n\n\n\n“Would I forbid the teaching (if that is the word) of my stories to computers? Not even if I could. I might as well be King Canute, forbidding the tide to come in. Or a Luddite trying to stop industrial progress by hammering a steam loom to pieces.” – Stephen King\n\n\nReisner, Alex. “Revealed: The Authors Whose Pirated Books Are Powering Generative AI.” The Atlantic, August 19, 2023. https://www.theatlantic.com/technology/archive/2023/08/books3-ai-meta-llama-pirated-books/675063/.\nKing, Stephen. “Stephen King: My Books Were Used to Train AI.” The Atlantic, August 23, 2023. https://www.theatlantic.com/books/archive/2023/08/stephen-king-books-ai-writing/675088/."
   },
   {
     "objectID": "slides/nuggets_review/index.html#gpt-3-language-models-are-few-shot-learners-2020",
@@ -3119,7 +3308,7 @@
     "href": "slides/nuggets_review/index.html#claude-foundation-model-in-aws-bedrock",
     "title": "A Summer of Nuggets",
     "section": "(Claude) “Foundation Model in AWS Bedrock”",
-    "text": "(Claude) “Foundation Model in AWS Bedrock”\n\n\n\n\n\n\n\n\nAnthropic. “Claude 2.” Accessed August 28, 2023. https://www.anthropic.com/index/claude-2.\nAnthropic. “Claude 2 on Amazon Bedrock.” Accessed August 28, 2023. https://www.anthropic.com/index/claude-2-amazon-bedrock."
+    "text": "(Claude) “Foundation Model in AWS Bedrock”\n\n\n\n\n\n\n\nAnthropic. “Claude 2.” Accessed August 28, 2023. https://www.anthropic.com/index/claude-2.\nAnthropic. “Claude 2 on Amazon Bedrock.” Accessed August 28, 2023. https://www.anthropic.com/index/claude-2-amazon-bedrock."
   },
   {
     "objectID": "slides/nuggets_review/index.html#llama-2open-license-large-language-models",
@@ -3196,7 +3385,7 @@
     "href": "slides/nuggets_review/index.html#large-language-models-are-semantic-reasoners-1",
     "title": "A Summer of Nuggets",
     "section": "Large Language Models are Semantic Reasoners",
-    "text": "Large Language Models are Semantic Reasoners\n\n\n\n\n\n\n\n\nTang, Xiaojuan, Zilong Zheng, Jiaqi Li, Fanxu Meng, Song-Chun Zhu, Yitao Liang, and Muhan Zhang. “Large Language Models Are In-Context Semantic Reasoners Rather than Symbolic Reasoners.” arXiv, June 8, 2023. http://arxiv.org/abs/2305.14825."
+    "text": "Large Language Models are Semantic Reasoners\n\n\n\n\n\n\n\nTang, Xiaojuan, Zilong Zheng, Jiaqi Li, Fanxu Meng, Song-Chun Zhu, Yitao Liang, and Muhan Zhang. “Large Language Models Are In-Context Semantic Reasoners Rather than Symbolic Reasoners.” arXiv, June 8, 2023. http://arxiv.org/abs/2305.14825."
   },
   {
     "objectID": "slides/nuggets_review/index.html#our-research",
