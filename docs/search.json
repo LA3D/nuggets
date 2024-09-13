@@ -445,7 +445,7 @@
     "href": "slides/fall24_references/index.html#advances-in-agent-based-big-ai-nuggets-from-spring-and-summer",
     "title": "Advances in Agent-Based Big AI",
     "section": "Advances in Agent-Based Big AI: Nuggets from Spring and Summer",
-    "text": "Advances in Agent-Based Big AI: Nuggets from Spring and Summer\n\nWelcome back, everyone!\nOverview of today’s presentation:\n\nLatest advancements in conversational and agentic AI.\nNotable updates from OpenAI and Google DeepMind.\nInsights into agentic patterns and workflows.\nInnovations in Graph-based retrieval models.\nNew frameworks like SciAgents and HiPPO-REG."
+    "text": "Advances in Agent-Based Big AI: Nuggets from Spring and Summer\n\nWelcome back, everyone!\nOverview of today’s presentation:\n\nLatest advancements in conversational and agentic AI.\nNotable updates from OpenAI and Google DeepMind.\nInsights into agentic patterns and workflows.\nInnovations in Graph-based retrieval models.\nNew frameworks like SciAgents and “HippoRAG”."
   },
   {
     "objectID": "slides/fall24_references/index.html#advances-in-conversational-agentic-ai",
@@ -459,7 +459,7 @@
     "href": "slides/fall24_references/index.html#key-developments",
     "title": "Advances in Agent-Based Big AI",
     "section": "Key Developments",
-    "text": "Key Developments\n\nConversational and Agentic AI:\n\nEnhancements in dialogue management and contextual understanding.\nImproved interaction capabilities, especially in handling complex, multi-turn conversations.\n\nOpenAI’s Updates:\n\nIntroduction of advanced multimodal models.\nFocus on integrating visual and text-based inputs for richer interactions.\nExpanded capabilities in workflow automation using AI agents.\n\nImpact:\n\nBroader applications in customer service, virtual assistants, and content creation.\nBetter adaptability in real-world scenarios requiring nuanced understanding and interaction."
+    "text": "Key Developments\n\nConversational and Agentic AI:\n\nEnhancements in dialogue management and contextual understanding.\nImproved interaction capabilities, especially in handling complex, multi-turn conversations.\n\nOpenAI’s Updates:\n\nIntroduction of advanced multimodal models.\nFocus on integrating visual and text-based inputs for richer interactions.\nExpanded capabilities in workflow automation using AI agents.\nSpecial Purpose Reasoning Model\n\nImpact:\n\nBroader applications in customer service, virtual assistants, and content creation.\nBetter adaptability in real-world scenarios requiring nuanced understanding and interaction."
   },
   {
     "objectID": "slides/fall24_references/index.html#rise-of-conversational-ai-openai",
@@ -539,11 +539,32 @@
     "text": "Overview of Pixtral 12B\n\nOpen Weights and Accessibility:\n\nModel parameters and code are available on GitHub and Hugging Face.\nMistral is considering making Pixtral 12B available under an open-source license to encourage wider use and development.\n\nImpact:\n\nProvides a competitive alternative to models from OpenAI, Google, and other leading AI developers.\nEncourages the development of applications requiring both visual and textual data processing."
   },
   {
-    "objectID": "slides/fall24_references/index.html#google-gemma",
-    "href": "slides/fall24_references/index.html#google-gemma",
+    "objectID": "slides/fall24_references/index.html#google-datagemma",
+    "href": "slides/fall24_references/index.html#google-datagemma",
     "title": "Advances in Agent-Based Big AI",
-    "section": "Google Gemma",
-    "text": "Google Gemma"
+    "section": "Google DataGemma",
+    "text": "Google DataGemma\n\nDataGemma: Using real-world data to address AI hallucinations"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#google-datagemma-schema.org-and-kgs",
+    "href": "slides/fall24_references/index.html#google-datagemma-schema.org-and-kgs",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Google DataGemma Schema.org and KGs",
+    "text": "Google DataGemma Schema.org and KGs\n\nRadhakrishnan, Prashanth, Jennifer Chen, Bo Xu, Prem Ramaswami, Adriana Olmos, James Manyika, and R V Guha. n.d. “Knowing When to Ask - Bridging Large Language Models and Data.”"
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#models-that-can-reason",
+    "href": "slides/fall24_references/index.html#models-that-can-reason",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "Models that Can “Reason”?",
+    "text": "Models that Can “Reason”?\n\nIntroducing OpenAI o1-preview: A new series of reasoning models for solving hard problems."
+  },
+  {
+    "objectID": "slides/fall24_references/index.html#gpt-4o1",
+    "href": "slides/fall24_references/index.html#gpt-4o1",
+    "title": "Advances in Agent-Based Big AI",
+    "section": "GPT-4o1",
+    "text": "GPT-4o1\n\n“Notes on OpenAI’s New O1 Chain-of-Thought Models.” n.d. Accessed September 13, 2024. https://simonwillison.net/2024/Sep/12/openai-o1/."
   },
   {
     "objectID": "slides/fall24_references/index.html#agentic-patterns-and-workflows",
@@ -628,13 +649,6 @@
     "title": "Advances in Agent-Based Big AI",
     "section": "SciAgents Multi-Agent Intelligent Graph Reasoning",
     "text": "SciAgents Multi-Agent Intelligent Graph Reasoning\n\nIntroduction to SciAgents:\n\nUses ontological knowledge graphs and multi-agent systems.\nDesigned to explore novel domains and discover hidden interdisciplinary connections.\n\nKey Capabilities:\n\nAutonomous generation and refinement of research hypotheses.\nIntegration of up-to-date scientific data and critique of existing theories.\n\nCase Studies:\n\nDemonstrated success in biologically inspired materials research.\nPotential to accelerate scientific discovery across various domains."
-  },
-  {
-    "objectID": "slides/fall24_references/index.html#summary-and-qa",
-    "href": "slides/fall24_references/index.html#summary-and-qa",
-    "title": "Advances in Agent-Based Big AI",
-    "section": "Summary and Q&A",
-    "text": "Summary and Q&A\n\nKey Takeaways:\n\nSignificant advancements in agent-based AI and retrieval models.\nInnovative frameworks like SciAgents and HiPPO-REG are pushing the boundaries of what’s possible.\nThe integration of ontological knowledge graphs and neurobiologically inspired designs shows great promise.\n\nDiscussion:\n\nOpen floor for questions, feedback, and further discussion.\nUpcoming resources and events related to the topics discussed.\n\nThank you for your attention!\n\n\n\n\n\nhttps://la3d.github.io/nuggets/\n\n\n\n\n\n\n\n \n\n\nLaboratory for Assured AI Application Development (LA3D)"
   },
   {
     "objectID": "slides/hackers/index.html#topics",

@@ -25,7 +25,7 @@ categories: [Agents, Agentic Workflows, TrustedAI]
     -   Notable updates from OpenAI and Google DeepMind.
     -   Insights into agentic patterns and workflows.
     -   Innovations in Graph-based retrieval models.
-    -   New frameworks like SciAgents and HiPPO-REG.
+    -   New frameworks like SciAgents and "HippoRAG".
 
 ## Advances in Conversational Agentic AI {.center}
 
@@ -38,6 +38,7 @@ categories: [Agents, Agentic Workflows, TrustedAI]
     -   Introduction of advanced multimodal models.
     -   Focus on integrating visual and text-based inputs for richer interactions.
     -   Expanded capabilities in workflow automation using AI agents.
+    -   Special Purpose Reasoning Model
 -   **Impact:**
     -   Broader applications in customer service, virtual assistants, and content creation.
     -   Better adaptability in real-world scenarios requiring nuanced understanding and interaction.
@@ -118,7 +119,18 @@ categories: [Agents, Agentic Workflows, TrustedAI]
   - Provides a competitive alternative to models from OpenAI, Google, and other leading AI developers.
   - Encourages the development of applications requiring both visual and textual data processing.
 
-## Google Gemma
+## Google DataGemma
+![[DataGemma: Using real-world data to address AI hallucinations](https://blog.google/technology/ai/google-datagemma-ai-llm/)](Google_DataGemma.png)
+
+## Google DataGemma Schema.org and KGs
+![[Radhakrishnan, Prashanth, Jennifer Chen, Bo Xu, Prem Ramaswami, Adriana Olmos, James Manyika, and R V Guha. n.d. “Knowing When to Ask - Bridging Large Language Models and Data.”](https://docs.datacommons.org/papers/DataGemma-FullPaper.pdf)](DataGemma_KG.png)
+
+## Models that Can "Reason"?
+![[Introducing OpenAI o1-preview: A new series of reasoning models for solving hard problems.](https://openai.com/index/introducing-openai-o1-preview/)](OpenAI+GPTo1.png)
+
+## GPT-4o1
+![[“Notes on OpenAI’s New O1 Chain-of-Thought Models.” n.d. Accessed September 13, 2024. https://simonwillison.net/2024/Sep/12/openai-o1/.](https://simonwillison.net/2024/Sep/12/openai-o1/)](SW-GPT4o1.png)
+
 
 ## Agentic Patterns and Workflows {.center}
 
@@ -206,15 +218,4 @@ categories: [Agents, Agentic Workflows, TrustedAI]
     -   Potential to accelerate scientific discovery across various domains.
 
 
-# Wrap-Up and Discussion
-
-## Summary and Q&A
-
--   **Key Takeaways:**
-    -   Significant advancements in agent-based AI and retrieval models.
-    -   Innovative frameworks like SciAgents and HiPPO-REG are pushing the boundaries of what's possible.
-    -   The integration of ontological knowledge graphs and neurobiologically inspired designs shows great promise.
--   **Discussion:**
-    -   Open floor for questions, feedback, and further discussion.
-    -   Upcoming resources and events related to the topics discussed.
--   Thank you for your attention!
+# Wrap-Up and Discussion {.center}
