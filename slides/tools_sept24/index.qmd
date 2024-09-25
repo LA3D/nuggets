@@ -1,0 +1,72 @@
+---
+title: "Tools for Building Agentic Systems"
+author: "Charles F. Vardeman II"
+date: "2024-09-27"
+embed-resources: true
+format:
+  revealjs:
+    slide-number: true
+    logo: ../images/crc-logo-tagline-1-alt.png
+    footer: <https://la3d.github.io/nuggets/>
+    header: Laboratory for Assured AI Application Development (LA3D)
+    header-logo: ../images/lad-logo.png
+filters:
+  - reveal-header
+categories: [Agents, Agentic Workflows, TrustedAI]
+---
+
+## Prompt Engineering
+
+![[Anthropic Prompt Engineering Tutorial](https://simonwillison.net/2024/Aug/30/anthropic-prompt-engineering-interactive-tutorial/)](willison-prompt_tutorial.png){fig-align="center" width="800"}
+
+## Anthropic Prompt Engineering Tutorial
+
+![[Prompt Engineering Interactive Tutorial](https://github.com/anthropics/courses/tree/master/prompt_engineering_interactive_tutorial)](Anthropic_prompt_ttutorial.png){fig-align="center" width="800"}
+
+## OpenAI Playground
+
+![[OpenAI Playground](https://platform.openai.com/playground/chat?models=gpt-4o)](openai_playground.png){fig-align="center" width="800"}
+
+## Agentic Patterns
+
+![[Agentic Workflows](https://www.vellum.ai/blog/agentic-workflows-emerging-architectures-and-design-patterns)](../fall24_references/agentic-workflows-2024.png){fig-align="center" width="800"}
+
+## Berkeley Agents Course
+
+![[Agents Course Homepage](https://rdi.berkeley.edu/llm-agents/f24)](berkeley_agents_course.png){fig-align="center" width="800"}
+
+[Youtube Playlist](https://www.youtube.com/playlist?list=PLS01nW3RtgopsNLeM936V4TNSsvvVglLc)
+
+## GenAI Agents: Comprehensive Repository for Development and Implementation
+
+![[GenAI Agents](https://github.com/NirDiamant/GenAI_Agents)](GenAI_Agents_repo.png){fig-align="center" width="800"}
+
+## Choosing Between Software Frameworks for Agents
+
+![[Choosing Between LLM Agent Frameworks](https://towardsdatascience.com/choosing-between-llm-agent-frameworks-69019493b259)](tds_LLM_Agnet_Frameworks.png){fig-align="center"}
+
+- [GitHub Repo](https://github.com/Arize-ai/phoenix/tree/main/examples/agent_framework_comparison)
+
+## Introspection and Observability
+
+## Phoenix
+
+![[Arize Phoenix AI Observability and Evaluation](https://docs.arize.com/phoenix)](arize_phoenix.png){fig-align="center" width="800"}
+
+## LangFuse
+
+![[Open Source LLM Engineering Platform](https://langfuse.com/)](langfuse.png){fig-align="center" width="800"}
+
+## Papers this week {.center}
+
+## Reasoning Agents
+![[Crispino, Nicholas, Kyle Montgomery, Fankun Zeng, Dawn Song, and Chenguang Wang. 2024. “Agent Instructs Large Language Models to Be General Zero-Shot Reasoners.” arXiv. http://arxiv.org/abs/2310.03710.](http://arxiv.org/abs/2310.03710)](agent_reasoner.png)
+
+## Now for the bad news {.center}
+
+## LLMs (Still) Can't Plan
+![[Valmeekam, Karthik, Kaya Stechly, and Subbarao Kambhampati. 2024. “LLMs Still Can’t Plan." arXiv. http://arxiv.org/abs/2409.13373 ](http://arxiv.org/abs/2409.13373)](llm_planning1.png){fig-align="center" width="800"}
+
+
+## GPT-4o1 Does Better at a Cost
+![[Valmeekam, Karthik, Kaya Stechly, and Subbarao Kambhampati. 2024. “LLMs Still Can’t Plan." arXiv. http://arxiv.org/abs/2409.13373](http://arxiv.org/abs/2409.13373)](llm_planning2.png){fig-align="center" width="800"}
