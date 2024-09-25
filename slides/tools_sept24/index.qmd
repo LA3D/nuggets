@@ -62,11 +62,14 @@ categories: [Agents, Agentic Workflows, TrustedAI]
 ## Reasoning Agents
 ![[Crispino, Nicholas, Kyle Montgomery, Fankun Zeng, Dawn Song, and Chenguang Wang. 2024. “Agent Instructs Large Language Models to Be General Zero-Shot Reasoners.” arXiv. http://arxiv.org/abs/2310.03710.](http://arxiv.org/abs/2310.03710)](agent_reasoner.png)
 
+- [Google Illuminate](https://illuminate.google.com/library?play=TrjVSg__Kd4o1)
+
 ## Now for the bad news {.center}
 
 ## LLMs (Still) Can't Plan
 ![[Valmeekam, Karthik, Kaya Stechly, and Subbarao Kambhampati. 2024. “LLMs Still Can’t Plan." arXiv. http://arxiv.org/abs/2409.13373 ](http://arxiv.org/abs/2409.13373)](llm_planning1.png){fig-align="center" width="800"}
 
+- [Google Illuminate](https://illuminate.google.com/library?play=FWBNvj_8lwnY)
 
 ## GPT-4o1 Does Better at a Cost
 ![[Valmeekam, Karthik, Kaya Stechly, and Subbarao Kambhampati. 2024. “LLMs Still Can’t Plan." arXiv. http://arxiv.org/abs/2409.13373](http://arxiv.org/abs/2409.13373)](llm_planning2.png){fig-align="center" width="800"}
