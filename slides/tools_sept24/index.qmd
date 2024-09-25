@@ -47,7 +47,7 @@ categories: [Agents, Agentic Workflows, TrustedAI]
 
 - [GitHub Repo](https://github.com/Arize-ai/phoenix/tree/main/examples/agent_framework_comparison)
 
-## Introspection and Observability
+## Introspection and Observability{.center}
 
 ## Phoenix
 
