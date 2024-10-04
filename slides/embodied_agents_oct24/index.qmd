@@ -55,6 +55,10 @@ categories: [Agents, Agentic Workflows, TrustedAI]
 - Dynamic Topology Generation?
 :::
 ::: {.fragment}
+- [Knowledge Graph Discrite Global Grid](https://github.com/RDFLib/geosparql-dggs)
+[Gibb, R. G. 2016. “The rHEALPix Discrete Global Grid System.” IOP Conference Series: Earth and Environmental Science 34 (1): 012012. https://doi.org/10.108](https://iopscience.iop.org/article/10.1088/1755-1315/34/1/012012/pdf)
+:::
+::: {.fragment}
 - Agentic Planning?
 :::
 ::: {.fragment}
