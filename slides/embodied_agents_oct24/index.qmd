@@ -1,0 +1,62 @@
+---
+title: "Embodied-Agents"
+author: "Charles F. Vardeman II"
+date: "2024-10-04"
+embed-resources: true
+format:
+  revealjs:
+    slide-number: true
+    logo: ../images/crc-logo-tagline-1-alt.png
+    footer: <https://la3d.github.io/nuggets/>
+    header: Laboratory for Assured AI Application Development (LA3D)
+    header-logo: ../images/lad-logo.png
+filters:
+  - reveal-header
+categories: [Agents, Agentic Workflows, TrustedAI]
+---
+
+## Future Planning... {.center}
+
+## ROSA -- The ROS Agent
+
+![[“Nasa-Jpl/Rosa: ROSA 🤖 Is an AI Agent Designed to Interact with ROS1- and ROS2-Based Robotics Systems Using Natural Language Queries. ROSA Helps Robot Developers Inspect, Diagnose, Understand, and Operate Robots.” n.d. Accessed October 4, 2024. https://github.com/nasa-jpl/rosa.](https://github.com/nasa-jpl/rosa)](jpl-rosa.png){fig-align="center" width="800"}
+
+## Embodied Memory
+
+![[Embodied RAG and non-parametric Memory, https://youtu.be/U-KM5wBOoI8?si=fxuAzJEPVSVbdVUK](https://youtu.be/U-KM5wBOoI8?si=fxuAzJEPVSVbdVUK)](./Embodied-RAG-YT.png){fig-align="center" width="800"}
+
+## Embodied RAG Memory
+
+::::: columns
+::: {.column width="60%"}
+![[“Embodied-RAG: General Non-Parametric Embodied Memory for Retrieval and Generation.” n.d. Accessed October 4, 2024. https://quanting-xie.github.io/Embodied-RAG-web/.](https://quanting-xie.github.io/Embodied-RAG-web/)](EMbodied-RAG-Paper.png){fig-align="center" width="500"}
+:::
+
+::: {.column width="40%"}
+![](EMbodied-RAG-funding.png){fig-align="center" width="400"}
+[Google Illuminate Summary](https://illuminate.google.com/library?play=x1Fhel1_5PLu4)
+:::
+:::::
+
+
+## Embodied-RAG Framework
+
+![](Embodied-RAG-Framework.png){fig-align="center" width="800"}
+
+## Embodied-RAG Reasoning
+
+![](Embodied-RAG-reasoning.png){fig-align="center" width="800"}
+
+## What's Missing?
+::: {.fragment}
+- Cooperative Embodied Memory?
+:::
+::: {.fragment}
+- Dynamic Topology Generation?
+:::
+::: {.fragment}
+- Agentic Planning?
+:::
+::: {.fragment}
+- Agentic Reasoning?
+:::
