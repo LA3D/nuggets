@@ -1,0 +1,70 @@
+---
+title: "Dr V. Holiday 2024 Viewing Guide: SolveIT"
+author: "Charles F. Vardeman II"
+institute: "Center for Research Computing, University of Notre Dame"
+date: "2024-12-13"
+embed-resources: true
+format: 
+    revealjs:
+        width: 1600
+        height: 900
+        logo: ../images/crc-logo-tagline-1-alt.png
+        theme: [simple, ../images/crc.scss]
+        slide-number: true
+        progress: true
+        center: true
+categories: [LLMs, Exploratory Programming]
+---
+
+## SolveIt Explained
+![["A New Chapter for fast.ai: How To Solve It With Code"](https://www.answer.ai/posts/2024-11-07-solveit.html)](solveit-blog.png)
+
+[How To Solve It With Code—background on the course; a discussion with Jeremy and Hamel](https://www.youtube.com/watch?v=e9tL_Eg3fpM)
+
+## "How to Solve It" by George Polya
+![[A guide to George Polya's "How to Solve It"](https://gist.github.com/jph00/d60301884c56fe063101a7cc6193b3af)](polya_solveit.png)
+
+## Extension of nbdev methodology
+![["Create delightful software with Jupyter Notebooks"](https://nbdev.fast.ai/)](nbdev.png)
+
+["nbdev+Quarto: A new secret weapon for productivity"](https://nbdev.fast.ai/blog/posts/2022-07-28-nbdev2/)
+
+["Literate Programming"](https://en.wikipedia.org/wiki/Literate_programming)
+
+["Exploratory Programming"](https://en.wikipedia.org/wiki/Exploratory_programming)
+
+["Python Projects Made Easy with Jupyter"](https://www.youtube.com/playlist?list=PLFT2rNeuEECVutCBlnDI9IhS9Z6qLLcDn)
+
+## Exploratory Programming
+![[Wikipedia:Exploratory programming](https://en.wikipedia.org/wiki/Exploratory_programming)](exploratory_Programming.png)
+
+## A Hackers' Guide to Language Models
+![[Youtube: A hackers Guide to Language Models](https://youtu.be/jkrNMKz9pWU?si=E0g2IMHggdBR_1pd)](JH_Hackers_guide.png)
+
+["Notebook: A hacker’s guide to Language Models"](https://fastai.github.io/lm-hackers/lm-hackers.html)
+
+
+## LLMs like Markdown (Particularly for Instructions)
+![[Answer.ai web2md](https://web2md.answer.ai/)](web2md.png)
+
+## Solve It in the Terminal
+![[ShellSage](https://github.com/AnswerDotAI/shell_sage)](shell_sage.png) 
+
+## SSage integration
+
+Danger: Don't commit your .bashrc directly to GitHub!
+```bash
+brew install uv
+export ANTHROPIC_API_KEY="sk-asdfasdfsd...."
+alias ssage="uv tool run ssage"
+```
+[Getting Started with ShellSage - A Beginner's Guide](https://gist.github.com/richardreeze/37551401d8fdfbb3f437f57db17b94d0)
+
+## Tmux
+![[JH FastAI Live Coding 2](https://youtu.be/0pWjZByJ3Lk?si=8U0EQSOqbLTGglQL)](live_coding2.png)
+
+## SolveIt Examples
+- [NBSanity](https://nbsanity.com/)
+- [Gist for AoC Day 1](https://gist.github.com/charlesvardeman/5382765f9fb6e4ed9df221e4d504a611)
+- ["Increasing the LLM Accuracy for Question Answering: Ontologies to the Rescue!"](https://gist.github.com/charlesvardeman/9f83a57e072123c1a96d0a8ddf00d5b1)
+- [Transcribe to Tweet](https://gist.github.com/kafkasl/509ab99b1cb62f1e6c703a0820b1834a)

@@ -1,7 +1,15 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/posts/frameworks-reflection/index.html",
+      "/posts/welcome/index.html"
+    ]
+  },
+  {
     "listing": "/slideindex.html",
     "items": [
+      "/slides/solveit/index.html",
       "/slides/embodied_agents_oct24/index.html",
       "/slides/tools_sept24/index.html",
       "/slides/fall24_references/index.html",
@@ -20,13 +28,6 @@
       "/slides/tai_testing/index.html",
       "/slides/kg-llamaindex/index.html",
       "/slides/trust-causal/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/posts/frameworks-reflection/index.html",
-      "/posts/welcome/index.html"
     ]
   }
 ]
