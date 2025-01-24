@@ -1,0 +1,41 @@
+---
+title: "Agentic Retrievers: State of the Method"
+author: "Charles F. Vardeman II"
+institute: "Center for Research Computing, University of Notre Dame"
+date: "2025-01-24"
+embed-resources: true
+format: 
+    revealjs:
+        width: 1600
+        height: 900
+        logo: ../images/crc-logo-tagline-1-alt.png
+        theme: [simple, ../images/crc.scss]
+        slide-number: true
+        progress: true
+        center: true
+categories: [LLMs, Agentic Systems]
+---
+
+## Agentic Retrieval-Augmented Generation
+
+![[Aditi, S., Abul, E., Saket, K., & Khoei, T. T. (2025). Agentic retrieval-Augmented Generation: A survey on agentic RAG. In arXiv \[cs.AI\]. arXiv. http://arxiv.org/abs/2501.09136)](http://arxiv.org/abs/2501.09136)](multi-agent.png){fig-align="center" width="800"}
+
+## Knowledge Augmented Generation (KAG)
+
+![[Liang, L., Sun, M., Gui, Z., Zhu, Z., Jiang, Z., Zhong, L., Qu, Y., Zhao, P., Bo, Z., Yang, J., Xiong, H., Yuan, L., Xu, J., Wang, Z., Zhang, Z., Zhang, W., Chen, H., Chen, W., & Zhou, J. (2024). KAG: Boosting LLMs in professional domains via Knowledge Augmented Generation. In arXiv \[cs.CL\]. arXiv. https://arxiv.org/abs/2409.13731](https://arxiv.org/abs/2409.13731)](kag.png){fig-align="center" width="800"}
+
+## Using Large Reasoning Models in Agentic Systems
+
+![[Xiaoxi, L., Guanting, D., Jiajie, J., Yuyao, Z., Yujia, Z., Yutao, Z., Peitian, Z., & Zhicheng, D. (2025). Search-o1: Agentic search-enhanced large reasoning models. In arXiv cs.AI. arXiv. http://arxiv.org/abs/2501.05366](http://arxiv.org/abs/2501.05366)](o1-reasoning.png){fig-align="center" width="800"}
+
+## Open Weight Reasoning Models
+
+![[DeepSeek-AI, Guo, D., Yang, D., Zhang, H., Song, J., Zhang, R., Xu, R., Zhu, Q., Ma, S., Wang, P., Bi, X., Zhang, X., Yu, X., Wu, Y., Wu, Z. F., Gou, Z., Shao, Z., Li, Z., Gao, Z., … Zhang, Z. (2025). DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning. In arXiv \[cs.CL\]. arXiv. http://arxiv.org/abs/2501.12948](http://arxiv.org/abs/2501.12948)](deepseek_r1.png){fig-align="center" width="800"}
+
+## Using good old fashioned rules for Agentic RAG
+
+[Allemang, D., & Sequeda, J. (2025). Increasing the accuracy of LLM question-answering systems with ontologies. In Lecture Notes in Computer Science (pp. 324–339). Springer Nature Switzerland. https://doi.org/10.1007/978-3-031-77847-6_18](https://doi.org/10.1007/978-3-031-77847-6_18)
+
+## Agentic User Interfaces
+
+![[Chirag, S., & Ryen, W. W. (2024). Agents Are Not Enough. In arXiv \[cs.AI\]. arXiv. http://arxiv.org/abs/2412.16241](http://arxiv.org/abs/2412.16241)](agents_not_en.png){fig-align="center"}
