@@ -1,0 +1,6 @@
+interface:
+  display_name: "Quarto Docs"
+  short_description: "Official Quarto documentation guidance"
+  default_prompt: "Use $quarto-docs to answer this Quarto question from the relevant official documentation."
+policy:
+  allow_implicit_invocation: true

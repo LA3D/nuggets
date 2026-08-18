@@ -1,0 +1,7 @@
+interface:
+  display_name: "Nuggets Deck"
+  short_description: "Build branded LA3D Quarto meeting decks"
+  brand_color: "#0C2340"
+  default_prompt: "Use $nuggets-deck to plan and draft a new LA3D research-meeting presentation."
+policy:
+  allow_implicit_invocation: true
