@@ -17,7 +17,7 @@ Offer a short story arc such as context → evidence → implications → discus
 
 ## Drafting
 
-Scaffold a new directory, replace all template placeholders, and keep metadata truthful. Prefer short headings that make a claim. Use columns sparingly, limit text density, and reserve detail for notes. Keep external links descriptive.
+Scaffold a dated update directory with the repository helper, replace all template placeholders, and keep metadata truthful. Prefer short headings that make a claim. Use columns sparingly, limit text density, and reserve detail for notes. Keep external links descriptive.
 
 ## Review loop
 

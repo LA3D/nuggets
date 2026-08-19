@@ -18,10 +18,10 @@ Propose a compact narrative and slide outline. Pause for approval at a meaningfu
 Read the root `AGENTS.md`, then [authoring-workflow.md](references/authoring-workflow.md). Scaffold new decks with:
 
 ```bash
-python .agents/skills/nuggets-deck/scripts/new_deck.py <descriptive-slug>
+python .agents/skills/nuggets-deck/scripts/new_deck.py <project-slug> <YYYY-MM-DD> --title "<title>"
 ```
 
-The helper copies `templates/nugget-reveal/index.qmd` to `slides/<slug>/index.qmd` and refuses to overwrite an existing destination. Do not manually copy a historical deck as a template.
+The helper expands `templates/nugget-reveal/index.qmd` into `projects/<project-slug>/updates/<YYYY-MM-DD>/index.qmd` and refuses to overwrite an existing destination. Project-specific Reveal.js defaults live in the update directory's `_metadata.yml`. Do not manually copy a historical deck as a template.
 
 For exact Reveal.js syntax, rendering options, citations, extensions, or Quarto behavior, invoke `$quarto-docs` and consult the smallest relevant official page. Preserve the repository's Quarto format rather than converting to another slide system.
 

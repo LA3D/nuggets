@@ -1,4 +1,5 @@
-# options specified here will apply to all posts in this folder
+# Options in this directory apply to the historical slide archive.
+# Keep the source directories in place so existing public URLs remain stable.
 
 # freeze computational output
 # (see https://quarto.org/docs/projects/code-execution.html#freeze)

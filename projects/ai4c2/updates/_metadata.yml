@@ -1,0 +1,26 @@
+# Shared defaults for AI4C2 research-update presentations.
+author: "Charles F. Vardeman II"
+institute: "Center for Research Computing, University of Notre Dame"
+draft: true
+freeze: true
+embed-resources: true
+
+format:
+  revealjs:
+    width: 1080
+    height: 700
+    max-scale: 1
+    logo: ../../../../slides/images/crc-logo-tagline-1-alt.png
+    theme: [simple, ../_ai4c2.scss]
+    footer: "AI4C2 · Agentic AI for C2 Platforms"
+    slide-number: c/t
+    progress: true
+    center: false
+    controls: false
+    transition: none
+    scroll-view:
+      activate: true
+      layout: full
+      snap: mandatory
+      progress: true
+    toc: false

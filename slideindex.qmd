@@ -1,5 +1,6 @@
 ---
-title: "Weekly Nugget Presentations"
+title: "Historical Slide Archive"
+description: "Past LA3D Nuggets presentations, preserved at their original URLs."
 listing:
   contents: slides
   sort: "date desc"
@@ -10,3 +11,5 @@ listing:
 page-layout: full
 title-block-banner: true
 ---
+
+These presentations document earlier LA3D research discussions and remain available as a public historical record. New project-specific updates are organized under [Projects](projects/index.qmd).

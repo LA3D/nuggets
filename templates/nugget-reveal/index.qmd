@@ -1,0 +1,117 @@
+---
+title: "{{TITLE}}"
+subtitle: "Research update"
+date: "{{DATE}}"
+categories: [{{PROJECT_LABEL}}, Research Update]
+---
+
+## Research objective
+
+::: {.eyebrow}
+Research direction
+:::
+
+::: {.lede}
+State the question or architectural hypothesis under investigation this week.
+:::
+
+::: {.notes}
+Connect this objective to the project's larger research questions without including private proposal material.
+:::
+
+## Progress since the last meeting
+
+::: {.eyebrow}
+Weekly update
+:::
+
+:::: {.columns}
+::: {.column width="48%"}
+::: {.card .teal}
+::: {.card-title}
+Completed
+:::
+
+- Replace this with the most important completed work.
+:::
+:::
+
+::: {.column width="48%"}
+::: {.card .amber}
+::: {.card-title}
+Learned
+:::
+
+- State what changed in the team's understanding.
+:::
+:::
+::::
+
+::: {.notes}
+Record context, caveats, and approved links that are useful during discussion but too detailed for the projected slide.
+:::
+
+## Prototype or experiment
+
+::: {.eyebrow}
+Experiment
+:::
+
+Describe the architecture variant, simulation scenario, validation rule, integration step, or other concrete work evaluated this week.
+
+## Evidence
+
+::: {.eyebrow}
+Observed result
+:::
+
+Add a result, figure, table, short demonstration, or reproducible observation.
+
+::: {.notes}
+Document the source, method, and limits of the evidence.
+:::
+
+## Risks, blockers, and decisions
+
+::: {.eyebrow}
+Decision point
+:::
+
+:::: {.columns}
+::: {.column width="48%"}
+::: {.card .rose}
+::: {.card-title}
+Risk or blocker
+:::
+
+What is preventing progress or weakening the result?
+:::
+:::
+
+::: {.column width="48%"}
+::: {.card .amber}
+::: {.card-title}
+Decision needed
+:::
+
+What input or choice is needed from the group?
+:::
+:::
+::::
+
+## Next experiment
+
+::: {.eyebrow}
+Forward plan
+:::
+
+- [ ] Name the next concrete task and owner.
+- [ ] State the evidence or completion criterion.
+
+## Discussion
+
+::: {.eyebrow}
+Team discussion
+:::
+
+What should the team resolve before the next meeting?

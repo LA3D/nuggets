@@ -1,0 +1,16 @@
+---
+title: "AI4C2 — Agentic AI for C2 Platforms"
+description: "Research project hub and meeting-update archive."
+draft: true
+listing:
+  contents: updates
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+This draft hub collects AI4C2 research updates and presentation materials. Updates remain drafts until their content and publication status are reviewed explicitly.

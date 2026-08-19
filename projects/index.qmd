@@ -1,0 +1,14 @@
+---
+title: "Research Projects"
+description: "Current LA3D research projects and their meeting updates."
+listing:
+  contents: "*/index.qmd"
+  sort: "title"
+  type: grid
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: true
+---
+
+Project hubs collect research context, milestones, and dated meeting-update presentations. Historical Nuggets presentations remain available in the [Slide Archive](../slideindex.qmd).

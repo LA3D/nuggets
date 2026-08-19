@@ -1,0 +1,166 @@
+---
+title: "AI4C2 — Agentic AI for C2 Platforms"
+subtitle: "Research update · visual-system preview"
+date: "2026-08-18"
+categories: [AI4C2, Research Update]
+---
+
+## Research objective
+
+::: {.eyebrow}
+Research direction
+:::
+
+::: {.lede}
+State one precise question or architectural hypothesis that the team can test, challenge, or refine this week.
+:::
+
+`question`{.tag .amber} `architecture`{.tag} `evaluation`{.tag}
+
+::: {.notes}
+Connect this objective to the project's larger research questions without including private proposal material.
+:::
+
+## Progress since the last meeting
+
+::: {.eyebrow}
+Weekly update
+:::
+
+:::: {.columns}
+::: {.column width="48%"}
+::: {.card .teal}
+::: {.card-title}
+Completed
+:::
+
+- Replace this with the most important finished work.
+- Prefer evidence over activity lists.
+:::
+:::
+
+::: {.column width="48%"}
+::: {.card .amber}
+::: {.card-title}
+Learned
+:::
+
+- Capture what changed in the team's understanding.
+- Keep supporting detail in speaker notes.
+:::
+:::
+::::
+
+::: {.notes}
+Record context, caveats, and approved links that are useful during discussion but too detailed for the projected slide.
+:::
+
+## Prototype or experiment
+
+::: {.eyebrow}
+Experiment
+:::
+
+:::: {.columns}
+::: {.column width="31%"}
+::: {.card}
+::: {.card-title}
+Input
+:::
+
+Architecture variant, scenario, or integration condition.
+:::
+:::
+
+::: {.column width="31%"}
+::: {.card .amber}
+::: {.card-title}
+Intervention
+:::
+
+The concrete prototype, rule, or experiment evaluated this week.
+:::
+:::
+
+::: {.column width="31%"}
+::: {.card .teal}
+::: {.card-title}
+Observation
+:::
+
+The result that would confirm, weaken, or redirect the hypothesis.
+:::
+:::
+::::
+
+## Evidence
+
+::: {.eyebrow}
+Observed result
+:::
+
+| Signal | Observation | Interpretation |
+|---|---|---|
+| Result A | Add a measurable outcome | What it supports |
+| Result B | Add a counterexample or limit | What remains uncertain |
+
+::: {.microcopy}
+Replace this demonstration table with a figure, trace, benchmark, or reproducible observation.
+:::
+
+::: {.notes}
+Document the source, method, and limits of the evidence.
+:::
+
+## Risks, blockers, and decisions
+
+::: {.eyebrow}
+Decision point
+:::
+
+:::: {.columns}
+::: {.column width="48%"}
+::: {.card .rose}
+::: {.card-title}
+Risk or blocker
+:::
+
+What is preventing progress or weakening the result?
+:::
+:::
+
+::: {.column width="48%"}
+::: {.card .amber}
+::: {.card-title}
+Decision needed
+:::
+
+What input or choice is needed from the group?
+:::
+:::
+::::
+
+## Next experiment
+
+::: {.eyebrow}
+Forward plan
+:::
+
+- [ ] Name the next concrete task and owner.
+- [ ] State the evidence or completion criterion.
+
+::: {.microcopy}
+The next update should be able to answer: “What did this experiment change?”
+:::
+
+## Discussion
+
+::: {.eyebrow}
+Team discussion
+:::
+
+::: {.lede}
+What should the team resolve before the next meeting?
+:::
+
+`decision`{.tag .amber} `assumption`{.tag .rose} `next evidence`{.tag .teal}

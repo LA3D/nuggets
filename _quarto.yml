@@ -6,8 +6,14 @@ website:
   title: "AI Success Factors: Engineering Trust in Deployments"
   navbar:
     right:
-      - about.qmd
-      - slideindex.qmd
+      - text: "Blog"
+        href: index.qmd
+      - text: "Projects"
+        href: projects/index.qmd
+      - text: "Slide Archive"
+        href: slideindex.qmd
+      - text: "About"
+        href: about.qmd
       - icon: github
         href: https://github.com/la3d
       - icon: twitter
@@ -17,6 +23,5 @@ format:
     theme: journal
     css: styles.css
     toc: true
-
 
 
