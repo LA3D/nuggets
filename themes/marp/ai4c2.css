@@ -1,0 +1,221 @@
+/* @theme ai4c2 */
+
+@import "default";
+
+:root {
+  --bg: #eef0f4;
+  --bg-2: #e6e9ef;
+  --card: #ffffff;
+  --border: #d4d9e2;
+  --text: #1a1e28;
+  --muted: #5a6273;
+  --faint: #8891a1;
+  --amber: #b9791a;
+  --amber-soft: rgba(185, 121, 26, 0.15);
+  --amber-line: rgba(185, 121, 26, 0.45);
+  --teal: #1f8272;
+  --teal-soft: rgba(31, 130, 114, 0.13);
+  --rose: #b8455f;
+  --rose-soft: rgba(184, 69, 95, 0.12);
+}
+
+section {
+  box-sizing: border-box;
+  justify-content: center;
+  width: 1080px;
+  height: 700px;
+  padding: 58px 64px 62px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: normal;
+}
+
+section::after {
+  right: 32px;
+  bottom: 22px;
+  color: var(--faint);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 11px;
+}
+
+section footer {
+  left: 64px;
+  bottom: 22px;
+  color: var(--faint);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 11px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text);
+  font-family: ui-serif, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  max-width: 920px;
+  margin: 0 0 20px;
+  font-size: 64px;
+  line-height: 1.04;
+}
+
+h2 {
+  margin: 0 0 22px;
+  font-size: 42px;
+  line-height: 1.1;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+p,
+li {
+  color: var(--text);
+}
+
+.title {
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+.title .subtitle {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 23px;
+}
+
+.title .meta {
+  color: var(--muted);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 18px;
+  color: var(--amber);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  width: 26px;
+  height: 1px;
+  background: var(--amber-line);
+  content: "";
+}
+
+.lede {
+  max-width: 780px;
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 21px;
+  line-height: 1.5;
+}
+
+.grid {
+  display: grid;
+  gap: 22px;
+  width: 100%;
+}
+
+.grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.card {
+  box-sizing: border-box;
+  min-height: 180px;
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--card);
+}
+
+.card p,
+.card li {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.card.amber-border { border-color: var(--amber-line); }
+.card.teal { border-left: 3px solid var(--teal); }
+.card.rose { border-left: 3px solid var(--rose); }
+
+.tag {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  padding: 3px 9px;
+  border-radius: 20px;
+  background: var(--bg-2);
+  color: var(--muted);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+
+.tag.amber { background: var(--amber-soft); color: var(--amber); }
+.tag.teal-tag { background: var(--teal-soft); color: var(--teal); }
+.tag.rose-tag { background: var(--rose-soft); color: var(--rose); }
+
+table {
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-collapse: separate;
+  border-radius: 10px;
+  border-spacing: 0;
+  background: var(--card);
+  font-size: 14px;
+}
+
+th {
+  color: var(--muted);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+th,
+td {
+  padding: 10px 12px;
+  border-color: var(--border);
+  background: transparent;
+  text-align: left;
+  vertical-align: top;
+}
+
+.microcopy {
+  margin-top: 14px;
+  color: var(--faint);
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 12px;
+}

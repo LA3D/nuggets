@@ -3,6 +3,7 @@ title: "AI4C2 — Agentic AI for C2 Platforms"
 subtitle: "Research update · visual-system preview"
 date: "2026-08-18"
 categories: [AI4C2, Research Update]
+output-file: index.quarto.html
 ---
 
 ## Research objective

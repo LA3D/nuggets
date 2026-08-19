@@ -1,6 +1,11 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "instruction_prompt.md"
+    - "!templates/**"
+  post-render: python3 scripts/render_marp.py
 
 website:
   title: "AI Success Factors: Engineering Trust in Deployments"
@@ -23,5 +28,3 @@ format:
     theme: journal
     css: styles.css
     toc: true
-
-

@@ -175,35 +175,57 @@ body,
 .reveal #title-slide .subtitle {
   color: var(--ai4c2-muted);
   font-family: $font-family-sans-serif;
-  font-size: clamp(17px, 2.1vw, 21px);
+  font-size: clamp(19px, 2.3vw, 23px);
   letter-spacing: normal;
   text-transform: none;
 }
 
-.reveal #title-slide .quarto-title-author,
-.reveal #title-slide .institute,
-.reveal #title-slide .date {
-  color: var(--ai4c2-faint);
+.reveal #title-slide .quarto-title-author-name {
+  color: var(--ai4c2-muted);
   font-family: $font-family-monospace;
-  font-size: 12px;
+  font-size: 16px;
   letter-spacing: 0.02em;
 }
 
 .reveal #title-slide .quarto-title-authors,
-.reveal #title-slide .quarto-title-author,
-.reveal #title-slide .quarto-title-author-name,
-.reveal #title-slide .quarto-title-affiliation {
+.reveal #title-slide .quarto-title-author {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  padding: 0;
   text-align: left;
+}
+
+.reveal #title-slide .quarto-title-authors {
+  margin-top: 10px;
+}
+
+.reveal #title-slide .quarto-title-author-name,
+.reveal #title-slide .quarto-title-affiliation {
+  display: block;
+  padding: 0;
+  text-align: left;
+}
+
+.reveal #title-slide .quarto-title-author-name {
+  margin: 0;
 }
 
 .reveal #title-slide .quarto-title-affiliation {
   margin: 2px 0 0;
-  color: var(--ai4c2-faint);
+  color: var(--ai4c2-muted);
   font-family: $font-family-monospace;
-  font-size: 12px;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+.reveal #title-slide .date {
+  margin-top: 9px;
+  padding: 0;
+  color: var(--ai4c2-muted);
+  font-family: $font-family-monospace;
+  font-size: 15px;
+  letter-spacing: 0.02em;
 }
 
 .reveal .slide.level2:has(> .eyebrow) > * {
