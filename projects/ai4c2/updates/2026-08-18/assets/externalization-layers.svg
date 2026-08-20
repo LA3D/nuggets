@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 320" role="img" aria-labelledby="title desc">
+  <title id="title">Capability moves from weights to context to harness</title>
+  <desc id="desc">Three accumulating layers show general capability in model weights, runtime information in context, and persistent infrastructure in the harness.</desc>
+  <defs>
+    <style>
+      .t{fill:#1a1e28;font:600 22px ui-serif,"Iowan Old Style",Palatino,Georgia,serif}.s{fill:#5a6273;font:12px ui-monospace,"SF Mono",Menlo,Consolas,monospace}.e{fill:#8891a1;font:11px ui-monospace,"SF Mono",Menlo,Consolas,monospace;letter-spacing:.08em}
+    </style>
+    <marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#b9791a"/></marker>
+  </defs>
+  <text x="42" y="24" class="e">ACCUMULATING CAPABILITY LAYERS</text>
+  <rect x="42" y="224" width="956" height="66" rx="12" fill="#fff" stroke="#d4d9e2"/>
+  <text x="78" y="255" class="t">Weights</text><text x="250" y="253" class="s">language · knowledge · general inference · learned priors</text>
+  <rect x="126" y="134" width="872" height="66" rx="12" fill="rgba(185,121,26,.13)" stroke="rgba(185,121,26,.45)"/>
+  <text x="162" y="165" class="t">Context</text><text x="326" y="163" class="s">instructions · examples · retrieved evidence · active history</text>
+  <rect x="210" y="44" width="788" height="66" rx="12" fill="rgba(31,130,114,.12)" stroke="#1f8272"/>
+  <text x="246" y="75" class="t">Harness</text><text x="418" y="73" class="s">memory · skills · protocols · tools · control · governance</text>
+  <path d="M84,214 C84,160 150,90 198,77" fill="none" stroke="#b9791a" stroke-width="1.6" marker-end="url(#a)"/>
+  <text x="68" y="153" class="e" transform="rotate(-66 68 153)">MUTABLE INTELLIGENCE MOVES OUTWARD</text>
+  <text x="520" y="315" text-anchor="middle" class="e">THE MODEL REMAINS CENTRAL · THE SYSTEM BECOMES THE UNIT OF ANALYSIS</text>
+</svg>

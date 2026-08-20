@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 340" role="img" aria-labelledby="title desc">
+  <title id="title">A harness reduces unfamiliar problems to familiar model calls</title>
+  <desc id="desc">A large complex out-of-distribution task enters a structured harness, which decomposes and externalizes it into multiple small locally in-distribution observations handled by ordinary language-model calls.</desc>
+  <defs>
+    <style>.t{fill:#1a1e28;font:600 19px ui-serif,"Iowan Old Style",Palatino,Georgia,serif}.s{fill:#5a6273;font:10.5px ui-monospace,"SF Mono",Menlo,Consolas,monospace}.e{fill:#8891a1;font:11px ui-monospace,"SF Mono",Menlo,Consolas,monospace;letter-spacing:.08em}</style>
+    <marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#8891a1"/></marker>
+  </defs>
+  <rect x="28" y="92" width="214" height="142" rx="15" fill="#fff" stroke="#b8455f"/>
+  <text x="135" y="130" text-anchor="middle" class="t">Complex task state</text><text x="135" y="158" text-anchor="middle" class="s">long · unfamiliar · noisy</text><text x="135" y="184" text-anchor="middle" class="s">out-of-distribution</text><text x="135" y="211" text-anchor="middle" class="e">OOD</text>
+  <path d="M242,163 L342,163" fill="none" stroke="#8891a1" stroke-width="1.7" marker-end="url(#a)"/>
+  <polygon points="342,76 570,110 570,216 342,250" fill="rgba(185,121,26,.15)" stroke="rgba(185,121,26,.45)"/>
+  <text x="440" y="139" text-anchor="middle" class="t">Structured harness</text><text x="440" y="166" text-anchor="middle" class="s">externalize · decompose</text><text x="440" y="188" text-anchor="middle" class="s">select · bind · recurse</text><text x="440" y="217" text-anchor="middle" class="e">HIGH-LEVEL INDUCTIVE BIAS</text>
+  <g fill="none" stroke="#8891a1" stroke-width="1.5" marker-end="url(#a)"><path d="M570,130 L648,84"/><path d="M570,163 L648,163"/><path d="M570,196 L648,242"/></g>
+  <g>
+    <rect x="648" y="47" width="176" height="72" rx="11" fill="#fff" stroke="#1f8272"/><text x="736" y="77" text-anchor="middle" class="t">Observation 1</text><text x="736" y="100" text-anchor="middle" class="s">small · familiar · LID</text>
+    <rect x="648" y="127" width="176" height="72" rx="11" fill="#fff" stroke="#1f8272"/><text x="736" y="157" text-anchor="middle" class="t">Observation 2</text><text x="736" y="180" text-anchor="middle" class="s">small · familiar · LID</text>
+    <rect x="648" y="207" width="176" height="72" rx="11" fill="#fff" stroke="#1f8272"/><text x="736" y="237" text-anchor="middle" class="t">Observation 3</text><text x="736" y="260" text-anchor="middle" class="s">small · familiar · LID</text>
+  </g>
+  <g fill="none" stroke="#8891a1" stroke-width="1.5" marker-end="url(#a)"><path d="M824,83 L874,83"/><path d="M824,163 L874,163"/><path d="M824,243 L874,243"/></g>
+  <g>
+    <rect x="874" y="53" width="138" height="60" rx="10" fill="#fff" stroke="#d4d9e2"/><text x="943" y="79" text-anchor="middle" class="t">LM call</text><text x="943" y="99" text-anchor="middle" class="s">bounded subtask</text>
+    <rect x="874" y="133" width="138" height="60" rx="10" fill="#fff" stroke="#d4d9e2"/><text x="943" y="159" text-anchor="middle" class="t">LM call</text><text x="943" y="179" text-anchor="middle" class="s">bounded subtask</text>
+    <rect x="874" y="213" width="138" height="60" rx="10" fill="#fff" stroke="#d4d9e2"/><text x="943" y="239" text-anchor="middle" class="t">LM call</text><text x="943" y="259" text-anchor="middle" class="s">bounded subtask</text>
+  </g>
+  <text x="520" y="322" text-anchor="middle" class="e">COMPOSITIONAL GENERALIZATION MOVES FROM THE TRANSFORMER INTO THE HARNESS</text>
+</svg>

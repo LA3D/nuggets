@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 350" role="img" aria-labelledby="title desc">
+  <title id="title">Harness as a cognitive environment</title>
+  <desc id="desc">A foundation model is surrounded by memory, skills, protocols, permission, control, and observability inside a coordinated harness.</desc>
+  <defs>
+    <style>.t{fill:#1a1e28;font:600 18px ui-serif,"Iowan Old Style",Palatino,Georgia,serif}.s{fill:#5a6273;font:10.5px ui-monospace,"SF Mono",Menlo,Consolas,monospace}.e{fill:#8891a1;font:11px ui-monospace,"SF Mono",Menlo,Consolas,monospace;letter-spacing:.08em}</style>
+    <marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#8891a1"/></marker>
+  </defs>
+  <rect x="18" y="18" width="1004" height="314" rx="20" fill="none" stroke="#d4d9e2" stroke-dasharray="5 5"/>
+  <text x="42" y="43" class="e">HARNESS · DESIGNED COGNITIVE ENVIRONMENT</text>
+  <g fill="none" stroke="#8891a1" stroke-width="1.3" marker-end="url(#a)">
+    <path d="M520,152 L260,90"/><path d="M520,152 L520,82"/><path d="M520,152 L780,90"/>
+    <path d="M520,198 L260,263"/><path d="M520,198 L520,270"/><path d="M520,198 L780,263"/>
+  </g>
+  <rect x="390" y="126" width="260" height="98" rx="16" fill="rgba(185,121,26,.15)" stroke="rgba(185,121,26,.45)"/>
+  <text x="520" y="166" text-anchor="middle" class="t">Foundation model</text><text x="520" y="192" text-anchor="middle" class="s">agent core · inference · proposal</text>
+  <g>
+    <rect x="126" y="56" width="220" height="66" rx="11" fill="#fff" stroke="#1f8272"/><text x="236" y="83" text-anchor="middle" class="t">Memory</text><text x="236" y="105" text-anchor="middle" class="s">persistent and retrieved state</text>
+    <rect x="410" y="48" width="220" height="66" rx="11" fill="#fff" stroke="rgba(185,121,26,.45)"/><text x="520" y="75" text-anchor="middle" class="t">Skills</text><text x="520" y="97" text-anchor="middle" class="s">reusable procedures</text>
+    <rect x="694" y="56" width="220" height="66" rx="11" fill="#fff" stroke="#b8455f"/><text x="804" y="83" text-anchor="middle" class="t">Protocols</text><text x="804" y="105" text-anchor="middle" class="s">structured interaction</text>
+    <rect x="126" y="238" width="220" height="66" rx="11" fill="#fff" stroke="#b8455f"/><text x="236" y="265" text-anchor="middle" class="t">Permission</text><text x="236" y="287" text-anchor="middle" class="s">isolation · approvals · trust</text>
+    <rect x="410" y="246" width="220" height="66" rx="11" fill="#fff" stroke="rgba(185,121,26,.45)"/><text x="520" y="273" text-anchor="middle" class="t">Control</text><text x="520" y="295" text-anchor="middle" class="s">loops · budgets · termination</text>
+    <rect x="694" y="238" width="220" height="66" rx="11" fill="#fff" stroke="#1f8272"/><text x="804" y="265" text-anchor="middle" class="t">Observability</text><text x="804" y="287" text-anchor="middle" class="s">traces · metrics · feedback</text>
+  </g>
+</svg>

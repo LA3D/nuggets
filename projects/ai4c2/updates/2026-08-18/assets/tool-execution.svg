@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 330" role="img" aria-labelledby="title desc">
+  <title id="title">Tool execution across the language–software boundary</title>
+  <desc id="desc">A language model selects a structured tool call. The harness parses, validates, authorizes, binds, and invokes a normal function or API. Its result is serialized into the model's next context.</desc>
+  <defs>
+    <style>
+      .lane{fill:#8891a1;font:11px ui-monospace,"SF Mono",Menlo,Consolas,monospace;letter-spacing:.08em}
+      .title{fill:#1a1e28;font:600 18px ui-serif,"Iowan Old Style",Palatino,Georgia,serif}
+      .sub,.edge{fill:#5a6273;font:11px ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+      .code{fill:#1f8272;font:11px ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+      .result{fill:#1a1e28;font:11px ui-monospace,"SF Mono",Menlo,Consolas,monospace}
+    </style>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#8891a1"/>
+    </marker>
+    <marker id="arrow-teal" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#1f8272"/>
+    </marker>
+  </defs>
+
+  <text x="28" y="30" class="lane">LANGUAGE / TOKEN SPACE</text>
+  <text x="802" y="30" class="lane">SOFTWARE ENVIRONMENT</text>
+
+  <g fill="none" stroke="#8891a1" stroke-width="1.6" marker-end="url(#arrow)">
+    <path d="M214,122 L302,122"/>
+    <path d="M508,122 L596,122"/>
+    <path d="M788,122 L870,122"/>
+  </g>
+  <g class="edge">
+    <text x="258" y="98" text-anchor="middle">selects</text>
+    <text x="552" y="98" text-anchor="middle">submits</text>
+    <text x="829" y="98" text-anchor="middle">invokes</text>
+  </g>
+
+  <rect x="28" y="82" width="186" height="80" rx="12" fill="#fff" stroke="rgba(185,121,26,.45)"/>
+  <text x="121" y="115" text-anchor="middle" class="title">Language model</text>
+  <text x="121" y="140" text-anchor="middle" class="sub">predicts a tool request</text>
+
+  <rect x="302" y="82" width="206" height="80" rx="12" fill="#fff" stroke="#d4d9e2"/>
+  <text x="405" y="115" text-anchor="middle" class="title">Structured call</text>
+  <text x="405" y="140" text-anchor="middle" class="code">search_reports({...})</text>
+
+  <rect x="596" y="70" width="192" height="104" rx="12" fill="rgba(185,121,26,.15)" stroke="rgba(185,121,26,.45)"/>
+  <text x="692" y="108" text-anchor="middle" class="title">Harness</text>
+  <text x="692" y="134" text-anchor="middle" class="sub">parse · validate · authorize</text>
+  <text x="692" y="154" text-anchor="middle" class="sub">bind · invoke · serialize</text>
+
+  <rect x="870" y="82" width="154" height="80" rx="12" fill="#fff" stroke="#1f8272"/>
+  <text x="947" y="115" text-anchor="middle" class="title">Function / API</text>
+  <text x="947" y="140" text-anchor="middle" class="sub">does the work</text>
+
+  <g fill="none" stroke="#1f8272" stroke-width="1.7" marker-end="url(#arrow-teal)">
+    <path d="M947,174 C947,232 806,234 758,234"/>
+    <path d="M626,234 C514,234 398,234 508,234"/>
+    <path d="M302,234 C174,234 121,213 121,174"/>
+  </g>
+
+  <rect x="626" y="212" width="132" height="44" rx="9" fill="#fff" stroke="#1f8272"/>
+  <text x="692" y="231" text-anchor="middle" class="result">tool result</text>
+  <text x="692" y="247" text-anchor="middle" class="sub">data · status · error</text>
+
+  <rect x="302" y="212" width="206" height="44" rx="9" fill="#fff" stroke="#d4d9e2"/>
+  <text x="405" y="231" text-anchor="middle" class="result">serialized observation</text>
+  <text x="405" y="247" text-anchor="middle" class="sub">added to next context</text>
+
+  <text x="520" y="306" text-anchor="middle" class="lane">THE MODEL REQUESTS · THE HARNESS EXECUTES · THE RESULT BECOMES CONTEXT</text>
+</svg>

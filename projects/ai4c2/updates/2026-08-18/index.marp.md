@@ -3,18 +3,18 @@ marp: true
 theme: ai4c2
 paginate: true
 footer: "AI4C2 · Agentic AI for C2 Platforms"
-title: "AI4C2 — Agentic AI for C2 Platforms"
-description: "Research update · Marp workflow preview"
+title: "Beyond the Model: Harnesses and Architectures for Language Agents"
+description: "AI4C2 research foundations"
 author: "Charles F. Vardeman II"
 ---
 
 <!-- _class: title -->
 
-<div class="eyebrow">AI4C2 · research program · weekly update</div>
+<div class="eyebrow">AI4C2 · research foundations</div>
 
-# AI4C2 — Agentic AI for C2 Platforms
+# Beyond the Model
 
-<p class="subtitle">Research update · Marp workflow preview</p>
+<p class="subtitle">Harnesses and Architectures for Language Agents</p>
 
 <div class="meta">
 Charles F. Vardeman II<br>
@@ -22,107 +22,429 @@ Center for Research Computing, University of Notre Dame<br>
 August 18, 2026
 </div>
 
----
-
-<div class="eyebrow">Research direction</div>
-
-## Research objective
-
-<p class="lede">State one precise question or architectural hypothesis that the team can test, challenge, or refine this week.</p>
-
-<div class="tag-row"><span class="tag amber">question</span><span class="tag">architecture</span><span class="tag">evaluation</span></div>
+<!--
+Frame the talk as a progression from a language model to an engineered agent system.
+The goal is a shared vocabulary and a concrete first research experiment.
+-->
 
 ---
 
-<div class="eyebrow">Weekly update</div>
+<div class="eyebrow">Language models</div>
 
-## Progress since the last meeting
+## An LLM predicts a continuation
 
-<div class="grid two">
-  <div class="card teal">
-    <h3>Completed</h3>
-    <ul>
-      <li>Replace this with the most important finished work.</li>
-      <li>Prefer evidence over activity lists.</li>
-    </ul>
-  </div>
-  <div class="card amber-border">
-    <h3>Learned</h3>
-    <ul>
-      <li>Capture what changed in the team’s understanding.</li>
-      <li>Keep supporting detail in presenter notes.</li>
-    </ul>
-  </div>
-</div>
-
----
-
-<div class="eyebrow">Experiment</div>
-
-## Prototype or experiment
+<p class="lede">A large language model maps the tokens already in its context to probabilities for what token should come next.</p>
 
 <div class="grid three">
-  <div class="card">
-    <h3>Input</h3>
-    <p>Architecture variant, scenario, or integration condition.</p>
-  </div>
-  <div class="card amber-border">
-    <h3>Intervention</h3>
-    <p>The concrete prototype, rule, or experiment evaluated this week.</p>
-  </div>
-  <div class="card teal">
-    <h3>Observation</h3>
-    <p>The result that would confirm, weaken, or redirect the hypothesis.</p>
-  </div>
+  <div class="card"><h3>Context</h3><p>Instructions, examples, retrieved information, and the conversation so far.</p></div>
+  <div class="card amber-border"><h3>Model</h3><p>A trained neural network transforms that context into a distribution over tokens.</p></div>
+  <div class="card teal"><h3>Continuation</h3><p>Sampling one token at a time produces text—and can request structured tool calls.</p></div>
 </div>
 
----
+<p class="microcopy">Introduction: <a href="https://youtu.be/7xTGNNLPyMI">Andrej Karpathy, “Deep Dive into LLMs like ChatGPT.”</a></p>
 
-<div class="eyebrow">Observed result</div>
-
-## Evidence
-
-| Signal | Observation | Interpretation |
-|---|---|---|
-| Result A | Add a measurable outcome | What it supports |
-| Result B | Add a counterexample or limit | What remains uncertain |
-
-<p class="microcopy">Replace this demonstration table with a figure, trace, benchmark, or reproducible observation.</p>
+<!--
+Use Karpathy's video as the recommended deeper introduction. The base operation is still
+next-token prediction, even when the resulting behavior looks rich.
+-->
 
 ---
 
-<div class="eyebrow">Decision point</div>
+<div class="eyebrow">Tool anatomy</div>
 
-## Risks, blockers, and decisions
+## A tool connects language to an ordinary function
+
+<p class="lede">The model is shown a machine-readable contract. The harness connects that contract to executable code.</p>
+
+<div class="contract-cols">
+  <div>
+    <pre><code><span class="code-key">name:</span> search_reports
+<span class="code-key">description:</span> Find relevant reports
+<span class="code-key">input_schema:</span>
+  <span class="code-key">query:</span>  <span class="code-type">string</span>
+  <span class="code-key">limit:</span>  <span class="code-type">integer</span>
+
+<span class="code-comment"># bound by the harness to:</span>
+<span class="code-key">implementation:</span> search_reports(query, limit)</code></pre>
+    <p class="microcopy">The contract enters model context; the implementation remains outside the model.</p>
+  </div>
+  <ul class="clean-list">
+    <li class="teal-dot"><strong>Language-facing contract</strong><br><span>Name, purpose, arguments, types, and constraints create a vocabulary for requesting action.</span></li>
+    <li><strong>Harness binding</strong><br><span>Maps the advertised name to Python, JavaScript, a database query, a command, or an API.</span></li>
+    <li class="amber-dot"><strong>Structured boundary</strong><br><span>Arguments and results cross as data—not as unconstrained executable prose.</span></li>
+  </ul>
+</div>
+
+<!--
+The tool is not a special kind of reasoning inside the model. It is an interface boundary.
+The harness owns the binding to local code, a service, a database, or another executable system.
+-->
+
+---
+
+<div class="eyebrow">Tool execution</div>
+
+## The model requests an action; the harness executes it
+
+<img class="tool-map-image" src="assets/tool-execution.svg" alt="A language model emits a structured tool call; the harness validates and invokes an ordinary software function, then returns the result as context">
+
+<p class="microcopy">The LLM proposes the call. The harness mediates every crossing of the language–software boundary.</p>
+
+<!--
+The model emits tokens in a constrained structured form; it does not directly run Python
+or reach a network. Errors are observations too, allowing the model to revise its request.
+-->
+
+---
+
+<div class="eyebrow">From generation to action</div>
+
+## An agent puts tools in a loop
+
+<p class="lede">“An LLM agent runs tools in a loop to achieve a goal.”</p>
+
+<div class="grid three">
+  <div class="card amber-border"><h3>1 · Goal</h3><p>A bounded objective and a condition for stopping.</p></div>
+  <div class="card"><h3>2 · Tools</h3><p>Actions that retrieve information or change an external environment.</p></div>
+  <div class="card teal"><h3>3 · Feedback</h3><p>Tool results return as observations that shape the next model call.</p></div>
+</div>
+
+<p class="microcopy">Definition: <a href="https://simonwillison.net/2025/Sep/18/agents/">Simon Willison, “I think ‘agent’ may finally have a widely enough agreed upon definition.”</a></p>
+
+<!--
+The loop supplies short-term memory through its interaction history. Long-term memory
+enters through additional stores and tools controlled by the harness.
+-->
+
+---
+
+<div class="eyebrow">From model to system</div>
+
+## Capability is moving outward
+
+<img class="architecture-image" src="assets/externalization-layers.svg" alt="Three layered stages of language-agent capability: model weights, assembled context, and harness infrastructure">
+
+<p class="microcopy">Adapted from <a href="https://arxiv.org/html/2604.08224v1">Zhou et al., “Externalization in LLM Agents,” Fig. 2 and §2.</a></p>
+
+<!--
+The layers accumulate rather than replace one another. The question shifts from “what can
+the model do?” toward “what environment lets the model act reliably over time?”
+-->
+
+---
+
+<div class="eyebrow">Externalization</div>
+
+## Reliable agency relocates recurring burdens
+
+<div class="grid three">
+  <div class="card teal"><span class="tag teal-tag">Memory</span><h3>Recall → recognition</h3><p>Persist state outside the model and retrieve what the present decision needs.</p></div>
+  <div class="card amber-border"><span class="tag amber">Skills</span><h3>Generation → composition</h3><p>Package procedures so workflows need not be improvised from scratch.</p></div>
+  <div class="card rose"><span class="tag rose-tag">Protocols</span><h3>Ad hoc → structured</h3><p>Turn ambiguous interaction into machine-readable, governable exchange.</p></div>
+</div>
+
+<p class="microcopy">Organizing principle: <a href="https://arxiv.org/html/2604.08224v1">Zhou et al., “Externalization in LLM Agents,” §1.</a></p>
+
+<!--
+Each artifact transforms the task presented to the model: retrieve rather than recall,
+compose rather than reinvent, and fill a contract rather than negotiate an interface in prose.
+-->
+
+---
+
+<div class="eyebrow">Externalized state</div>
+
+## Memory carries continuity across time
+
+<div class="grid four">
+  <div class="card"><h3>Working context</h3><p>Plans, open files, hypotheses, and checkpoints for the active task.</p></div>
+  <div class="card teal"><h3>Episodic experience</h3><p>Prior trajectories, decisions, failures, outcomes, and reflections.</p></div>
+  <div class="card amber-border"><h3>Semantic knowledge</h3><p>Stable facts, project conventions, abstractions, and domain guidance.</p></div>
+  <div class="card rose"><h3>Personalized memory</h3><p>User- or environment-specific preferences with distinct retention rules.</p></div>
+</div>
+
+<p class="microcopy">Sources: <a href="https://arxiv.org/html/2604.08224v1#S3">Zhou et al., §3 and Fig. 4</a> · <a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">Anthropic, “Effective context engineering for AI agents.”</a></p>
+
+<!--
+Memory is not synonymous with a vector database. The harness decides what is recorded,
+consolidated, forgotten, and loaded into the finite working context at each step.
+-->
+
+---
+
+<div class="eyebrow">Externalized expertise</div>
+
+## Skills make procedures reusable and inspectable
+
+<div class="grid three">
+  <div class="card amber-border"><h3>Operational procedure</h3><p>Steps, dependencies, recovery paths, and stopping conditions.</p></div>
+  <div class="card"><h3>Decision heuristics</h3><p>Rules for choosing tools, strategies, or branches under recurring conditions.</p></div>
+  <div class="card teal"><h3>Normative constraints</h3><p>Required checks, prohibited actions, quality standards, and escalation rules.</p></div>
+</div>
+
+<div class="tag-row skill-paths"><span class="tag">authored</span><span class="tag teal-tag">distilled</span><span class="tag amber">discovered</span><span class="tag rose-tag">composed</span><span class="path-arrow">→ registry → progressive disclosure → execution</span></div>
+
+<p class="microcopy">Source: <a href="https://arxiv.org/html/2604.08224v1#S4">Zhou et al., §4 and Fig. 5.</a></p>
+
+<!--
+A skill is not merely a tool description. It packages expertise for a class of tasks.
+Progressive disclosure keeps only a summary resident until the detailed procedure is needed.
+-->
+
+---
+
+<div class="eyebrow">Externalized interaction</div>
+
+## Protocols govern how capabilities cross boundaries
+
+<div class="grid four">
+  <div class="card teal"><h3>Invocation grammar</h3><p>Arguments, types, ordering, result shape, and validation.</p></div>
+  <div class="card"><h3>Lifecycle semantics</h3><p>Allowed transitions, turn ownership, completion, and failure.</p></div>
+  <div class="card rose"><h3>Permission and trust</h3><p>Who may act, what data may move, and which evidence is required.</p></div>
+  <div class="card amber-border"><h3>Discovery metadata</h3><p>Registries and capability descriptions make interfaces findable.</p></div>
+</div>
+
+<p class="microcopy">Tools expose operations · skills encode how to use them · protocols govern interaction. <a href="https://arxiv.org/html/2604.08224v1#S5">Zhou et al., §5 and Fig. 6.</a></p>
+
+<!--
+Return to search_reports. Its schema is the invocation grammar, but a complete protocol may
+also specify discovery, lifecycle, authorization, and error semantics.
+-->
+
+---
+
+<div class="eyebrow">Harness engineering</div>
+
+## The harness is a designed cognitive environment
+
+<img class="architecture-image" src="assets/harness-cognitive-environment.svg" alt="A foundation model surrounded by memory, skills, protocols, permission, control, and observability within a harness">
+
+<p class="microcopy">Adapted from <a href="https://arxiv.org/html/2604.08224v1#S6">Zhou et al., Fig. 7 and §6.</a></p>
+
+<!--
+Memory, skills, and protocols supply externalized cognitive content. Permission, control,
+and observability govern how that content is accessed, constrained, and monitored.
+-->
+
+---
+
+<div class="eyebrow">Harness design</div>
+
+## Six dimensions define the operating envelope
+
+<div class="grid six compact-six">
+  <div class="card"><h3>Loop and control</h3><p>Steps, branches, recursion, termination, and costs.</p></div>
+  <div class="card teal"><h3>Sandboxing</h3><p>Filesystem, network, state, and execution isolation.</p></div>
+  <div class="card amber-border"><h3>Human oversight</h3><p>Approval gates, review points, and escalation triggers.</p></div>
+  <div class="card"><h3>Observability</h3><p>Traces, metrics, causal links, errors, and outcomes.</p></div>
+  <div class="card rose"><h3>Policy encoding</h3><p>Versioned permissions across user, project, and organization scopes.</p></div>
+  <div class="card"><h3>Context budgets</h3><p>Retrieval, loading, compaction, eviction, and allocation.</p></div>
+</div>
+
+<p class="microcopy">Analytical framework from <a href="https://arxiv.org/html/2604.08224v1#S6.SS2">Zhou et al., §6.2.</a></p>
+
+<!--
+These dimensions are architectural variables, not a product checklist. They let us compare
+systems using the same model but operating under different cognitive environments.
+-->
+
+---
+
+<div class="eyebrow">At the model boundary</div>
+
+## The harness structures model input—and output
+
+<div class="boundary-grid">
+  <div class="boundary-label">INPUT</div>
+  <div class="card teal"><h3>Memory</h3><p>Selected historical and situational context.</p><span class="tag teal-tag">contextual input</span></div>
+  <div class="card amber-border"><h3>Skills</h3><p>Procedures, examples, heuristics, and constraints.</p><span class="tag amber">instructional input</span></div>
+  <div class="boundary-model">LLM</div>
+  <div class="card rose"><h3>Protocols</h3><p>Typed calls constrain the generative action space.</p><span class="tag rose-tag">action schema</span></div>
+  <div class="boundary-label output">OUTPUT</div>
+</div>
+
+<p class="microcopy">Separation makes retrieval, procedure, and interface failures independently debuggable. <a href="https://arxiv.org/html/2604.08224v1#S7.SS2">Zhou et al., §7.2.</a></p>
+
+<!--
+The prompt is no longer an undifferentiated buffer. These layers have distinct update rates,
+governance requirements, and failure modes.
+-->
+
+---
+
+<div class="eyebrow">Architectural bridge</div>
+
+## CoALA organized cognition; externalization locates its machinery
+
+<div class="grid two bridge-cards">
+  <div class="card"><span class="tag">CoALA · 2023/2024</span><h3>Functional vocabulary</h3><p>Memory modules, internal and external actions, and a decision cycle explain what a language agent does.</p></div>
+  <div class="card teal"><span class="tag teal-tag">Externalization · 2026</span><h3>Systems partition</h3><p>Memory, skills, and protocols explain where state, expertise, and interaction structure live—and how the harness governs them.</p></div>
+</div>
+
+<p class="microcopy">Sources: <a href="https://arxiv.org/abs/2309.02427">Sumers et al., “Cognitive Architectures for Language Agents”</a> · <a href="https://arxiv.org/html/2604.08224v1">Zhou et al., “Externalization in LLM Agents.”</a></p>
+
+<!--
+The newer paper is not a revised edition of CoALA; it identifies CoALA as its closest
+conceptual bridge. Preserve the lineage while shifting attention to systems partitioning.
+-->
+
+---
+
+<div class="eyebrow">Multi-step reinforcement learning</div>
+
+## Agentic RL trains over trajectories—not single responses
+
+<img class="rl-loop-image" src="assets/mai-agentic-rl-loop.svg" alt="Agentic reinforcement learning loop in which a policy model produces policy steps, an orchestration harness dispatches tool calls into a sandbox environment, observations return as environment steps, and the completed trajectory is graded for reward">
+
+<p class="microcopy">Adapted from <a href="https://www.alphaxiv.org/pdf/2606.mai-thinking-1v1">Microsoft AI Team, <em>MAI-Thinking-1</em>, Fig. 18 and §3.3, p. 40.</a></p>
+
+<!--
+The unit of experience is a trajectory: policy step, action, environment observation, then
+another policy step. The harness owns dispatch, context, budgets, termination, and the session.
+-->
+
+---
+
+<div class="eyebrow">Harness reinforcement learning</div>
+
+## RL can operate through—or on—the harness
 
 <div class="grid two">
-  <div class="card rose">
-    <h3>Risk or blocker</h3>
-    <p>What is preventing progress or weakening the result?</p>
-  </div>
-  <div class="card amber-border">
-    <h3>Decision needed</h3>
-    <p>What input or choice is needed from the group?</p>
-  </div>
+  <div class="card amber-border"><h3>RL through the harness</h3><p>The runtime owns the rollout while training changes the model policy that emits reasoning, tool calls, and final answers.</p></div>
+  <div class="card teal"><h3>RL of the harness</h3><p>A controller learns structural choices—retrieve, branch, check, retry, compact, or stop—while the executor may remain frozen.</p></div>
 </div>
 
----
+<p class="microcopy">Sources: <a href="https://arxiv.org/abs/2608.17528">Agent Lightning v1.0</a> · <a href="https://arxiv.org/abs/2607.05458">Learning to Control LLM Agent Harnesses with Offline RL</a></p>
 
-<div class="eyebrow">Forward plan</div>
-
-## Next experiment
-
-- Name the next concrete task and owner.
-- State the evidence or completion criterion.
-
-<p class="microcopy">The next update should be able to answer: “What did this experiment change?”</p>
+<!--
+The target of learning matters: model behavior within a fixed runtime, structural runtime
+decisions, or eventually both as a coupled system.
+-->
 
 ---
 
-<div class="eyebrow">Team discussion</div>
+<div class="eyebrow">Recursive Language Models</div>
 
-## Discussion
+## An RLM turns long context into an environment
 
-<p class="lede">What should the team resolve before the next meeting?</p>
+<div class="grid three">
+  <div class="card amber-border"><h3>Externalize</h3><p>The full prompt becomes addressable data outside the root model’s immediate context.</p></div>
+  <div class="card"><h3>Inspect and decompose</h3><p>Programmatic operations search, transform, and select bounded portions.</p></div>
+  <div class="card teal"><h3>Recurse</h3><p>Language-model calls solve bounded subproblems whose results combine in code.</p></div>
+</div>
 
-<div class="tag-row"><span class="tag amber">decision</span><span class="tag rose-tag">assumption</span><span class="tag teal-tag">next evidence</span></div>
+<p class="microcopy">Source: <a href="https://arxiv.org/abs/2512.24601">Zhang, Kraska, and Khattab, “Recursive Language Models,” v3.</a></p>
+
+<!--
+An RLM is an inference paradigm and harness, not simply a longer-context model. The root
+model treats the original prompt as data in an external programmatic environment.
+-->
+
+---
+
+<div class="eyebrow">RLM mechanics</div>
+
+## Two mechanisms keep the root context abstract
+
+<img class="architecture-image" src="assets/rlm-offloading.svg" alt="Context is offloaded into symbolic variables and programmatic sub-agent calls keep task-specific intermediate results outside the root model context">
+
+<p class="microcopy">Adapted from <a href="https://alexzhang13.github.io/blog/2026/harness/">Zhang and Khattab, “Language model harnesses are compositional generalizers,” Fig. 5.</a></p>
+
+<!--
+Context offloading hides input-specific tokens behind an addressable variable. Programmatic
+subcalls pass intermediate results through REPL variables rather than bloating root history.
+-->
+
+---
+
+<div class="eyebrow">Harness as inductive bias</div>
+
+## Reduce unfamiliar problems to familiar model calls
+
+<img class="architecture-image" src="assets/locally-in-distribution.svg" alt="A complex out-of-distribution task is transformed by a structured harness into several small locally in-distribution observations for language-model calls">
+
+<p class="microcopy">Concept and early evidence: <a href="https://alexzhang13.github.io/blog/2026/harness/">Zhang and Khattab, “Language model harnesses are compositional generalizers,” Figs. 1–5.</a></p>
+
+<!--
+Locally in-distribution is the authors' framing, not settled theory. Their experiments report
+better transfer from short to 8–32× longer tasks and across domains when training an RLM.
+-->
+
+---
+
+<div class="eyebrow">From programmatic to symbolic</div>
+
+## An RLM is already a partly symbolic harness
+
+<div class="mapping-grid">
+  <div class="mapping-head">RLM element</div><div class="mapping-head">Symbolic interpretation</div>
+  <div>External prompt variable</div><div>Explicit, addressable state</div>
+  <div>REPL variables</div><div>Persistent symbolic workspace</div>
+  <div>Search, filter, map, reduce</div><div>Composable operators</div>
+  <div>Recursive subcalls</div><div>Explicit task decomposition</div>
+  <div>Function interfaces</div><div>Typed action boundaries</div>
+  <div>Root-model trajectory</div><div>Program-level control structure</div>
+</div>
+
+<p class="microcopy">Our synthesis from the <a href="https://arxiv.org/abs/2512.24601">RLM architecture</a> and <a href="https://alexzhang13.github.io/blog/2026/harness/">harness-as-inductive-bias argument.</a></p>
+
+<!--
+The learned model proposes the decomposition, but workspace, operators, calls, and control
+structure are explicit artifacts rather than latent activations.
+-->
+
+---
+
+<div class="eyebrow">Symbolic and neurosymbolic harnesses</div>
+
+## Make the harness’s inductive bias explicit
+
+<div class="symbolic-stack">
+  <div class="stack-layer neural"><span class="tag amber">Neural model</span><strong>Interpret intent · propose decompositions · select actions</strong></div>
+  <div class="stack-arrow">↓</div>
+  <div class="stack-layer symbolic"><span class="tag teal-tag">Symbolic harness</span><strong>Typed state · operators · planners · constraints · invariants</strong></div>
+  <div class="stack-arrow">↓</div>
+  <div class="stack-layer verified"><span class="tag rose-tag">Verified environment</span><strong>Execute · observe · check · recover · audit</strong></div>
+</div>
+
+<p class="microcopy">Design synthesis; related example: <a href="https://arxiv.org/abs/2608.16794">Albinhassan et al., “Neurosymbolic Embodied Agents.”</a></p>
+
+<!--
+A symbolic harness makes decomposition vocabulary, state transitions, constraints, and
+verification rules explicit. Neural components supply interpretation and proposals.
+-->
+
+---
+
+<div class="eyebrow">AI4C2 starting experiment</div>
+
+## Compare externalization strategies—not only models
+
+| System | What is externalized | Research question |
+|---|---|---|
+| Base LLM | Nothing beyond one assembled prompt | Where do quality and traceability degrade? |
+| Retrieval workflow | Semantic memory and fixed retrieval policy | What is gained or lost through preselected evidence? |
+| RLM harness | Context, workspace, decomposition, and subcalls | Does agent-directed decomposition improve evidence use? |
+| Symbolic RLM variant | Plus typed state, operators, constraints, and checks | Which structures improve robustness and auditability? |
+
+<p class="microcopy">Public or synthetic C2-style artifacts · measures: quality, provenance, context cost, latency, failures, and recovery.</p>
+
+<!--
+Hold the base model constant where possible so the experiment measures system architecture.
+Keep operational or proposal-sensitive materials out of the public deck and initial corpus.
+-->
+
+---
+
+<div class="eyebrow">Research discussion</div>
+
+## Where should intelligence live?
+
+<p class="lede">Which burdens should remain parametric—and which should become persistent, reusable, protocolized, learned, or symbolically constrained?</p>
+
+<div class="tag-row closing-tags"><span class="tag">weights</span><span class="tag teal-tag">memory</span><span class="tag amber">skills</span><span class="tag rose-tag">protocols</span><span class="tag">control</span><span class="tag teal-tag">verification</span></div>
+
+<!--
+The design decision is not model versus harness; it is the partition of responsibility
+across the complete agent system. Identify the first student-owned implementation tasks.
+-->
