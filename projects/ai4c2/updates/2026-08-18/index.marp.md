@@ -41,8 +41,6 @@ The goal is a shared vocabulary and a concrete first research experiment.
   <div class="card teal"><h3>Continuation</h3><p>Sampling one token at a time produces text—and can request structured tool calls.</p></div>
 </div>
 
-<p class="microcopy">Introduction: <a href="https://youtu.be/7xTGNNLPyMI">Andrej Karpathy, “Deep Dive into LLMs like ChatGPT.”</a></p>
-
 <!--
 Use Karpathy's video as the recommended deeper introduction. The base operation is still
 next-token prediction, even when the resulting behavior looks rich.
@@ -50,6 +48,32 @@ next-token prediction, even when the resulting behavior looks rich.
 
 ---
 
+<div class="eyebrow">Further viewing</div>
+
+## Build the full mental model—from tokens to ChatGPT
+
+<div class="single-video">
+  <a href="https://youtu.be/7xTGNNLPyMI"><img src="assets/video-karpathy-llms.jpg" alt="Video thumbnail showing Andrej Karpathy beside a visualization of the computations inside ChatGPT"></a>
+  <div class="video-notes">
+    <span class="video-speaker">Andrej Karpathy · recommended introduction</span>
+    <h3>Deep Dive into LLMs like ChatGPT</h3>
+    <ul>
+      <li>How text becomes tokens and next-token predictions</li>
+      <li>How pretraining and post-training shape behavior</li>
+      <li>Why tools and agent loops extend the base model</li>
+    </ul>
+  </div>
+</div>
+
+<p class="microcopy"><a href="https://youtu.be/7xTGNNLPyMI">Watch: “Deep Dive into LLMs like ChatGPT”</a> · long-form visual introduction.</p>
+
+<!--
+Offer this as the comprehensive optional introduction. It supplies the mental model for
+tokens, training, inference, tool use, and agentic behavior that the rest of the deck then
+separates into individual architectural layers.
+-->
+
+<!--
 <div class="eyebrow">Tool anatomy</div>
 
 ## A tool connects language to an ordinary function
@@ -81,6 +105,8 @@ The harness owns the binding to local code, a service, a database, or another ex
 -->
 
 ---
+
+<!-- _class: compact-title -->
 
 <div class="eyebrow">Tool execution</div>
 
@@ -114,6 +140,173 @@ or reach a network. Errors are observations too, allowing the model to revise it
 <!--
 The loop supplies short-term memory through its interaction history. Long-term memory
 enters through additional stores and tools controlled by the harness.
+-->
+
+---
+
+<!-- _class: compact-title -->
+
+<div class="eyebrow">Training dynamics</div>
+
+## Memorization and generalization can arrive at different times
+
+<img class="grokking-intro" src="assets/grokking-intro.gif" alt="Animated grokking example: training accuracy rises quickly while test accuracy remains near chance, then test accuracy rises sharply after prolonged training">
+
+<p class="microcopy">Animation: <a href="https://pair.withgoogle.com/explorables/grokking/">Pearce et al., “Do Machine Learning Models Memorize or Generalize?”</a> · phenomenon: <a href="https://arxiv.org/abs/2201.02177">Power et al., “Grokking.”</a></p>
+
+<!--
+Grokking is a controlled phenomenon, demonstrated most clearly on small algorithmic
+tasks. Let the animation carry the explanation: memorization arrives early, internal
+structure develops during the apparent plateau, and held-out generalization arrives late.
+-->
+
+---
+
+<!-- _class: compact-title -->
+
+<div class="eyebrow">Inference-time adaptation</div>
+
+## Examples in the prompt teach a temporary task
+
+<div class="undergrad-icl">
+  <div class="task-definition">
+    <span>Task · sentiment classification</span>
+    <p>Decide whether a review expresses a <strong>positive</strong> or <strong>negative</strong> opinion.</p>
+  </div>
+  <div class="prompt-example">
+    <small>PROMPT</small>
+    <p class="prompt-instruction">Classify each review as <strong>POSITIVE</strong> or <strong>NEGATIVE</strong>.</p>
+    <div class="sentiment-row"><q>I loved this movie.</q><b>POSITIVE</b></div>
+    <div class="sentiment-row"><q>This was terrible.</q><b class="negative">NEGATIVE</b></div>
+    <div class="sentiment-row new-review"><q>Surprisingly enjoyable.</q><span>?</span></div>
+  </div>
+  <div class="completion-arrow">→</div>
+  <div class="model-completion">
+    <small>MODEL COMPLETION</small>
+    <strong>POSITIVE</strong>
+  </div>
+</div>
+
+<p class="icl-takeaway"><strong>No retraining:</strong> the examples shape behavior only while they remain in the prompt.</p>
+
+<p class="microcopy">In-context learning: <a href="https://arxiv.org/abs/2005.14165">Brown et al., “Language Models are Few-Shot Learners”</a> · <a href="https://arxiv.org/abs/2208.01066">Garg et al., “What Can Transformers Learn In-Context?”</a></p>
+
+<!--
+Sentiment classification means deciding whether a statement expresses a positive or
+negative opinion. The examples show both what the task is and how the answer should be
+formatted. The model uses that information without updating its trained parameters.
+-->
+
+---
+
+<!-- _class: compact-title -->
+
+<div class="eyebrow">Inside the transformer</div>
+
+## An induction head finds a pattern and continues it
+
+<p class="induction-lede">An <strong>attention head</strong> is a small part of a transformer that decides which earlier words are useful for predicting the next one.</p>
+
+<div class="induction-example">
+  <div class="sequence-line">
+    <small>EARLIER IN THE PROMPT</small>
+    <span><mark>The code word is</mark> <b>BLUEBIRD</b>.</span>
+  </div>
+  <div class="copy-cue">look back at what followed the same words</div>
+  <div class="sequence-line later">
+    <small>LATER IN THE PROMPT</small>
+    <span><mark>The code word is</mark> <i>→</i> <b>BLUEBIRD</b></span>
+  </div>
+</div>
+
+<div class="induction-steps">
+  <div><strong>1</strong><span>Find a familiar sequence</span></div>
+  <div><strong>2</strong><span>See what followed it earlier</span></div>
+  <div><strong>3</strong><span>Use that continuation again</span></div>
+</div>
+
+<p class="microcopy">Mechanistic evidence: <a href="https://transformer-circuits.pub/2022/in-context-learning-and-induction-heads/index.html">Olsson et al., “In-context Learning and Induction Heads.”</a></p>
+
+<!--
+The repeated phrase is highlighted in amber; the copied continuation is teal. This
+match-and-continue behavior is called induction. It helps explain some in-context learning,
+but it is not a complete explanation of every capability in a modern language model.
+-->
+
+---
+
+<div class="eyebrow">Continue learning</div>
+
+## Three visual explanations worth watching
+
+<div class="video-grid">
+  <a class="video-card" href="https://youtu.be/VkHfRKewkWw">
+    <img src="assets/video-backpropagation.jpg" alt="Welch Labs video thumbnail showing neural-network layers and a next-token prediction">
+    <span class="video-topic">1 · How training works</span>
+    <h3>The F=ma of Artificial Intelligence</h3>
+    <p>Backpropagation and how training changes a model’s weights.</p>
+  </a>
+  <a class="video-card" href="https://youtu.be/qx7hirqgfuU">
+    <img src="assets/video-generalization.jpg" alt="Welch Labs video thumbnail titled The Geometry of Depth">
+    <span class="video-topic">2 · Why depth helps</span>
+    <h3>Why Deep Learning Works Unreasonably Well</h3>
+    <p>A visual account of deep networks and generalization.</p>
+  </a>
+  <a class="video-card" href="https://youtu.be/D8GOeCFFby4">
+    <img src="assets/video-grokking.jpg" alt="Welch Labs video thumbnail showing geometric patterns around the word Grokking">
+    <span class="video-topic">3 · Looking inside</span>
+    <h3>The Most Complex Model We Actually Understand</h3>
+    <p>Grokking and a rare mechanistic explanation of a learned algorithm.</p>
+  </a>
+</div>
+
+<p class="resource-strip">All three videos: <strong>Welch Labs</strong> · companion <a href="https://res.cloudinary.com/lesswrong-2-0/image/upload/f_auto,q_auto/v1/mirroredImages/XpCnhaAQrssq8tJBG/rfpm8jhcd5kog1mqi8jn">grokking animation</a></p>
+
+<!--
+Offer these as an optional sequence rather than required preparation. The first explains
+how weights change during training; the second builds intuition for deep learning and
+generalization; the third connects grokking to mechanistic interpretability.
+-->
+
+---
+
+<!-- _class: compact-title -->
+
+<div class="eyebrow">Statistical-mechanics aside</div>
+
+## Grokking may resemble slow glass relaxation—not a first-order transition
+
+<p class="glass-lede">Treat the neural network as a physical system: its parameters are the degrees of freedom, and training loss plays the role of energy.</p>
+
+<div class="glass-analogy">
+  <div class="analogy-label"><strong>Glass physics</strong><span>atoms rearrange</span></div>
+  <div class="analogy-state"><small>LIQUID</small><b>mobile configurations</b></div>
+  <div class="analogy-arrow"><span>rapid quench</span>→</div>
+  <div class="analogy-state amber-state"><small>NONEQUILIBRIUM GLASS</small><b>motion becomes sluggish</b></div>
+  <div class="analogy-arrow"><span>slow relaxation</span>→</div>
+  <div class="analogy-state teal-state"><small>STABLE CONFIGURATION</small><b>more equilibrated</b></div>
+
+  <div class="analogy-label"><strong>Neural network</strong><span>parameters change</span></div>
+  <div class="analogy-state"><small>EARLY TRAINING</small><b>many possible solutions</b></div>
+  <div class="analogy-arrow"><span>fast optimization</span>→</div>
+  <div class="analogy-state amber-state"><small>MEMORIZATION</small><b>low loss; poor test accuracy</b></div>
+  <div class="analogy-arrow"><span>continued training</span>→</div>
+  <div class="analogy-state teal-state"><small>GENERALIZATION</small><b>high test accuracy</b></div>
+</div>
+
+<div class="glass-finding">
+  <strong>No entropy barrier observed</strong>
+  <span>The sampled landscape is continuous between memorizing and generalizing states—evidence against a first-order transition in these experiments.</span>
+</div>
+
+<p class="microcopy">Zhang et al., <a href="https://neurips.cc/virtual/2025/loc/san-diego/poster/117824">“Is Grokking a Computational Glass Relaxation?”</a> NeurIPS 2025 · scope: one-layer transformers on modular-arithmetic tasks.</p>
+
+<!--
+This is a statistical-mechanics analogy backed by an entropy-landscape calculation, not a
+claim that every neural network literally undergoes a glass transition. The authors map
+parameters to degrees of freedom and training loss to energy. They find no entropy barrier,
+arguing against a first-order phase transition in their setup. Their Wang-Landau-inspired
+WanD optimizer reaches generalization without the long grokking delay.
 -->
 
 ---
@@ -290,13 +483,15 @@ conceptual bridge. Preserve the lineage while shifting attention to systems part
 
 ---
 
+<!-- _class: compact-title -->
+
 <div class="eyebrow">Multi-step reinforcement learning</div>
 
 ## Agentic RL trains over trajectories—not single responses
 
 <img class="rl-loop-image" src="assets/mai-agentic-rl-loop.svg" alt="Agentic reinforcement learning loop in which a policy model produces policy steps, an orchestration harness dispatches tool calls into a sandbox environment, observations return as environment steps, and the completed trajectory is graded for reward">
 
-<p class="microcopy">Adapted from <a href="https://www.alphaxiv.org/pdf/2606.mai-thinking-1v1">Microsoft AI Team, <em>MAI-Thinking-1</em>, Fig. 18 and §3.3, p. 40.</a></p>
+<p class="microcopy">Adapted from <a href="https://microsoft.ai/pdf/mai-thinking-1.pdf">Microsoft AI Team, <em>MAI-Thinking-1</em>, Fig. 18 and §3.3, p. 40.</a></p>
 
 <!--
 The unit of experience is a trajectory: policy step, action, environment observation, then
@@ -323,28 +518,64 @@ decisions, or eventually both as a coupled system.
 
 ---
 
+<!-- _class: compact-title -->
+
+<div class="eyebrow">Reasoning vocabulary</div>
+
+## Two ways to move from evidence to a conclusion
+
+<div class="reasoning-compare">
+  <div class="reasoning-mode induction-mode">
+    <span class="reasoning-label">Induction · examples → likely rule</span>
+    <div class="reasoning-observations"><span>Copper expands when heated.</span><span>Aluminum expands when heated.</span><span>Steel expands when heated.</span></div>
+    <div class="reasoning-down">↓</div>
+    <strong>Metals probably expand when heated.</strong>
+  </div>
+  <div class="reasoning-mode deduction-mode">
+    <span class="reasoning-label">Deduction · rule + fact → necessary conclusion</span>
+    <div class="reasoning-observations"><span>Rule: All metals expand when heated.</span><span>Fact: Copper is a metal.</span></div>
+    <div class="reasoning-down">↓</div>
+    <strong>Copper will expand when heated.</strong>
+  </div>
+</div>
+
+<p class="reasoning-takeaway"><strong>Useful division of labor:</strong> language models recognize patterns and propose possibilities; symbolic reasoners apply explicit rules and return checkable consequences.</p>
+
+<!--
+This is a pedagogical division of labor, not an absolute boundary. Language models can
+produce deductive-looking arguments, but text generation alone does not guarantee logical
+entailment. Deduction is conditional on the correctness of the supplied facts and rules.
+-->
+
+---
+
 <div class="eyebrow">Recursive Language Models</div>
 
-## An RLM turns long context into an environment
+## A long prompt is not organized evidence
+
+<p class="lede compact-lede">Imagine answering one question across a 500-page report archive. Reading everything into one conversation does not tell the model where to look—or how to keep intermediate results organized.</p>
 
 <div class="grid three">
-  <div class="card amber-border"><h3>Externalize</h3><p>The full prompt becomes addressable data outside the root model’s immediate context.</p></div>
-  <div class="card"><h3>Inspect and decompose</h3><p>Programmatic operations search, transform, and select bounded portions.</p></div>
-  <div class="card teal"><h3>Recurse</h3><p>Language-model calls solve bounded subproblems whose results combine in code.</p></div>
+  <div class="card amber-border"><h3>Store it as data</h3><p>Keep the full archive outside the model’s immediate conversation.</p></div>
+  <div class="card"><h3>Search before reading</h3><p>Inspect and select the portions relevant to the present question.</p></div>
+  <div class="card teal"><h3>Ask smaller questions</h3><p>Solve bounded subproblems and combine their results in code.</p></div>
 </div>
 
 <p class="microcopy">Source: <a href="https://arxiv.org/abs/2512.24601">Zhang, Kraska, and Khattab, “Recursive Language Models,” v3.</a></p>
 
 <!--
-An RLM is an inference paradigm and harness, not simply a longer-context model. The root
-model treats the original prompt as data in an external programmatic environment.
+The hook is information organization, not merely context length. An RLM is an inference
+paradigm and harness: the root model treats the original prompt as data in an external
+programmatic environment.
 -->
 
 ---
 
-<div class="eyebrow">RLM mechanics</div>
+<div class="eyebrow">Recursive Language Models</div>
 
-## Two mechanisms keep the root context abstract
+## An RLM turns the prompt into a working environment
+
+<p class="mechanics-key"><strong>Root model</strong> = coordinator · <strong>REPL workspace</strong> = external notebook with variables and code</p>
 
 <img class="architecture-image" src="assets/rlm-offloading.svg" alt="Context is offloaded into symbolic variables and programmatic sub-agent calls keep task-specific intermediate results outside the root model context">
 
@@ -352,14 +583,17 @@ model treats the original prompt as data in an external programmatic environment
 
 <!--
 Context offloading hides input-specific tokens behind an addressable variable. Programmatic
-subcalls pass intermediate results through REPL variables rather than bloating root history.
+subcalls pass intermediate results through workspace variables rather than bloating the
+coordinator’s conversation history.
 -->
 
 ---
 
-<div class="eyebrow">Harness as inductive bias</div>
+<div class="eyebrow">Inductive bias</div>
 
-## Reduce unfamiliar problems to familiar model calls
+## Structure makes unfamiliar problems feel familiar
+
+<p class="inductive-bias-definition"><strong>Inductive reasoning</strong> infers a pattern from examples. An <strong>inductive bias</strong> is built-in structure that makes some solutions easier to find.</p>
 
 <img class="architecture-image" src="assets/locally-in-distribution.svg" alt="A complex out-of-distribution task is transformed by a structured harness into several small locally in-distribution observations for language-model calls">
 
@@ -372,46 +606,137 @@ better transfer from short to 8–32× longer tasks and across domains when trai
 
 ---
 
-<div class="eyebrow">From programmatic to symbolic</div>
+<div class="eyebrow">Symbolic reasoning as a tool</div>
 
-## An RLM is already a partly symbolic harness
+## An RLM can ask a reasoner to derive what follows
 
-<div class="mapping-grid">
-  <div class="mapping-head">RLM element</div><div class="mapping-head">Symbolic interpretation</div>
-  <div>External prompt variable</div><div>Explicit, addressable state</div>
-  <div>REPL variables</div><div>Persistent symbolic workspace</div>
-  <div>Search, filter, map, reduce</div><div>Composable operators</div>
-  <div>Recursive subcalls</div><div>Explicit task decomposition</div>
-  <div>Function interfaces</div><div>Typed action boundaries</div>
-  <div>Root-model trajectory</div><div>Program-level control structure</div>
+<div class="reasoner-flow">
+  <div class="reasoner-stage">
+    <small>FACT</small>
+    <code>:Socrates a :Man.</code>
+  </div>
+  <div class="reasoner-arrow">+</div>
+  <div class="reasoner-stage">
+    <small>RULE</small>
+    <code>Man(x) → Mortal(x)</code>
+  </div>
+  <div class="reasoner-arrow">→</div>
+  <div class="reasoner-stage reasoner-tool">
+    <small>EYELENG TOOL</small>
+    <strong>apply the rule</strong>
+    <span>forward or backward reasoning</span>
+  </div>
+  <div class="reasoner-arrow">→</div>
+  <div class="reasoner-stage reasoner-result">
+    <small>DERIVED + PROOF</small>
+    <code>:Socrates a :Mortal.</code>
+  </div>
 </div>
 
-<p class="microcopy">Our synthesis from the <a href="https://arxiv.org/abs/2512.24601">RLM architecture</a> and <a href="https://alexzhang13.github.io/blog/2026/harness/">harness-as-inductive-bias argument.</a></p>
+<p class="reasoner-caveat"><strong>The guarantee is conditional:</strong> the derivation is valid only if the translated facts and rules are correct.</p>
+
+<p class="microcopy">Example and capabilities: <a href="https://github.com/eyereasoner/eyeleng">Eyeleng—hybrid forward materialization, backward proving, validation, and proof explanations.</a></p>
 
 <!--
-The learned model proposes the decomposition, but workspace, operators, calls, and control
-structure are explicit artifacts rather than latent activations.
+The RLM decides when deduction is useful, prepares formal input, calls the reasoner, and
+interprets the returned closure or proof. The neural-to-symbolic translation is the risky
+boundary: malformed facts or rules can yield a perfectly valid but irrelevant deduction.
 -->
 
 ---
 
-<div class="eyebrow">Symbolic and neurosymbolic harnesses</div>
+<div class="eyebrow">Neurosymbolic RLM</div>
 
-## Make the harness’s inductive bias explicit
+## A neurosymbolic agent separates responsibilities
 
 <div class="symbolic-stack">
-  <div class="stack-layer neural"><span class="tag amber">Neural model</span><strong>Interpret intent · propose decompositions · select actions</strong></div>
+  <div class="stack-layer neural"><span class="tag amber">Neural model</span><strong>Interpret language · recognize patterns · propose facts and actions</strong></div>
   <div class="stack-arrow">↓</div>
-  <div class="stack-layer symbolic"><span class="tag teal-tag">Symbolic harness</span><strong>Typed state · operators · planners · constraints · invariants</strong></div>
+  <div class="stack-layer symbolic"><span class="tag teal-tag">RLM harness</span><strong>Manage context · choose tools · recurse · preserve provenance</strong></div>
   <div class="stack-arrow">↓</div>
-  <div class="stack-layer verified"><span class="tag rose-tag">Verified environment</span><strong>Execute · observe · check · recover · audit</strong></div>
+  <div class="stack-layer verified"><span class="tag rose-tag">Symbolic reasoner</span><strong>Apply rules · validate constraints · return conclusions and proofs</strong></div>
 </div>
 
-<p class="microcopy">Design synthesis; related example: <a href="https://arxiv.org/abs/2608.16794">Albinhassan et al., “Neurosymbolic Embodied Agents.”</a></p>
+<p class="microcopy">Design synthesis; tools and examples: <a href="https://github.com/eyereasoner/eyeleng">Eyeleng</a> · <a href="https://youtu.be/Sir59K8ZDPU">Coyle, “Why Agentic Systems Need Ontologies”</a> · <a href="https://arxiv.org/abs/2608.16794">Albinhassan et al.</a></p>
 
 <!--
-A symbolic harness makes decomposition vocabulary, state transitions, constraints, and
-verification rules explicit. Neural components supply interpretation and proposals.
+The layers exchange structured artifacts. The model supplies flexible interpretation; the
+harness controls the workflow; the reasoner supplies explicit inference and validation.
+None can repair incorrect domain knowledge automatically.
+-->
+
+---
+
+<div class="eyebrow">Further viewing</div>
+
+## Why agentic systems need ontologies
+
+<div class="single-video">
+  <a href="https://youtu.be/Sir59K8ZDPU"><img src="assets/video-ontologies.jpg" alt="Video thumbnail featuring Frank Coyle with the words Ontologies Keep Agents Honest"></a>
+  <div class="video-notes">
+    <span class="video-speaker">Frank Coyle · UC Berkeley · AI Engineer</span>
+    <h3>Probabilistic reasoning inside.<br>Logical guardrails outside.</h3>
+    <ul>
+      <li><strong>4:23</strong> · neurosymbolic AI</li>
+      <li><strong>9:19</strong> · RDFS and OWL inference</li>
+      <li><strong>14:23</strong> · validation inside an agent loop</li>
+      <li><strong>17:43</strong> · type safety vs. domain correctness</li>
+    </ul>
+  </div>
+</div>
+
+<p class="microcopy"><a href="https://youtu.be/Sir59K8ZDPU">Watch: “Why Agentic Systems Need Ontologies”</a> · 21 minutes.</p>
+
+<!--
+The talk provides the practical bridge from the conceptual stack to implementation:
+probabilistic interpretation in the model, typed interfaces at the boundary, and ontology-
+based inference and validation before consequential side effects are accepted.
+-->
+
+---
+
+<!-- _class: compact-title -->
+
+<div class="eyebrow">Case study · PRIME Agent</div>
+
+## PRIME Agent makes an RLM persistent
+
+<p class="prime-lede">The model can reorganize information, run code, delegate work, and retain useful lessons—without changing its weights during the task.</p>
+
+<div class="prime-state-map">
+  <div class="prime-zone model-zone">
+    <span class="prime-zone-label">MODEL INVOCATION</span>
+    <div class="prime-level"><small>L0</small><strong>Model weights</strong><span>learned before the task</span></div>
+    <div class="prime-level"><small>L1</small><strong>Active context</strong><span>what the model sees now</span></div>
+  </div>
+  <div class="prime-boundary"><span>explicitly managed state begins here</span><b>→</b></div>
+  <div class="prime-zone harness-zone">
+    <span class="prime-zone-label">PRIME AGENT HARNESS</span>
+    <div class="prime-level"><small>L2</small><strong>Persistent REPL + recursive agents</strong><span>compute, tools, and parallel subproblems</span></div>
+    <div class="prime-level"><small>L3</small><strong>History + memories + skills</strong><span>retained, versioned, and reusable</span></div>
+  </div>
+</div>
+
+<div class="prime-evidence">
+  <div><small>REPORTED RESULT</small><strong>30% → 95.5%</strong><span>ARC-AGI-3 RHAE Best@1</span></div>
+  <div><small>LONG HORIZON</small><strong>85.5 hours</strong><span>one autonomous nanoGPT run</span></div>
+  <div class="prime-warning"><small>DESIGN WARNING</small><strong>Persistence remembers shortcuts, too</strong><span>least privilege, independent validation, and rollback still matter</span></div>
+</div>
+
+<p class="microcopy">Karten et al., <a href="https://arxiv.org/html/2608.23552v1">“Prime Agent: A Self-Improving RLM Harness”</a> (preprint, Aug. 2026) · <a href="https://github.com/PrimeIntellect-ai/prime-agent">open-source implementation</a>.</p>
+
+<!--
+PRIME Agent is a concrete implementation of the RLM ideas introduced earlier. L0 and L1
+belong to the model invocation; L2 and L3 are explicitly managed by the harness. “Self-
+improving” here means that trajectory evidence can update versioned prompts, memories,
+skills, and subagent specifications while the model weights remain fixed.
+
+Treat the headline evaluation numbers as system-level evidence, not as a clean causal
+estimate for any single component. The authors note that some native-harness reruns fell
+below published reference scores and that uncertainty intervals are unavailable for their
+long-context table. Their Factorio case study also found that refinement preserved an
+objective-gaming shortcut as a skill—an especially useful bridge back to ontology-based
+validation, least-privilege tools, and auditable rollback.
 -->
 
 ---
@@ -425,7 +750,7 @@ verification rules explicit. Neural components supply interpretation and proposa
 | Base LLM | Nothing beyond one assembled prompt | Where do quality and traceability degrade? |
 | Retrieval workflow | Semantic memory and fixed retrieval policy | What is gained or lost through preselected evidence? |
 | RLM harness | Context, workspace, decomposition, and subcalls | Does agent-directed decomposition improve evidence use? |
-| Symbolic RLM variant | Plus typed state, operators, constraints, and checks | Which structures improve robustness and auditability? |
+| RLM + reasoner | Plus formal facts, rules, constraints, and proof traces | When does explicit deduction improve robustness and auditability? |
 
 <p class="microcopy">Public or synthetic C2-style artifacts · measures: quality, provenance, context cost, latency, failures, and recovery.</p>
 
@@ -436,15 +761,46 @@ Keep operational or proposal-sensitive materials out of the public deck and init
 
 ---
 
-<div class="eyebrow">Research discussion</div>
+<!-- _class: compact-title -->
 
-## Where should intelligence live?
+<div class="eyebrow">Research question</div>
 
-<p class="lede">Which burdens should remain parametric—and which should become persistent, reusable, protocolized, learned, or symbolically constrained?</p>
+## What contract should connect an LLM agent to a symbolic reasoner?
 
-<div class="tag-row closing-tags"><span class="tag">weights</span><span class="tag teal-tag">memory</span><span class="tag amber">skills</span><span class="tag rose-tag">protocols</span><span class="tag">control</span><span class="tag teal-tag">verification</span></div>
+<p class="interface-question">How should an agent formalize evidence, invoke deduction, and consume proof-bearing results without hiding errors at the neural–symbolic boundary?</p>
+
+<div class="interface-contract">
+  <div class="interface-stage formalize-stage">
+    <small>1 · FORMALIZE</small>
+    <strong>Language → formal claims</strong>
+    <span>Typed facts · rules · query · source provenance</span>
+  </div>
+  <div class="interface-arrow">→</div>
+  <div class="interface-stage reason-stage">
+    <small>2 · REASON</small>
+    <strong>Derive what follows</strong>
+    <span>Conclusion · proof · contradiction · invalid · unknown</span>
+  </div>
+  <div class="interface-arrow">→</div>
+  <div class="interface-stage act-stage">
+    <small>3 · ACT</small>
+    <strong>Control downstream use</strong>
+    <span>Validate provenance and policy before planning or tool use</span>
+  </div>
+</div>
+
+<p class="interface-test"><strong>Test against an RLM-only baseline:</strong> Does the interface improve correctness, contradiction detection, and auditability at acceptable cost and latency?</p>
+
+<p class="microcopy">Research target: the schema, provenance, failure semantics, and control policy at the neural–symbolic boundary.</p>
 
 <!--
-The design decision is not model versus harness; it is the partition of responsibility
-across the complete agent system. Identify the first student-owned implementation tasks.
+“Interface” means the complete contract between components—not merely an API endpoint or
+user interface. The first risk is translation: the model may formalize the evidence
+incorrectly. The reasoner should therefore return proof-bearing results and explicit
+contradiction, invalid, and unknown states. The harness then decides whether those results
+are trustworthy enough to influence a plan or authorize an external action.
+
+The symbolic derivation is sound only relative to the supplied facts and rules. Evaluate
+the full interface against an otherwise matched RLM-only system using correctness,
+contradiction detection, provenance coverage, auditability, latency, and context cost.
 -->

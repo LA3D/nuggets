@@ -49,12 +49,12 @@
   <text x="947" y="140" text-anchor="middle" class="sub">does the work</text>
 
   <g fill="none" stroke="#1f8272" stroke-width="1.7" marker-end="url(#arrow-teal)">
-    <path d="M947,174 C947,232 806,234 758,234"/>
-    <path d="M626,234 C514,234 398,234 508,234"/>
+    <path d="M947,174 C947,232 806,234 771,234"/>
+    <path d="M613,234 C560,234 530,234 508,234"/>
     <path d="M302,234 C174,234 121,213 121,174"/>
   </g>
 
-  <rect x="626" y="212" width="132" height="44" rx="9" fill="#fff" stroke="#1f8272"/>
+  <rect x="613" y="212" width="158" height="44" rx="9" fill="#fff" stroke="#1f8272"/>
   <text x="692" y="231" text-anchor="middle" class="result">tool result</text>
   <text x="692" y="247" text-anchor="middle" class="sub">data · status · error</text>
 
