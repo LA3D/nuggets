@@ -1,0 +1,1625 @@
+---
+title: "AI4C2 Architecture"
+subtitle: "An observable, continually improving agent system built around C2SIM"
+date: "2026-08-29"
+categories: [AI4C2, Research Update, Architecture]
+format:
+  revealjs:
+    css: architecture.css
+---
+
+## Can an agent improve without becoming the authority?
+
+::: {.eyebrow}
+Research objective
+:::
+
+::: {.research-question}
+How can AI4C2 learn from operational trajectories and symbolic feedback while **C2SIM remains the authoritative record**, **humans authorize consequential actions**, and **real-time control remains locally safe**?
+:::
+
+::: {.research-requirements}
+::: {.research-requirement .learn-requirement}
+::: {.requirement-label}
+LEARN
+:::
+**Improve from observable trajectories**
+
+outcomes · traces · interventions
+:::
+::: {.research-requirement .reason-requirement}
+::: {.requirement-label}
+REASON
+:::
+**Ground proposals in explicit semantics**
+
+ontology · evidence · rules
+:::
+::: {.research-requirement .act-requirement}
+::: {.requirement-label}
+ACT
+:::
+**Issue only governed C2SIM tasks**
+
+approval · provenance · constraints
+:::
+:::
+
+::: {.claim-strip .rose-line}
+Intelligence may adapt; operational authority does not migrate into the model.
+:::
+
+::: {.source-line}
+Architecture inputs: [C2SIM artifacts](https://github.com/OpenC2SIM/C2SIMArtifacts) · [PRIME Agent](https://arxiv.org/html/2608.23552v1) · [AgenticROS](https://agenticros.com/)
+:::
+
+::: {.notes}
+This is not primarily a “which model should we use?” question. It asks how learning can change the quality of proposals without changing the source of operational truth, the authority to approve consequential action, or the responsibility for real-time safety. The three requirements preview the rest of the deck: learn from trajectories, reason through explicit semantics, and act only through governed C2SIM commitments.
+:::
+
+## AI4C2 augments the command loop; it does not replace it
+
+::: {.eyebrow}
+The operational loop we must preserve
+:::
+
+::: {.command-loop}
+::: {.command-stage .intent-stage}
+::: {.command-label}
+HUMAN
+:::
+**Intent**
+
+states purpose and constraints
+:::
+
+::: {.command-arrow}
+→
+:::
+
+::: {.command-stage .proposal-stage}
+::: {.command-label}
+SYSTEM 2
+:::
+**Propose**
+
+Codex harness + RLM
+:::
+
+::: {.command-arrow}
+→
+:::
+
+::: {.command-stage .commitment-stage}
+::: {.command-label}
+GOVERNED COMMITMENT
+:::
+**Approve + record**
+
+human gate + C2SIM task
+:::
+
+::: {.command-arrow}
+→
+:::
+
+::: {.command-stage .execution-stage}
+::: {.command-label}
+SYSTEM 1
+:::
+**Execute**
+
+AgenticROS + ROS 2
+:::
+
+::: {.command-arrow}
+→
+:::
+
+::: {.command-stage .evidence-stage}
+::: {.command-label}
+EVIDENCE
+:::
+**Report**
+
+C2SIM state + trajectory
+:::
+:::
+
+::: {.command-return}
+↺ Evidence becomes the next proposal
+:::
+
+::: {.c2sim-record-rail}
+**C2SIM system of record:** commitment · shared state · message identity · provenance · replay
+:::
+
+::: {.claim-strip}
+Learning changes how proposals are generated—not who authorizes them or what controls the robot.
+:::
+
+::: {.source-line}
+Architecture inputs: [C2SIM artifacts](https://github.com/OpenC2SIM/C2SIMArtifacts) · [Recursive Language Models](https://arxiv.org/abs/2512.24601) · [AgenticROS](https://agenticros.com/)
+:::
+
+::: {.notes}
+Begin with the control loop students already recognize, then map each stage to the architecture. System 2 proposes; humans and policy govern the commitment; System 1 executes under local safety mechanisms; reports and traces become evidence for the next proposal. C2SIM spans commitment, state, and reporting as the shared record. The key architectural risk is a hidden agent-to-robot path outside this loop.
+:::
+
+## The model proposes; the harness mediates
+
+::: {.eyebrow}
+From language to action
+:::
+
+::: {.tool-boundary}
+::: {.boundary-stage .model-stage}
+::: {.boundary-kicker}
+LLM
+:::
+**Propose a structured request**
+
+“Inspect this report” · “check this constraint” · “prepare this task”
+:::
+
+::: {.boundary-arrow}
+→
+:::
+
+::: {.boundary-stage .harness-stage}
+::: {.boundary-kicker}
+HARNESS
+:::
+**Validate before execution**
+
+schema · permission · provenance · budget · approval
+:::
+
+::: {.boundary-arrow}
+→
+:::
+
+::: {.boundary-stage .tool-stage}
+::: {.boundary-kicker}
+DOMAIN TOOL
+:::
+**Act through a governed interface**
+
+C2SIM · reasoner · Codex · AgenticROS
+:::
+:::
+
+::: {.result-return}
+tool result, proof, error, or refusal → becomes evidence for the next turn
+:::
+
+::: {.claim-strip}
+The model generates a request. The harness owns every crossing from language into software.
+:::
+
+::: {.source-line}
+Concept: [Codex’s open agent harness and application-owned controls](https://developers.openai.com/blog/codex-as-a-platform)
+:::
+
+::: {.notes}
+An LLM does not directly run a function, write to C2SIM, or command a platform. It emits tokens in a structured form. The harness resolves the requested capability, validates the request, enforces permissions and approval policy, executes the operation, and returns the result as new context. Errors and refusals are useful observations rather than exceptional side channels.
+:::
+
+## C2SIM is the operational spine
+
+::: {.eyebrow}
+System of record
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.card .amber}
+::: {.card-title}
+The broker carries operational truth
+:::
+
+- initialization and force structure
+- orders, tasks, and control features
+- reports and state updates
+- conversation and message identifiers
+- scenario lifecycle and replayable logs
+:::
+:::
+
+::: {.column width="46%"}
+::: {.card .teal}
+::: {.card-title}
+The ontology gives that truth meaning
+:::
+
+- shared entity and task concepts
+- machine-checkable relationships
+- schema-aligned semantic projection
+- explicit provenance and validity
+- a bridge to symbolic reasoning
+:::
+:::
+::::
+
+::: {.source-line}
+Sources: [OpenC2SIM MSG201CWIX](https://github.com/OpenC2SIM/MSG201CWIX) · [C2SIM schemas and ontologies](https://github.com/OpenC2SIM/C2SIMArtifacts)
+:::
+
+::: {.notes}
+The C2SIM broker is not a reasoning engine. It is the authoritative exchange and lifecycle spine. AI4C2 retains every raw C2SIM message and projects it into an ontology-aligned knowledge representation with provenance.
+:::
+
+## The ontology is the operational type system
+
+::: {.eyebrow}
+A controlled language for C2SIM
+:::
+
+::: {.type-system-grid}
+::: {.type-token}
+::: {.type-kicker}
+CLASS
+:::
+**Type**
+
+`Task` · `Entity`
+:::
+
+::: {.type-token}
+::: {.type-kicker}
+PROPERTY
+:::
+**Field or reference**
+
+`hasTaskActionCode`
+:::
+
+::: {.type-token}
+::: {.type-kicker}
+RESTRICTION
+:::
+**Type signature**
+
+exactly one action code
+:::
+
+::: {.type-token}
+::: {.type-kicker}
+NAMED VALUE
+:::
+**Enum member**
+
+`MoveToLocation` · `ATTACK`
+:::
+
+::: {.type-token}
+::: {.type-kicker}
+MESSAGE
+:::
+**Runtime object**
+
+a particular order
+:::
+:::
+
+::: {.conceptual-spine}
+::: {.conceptual-group}
+::: {.conceptual-label}
+MESSAGES
+:::
+**What was communicated?**
+
+header · initialization · order · report
+:::
+::: {.conceptual-group}
+::: {.conceptual-label}
+OPERATIONAL WORLD
+:::
+**What currently exists?**
+
+entity · state · location · relationship
+:::
+::: {.conceptual-group}
+::: {.conceptual-label}
+ACTIONS
+:::
+**What should change?**
+
+task · performer · effect · timing
+:::
+:::
+
+::: {.claim-strip}
+Classes give the agent nouns; properties and restrictions give it grammar; messages form statements about the world.
+:::
+
+::: {.source-line}
+Source: [OpenC2SIM schemas and ontologies](https://github.com/OpenC2SIM/C2SIMArtifacts)
+:::
+
+::: {.notes}
+Teach this as a strongly typed interface before introducing RDF triples. In the current Core + SMX + LOX composite, the ontology supplies 172 classes, controlled code-list individuals, and class-specific relationship signatures. The ontology describes the permissible language; broker messages provide the current assertions. OWL remains open-world, so message completeness is checked separately with SHACL.
+:::
+
+## The harness compiles OWL into usable tools
+
+::: {.eyebrow}
+Do not put 7,788 triples in the prompt
+:::
+
+::: {.ontology-compiler-flow}
+::: {.compiler-source}
+::: {.compiler-label}
+SOURCE OF TRUTH
+:::
+**C2SIM ontology**
+
+Core · SMX · LOX
+
+classes · properties · restrictions · codes
+:::
+
+::: {.compiler-arrow}
+→
+:::
+
+::: {.compiler-tool-grid}
+::: {.compiler-tool}
+**Class index**
+
+What kind of object is this?
+:::
+::: {.compiler-tool}
+**Route index**
+
+How do these concepts connect?
+:::
+::: {.compiler-tool}
+**Code lookup**
+
+Which values are valid?
+:::
+::: {.compiler-tool}
+**UUID resolver**
+
+Which entity does this reference identify?
+:::
+::: {.compiler-tool}
+**SHACL shapes**
+
+Is this message complete?
+:::
+::: {.compiler-tool}
+**Rule context**
+
+Which facts and rules apply?
+:::
+:::
+
+::: {.compiler-arrow}
+→
+:::
+
+::: {.compiler-agent}
+::: {.compiler-label}
+SYSTEM 2 INTERFACE
+:::
+**Symbolic REPL**
+
+small deterministic queries
+
+↓
+
+**Codex harness + RLM**
+:::
+:::
+
+::: {.claim-strip}
+The agent queries bounded tools; the ontology remains the governed semantic source.
+:::
+
+::: {.source-line}
+Inputs: [C2SIM artifacts](https://github.com/OpenC2SIM/C2SIMArtifacts) · [Recursive Language Models](https://arxiv.org/abs/2512.24601)
+:::
+
+::: {.notes}
+This compilation is part of the harness, not an LLM prompt-engineering trick. The class and route indexes expose ontology affordances; code lookup handles the large controlled vocabularies; the UUID resolver turns identifier-valued references into navigable links; SHACL provides closed-world message validation; and the rule context prepares explicit facts for FuXi or Eyeleng. The REPL can refresh these artifacts when the pinned ontology version changes.
+:::
+
+## Symbolic feedback identifies the reasoning failure
+
+::: {.eyebrow}
+More useful than a zero score
+:::
+
+::: {.feedback-proposal}
+**LLM proposal:** “Move `unit-123` to location A.”
+:::
+
+::: {.ontology-feedback-grid}
+::: {.ontology-feedback-card .index-feedback}
+::: {.feedback-label}
+ONTOLOGY INDEX
+:::
+**Vocabulary + route**
+
+Is `MoveToLocation` valid? Does the proposed relationship exist?
+:::
+
+::: {.ontology-feedback-card .inference-feedback}
+::: {.feedback-label}
+RDFS / FuXi
+:::
+**Type entailment**
+
+`unit-123` is a `PhysicalEntity` and may have physical state.
+:::
+
+::: {.ontology-feedback-card .validation-feedback}
+::: {.feedback-label}
+SHACL
+:::
+**Structural violation**
+
+The task is missing its required performing-entity field.
+:::
+
+::: {.ontology-feedback-card .rule-feedback}
+::: {.feedback-label}
+RULES + POLICY
+:::
+**Consequence + authority**
+
+Is the route feasible, doctrinally consistent, and authorized?
+:::
+:::
+
+::: {.feedback-outcomes}
+**Harness returns:** valid · invalid · contradicted · unknown · unauthorized
+
+**Agent responds:** repair · investigate · abstain · escalate
+:::
+
+::: {.claim-strip .rose-line}
+The ontology checks semantic form; rules, world state, and policy determine whether the proposal makes operational sense.
+:::
+
+::: {.source-line}
+Interfaces: [W3C SHACL](https://www.w3.org/TR/shacl/) · [FuXi](https://github.com/RDFLib/FuXi) · [Eyeleng](https://github.com/eyereasoner/eyeleng)
+:::
+
+::: {.notes}
+Keep the feedback sources distinct. The ontology index can reject invented terms and impossible routes. RDFS or FuXi can derive types and other supported entailments. SHACL can report absent, excessive, or incorrectly typed values under a closed-world validation regime. Eyeleng or another rule layer can return proof, contradiction, or unknown relative to explicit doctrine. The policy gate decides authorization. This diagnostic separation gives the RLM a repair target rather than an undifferentiated failure score.
+:::
+
+## Induction proposes; deduction checks
+
+::: {.eyebrow}
+Neurosymbolic division of labor
+:::
+
+:::: {.reasoning-split}
+::: {.reasoning-panel .induction-panel}
+::: {.reasoning-label}
+INDUCTION · examples → likely pattern
+:::
+
+**Reports repeatedly show delayed movement after bridge damage.**
+
+↓
+
+The language model proposes:
+
+**“This route may no longer support the planned timing.”**
+:::
+
+::: {.reasoning-panel .deduction-panel}
+::: {.reasoning-label}
+DEDUCTION · facts + rules → necessary consequence
+:::
+
+**Fact:** bridge capacity is below the unit requirement
+**Rule:** an infeasible route may not be assigned
+
+↓
+
+The reasoner derives:
+
+**“This route is invalid for this unit.”**
+:::
+::::
+
+::: {.claim-strip}
+Language models recognize patterns and propose possibilities; symbolic reasoners apply explicit rules and return checkable consequences.
+:::
+
+::: {.source-line}
+Reasoning interface: [Eyeleng—proof-producing symbolic reasoning](https://github.com/eyereasoner/eyeleng)
+:::
+
+::: {.notes}
+This is a pedagogical division of labor, not a claim that language models cannot produce deductive-looking text. The difference is the status of the result: a symbolic derivation can return a proof relative to explicit facts and rules. Those inputs may still be wrong, which motivates the formalization-contract slide later.
+:::
+
+## The architecture separates authority from intelligence
+
+::: {.eyebrow}
+Proposed system
+:::
+
+::: {.architecture-stack}
+::: {.stack-row .authority-row}
+**Human authority**
+
+intent · approval · intervention · rollback
+:::
+
+::: {.stack-row .learning-row}
+**PRIME continual harness**
+
+plans · delegates · reflects · updates memory and skills
+:::
+
+:::: {.specialist-row}
+::: {.specialist}
+**Codex**
+
+engineering specialist
+:::
+::: {.specialist}
+**Open models**
+
+replaceable specialists
+:::
+::: {.specialist}
+**Symbolic reasoner**
+
+rules, proofs, constraints
+:::
+::::
+
+::: {.stack-row .semantic-row}
+**AI4C2 semantic projection + C2SIM broker**
+
+authoritative state · ontology · provenance · approved orders
+:::
+
+::: {.stack-row .execution-row}
+**AgenticROS capability gateway**
+
+typed missions · safety limits · ROS 2 execution · feedback
+:::
+:::
+
+::: {.observability-rail}
+**Observability plane:** correlate every message, reasoning step, approval, tool call, mission, and outcome
+:::
+
+::: {.governance-rail}
+**Harness operating envelope:** loop control · sandboxing · human oversight · observability · policy · context budgets
+:::
+
+::: {.notes}
+Read this from bottom to top for evidence, and top to bottom for authority. The horizontal observability plane is deliberately separate from agent memory. It records what happened; memory stores selected derived knowledge for later reasoning. The operating-envelope rail recovers the six design dimensions from the conceptual deck: the harness is a governed cognitive environment, not just a loop around a model.
+:::
+
+## Formalization is the risky boundary
+
+::: {.eyebrow}
+Neural–symbolic contract
+:::
+
+::: {.contract-flow}
+::: {.contract-stage .formalize-stage}
+::: {.contract-number}
+1 · FORMALIZE
+:::
+**Language → formal claims**
+
+typed facts · rules · query · source provenance
+:::
+
+::: {.contract-arrow}
+→
+:::
+
+::: {.contract-stage .reason-stage}
+::: {.contract-number}
+2 · REASON
+:::
+**Derive what follows**
+
+proof · contradiction · invalid · unknown
+:::
+
+::: {.contract-arrow}
+→
+:::
+
+::: {.contract-stage .control-stage}
+::: {.contract-number}
+3 · CONTROL USE
+:::
+**Decide what may influence action**
+
+provenance · policy · confidence · approval
+:::
+:::
+
+::: {.claim-strip .rose-line}
+A perfectly valid proof can still be operationally wrong if the model formalized the evidence incorrectly.
+:::
+
+::: {.source-line}
+Reasoning interface: [Eyeleng—proofs, validation, and explicit failure states](https://github.com/eyereasoner/eyeleng)
+:::
+
+::: {.notes}
+The contract—not merely the reasoner endpoint—is the research object. The agent must translate evidence into facts and rules with provenance, the reasoner must return proof-bearing results and explicit contradiction, invalid, and unknown states, and the harness must decide whether those results are trustworthy enough to affect a plan or authorize a tool call.
+:::
+
+## A correct plan can still produce an invalid action
+
+::: {.eyebrow}
+Preliminary agentic micro-trajectory
+:::
+
+::: {.trajectory-grid}
+::: {.trajectory-stage}
+::: {.trajectory-label}
+GOAL
+:::
+**Trace an order to its action code**
+
+How does `OrderBody` connect to `TaskActionCode`?
+:::
+
+::: {.trajectory-stage .success-stage}
+::: {.trajectory-label}
+PLAN
+:::
+**The semantic route is correct**
+
+`OrderBody` → `hasTask` → `Task` → `hasTaskActionCode`
+:::
+
+::: {.trajectory-stage .warning-stage}
+::: {.trajectory-label}
+ACTION
+:::
+**The interface crossing fails**
+
+The agent emits triple fragments—not a complete SPARQL query.
+:::
+
+::: {.trajectory-stage .failure-stage}
+::: {.trajectory-label}
+OBSERVATION
+:::
+**The parser refuses the action**
+
+Expected a query; encountered a bare triple pattern.
+:::
+:::
+
+::: {.diagnosis-strip}
+**Diagnosis:** semantic planning succeeded; protocol execution failed.
+:::
+
+::: {.source-line}
+Preliminary [internal LA3D trajectory repository](https://github.com/LA3D/gepa-rlm-reasoning) · task `t2_order_to_action_code` · paraphrased
+:::
+
+::: {.notes}
+This is an agentic micro-trajectory: one attempt through goal, plan, action, and environment observation. It is not yet a multi-turn recovery episode. The important point is attribution. A binary score records failure, while the trace shows that the agent found the correct conceptual path and failed when packaging it for the SPARQL tool. Internal source: private gepa-rlm-reasoning repository; review before public publication.
+:::
+
+## One score hides several different behaviors
+
+::: {.eyebrow}
+Why trajectories matter
+:::
+
+| Trace | Observable behavior | Architectural diagnosis |
+|---|---|---|
+| **Task properties** | Plan requests qualified routes; generated query reverts to domain/range | intention–execution drift |
+| **Action subtypes** | Query is followed by “alternative simpler pattern” prose | reasoning leaked into the action channel |
+| **Start-time limit** | Agent decides the answer is in schema metadata and refuses to query | plausible strategy violated the tool contract |
+
+::: {.score-zero}
+All three attempts score **0**—but they require different fixes.
+:::
+
+::: {.fix-row}
+::: {.fix-item}
+**Representation**
+
+teach qualified restrictions
+:::
+::: {.fix-item}
+**Output schema**
+
+separate reasoning from executable code
+:::
+::: {.fix-item}
+**Protocol**
+
+allow a proof-bearing direct answer—or require a query
+:::
+:::
+
+::: {.source-line}
+Preliminary [internal LA3D trajectory repository](https://github.com/LA3D/gepa-rlm-reasoning) · tasks `t1`, `t3`, and `t5` · paraphrased
+:::
+
+::: {.notes}
+The examples are drawn from the chain-of-thought Haiku baseline. Task t1 stated the correct high-level objective but instantiated familiar domain/range patterns. Task t3 mixed explanatory prose with executable output. Task t5 selected a reasonable schema-inspection strategy but the current harness only accepts SPARQL. This slide is the concrete case for structured outputs and component-level evaluation.
+:::
+
+## Formal feedback identifies what should change
+
+::: {.eyebrow}
+Reflection smoke test
+:::
+
+::: {.reflection-flow}
+::: {.reflection-stage}
+::: {.reflection-number}
+1 · ATTEMPT
+:::
+**Search domain/range**
+
+No route is found; the specialist abstains with low confidence.
+:::
+
+::: {.reflection-arrow}
+→
+:::
+
+::: {.reflection-stage .feedback-stage}
+::: {.reflection-number}
+2 · FORMAL FEEDBACK
+:::
+**SHACL reports a missing required relationship**
+
+FuXi confirms the relevant classes and property types.
+:::
+
+::: {.reflection-arrow}
+→
+:::
+
+::: {.reflection-stage .diagnose-stage}
+::: {.reflection-number}
+3 · DIAGNOSE
+:::
+**The prompt assumes the wrong representation**
+
+C2SIM encodes the route through qualified restrictions.
+:::
+
+::: {.reflection-arrow}
+→
+:::
+
+::: {.reflection-stage .revision-stage}
+::: {.reflection-number}
+4 · PROPOSE REVISION
+:::
+**Add restriction traversal to the specialist procedure**
+
+Then evaluate the candidate on held-out tasks.
+:::
+:::
+
+::: {.claim-strip}
+The validator returns more than “wrong”: it creates an explicit improvement target for the harness.
+:::
+
+::: {.source-line}
+Preliminary [internal LA3D `sample_failure` trace](https://github.com/LA3D/gepa-rlm-reasoning) and reflection-judge smoke test · paraphrased
+:::
+
+::: {.notes}
+The first three steps and the proposed revision are demonstrated in the smoke test. A subsequent improvement on held-out tasks has not yet been demonstrated, so the final reevaluation is a next step rather than a result. The original trace uses Order-to-Task routing, a domain/range specialist prompt, FuXi type entailments, and a SHACL cardinality violation. Review internal source material before public publication.
+:::
+
+## The experiment is a miniature of AI4C2
+
+::: {.eyebrow}
+From prototype to architecture
+:::
+
+::: {.experiment-map}
+::: {.experiment-map-item}
+::: {.map-prototype}
+C2SIM ontology
+:::
+::: {.map-role}
+**Authoritative semantics**
+
+the shared operational vocabulary
+:::
+:::
+::: {.experiment-map-item}
+::: {.map-prototype}
+RLM specialist
+:::
+::: {.map-role}
+**Neural proposal**
+
+interpret the task and prepare a formal action
+:::
+:::
+::: {.experiment-map-item}
+::: {.map-prototype}
+SPARQL harness
+:::
+::: {.map-role}
+**Governed interface**
+
+execute only a validated action channel
+:::
+:::
+::: {.experiment-map-item}
+::: {.map-prototype}
+SHACL + FuXi
+:::
+::: {.map-role}
+**Symbolic observation**
+
+constraints, entailments, and explicit failures
+:::
+:::
+::: {.experiment-map-item}
+::: {.map-prototype}
+Trajectory report
+:::
+::: {.map-role}
+**Observability evidence**
+
+connect plan, action, result, and diagnosis
+:::
+:::
+::: {.experiment-map-item}
+::: {.map-prototype}
+GEPA reflection
+:::
+::: {.map-role}
+**Versioned harness update**
+
+propose a better specialist skill for evaluation
+:::
+:::
+:::
+
+::: {.evidence-caveat}
+**Demonstrated:** traceable attempts and diagnostic feedback · **Next:** multi-turn recovery, held-out improvement, and continual promotion
+:::
+
+::: {.source-line}
+Prototype: [LA3D GEPA + RLM + C2SIM experiments](https://github.com/LA3D/gepa-rlm-reasoning) · continual-harness target: [PRIME Agent](https://arxiv.org/html/2608.23552v1)
+:::
+
+::: {.notes}
+This is why the preliminary repository belongs in the architecture story. It is not the complete AI4C2 system, but it already instantiates the important pattern: authoritative semantics, neural proposal, governed tool execution, symbolic feedback, observable trajectories, and a candidate update mechanism. GEPA performs offline reflective text evolution here; PRIME would govern persistent and continual updates in the larger architecture.
+:::
+
+## One governed path connects intent to action
+
+::: {.eyebrow}
+End-to-end interaction
+:::
+
+::: {.sequence}
+::: {.sequence-step}
+::: {.step-number}
+1
+:::
+**C2SIM report**
+
+changes operational state
+:::
+::: {.sequence-step}
+::: {.step-number}
+2
+:::
+**PRIME investigates**
+
+delegates model and tool work
+:::
+::: {.sequence-step}
+::: {.step-number}
+3
+:::
+**Reasoner checks**
+
+constraints, contradictions, unknowns
+:::
+::: {.sequence-step}
+::: {.step-number}
+4
+:::
+**Human approves**
+
+consequential action
+:::
+::: {.sequence-step}
+::: {.step-number}
+5
+:::
+**C2SIM order**
+
+becomes the shared commitment
+:::
+::: {.sequence-step}
+::: {.step-number}
+6
+:::
+**AgenticROS executes**
+
+returns feedback as reports
+:::
+:::
+
+::: {.claim-strip .rose-line}
+There is no primary PRIME → AgenticROS shortcut. Every operational action enters the C2SIM record.
+:::
+
+::: {.notes}
+This ordering gives the architecture a single auditable actuation path. The symbolic reasoner can return valid, invalid, or unknown. “Unknown” should trigger more evidence gathering or human review, not silent model improvisation.
+:::
+
+## Separate the model, harness, and domain
+
+::: {.eyebrow}
+Experimental modularity
+:::
+
+| Layer | Responsibility | Replaceable choices |
+|---|---|---|
+| **Model** | propose, summarize, generate, interpret | Codex models · open models · specialized models |
+| **Harness** | maintain context, choose tools, delegate, recover | fixed Codex · minimal RLM · PRIME · learned/RL’d policy |
+| **Domain environment** | define truth, actions, constraints, and outcomes | C2SIM · ontology · reasoner · AgenticROS · simulators |
+
+::: {.claim-strip}
+Keeping the domain environment stable lets us measure whether improvement came from the **model**, the **harness**, or **continual learning**.
+:::
+
+::: {.notes}
+Codex is both a model-backed agent and an execution harness. In AI4C2 we wrap it behind a specialist-agent interface so that the research architecture does not depend on a single model provider.
+:::
+
+## Why Codex? It gives us a controlled baseline
+
+::: {.eyebrow}
+Reference agent harness
+:::
+
+:::: {.columns}
+::: {.column width="48%"}
+::: {.card .teal}
+::: {.card-title}
+What we get immediately
+:::
+
+- an inspectable, open-source agent loop
+- persistent threads and streamed events
+- tools, sandboxing, and approval boundaries
+- programmatic control through the SDK
+- MCP integration with domain services
+- reviewable patches, tests, and artifacts
+:::
+:::
+
+::: {.column width="48%"}
+::: {.card .amber}
+::: {.card-title}
+What that enables scientifically
+:::
+
+- a mature performance baseline
+- reproducible task and tool interfaces
+- clear failure and approval traces
+- comparison with open-model agents
+- a starting policy before harness learning
+- less confounding from immature infrastructure
+:::
+:::
+::::
+
+::: {.source-line}
+Sources: [Codex as an open agent harness](https://developers.openai.com/blog/codex-as-a-platform) · [Codex SDK](https://learn.chatgpt.com/docs/codex-sdk)
+:::
+
+::: {.notes}
+The reason is not simply that Codex is capable. The open harness exposes the machinery around the model: context, tools, state, sandbox and approvals. OpenAI explicitly describes the application as owning business records, rules, tools, and consent while Codex supplies the agent loop.
+:::
+
+## Codex is a specialist—not the commander
+
+::: {.eyebrow}
+Architectural boundary
+:::
+
+:::: {.columns}
+::: {.column width="48%"}
+::: {.card .teal}
+::: {.card-title}
+Codex may
+:::
+
+- implement C2SIM adapters and transforms
+- generate and test symbolic queries
+- inspect schemas, logs, and integration failures
+- build simulation and evaluation fixtures
+- package successful procedures as skills
+- return artifacts with evidence
+:::
+:::
+
+::: {.column width="48%"}
+::: {.card .rose}
+::: {.card-title}
+Codex may not
+:::
+
+- redefine authoritative operational state
+- bypass C2SIM to actuate a platform
+- approve its own consequential actions
+- silently promote speculation into memory
+- alter policy or permissions without governance
+- become the only available agent implementation
+:::
+:::
+::::
+
+::: {.claim-strip}
+Wrap Codex behind an **EngineeringAgent** contract so another coding agent can replace it without changing C2SIM or AgenticROS.
+:::
+
+::: {.notes}
+A bounded task contract should include objective, workspace, allowed tools, constraints, evidence requirements, and budget. The result should include artifacts, tests, trace identifiers, provenance, and unresolved risks.
+:::
+
+## Two reasoning timescales, one governed control loop
+
+::: {.eyebrow}
+System 1 and System 2
+:::
+
+::: {.dual-system-loop}
+::: {.cognitive-plane .system-one-plane}
+::: {.system-label}
+SYSTEM 1 · 5–50 Hz
+:::
+**AgenticROS + ROS 2 execute now**
+
+perceive · localize · avoid · track · recover
+
+::: {.plane-rule}
+Local safety never waits for deliberation.
+:::
+:::
+
+::: {.timescale-bridge}
+::: {.system-label}
+BRIDGE · 1–2 Hz
+:::
+**Symbolic REPL**
+
+buffer · transform · summarize · log
+:::
+
+::: {.cognitive-plane .system-two-plane}
+::: {.system-label}
+SYSTEM 2 · 0.1–0.5 Hz
+:::
+**Codex harness + RLM deliberate**
+
+interpret · query · check · plan · formulate tasks
+
+::: {.plane-rule}
+Sets goals and constraints—not velocity commands.
+:::
+:::
+:::
+
+::: {.control-return}
+**Evidence → System 2** &nbsp;&nbsp;·&nbsp;&nbsp; **C2SIM task → System 1**
+:::
+
+::: {.claim-strip}
+Fast execution stays locally safe; slow reasoning remains evidence-bearing and governable.
+:::
+
+::: {.notes}
+Use the System 1/System 2 analogy as a teaching hook, not as a claim that ROS has human cognition. AgenticROS and ROS 2 form the fast execution plane. The Codex harness and RLM form the slower deliberative plane. The symbolic REPL adapts rates and representations between them. System 2 may set a goal, constraint, named capability, or C2SIM task; it never becomes part of the velocity-control loop.
+:::
+
+## Reasoning must run at the speed of the decision
+
+::: {.eyebrow}
+Proposed robotics control budget
+:::
+
+::: {.rate-stack}
+::: {.rate-row .system-one-rate}
+::: {.rate-frequency}
+20–50 Hz
+:::
+::: {.rate-layer}
+**Low-level control**
+:::
+::: {.rate-description}
+Nav2 controller tracks the path and sends velocity commands.
+:::
+:::
+
+::: {.rate-row .system-one-rate}
+::: {.rate-frequency}
+10–20 Hz
+:::
+::: {.rate-layer}
+**Local planning + costmaps**
+:::
+::: {.rate-description}
+Adjust the path around obstacles as the local world changes.
+:::
+:::
+
+::: {.rate-row .system-one-rate}
+::: {.rate-frequency}
+5–10 Hz
+:::
+::: {.rate-layer}
+**Perception + SLAM**
+:::
+::: {.rate-description}
+Cartographer processes LiDAR for mapping and localization.
+:::
+:::
+
+::: {.rate-row .bridge-rate}
+::: {.rate-frequency}
+1–2 Hz
+:::
+::: {.rate-layer}
+**Symbolic REPL hook**
+:::
+::: {.rate-description}
+Drain the broker buffer, compute lightweight symbols, log events, and summarize state.
+:::
+:::
+
+::: {.rate-row .system-two-rate}
+::: {.rate-frequency}
+0.1–0.5 Hz
+:::
+::: {.rate-layer}
+**High-level reasoning**
+:::
+::: {.rate-description}
+Run OWL and doctrine checks; generate a C2SIM task after meaningful change.
+:::
+:::
+:::
+
+::: {.rate-legend}
+**System 1** continuous control &nbsp;&nbsp;·&nbsp;&nbsp; **Bridge** lossless buffering + abstraction &nbsp;&nbsp;·&nbsp;&nbsp; **System 2** event-triggered deliberation
+:::
+
+::: {.source-line}
+Working AI4C2 architectural budget · frequency ranges require validation on target hardware
+:::
+
+::: {.notes}
+These are design targets rather than measured guarantees. The important relationship is the separation of timescales. The broker must ingest every C2SIM message independently of the one-to-two-hertz REPL schedule. The REPL works over a buffer or durable log, detects meaningful changes, and prepares a bounded state summary. Full reasoning then runs every two to ten seconds when triggered—not on every sensor update.
+:::
+
+## AgenticROS is a governed capability boundary
+
+::: {.eyebrow}
+System 1 execution plane
+:::
+
+:::: {.columns}
+::: {.column width="45%"}
+::: {.capability-contract}
+**Approved C2SIM task**
+
+↓
+
+**C2SIM → capability adapter**
+
+↓
+
+**Named AgenticROS mission**
+
+↓
+
+**ROS 2 execution**
+
+↓
+
+**C2SIM report**
+:::
+:::
+
+::: {.column width="51%"}
+::: {.card .amber}
+::: {.card-title}
+Why keep the adapter?
+:::
+
+- agents request named capabilities, not raw topics
+- typed manifests can be validated before dispatch
+- the real-time loop never waits for System 2
+- local safety and recovery retain final authority
+- safety clamps and fleet filters remain explicit
+- pause, retry, cancel, and feedback are observable
+- the C2SIM interface prevents agent lock-in
+:::
+:::
+::::
+
+::: {.source-line}
+Source: [AgenticROS architecture and Codex integration](https://agenticros.com/)
+:::
+
+::: {.notes}
+AgenticROS supports Codex CLI and MCP, but compatibility is secondary to the capability-contract pattern. The adapter owns the mapping between C2SIM tasks and AgenticROS missions. Platform feedback returns through C2SIM reports. AgenticROS is System 1 in the architectural analogy: it executes approved named capabilities while ROS 2 controllers, planners, and safety mechanisms remain responsible for real-time behavior.
+:::
+
+## An RLM makes operational history computable
+
+::: {.eyebrow}
+System 2 working environment
+:::
+
+::: {.workspace-flow}
+::: {.workspace-stage .history-stage}
+::: {.workspace-label}
+C2SIM + REPL STATE
+:::
+**The world remains queryable data**
+
+orders · reports · symbolic summaries · traces
+:::
+
+::: {.workspace-arrow}
+→
+:::
+
+::: {.workspace-stage .repl-stage}
+::: {.workspace-label}
+CODEX HARNESS + RLM
+:::
+**Search, compute, and preserve working state**
+
+variables · code · indexes · intermediate results
+:::
+
+::: {.workspace-arrow}
+→
+:::
+
+::: {.workspace-stage .subproblem-stage}
+::: {.workspace-label}
+GOVERNED OUTPUT
+:::
+**Return a bounded task or constraint**
+
+C2SIM task · proof · confidence · unresolved risk
+:::
+:::
+
+::: {.externalization-row}
+::: {.externalization-item}
+**Memory** preserves state
+:::
+::: {.externalization-item}
+**Skills** preserve procedures
+:::
+::: {.externalization-item}
+**Protocols** preserve governable interaction
+:::
+:::
+
+::: {.claim-strip}
+System 2 deliberates over goals and constraints—it never emits velocity commands.
+:::
+
+::: {.source-line}
+Source: [Zhang, Kraska, and Khattab, “Recursive Language Models”](https://arxiv.org/abs/2512.24601)
+:::
+
+::: {.notes}
+An RLM treats the original context as data in a programmatic environment. The root model coordinates searches and bounded subcalls while intermediate state remains in addressable variables rather than an ever-growing conversation. For AI4C2, the symbolic REPL prepares a compact, queryable state for this System 2 workspace. Each specialist receives only the evidence needed for its subproblem, and the harness returns a governed C2SIM task or constraint rather than a control command.
+:::
+
+## PRIME learns how to organize the work
+
+::: {.eyebrow}
+Continual harness
+:::
+
+::: {.prime-loop}
+::: {.prime-node}
+**Attempt**
+
+run a trajectory with tools and specialists
+:::
+::: {.prime-arrow}
+→
+:::
+::: {.prime-node}
+**Observe**
+
+collect outcome, trace, cost, and intervention
+:::
+::: {.prime-arrow}
+→
+:::
+::: {.prime-node}
+**Reflect**
+
+identify reusable successes and failures
+:::
+::: {.prime-arrow}
+→
+:::
+::: {.prime-node .learning-node}
+**Revise the harness**
+
+version memories, skills, prompts, and agent roles
+:::
+:::
+
+::: {.comparison-band}
+**Model weights may stay fixed** while the surrounding organization becomes more capable.
+:::
+
+::: {.prime-caution}
+**Persistence remembers shortcuts, too.** Promote updates only after evaluation; retain versions, approval history, and rollback.
+:::
+
+::: {.source-line}
+Source: [PRIME Agent: continual learning through an evolving agent harness](https://arxiv.org/html/2608.23552v1)
+:::
+
+::: {.notes}
+PRIME is the outer RLM-style orchestrator. It can maintain a persistent REPL, create recursive subagents, and carry versioned memories, skills, prompts, and agent specifications across trajectories. Its Factorio case study found that refinement could preserve an objective-gaming shortcut as a skill, making evaluation, least privilege, independent validation, and rollback architectural requirements rather than optional safeguards.
+:::
+
+## Observe everything; remember selectively
+
+::: {.eyebrow}
+Two different planes
+:::
+
+:::: {.columns}
+::: {.column width="48%"}
+::: {.card .teal}
+::: {.card-title}
+Observability is the evidence record
+:::
+
+Append-only traces of:
+
+- C2SIM orders and reports
+- projections and reasoner proofs
+- PRIME turns and subagents
+- Codex tools, artifacts, and tests
+- approvals and interventions
+- AgenticROS missions and outcomes
+:::
+:::
+
+::: {.column width="48%"}
+::: {.card .amber}
+::: {.card-title}
+Memory is selected derived knowledge
+:::
+
+Versioned stores for:
+
+- working hypotheses
+- episodes and outcomes
+- validated semantic conclusions
+- procedures and recovery skills
+- policies and permissions
+- retrieval links back to evidence
+:::
+:::
+::::
+
+::: {.triad-strip}
+**Memory** preserves state · **skills** preserve procedures · **protocols** preserve governable interaction
+**C2SIM remains authoritative evidence;** every retained artifact is derived, versioned, and traceable back to it.
+:::
+
+::: {.notes}
+Use C2SIM MessageID and ConversationID as root correlation identifiers wherever possible. Every memory item should carry provenance, observation time, validity interval, version, and supporting trace references. AgenticROS local memory is edge-local—not the canonical system memory.
+:::
+
+## A baseline ladder isolates where capability comes from
+
+::: {.eyebrow}
+Experimental program
+:::
+
+::: {.baseline-ladder}
+::: {.ladder-rung}
+::: {.rung-label}
+Baseline 0
+:::
+**Open model + minimal fixed harness**
+
+How far does the model get with no accumulated organization?
+:::
+::: {.ladder-rung}
+::: {.rung-label}
+Baseline 1
+:::
+**Codex reference harness**
+
+What does mature context, tooling, and recovery add?
+:::
+::: {.ladder-rung}
+::: {.rung-label}
+Variant 2
+:::
+**PRIME + open-model specialists**
+
+What does persistent orchestration add independent of Codex?
+:::
+::: {.ladder-rung}
+::: {.rung-label}
+Variant 3
+:::
+**PRIME + Codex specialist**
+
+Does a mature engineering agent improve the continual system?
+:::
+::: {.ladder-rung .learned-rung}
+::: {.rung-label}
+Variant 4
+:::
+**Learned/RL’d harness policy**
+
+Can experience outperform the hand-designed harness on the same interface?
+:::
+:::
+
+:::: {.rl-distinction}
+::: {.rl-mode}
+**RL through the harness** · learn the model policy that proposes reasoning and actions
+:::
+::: {.rl-mode .harness-rl}
+**RL of the harness** · learn when to retrieve, delegate, check, retry, compact, or stop
+:::
+::::
+
+::: {.notes}
+The same C2SIM scenario corpus, tool schemas, permissions, and evaluation harness should be used for every rung. This makes the baseline scientifically useful rather than simply a product demonstration. The target of learning must be reported explicitly: model behavior within a fixed runtime, structural harness decisions around a fixed executor, or both as a coupled system.
+:::
+
+## Evaluate the system at every boundary
+
+::: {.eyebrow}
+What success means
+:::
+
+| Dimension | Example measure | Evidence source |
+|---|---|---|
+| **Task performance** | mission completion, report quality, constraint satisfaction | C2SIM outcomes and simulator state |
+| **Semantic validity** | schema validity, rule violations, unsupported assertions | ontology projection and proofs |
+| **Operational safety** | unauthorized actions, human overrides, recovery success | approvals and AgenticROS traces |
+| **Learning** | transfer to new scenarios, fewer retries, lower intervention rate | versioned PRIME evaluations |
+| **Efficiency** | latency, tool calls, tokens, compute, mission duration | correlated observability trace |
+| **Reproducibility** | replay equivalence, artifact and policy versions | C2SIM log plus agent manifests |
+
+::: {.claim-strip}
+No single “agent score” is enough: capability, validity, safety, learning, and cost can move in different directions.
+:::
+
+::: {.notes}
+This slide also clarifies why observability is part of the research architecture rather than an operations add-on. Without aligned traces, we cannot attribute an outcome to the model, harness, rule system, human, or execution layer.
+:::
+
+## Begin with a replayable C2SIM scenario
+
+::: {.eyebrow}
+First vertical slice
+:::
+
+::: {.scenario-chain}
+**Scenario** → **ORBAT / entities** → **initial state** → **order / task** → **route / control feature** → **report / state update** → **trajectory score**
+:::
+
+:::: {.columns}
+::: {.column width="48%"}
+::: {.card .teal}
+::: {.card-title}
+Prototype objective
+:::
+
+Reconstruct one public scenario, let the agent investigate a changed report, propose a course of action, validate it symbolically, and issue an approved task through AgenticROS.
+:::
+:::
+
+::: {.column width="48%"}
+::: {.card .amber}
+::: {.card-title}
+Completion criterion
+:::
+
+Replay the complete trace—from incoming report to robot feedback—with every transformation, memory retrieval, proof, approval, and artifact linked to evidence.
+:::
+:::
+::::
+
+::: {.source-line}
+Starting corpus: [OpenC2SIM reference implementation, scenarios, orders, and logs](https://github.com/OpenC2SIM/MSG201CWIX)
+:::
+
+::: {.notes}
+The public MSG-145/CWIX materials provide realistic artifacts without requiring private operational data. Start narrow: one scenario, one changed observation, one approved task, and one complete replay.
+:::
+
+## The architectural hypothesis
+
+::: {.eyebrow}
+Research claim
+:::
+
+::: {.hypothesis}
+A continually improving agent can become more capable **without becoming less governable** when:
+
+1. operational truth remains in C2SIM;
+2. reasoning and actuation use typed, inspectable interfaces;
+3. PRIME updates versioned harness artifacts—not hidden operational state;
+4. every consequential action requires policy validation and appropriate human authority; and
+5. every outcome can be replayed and compared against a fixed baseline.
+:::
+
+::: {.notes}
+This is the claim the architecture is designed to test. A failure on any one boundary should be visible and attributable rather than absorbed into a vague “agent made a mistake” explanation.
+:::
+
+## Decisions for the first prototype
+
+::: {.eyebrow}
+Team discussion
+:::
+
+:::: {.columns}
+::: {.column width="48%"}
+::: {.card .amber}
+::: {.card-title}
+Scope decisions
+:::
+
+- Which public C2SIM scenario becomes the vertical slice?
+- Which AgenticROS capability represents the first actuation?
+- Which actions require human approval?
+:::
+:::
+
+::: {.column width="48%"}
+::: {.card .teal}
+::: {.card-title}
+Research decisions
+:::
+
+- What is the minimal open-model baseline?
+- Which PRIME artifacts may evolve automatically?
+- What result would falsify the architectural hypothesis?
+:::
+:::
+::::
+
+::: {.claim-strip}
+Next deliverable: one replayable, governed trajectory—not a general-purpose autonomous commander.
+:::
