@@ -188,9 +188,9 @@ AGENTIC LEARNING NOTES
 Slide ID — wikimemory-convergence
 Learning objective — Identify the three historical lineages that contribute to agentic WikiMemory.
 Core claim — WikiMemory is a convergence of associative hypertext, collaborative wiki maintenance, and file-native personal knowledge—not a sudden invention.
-Explain — These traditions developed partly in parallel. Augmentation contributes trails and cognitive environments; wiki contributes open, incremental maintenance; personal knowledge tools contribute local ownership, plain text, and graph-shaped navigation. Agents add the ability to navigate, write, refactor, audit, and learn through the combined medium.
-Misconception — The slide does not claim a single direct lineage or that each later system consciously inherited every earlier design principle.
-Check — What distinct contribution does each of the three lineages make?
+Explain — Read the three rows as complementary historical traditions, not one literal lineage. Memex was Bush’s imagined personal device for following associative trails; NLS/Augment was Engelbart’s integrated environment for structured text, links, tools, and collaboration; the read–write Web treats the Web as a medium people can both browse and edit. Wikis add shared maintenance. The “second brain” row adds personal ownership: in a Markdown vault, notes are nodes, links are edges, and metadata can type consequential relationships, so linked notes already form a knowledge graph. Agentic WikiMemory converges these affordances.
+Misconception — The arrows organize related developments; they do not claim a single direct genealogy or that each later system consciously inherited every earlier design principle. A graph view is optional: linked notes already form a graph.
+Check — What does Memex, NLS/Augment, the read–write Web, wiki maintenance, and the personal Markdown graph each contribute?
 Source routes — Treat this as a synthesis map; the next sequence of slides supplies the historical evidence for each row.
 Transition — Start with Bush’s idea that associative trails matter more than filing hierarchies.
 -->
@@ -222,9 +222,9 @@ AGENTIC LEARNING NOTES
 
 Slide ID — bush-associative-trails
 Learning objective — Explain why Bush’s associative trail is more relevant to WikiMemory than a simple filing cabinet metaphor.
-Core claim — Durable paths among evidence, ideas, tensions, and questions preserve how thought moved, not merely where documents were stored.
-Explain — The Memex is often flattened into an early computer or proto-Web. The stronger idea is the associative trail: a durable path through sources that can be revisited and shared. Wiki links later provide a cheap, editable implementation of this relational idea.
-Misconception — Bush did not describe the modern Web, and the Memex’s importance is not that it predicted a personal computer feature by feature.
+Core claim — An associative trail is a saved, revisit-able, branchable, and shareable path through sources, ideas, tensions, and questions—not merely a place to store them.
+Explain — In plain language, a trail records how inquiry moved: paper → supported claim → conflicting experiment → resulting question. Bush wrote amid concern that information was growing faster than people could organize and reuse it. His durable design principle was to preserve and pass on paths of association so scientific thought could continue; wiki links later provide a cheap, editable implementation.
+Misconception — Bush did not describe the modern Web or modern AI; the Memex matters as an early framing of continuity through associative paths, not as a feature-by-feature prediction.
 Check — Construct a four-step associative trail for a research question you know.
 Source routes — Follow the linked 1945 Vannevar Bush essay “As We May Think,” especially its discussion of associative indexing and trails.
 Transition — Engelbart expands the trail into an entire environment for augmented knowledge work.
@@ -642,10 +642,10 @@ AGENTIC LEARNING NOTES
 
 Slide ID — agent-as-maintainer
 Learning objective — Describe the division of labor between a human researcher and an agent maintaining a wiki.
-Core claim — The novel actor is an agent performing routine compilation, cross-linking, refactoring, and linting within a human-governed medium.
-Explain — Personal wikis have existed for decades. Karpathy’s useful inversion is that the human need not perform all of the bookkeeping. The model becomes librarian and gardener; the human remains source selector, question asker, reader, editor, and epistemic judge.
-Misconception — The maintainer role does not transfer scientific authority to the agent or eliminate human review.
-Check — Which maintenance tasks are reasonable to delegate, and which judgments should remain explicitly human?
+Core claim — The novel actor is an agent that maintains useful structure and continuity within a human-governed medium.
+Explain — The agent can find related sources, create or repair links, flag contradictions, summarize what a trail means, and keep paths connected as new evidence arrives. It can also file its execution trajectory so later work can inspect prior attempts rather than restart from scratch. The human remains source selector, question asker, editor, and epistemic judge.
+Misconception — Maintenance does not transfer scientific authority to the agent: it may propose, connect, and flag, but it must not silently promote guesses into trusted claims or eliminate human review.
+Check — Name one structural task to delegate, one trajectory detail to preserve, and one judgment that should remain explicitly human.
 Source routes — Revisit Karpathy’s linked “LLM Wiki” idea file and compare its agent instructions with the earlier personal-wiki lineage.
 Transition — Compare maintained synthesis with the dominant query-time retrieval architecture.
 -->
@@ -747,50 +747,128 @@ Explain — OKF permits index.md at any directory level. It groups links to conc
 Misconception — An index is not an exhaustive table of contents that should always be loaded together with every descendant page.
 Check — After reading a root index, what condition tells the agent to stop expanding rather than open another branch?
 Source routes — Follow the linked Open Knowledge Format v0.2 specification, section 8 “Index files.”
-Transition — Zoom from corpus navigation into the anatomy of one agent-operable page.
+Transition — Optionally move from hierarchical routing into the local typed neighborhood that an index helps reveal.
 -->
 
 ---
 
-<div class="eyebrow">A WikiMemory page</div>
+<div class="eyebrow">A maintained neighborhood</div>
 
-## One note can coordinate evidence, meaning, and action
+## A WikiMemory document is a typed node—not an isolated page
 
-<div class="note-anatomy">
-  <pre><code><span class="code-comment">---</span>
-<span class="code-key">type:</span> <span class="code-type">claim</span>
-<span class="code-key">status:</span> <span class="code-type">contested</span>
-<span class="code-key">sources:</span> [<span class="code-type">paper-17</span>, <span class="code-type">run-042</span>]
-<span class="code-key">review_after:</span> <span class="code-type">2026-10-01</span>
-<span class="code-comment">---</span>
-&#35;&#35; Compiled knowledge reduces rediscovery
-Supported by [[WiCER]]; limited by [[Compilation gap]].
-Contradicts [[Full-context is always sufficient]].
-&#35;&#35;&#35; Evidence
-- [[run-042]] — matched evaluation
-&#35;&#35;&#35; Open question
-- Which details must remain in raw evidence?</code></pre>
-  <div class="anatomy-labels">
-    <div><b>Metadata</b><span>machine-selectable state</span></div>
-    <div><b>Wikilinks</b><span>navigable relationships</span></div>
-    <div><b>Sections</b><span>predictable reading contract</span></div>
-    <div><b>Sources</b><span>path back to evidence</span></div>
+<div class="neighborhood-frame" aria-label="A typed WikiMemory neighborhood with a highlighted inquiry trail from a paper through a claim, conflicting experiment, question, and revised experiment">
+  <div class="neighborhood-trail">
+    <div class="trail-state source-state"><small>SOURCE · PAPER</small><b>paper-17</b><span>reported result</span></div>
+    <div class="trail-edge"><b>supports</b><i>→</i></div>
+    <div class="trail-state claim-state"><small>CLAIM</small><b>claim-7</b><span>contestable assertion</span></div>
+    <div class="trail-edge rose-edge"><b>contradicts</b><i>→</i></div>
+    <div class="trail-state run-state"><small>EXPERIMENT · RUN</small><b>run-042</b><span>conflicting result</span></div>
+    <div class="trail-edge"><b>motivates</b><i>→</i></div>
+    <div class="trail-state question-state"><small>OPEN QUESTION</small><b>question-3</b><span>what changed?</span></div>
+    <div class="trail-edge"><b>revises</b><i>→</i></div>
+    <div class="trail-state revised-state"><small>NEXT ACTION · RUN</small><b>run-043</b><span>revised experiment</span></div>
+  </div>
+  <div class="neighborhood-context">
+    <div class="neighborhood-role"><small>METHOD · PROTOCOL</small><b>protocol-03</b><span><em>tests</em> the runs under a declared procedure</span></div>
+    <div class="concept-hub"><small>CONCEPT NOTE · HUB</small><b>Compilation gap</b><span>organizes meaning, scope, and navigation across the neighborhood</span><em>concerns ↑ the highlighted trail</em></div>
+    <div class="claim-boundary"><small>ASSERTION BOUNDARY</small><b>Claims stay separate</b><span>Contestable assertions keep their own evidence, contradictions, maturity, and review lifecycle.</span></div>
   </div>
 </div>
 
-<p class="microcopy">Illustrative Obsidian-compatible note—not a proposed universal schema.</p>
+<p class="microcopy">Design synthesis: typed note roles and edges make the inquiry path inspectable; the concept note coordinates the neighborhood rather than absorbing every assertion.</p>
+
+<!--
+AGENTIC LEARNING NOTES
+
+Slide ID — wikimemory-neighborhood
+Learning objective — Interpret WikiMemory documents as typed nodes in a maintained neighborhood and identify an inquiry trail as one path through that graph.
+Core claim — A concept note organizes meaning and navigation, while sources, claims, runs, methods, questions, and next actions retain distinct roles, evidence, and lifecycles.
+Explain — Read the highlighted path as a Bush-style inquiry trail: paper-17 supports claim-7; run-042 contradicts it; the conflict motivates question-3; the question leads to revised run-043. Protocol-03 records how runs are tested. The concept note connects this neighborhood without swallowing its contestable assertions; those remain in claim notes where provenance, contradictions, maturity, and review can stay inspectable.
+Misconception — A central concept note is not the single source of truth, and drawing many links to it does not make its claims better supported.
+Check — Optional exploration: which node should change when run-043 produces a new result, and which neighboring nodes should be reviewed rather than overwritten?
+Source routes — Treat this as the deck’s design synthesis of Bush-style trails, typed links, note roles, and scientific provenance; route backward to slides 7 and 22 or forward to the claim-note and typed-edge slides.
+Transition — Optional route: zoom into the claim node to separate lifecycle maturity from epistemic status.
+-->
+
+---
+
+<div class="eyebrow">Claim-note zoom · illustrative fields</div>
+
+## A claim note keeps maturity separate from epistemic status
+
+<div class="claim-note-zoom">
+  <pre class="claim-frontmatter"><code><span class="code-comment">---</span>
+<span class="code-key">type:</span> <span class="code-type">claim</span>
+<span class="code-key">maturity:</span> <span class="code-type">draft</span>
+<span class="code-key">epistemic_status:</span> <span class="code-type">contested</span>
+<span class="code-key">creator:</span> <span class="code-type">researcher-or-agent-id</span>
+<span class="code-key">context:</span> <span class="code-type">inquiry/compilation-gap</span>
+<span class="code-key">supported_by:</span> [<span class="code-type">"[[paper-17]]"</span>]
+<span class="code-key">contradicted_by:</span> [<span class="code-type">"[[run-042]]"</span>]
+<span class="code-key">review_after:</span> <span class="code-type">2026-10-01</span>
+<span class="code-comment">---</span></code></pre>
+  <div class="claim-readable">
+    <div><small>CLAIM</small><b>Compiled knowledge reduces rediscovery.</b></div>
+    <div><small>EVIDENCE</small><span><code>paper-17</code> supports the claim under the reported study conditions.</span></div>
+    <div class="tension-block"><small>TENSIONS</small><span><code>run-042</code> contradicts the expected effect in a new evaluation.</span></div>
+    <div><small>OPEN QUESTION</small><span>Which omitted details explain the disagreement?</span></div>
+    <div><small>NEXT INQUIRY</small><span>Revise the protocol, run <code>run-043</code>, then review this claim.</span></div>
+  </div>
+</div>
+
+<p class="claim-distinction"><strong>Maturity</strong> asks how developed the note is. <strong>Epistemic status</strong> asks how well the claim is currently supported.</p>
+
+<p class="microcopy">Illustrative Obsidian-compatible claim note—not a canonical schema for llm-wiki-colab or every vault.</p>
 
 <!--
 AGENTIC LEARNING NOTES
 
 Slide ID — wikimemory-page-anatomy
-Learning objective — Read one Markdown note simultaneously as prose, structured state, a graph node, and an instruction surface.
-Core claim — A predictable note template can coordinate evidence, meaning, lifecycle state, and next actions without sacrificing human readability.
-Explain — Use this as the concrete aha slide. YAML exposes type, status, sources, and review timing; prose explains the claim; typed link phrases locate it in a conceptual neighborhood; sections create a reading contract; evidence links preserve a route to verification. Templates make recurring page types predictable while Markdown keeps exceptions expressible.
-Misconception — The example is not a universal schema, and adding frontmatter does not make an unsupported claim scientific.
-Check — Which parts are primarily machine-selectable, which are human-readable, and which serve both roles?
-Source routes — Treat the note as an illustrative Obsidian-compatible design; trace WiCER and the compilation-gap links back to the earlier RAG comparison.
-Transition — The page becomes reliable memory only when a harness governs how agents read and change it.
+Learning objective — Read an illustrative claim note that separates lifecycle maturity from epistemic status while preserving provenance, supporting and contradictory evidence, review timing, and next inquiry.
+Core claim — A claim becomes inspectable when machine-readable relations and lifecycle fields remain paired with readable evidence, tensions, questions, and next actions.
+Explain — The example labels type, maturity, epistemic status, creator and creation context, supporting paper, contradictory run, and review timing. The prose sections then state the claim, evidence, tension, open question, and next inquiry. Keeping maturity separate from epistemic status prevents “well edited” from being mistaken for “well supported,” while typed relations keep both support and contradiction traversable.
+Misconception — These fields are illustrative rather than a universal llm-wiki-colab schema, and structured frontmatter cannot turn an unsupported assertion into dependable knowledge.
+Check — Optional exploration: which field should change after an editorial cleanup, which after contradictory evidence, and which after a successful replication?
+Source routes — Treat the card as an illustrative claim-note specialization; route backward to the typed neighborhood or forward to the governed transaction and typed-edge slides.
+Transition — Optional route: ask how an agent chooses the next useful note among the outgoing links in this neighborhood.
+-->
+
+---
+
+<div class="eyebrow">Agentic graph navigation · Markov analogy</div>
+
+## The neighborhood is the transition space; the realized sequence is the trail
+
+<div class="navigation-layout">
+  <div class="navigation-state-panel">
+    <div class="query-chip"><small>TASK / QUERY</small><b>Which evidence challenges claim-7?</b></div>
+    <div class="current-note"><small>CURRENT STATE · NOTE</small><b>claim-7</b><span>outgoing typed links define locally available transitions</span></div>
+    <div class="transition-options">
+      <div><code>supported_by</code><span>paper-17</span></div>
+      <div class="selected-transition"><code>contradicted_by</code><span>run-042</span><b>selected</b></div>
+      <div><code>tested_by</code><span>protocol-03</span></div>
+      <div><code>motivates</code><span>question-3</span></div>
+    </div>
+  </div>
+  <div class="navigation-policy-panel">
+    <div class="policy-box"><small>QUERY-CONDITIONED POLICY / WEIGHTING</small><b>score(next note | task, context, edge semantics, evidence state)</b><span>choose a useful transition—not merely the most linked node</span></div>
+    <div class="realized-trail"><small>REALIZED TRAIL / TRAJECTORY</small><div><span>concept</span><i>→</i><span>claim-7</span><i>→</i><span>run-042</span><i>→</i><span>question-3</span></div></div>
+  </div>
+</div>
+
+<p class="caveat-line navigation-caveat"><strong>Markov-chain connection:</strong> notes can be modeled as states and typed links as possible transitions. This is a design analogy—not a claim that the current plugin implements one particular Markov algorithm.</p>
+
+<!--
+AGENTIC LEARNING NOTES
+
+Slide ID — agentic-neighborhood-navigation
+Learning objective — Connect graph navigation to a Markov-style state-transition model without assuming a specific implemented algorithm.
+Core claim — A note’s local neighborhood is the available transition space, while a task-conditioned policy or weighting realizes one useful sequence as a trail or execution trajectory.
+Explain — Treat notes as states and outgoing typed links as possible transitions. The task, current context, link meaning, provenance, and evidence status can weight which neighboring note is useful next. In the example, a query about challenges favors the contradicted_by edge to run-042, yielding a realized path through the graph. This framing connects to Markov-chain work while remaining implementation-neutral.
+Misconception — Link count, centrality, or proximity alone does not establish relevance or truth, and the current llm-wiki-colab materials do not document a single canonical Markov navigation algorithm.
+Check — Optional exploration: for a replication-planning query, which outgoing relation should receive more weight, and what evidence-status signal could change that choice?
+Source routes — This is a conceptual bridge to state-transition and Markov-chain reasoning; use the deck’s linked llm-wiki-colab sources for implemented graph and lifecycle behavior, not as evidence of a specific navigation algorithm.
+Transition — Optional route: move from read-side navigation to the harness that governs graph-changing writes.
 -->
 
 ---
@@ -821,27 +899,34 @@ AGENTIC LEARNING NOTES
 Slide ID — harness-memory-system
 Learning objective — Apply the harness-externalization frame to a writable knowledge vault.
 Core claim — Persistence comes from external files, but reliability comes from a harness that selects context, authorizes changes, validates evidence, observes outcomes, and can roll back.
-Explain — This imports the earlier AI4C2 deck’s central frame. Files alone do not decide when an agent writes, which evidence is required, whether a change is accepted, or what must be preserved. Those responsibilities are encoded through rules, skills, tools, permissions, gates, logs, and rollback.
-Misconception — A persistent folder is not automatically a memory system, and a capable model cannot substitute for explicit lifecycle governance.
-Check — For an agent proposing to change a contested claim, name one responsibility at each of select, authorize, validate, observe, and rollback.
+Explain — Files alone do not decide when an agent writes, which evidence is required, whether a change is accepted, or what must be preserved. Provenance keeps claims tied to sources; controlled write scopes and review bound authority; validation tests proposed changes; logs preserve actions and outcomes; rollback reverses changes that fail. Rules, skills, tools, permissions, and gates encode those responsibilities.
+Misconception — A persistent folder is not automatically a dependable memory system, and a capable model cannot substitute for lifecycle governance or turn an unsupported guess into a trusted claim.
+Check — Optional exploration: for an agent proposing to change a contested claim, name one responsibility at each of select, authorize, validate, observe, and rollback.
 Source routes — Follow Zhou et al.’s linked “Externalization in LLM Agents” and the linked “Living Wiki” treatment of vault schema as a procedural skill.
-Transition — Show how our llm-wiki-colab implementation packages those lifecycle responsibilities.
+Transition — Optional route: express a write as a governed graph change set and distinguish the generic plugin lifecycle from a stronger vault specialization.
 -->
 
 ---
 
-<div class="eyebrow">Our implementation · llm-wiki-colab</div>
+<div class="eyebrow">Governed write · graph change set</div>
 
-## We package the lifecycle—not just the files
+## A WikiMemory write changes a neighborhood—not just one file
 
-<div class="substrate-grid">
-  <div class="substrate-item"><span class="tag teal-tag">orient</span><b>Index + recent log</b><p>A session-start hook gives the agent a small, current map of project memory.</p></div>
-  <div class="substrate-item"><span class="tag amber">operate</span><b>Explicit skills</b><p>Initialize, query, ingest evidence, file experiments, lint, and collaborate.</p></div>
-  <div class="substrate-item"><span class="tag rose-tag">verify</span><b>Discipline gates</b><p>Re-read writes; check evidence, scope, structure, links, index, and log.</p></div>
-  <div class="substrate-item"><span class="tag">coordinate</span><b>Git write protocol</b><p>Keep memory revisioned and handle concurrent wiki writers without silent loss.</p></div>
+<div class="transaction-grid">
+  <div class="tx-step"><small>01 · INTAKE</small><b>New evidence</b><span>paper · data · run · conversation</span></div>
+  <div class="tx-step"><small>02 · ORIENT</small><b>Deduplicate + route</b><span>find the existing neighborhood and note role</span></div>
+  <div class="tx-step"><small>03 · WRITE</small><b>Create or revise typed notes</b><span>preserve evidence and contestable claims</span></div>
+  <div class="tx-step"><small>04 · INTEGRATE</small><b>Add typed + reciprocal links</b><span>repair both sides of consequential relations</span></div>
+  <div class="tx-step"><small>05 · COORDINATE</small><b>Update concept · index · log</b><span>keep navigation and change history coherent</span></div>
+  <div class="tx-step"><small>06 · VERIFY</small><b>Check provenance + structure</b><span>scope · links · evidence · structure</span></div>
+  <div class="tx-step"><small>07 · AUTHORIZE</small><b>Review + commit</b><span>apply the profile’s write and Git controls</span></div>
+  <div class="tx-step"><small>08 · DERIVE</small><b>Rebuild graph · permit rollback</b><span>when the profile defines derived RDF / SHACL</span></div>
 </div>
 
-<p class="callout-line">The Markdown corpus is portable; the memory profile lives in the lifecycle around it.</p>
+<div class="transaction-profiles">
+  <div class="generic-profile"><small>GENERIC · <code>llm-wiki-colab</code></small><b>Governed wiki lifecycle</b><span>orientation · explicit ingest skills · verification gate · index/log integration · Git coordination</span></div>
+  <div class="vault-profile"><small>SPECIALIZATION · VAULT <code>/encode</code></small><b>Stronger typed transaction</b><span>type routing · maturity + epistemic state · creator/context provenance · review · commit · RDF/SHACL rebuild</span></div>
+</div>
 
 <p class="microcopy"><a href="https://github.com/LA3D-LLM-Agents/llm-wiki-colab">LA3D-LLM-Agents, <code>llm-wiki-colab</code></a> · <a href="https://doi.org/10.5281/zenodo.21213175">Saboia Moreira et al., “Beyond Memory”</a>.</p>
 
@@ -849,13 +934,13 @@ Transition — Show how our llm-wiki-colab implementation packages those lifecyc
 AGENTIC LEARNING NOTES
 
 Slide ID — llm-wiki-colab-lifecycle
-Learning objective — Explain how llm-wiki-colab packages orientation, explicit operations, verification, and Git coordination around an ordinary project.
-Core claim — The implementation’s main contribution is a governed maintenance lifecycle, not another Markdown schema.
-Explain — The plugin keeps the project repository ordinary and attaches its GitHub wiki at a gitignored .llm-wiki/ path. A neutral core is packaged through agent-specific adapters. Session orientation supplies a small current map; skills define operations; a shared verification gate checks writes; logs and Git preserve an auditable, multi-writer history.
-Misconception — Installing the plugin or copying its files does not guarantee good memory; the lifecycle must be followed and its evidence requirements still require judgment.
-Check — Give one plausible failure caught by orientation, one by a write skill, one by the verification gate, and one by the Git protocol.
-Source routes — Follow the linked llm-wiki-colab repository and the linked “Beyond Memory” publication.
-Transition — Zoom into one method inside the lifecycle: progressive formalization of typed edges.
+Learning objective — Trace a WikiMemory write as a governed graph change set and distinguish llm-wiki-colab’s generic lifecycle from the vault /encode specialization.
+Core claim — A dependable write integrates evidence across notes, links, indexes, logs, verification, authorization, and rollback rather than treating one edited file as the whole transaction.
+Explain — The common change-set pattern is to orient and deduplicate, route evidence to an appropriate note role, create or revise typed notes, repair consequential links, update the concept neighborhood plus index and log, verify provenance and structure, authorize and commit, then rebuild derived graph artifacts where the profile defines them. llm-wiki-colab provides a governed wiki lifecycle through orientation, skills, verification, logs, and Git coordination. The vault /encode lane is a stronger specialization with explicit type routing, separate maturity and epistemic state, creator/context provenance, reciprocal integration, review, commit, and RDF/SHACL rebuild.
+Misconception — The two lanes do not share one universal schema: llm-wiki-colab is a portable governed lifecycle, while /encode adds repository-specific transaction semantics and derived-graph checks.
+Check — Optional exploration: which steps belong to any governed wiki write, and which are specifically stronger commitments of the vault /encode profile?
+Source routes — Follow the linked llm-wiki-colab repository and “Beyond Memory” for the generic lifecycle; treat the clearly labeled /encode lane as the author-supplied vault specialization rather than a claim about the plugin’s canonical schema.
+Transition — Optional route: zoom into typed-edge compilation as one method used inside a governed change set.
 -->
 
 ---
@@ -1000,16 +1085,17 @@ Transition — Before celebrating persistent memory, examine how the same compou
 
 <div class="risk-loop">
   <div class="risk-node"><b>Weak source</b><span>enters the corpus</span></div><i>→</i>
-  <div class="risk-node amber-risk"><b>Confident synthesis</b><span>loses qualification</span></div><i>→</i>
-  <div class="risk-node rose-risk"><b>Central page</b><span>gains links and authority</span></div><i>→</i>
-  <div class="risk-node"><b>Future answers</b><span>repeat the claim</span></div>
+  <div class="risk-node amber-risk"><b>Unsupported claim</b><span>looks more settled than its evidence</span></div><i>→</i>
+  <div class="risk-node amber-risk"><b>Concept synthesis</b><span>drops the qualification</span></div><i>→</i>
+  <div class="risk-node rose-risk"><b>Central page</b><span>gains links and apparent authority</span></div><i>→</i>
+  <div class="risk-node"><b>Later agents</b><span>repeat and reinforce it</span></div>
 </div>
 
 <div class="grid four risk-controls">
-  <div class="card"><h3>Provenance</h3><p>Every important claim keeps a path to evidence.</p></div>
-  <div class="card teal"><h3>Supersession</h3><p>Revision preserves what changed and why.</p></div>
-  <div class="card amber-border"><h3>Evaluation</h3><p>Queries and probes reveal compilation failures.</p></div>
-  <div class="card rose"><h3>Authority</h3><p>Sensitive writes require review, gates, or rollback.</p></div>
+  <div class="card"><h3>Evidence</h3><p>Claim-level provenance + explicit contradictory evidence.</p></div>
+  <div class="card teal"><h3>State + review</h3><p>Maturity ≠ epistemic status · scheduled re-examination.</p></div>
+  <div class="card amber-border"><h3>Revision</h3><p>Supersession + controlled writes preserve what changed and why.</p></div>
+  <div class="card rose"><h3>Evaluation</h3><p>Probes detect entrenchment; failed changes can roll back.</p></div>
 </div>
 
 <p class="microcopy"><a href="https://arxiv.org/abs/2604.12034">“Memory as Metabolism”</a> highlights entrenchment and contradictory evidence · <a href="https://arxiv.org/abs/2608.00967">TrajWiki</a> uses immutable snapshots plus ADD / REVISE / DEPRECATE operations.</p>
@@ -1019,12 +1105,12 @@ AGENTIC LEARNING NOTES
 
 Slide ID — memory-entrenchment-risk
 Learning objective — Explain how an agent-maintained wiki can entrench weak claims and identify controls that interrupt the loop.
-Core claim — Persistence and centrality can amplify error unless provenance, supersession, evaluation, and authority gates preserve contestability.
-Explain — This is the scientific objection slide. A weak source may lose qualification during synthesis; the resulting page gains links and apparent authority; later answers repeat it and further stabilize the claim. A scientific memory therefore needs epistemic status, source identity, temporal revision, negative evidence, evaluation probes, and controlled writes.
-Misconception — Persistence does not inherently improve truth, and a heavily linked page is not necessarily well supported.
-Check — Choose one point in the error loop and name a concrete control that would detect, interrupt, or reverse it.
+Core claim — Persistence and centrality can amplify an unsupported claim when concept synthesis drops qualifications and later agents treat links as authority.
+Explain — The failure chain is explicit: a weak source supports an inadequately qualified claim; concept synthesis loses the caveat; the concept page becomes central; later agents repeat it and reinforce the same neighborhood. Controls map to the chain: claim-level provenance and contradictory evidence expose weak support; separate maturity and epistemic status plus scheduled review keep uncertainty visible; supersession and controlled writes preserve revision; evaluation detects downstream repetition; rollback reverses harmful changes.
+Misconception — A mature, central, or frequently traversed note is not necessarily true, and a concept note must not absorb contested assertions without their provenance and contradictions.
+Check — Optional exploration: choose one arrow in the error loop and name the control that would detect, interrupt, or reverse it before the next agent repeats the claim.
 Source routes — Follow the linked “Memory as Metabolism” discussion of entrenchment and contradictory evidence and TrajWiki’s immutable snapshots with ADD, REVISE, and DEPRECATE operations.
-Transition — With validation and rollback in place, persistent memory can become an intermediate representation for learning procedures.
+Transition — Optional route: with these controls in place, examine how trajectories can be distilled into candidate procedures without treating the distillation as automatically trustworthy.
 -->
 
 ---
@@ -1051,12 +1137,12 @@ Transition — With validation and rollback in place, persistent memory can beco
 AGENTIC LEARNING NOTES
 
 Slide ID — wikiskill-learning-loop
-Learning objective — Trace how execution experience is compiled into candidate skills and objectively accepted or rolled back.
-Core claim — A persistent wiki can serve as an intermediate representation for procedure evolution, provided an outer-loop harness validates changes.
-Explain — The wiki is not merely read during task execution. Raw traces from successes and failures are synthesized into persistent patterns and diagnoses. A proposer compiles those patterns into candidate instructions and resources. The harness records objective validation outcomes, accepts improvements, and rolls back changes that do not improve performance.
-Misconception — A plausible wiki summary or well-written candidate skill is not evidence of improvement without task-level validation.
+Learning objective — Distinguish an intellectual trail from an execution trajectory, then trace how trajectories are distilled and validated as candidate procedures.
+Core claim — A persistent wiki can help procedures evolve, but distilled experience becomes dependable knowledge only after an outer-loop harness validates it on tasks and can roll it back.
+Explain — An intellectual trail records movement through evidence and ideas; an execution trajectory records what an agent tried, which tools or steps it used, and the resulting outcomes and failures. Both preserve continuity, but they are different artifacts. The wiki can distill raw trajectories into candidate reusable lessons, instructions, and resources. Task-level evaluation must then demonstrate improvement, record outcomes, and roll back candidates that fail.
+Misconception — A trajectory, plausible wiki summary, or well-written candidate skill is not itself a dependable procedure; distillation can erase context or promote a coincidental success unless validation tests the resulting behavior.
 Check — Why is rollback necessary, and what evidence should the acceptance gate inspect?
-Source routes — Follow Tang et al.’s linked WikiSkill preprint, especially the ablations on persistent knowledge and cross-model skill transfer.
+Source routes — Follow Tang et al.’s linked WikiSkill preprint, especially the ablations on persistent knowledge and cross-model skill transfer; compare this execution path with Bush’s associative trail as a continuity analogy, not a prediction of AI.
 Transition — Generalize from learned procedures to a definition of scientific memory that preserves evidence, knowledge, and contestable method.
 -->
 

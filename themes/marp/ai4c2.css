@@ -2321,6 +2321,97 @@ td {
 .anatomy-labels b { font-family: ui-serif, Georgia, serif; font-size: 17px; }
 .anatomy-labels span { color: var(--muted); font-size: 10px; }
 
+.neighborhood-frame { display: grid; gap: 14px; width: 100%; }
+.neighborhood-trail { display: grid; grid-template-columns: 1fr 52px 1fr 64px 1fr 54px 1fr 48px 1fr; gap: 4px; align-items: center; }
+.trail-state { display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; min-height: 102px; padding: 11px 10px; border: 1px solid var(--border); border-radius: 9px; background: var(--card); text-align: center; }
+.trail-state small { color: var(--faint); font-family: ui-monospace, Menlo, monospace; font-size: 7.5px; letter-spacing: .06em; }
+.trail-state b { margin: 5px 0 3px; font-family: ui-serif, Georgia, serif; font-size: 16px; }
+.trail-state span { color: var(--muted); font-size: 9px; line-height: 1.2; }
+.source-state { border-top: 3px solid var(--teal); }
+.claim-state { border-top: 3px solid var(--amber); background: var(--amber-soft); }
+.run-state { border-top: 3px solid var(--rose); background: var(--rose-soft); }
+.question-state { border-top: 3px solid var(--teal); background: var(--teal-soft); }
+.revised-state { border-top: 3px solid var(--amber); }
+.trail-edge { display: flex; flex-direction: column; align-items: center; color: var(--amber); text-align: center; }
+.trail-edge b { color: var(--muted); font-family: ui-monospace, Menlo, monospace; font-size: 7px; line-height: 1.15; }
+.trail-edge i { font-size: 24px; font-style: normal; line-height: 1; }
+.rose-edge i { color: var(--rose); }
+.neighborhood-context { display: grid; grid-template-columns: .82fr 1.32fr 1fr; gap: 12px; }
+.neighborhood-role,
+.concept-hub,
+.claim-boundary { display: flex; flex-direction: column; justify-content: center; box-sizing: border-box; min-height: 112px; padding: 12px 15px; border: 1px solid var(--border); border-radius: 9px; background: var(--card); }
+.neighborhood-role small,
+.concept-hub small,
+.claim-boundary small { color: var(--faint); font-family: ui-monospace, Menlo, monospace; font-size: 8px; letter-spacing: .07em; }
+.neighborhood-role b,
+.concept-hub b,
+.claim-boundary b { margin: 4px 0; font-family: ui-serif, Georgia, serif; font-size: 17px; }
+.neighborhood-role span,
+.concept-hub span,
+.claim-boundary span { color: var(--muted); font-size: 9.5px; line-height: 1.28; }
+.neighborhood-role em,
+.concept-hub em { color: var(--teal); font-style: normal; font-weight: 700; }
+.concept-hub { position: relative; border-color: var(--amber-line); background: var(--amber-soft); text-align: center; }
+.concept-hub::before { position: absolute; top: -20px; left: 50%; color: var(--amber); content: "↑ concerns"; font-family: ui-monospace, Menlo, monospace; font-size: 8px; transform: translateX(-50%); }
+.concept-hub em { margin-top: 5px; font-family: ui-monospace, Menlo, monospace; font-size: 8px; }
+.claim-boundary { border-color: rgba(184,69,95,.35); background: var(--rose-soft); }
+
+.claim-note-zoom { display: grid; grid-template-columns: .95fr 1.05fr; gap: 16px; width: 100%; }
+.claim-note-zoom pre.claim-frontmatter { overflow: hidden; box-sizing: border-box; height: 318px; margin: 0; padding: 16px 18px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); white-space: pre-wrap; font-size: 10px; line-height: 1.42; }
+.claim-readable { display: grid; grid-template-rows: repeat(5, 1fr); gap: 7px; height: 318px; }
+.claim-readable > div { display: grid; grid-template-columns: 92px 1fr; gap: 11px; align-items: center; box-sizing: border-box; padding: 8px 12px; border: 1px solid var(--border); border-left: 3px solid var(--teal); border-radius: 8px; background: var(--card); }
+.claim-readable > div:first-child { border-left-color: var(--amber); background: var(--amber-soft); }
+.claim-readable > .tension-block { border-left-color: var(--rose); background: var(--rose-soft); }
+.claim-readable small { color: var(--faint); font-family: ui-monospace, Menlo, monospace; font-size: 8px; letter-spacing: .06em; }
+.claim-readable b { font-family: ui-serif, Georgia, serif; font-size: 15px; line-height: 1.18; }
+.claim-readable span { color: var(--muted); font-size: 9.5px; line-height: 1.25; }
+.claim-readable code { color: var(--teal); font-size: 9px; }
+.claim-distinction { margin: 12px 0 0; padding: 9px 13px; border-left: 3px solid var(--amber); background: rgba(255,255,255,.55); color: var(--muted); font-size: 12px; }
+.claim-distinction strong { color: var(--text); }
+
+.navigation-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; width: 100%; }
+.navigation-state-panel,
+.navigation-policy-panel { box-sizing: border-box; min-height: 300px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); }
+.query-chip { padding: 9px 11px; border-left: 3px solid var(--amber); background: var(--amber-soft); }
+.query-chip small,
+.current-note small,
+.policy-box small,
+.realized-trail small { display: block; color: var(--faint); font-family: ui-monospace, Menlo, monospace; font-size: 8px; letter-spacing: .07em; }
+.query-chip b { font-size: 13px; }
+.current-note { display: grid; grid-template-columns: 1fr 1.8fr; gap: 6px 12px; align-items: center; margin: 11px 0; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; }
+.current-note small { grid-column: 1 / -1; }
+.current-note b { font-family: ui-serif, Georgia, serif; font-size: 20px; }
+.current-note span { color: var(--muted); font-size: 9px; line-height: 1.25; }
+.transition-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 7px; }
+.transition-options > div { position: relative; display: flex; flex-direction: column; min-height: 54px; padding: 8px 10px; border: 1px solid var(--border); border-radius: 7px; background: var(--bg-2); }
+.transition-options code { color: var(--teal); font-size: 8.5px; }
+.transition-options span { margin-top: 4px; color: var(--muted); font-size: 10px; }
+.transition-options b { position: absolute; right: 7px; bottom: 6px; color: var(--rose); font-family: ui-monospace, Menlo, monospace; font-size: 7px; text-transform: uppercase; }
+.transition-options > .selected-transition { border-color: rgba(184,69,95,.45); background: var(--rose-soft); }
+.navigation-policy-panel { display: grid; grid-template-rows: 1fr .82fr; gap: 12px; border-color: var(--amber-line); background: var(--amber-soft); }
+.policy-box,
+.realized-trail { display: flex; flex-direction: column; justify-content: center; padding: 12px 14px; border: 1px solid rgba(255,255,255,.9); border-radius: 8px; background: rgba(255,255,255,.58); }
+.policy-box b { margin: 7px 0; font-family: ui-monospace, Menlo, monospace; font-size: 11px; line-height: 1.35; }
+.policy-box span { color: var(--muted); font-size: 9px; }
+.realized-trail > div { display: grid; grid-template-columns: 1fr 18px 1fr 18px 1fr 18px 1fr; gap: 3px; align-items: center; margin-top: 12px; }
+.realized-trail span { padding: 7px 4px; border-radius: 5px; background: var(--bg-2); font-family: ui-monospace, Menlo, monospace; font-size: 8px; text-align: center; }
+.realized-trail i { color: var(--amber); font-style: normal; text-align: center; }
+.navigation-caveat { margin-top: 12px; padding: 9px 13px; font-size: 11px; line-height: 1.3; }
+
+.transaction-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; width: 100%; }
+.tx-step { display: flex; flex-direction: column; box-sizing: border-box; min-height: 84px; padding: 10px 11px; border: 1px solid var(--border); border-top: 3px solid var(--teal); border-radius: 8px; background: var(--card); }
+.tx-step:nth-child(3n + 2) { border-top-color: var(--amber); }
+.tx-step:nth-child(3n) { border-top-color: var(--rose); }
+.tx-step small { display: block; color: var(--faint); font-family: ui-monospace, Menlo, monospace; font-size: 7.5px; letter-spacing: .05em; }
+.tx-step b { display: block; margin: 5px 0 3px; font-family: ui-serif, Georgia, serif; font-size: 14px; line-height: 1.15; }
+.tx-step span { margin-top: auto; color: var(--muted); font-size: 8.5px; line-height: 1.25; }
+.transaction-profiles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.transaction-profiles > div { display: grid; grid-template-columns: 164px 1fr; gap: 3px 12px; align-items: center; min-height: 72px; padding: 10px 13px; border: 1px solid var(--border); border-left: 3px solid var(--teal); border-radius: 8px; background: var(--teal-soft); }
+.transaction-profiles > .vault-profile { border-left-color: var(--amber); background: var(--amber-soft); }
+.transaction-profiles small { grid-row: 1 / span 2; color: var(--faint); font-family: ui-monospace, Menlo, monospace; font-size: 7.5px; letter-spacing: .05em; }
+.transaction-profiles b { font-family: ui-serif, Georgia, serif; font-size: 14px; }
+.transaction-profiles span { color: var(--muted); font-size: 8.5px; line-height: 1.25; }
+
 .harness-memory { display: grid; justify-items: center; width: 100%; }
 .hm-layer { display: flex; gap: 16px; align-items: center; justify-content: center; box-sizing: border-box; width: 72%; min-height: 70px; padding: 12px 18px; border: 1px solid var(--border); border-radius: 10px; background: var(--card); }
 .hm-layer b { font-family: ui-serif, Georgia, serif; font-size: 19px; }
@@ -2338,9 +2429,9 @@ td {
 .field-row span { padding: 5px 7px; border-radius: 16px; background: var(--bg-2); font-family: ui-monospace, Menlo, monospace; font-size: 10px; text-align: center; }
 .field-row em { color: var(--muted); font-size: 12px; font-style: normal; }
 
-.risk-loop { grid-template-columns: 1fr 32px 1fr 32px 1fr 32px 1fr; gap: 5px; margin-bottom: 16px; }
-.risk-node { display: flex; flex-direction: column; justify-content: center; min-height: 88px; padding: 11px; border: 1px solid var(--border); border-radius: 9px; background: var(--card); text-align: center; }
-.risk-node b { font-family: ui-serif, Georgia, serif; font-size: 17px; }
+.risk-loop { grid-template-columns: 1fr 22px 1fr 22px 1fr 22px 1fr 22px 1fr; gap: 4px; margin-bottom: 14px; }
+.risk-node { display: flex; flex-direction: column; justify-content: center; min-height: 82px; padding: 9px; border: 1px solid var(--border); border-radius: 9px; background: var(--card); text-align: center; }
+.risk-node b { font-family: ui-serif, Georgia, serif; font-size: 14px; line-height: 1.15; }
 .risk-node span { color: var(--muted); font-size: 10px; }
 .risk-loop i { color: var(--amber); font-style: normal; text-align: center; }
 .amber-risk { border-color: var(--amber-line); background: var(--amber-soft); }
