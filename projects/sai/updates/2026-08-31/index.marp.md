@@ -9,6 +9,7 @@ author: "Charles F. Vardeman II"
 date: 2026-08-31
 categories: [WikiMemory, Agentic Memory, Scientific AI]
 draft: false
+publish_agentic_notes: true
 ---
 
 <!-- _class: title -->
@@ -35,7 +36,45 @@ Explain — Open on the contemporary rediscovery, give away the architecture imm
 Misconception — “Memory” here does not mean that an LLM remembers like a person or that a larger context window solves scientific continuity.
 Check — In one sentence, what has the agentic community rediscovered?
 Source routes — Use the next two slides for the motivating observation and system architecture; use the historical section to explain why the pattern works.
-Transition — Begin with the Karpathy–Elvis exchange that turned a memory failure into a design pattern.
+Transition — First give the audience a copy-ready way to explore the deck with an agent.
+-->
+
+---
+
+<div class="eyebrow">Start here · agent-assisted walkthrough</div>
+
+## Open the deck with your friendly neighborhood agent
+
+<div class="agent-start">
+  <div class="agent-deck-url"><small>PRESENTATION</small><a href="https://la3d.github.io/nuggets/projects/sai/updates/2026-08-31/">la3d.github.io/nuggets/projects/sai/updates/2026-08-31/</a></div>
+  <div class="agent-prompt-card">
+    <div class="prompt-label">Copy and paste into ChatGPT or Codex</div>
+    <pre><code>Open this presentation in your browser:
+https://la3d.github.io/nuggets/projects/sai/updates/2026-08-31/
+
+Before helping me, inspect the page's raw HTML. Find the embedded
+W3C Web Annotation JSON-LD and load its per-slide learning context.
+
+I will navigate the deck myself and may skip around. When I ask a question,
+use the slide number or title I provide to select the matching annotation.
+Respond conversationally and only to what I ask. Draw on the core claim,
+caveats, and sources when useful. Do not lecture through the deck, advance,
+or quiz me automatically. If I do not identify the slide, ask which one I am
+viewing.</code></pre>
+  </div>
+</div>
+
+<!--
+AGENTIC LEARNING NOTES
+
+Slide ID — agentic-walkthrough-bootstrap
+Learning objective — Start a learner-controlled agentic dialogue by giving the agent the presentation URL, its embedded learning context, and rules for responding to non-linear questions.
+Core claim — The student controls navigation and inquiry; the agent retrieves the relevant slide annotation and responds on demand rather than delivering a linear lecture.
+Explain — Invite the learner to copy the prompt and then browse freely. They may skip slides, linger, return, or ask no question at all. When a question includes a slide number or title, the agent selects the matching annotation and uses only the relevant claim, caveat, sources, or check. If the target is ambiguous, the agent asks which slide is in view.
+Misconception — The comprehension checks and transitions are optional dialogue resources, not instructions to quiz the learner or advance after every slide.
+Check — What information should the learner provide so the agent can ground a question in the correct slide?
+Source routes — Open the linked Nuggets presentation and inspect its embedded W3C Web Annotation JSON-LD in the page source.
+Transition — Begin the narrative with the Karpathy–Elvis exchange that turned a memory complaint into an agentic design pattern.
 -->
 
 ---

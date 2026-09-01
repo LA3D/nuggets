@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "al": "https://la3d.github.io/nuggets/ns/agentic-learning/#",
+    "learningObjective": "al:learningObjective",
+    "coreClaim": "al:coreClaim",
+    "misconception": "al:misconception",
+    "sourceRoute": "al:sourceRoute",
+    "transition": "al:transition"
+  }
+}

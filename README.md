@@ -38,4 +38,37 @@ Marp CLI must be installed and available on `PATH`. To rebuild only the Marp dec
 python3 scripts/render_marp.py
 ```
 
+### Agentic learning annotations
+
+Marp decks can opt into reusable, non-visual learning annotations by adding this front-matter field:
+
+```yaml
+publish_agentic_notes: true
+```
+
+Every slide in an opted-in deck must contain a Marp speaker-note comment with the following fields:
+
+```markdown
+<!--
+AGENTIC LEARNING NOTES
+
+Slide ID — stable-lowercase-id
+Learning objective — ...
+Core claim — ...
+Explain — ...
+Misconception — ...
+Check — ...
+Source routes — ...
+Transition — ...
+-->
+```
+
+The shared publisher in `scripts/learning_annotations.py` validates the notes and embeds one ordered W3C Web Annotation `AnnotationPage` in `script#agentic-learning-annotations`. Annotation targets use the deck's canonical URL plus its numbered slide fragment. The public vocabulary is published at `https://la3d.github.io/nuggets/ns/agentic-learning/`, and its reusable JSON-LD context is published at `https://la3d.github.io/nuggets/ns/agentic-learning/context.jsonld`.
+
+Run the generic contract tests with:
+
+```bash
+python3 -m unittest discover -s tests -v
+```
+
 After reviewing the generated site, commit both the sources and `docs/`, then push `main`. GitHub Pages continues to publish from `main` → `docs/`.

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LA3D Nuggets Agentic Learning Vocabulary</title>
+  <link rel="canonical" href="https://la3d.github.io/nuggets/ns/agentic-learning/">
+  <link rel="alternate" type="application/ld+json" href="context.jsonld" title="JSON-LD context">
+  <style>
+    :root { color-scheme: light; font-family: ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 52rem; margin: 4rem auto; padding: 0 1.25rem; line-height: 1.55; color: #172033; }
+    h1 { line-height: 1.1; }
+    code { background: #eef0f4; padding: .12rem .3rem; border-radius: .25rem; }
+    dt { margin-top: 1.2rem; font-weight: 700; }
+    dd { margin-left: 0; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": {
+      "dcterms": "http://purl.org/dc/terms/",
+      "oa": "http://www.w3.org/ns/oa#",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    },
+    "@graph": [
+      {
+        "@id": "https://la3d.github.io/nuggets/ns/agentic-learning/",
+        "@type": "http://www.w3.org/2002/07/owl#Ontology",
+        "dcterms:title": "LA3D Nuggets Agentic Learning Vocabulary",
+        "dcterms:description": "Motivations used by W3C Web Annotations that supply optional learning context for presentation slides."
+      },
+      {
+        "@id": "https://la3d.github.io/nuggets/ns/agentic-learning/#learningObjective",
+        "@type": "oa:Motivation",
+        "rdfs:label": "learning objective",
+        "rdfs:comment": "States what a learner should be able to understand or do after engaging with the target."
+      },
+      {
+        "@id": "https://la3d.github.io/nuggets/ns/agentic-learning/#coreClaim",
+        "@type": "oa:Motivation",
+        "rdfs:label": "core claim",
+        "rdfs:comment": "States the central proposition conveyed by the target."
+      },
+      {
+        "@id": "https://la3d.github.io/nuggets/ns/agentic-learning/#misconception",
+        "@type": "oa:Motivation",
+        "rdfs:label": "misconception",
+        "rdfs:comment": "Identifies a likely but misleading interpretation of the target."
+      },
+      {
+        "@id": "https://la3d.github.io/nuggets/ns/agentic-learning/#sourceRoute",
+        "@type": "oa:Motivation",
+        "rdfs:label": "source route",
+        "rdfs:comment": "Points an agent or learner toward evidence and related material for the target."
+      },
+      {
+        "@id": "https://la3d.github.io/nuggets/ns/agentic-learning/#transition",
+        "@type": "oa:Motivation",
+        "rdfs:label": "transition",
+        "rdfs:comment": "Explains how the target connects to an adjacent part of the presentation narrative."
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <p>LA3D Nuggets namespace</p>
+    <h1>Agentic Learning Vocabulary</h1>
+    <p>
+      This small vocabulary extends the
+      <a href="https://www.w3.org/TR/annotation-model/">W3C Web Annotation Data Model</a>
+      with presentation-learning motivations. Each hash URI below dereferences to this page;
+      its fragment identifies the term. The reusable
+      <a href="context.jsonld" type="application/ld+json">JSON-LD context</a>
+      is available as a separate static resource.
+    </p>
+
+    <h2>Motivations</h2>
+    <dl>
+      <dt id="learningObjective"><code>learningObjective</code></dt>
+      <dd>States what a learner should be able to understand or do after engaging with the target.</dd>
+
+      <dt id="coreClaim"><code>coreClaim</code></dt>
+      <dd>States the central proposition conveyed by the target.</dd>
+
+      <dt id="misconception"><code>misconception</code></dt>
+      <dd>Identifies a likely but misleading interpretation of the target.</dd>
+
+      <dt id="sourceRoute"><code>sourceRoute</code></dt>
+      <dd>Points an agent or learner toward evidence and related material for the target.</dd>
+
+      <dt id="transition"><code>transition</code></dt>
+      <dd>Explains how the target connects to an adjacent part of the presentation narrative.</dd>
+    </dl>
+
+    <h2>Use</h2>
+    <p>
+      Presentation annotations use these terms as <code>TextualBody.purpose</code> values.
+      Standard Web Annotation motivations remain in use where they fit—for example,
+      <code>describing</code> for an explanation and <code>questioning</code> for an optional check.
+    </p>
+  </main>
+</body>
+</html>
