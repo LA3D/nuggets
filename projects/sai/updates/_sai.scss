@@ -1,0 +1,8 @@
+// SAI uses the established AI4C2 Nuggets visual system while retaining
+// independent project metadata and presentation content. The base theme is
+// loaded explicitly by _metadata.yml before this project-specific override.
+/*-- scss:rules --*/
+
+.reveal #title-slide::before {
+  content: "SAI · Scientific AI · research presentation";
+}

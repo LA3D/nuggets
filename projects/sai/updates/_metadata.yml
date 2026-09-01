@@ -1,0 +1,29 @@
+# Shared defaults for SAI research presentations.
+author: "Charles F. Vardeman II"
+institute: "Center for Research Computing, University of Notre Dame"
+draft: true
+freeze: true
+embed-resources: true
+
+format:
+  revealjs:
+    width: 1080
+    height: 700
+    max-scale: 1
+    logo: ../../../../slides/images/crc-logo-tagline-1-alt.png
+    theme:
+      - simple
+      - ../../../ai4c2/updates/_ai4c2.scss
+      - ../_sai.scss
+    footer: "SAI · Scientific AI"
+    slide-number: c/t
+    progress: true
+    center: false
+    controls: false
+    transition: none
+    scroll-view:
+      activate: true
+      layout: full
+      snap: mandatory
+      progress: true
+    toc: false
