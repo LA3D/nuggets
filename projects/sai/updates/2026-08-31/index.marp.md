@@ -26,9 +26,16 @@ August 31, 2026
 </div>
 
 <!--
-Open on a contemporary rediscovery, give away the architecture immediately, and
-then ask why such a simple pattern works. The historical arc supplies the answer;
-the final section asks what scientific use demands beyond a personal second brain.
+AGENTIC LEARNING NOTES
+
+Slide ID — wikimemory-title
+Learning objective — Frame WikiMemory as the rediscovery of an external medium for cumulative scientific memory.
+Core claim — The new capability is not model recall; it is an agent that can help maintain an inspectable knowledge environment over time.
+Explain — Open on the contemporary rediscovery, give away the architecture immediately, and then ask why such a simple pattern works. The historical arc supplies the answer; the final section asks what scientific use demands beyond a personal second brain.
+Misconception — “Memory” here does not mean that an LLM remembers like a person or that a larger context window solves scientific continuity.
+Check — In one sentence, what has the agentic community rediscovered?
+Source routes — Use the next two slides for the motivating observation and system architecture; use the historical section to explain why the pattern works.
+Transition — Begin with the Karpathy–Elvis exchange that turned a memory failure into a design pattern.
 -->
 
 ---
@@ -50,13 +57,16 @@ the final section asks what scientific use demands beyond a personal second brai
 <p class="microcopy"><a href="https://x.com/karpathy/status/2036836816654147718">Karpathy on distracting memory</a> · <a href="https://x.com/omarsar0/status/2036848785653895623">Elvis Saravia on methodical file-based memory</a> · <a href="https://x.com/karpathy/status/2039805659525644595">Karpathy, “LLM Knowledge Bases”</a> · <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">the “LLM Wiki” idea file</a>.</p>
 
 <!--
-Tell this as a rediscovery, not an invention story. Karpathy begins with a failure
-mode: personalization memories are over-selected and distract the model. Elvis
-Saravia replies that simple Obsidian files plus metadata work when memory is tuned
-methodically. A week later Karpathy describes a working agentic pattern: immutable
-raw sources, an LLM-maintained Markdown wiki, index-guided question answering,
-outputs filed back into the corpus, and periodic linting. The April 4 gist turns
-the observation into a portable “idea file” that another agent can instantiate.
+AGENTIC LEARNING NOTES
+
+Slide ID — karpathy-elvis-rediscovery
+Learning objective — Reconstruct how a complaint about distracting memory led to an agent-maintained wiki pattern.
+Core claim — The important step was moving from indiscriminate remembered facts to methodical maintenance of external files, indexes, and relevance.
+Explain — Tell this as a rediscovery, not an invention story. Karpathy begins with a failure mode: personalization memories are over-selected and distract the model. Elvis Saravia replies that simple Obsidian files plus metadata work when memory is tuned methodically. A week later Karpathy describes a working pattern: immutable raw sources, an LLM-maintained Markdown wiki, index-guided question answering, outputs filed back into the corpus, and periodic linting. The April 4 gist turns the observation into a portable idea file that another agent can instantiate.
+Misconception — Putting facts in files is not sufficient; selection, discovery, structure, context, and maintenance determine whether external memory helps or distracts.
+Check — What changed between “use simple files” and the later LLM Wiki pattern?
+Source routes — Follow the three linked X threads and Karpathy’s linked “LLM Wiki” gist on this slide.
+Transition — Now reveal the full architecture so the audience can recognize its components throughout the history.
 -->
 
 ---
@@ -78,11 +88,16 @@ the observation into a portable “idea file” that another agent can instantia
 <p class="microcopy"><a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">Andrej Karpathy, “LLM Wiki”</a> · <a href="https://www.langchain.com/blog/wiki-memory">Harrison Chase, “Wiki Memory”</a>.</p>
 
 <!--
-Give away the system before the history. Raw is the independently recoverable
-source of truth. The wiki is the compiled, persistent artifact owned by the agent.
-The schema is a behavioral contract for the general-purpose coding agent. Queries
-produce files, comparisons, diagrams, or slides that can be reviewed and filed
-back, so work compounds instead of disappearing into chat history.
+AGENTIC LEARNING NOTES
+
+Slide ID — llm-wiki-architecture
+Learning objective — Explain the roles of raw sources, persistent synthesis, work products, and behavioral instructions in the LLM Wiki loop.
+Core claim — Knowledge compounds when an agent repeatedly compiles recoverable evidence into a maintained artifact and files reviewed work back into it.
+Explain — Give away the system before the history. Raw is the independently recoverable source of truth. The wiki is the compiled, persistent artifact maintained by the agent. The schema or AGENTS.md is a behavioral contract for ingest, querying, citation, maintenance, and linting. Questions produce files, comparisons, diagrams, or slides that can be reviewed and filed back, so work compounds instead of disappearing into chat history.
+Misconception — The wiki is not a replacement for raw evidence; it is a revisable synthesis whose claims must remain traceable to that evidence.
+Check — For a newly encountered paper, what belongs in RAW, what belongs in WIKI, and what might be produced as WORK?
+Source routes — Follow Karpathy’s linked “LLM Wiki” gist and Harrison Chase’s linked “Wiki Memory” essay.
+Transition — The architecture solves a continuity problem that becomes sharper in scientific work.
 -->
 
 ---
@@ -100,10 +115,16 @@ back, so work compounds instead of disappearing into chat history.
 </div>
 
 <!--
-Now widen Karpathy’s practical observation into the scientific continuity problem.
-“Memory” here is not anthropomorphic recall. It is the engineering problem of
-preserving useful scientific state across model calls, sessions, agents, and
-collaborators.
+AGENTIC LEARNING NOTES
+
+Slide ID — scientific-continuity-problem
+Learning objective — Distinguish episodic model context from the cumulative state required by science.
+Core claim — Scientific continuity must be preserved in an inspectable environment outside any single model invocation.
+Explain — Widen Karpathy’s practical observation into the scientific continuity problem. Research state includes evidence, failed attempts, critique, decisions, procedures, and uncertainty. The engineering task is to preserve that state across calls, sessions, agents, collaborators, and time.
+Misconception — A long context window is not automatically institutional memory: it does not by itself provide durable ownership, revision history, provenance, or maintenance.
+Check — Name three kinds of scientific state that should survive after the current model call ends.
+Source routes — This is the deck’s conceptual framing; connect it backward to the LLM Wiki architecture and forward to the historical continuity systems.
+Transition — Ask which earlier knowledge systems already addressed parts of this problem.
 -->
 
 ---
@@ -123,9 +144,16 @@ collaborators.
 <p class="microcopy">Our synthesis: three historical lineages converge in a harness-operable knowledge substrate.</p>
 
 <!--
-This is not a claim of direct descent. These traditions developed partly in
-parallel. The useful historical claim is convergence: associative hypertext, wiki
-maintenance, and file-native personal knowledge all supply pieces of WikiMemory.
+AGENTIC LEARNING NOTES
+
+Slide ID — wikimemory-convergence
+Learning objective — Identify the three historical lineages that contribute to agentic WikiMemory.
+Core claim — WikiMemory is a convergence of associative hypertext, collaborative wiki maintenance, and file-native personal knowledge—not a sudden invention.
+Explain — These traditions developed partly in parallel. Augmentation contributes trails and cognitive environments; wiki contributes open, incremental maintenance; personal knowledge tools contribute local ownership, plain text, and graph-shaped navigation. Agents add the ability to navigate, write, refactor, audit, and learn through the combined medium.
+Misconception — The slide does not claim a single direct lineage or that each later system consciously inherited every earlier design principle.
+Check — What distinct contribution does each of the three lineages make?
+Source routes — Treat this as a synthesis map; the next sequence of slides supplies the historical evidence for each row.
+Transition — Start with Bush’s idea that associative trails matter more than filing hierarchies.
 -->
 
 ---
@@ -151,9 +179,16 @@ maintenance, and file-native personal knowledge all supply pieces of WikiMemory.
 <p class="microcopy">Vannevar Bush, <a href="https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">“As We May Think”</a>, 1945.</p>
 
 <!--
-The Memex is frequently flattened into “an early computer” or “a proto-Web.” The
-stronger idea is the associative trail: a durable path through sources that can be
-revisited and shared. Wiki links later give this idea a very cheap implementation.
+AGENTIC LEARNING NOTES
+
+Slide ID — bush-associative-trails
+Learning objective — Explain why Bush’s associative trail is more relevant to WikiMemory than a simple filing cabinet metaphor.
+Core claim — Durable paths among evidence, ideas, tensions, and questions preserve how thought moved, not merely where documents were stored.
+Explain — The Memex is often flattened into an early computer or proto-Web. The stronger idea is the associative trail: a durable path through sources that can be revisited and shared. Wiki links later provide a cheap, editable implementation of this relational idea.
+Misconception — Bush did not describe the modern Web, and the Memex’s importance is not that it predicted a personal computer feature by feature.
+Check — Construct a four-step associative trail for a research question you know.
+Source routes — Follow the linked 1945 Vannevar Bush essay “As We May Think,” especially its discussion of associative indexing and trails.
+Transition — Engelbart expands the trail into an entire environment for augmented knowledge work.
 -->
 
 ---
@@ -170,14 +205,131 @@ revisited and shared. Wiki links later give this idea a very cheap implementatio
 <p class="microcopy"><a href="https://dougengelbart.org/content/view/155/">Doug Engelbart Institute, NLS / Augment</a> · <a href="https://www.xanadu.com.au/general/faq.html">Project Xanadu history</a>.</p>
 
 <!--
-Engelbart is the bridge to the harness framing. He was not merely proposing an
-information store: he was designing the surrounding cognitive environment and the
-procedures through which humans and tools worked together.
+AGENTIC LEARNING NOTES
+
+Slide ID — engelbarts-cognitive-environment
+Learning objective — Distinguish a hypertext feature from a whole cognitive environment for knowledge work.
+Core claim — Augmentation emerges from the combination of structured information, tools, collaboration, views, and working procedures.
+Explain — Engelbart bridges the history to the harness framing. NLS/Augment was not merely an information store: it designed the surrounding cognitive environment and the procedures through which humans and tools worked together. Nelson’s Xanadu similarly treated relationships, versioning, transclusion, and provenance as first-class concerns.
+Misconception — Hypertext is not only clickable text; its knowledge value depends on the larger environment and practices around the links.
+Check — Which capabilities surrounding links make NLS/Augment a cognitive environment rather than a document viewer?
+Source routes — Follow the linked Doug Engelbart Institute NLS/Augment overview and Project Xanadu history.
+Transition — Move from individual augmentation to CERN’s organizational continuity problem.
 -->
 
 ---
 
-<div class="eyebrow">1990 · the original Web</div>
+<div class="eyebrow">March 1989 · Information Management: A Proposal</div>
+
+## The Web began as a continuity problem at CERN
+
+<div class="www-origin">
+  <figure class="proposal-map">
+    <img src="assets/tbl-www-1989-information-management.png" alt="Tim Berners-Lee's 1989 circles-and-arrows diagram connecting linked information, hypertext, projects, documents, people, software, and CERN systems">
+    <figcaption>Berners-Lee’s original “circles and arrows” map · converted from the W3C archival GIF.</figcaption>
+  </figure>
+  <div class="www-origin-copy">
+    <p class="lede">People rotated through. Projects evolved. Information existed—but could not be found.</p>
+    <div class="memory-pressures">
+      <div class="memory-pressure"><b>Turnover</b><span>expertise and project history left with short-term staff</span></div>
+      <div class="memory-pressure"><b>Entanglement</b><span>real work crossed the formal organizational hierarchy</span></div>
+      <div class="memory-pressure"><b>Change</b><span>books and trees became stale as dependencies shifted</span></div>
+    </div>
+    <p class="www-thesis">The proposal was for evolving organizational memory—not merely online publishing.</p>
+  </div>
+</div>
+
+<p class="microcopy"><a href="https://www.w3.org/History/1989/proposal.html">Tim Berners-Lee, “Information Management: A Proposal”</a>, March 1989 / May 1990 · <a href="https://www.w3.org/History/1989/Image1.gif">original W3C diagram</a>.</p>
+
+<!--
+AGENTIC LEARNING NOTES
+
+Slide ID — web-continuity-problem
+Learning objective — Read Berners-Lee’s 1989 proposal and diagram as a response to organizational memory failure at CERN.
+Core claim — The Web began as a way to preserve evolving relationships among people, projects, systems, and documents despite turnover and change.
+Explain — The proposal begins with high turnover, changing projects, duplicated effort, and technical information that had been recorded but could not be found. Berners-Lee says CERN’s observed working structure was a multiply connected web that evolved with time. The diagram is not a retrospective picture of websites; it maps the information-management problem the Web was meant to address. At this point the working name was “Mesh.”
+Misconception — The 1989 diagram is not merely a collection of web pages connected by generic hyperlinks.
+Check — Point to one node type and one semantically meaningful relationship in the diagram.
+Source routes — Follow Berners-Lee’s linked 1989 proposal and the linked original W3C diagram; read the “Losing Information at CERN” and “Linked information systems” sections.
+Transition — Look more closely at the proposal’s data model: the nodes and the links both had types.
+-->
+
+---
+
+<div class="eyebrow">1989 · the proposed information model</div>
+
+## Berners-Lee proposed typed nodes and links
+
+<div class="web-typed-model">
+  <div class="typed-panel node-panel">
+    <small>NODES COULD BE</small>
+    <div class="typed-cloud"><span>people</span><span>projects</span><span>concepts</span><span>documents</span><span>software</span><span>hardware</span></div>
+  </div>
+  <div class="typed-bridge"><span>linked by</span><strong>→</strong></div>
+  <div class="typed-panel relation-panel">
+    <small>LINKS COULD MEAN</small>
+    <div class="typed-cloud"><span>depends on</span><span>part of</span><span>made</span><span>refers to</span><span>uses</span><span>example of</span></div>
+  </div>
+</div>
+
+<div class="web-requirements">
+  <span>remote</span><span>heterogeneous</span><span>non-centralized</span><span>connect existing data</span><span>machine-analyzable</span>
+</div>
+
+<p class="callout-line">Before the Web had pages at planetary scale, its proposal described a flexible, distributed knowledge graph.</p>
+
+<p class="microcopy"><a href="https://www.w3.org/History/1989/proposal.html">Berners-Lee, “Information Management: A Proposal,” 1989</a> · sections: Linked information systems · CERN Requirements · Data analysis.</p>
+
+<!--
+AGENTIC LEARNING NOTES
+
+Slide ID — web-typed-nodes-links
+Learning objective — Distinguish typed node categories and typed link predicates in the original Web proposal.
+Core claim — Before the Web operated at planetary scale, its proposal described a flexible, distributed, machine-analyzable graph of heterogeneous entities and relationships.
+Explain — The proposal explicitly describes generic types of nodes and links, cross-system integration, personal annotations, and automatic analysis for anomalies and topology. This is richer than a collection of documents and anticipates the separation between a knowledge representation and the interfaces or agents that operate over it.
+Misconception — Do not retroactively label the 1989 proposal RDF; it precedes RDF and does not specify the later formal model.
+Check — Express one relationship from the original diagram as a subject–predicate–object triple.
+Source routes — Follow the linked proposal sections “Linked information systems,” “CERN Requirements,” and “Data analysis.”
+Transition — Isolate the predicate itself and ask what changes when a link says why two things are connected.
+-->
+
+---
+
+<div class="eyebrow">1989 → 1999 · from links to relationships</div>
+
+## A typed link says <em>why</em> two things are connected
+
+<div class="typed-meaning-compare">
+  <div class="meaning-card untyped-meaning"><small>UNTYPED WEB LINK</small><div><span>document</span><i>— href →</i><span>claim</span></div><p>Useful for navigation; the machine learns only “links to.”</p></div>
+  <div class="meaning-shift">→</div>
+  <div class="meaning-card typed-meaning"><small>NAMED RELATIONSHIP</small><div><span>paper</span><i>— supports →</i><span>claim</span></div><p>The predicate carries reusable intent.</p></div>
+</div>
+
+<div class="typed-payoffs">
+  <div><b>Explain</b><span>Humans see whether a source supports, criticizes, defines, or depends on another page.</span></div>
+  <div><b>Query</b><span>Ask “what supports this claim?” instead of searching for pages that mention its words.</span></div>
+  <div><b>Infer</b><span>Direction and inverse relations expose dependencies, evidence paths, and affected neighbors.</span></div>
+  <div><b>Govern</b><span>A shared predicate vocabulary can be documented, validated, linted, and evolved.</span></div>
+</div>
+
+<p class="microcopy"><a href="https://www.w3.org/1999/11/11-WWWProposal/thenandnow">Dan Brickley, “Nodes and Arcs 1989–1999: The WWW Proposal and RDF: Then and Now”</a> · informal W3C discussion, 1999.</p>
+
+<!--
+AGENTIC LEARNING NOTES
+
+Slide ID — typed-links-why
+Learning objective — Compare a navigational hyperlink with a named relationship whose predicate can be explained, queried, and governed.
+Core claim — A stable predicate such as supports, criticizes, or depends on turns connectivity into reusable intent.
+Explain — Brickley’s retrospective calls ordinary href semantics relatively meaningless because the relationship says only “links to.” His key move is to make the predicate a first-class, uniquely identified object. Once wrote, supports, or depends on has stable meaning, graph-pattern questions become possible and different systems can interpret the same edge consistently.
+Misconception — A label alone does not make a link trustworthy; predicates still need shared definitions, provenance, validation, and governance. Also, Brickley labels the document a personal, informal interpretation rather than a formal W3C working-group publication.
+Check — What question can a supports edge answer that an ordinary link cannot?
+Source routes — Follow Dan Brickley’s linked 1999 “Nodes and Arcs” retrospective. Reserve its fuller nodes-and-arcs-to-RDF history for a future deck.
+Transition — Return from the semantic model to the human interface: the original Web client supported writing as well as reading.
+-->
+
+---
+
+<div class="eyebrow">1990 · WorldWideWeb implementation</div>
 
 ## The Web began as a read–write medium
 
@@ -191,12 +343,19 @@ procedures through which humans and tools worked together.
 
 <p class="callout-line">Wikis did not invent read–write hypertext; they recovered an ambition the mainstream Web largely left behind.</p>
 
-<p class="microcopy"><a href="https://www.w3.org/People/Berners-Lee/WorldWideWeb.html">W3C, “WorldWideWeb: the first web client”</a> · <a href="https://www.w3.org/People/Berners-Lee/1997/Directions.html">Berners-Lee, “Realising the Full Potential of the Web”</a>.</p>
+<p class="microcopy"><a href="https://www.w3.org/History/1989/proposal.html">1989 client/server proposal</a> · <a href="https://www.w3.org/People/Berners-Lee/WorldWideWeb.html">W3C, “WorldWideWeb: the first web client”</a> · <a href="https://www.w3.org/People/Berners-Lee/1997/Directions.html">Berners-Lee, “Realising the Full Potential of the Web”</a>.</p>
 
 <!--
-Be precise: Berners-Lee invented the Web, not the wiki. The first client was a
-browser-editor. As passive browsers spread, intuitive editing became separated
-from reading. Wikis later made shared editing simple in an ordinary browser.
+AGENTIC LEARNING NOTES
+
+Slide ID — web-read-write-medium
+Learning objective — Explain the original Web’s read–write ambition and the later separation of browsing from editing.
+Core claim — The first WorldWideWeb client was a browser-editor; wikis later recovered easy shared editing within the mainstream browser experience.
+Explain — Be precise: Berners-Lee invented the Web, not the wiki. The first client could follow links, create pages, and create links. As passive browsers spread, intuitive editing became separated from reading. Wikis later made shared editing simple in an ordinary browser.
+Misconception — WikiWikiWeb did not invent read–write hypertext, although it made collaborative maintenance radically accessible.
+Check — Which affordance did mainstream browsing lose that wikis later made ordinary again?
+Source routes — Follow the linked 1989 client/server proposal, W3C history of the first WorldWideWeb client, and Berners-Lee’s 1997 “Realising the Full Potential of the Web.”
+Transition — The wiki’s larger contribution was not merely editing; it was a social process for continuous knowledge maintenance.
 -->
 
 ---
@@ -218,9 +377,16 @@ from reading. Wikis later made shared editing simple in an ordinary browser.
 <p class="microcopy">Ward Cunningham, <a href="https://c2.com/doc/wikisym/WikiSym2006.pdf">“Design Principles of Wiki”</a>, WikiSym 2006.</p>
 
 <!--
-The key shift is procedural. A wiki is not defined only by a markup syntax. It is
-a corpus plus a maintenance culture. “Incremental” is especially important:
-citing an unwritten page creates an affordance for future elaboration.
+AGENTIC LEARNING NOTES
+
+Slide ID — wiki-social-maintenance
+Learning objective — Explain wiki as a social and procedural system for continuous knowledge maintenance.
+Core claim — A wiki is a corpus plus a culture of writing, linking, reviewing, and refactoring—not merely a markup syntax.
+Explain — The key shift is procedural. Openness lets readers repair; observability lets collaborators review; convergence reconciles duplication. “Incremental” is especially important because citing an unwritten page creates an affordance for future elaboration.
+Misconception — Installing wiki software or using wiki syntax does not by itself create a maintained knowledge commons.
+Check — Which wiki principle turns a missing page into useful future work, and how?
+Source routes — Follow Ward Cunningham’s linked “Design Principles of Wiki.”
+Transition — At social scale, link syntax must be joined by revision and governance infrastructure.
 -->
 
 ---
@@ -242,9 +408,16 @@ citing an unwritten page creates an affordance for future elaboration.
 <p class="microcopy"><a href="https://www.mediawiki.org/wiki/MediaWiki_history">MediaWiki history</a> · Wikipedia launched in January 2001; double-bracket “free links” emerged in the early Wikipedia toolchain.</p>
 
 <!--
-The double-bracket link is not original to Ward’s first wiki, which used WikiWords.
-Its importance is representational: arbitrary concepts can be named without
-distorting prose. MediaWiki then surrounded links with governance machinery.
+AGENTIC LEARNING NOTES
+
+Slide ID — wiki-collective-memory
+Learning objective — Explain how free links and revision infrastructure made links usable for collective memory.
+Core claim — Arbitrary concept naming made knowledge easier to address, while history, watchlists, discussion, and revert made maintenance governable.
+Explain — Ward’s first wiki used WikiWords. Double-bracket free links later allowed arbitrary phrases to become page identities without distorting prose. MediaWiki surrounded those links with namespaces, backlinks, discussion, recent changes, watchlists, history, and revert.
+Misconception — Double-bracket links were not part of the original WikiWikiWeb, and link syntax alone did not produce Wikipedia’s collective memory.
+Check — Why does arbitrary link text matter, and which governance feature makes the resulting edits accountable?
+Source routes — Follow the linked MediaWiki history and its account of the early Wikipedia toolchain.
+Transition — The next convergence makes this knowledge portable: a single plain-text file can carry both prose and structure.
 -->
 
 ---
@@ -266,9 +439,16 @@ distorting prose. MediaWiki then surrounded links with governance machinery.
 <p class="microcopy"><a href="https://yaml.org/spec/1.2.2/">YAML specification history</a> · <a href="https://daringfireball.net/2004/03/introducing_markdown">Gruber, “Introducing Markdown”</a> · <a href="https://tom.preston-werner.com/2008/11/17/blogging-like-a-hacker">Preston-Werner, “Blogging Like a Hacker”</a>.</p>
 
 <!--
-YAML predates Markdown. Jekyll popularized their combination with Git for
-publishing; it did not itself start personal knowledge graphs. The important
-technical result is a portable, tool-friendly, inspectable knowledge artifact.
+AGENTIC LEARNING NOTES
+
+Slide ID — plain-text-prose-data
+Learning objective — Explain why YAML, Markdown, and Git together create a useful file-native knowledge substrate.
+Core claim — A note can be human-readable prose, machine-queryable structure, and a reviewable versioned artifact at the same time.
+Explain — YAML predates Markdown. Jekyll popularized their combination with Git for publishing. The technical result is a portable, tool-friendly, inspectable artifact that can be read directly, processed by scripts, compared as a diff, and moved among tools without surrendering its basic meaning.
+Misconception — Jekyll did not start personal knowledge graphs, and YAML-flavored Markdown did not by itself cause the PKG movement.
+Check — Name one human operation and one machine operation supported by the same Markdown-plus-YAML note.
+Source routes — Follow the linked YAML specification history, Gruber’s “Introducing Markdown,” and Preston-Werner’s “Blogging Like a Hacker.”
+Transition — Personal knowledge tools use this cheap, portable substrate to build graph-shaped second brains.
 -->
 
 ---
@@ -293,9 +473,16 @@ technical result is a portable, tool-friendly, inspectable knowledge artifact.
 <p class="microcopy"><a href="https://tiddlywiki.com/static/The%2520Story%2520of%2520TiddlyWiki.html">The Story of TiddlyWiki</a> · <a href="https://roamresearch.com/">Roam Research</a> · <a href="https://obsidian.md/about">Obsidian</a> · <a href="https://www.tomkenter.nl/pdf/Personal%20Knowledge%20Graphs%20-%20ICTIR%202019.pdf">Balog &amp; Kenter, 2019</a>.</p>
 
 <!--
-These meanings of “personal knowledge graph” overlap but are not identical. The
-popular second-brain movement generally means graph-shaped notes and navigation;
-the research literature usually assumes more explicit entities and relations.
+AGENTIC LEARNING NOTES
+
+Slide ID — personal-knowledge-graph
+Learning objective — Distinguish graph-shaped personal knowledge management from the more formal academic idea of a personal knowledge graph.
+Core claim — Personal wikis evolved toward local, linked notes and backlinks, while academic PKGs usually require more explicit entities, attributes, and relations.
+Explain — TiddlyWiki, Roam, and Obsidian illustrate the popular second-brain lineage: nonlinear notes, bidirectional links, local files, and graph views. The research literature uses overlapping language but generally assumes a more explicit knowledge representation about entities personally relevant to an individual.
+Misconception — A graph visualization of linked notes is not automatically a formal knowledge graph.
+Check — Would an Obsidian vault with only untyped wikilinks satisfy the academic PKG definition? What is missing?
+Source routes — Follow the linked TiddlyWiki, Roam, and Obsidian histories, then compare them with Balog and Kenter’s 2019 paper.
+Transition — Zettelkasten supplies an older and more disciplined account of how a personal note network generates thought.
 -->
 
 ---
@@ -320,10 +507,16 @@ the research literature usually assumes more explicit entities and relations.
 <p class="microcopy">Johannes F. K. Schmidt, <a href="https://pub.uni-bielefeld.de/download/2942475/2942530">“Niklas Luhmann’s Card Index”</a> · <a href="https://www.uni-bielefeld.de/fakultaeten/soziologie/forschung/luhmann-archiv/pdf/jschmidt_niklas-luhmanns-card-index_-sociologica_2018_12-1.pdf">“The Fabrication of Serendipity”</a>.</p>
 
 <!--
-Luhmann’s two card indexes contained roughly 90,000 cards. The popular slogan
-“one idea per note” is a later simplification. The historically distinctive
-mechanism is the combination of a permanent address, branching insertion,
-cross-references, selective entry points, and repeated traversal during writing.
+AGENTIC LEARNING NOTES
+
+Slide ID — luhmann-zettelkasten
+Learning objective — Identify the mechanisms that made Luhmann’s Zettelkasten a network of arguments rather than a filing taxonomy.
+Core claim — Stable addresses, branching insertion, cross-references, selective entry points, and repeated traversal made the card index generative.
+Explain — Luhmann’s two card indexes contained roughly 90,000 cards. A permanent address allowed nearby insertion without global reorganization; cross-references connected distant trains of thought; indexes opened selective routes; repeated traversal during writing resurfaced ideas in new contexts.
+Misconception — “One idea per note” is a later simplification, not the complete historical definition of Luhmann’s method.
+Check — Which mechanism creates serendipity without requiring a master taxonomy?
+Source routes — Follow Schmidt’s linked account of Luhmann’s card index and “The Fabrication of Serendipity.”
+Transition — Translate the mechanics into file-native form without pretending the furniture itself is the method.
 -->
 
 ---
@@ -347,11 +540,16 @@ cross-references, selective entry points, and repeated traversal during writing.
 <p class="microcopy"><a href="https://niklas-luhmann-archiv.de/bestand/zettelkasten/tutorial">Niklas Luhmann Archive</a> · <a href="https://obsidian.md/help/links">Obsidian internal links</a>.</p>
 
 <!--
-This is an analogy, not a claim that a digital graph reproduces Luhmann’s system.
-Folders and visualization can help, but neither replaces contextual insertion.
-The important operation is deciding where a thought participates and recording
-why. A formal PKG can additionally type consequential relations such as supports,
-contradicts, derived-from, supersedes, or uses-method.
+AGENTIC LEARNING NOTES
+
+Slide ID — zettelkasten-to-digital-pkg
+Learning objective — Map functional Zettelkasten mechanics onto a file-native personal knowledge graph.
+Core claim — Digital tools preserve the method when they support stable identity, contextual insertion, cross-reference, entry points, provenance, and deliberate resurfacing.
+Explain — This is an analogy, not a claim that a digital graph reproduces Luhmann’s system. Folders and visualization can help, but neither replaces contextual insertion. The important operation is deciding where a thought participates and recording why. A formal PKG can additionally type consequential relations such as supports, contradicts, derived-from, supersedes, or uses-method.
+Misconception — Recreating a card cabinet as folders or displaying a graph does not reproduce the reasoning practice.
+Check — Choose one card-index mechanism and show its closest Obsidian implementation plus one way the digital version differs.
+Source routes — Follow the linked Niklas Luhmann Archive tutorial and Obsidian internal-links documentation.
+Transition — Obsidian provides a particularly inspectable implementation substrate for these mechanics.
 -->
 
 ---
@@ -372,9 +570,16 @@ contradicts, derived-from, supersedes, or uses-method.
 <p class="microcopy"><a href="https://obsidian.md/help/links">Obsidian internal links</a> · <a href="https://obsidian.md/help/properties">Obsidian properties</a>.</p>
 
 <!--
-The graph view is a projection, not the method. The same files can support many
-memory profiles. Agentic rules, workflows, permissions, and lifecycle semantics
-determine what kind of memory system the substrate becomes.
+AGENTIC LEARNING NOTES
+
+Slide ID — obsidian-substrate
+Learning objective — Enumerate the file, link, metadata, and view affordances that make an Obsidian vault inspectable by humans and agents.
+Core claim — Local Markdown, wikilinks, YAML properties, and multiple views provide a portable substrate; maintenance practices determine whether it becomes memory.
+Explain — Pages give concepts editable local representations; wikilinks create cheap references and backlinks; properties expose machine-selectable state; folders, queries, and graph views offer task-specific projections. The same files can therefore support several memory profiles and toolchains.
+Misconception — The graph view is a projection, not the memory method, and Obsidian alone does not supply trustworthy agentic rules or lifecycle semantics.
+Check — Which affordance most directly supports auditability, and which supports machine selection?
+Source routes — Follow Obsidian’s linked documentation for internal links and properties.
+Transition — Add a new actor to this familiar substrate: an agent that performs maintenance work.
 -->
 
 ---
@@ -394,9 +599,16 @@ determine what kind of memory system the substrate becomes.
 <p class="microcopy">The shift became widely visible through <a href="https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f">Karpathy’s “LLM Wiki”</a>, April 2026.</p>
 
 <!--
-Personal wikis have existed for decades. Karpathy’s useful inversion is that the
-human rarely performs the bookkeeping. The model becomes librarian and gardener;
-the human remains source selector, question asker, reader, editor, and judge.
+AGENTIC LEARNING NOTES
+
+Slide ID — agent-as-maintainer
+Learning objective — Describe the division of labor between a human researcher and an agent maintaining a wiki.
+Core claim — The novel actor is an agent performing routine compilation, cross-linking, refactoring, and linting within a human-governed medium.
+Explain — Personal wikis have existed for decades. Karpathy’s useful inversion is that the human need not perform all of the bookkeeping. The model becomes librarian and gardener; the human remains source selector, question asker, reader, editor, and epistemic judge.
+Misconception — The maintainer role does not transfer scientific authority to the agent or eliminate human review.
+Check — Which maintenance tasks are reasonable to delegate, and which judgments should remain explicitly human?
+Source routes — Revisit Karpathy’s linked “LLM Wiki” idea file and compare its agent instructions with the earlier personal-wiki lineage.
+Transition — Compare maintained synthesis with the dominant query-time retrieval architecture.
 -->
 
 ---
@@ -415,9 +627,16 @@ the human remains source selector, question asker, reader, editor, and judge.
 <p class="microcopy"><a href="https://arxiv.org/abs/2605.07068">WiCER</a> finds blind compilation can discard critical facts; one or two evaluate–refine iterations recover much of the lost quality.</p>
 
 <!--
-Avoid the false binary. A strong architecture retains raw evidence and may use
-search or RAG beneath the wiki. The wiki stores maintained synthesis; retrieval
-grounds claims and recovers detail. WiCER makes the compilation risk empirical.
+AGENTIC LEARNING NOTES
+
+Slide ID — rag-vs-wikimemory
+Learning objective — Compare query-time retrieval with persistent, maintained synthesis without treating them as mutually exclusive.
+Core claim — RAG grounds a response in retrieved evidence; WikiMemory preserves reusable synthesis, while retaining retrieval beneath it for verification and lost detail.
+Explain — Avoid the false binary. A strong architecture keeps raw evidence and may use search or RAG beneath the wiki. The wiki stores maintained entities, relationships, tensions, and synthesis. Retrieval grounds claims and restores details that compilation may discard. WiCER makes that compilation risk empirical.
+Misconception — WikiMemory neither replaces RAG nor guarantees that compiled pages preserve every important fact.
+Check — When a compiled page omits a critical experimental detail, which layer should recover it and which layer should be repaired afterward?
+Source routes — Follow the linked WiCER paper, especially its compilation and evaluate–refine findings.
+Transition — Ask what structural affordances make a folder of files operable enough to support this maintenance loop.
 -->
 
 ---
@@ -435,12 +654,19 @@ grounds claims and recovers detail. WiCER makes the compilation risk empirical.
   <div class="affordance"><b>Human legibility</b><span>The same artifact can be inspected, challenged, and repaired directly.</span></div>
 </div>
 
-<p class="microcopy">Design synthesis. Plain links + metadata + hierarchy are established affordances; richer typed-link semantics remain a research and design choice.</p>
+<p class="microcopy">Design synthesis. Plain links remain the navigation baseline; add typed predicates when the relation changes query, validation, explanation, or workflow.</p>
 
 <!--
-Do not oversell the graph. A collection of links is not automatically a sound
-knowledge graph. Typed edges can make operations clearer, but that claim should be
-tested rather than asserted as intrinsic to Wikilinks.
+AGENTIC LEARNING NOTES
+
+Slide ID — wiki-affordances
+Learning objective — Explain how identity, relations, metadata, scope, revision, and legibility turn files into an operable knowledge space.
+Core claim — Wiki affordances make knowledge revisitable, traversable, selectable, reviewable, and directly repairable by both humans and agents.
+Explain — Stable pages provide addresses; links provide paths; metadata exposes status and provenance; hierarchy bounds scope; revision makes edits accountable; plain text keeps the artifact inspectable. Typed predicates add value when the distinction changes a query, validation rule, explanation, or workflow.
+Misconception — A collection of links is not automatically a sound knowledge graph, and indiscriminate typing can replace link ambiguity with schema noise.
+Check — Give one relation that deserves a typed predicate and one ordinary navigational link that does not.
+Source routes — This is a design synthesis grounded in the preceding history; connect each affordance to the system that contributed it.
+Transition — Hierarchical scope becomes especially important when an agent cannot load the entire corpus into context.
 -->
 
 ---
@@ -473,12 +699,16 @@ tested rather than asserted as intrinsic to Wikilinks.
 <p class="microcopy">Google Cloud, <a href="https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md#8-index-files">Open Knowledge Format v0.2, §8 “Index files”</a>.</p>
 
 <!--
-OKF specifies that index.md may appear at any directory level. It groups links to
-concepts or subdirectories and recommends carrying each target’s short description,
-so a human or agent can see what is available before opening individual documents.
-The specification calls this progressive disclosure. Treating the root index as a
-small routing layer within the working-context budget is our harness interpretation:
-survey, select, recursively expand, and stop when the task is sufficiently grounded.
+AGENTIC LEARNING NOTES
+
+Slide ID — index-context-budget
+Learning objective — Use index.md files as routing layers for progressive disclosure under a limited context budget.
+Core claim — A hierarchy becomes agent-operable when each index cheaply reveals available scopes and lets context expand only where the task requires it.
+Explain — OKF permits index.md at any directory level. It groups links to concepts or subdirectories and recommends carrying each target’s short description, so a human or agent can see what is available before opening individual documents. The specification calls this progressive disclosure. Our harness interpretation is to survey, select, recursively expand, ground in raw sources when necessary, and stop when the task is sufficiently supported.
+Misconception — An index is not an exhaustive table of contents that should always be loaded together with every descendant page.
+Check — After reading a root index, what condition tells the agent to stop expanding rather than open another branch?
+Source routes — Follow the linked Open Knowledge Format v0.2 specification, section 8 “Index files.”
+Transition — Zoom from corpus navigation into the anatomy of one agent-operable page.
 -->
 
 ---
@@ -512,9 +742,16 @@ Contradicts [[Full-context is always sufficient]].
 <p class="microcopy">Illustrative Obsidian-compatible note—not a proposed universal schema.</p>
 
 <!--
-Use this as the concrete “aha” slide. The note is simultaneously prose, a small
-record, a graph node, and an instruction surface. Templates make recurring page
-types predictable, while Markdown keeps exceptions expressible.
+AGENTIC LEARNING NOTES
+
+Slide ID — wikimemory-page-anatomy
+Learning objective — Read one Markdown note simultaneously as prose, structured state, a graph node, and an instruction surface.
+Core claim — A predictable note template can coordinate evidence, meaning, lifecycle state, and next actions without sacrificing human readability.
+Explain — Use this as the concrete aha slide. YAML exposes type, status, sources, and review timing; prose explains the claim; typed link phrases locate it in a conceptual neighborhood; sections create a reading contract; evidence links preserve a route to verification. Templates make recurring page types predictable while Markdown keeps exceptions expressible.
+Misconception — The example is not a universal schema, and adding frontmatter does not make an unsupported claim scientific.
+Check — Which parts are primarily machine-selectable, which are human-readable, and which serve both roles?
+Source routes — Treat the note as an illustrative Obsidian-compatible design; trace WiCER and the compilation-gap links back to the earlier RAG comparison.
+Transition — The page becomes reliable memory only when a harness governs how agents read and change it.
 -->
 
 ---
@@ -540,9 +777,16 @@ types predictable, while Markdown keeps exceptions expressible.
 <p class="microcopy"><a href="https://arxiv.org/html/2604.08224v1">Zhou et al., “Externalization in LLM Agents”</a> · <a href="https://openreview.net/attachment?id=e64EcfHp8L&amp;name=pdf">“The Living Wiki”</a> treats the vault schema as a procedural Skill.</p>
 
 <!--
-This imports the previous AI4C2 deck’s central frame. Files alone do not decide
-when an agent writes, which evidence is required, or whether a change is accepted.
-Those are harness responsibilities encoded through rules, skills, tools, and gates.
+AGENTIC LEARNING NOTES
+
+Slide ID — harness-memory-system
+Learning objective — Apply the harness-externalization frame to a writable knowledge vault.
+Core claim — Persistence comes from external files, but reliability comes from a harness that selects context, authorizes changes, validates evidence, observes outcomes, and can roll back.
+Explain — This imports the earlier AI4C2 deck’s central frame. Files alone do not decide when an agent writes, which evidence is required, whether a change is accepted, or what must be preserved. Those responsibilities are encoded through rules, skills, tools, permissions, gates, logs, and rollback.
+Misconception — A persistent folder is not automatically a memory system, and a capable model cannot substitute for explicit lifecycle governance.
+Check — For an agent proposing to change a contested claim, name one responsibility at each of select, authorize, validate, observe, and rollback.
+Source routes — Follow Zhou et al.’s linked “Externalization in LLM Agents” and the linked “Living Wiki” treatment of vault schema as a procedural skill.
+Transition — Show how our llm-wiki-colab implementation packages those lifecycle responsibilities.
 -->
 
 ---
@@ -563,11 +807,61 @@ Those are harness responsibilities encoded through rules, skills, tools, and gat
 <p class="microcopy"><a href="https://github.com/LA3D-LLM-Agents/llm-wiki-colab">LA3D-LLM-Agents, <code>llm-wiki-colab</code></a> · <a href="https://doi.org/10.5281/zenodo.21213175">Saboia Moreira et al., “Beyond Memory”</a>.</p>
 
 <!--
-This is our implementation of the harness claim on the previous slide. The plugin
-keeps the project repository ordinary and attaches its GitHub wiki at a gitignored
-.llm-wiki/ path. A neutral core is packaged through agent-specific adapters. The
-important contribution is not another Markdown schema; it is orientation, explicit
-operations, pre-commit verification, auditable logs, and safe multi-writer updates.
+AGENTIC LEARNING NOTES
+
+Slide ID — llm-wiki-colab-lifecycle
+Learning objective — Explain how llm-wiki-colab packages orientation, explicit operations, verification, and Git coordination around an ordinary project.
+Core claim — The implementation’s main contribution is a governed maintenance lifecycle, not another Markdown schema.
+Explain — The plugin keeps the project repository ordinary and attaches its GitHub wiki at a gitignored .llm-wiki/ path. A neutral core is packaged through agent-specific adapters. Session orientation supplies a small current map; skills define operations; a shared verification gate checks writes; logs and Git preserve an auditable, multi-writer history.
+Misconception — Installing the plugin or copying its files does not guarantee good memory; the lifecycle must be followed and its evidence requirements still require judgment.
+Check — Give one plausible failure caught by orientation, one by a write skill, one by the verification gate, and one by the Git protocol.
+Source routes — Follow the linked llm-wiki-colab repository and the linked “Beyond Memory” publication.
+Transition — Zoom into one method inside the lifecycle: progressive formalization of typed edges.
+-->
+
+---
+
+<div class="eyebrow">Our implementation · typed edges</div>
+
+## Readable predicates compile into an operable graph
+
+<div class="edge-method">
+  <div class="edge-authoring">
+    <small>AUTHOR IN ORDINARY MARKDOWN</small>
+    <div class="edge-form"><b>Page-level · YAML</b><pre><code><span class="code-key">supports:</span> <span class="code-type">"[[Claim-X]]"</span>
+<span class="code-key">dependsOn:</span> <span class="code-type">"[[Dataset-Y]]"</span></code></pre></div>
+    <div class="edge-form"><b>Contextual · visible inline annotation</b><pre><code>[Claim X](Claim-X)
+([*supports*](Edge-Types#supports))</code></pre></div>
+  </div>
+  <div class="edge-compile-flow">
+    <small>COMPILE + CHECK</small>
+    <div><b>Markdown + YAML</b><span>forward predicates + plain mentions</span></div><i>↓ extract</i>
+    <div><b>JSON-LD / RDF</b><span>stable page and predicate IRIs</span></div><i>↓ materialize</i>
+    <div><b>Graph operations</b><span>inverse edges · SHACL · SPARQL</span></div>
+  </div>
+</div>
+
+<div class="edge-vocabulary">
+  <div><b>Evidence</b><span>source · supports · criticizes</span></div>
+  <div><b>Semantics</b><span>concept · defines · related · mentions</span></div>
+  <div><b>Structure</b><span>up · partOf · outOfScopeFor</span></div>
+  <div><b>Evolution</b><span>extends · precedes · incorporatedInto</span></div>
+  <div><b>Dependency</b><span>dependsOn · feedsInto · resolvedBy</span></div>
+</div>
+
+<p class="microcopy"><a href="https://github.com/LA3D-LLM-Agents/llm-wiki-colab/blob/main/codex/plugins/llm-wiki/core/Edge-Types.md.template"><code>Edge-Types.md</code> vocabulary</a> · <a href="https://github.com/LA3D-LLM-Agents/llm-wiki-colab/tree/main/codex/plugins/llm-wiki/core/scripts/kg">KG build pipeline</a> · forward predicates are authored; inverses are materialized.</p>
+
+<!--
+AGENTIC LEARNING NOTES
+
+Slide ID — typed-edge-compilation
+Learning objective — Trace a readable relation from Markdown authoring through extraction, RDF representation, validation, and graph querying.
+Core claim — Consequential relationships can be promoted to governed predicates while ordinary links remain a low-cost navigation baseline.
+Explain — This is progressive formalization. Page-level relations live in YAML; local claims can use a visible GitHub-wiki-compatible predicate annotation; an ordinary link is recorded as mentions. The extractor deduplicates the forms, maps them through a JSON-LD context, materializes inverse edges, validates with SHACL, and supports SPARQL queries such as supports-versus-criticizes.
+Misconception — Authors and agents should not assert both directions of a relation; the build owns inverse edges so the two directions cannot silently disagree. Not every mention deserves promotion to a typed predicate.
+Check — Where would you author a page-wide dependsOn relation, where would you author a local supports claim, and what does a plain link become?
+Source routes — Follow the linked Edge-Types vocabulary and KG build pipeline in llm-wiki-colab.
+Transition — Typed edges are one method; skills make the wider scientific maintenance procedures explicit and executable.
 -->
 
 ---
@@ -587,11 +881,16 @@ operations, pre-commit verification, auditable logs, and safe multi-writer updat
 <p class="microcopy"><a href="https://github.com/LA3D-LLM-Agents/llm-wiki-colab/tree/main/codex/plugins/llm-wiki/skills">Skills in <code>llm-wiki-colab</code></a> · each write procedure delegates to a shared Verification Gate.</p>
 
 <!--
-This is more specific than “the agent maintains the wiki.” Source ingest and
-experiment ingest have different epistemic obligations. Both integrate rather than
-append: a typical write may touch the new page, existing claims, reciprocal links,
-the index, and the log. wiki-lint is diagnostic first and asks which findings to
-fix. Supporting skills bootstrap, diagnose, consult peers, and publish an Agent Card.
+AGENTIC LEARNING NOTES
+
+Slide ID — executable-wiki-skills
+Learning objective — Differentiate the epistemic obligations of source ingest, experiment filing, and corpus linting.
+Core claim — Scientific maintenance becomes inspectable when distinct operations are encoded as explicit skills that converge on a shared verification gate.
+Explain — “The agent maintains the wiki” is too vague. Source ingest must integrate external evidence and provenance; experiment ingest must preserve configuration, metrics, comparison, surprise, negative results, code, and commit identity; linting diagnoses structural integrity. Writes integrate rather than append and may update the new page, existing claims, reciprocal links, the index, and the log.
+Misconception — One generic maintenance prompt is not equivalent to procedures with different evidence obligations; wiki-lint is diagnostic first rather than permission to rewrite everything automatically.
+Check — Which skill should record a negative experimental result, and what information must it preserve that a source summary need not?
+Source routes — Follow the linked skills directory in llm-wiki-colab and inspect the shared Verification Gate delegated to by write procedures.
+Transition — These local project memories can remain owned by their projects while a federation makes expertise discoverable.
 -->
 
 ---
@@ -613,11 +912,16 @@ fix. Supporting skills bootstrap, diagnose, consult peers, and publish an Agent 
 <p class="microcopy"><a href="https://github.com/LA3D-LLM-Agents">LA3D LLM Agents organization profile</a> · <a href="https://la3d-llm-agents.github.io/">federation index</a>.</p>
 
 <!--
-Each organization member is a research-project repository paired with a curated
-wiki and a published Agent Card. The federation index supports discovery. “Ask” is
-a synchronous clone-and-consult operation; “message” is an asynchronous direct
-mailbox; “post” is a topical broadcast. Knowledge stays with the project that owns
-and maintains it, while transparent file-based primitives connect the expertise.
+AGENTIC LEARNING NOTES
+
+Slide ID — federated-project-memory
+Learning objective — Explain how local project ownership and federated discovery can coexist.
+Core claim — Projects should maintain their own source-of-truth wikis and publish honest capability metadata so peers can discover and consult expertise without copying every corpus into private context.
+Explain — Each organization member is a research-project repository paired with a curated wiki and a published Agent Card. The federation index supports discovery. Ask is a synchronous clone-and-consult operation; message is an asynchronous direct mailbox; post is a topical broadcast. Transparent file-based primitives connect expertise while memory stays with the project that owns it.
+Misconception — Federation does not require centralizing all project wikis or treating an Agent Card as evidence that every claimed capability is correct.
+Check — When should an agent use ask, message, or post, and where should the resulting durable knowledge ultimately be maintained?
+Source routes — Follow the linked LA3D LLM Agents organization profile and federation index.
+Transition — Place our implementation inside the wider 2026 research cluster now exploring different parts of this system.
 -->
 
 ---
@@ -637,9 +941,16 @@ and maintains it, while transparent file-based primitives connect the expertise.
 <p class="microcopy"><a href="https://www.langchain.com/blog/wiki-memory">Chase, 2026</a> · <a href="https://arxiv.org/abs/2605.07068">WiCER</a> · <a href="https://arxiv.org/abs/2605.25480">LLM-Wiki</a> · <a href="https://arxiv.org/abs/2607.26604">WikiLoop</a> · <a href="https://arxiv.org/abs/2608.00967">TrajWiki</a> · <a href="https://arxiv.org/abs/2607.24759">Beyond Memory</a> · <a href="https://arxiv.org/html/2608.27454v1">WikiSkill</a>.</p>
 
 <!--
-The term is no longer only a viral pattern. A coherent research cluster appeared
-between April and August 2026. No single source tells the full historical and
-harness story; this slide shows how the contemporary contributions compose.
+AGENTIC LEARNING NOTES
+
+Slide ID — wikimemory-research-field
+Learning objective — Map recent WikiMemory work onto representation, compilation, navigation, provenance, and learning.
+Core claim — The 2026 research cluster is filling complementary system dimensions; no single paper or implementation supplies the whole stack.
+Explain — The term is no longer only a viral pattern. Work appearing between April and August 2026 addresses persistent representation, compilation loss and refinement, navigation and downstream learning, provenance and revision, and the conversion of experience into reusable procedure. The composition matters more than declaring one winning architecture.
+Misconception — A strong result in one row does not solve the other dimensions or establish end-to-end scientific trustworthiness.
+Check — Match WiCER, TrajWiki, and WikiSkill to the primary system dimension each contributes.
+Source routes — Follow the linked contemporary sources on this slide: Chase, WiCER, LLM-Wiki, WikiLoop, TrajWiki, Beyond Memory, and WikiSkill.
+Transition — Before celebrating persistent memory, examine how the same compounding mechanism can amplify error.
 -->
 
 ---
@@ -665,9 +976,16 @@ harness story; this slide shows how the contemporary contributions compose.
 <p class="microcopy"><a href="https://arxiv.org/abs/2604.12034">“Memory as Metabolism”</a> highlights entrenchment and contradictory evidence · <a href="https://arxiv.org/abs/2608.00967">TrajWiki</a> uses immutable snapshots plus ADD / REVISE / DEPRECATE operations.</p>
 
 <!--
-This is the scientific objection slide. Links can turn repetition into apparent
-authority. A scientific memory cannot silently overwrite uncertainty or negative
-evidence. It needs epistemic status, source identity, temporal revision, and gates.
+AGENTIC LEARNING NOTES
+
+Slide ID — memory-entrenchment-risk
+Learning objective — Explain how an agent-maintained wiki can entrench weak claims and identify controls that interrupt the loop.
+Core claim — Persistence and centrality can amplify error unless provenance, supersession, evaluation, and authority gates preserve contestability.
+Explain — This is the scientific objection slide. A weak source may lose qualification during synthesis; the resulting page gains links and apparent authority; later answers repeat it and further stabilize the claim. A scientific memory therefore needs epistemic status, source identity, temporal revision, negative evidence, evaluation probes, and controlled writes.
+Misconception — Persistence does not inherently improve truth, and a heavily linked page is not necessarily well supported.
+Check — Choose one point in the error loop and name a concrete control that would detect, interrupt, or reverse it.
+Source routes — Follow the linked “Memory as Metabolism” discussion of entrenchment and contradictory evidence and TrajWiki’s immutable snapshots with ADD, REVISE, and DEPRECATE operations.
+Transition — With validation and rollback in place, persistent memory can become an intermediate representation for learning procedures.
 -->
 
 ---
@@ -691,10 +1009,16 @@ evidence. It needs epistemic status, source identity, temporal revision, and gat
 <p class="microcopy">Tang et al., <a href="https://arxiv.org/html/2608.27454v1">“WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution”</a>, Google Research, Aug. 2026.</p>
 
 <!--
-This is the payoff for the harness view. The wiki is not merely read during task
-execution. It is an intermediate representation used by a maintainer and skill
-proposer. The outer-loop harness records objective validation outcomes and rolls
-back skill changes that do not improve performance.
+AGENTIC LEARNING NOTES
+
+Slide ID — wikiskill-learning-loop
+Learning objective — Trace how execution experience is compiled into candidate skills and objectively accepted or rolled back.
+Core claim — A persistent wiki can serve as an intermediate representation for procedure evolution, provided an outer-loop harness validates changes.
+Explain — The wiki is not merely read during task execution. Raw traces from successes and failures are synthesized into persistent patterns and diagnoses. A proposer compiles those patterns into candidate instructions and resources. The harness records objective validation outcomes, accepts improvements, and rolls back changes that do not improve performance.
+Misconception — A plausible wiki summary or well-written candidate skill is not evidence of improvement without task-level validation.
+Check — Why is rollback necessary, and what evidence should the acceptance gate inspect?
+Source routes — Follow Tang et al.’s linked WikiSkill preprint, especially the ablations on persistent knowledge and cross-model skill transfer.
+Transition — Generalize from learned procedures to a definition of scientific memory that preserves evidence, knowledge, and contestable method.
 -->
 
 ---
@@ -714,9 +1038,16 @@ back skill changes that do not improve performance.
 <p class="thesis-line small-thesis">A scientific second brain should not only remember conclusions; it should preserve the routes by which conclusions remain contestable.</p>
 
 <!--
-This is our proposed definition. “Scientific” changes the requirements: provenance,
-negative results, uncertainty, competing interpretations, reproducibility, and
-human judgment are not optional metadata. They are core memory semantics.
+AGENTIC LEARNING NOTES
+
+Slide ID — scientific-wikimemory-definition
+Learning objective — Define Scientific WikiMemory as a layered relationship among recoverable evidence, maintained knowledge, and validated procedure.
+Core claim — Scientific memory must preserve why claims are believed or doubted so conclusions remain traceable, revisable, and contestable.
+Explain — Raw evidence includes papers, data, code, runs, and conversations that remain immutable or independently recoverable. Wiki knowledge maintains claims, entities, methods, tensions, provenance, and revision. Scientific procedures operationalize that knowledge as workflows, checks, skills, and decision protocols that can be tested and inspected.
+Misconception — A conclusion-only second brain is not sufficient for science; provenance, negative results, uncertainty, competing interpretations, reproducibility, and human judgment are core memory semantics rather than optional metadata.
+Check — Where should a negative result live in the three-layer stack, and how should it affect an existing claim and procedure?
+Source routes — This is the deck’s proposed synthesis; route backward to raw/wiki/work, harness externalization, entrenchment controls, and WikiSkill.
+Transition — End by turning the definition into an empirical and governance research agenda.
 -->
 
 ---
@@ -737,7 +1068,14 @@ human judgment are not optional metadata. They are core memory semantics.
 <p class="lede closing-question">Can an inspectable wiki become the shared memory substrate through which scientists and agents learn together?</p>
 
 <!--
-Close with the research program, not a product pitch. The next iteration can end
-on a narrower experiment: build a scientific WikiMemory profile, compare it with a
-RAG-only baseline, and evaluate provenance, quality, context cost, and recovery.
+AGENTIC LEARNING NOTES
+
+Slide ID — sai-research-agenda
+Learning objective — Translate WikiMemory’s promise into testable research questions about representation, compilation, retrieval, maintenance, governance, and evaluation.
+Core claim — Scientific trustworthiness is an empirical and governance program, not a product feature conferred by using Markdown, graphs, or agents.
+Explain — Close with a research program rather than a product pitch. A concrete next experiment is to build a scientific WikiMemory profile, compare it with a RAG-only baseline, and evaluate provenance, answer quality, context cost, recovery from error, and visibility of failure.
+Misconception — The deck has not established that WikiMemory is already scientifically trustworthy; it has motivated the architecture and the questions required to test it.
+Check — Which research question should be tested first, and what observable metric would distinguish improvement from hidden failure?
+Source routes — Use the preceding field map and risk slides to design the evaluation; the six cards define the agenda’s major dimensions.
+Transition — Invite the audience to choose a first experiment through which scientists and agents can learn together.
 -->
