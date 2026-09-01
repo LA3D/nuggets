@@ -1045,7 +1045,135 @@ Explain — Each organization member is a research-project repository paired wit
 Misconception — Federation does not require centralizing all project wikis or treating an Agent Card as evidence that every claimed capability is correct.
 Check — When should an agent use ask, message, or post, and where should the resulting durable knowledge ultimately be maintained?
 Source routes — Follow the linked LA3D LLM Agents organization profile and federation index.
-Transition — Place our implementation inside the wider 2026 research cluster now exploring different parts of this system.
+Transition — Extend project-level federation into artifact-level federation: connect presentations, claims, publications, data, runs, and manifests without centralizing them.
+-->
+
+---
+
+<div class="eyebrow">Artifact federation · linked-data preview</div>
+
+## One knowledge space, many artifacts
+
+<div class="artifact-legend" aria-label="Legend distinguishing source objects, semantic projections, and discovery catalogs">
+  <span class="source-key"><i></i>authoritative source object</span>
+  <span class="projection-key"><i></i>generated semantic projection</span>
+  <span class="catalog-key"><i></i>discovery catalog</span>
+</div>
+
+<div class="artifact-network" aria-label="A linked research-artifact network connecting this presentation's AnnotationPage to WikiMemory concept and claim resources, a publication DOI, data object, experiment commit, prospective repository manifest, and prospective federation catalog">
+  <svg class="artifact-links" viewBox="0 0 952 294" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <marker id="artifact-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z"></path></marker>
+    </defs>
+    <path d="M212 58 C278 58 296 115 354 126"></path>
+    <path d="M600 125 C658 112 676 44 738 38"></path>
+    <path d="M600 140 C660 140 675 140 738 140"></path>
+    <path d="M600 158 C660 174 676 235 738 242"></path>
+    <path class="prospective-link" d="M354 166 C302 182 278 220 228 226"></path>
+    <path class="prospective-link" d="M228 239 C278 257 305 262 356 262"></path>
+    <text x="247" y="76">targets / stable IRI</text>
+    <text x="630" y="74">cites</text>
+    <text x="646" y="132">uses</text>
+    <text x="625" y="216">wasGeneratedBy</text>
+    <text x="256" y="210">described by</text>
+    <text x="260" y="278">indexed by</text>
+  </svg>
+
+  <div class="artifact-node projection-node annotation-artifact">
+    <small>LIVE NOW · WEB ANNOTATION</small><b>Presentation AnnotationPage</b><span>slide targets + learning context</span>
+  </div>
+
+  <div class="artifact-node source-node memory-artifact">
+    <small>OWNED WIKIMEMORY SOURCES</small><b>Concept page + claim page</b><span>stable IRIs · typed relations · epistemic state</span><em>generated JSON-LD / RDF view</em>
+  </div>
+
+  <div class="artifact-node source-node publication-artifact">
+    <small>PUBLICATION</small><b>DOI / article</b><span>CiTO relation</span>
+  </div>
+
+  <div class="artifact-node source-node data-artifact">
+    <small>DATA OBJECT</small><b>dataset / release</b><span>identifier · license</span>
+  </div>
+
+  <div class="artifact-node source-node run-artifact">
+    <small>EXPERIMENT</small><b>run / immutable commit</b><span>PROV-O lineage</span>
+  </div>
+
+  <div class="artifact-node projection-node manifest-artifact">
+    <small>TARGET · GENERATED PROJECTION</small><b>Repository manifest</b><span>owner · scope · access · endpoints</span>
+  </div>
+
+  <div class="artifact-node catalog-node catalog-artifact">
+    <small>TARGET · DISCOVERY LAYER</small><b>Federation catalog</b><span>find identifiers—not copied corpora</span>
+  </div>
+</div>
+
+<p class="artifact-thesis">Stable IRIs connect what each owner keeps authoritative; projections and catalogs carry links—not duplicate copies of every artifact.</p>
+
+<p class="artifact-caveat"><strong>Live now:</strong> this presentation’s AnnotationPage. <strong>Prospective:</strong> deployed WikiMemory manifests and a cross-project discovery catalog.</p>
+
+<p class="microcopy artifact-sources"><a href="https://www.w3.org/TR/annotation-model/">Web Annotation</a> · <a href="https://www.w3.org/TR/prov-o/">PROV-O</a> · <a href="https://www.w3.org/TR/skos-reference/">SKOS</a> · <a href="https://www.sparontologies.net/ontologies/cito">CiTO</a> · <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">DCMI Terms</a>.</p>
+
+<!--
+AGENTIC LEARNING NOTES
+
+Slide ID — linked-research-artifacts
+Learning objective — Distinguish authoritative research objects from generated semantic projections and discovery catalogs, then explain how stable IRIs can connect them without centralizing their contents.
+Core claim — Linked data can make a presentation, WikiMemory concepts and claims, publications, datasets, experiments, repository manifests, and discovery catalogs behave as one navigable knowledge space while each authoritative artifact remains with its owner.
+Explain — Start from the live W3C Web Annotation AnnotationPage embedded in this presentation. Its slide targets and learning bodies can point through stable IRIs to source-owned WikiMemory concept and claim pages. Those resources can carry qualified links to a DOI-identified publication, a licensed data object, and a versioned experiment or immutable commit. A generated repository manifest could prospectively describe ownership, scope, access, and endpoints; a federation catalog could index those manifests for discovery without copying every source corpus. Use Web Annotation for slide associations, PROV-O for derivation and activity lineage, SKOS for concept organization, CiTO for typed scholarly citation relations, Dublin Core Terms for broadly reusable descriptive metadata, and a small WikiMemory vocabulary only for missing operational concepts such as epistemic status, maturity, review, or procedure.
+Misconception — The AnnotationPage and other semantic projections are not authoritative substitutes for the source presentation, wiki pages, publication, data, or run; a catalog is an index rather than a central knowledge base. This deck embeds its AnnotationPage now, but deployed WikiMemory repository manifests and their cross-project catalog are a prospective target architecture, not a claim about current deployments.
+Check — Optional exploration: identify which nodes are authoritative sources, which are generated projections, and which are discovery infrastructure; then ask what stable identifier lets an agent return to the owning source.
+Source routes — Consult the W3C Web Annotation Data Model at https://www.w3.org/TR/annotation-model/, PROV-O at https://www.w3.org/TR/prov-o/, SKOS at https://www.w3.org/TR/skos-reference/, CiTO at https://www.sparontologies.net/ontologies/cito, and DCMI Metadata Terms at https://www.dublincore.org/specifications/dublin-core/dcmi-terms/; treat the manifest and catalog shapes as a design preview rather than an implemented standard.
+Transition — Follow one realized path through this linked space and ask how an agent loads only the neighborhood relevant to its task.
+-->
+
+---
+
+<div class="eyebrow">Agent traversal · FAIR preview</div>
+
+## Follow the link; load the neighborhood
+
+<div class="agent-link-trail" aria-label="An agent follows a question from a slide through its Web Annotation and stable IRI to an owning repository manifest, a relevant local graph neighborhood, evidence and provenance, an optional peer project, and a reviewed knowledge write">
+  <div class="agent-hop"><small>01 · QUESTION</small><b>On a slide</b><span>“What evidence challenges this claim?”</span></div>
+  <div class="agent-hop projection-hop"><small>02 · RESOLVE</small><b>Web Annotation</b><span>match the slide target</span></div>
+  <div class="agent-hop"><small>03 · FOLLOW</small><b>Concept / claim IRI</b><span>preserve stable identity</span></div>
+  <div class="agent-hop prospective-hop"><small>04 · DISCOVER</small><b>Owning manifest</b><span>scope · access · endpoint</span></div>
+  <div class="agent-hop neighborhood-hop"><small>05 · LOAD</small><b>Local graph</b><span>load the relevant neighborhood</span></div>
+  <div class="agent-hop"><small>06 · VERIFY</small><b>Evidence + provenance</b><span>sources · versions · status</span></div>
+  <div class="agent-hop optional-hop"><small>07 · OPTIONAL</small><b>Consult a peer</b><span>follow another project link</span></div>
+  <div class="agent-hop reviewed-hop"><small>08 · RETURN</small><b>Reviewed knowledge</b><span>file back with provenance</span></div>
+</div>
+
+<div class="markov-bridge">
+  <small>MARKOV-STYLE BRIDGE</small>
+  <span><b>states</b> resources</span><i>·</i><span><b>possible transitions</b> typed links</span><i>·</i><span><b>policy signal</b> task + evidence context</span><i>→</i><span><b>realized trail</b> the neighborhoods actually loaded</span>
+</div>
+
+<div class="fair-preview" aria-label="A compact preview of how the linked trail relates to the FAIR principles">
+  <small>FAIR PREVIEW ALONG THE TRAIL</small>
+  <div class="fair-rail">
+    <span><b>F · Findable</b> manifests · catalog · stable IDs</span>
+    <span><b>A · Accessible</b> HTTPS / Git · access controls</span>
+    <span><b>I · Interoperable</b> JSON-LD · shared vocabularies</span>
+    <span><b>R · Reusable</b> provenance · versions · licenses · epistemic status</span>
+  </div>
+</div>
+
+<p class="caveat-line linked-fair-caveat"><strong>JSON-LD alone is not FAIR.</strong> Private knowledge stays private; shared semantics, access policy, provenance, licensing, and governance determine what can travel.</p>
+
+<p class="microcopy linked-fair-sources"><a href="https://doi.org/10.1038/sdata.2016.18">Wilkinson et al., FAIR Guiding Principles</a> · <a href="https://www.w3.org/TR/dwbp/">W3C Data on the Web Best Practices</a> · standards: <a href="https://www.w3.org/TR/annotation-model/">Web Annotation</a> · <a href="https://www.w3.org/TR/prov-o/">PROV-O</a> · <a href="https://www.w3.org/TR/skos-reference/">SKOS</a> · <a href="https://www.sparontologies.net/ontologies/cito">CiTO</a> · <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">DCMI Terms</a>.</p>
+
+<!--
+AGENTIC LEARNING NOTES
+
+Slide ID — follow-the-linked-neighborhood
+Learning objective — Trace an agent’s realized cross-artifact trail from a slide question to the owning evidence neighborhood and connect each step to task-conditioned graph navigation and a practical FAIR preview.
+Core claim — An agent can follow stable identifiers and typed links to load the relevant local neighborhood, verify evidence and provenance, optionally consult another project, and file reviewed knowledge back without centralizing every artifact.
+Explain — Resolve the current slide through its Web Annotation, follow the concept or claim IRI to an owning repository manifest, load only the local graph neighborhood needed for the question, inspect evidence, versions, licenses, access rules, and provenance, then follow a cross-project link only if the task benefits from another owner’s neighborhood. The Markov-style analogy from the earlier navigation slide still applies: resources are states, typed links are possible transitions, and the task plus evidence context influences which transition is selected. The resulting sequence is a realized cross-artifact trail, not a demand to copy all projects into one model context. FAIR provides a preview of the obligations around that trail: stable identifiers and catalogs support findability; standard protocols with authentication support accessibility; JSON-LD and shared vocabularies support interoperability; provenance, versions, licenses, epistemic status, and community standards support reuse.
+Misconception — JSON-LD syntax alone does not make an artifact FAIR, a discoverable identifier does not imply public access, and a shared catalog does not authorize an agent to ingest private knowledge. Shared semantics, access controls, provenance, licensing, review, and governance remain necessary; the owning-manifest step is prospective in this architecture.
+Check — Optional exploration: for a question about contradictory evidence, which typed transition should the agent prefer, what access and provenance signals must it inspect before loading the next neighborhood, and when should it stop rather than consult another project?
+Source routes — Use the FAIR Guiding Principles at https://doi.org/10.1038/sdata.2016.18 and W3C Data on the Web Best Practices at https://www.w3.org/TR/dwbp/ for the practical obligations; use Web Annotation, PROV-O, SKOS, CiTO, and DCMI Terms for established association, provenance, concept, citation, and descriptive semantics, reserving a small WikiMemory vocabulary for epistemic status, maturity, review, and procedures.
+Transition — Return from this linked-data preview to the wider 2026 WikiMemory field and see which system dimensions current work is beginning to fill.
 -->
 
 ---
